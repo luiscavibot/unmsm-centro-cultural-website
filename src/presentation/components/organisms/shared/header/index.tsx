@@ -1,7 +1,7 @@
 // app/components/organisms/Header.tsx
 import React from 'react';
-import NavigationLink from '../../molecules/navigation-link';
 import Image from 'next/image';
+import NavigationLink from '@/presentation/components/molecules/navigation-link';
 
 const Header: React.FC = () => (
 	<header>
@@ -20,7 +20,9 @@ const Header: React.FC = () => (
 		<nav className="grid grid-cols-12 px-16 gap-5 bg-dark-gray">
 			<div className="col-span-full flex items-center justify-center space-x-4 text-sm font-semibold leading-[16.8px]">
 				<NavigationLink href="/noticias">Noticias</NavigationLink>
-				<NavigationLink href="/cursos-y-talleres">Cursos y Talleres</NavigationLink>
+				<NavigationLink href="/cursos-y-talleres">
+					Cursos y Talleres
+				</NavigationLink>
 				<NavigationLink href="/biblioteca">Biblioteca</NavigationLink>
 			</div>
 		</nav>
