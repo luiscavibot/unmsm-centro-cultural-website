@@ -7,7 +7,7 @@ interface NavigationLinkProps {
 }
 
 const NavigationLink: React.FC<NavigationLinkProps> = ({ href, children }) => (
-	<Link href={href} className="text-white hover:text-gray-200 px-3 py-2">
+	<Link href={href} className="text-white hover:text-gray-200 px-3 py-4">
 		{children}
 	</Link>
 );

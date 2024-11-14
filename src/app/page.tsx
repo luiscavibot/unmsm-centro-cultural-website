@@ -1,10 +1,16 @@
+import Hero from "./sections/hero";
+import Contact from "./sections/contact";
+import Events from "./sections/events";
+
 export default function Home() {
 	return (
 		<>
-			<h1 className="text-3xl font-bold mb-4">
-				Bienvenido a nuestra aplicación
+			<h1 className="hidden sr-only">
+				Centro Cultural de San Marcos
 			</h1>
-			<p className="text-gray-700">Esta es la página de inicio.</p>
+			<Hero />
+			<Contact />
+			<Events />
 		</>
 	);
 }
