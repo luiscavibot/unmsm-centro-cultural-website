@@ -5,8 +5,8 @@ import NavigationLink from '@/presentation/components/molecules/navigation-link'
 
 const Header: React.FC = () => (
 	<header>
-		<div className="grid grid-cols-12 py-4 px-16 gap-5 bg-gray">
-			<div className="col-span-full flex items-center justify-between">
+		<div className="py-4 px-[104px] gap-5 bg-gray">
+			<div className="container flex items-center justify-between">
 				<p>social</p>
 				<Image
 					src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/logo-ccsm.svg"
@@ -17,8 +17,8 @@ const Header: React.FC = () => (
 				<p>agenda</p>
 			</div>
 		</div>
-		<nav className="grid grid-cols-12 px-16 gap-5 bg-dark-gray">
-			<div className="col-span-full flex items-center justify-center space-x-4 text-sm font-semibold leading-[16.8px]">
+		<nav className="px-[104px] gap-5 bg-dark-gray">
+			<div className="container flex items-center justify-center space-x-4 text-sm font-semibold leading-[16.8px]">
 				<NavigationLink href="/noticias">Noticias</NavigationLink>
 				<NavigationLink href="/cursos-y-talleres">
 					Cursos y Talleres

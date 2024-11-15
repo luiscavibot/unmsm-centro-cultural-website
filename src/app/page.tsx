@@ -1,6 +1,7 @@
 import Hero from '../presentation/components/organisms/home/hero';
 import Contact from '../presentation/components/organisms/home/contact';
 import Events from '../presentation/components/organisms/home/events';
+import CoursesAndWorkshops from '@/presentation/components/organisms/home/courses-and-workshops';
 
 export default function Home() {
 	return (
@@ -9,6 +10,7 @@ export default function Home() {
 			<Hero />
 			<Contact />
 			<Events />
+			<CoursesAndWorkshops />
 		</>
 	);
 }

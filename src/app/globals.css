@@ -8,6 +8,9 @@
 	--gray: #2A2D31;
 	--dark-gray: #171A1D;
 	--green: #063E40;
+	--dark-blue: #1D2836;
+	--blue: #0E276B;
+	--dark-white: #E9EFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,4 +24,10 @@ body {
 	color: var(--foreground);
 	background: var(--background);
 	font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+}
+
+.container {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
 }

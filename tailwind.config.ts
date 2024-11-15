@@ -13,6 +13,7 @@ const config: Config = {
 		extend: {
 			fontFamily: {
 				messiri: ['var(--font-el-messiri)'],
+				montserrat: ['var(--font-montserrat)'],
 			},
 			colors: {
 				background: "var(--background)",
@@ -20,6 +21,11 @@ const config: Config = {
 				gray: "var(--gray)",
 				'dark-gray': "var(--dark-gray)",
 				green: "var(--green)",
+				'dark-blue': "var(--dark-blue)",
+				'dark-white': "var(--dark-white)",
+				'dark-text-color': "var(--dark-blue)",
+				'light-info-color': "var(--dark-white)",
+				'dark-info-color': "var(--blue)",
 			},
 		},
 	},
