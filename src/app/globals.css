@@ -11,6 +11,9 @@
 	--dark-blue: #1D2836;
 	--blue: #0E276B;
 	--dark-white: #E9EFFF;
+
+	--max-w-xl:1600px;
+	--half-max-w-xl: calc(var(--max-w-xl) / 2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,7 +31,17 @@ body {
 
 .container {
 	/* max-width: 1232px; */
-	max-width: 1600px;
+	max-width: var(--max-w-xl);
 	margin-left: auto;
+	margin-right: auto;
+}
+
+.semi-container-l {
+	max-width: var(--half-max-w-xl);
+	margin-left: auto;
+}
+
+.semi-container-r {
+	max-width: var(--half-max-w-xl);
 	margin-right: auto;
 }
