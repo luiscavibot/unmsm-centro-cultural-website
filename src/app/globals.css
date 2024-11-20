@@ -5,6 +5,7 @@
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
+	--black: #060707;
 	--gray: #2A2D31;
 	--dark-gray: #171A1D;
 	--green: #063E40;
@@ -44,4 +45,8 @@ body {
 .semi-container-r {
 	max-width: var(--half-max-w-xl);
 	margin-right: auto;
+}
+
+.link {
+	@apply hover:font-semibold underline transition-all duration-200;
 }
