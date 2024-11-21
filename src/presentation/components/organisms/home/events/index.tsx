@@ -47,7 +47,7 @@ const Events: React.FC = () => {
 	}, [])
 
 	return (
-		<>
+		<section id="eventos" className="scroll-mt-28">
 			<h2 className="hidden sr-only">Eventos</h2>
 			<div>
 				<article ref={elementWrapperRef} className="h-[720px] relative bg-white px-[104px]">
@@ -71,7 +71,7 @@ const Events: React.FC = () => {
 					</div>
 				</article>
 			</div>
-		</>
+		</section>
 	)
 }
 
