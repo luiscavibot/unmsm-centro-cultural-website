@@ -10,8 +10,10 @@
 	--dark-gray: #171A1D;
 	--green: #063E40;
 	--dark-blue: #1D2836;
+	--dark-blue-2: #29384C;
 	--blue: #0E276B;
 	--dark-white: #E9EFFF;
+	--red: #9C162B;
 
 	--max-w-xl:1600px;
 	--half-max-w-xl: calc(var(--max-w-xl) / 2);
