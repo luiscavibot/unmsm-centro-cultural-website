@@ -22,7 +22,7 @@ const ArtisticDisciplines = () => {
 						</div>
 					</div>
 					<div className="space-y-6">
-						<div className="text-center">
+						<div className="text-center mb-12">
 							<h2 className="font-messiri text-[40px] font-semibold">Disciplinas artísticas</h2>
 							<p className="mt-[14px] leading-[24px]">Esta sección celebra el talento y la creatividad de estudiantes y maestros que dan vida a expresiones únicas.</p>
 							<Link href="/disciplinas-artisticas" className="link">Leer más</Link>
