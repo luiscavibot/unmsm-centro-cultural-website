@@ -3,7 +3,7 @@ import React from 'react'
 
 const CoursesAndWorkshops = () => {
 	return (
-		<section id="cursos-y-talleres">
+		<section id="cursos-y-talleres" className="scroll-mt-28">
 			<h2 className="hidden sr-only">Cursos y Talleres</h2>
 			<div>
 				<article className="relative px-[104px] pt-[96px] pb-[56px] h-[720px]">
