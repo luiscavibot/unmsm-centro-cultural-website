@@ -50,26 +50,26 @@ const Events: React.FC = () => {
 		<>
 			<h2 className="hidden sr-only">Eventos</h2>
 			<div>
-				<div ref={elementWrapperRef} className="h-[720px] relative bg-white px-[104px]">
-					<div className="absolute top-0 left-0 w-[57%] h-full">
+				<article ref={elementWrapperRef} className="h-[720px] relative bg-white px-[104px]">
+					<figure className="absolute top-0 left-0 w-[57%] h-full">
 						<Image src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/eventos.png" className="object-cover" alt="events" fill />
-					</div>
+					</figure>
 					<div ref={elementContainerRef} className="grid h-[720px] container" style={{ gridTemplateColumns: `${percentage}% auto` }}>
-						<div></div>
-						<div className="bg-white text-dark-text-color pl-16 py-14 flex items-end">
-							{/* <div className="max-w-[450px]"> */}
-							<div className="">
-								<h3 className="text-[40px] font-bold leading-[normal] mb-4">Cine al aire libre: «Capitalismos capitales»</h3>
+						<div className="bg-white text-dark-text-color pl-16 py-14 flex items-end col-start-2">
+							<div>
+								<header>
+									<h3 className="text-[40px] font-bold leading-[normal] mb-4">Cine al aire libre: «Capitalismos capitales»</h3>
+								</header>
 								<p className="leading-6">En colaboración con la Dirección de Cine y Producción Audiovisual buscamos visibilizar la importancia de la preservación y restauración del patrimonio cinematográfico nacional.</p>
 								<div className="leading-[normal] text-sm font-semibold mt-5 space-y-3">
-									<p>Viernes, 16 de noviembre</p>
-									<p>3:30 p.m.</p>
+									<time dateTime="2024-11-16">Viernes, 16 de noviembre</time>
+									<time dateTime="15:30:00-05:00">3:30 p.m.</time>
 									<p>Virtual (Vía transmisión Facebook Live)</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</article>
 			</div>
 		</>
 	)
