@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { El_Messiri, Montserrat } from 'next/font/google';
 import './globals.css';
-import Footer from '@/presentation/components/organisms/shared/footer';
-import Header from '@/presentation/components/organisms/shared/header';
+import Header from '@/infrastructure/ui/components/organisms/shared/header';
+import Footer from '@/infrastructure/ui/components/organisms/shared/footer';
 
 const elMessiri = El_Messiri({
 	subsets: ['latin'],

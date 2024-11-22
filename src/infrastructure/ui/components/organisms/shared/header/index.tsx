@@ -1,7 +1,7 @@
 // app/components/organisms/Header.tsx
 import React from 'react';
 import Image from 'next/image';
-import NavigationLink from '@/presentation/components/molecules/navigation-link';
+import NavigationLink from '../../../molecules/navigation-link';
 
 const Header: React.FC = () => (
 	<header>
