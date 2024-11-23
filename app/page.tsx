@@ -7,8 +7,16 @@ import Hero from '@/infrastructure/ui/components/organisms/home/hero';
 import Library from '@/infrastructure/ui/components/organisms/home/library';
 import Museums from '@/infrastructure/ui/components/organisms/home/museums';
 import News from '@/infrastructure/ui/components/organisms/home/news';
+import { getInjection } from '../di/container';
 
-export default function Home() {
+export default async function Home() {
+	const getPrincipalCoversUseCase = getInjection(
+		'IGetPrincipalCoversUseCase'
+	);
+
+	const data = await getPrincipalCoversUseCase.execute();
+	console.log('Data---->', data);
+
 	return (
 		<>
 			<h1 className="hidden sr-only">Centro Cultural de San Marcos</h1>
