@@ -10,12 +10,11 @@ import News from '@/infrastructure/ui/components/organisms/home/news';
 import { getInjection } from '../di/container';
 
 export default async function Home() {
-	const getPrincipalCoversUseCase = getInjection(
-		'IGetPrincipalCoversUseCase'
+	const principalCoversController = getInjection(
+		'IPrincipalCoversController'
 	);
 
-	const data = await getPrincipalCoversUseCase.execute();
-	console.log('Data---->', data);
+	const data = await principalCoversController.getAll();
 
 	return (
 		<>

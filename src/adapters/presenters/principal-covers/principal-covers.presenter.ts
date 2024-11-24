@@ -1,18 +1,29 @@
 import { PrincipalCover } from '@/enterprise/entities/models/principal-cover';
-import { StrapiPrincipalCoversResponse } from './strapi-principal-covers.interface';
+import { PrincipalCoverSchema } from '@/enterprise/entities/models/principal-cover';
+import { z } from 'zod';
+
+const PrincipalCoversPresenterRespSchema = PrincipalCoverSchema.extend({
+	id: z.string(),
+});
+
+export type PrincipalCoversPresenterResp = z.infer<
+	typeof PrincipalCoversPresenterRespSchema
+>;
 
 export interface IPrincipalCoversPresenter {
-	convert(response: any): PrincipalCover[];
+	toUi(response: PrincipalCover[] | null): PrincipalCoversPresenterResp[];
 }
 
-export class PrincipalCoversPresenterToStrapi
-	implements IPrincipalCoversPresenter
-{
-	convert(response: StrapiPrincipalCoversResponse): PrincipalCover[] {
-		return response.data.attributes.imagenes.data.map((cover) => ({
-			id: cover.id,
-			url: cover.attributes.url,
-			alt: cover.attributes.alternativeText,
-		}));
+export class PrincipalCoversPresenter implements IPrincipalCoversPresenter {
+	constructor() {}
+	toUi(response: PrincipalCover[] | null): PrincipalCoversPresenterResp[] {
+		if (!response) return [];
+		return response.map((cover: PrincipalCover) => {
+			return {
+				id: cover.id.toString(),
+				url: cover.url,
+				alt: cover.alt,
+			};
+		});
 	}
 }

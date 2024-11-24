@@ -1,0 +1,16 @@
+import { PrincipalCover } from '@/enterprise/entities/models/principal-cover';
+import { StrapiPrincipalCoversResponse } from './strapi-principal-covers-response.interface';
+
+export interface IPrincipalCoversMapper {
+	toDomain(response: any): PrincipalCover[];
+}
+
+export class PrincipalCoversMapperToStrapi implements IPrincipalCoversMapper {
+	toDomain(response: StrapiPrincipalCoversResponse): PrincipalCover[] {
+		return response.data.attributes.imagenes.data.map((cover) => ({
+			id: cover.id,
+			url: cover.attributes.url,
+			alt: cover.attributes.alternativeText,
+		}));
+	}
+}

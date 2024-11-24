@@ -1,3 +1,5 @@
+import { IPrincipalCoversController } from '@/adapters/controllers/principal-covers/get-principal-covers.controller';
+import { IPrincipalCoversMapper } from '@/adapters/mappers/principal-covers/principal-covers.mappers';
 import { IPrincipalCoversPresenter } from '@/adapters/presenters/principal-covers/principal-covers.presenter';
 import { IGetPrincipalCoversUseCase } from '@/application/use-cases/principal-covers/get-principal-covers.use-case';
 import { IPrincipalCoversRepository } from '@/enterprise/interfaces/repositories/principal-covers.repository.interface';
@@ -9,6 +11,10 @@ export const DI_SYMBOLS = {
 	IGetPrincipalCoversUseCase: Symbol.for('IGetPrincipalCoversUseCase'),
 	//Presenters
 	IPrincipalCoversPresenter: Symbol.for('IPrincipalCoversPresenter'),
+	//Controllers
+	IPrincipalCoversController: Symbol.for('IPrincipalCoversController'),
+	//Mappers
+	IPrincipalCoversMapper: Symbol.for('IPrincipalCoversMapper'),
 };
 
 export interface DI_RETURN_TYPES {
@@ -18,4 +24,8 @@ export interface DI_RETURN_TYPES {
 	IGetPrincipalCoversUseCase: IGetPrincipalCoversUseCase;
 	//Presenters
 	IPrincipalCoversPresenter: IPrincipalCoversPresenter;
+	//Controllers
+	IPrincipalCoversController: IPrincipalCoversController;
+	//Mappers
+	IPrincipalCoversMapper: IPrincipalCoversMapper;
 }
