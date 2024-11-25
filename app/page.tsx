@@ -1,4 +1,3 @@
-'use client';
 import ArtisticDisciplines from '@/infrastructure/ui/components/organisms/home/artistic-disciplines';
 import Contact from '@/infrastructure/ui/components/organisms/home/contact';
 import CoursesAndWorkshops from '@/infrastructure/ui/components/organisms/home/courses-and-workshops';
