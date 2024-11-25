@@ -1,5 +1,5 @@
 import { PrincipalCover } from '@/enterprise/entities/models/principal-cover';
-import { StrapiPrincipalCoversResponse } from './strapi-principal-covers-response.interface';
+import { StrapiPrincipalCoversResponse } from '../../../infrastructure/interfaces/strapi-principal-covers-response.interface';
 
 export interface IPrincipalCoversMapper {
 	toDomain(response: any): PrincipalCover[];

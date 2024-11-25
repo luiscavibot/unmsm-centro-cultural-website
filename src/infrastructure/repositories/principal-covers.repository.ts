@@ -1,7 +1,7 @@
-import { StrapiPrincipalCoversResponse } from '@/adapters/mappers/principal-covers/strapi-principal-covers-response.interface';
+import { StrapiPrincipalCoversResponse } from '@/infrastructure/interfaces/strapi-principal-covers-response.interface';
 import { IPrincipalCoversRepository } from '@/enterprise/interfaces/repositories/principal-covers.repository.interface';
-import axios from 'axios';
 import { IPrincipalCoversMapper } from '@/adapters/mappers/principal-covers/principal-covers.mappers';
+import { strapiBackInstance } from '../data-source/strapi-back-instance';
 
 export class PrincipalCoversRepositoryFromStrapi
 	implements IPrincipalCoversRepository
@@ -12,9 +12,14 @@ export class PrincipalCoversRepositoryFromStrapi
 
 	async getPrincipalCovers() {
 		try {
-			const response = await axios.get<StrapiPrincipalCoversResponse>(
-				'https://biologiaadmin2.unmsm.edu.pe/api/imagen-portada?populate[imagenes][fields][0]=url&populate[imagenes][fields][1]=alternativeText'
-			);
+			const params = new URLSearchParams();
+			params.append('populate[imagenes][fields][0]', 'url');
+			params.append('populate[imagenes][fields][1]', 'alternativeText');
+			const response =
+				await strapiBackInstance.get<StrapiPrincipalCoversResponse>(
+					'/imagen-portada',
+					{ params }
+				);
 			return this.principalCoversMapper.toDomain(response.data);
 		} catch (error) {
 			console.log(error);
