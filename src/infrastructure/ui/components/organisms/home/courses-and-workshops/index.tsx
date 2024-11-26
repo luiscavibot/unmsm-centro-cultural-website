@@ -1,27 +1,64 @@
-import Image from 'next/image'
-import React from 'react'
+'use client'
+
+import React, { useRef } from 'react'
+import CoursesAndWorkshopsHomeCard from '@/infrastructure/ui/components/molecules/courses-and-workshops-home-card'
+import coursesAndWorkshopsDataToHome from '@/infrastructure/ui/mocks/courses-and-workshops-data-to-home'
+import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import type { Splide as SplideType } from '@splidejs/splide';
+import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls'
+import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
+
+interface ExtendedSplideType extends SplideType {
+	splide: SplideType;
+}
 
 const CoursesAndWorkshops = () => {
+
+	const splideRef = useRef<ExtendedSplideType>(null);
+
+	const splideOptions = {
+		type: 'slide',
+		width: '100%',
+		perPage: 1,
+		arrows: false,
+		pagination: false,
+		gap: '0px',
+		perMove: 1,
+	};
+
+	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
+
 	return (
-		<section id="cursos-y-talleres" className="scroll-mt-28">
+		<section id="cursos-y-talleres" className="scroll-mt-28 relative">
 			<h2 className="hidden sr-only">Cursos y Talleres</h2>
-			<div>
-				<article className="relative px-[104px] pt-[96px] pb-[56px] h-[720px]">
-					<figure className="absolute top-0 left-0 w-full h-full -z-10">
-						<Image src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/talleres.jpg" className="object-cover" alt="events" fill />
-					</figure>
-					<div aria-hidden="true" className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
-					<div className="container">
-						<div className="max-w-[459px]">
-							<header>
-								<span className="inline-block px-2 py-[6px] bg-light-info-color text-dark-info-color rounded-md font-medium mb-2">Taller</span>
-								<h3 className="text-[40px] font-bold leading-[normal]">Euphonio, tuba, trompeta y trombón</h3>
-								<p className="mt-2 text-xl font-semibold leading-[20px]">Dirección de Música UNMSM</p>
-							</header>
-							<p className="mt-6 font-medium leading-[24px]">El presente programa pedagógico busca dotar al alumno de herramientas técnicas para la interpretación adecuada de los instrumentos de metales a través de recursos pedagógicos, técnicas de estudio, libros de estudio y exploración de repertorio universal propio del instrumento. </p>
-						</div>
-					</div>
-				</article>
+			<Splide
+				onMoved={handleMove}
+				ref={splideRef}
+				hasTrack={false}
+				options={splideOptions}
+			>
+				<SplideTrack>
+					{coursesAndWorkshopsDataToHome.map((course, index) => (
+						<SplideSlide key={index}>
+							<CoursesAndWorkshopsHomeCard key={index} {...course} />
+						</SplideSlide>
+					))}
+				</SplideTrack>
+			</Splide>
+			<div className="absolute bottom-[56px] px-[104px] w-full">
+				<div className="container flex justify-end gap-x-2 relative">
+					<ArrowButton
+						onClick={handlePrev}
+						direction="left"
+						disabled={isPrevDisabled}
+					/>
+					<ArrowButton
+						onClick={handleNext}
+						direction="right"
+						disabled={isNextDisabled}
+					/>
+				</div>
 			</div>
 		</section>
 	)

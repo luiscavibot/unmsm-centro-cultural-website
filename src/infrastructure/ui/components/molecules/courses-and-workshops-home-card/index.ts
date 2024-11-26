@@ -1,0 +1,1 @@
+export { default } from './courses-and-workshops-home-card'
