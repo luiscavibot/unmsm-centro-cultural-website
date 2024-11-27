@@ -8,6 +8,8 @@ import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-butt
 import NewsCard from '@/infrastructure/ui/components/molecules/news-card';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls'
 import newsDataToHome from '@/infrastructure/ui/mocks/news-data-to-home';
+import ExternalLinkIcon from '../../../atoms/icons/external-link-icon';
+import Link from 'next/link';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -32,7 +34,12 @@ const News = () => {
 	return (
 		<section className="px-[104px] py-[56px] bg-red-custom scroll-mt-28" id="noticias">
 			<div className="container grid grid-cols-[auto_minmax(0,1fr)] items-center justify-between gap-x-14">
-				<h2 className="font-messiri text-[40px]">Noticias</h2>
+				<div className="flex flex-row items-center justify-center p-2 gap-2">
+					<h2 className="font-messiri text-[40px]">Noticias</h2>
+					<Link href="/noticias">
+						<ExternalLinkIcon color="white" />
+					</Link>
+				</div>
 				<div id="slider">
 					<Splide
 						onMoved={handleMove}
