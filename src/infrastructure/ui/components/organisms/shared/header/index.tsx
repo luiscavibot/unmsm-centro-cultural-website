@@ -40,7 +40,11 @@ const Header: React.FC = () => (
 				<NavigationLink href="/cursos-y-talleres">
 					Cursos y Talleres
 				</NavigationLink>
+				<NavigationLink href="/disciplinas-artisticas">Disciplinas artísticas</NavigationLink>
+				<NavigationLink href="/museos">Museos</NavigationLink>
+				<NavigationLink href="/visitanos">Visítanos</NavigationLink>
 				<NavigationLink href="/biblioteca">Biblioteca</NavigationLink>
+				<NavigationLink href="/nosotros">Nosotros</NavigationLink>
 			</div>
 		</nav>
 	</header>
