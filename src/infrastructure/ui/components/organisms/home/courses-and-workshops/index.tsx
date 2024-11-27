@@ -18,7 +18,7 @@ const CoursesAndWorkshops = () => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
-		type: 'slide',
+		type: 'fade',
 		width: '100%',
 		perPage: 1,
 		arrows: false,
