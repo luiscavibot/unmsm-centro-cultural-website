@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Library = () => {
 	return (
@@ -13,6 +14,9 @@ const Library = () => {
 					<div className="max-w-[606px] text-center">
 						<h2 className="text-[32px] font-bold leading-[normal]">Biblioteca España de las Artes</h2>
 						<p className="mt-2 leading-[24px]">Contamos con una gran variedad de recursos bibliográficos en diferentes formatos y disciplinas; siendo también un espacio de recreación y fomento de actividades culturales.</p>
+						<Link className="p-4 border-[1px] border-white rounded-lg inline-flex items-center mt-8" href="/contactanos">
+							<span className="leading-[16px] font-semibold inline-block">Explorar</span>
+						</Link>
 					</div>
 				</div>
 			</div>
