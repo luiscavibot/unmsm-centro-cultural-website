@@ -4,6 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react'
 import useResponsivePercentage from '@/infrastructure/ui/hooks/useResponsivePercentage';
+import DateRangeIcon from '@/infrastructure/ui/components/atoms/icons/date-range-icon';
+import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
+import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
 
 interface EventsHomeCardProps {
 	href: string;
@@ -51,16 +54,25 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({ href, imageUrl, title, summar
 						<p className="leading-6">
 							{summary}
 						</p>
-						<div className="leading-[normal] text-sm font-semibold mt-5 space-y-3">
-							<time className="block" dateTime={date}>
-								{dateString}
-							</time>
-							<time className="block" dateTime={time}>
-								{timeString}
-							</time>
-							<p>
-								{location}
-							</p>
+						<div className="leading-[normal] text-sm font-semibold mt-5 space-y-1">
+							<div className="flex p-1 gap-2 items-center">
+								<DateRangeIcon className="shrink-0" ariaLabel="Fecha" color="dark" />
+								<time className="block" dateTime={date}>
+									{dateString}
+								</time>
+							</div>
+							<div className="flex p-1 gap-2 items-center">
+								<ClockIcon className="shrink-0" ariaLabel="Hora" color="dark" />
+								<time className="block" dateTime={time}>
+									{timeString}
+								</time>
+							</div>
+							<div className="flex p-1 gap-2 items-center">
+								<OutlinePlaceIcon className="shrink-0" ariaLabel="Lugar" color="dark" />
+								<p>
+									{location}
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
