@@ -7,7 +7,7 @@ import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/ins
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
 import Link from 'next/link';
-import CalendarHomeIcon from '../../../atoms/icons/calendar-home-icon';
+import CalendarHeaderIcon from '../../../atoms/icons/calendar-header-icon';
 
 const Header: React.FC = () => (
 	<header>
@@ -36,7 +36,7 @@ const Header: React.FC = () => (
 					/>
 				</Link>
 				<Link className="flex flex-row gap-2 items-center px-[12px] py-[13px] border-[1px] border-white rounded-lg" href="/agenda">
-					<CalendarHomeIcon />
+					<CalendarHeaderIcon />
 					<span className="text-sm">Agenda cultural</span>
 				</Link>
 			</div>

@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 
-interface CalendarHomeIconProps {
+interface CalendarHeaderIconProps {
 	color?: 'white';
 }
 
-const CalendarHomeIcon: FC<CalendarHomeIconProps> = ({ color = 'white' }) => {
+const CalendarHeaderIcon: FC<CalendarHeaderIconProps> = ({ color = 'white' }) => {
 
 	const colors = {
 		white: 'stroke-white'
@@ -17,4 +17,4 @@ const CalendarHomeIcon: FC<CalendarHomeIconProps> = ({ color = 'white' }) => {
 	)
 }
 
-export default CalendarHomeIcon
+export default CalendarHeaderIcon
