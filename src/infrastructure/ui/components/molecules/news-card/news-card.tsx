@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CalendarIcon from "../../atoms/icons/calendar-icon";
 
 interface NewsCardProps {
 	imageUrl: string;
@@ -18,7 +19,10 @@ const NewsCard: React.FC<NewsCardProps> = ({ imageUrl, date, dateString, title, 
 			</figure>
 			<div className="bg-white p-6 w-[380px] flex-shrink-0">
 				<header>
-					<time dateTime={date} className="text-dark-blue-2 text-sm leading-[21px] mb-1">{dateString}</time>
+					<div className="flex flex-row items-center justify-start gap-2 mb-1">
+						<CalendarIcon className="shrink-0" ariaLabel="Fecha" color="dark" />
+						<time dateTime={date} className="text-dark-blue-2 text-sm leading-[21px]">{dateString}</time>
+					</div>
 					<h3 className="line-clamp-3 text-xl text-dark-blue font-semibold leading-[30px]">{title}</h3>
 				</header>
 				<p className="line-clamp-3 text-dark-blue-2 text-sm leading-[21px] mt-1">{description}</p>
