@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
 						))}
 					</Splide>
 				</div>
-				<div className="bg-dark-gray opacity-40 absolute w-full h-full inset-0"></div>
+				<div className="bg-gradiente-carrusel-portada opacity-40 absolute w-full h-full inset-0"></div>
 				<div className="relative px-[104px] h-[720px]">
 					<div className="container h-full flex justify-start items-center">
 						<h2 className="leading-[48px] w-[477px] font-messiri font-bold">

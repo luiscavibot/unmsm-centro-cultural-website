@@ -15,6 +15,10 @@ const config: Config = {
 				messiri: ['var(--font-el-messiri)'],
 				montserrat: ['var(--font-montserrat)'],
 			},
+			backgroundImage: {
+				'gradiente-carrusel-portada':
+					'linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 62%)',
+			},
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
