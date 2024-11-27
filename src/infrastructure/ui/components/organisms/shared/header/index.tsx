@@ -6,6 +6,8 @@ import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/face
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
+import Link from 'next/link';
+import CalendarHomeIcon from '../../../atoms/icons/calendar-home-icon';
 
 const Header: React.FC = () => (
 	<header>
@@ -25,13 +27,18 @@ const Header: React.FC = () => (
 						<YoutubeIcon />
 					</a>
 				</div>
-				<Image
-					src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/logo-ccsm.svg"
-					alt="logo"
-					width={162}
-					height={40}
-				/>
-				<p>agenda</p>
+				<Link className="px-2" href="/">
+					<Image
+						src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/logo-ccsm.svg"
+						alt="logo"
+						width={162}
+						height={40}
+					/>
+				</Link>
+				<Link className="flex flex-row gap-2 items-center px-[12px] py-[13px] border-[1px] border-white rounded-lg" href="/agenda">
+					<CalendarHomeIcon />
+					<span className="text-sm">Agenda cultural</span>
+				</Link>
 			</div>
 		</div>
 		<nav className="px-[104px] gap-5 bg-dark-gray">
