@@ -25,6 +25,7 @@ const config: Config = {
 				'black-custom': "var(--black)",
 				gray: "var(--gray)",
 				'dark-gray': "var(--dark-gray)",
+				'dark-gray-2': "var(--dark-gray-2)",
 				green: "var(--green)",
 				'dark-blue': "var(--dark-blue)",
 				'dark-blue-2': "var(--dark-blue-2)",

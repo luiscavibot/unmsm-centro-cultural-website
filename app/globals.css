@@ -9,6 +9,7 @@
 	--gray: #2A2D31;
 	--light-gray: #999B9D;
 	--dark-gray: #171A1D;
+	--dark-gray-2: #212529;
 	--green: #063E40;
 	--dark-blue: #1D2836;
 	--dark-blue-2: #29384C;
@@ -18,7 +19,7 @@
 	--dark-white-3: #EAEBED;
 	--red: #9C162B;
 
-	--max-w-xl:1600px;
+	--max-w-xl: 1600px;
 	--half-max-w-xl: calc(var(--max-w-xl) / 2);
 }
 
@@ -59,13 +60,16 @@ body {
 .dynamic-image {
 	animation: animate-dynamic-image 20s linear infinite;
 }
+
 @keyframes animate-dynamic-image {
 	0% {
 		transform: scale(1);
 	}
+
 	50% {
 		transform: scale(1.1);
 	}
+
 	100% {
 		transform: scale(1);
 	}
