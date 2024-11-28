@@ -2,13 +2,12 @@ import React, { FC } from 'react'
 
 interface ArrowIconProps {
 	direction?: "right" | "left";
-	disabled?: boolean;
+	fillColor?: string;
 }
 
-const ArrowIcon: FC<ArrowIconProps> = ({ direction = "right", disabled = false }) => {
+const ArrowIcon: FC<ArrowIconProps> = ({ direction = 'right', fillColor }) => {
 
 	const rotation = direction === "left" ? "rotate-180" : "";
-	const fillColor = disabled ? "fill-light-arrow-color" : "fill-dark-arrow-color";
 
 	return (
 		<svg

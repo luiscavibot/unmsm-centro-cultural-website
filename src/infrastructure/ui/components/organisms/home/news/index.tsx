@@ -57,11 +57,13 @@ const News = () => {
 					</Splide>
 					<div className="flex justify-end gap-x-2 relative mt-4">
 						<ArrowButton
+							theme="light"
 							onClick={handlePrev}
 							direction="left"
 							disabled={isPrevDisabled}
 						/>
 						<ArrowButton
+							theme="light"
 							onClick={handleNext}
 							direction="right"
 							disabled={isNextDisabled}

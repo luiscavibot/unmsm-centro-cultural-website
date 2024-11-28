@@ -49,11 +49,13 @@ const CoursesAndWorkshops = () => {
 			<div className="absolute bottom-[56px] px-[104px] w-full">
 				<div className="container flex justify-end gap-x-2 relative">
 					<ArrowButton
+						theme="light"
 						onClick={handlePrev}
 						direction="left"
 						disabled={isPrevDisabled}
 					/>
 					<ArrowButton
+						theme="light"
 						onClick={handleNext}
 						direction="right"
 						disabled={isNextDisabled}

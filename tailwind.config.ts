@@ -19,6 +19,20 @@ const config: Config = {
 				'gradiente-carrusel-portada':
 					'linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 62%)',
 			},
+			backgroundColor: {
+				'light-arrow-button-color': {
+					DEFAULT: "var(--dark-white-2)",
+					hover: "var(--dark-white-2)",
+					pressed: "var(--light-gray)",
+					disabled: "var(--light-gray)",
+				},
+				'dark-arrow-button-color': {
+					DEFAULT: "var(--gray)",
+					hover: "var(--dark-gray)",
+					pressed: "var(--black)",
+					disabled: "var(--light-gray)",
+				},
+			},
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
@@ -34,10 +48,18 @@ const config: Config = {
 				'light-info-color': "var(--dark-white)",
 				'dark-info-color': "var(--blue)",
 				'red-custom': "var(--red)",
-				'light-arrow-button-color': "var(--dark-white-2)",
-				'light-arrow-color': "var(--dark-white-3)",
-				'dark-arrow-button-color': "var(--light-gray)",
-				'dark-arrow-color': "var(--gray)",
+				'light-arrow-color': {
+					DEFAULT: "var(--gray)",
+					hover: "var(--dark-gray)",
+					pressed: "var(--gray)",
+					disabled: "var(--dark-white-3)",
+				},
+				'dark-arrow-color': {
+					DEFAULT: "#fff",
+					hover: "#fff",
+					pressed: "#fff",
+					disabled: "var(--dark-white-3)",
+				},
 				'light-bg-button-color': "var(--dark-white-2)",
 				'light-text-button-color': "var(--gray)",
 			},
