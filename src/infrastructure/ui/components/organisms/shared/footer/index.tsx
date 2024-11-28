@@ -6,6 +6,9 @@ import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/face
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
+import BaselinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/baseline-place-icon';
+import PhoneIcon from '@/infrastructure/ui/components/atoms/icons/phone-icon';
+import BaselineEmailIcon from '@/infrastructure/ui/components/atoms/icons/baseline-email-icon';
 
 const Footer: React.FC = () => (
 	<footer className="bg-dark-gray text-white">
@@ -36,7 +39,7 @@ const Footer: React.FC = () => (
 						</a>
 					</div>
 				</div>
-				<address className="max-w-[386px] leading-[16.8px] not-italic flex flex-col gap-y-8">
+				<div className="max-w-[386px] leading-[16.8px] flex flex-col gap-y-8">
 					<div>
 						<p className="text-base font-bold">Ubicación:</p>
 						<p>
@@ -45,22 +48,25 @@ const Footer: React.FC = () => (
 							Parque Universitario, Centro Histórico de Lima
 						</p>
 					</div>
-					<div className="space-y-4 text-sm">
-						<div>
+					<address className="space-y-4 text-sm not-italic">
+						<p className="flex items-baseline gap-2">
+							<BaselinePlaceIcon className="shrink-0 relative top-1" ariaLabel="Ubicación" color="white" />
 							<span>Parque Universitario, de, Av. Nicolás de Piérola 1222, Cercado de Lima 15001</span>
-						</div>
-						<div>
+						</p>
+						<p className="flex items-baseline gap-2">
+							<PhoneIcon className="shrink-0 relative top-1" ariaLabel="Teléfono" color="white" />
 							<span>(01) 6197000</span>
-						</div>
-						<div>
+						</p>
+						<p className="flex items-baseline gap-2">
+							<BaselineEmailIcon className="shrink-0 relative top-1" ariaLabel="Correo electrónico" color="white" />
 							<span>correo.ccsm@unmsm.edu.pe</span>
-						</div>
-					</div>
-				</address>
+						</p>
+					</address>
+				</div>
 			</div>
 		</div>
 		<div className="bg-black-custom flex px-16 py-1 items-center justify-center">
-			<span className="leading-[15px] text-[10px] font-light">2024 | All Right Reserved. Centro Cultural de San Marcos</span>
+			<small className="leading-[15px] text-[10px] font-light">2024 | All Right Reserved. Centro Cultural de San Marcos</small>
 		</div>
 	</footer>
 );
