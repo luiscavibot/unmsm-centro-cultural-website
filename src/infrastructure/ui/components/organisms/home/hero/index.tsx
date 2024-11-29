@@ -15,6 +15,7 @@ const Hero: React.FC = () => {
 			<div className="relative overflow-hidden">
 				<div className="absolute inset-0 dynamic-image h-full">
 					<Splide
+						id="hero-slider"
 						aria-label="carrusel inicial"
 						options={{
 							type: 'fade',
@@ -46,7 +47,7 @@ const Hero: React.FC = () => {
 									width={2732}
 									height={1232}
 									quality={100}
-									className="w-auto h-full md:w-full md:h-auto object-cover"
+									className="w-auto h-full md:w-full object-cover"
 									sizes="100vw"
 								/>
 							</SplideSlide>

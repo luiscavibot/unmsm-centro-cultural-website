@@ -74,3 +74,9 @@ body {
 		transform: scale(1);
 	}
 }
+
+#hero-slider {
+	div {
+		@apply h-full;
+	}
+}
