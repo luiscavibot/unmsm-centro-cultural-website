@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const ArtisticDisciplines = () => {
+const ArtisticDirections: React.FC = () => {
 	return (
-		<section className="px-[104px] py-[104px] bg-black-custom scroll-mt-28" id="disciplinas-artisticas">
+		<section className="px-[104px] py-[104px] bg-black-custom scroll-mt-28" id="direcciones-artisticas">
 			<div className="container grid grid-cols-3 gap-6">
 				<div className="space-y-6">
 					<div className="relative w-full aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
@@ -22,9 +22,9 @@ const ArtisticDisciplines = () => {
 				</div>
 				<div className="space-y-6">
 					<div className="text-center mb-12">
-						<h2 className="font-messiri text-[40px] font-semibold">Disciplinas artísticas</h2>
+						<h2 className="font-messiri text-[40px] font-semibold">Direcciones artísticas</h2>
 						<p className="mt-[14px] leading-[24px]">Esta sección celebra el talento y la creatividad de estudiantes y maestros que dan vida a expresiones únicas.</p>
-						<Link href="/disciplinas-artisticas" className="link">Leer más</Link>
+						<Link href="/direcciones-artisticas" className="link">Leer más</Link>
 					</div>
 					<div className="relative w-full aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
 						<div className="absolute top-0 left-0 w-full h-full">
@@ -40,7 +40,7 @@ const ArtisticDisciplines = () => {
 					</div>
 				</div>
 				<div className="space-y-6">
-				<div className="relative w-full aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
+					<div className="relative w-full aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
 						<div className="absolute top-0 left-0 w-full h-full">
 							<Image src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/ballet.webp" className="object-cover" alt="Ballet" fill />
 						</div>
@@ -58,4 +58,4 @@ const ArtisticDisciplines = () => {
 	)
 }
 
-export default ArtisticDisciplines
+export default ArtisticDirections

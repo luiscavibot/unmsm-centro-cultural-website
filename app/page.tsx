@@ -1,4 +1,4 @@
-import ArtisticDisciplines from '@/infrastructure/ui/components/organisms/home/artistic-disciplines';
+import ArtisticDirections from '@/infrastructure/ui/components/organisms/home/artistic-directions';
 import Contact from '@/infrastructure/ui/components/organisms/home/contact';
 import CoursesAndWorkshops from '@/infrastructure/ui/components/organisms/home/courses-and-workshops';
 import Events from '@/infrastructure/ui/components/organisms/home/events';
@@ -28,7 +28,7 @@ export default async function Home() {
 			<Museums />
 			<Exhibitions />
 			<Library />
-			<ArtisticDisciplines />
+			<ArtisticDirections />
 		</>
 	);
 }
