@@ -29,27 +29,29 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({ href, imageUrl, title, summar
 			ref={wrapperRef}
 			className="h-[720px] relative bg-white px-[104px]"
 		>
-			<figure className="absolute top-0 left-0 w-[57%] h-full">
-				<Image
-					src={imageUrl}
-					className="object-cover"
-					alt="events"
-					fill
-				/>
-			</figure>
+			<Link href={href} className="absolute top-0 left-0 w-[57%] h-full block peer">
+				<figure>
+					<Image
+						src={imageUrl}
+						className="object-cover"
+						alt="events"
+						fill
+					/>
+				</figure>
+			</Link>
 			<div
 				ref={containerRef}
-				className="grid h-[720px] container"
+				className="grid h-[720px] container text-dark-text-color peer-hover:text-dark-red"
 				style={{ gridTemplateColumns: `${percentage}% auto` }}
 			>
-				<div className="bg-white text-dark-text-color pl-16 py-14 flex items-end col-start-2">
+				<div className="bg-white pl-16 py-14 flex items-end col-start-2">
 					<div className="mb-16">
 						<header>
-							<h3 className="text-[40px] font-bold leading-[normal] mb-4">
-								<Link href={href}>
+							<Link className="block text-[40px] font-bold leading-[normal] mb-4 text-inherit hover:text-dark-red transition-colors duration-200" href={href}>
+								<h3>
 									{title}
-								</Link>
-							</h3>
+								</h3>
+							</Link>
 						</header>
 						<p className="leading-6">
 							{summary}

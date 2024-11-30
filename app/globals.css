@@ -18,6 +18,7 @@
 	--dark-white-2: #F9FAFB;
 	--dark-white-3: #EAEBED;
 	--red: #9C162B;
+	--dark-red: #430F10;
 
 	--max-w-xl: 1600px;
 	--half-max-w-xl: calc(var(--max-w-xl) / 2);

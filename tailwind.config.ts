@@ -48,6 +48,7 @@ const config: Config = {
 				'light-info-color': "var(--dark-white)",
 				'dark-info-color': "var(--blue)",
 				'red-custom': "var(--red)",
+				'dark-red': "var(--dark-red)",
 				'light-arrow-color': {
 					DEFAULT: "var(--gray)",
 					hover: "var(--dark-gray)",
