@@ -1,25 +1,74 @@
+'use client'
+
 import Image from 'next/image';
-import React from 'react';
+import React, { useRef } from 'react';
 import OutlineButton from '@/infrastructure/ui/components/atoms/buttons/outline-button';
 
 const Museums = () => {
+
+	const bgRef1 = useRef<HTMLDivElement>(null);
+	const coverRef1 = useRef<HTMLDivElement>(null);
+
+	const bgRef2 = useRef<HTMLDivElement>(null);
+	const coverRef2 = useRef<HTMLDivElement>(null);
+
+	const handleEnter1 = () => {
+		if (bgRef1.current) {
+			bgRef1.current.style.transform = 'scale(1.05)';
+		}
+		if (coverRef1.current) {
+			coverRef1.current.style.transform = 'scale(4)';
+		}
+	};
+
+	const handleLeave1 = () => {
+		if (bgRef1.current) {
+			bgRef1.current.style.transform = 'scale(1)';
+		}
+		if (coverRef1.current) {
+			coverRef1.current.style.transform = 'scale(1)';
+		}
+	};
+
+	const handleEnter2 = () => {
+		if (bgRef2.current) {
+			bgRef2.current.style.transform = 'scale(1.05)';
+		}
+		if (coverRef2.current) {
+			coverRef2.current.style.transform = 'scale(4)';
+		}
+	};
+
+	const handleLeave2 = () => {
+		if (bgRef2.current) {
+			bgRef2.current.style.transform = 'scale(1)';
+		}
+		if (coverRef2.current) {
+			coverRef2.current.style.transform = 'scale(1)';
+		}
+	};
+
 	return (
 		<section id="museos" className="scroll-mt-28">
 			<h2 className="hidden sr-only">Museos</h2>
 			<div className="grid grid-cols-2 h-[480px]">
-				<article className="pl-[104px] h-full relative">
-					<figure className="absolute top-0 left-0 w-full h-full -z-10">
+				<article onMouseEnter={handleEnter1} onMouseLeave={handleLeave1} className="pl-[104px] h-full relative bg-black-custom overflow-hidden">
+					<figure ref={bgRef1} className="absolute -bottom-[25%] -right-[20px] origin-bottom-left transition-transform duration-[800ms] ease-out">
 						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/talleres.jpg"
-							className="object-cover"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arte-san-marcos-1.png"
 							alt="Museo de Arte de San Marcos"
-							fill
+							width={350}
+							height={504}
 						/>
 					</figure>
-					<div
-						aria-hidden="true"
-						className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"
-					></div>
+					<figure ref={coverRef1} className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out">
+						<Image
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arte-san-marcos-2.svg"
+							alt="Museo de Arte de San Marcos"
+							width={801}
+							height={621}
+						/>
+					</figure>
 					<div className="relative pt-[96px] pb-[56px] pr-16 semi-container-l h-full">
 						<header className="max-w-[459px]">
 							<h3 className="text-[32px] font-bold leading-[normal]">
@@ -43,19 +92,23 @@ const Museums = () => {
 						/>
 					</div>
 				</article>
-				<article className="pr-[104px] h-full relative">
-					<figure className="absolute top-0 left-0 w-full h-full -z-10">
+				<article onMouseEnter={handleEnter2} onMouseLeave={handleLeave2} className="pr-[104px] h-full relative bg-dark-red-2 overflow-hidden">
+					<figure ref={bgRef2} className="absolute -bottom-[7%] -right-[164px] origin-bottom-left transition-transform duration-[800ms] ease-out">
 						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/talleres.jpg"
-							className="object-cover"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arqueologia-antropologia-1.png"
 							alt="Museo de Arqueología y Antropología"
-							fill
+							width={432}
+							height={464}
 						/>
 					</figure>
-					<div
-						aria-hidden="true"
-						className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"
-					></div>
+					<figure ref={coverRef2} className="absolute -top-[46%] -right-[270px] transition-transform duration-[800ms] ease-out">
+						<Image
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arqueologia-antropologia-2.svg"
+							alt="Museo de Arqueología y Antropología"
+							width={801}
+							height={621}
+						/>
+					</figure>
 					<div className="relative pt-[96px] pb-[56px] pl-16 semi-container-r h-full">
 						<header className="max-w-[459px]">
 							<h3 className="text-[32px] font-bold leading-[normal]">
