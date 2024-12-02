@@ -10,6 +10,7 @@ import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls'
 import newsDataToHome from '@/infrastructure/ui/mocks/news-data-to-home';
 import ExternalLinkIcon from '../../../atoms/icons/external-link-icon';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -32,8 +33,16 @@ const News = () => {
 	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
 
 	return (
-		<section className="px-[104px] py-[56px] bg-red-custom scroll-mt-28" id="noticias">
-			<div className="container grid grid-cols-[auto_minmax(0,1fr)] items-center justify-between gap-x-14">
+		<section className="px-[104px] py-[56px] bg-red-custom scroll-mt-28 relative overflow-hidden" id="noticias">
+			<div className="absolute -top-[100%] -left-20">
+				<Image
+					src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-noticias.svg"
+					alt="bg noticias"
+					width={1000}
+					height={775}
+				/>
+			</div>
+			<div className="container grid grid-cols-[auto_minmax(0,1fr)] items-center justify-between gap-x-14 relative">
 				<div className="flex flex-row items-center justify-center p-2 gap-2">
 					<h2 className="font-messiri text-[40px]">Noticias</h2>
 					<Link href="/noticias">
