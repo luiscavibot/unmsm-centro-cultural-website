@@ -32,6 +32,9 @@ const config: Config = {
 					pressed: "var(--black)",
 					disabled: "var(--light-gray)",
 				},
+				'courses-and-workshops': {
+					DEFAULT: 'var(--dark-gray)',
+				}
 			},
 			colors: {
 				background: "var(--background)",

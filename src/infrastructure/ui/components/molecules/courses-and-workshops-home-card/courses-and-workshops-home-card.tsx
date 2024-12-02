@@ -1,6 +1,8 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import React, { FC, useRef } from 'react';
 
 interface CoursesAndWorkshopsHomeCardProps {
 	href: string;
@@ -19,6 +21,21 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 	subtitle,
 	description,
 }) => {
+
+	const coverRef = useRef<HTMLDivElement>(null);
+
+	const handleMouseEnter = () => {
+		if (coverRef.current) {
+			coverRef.current.style.opacity = '0.8';
+		}
+	};
+
+	const handleMouseLeave = () => {
+		if (coverRef.current) {
+			coverRef.current.style.opacity = '0.64';
+		}
+	};
+
 	return (
 		<article className="relative px-[104px] pt-[96px] pb-[56px] h-[720px]">
 			<figure className="absolute top-0 left-0 w-full h-full -z-10">
@@ -30,11 +47,12 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 				/>
 			</figure>
 			<div
+				ref={coverRef}
 				aria-hidden="true"
-				className="absolute top-0 left-0 w-full h-full -z-10 bg-gradiente-carrusel-portada opacity-40"
+				className="absolute top-0 left-0 w-full h-full -z-10 bg-courses-and-workshops opacity-[64%] transition-opacity duration-200 ease-in-out"
 			></div>
 			<div className="container">
-				<Link className="inline-block" href={href}>
+				<Link onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="inline-block" href={href}>
 					<div className="max-w-[459px]">
 						<header>
 							<span className="inline-block px-2 py-[6px] bg-light-info-color text-dark-info-color rounded-md font-medium mb-2 capitalize">
