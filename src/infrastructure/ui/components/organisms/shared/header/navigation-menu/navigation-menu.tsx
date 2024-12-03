@@ -59,7 +59,7 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, external, FlyoutConte
 									{children}
 									<span
 										style={{
-											transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
+											transform: showFlyout ? "scaleX(1)" : "",
 										}}
 										className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
 									/>
@@ -71,7 +71,7 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, external, FlyoutConte
 										{children}
 										<span
 											style={{
-												transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
+												transform: showFlyout ? "scaleX(1)" : "",
 											}}
 											className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
 										/>
@@ -86,7 +86,7 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, external, FlyoutConte
 							{children}
 							<span
 								style={{
-									transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
+									transform: showFlyout ? "scaleX(1)" : "",
 								}}
 								className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
 							/>
