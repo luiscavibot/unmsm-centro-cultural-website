@@ -45,13 +45,11 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({ href, imageUrl, title, summar
 				style={{ gridTemplateColumns: `${percentage}% auto` }}
 			>
 				<div className="bg-white pl-16 py-14 flex items-end col-start-2">
-					<div className="mb-16">
+					<Link href={href} className="mb-16 hover:text-dark-red transition-colors duration-200">
 						<header>
-							<Link className="block text-[40px] font-bold leading-[normal] mb-4 text-inherit hover:text-dark-red transition-colors duration-200" href={href}>
-								<h3>
-									{title}
-								</h3>
-							</Link>
+							<h3 className="block text-[40px] font-bold leading-[normal] mb-4 text-inherit">
+								{title}
+							</h3>
 						</header>
 						<p className="leading-6">
 							{summary}
@@ -76,7 +74,7 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({ href, imageUrl, title, summar
 								</p>
 							</div>
 						</div>
-					</div>
+					</Link>
 				</div>
 			</div>
 		</article>
