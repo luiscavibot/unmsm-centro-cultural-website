@@ -17,7 +17,7 @@ const Museums = () => {
 			bgRef1.current.style.transform = 'scale(1.05)';
 		}
 		if (coverRef1.current) {
-			coverRef1.current.style.transform = 'scale(2.6)';
+			coverRef1.current.style.transform = 'scale(3.16)';
 		}
 	};
 
@@ -35,7 +35,7 @@ const Museums = () => {
 			bgRef2.current.style.transform = 'scale(1.05)';
 		}
 		if (coverRef2.current) {
-			coverRef2.current.style.transform = 'scale(2.6)';
+			coverRef2.current.style.transform = 'scale(3.16)';
 		}
 	};
 
