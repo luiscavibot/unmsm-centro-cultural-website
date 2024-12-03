@@ -55,25 +55,25 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, external, FlyoutConte
 					<>
 						{
 							external ? (
-								<a href={href} rel="noopener noreferrer" target="_blank" className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white">
+								<a href={href} rel="noopener noreferrer" target="_blank" className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white group">
 									{children}
 									<span
 										style={{
 											transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
 										}}
-										className="absolute -bottom-0 left-0 right-0 h-1 origin-left scale-x-0 rounded-full bg-white transition-transform duration-300 ease-out"
+										className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
 									/>
 								</a>
 							)
 								:
 								(
-									<Link href={href} className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white">
+									<Link href={href} className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white group">
 										{children}
 										<span
 											style={{
 												transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
 											}}
-											className="absolute -bottom-0 left-0 right-0 h-1 origin-left scale-x-0 rounded-full bg-white transition-transform duration-300 ease-out"
+											className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
 										/>
 									</Link>
 								)
@@ -82,13 +82,13 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, external, FlyoutConte
 				)
 					:
 					(
-						<div className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white cursor-default">
+						<div className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white cursor-default group">
 							{children}
 							<span
 								style={{
 									transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
 								}}
-								className="absolute -bottom-0 left-0 right-0 h-1 origin-left scale-x-0 rounded-full bg-white transition-transform duration-300 ease-out"
+								className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
 							/>
 						</div>
 					)
