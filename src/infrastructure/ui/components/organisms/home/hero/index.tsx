@@ -15,6 +15,7 @@ const Hero: React.FC = () => {
 			<div className="relative overflow-hidden">
 				<div className="absolute inset-0 dynamic-image h-full">
 					<Splide
+						className="h-full"
 						id="hero-slider"
 						aria-label="carrusel inicial"
 						options={{
