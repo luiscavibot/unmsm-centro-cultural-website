@@ -101,9 +101,9 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, external, FlyoutConte
 						exit={{ opacity: 0, y: 15 }}
 						style={{ translateX: "-50%" }}
 						transition={{ duration: 0.3, ease: "easeOut" }}
-						className="absolute left-1/2 top-[51px] bg-transparent"
+						className="absolute left-1/2 top-[53px] bg-transparent"
 					>
-						<div className="absolute -top-[2px] left-0 right-0 h-[2px] bg-transparent" />
+						<div className="absolute -top-[4px] left-0 right-0 h-[4px] bg-transparent" />
 						{/* <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" /> */}
 						<FlyoutContent />
 					</motion.div>
