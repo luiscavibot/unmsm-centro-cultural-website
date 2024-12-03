@@ -7,10 +7,11 @@ import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/ins
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
 import Link from 'next/link';
-import CalendarHeaderIcon from '../../../atoms/icons/calendar-header-icon';
+import CalendarHeaderIcon from '@/infrastructure/ui/components/atoms/icons/calendar-header-icon';
+import NavigationMenu from '@/infrastructure/ui/components/organisms/shared/header/navigation-menu';
 
 const Header: React.FC = () => (
-	<header>
+	<header className="sticky top-0 z-50">
 		<div className="py-4 px-[104px] gap-5 bg-gray">
 			<div className="container flex items-center justify-between">
 				<div className="flex flex-row items-center gap-2">
@@ -41,8 +42,8 @@ const Header: React.FC = () => (
 				</Link>
 			</div>
 		</div>
-		<nav className="px-[104px] gap-5 bg-dark-gray">
-			<div className="container flex items-center justify-center space-x-4 text-sm font-semibold leading-[16.8px]">
+		<div className="px-[104px] bg-dark-gray">
+			{/* <div className="container flex items-center justify-center space-x-4 text-sm font-semibold leading-[16.8px]">
 				<NavigationLink href="/noticias">Noticias</NavigationLink>
 				<NavigationLink href="/cursos-y-talleres">
 					Cursos y Talleres
@@ -52,8 +53,9 @@ const Header: React.FC = () => (
 				<NavigationLink href="/visitanos">Visítanos</NavigationLink>
 				<NavigationLink href="/biblioteca">Biblioteca</NavigationLink>
 				<NavigationLink href="/nosotros">Nosotros</NavigationLink>
-			</div>
-		</nav>
+			</div> */}
+			<NavigationMenu />
+		</div>
 	</header>
 );
 
