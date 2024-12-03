@@ -1,7 +1,6 @@
 // app/components/organisms/Header.tsx
 import React from 'react';
 import Image from 'next/image';
-import NavigationLink from '@/infrastructure/ui/components/molecules/navigation-link';
 import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
@@ -42,20 +41,7 @@ const Header: React.FC = () => (
 				</Link>
 			</div>
 		</div>
-		<div className="px-[104px] bg-dark-gray">
-			{/* <div className="container flex items-center justify-center space-x-4 text-sm font-semibold leading-[16.8px]">
-				<NavigationLink href="/noticias">Noticias</NavigationLink>
-				<NavigationLink href="/cursos-y-talleres">
-					Cursos y Talleres
-				</NavigationLink>
-				<NavigationLink href="/direcciones-artisticas">Direcciones artísticas</NavigationLink>
-				<NavigationLink href="/museos">Museos</NavigationLink>
-				<NavigationLink href="/visitanos">Visítanos</NavigationLink>
-				<NavigationLink href="/biblioteca">Biblioteca</NavigationLink>
-				<NavigationLink href="/nosotros">Nosotros</NavigationLink>
-			</div> */}
-			<NavigationMenu />
-		</div>
+		<NavigationMenu />
 	</header>
 );
 

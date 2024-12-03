@@ -1,12 +1,39 @@
 'use client'
 
-import React, { FC, ReactNode, useState } from "react";
+import React, { FC, ReactNode, useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
+import { debounce } from "@/infrastructure/ui/helpers/debounce";
 
 const NavigationMenu = () => {
+
+	const pathname = usePathname();
+	const [scrolled, setScrolled] = useState(false);
+
+	const handleScroll = useCallback(
+		debounce(() => {
+			setScrolled(window.scrollY > 50);
+		}, 100),
+		[]
+	);
+
+	useEffect(() => {
+		if (pathname !== "/") return;
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [pathname, handleScroll]);
+
+	const bgClass =
+		pathname === "/"
+			? scrolled
+				? "bg-dark-gray"
+				: "bg-transparent"
+			: "bg-dark-gray";
+
 	return (
-		<div className="flex justify-center">
+		<div className={`flex justify-center px-[104px] transition-colors duration-[50ms] ${bgClass}`}>
 			<FlyoutLink href="/noticias">
 				Noticias
 			</FlyoutLink>
@@ -35,11 +62,10 @@ const NavigationMenu = () => {
 interface FlyoutLinkProps {
 	children: ReactNode;
 	href?: string;
-	external?: boolean;
 	FlyoutContent?: FC;
 }
 
-const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, external, FlyoutContent }) => {
+const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, FlyoutContent }) => {
 	const [open, setOpen] = useState(false);
 
 	const showFlyout = FlyoutContent && open;
@@ -52,33 +78,15 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, external, FlyoutConte
 		>
 			{
 				href ? (
-					<>
-						{
-							external ? (
-								<a href={href} rel="noopener noreferrer" target="_blank" className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white group">
-									{children}
-									<span
-										style={{
-											transform: showFlyout ? "scaleX(1)" : "",
-										}}
-										className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
-									/>
-								</a>
-							)
-								:
-								(
-									<Link href={href} className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white group">
-										{children}
-										<span
-											style={{
-												transform: showFlyout ? "scaleX(1)" : "",
-											}}
-											className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
-										/>
-									</Link>
-								)
-						}
-					</>
+					<Link href={href} className="text-sm font-semibold relative h-[49px] inline-flex items-center leading-[16.8px] p-4 text-white group">
+						{children}
+						<span
+							style={{
+								transform: showFlyout ? "scaleX(1)" : "",
+							}}
+							className="absolute -bottom-0 left-0 right-0 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out scale-x-0 group-hover:scale-x-100"
+						/>
+					</Link>
 				)
 					:
 					(
