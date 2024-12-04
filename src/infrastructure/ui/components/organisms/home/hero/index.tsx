@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
 						}}
 					>
 						{heroImageDataToHome.map((imagen, index) => (
-							<SplideSlide key={index}>
+							<SplideSlide className="!h-full" key={index}>
 								<Image
 									src={imagen.imageUrl}
 									alt={imagen.caption}
