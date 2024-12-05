@@ -33,7 +33,7 @@ export default function RootLayout({
 			>
 				<div className="flex flex-col min-h-screen">
 					<Header />
-					<main className="relative -mt-[49px]">{children}</main>
+					<main className="relative lg:-mt-[49px]">{children}</main>
 					<Footer />
 				</div>
 			</body>

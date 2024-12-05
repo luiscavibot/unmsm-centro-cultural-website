@@ -1,6 +1,6 @@
 interface LinkMenu {
 	title: string,
-	url: string,
+	url?: string,
 }
 
 interface Menu extends LinkMenu {

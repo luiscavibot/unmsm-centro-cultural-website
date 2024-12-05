@@ -8,11 +8,11 @@ interface FlyoutLinkContentProps {
 
 const FlyoutLinkContent: FC<FlyoutLinkContentProps> = ({ submenu }) => {
 	return (
-		<div className="w-[204px] text-white py-2 shadow-xl font-medium rounded-lg overflow-hidden bg-dark-gray">
+		<div className="w-full lg:w-[204px] text-white py-2 lg:shadow-xl font-medium lg:rounded-lg overflow-hidden bg-gray lg:bg-dark-gray">
 			{
 				submenu.map((item, index) => {
 					return (
-						<Link href={item.url} key={index} className="flex items-center p-4 h-[48px] leading-[16.8px] text-sm hover:bg-gray transition-colors duration-300">
+						<Link href={item.url || '#'} key={index} className="flex items-center p-4 h-[48px] leading-[16.8px] text-sm hover:bg-gray transition-colors duration-300">
 							{item.title}
 						</Link>
 					)

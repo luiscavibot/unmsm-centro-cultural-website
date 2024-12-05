@@ -11,7 +11,7 @@ const menu: Menu[] = [
 	},
 	{
 		title: 'Direcciones artísticas',
-		url: '/direcciones-artisticas',
+		// url: '/direcciones-artisticas',
 		'sub-menu': [
 			{
 				'url': '/direcciones-artisticas/ballet',
@@ -41,7 +41,6 @@ const menu: Menu[] = [
 	},
 	{
 		title: 'Museos',
-		url: '/museos',
 		'sub-menu': [
 			{
 				title: 'Museo de Arte de San Marcos',
@@ -59,7 +58,6 @@ const menu: Menu[] = [
 	},
 	{
 		title: 'Visítanos',
-		url: '/visitanos',
 		'sub-menu': [
 			{
 				title: 'Visitas guiadas',
@@ -81,7 +79,6 @@ const menu: Menu[] = [
 	},
 	{
 		title: 'Nosotros',
-		url: '/nosotros',
 		'sub-menu': [
 			{
 				title: 'Transparencia',

@@ -9,13 +9,15 @@ const useBgTransition = () => {
 
 	const handleScroll = useCallback(
 		debounce(() => {
-			setScrolled(window.scrollY > 50);
+			if (window.innerWidth >= 1024) {
+				setScrolled(window.scrollY > 50);
+			}
 		}, 150),
 		[]
 	);
 
 	useEffect(() => {
-		if (pathname !== "/") return;
+		if (pathname !== "/" || window.innerWidth < 1024) return;
 
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
