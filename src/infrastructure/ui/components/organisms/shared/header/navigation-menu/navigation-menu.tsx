@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React from "react";
 import useBgTransition from "@/infrastructure/ui/components/organisms/shared/header/navigation-menu/hooks/use-bg-transition";

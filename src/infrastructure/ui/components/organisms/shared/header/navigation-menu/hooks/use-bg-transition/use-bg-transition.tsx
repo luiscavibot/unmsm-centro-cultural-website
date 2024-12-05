@@ -12,7 +12,7 @@ const useBgTransition = () => {
 			if (window.innerWidth >= 1024) {
 				setScrolled(window.scrollY > 50);
 			}
-		}, 150),
+		}, 50),
 		[]
 	);
 
@@ -27,7 +27,7 @@ const useBgTransition = () => {
 		pathname === "/"
 			? scrolled
 				? "bg-dark-gray"
-				: "bg-transparent"
+				: "bg-dark-gray-transparent"
 			: "bg-dark-gray";
 
 	return { bgClass }
