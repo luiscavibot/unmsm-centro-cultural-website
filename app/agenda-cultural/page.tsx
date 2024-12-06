@@ -5,6 +5,7 @@ import Title from '@/infrastructure/ui/components/atoms/title'
 import EventsCard from '@/infrastructure/ui/components/molecules/events-card'
 import React, { useState } from 'react'
 import eventsDataToHome from '@/infrastructure/ui/mocks/events-data-to-home';
+import ArrowDropdownIcon from '@/infrastructure/ui/components/atoms/icons/arrow-dropdown-icon'
 
 type selectedTab = 'todos' | 'esta-semana'
 
@@ -35,16 +36,42 @@ export default function CulturalAgendaPage() {
 			</div>
 			<div className="bg-dark-white-2 pt-[56px] pb-[104px]">
 				<div className="container">
-					<div></div>
-					<ul className="flex flex-col space-y-8">
-						{
-							eventsDataToHome.map((event, index) => (
-								<li className="flex" key={index}>
-									<EventsCard {...event} />
-								</li>
-							))
-						}
-					</ul>
+					<div className="flex flex-row justify-between gap-x-8">
+						<div>
+							<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
+								<div>
+									<div className="flex items-center justify-between h-6">
+										<span className="font-bold leading-[19.2px]">Modalidad</span>
+										<ArrowDropdownIcon />
+									</div>
+									<div>
+										{/* filtros checkboxes */}
+									</div>
+								</div>
+								<div>
+									<div className="flex items-center justify-between h-6">
+										<span className="font-bold leading-[19.2px]">Organizador</span>
+										<ArrowDropdownIcon />
+									</div>
+									<div>
+										{/* filtros checkboxes */}
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<span className="font-medium leading-[24px] text-right block w-full mb-8">57 resultados en total</span>
+							<ul className="flex flex-col space-y-8">
+								{
+									eventsDataToHome.map((event, index) => (
+										<li className="flex" key={index}>
+											<EventsCard {...event} />
+										</li>
+									))
+								}
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>

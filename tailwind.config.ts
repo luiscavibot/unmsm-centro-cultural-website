@@ -49,6 +49,7 @@ const config: Config = {
 				'dark-blue-2': 'var(--dark-blue-2)',
 				'dark-white': 'var(--dark-white)',
 				'dark-white-2': 'var(--dark-white-2)',
+				'dark-white-3': 'var(--dark-white-3)',
 				'dark-text-color': 'var(--dark-blue)',
 				'light-info-color': 'var(--dark-white)',
 				'dark-info-color': 'var(--blue)',
