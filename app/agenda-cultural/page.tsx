@@ -2,7 +2,9 @@
 
 import Tab from '@/infrastructure/ui/components/atoms/tab'
 import Title from '@/infrastructure/ui/components/atoms/title'
+import EventsCard from '@/infrastructure/ui/components/molecules/events-card'
 import React, { useState } from 'react'
+import eventsDataToHome from '@/infrastructure/ui/mocks/events-data-to-home';
 
 type selectedTab = 'todos' | 'esta-semana'
 
@@ -34,7 +36,13 @@ export default function CulturalAgendaPage() {
 			<div className="bg-dark-white-2">
 				<div className="container">
 					<div></div>
-					<div></div>
+					<div className="flex flex-col space-y-8">
+						{
+							eventsDataToHome.map((event, index) => (
+								<EventsCard key={index} {...event} />
+							))
+						}
+					</div>
 				</div>
 			</div>
 		</>
