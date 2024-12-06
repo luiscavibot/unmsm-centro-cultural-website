@@ -25,12 +25,12 @@ export default function CulturalAgendaLayout({ children }: { children: React.Rea
 				/>
 			</div>
 			<div id="contenido" className="pt-[369px]">
-				<div className="bg-white pt-16 pb-[104px] rounded-t-[32px] overflow-hidden">
+				<div className="bg-white pt-16 rounded-t-[32px] overflow-hidden">
 					<div className="container">
 						<Breadcrumb items={breadcrumbItems} />
-						{children}
 					</div>
 				</div>
+				{children}
 			</div>
 		</section>
 	)
