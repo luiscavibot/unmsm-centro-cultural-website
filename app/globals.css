@@ -24,6 +24,9 @@
 
 	--max-w-xl: 1600px;
 	--half-max-w-xl: calc(var(--max-w-xl) / 2);
+
+	--header-top-height: 72px;
+	--header-bottom-height: 49px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,8 +37,8 @@
 }
 
 body {
-	color: var(--foreground);
-	background: var(--background);
+	/* color: var(--foreground); */
+	/* background: var(--background); */
 	font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
 }
 

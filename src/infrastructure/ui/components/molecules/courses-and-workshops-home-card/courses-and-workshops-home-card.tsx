@@ -58,14 +58,14 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 							<span className="inline-block px-2 py-[6px] bg-light-info-color text-dark-info-color rounded-md font-medium mb-2 capitalize">
 								{type}
 							</span>
-							<h3 className="text-[40px] font-bold leading-[normal]">
+							<h3 className="text-[40px] font-bold leading-[normal] text-white">
 								{title}
 							</h3>
-							<p className="mt-2 text-xl font-semibold leading-[20px]">
+							<p className="mt-2 text-xl font-semibold leading-[20px] text-white">
 								{subtitle}
 							</p>
 						</header>
-						<p className="mt-6 font-medium leading-[24px]">
+						<p className="mt-6 font-medium leading-[24px] text-white">
 							{description}
 						</p>
 					</div>

@@ -31,9 +31,9 @@ export default function RootLayout({
 			<body
 				className={`${elMessiri.variable} ${montserrat.variable} antialiased`}
 			>
-				<div className="flex flex-col min-h-screen">
+				<div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
 					<Header />
-					<main className="relative lg:-mt-[49px]">{children}</main>
+					<main className="relative lg:-mt-[--header-bottom-height]">{children}</main>
 					<Footer />
 				</div>
 			</body>

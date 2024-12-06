@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 
 	return (
 		<header className="sticky top-0 z-50" >
-			<div className="py-4 px-4 lg:px-[104px] gap-5 bg-gray">
+			<div className="py-4 px-4 lg:px-[104px] gap-5 bg-gray h-[--header-top-height]">
 				<div className="container flex items-center justify-between">
 					<button className="block lg:hidden" onClick={() => setOpenMenu(true)}>
 						<Image

@@ -61,7 +61,7 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, FlyoutContent }) => {
 		>
 			{
 				href ? (
-					<Link href={href} className="text-sm max-lg:w-full font-semibold relative h-[72px] lg:h-[49px] inline-flex items-center max-lg:justify-between leading-[16.8px] max-lg:py-6 lg:p-4 text-white group">
+					<Link href={href} className="text-sm max-lg:w-full font-semibold relative h-[72px] lg:h-[--header-bottom-height] inline-flex items-center max-lg:justify-between leading-[16.8px] max-lg:py-6 lg:p-4 text-white group">
 						{children}
 						{FlyoutContent &&
 							<div className="ml-[2px]">
@@ -78,7 +78,7 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, FlyoutContent }) => {
 				)
 					:
 					(
-						<div className="text-sm max-lg:w-full font-semibold relative h-[72px] lg:h-[49px] inline-flex items-center max-lg:justify-between leading-[16.8px] max-lg:py-6 lg:p-4 text-white cursor-default group">
+						<div className="text-sm max-lg:w-full font-semibold relative h-[72px] lg:h-[--header-bottom-height] inline-flex items-center max-lg:justify-between leading-[16.8px] max-lg:py-6 lg:p-4 text-white cursor-default group">
 							{children}
 							{FlyoutContent &&
 								<div className="ml-[2px]">
@@ -103,7 +103,7 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, FlyoutContent }) => {
 						variants={flyoutVariants}
 						style={{ translateX: isLargeScreen ? "-50%" : "0%" }}
 						transition={{ duration: 0.3, ease: "easeOut" }}
-						className="lg:absolute lg:left-1/2 lg:top-[49px] bg-transparent"
+						className="lg:absolute lg:left-1/2 lg:top-[--header-bottom-height] bg-transparent"
 					>
 						<div className="hidden lg:block max-lg:absolute -top-[4px] left-0 right-0 h-[4px] bg-transparent" />
 						{/* <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" /> */}

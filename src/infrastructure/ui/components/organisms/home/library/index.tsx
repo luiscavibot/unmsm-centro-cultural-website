@@ -11,7 +11,7 @@ const Library = () => {
 				</figure>
 				<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
 				<div className="container h-full flex items-center justify-center">
-					<div className="max-w-[606px] text-center">
+					<div className="max-w-[606px] text-center text-white">
 						<h2 className="text-[32px] font-bold leading-[normal]">Biblioteca España de las Artes</h2>
 						<p className="mt-2 leading-[24px]">Contamos con una gran variedad de recursos bibliográficos en diferentes formatos y disciplinas; siendo también un espacio de recreación y fomento de actividades culturales.</p>
 						<OutlineButton type="internal-link" href="#" theme="light" label="Explorar" className="mt-8" />

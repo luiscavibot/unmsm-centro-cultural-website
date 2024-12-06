@@ -44,7 +44,7 @@ const News = () => {
 			</div>
 			<div className="container grid grid-cols-[auto_minmax(0,1fr)] items-center justify-between gap-x-14 relative">
 				<div className="flex flex-row items-center justify-center p-2 gap-2">
-					<h2 className="font-messiri text-[40px]">Noticias</h2>
+					<h2 className="font-messiri text-[40px] text-white">Noticias</h2>
 					<Link href="/noticias">
 						<ExternalLinkIcon color="white" />
 					</Link>

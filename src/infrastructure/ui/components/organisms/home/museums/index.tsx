@@ -70,7 +70,7 @@ const Museums = () => {
 						/>
 					</figure>
 					<div className="relative pt-[96px] pb-[56px] pr-16 semi-container-l h-full">
-						<header className="max-w-[459px]">
+						<header className="max-w-[459px] text-white">
 							<h3 className="text-[32px] font-bold leading-[normal]">
 								Museo de Arte de San Marcos
 							</h3>
@@ -110,7 +110,7 @@ const Museums = () => {
 						/>
 					</figure>
 					<div className="relative pt-[96px] pb-[56px] pl-16 semi-container-r h-full">
-						<header className="max-w-[459px]">
+						<header className="max-w-[459px] text-white">
 							<h3 className="text-[32px] font-bold leading-[normal]">
 								Museo de Arqueología y Antropología
 							</h3>
