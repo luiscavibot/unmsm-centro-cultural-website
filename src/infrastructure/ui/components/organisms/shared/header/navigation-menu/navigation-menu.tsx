@@ -22,7 +22,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ openMenu, setOpenMenu }
 		<div className={`max-lg:fixed max-lg:overflow-auto max-lg:top-0 max-lg:h-lvh max-lg:min-h-full max-lg:w-dvw max-lg:pt-6 max-lg:pb-8 px-4 lg:px-[104px] max-lg:bg-dark-gray lg:transition-colors lg:duration-[50ms] max-lg:transition-transform max-lg:duration-300 ease-out ${bgClass} ${openMenu ? 'max-lg:translate-x-0' : 'max-lg:-translate-x-full'}`}>
 			<div>
 				<div className="flex lg:hidden justify-between items-center mb-6">
-					<div className="text-xl leading-[20px] font-semibold">Menú</div>
+					<div className="text-xl leading-[20px] font-semibold text-white">Menú</div>
 					<button className="block lg:hidden" onClick={() => setOpenMenu(false)}>
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/close.svg"
