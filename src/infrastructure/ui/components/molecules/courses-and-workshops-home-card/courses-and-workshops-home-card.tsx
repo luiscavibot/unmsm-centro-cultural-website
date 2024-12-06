@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC, useRef } from 'react';
+import Badge from '@/infrastructure/ui/components/atoms/badge';
 
 interface CoursesAndWorkshopsHomeCardProps {
 	href: string;
@@ -55,9 +56,7 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 				<Link onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="inline-block" href={href}>
 					<div className="max-w-[459px]">
 						<header>
-							<span className="inline-block px-2 py-[6px] bg-light-info-color text-dark-info-color rounded-md font-medium mb-2 capitalize">
-								{type}
-							</span>
+							<Badge label={type} size="large" />
 							<h3 className="text-[40px] font-bold leading-[normal] text-white">
 								{title}
 							</h3>
