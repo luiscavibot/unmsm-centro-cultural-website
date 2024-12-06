@@ -33,16 +33,18 @@ export default function CulturalAgendaPage() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-dark-white-2">
+			<div className="bg-dark-white-2 pt-[56px] pb-[104px]">
 				<div className="container">
 					<div></div>
-					<div className="flex flex-col space-y-8">
+					<ul className="flex flex-col space-y-8">
 						{
 							eventsDataToHome.map((event, index) => (
-								<EventsCard key={index} {...event} />
+								<li className="flex" key={index}>
+									<EventsCard {...event} />
+								</li>
 							))
 						}
-					</div>
+					</ul>
 				</div>
 			</div>
 		</>

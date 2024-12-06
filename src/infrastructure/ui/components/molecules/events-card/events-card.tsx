@@ -21,14 +21,14 @@ interface EventsCardProps {
 }
 
 const EventsCard: React.FC<EventsCardProps> = ({ href, imageUrl, title, summary, date, dateString, time, timeString, location, type, dependency }) => (
-	<Link href={href}>
+	<Link className="inline-flex" href={href}>
 		{/* <article className="rounded-2xl overflow-hidden flex flex-row w-[620px] h-[240px]"> */}
-		<article className="rounded-2xl overflow-hidden flex flex-row w-[620px]">
+		<article className="rounded-2xl overflow-hidden flex flex-row w-[813pxpx]">
 			{/* <figure className="relative w-[240px] h-[240px] flex-shrink-0"> */}
-			<figure className="relative w-[240px] h-full flex-shrink-0">
+			<figure className="relative w-[260px] h-full flex-shrink-0">
 				<Image src={imageUrl} className="object-cover h-full" alt={title} layout="fill" />
 			</figure>
-			<div className="bg-white p-6 w-[380px] flex-shrink-0">
+			<div className="bg-white p-6 w-[553px] flex-shrink-0">
 				<header>
 					<Badge label={type} size="small" />
 					{/* <div className="flex flex-row items-center justify-start gap-2 mb-1">
