@@ -9,7 +9,7 @@ import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
 
 interface EventsHomeCardProps {
-	href: string;
+	slug: string;
 	imageUrl: string;
 	title: string;
 	summary: string;
@@ -20,7 +20,7 @@ interface EventsHomeCardProps {
 	location: string;
 }
 
-const EventsHomeCard: FC<EventsHomeCardProps> = ({ href, imageUrl, title, summary, date, dateString, time, timeString, location }) => {
+const EventsHomeCard: FC<EventsHomeCardProps> = ({ slug, imageUrl, title, summary, date, dateString, time, timeString, location }) => {
 
 	const { wrapperRef, containerRef, percentage } = useResponsivePercentage();
 
@@ -29,7 +29,7 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({ href, imageUrl, title, summar
 			ref={wrapperRef}
 			className="h-[720px] relative bg-white px-[104px]"
 		>
-			<Link href={href} className="absolute top-0 left-0 w-[57%] h-full block peer">
+			<Link href={`agenda-cultural/${slug}`} className="absolute top-0 left-0 w-[57%] h-full block peer">
 				<figure>
 					<Image
 						src={imageUrl}
@@ -45,7 +45,7 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({ href, imageUrl, title, summar
 				style={{ gridTemplateColumns: `${percentage}% auto` }}
 			>
 				<div className="bg-white pl-16 py-14 flex items-end col-start-2">
-					<Link href={href} className="mb-16 hover:text-dark-red transition-colors duration-200">
+					<Link href={`agenda-cultural/${slug}`} className="mb-16 hover:text-dark-red transition-colors duration-200">
 						<header>
 							<h3 className="block text-[40px] font-bold leading-[normal] mb-4 text-inherit">
 								{title}

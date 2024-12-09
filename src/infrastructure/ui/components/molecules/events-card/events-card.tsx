@@ -7,7 +7,7 @@ import ClockIcon from "../../atoms/icons/clock-icon";
 import OutlinePlaceIcon from "../../atoms/icons/outilne-place-icon";
 
 interface EventsCardProps {
-	href: string;
+	slug: string;
 	imageUrl: string;
 	title: string;
 	summary: string;
@@ -20,8 +20,8 @@ interface EventsCardProps {
 	dependency: string;
 }
 
-const EventsCard: React.FC<EventsCardProps> = ({ href, imageUrl, title, summary, date, dateString, time, timeString, location, type, dependency }) => (
-	<Link className="inline-flex" href={href}>
+const EventsCard: React.FC<EventsCardProps> = ({ slug, imageUrl, title, summary, date, dateString, time, timeString, location, type, dependency }) => (
+	<Link className="inline-flex" href={`agenda-cultural/${slug}`}>
 		{/* <article className="rounded-2xl overflow-hidden flex flex-row w-[620px] h-[240px]"> */}
 		<article className="rounded-2xl overflow-hidden flex flex-row w-[813pxpx]">
 			{/* <figure className="relative w-[240px] h-[240px] flex-shrink-0"> */}

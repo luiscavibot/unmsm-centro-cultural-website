@@ -25,7 +25,7 @@ export default function CulturalAgendaLayout({ children }: { children: React.Rea
 				/>
 			</div>
 			<div id="contenido" className="pt-[369px]">
-				<div className="bg-white pt-16 rounded-t-[32px] overflow-hidden">
+				<div className="px-4 lg:px-[104px] bg-white pt-16 rounded-t-[32px] overflow-hidden">
 					<div className="container">
 						<Breadcrumb items={breadcrumbItems} />
 					</div>

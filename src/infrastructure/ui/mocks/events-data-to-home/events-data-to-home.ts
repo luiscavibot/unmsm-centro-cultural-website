@@ -1,5 +1,5 @@
 interface EventsDataToHome {
-	href: string;
+	slug: string;
 	imageUrl: string;
 	title: string;
 	summary: string;
@@ -17,7 +17,7 @@ interface EventsDataToHome {
 
 const eventsDataToHome: EventsDataToHome[] = [
 	{
-		href: "#",
+		slug: "evento",
 		imageUrl: "https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/eventos.webp",
 		title: "Cine al aire libre: «Capitalismos capitales»",
 		summary: "En colaboración con la Dirección de Cine y Producción Audiovisual buscamos visibilizar la importancia de la preservación y restauración del patrimonio cinematográfico nacional.",
@@ -30,7 +30,7 @@ const eventsDataToHome: EventsDataToHome[] = [
 		dependency: "Biblioteca España de las Artes UNMSM",
 	},
 	{
-		href: "#",
+		slug: "evento",
 		imageUrl: "https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/eventos.webp",
 		title: "Cine al aire libre: «Capitalismos capitales»",
 		summary: "En colaboración con la Dirección de Cine y Producción Audiovisual buscamos visibilizar la importancia de la preservación y restauración del patrimonio cinematográfico nacional.",
@@ -43,7 +43,7 @@ const eventsDataToHome: EventsDataToHome[] = [
 		dependency: "Biblioteca España de las Artes UNMSM",
 	},
 	{
-		href: "#",
+		slug: "evento",
 		imageUrl: "https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/eventos.webp",
 		title: "Cine al aire libre: «Capitalismos capitales»",
 		summary: "En colaboración con la Dirección de Cine y Producción Audiovisual buscamos visibilizar la importancia de la preservación y restauración del patrimonio cinematográfico nacional.",
