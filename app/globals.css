@@ -5,6 +5,8 @@
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
+	--transparent: transparent;
+	--white: #ffffff;
 	--black: #060707;
 	--gray: #2a2d31;
 	--light-gray: #999b9d;
@@ -22,12 +24,47 @@
 	--red: #9c162b;
 	--dark-red: #430f10;
 	--dark-red-2: #1c0607;
+	--dark-red-3: #300B0B;
 
 	--max-w-xl: 1600px;
 	--half-max-w-xl: calc(var(--max-w-xl) / 2);
 
 	--header-top-height: 72px;
 	--header-bottom-height: 49px;
+
+	/* Secondary Button */
+
+	--text-color-secondary-button-dark: var(--white);
+	--text-color-secondary-button-dark-hover: var(--gray);
+	--text-color-secondary-button-dark-active: var(--dark-red);
+	--text-color-secondary-button-dark-disabled: var(--light-gray);
+	
+	--bg-color-secondary-button-dark: var(--transparent);
+	--bg-color-secondary-button-dark-hover: var(--dark-white-4);
+	--bg-color-secondary-button-dark-active: var(--dark-white-4);
+	--bg-color-secondary-button-dark-disabled: var(--transparent);
+
+	--border-color-secondary-button-dark: var(--dark-white-4);
+	--border-color-secondary-button-dark-hover: var(--transparent);
+	--border-color-secondary-button-dark-active: var(--transparent);
+	--border-color-secondary-button-dark-disabled: var(--light-gray);
+
+
+	--text-color-secondary-button-light: var(--dark-red);
+	--text-color-secondary-button-light-hover: var(--dark-red);
+	--text-color-secondary-button-light-active: var(--dark-white-4);
+	--text-color-secondary-button-light-disabled: var(--light-gray);
+
+	--bg-color-secondary-button-light: var(--transparent);
+	--bg-color-secondary-button-light-hover: var(--dark-white-4);
+	--bg-color-secondary-button-light-active: var(--dark-red-3);
+	--bg-color-secondary-button-light-disabled: var(--transparent);
+
+	--border-color-secondary-button-light: var(--dark-red);
+	--border-color-secondary-button-light-hover: var(--dark-red);
+	--border-color-secondary-button-light-active: var(--transparent);
+	--border-color-secondary-button-light-disabled: var(--light-gray);
+
 }
 
 @media (prefers-color-scheme: dark) {

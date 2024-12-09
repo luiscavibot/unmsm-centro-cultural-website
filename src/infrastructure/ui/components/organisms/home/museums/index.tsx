@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useRef } from 'react';
-import OutlineButton from '@/infrastructure/ui/components/atoms/buttons/outline-button';
+import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
 
 const Museums = () => {
 
@@ -83,13 +83,7 @@ const Museums = () => {
 								intercultural del Perú.
 							</p>
 						</header>
-						<OutlineButton
-							type="internal-link"
-							href="#"
-							theme="light"
-							label="Explorar"
-							className="mt-8"
-						/>
+						<SecondaryButton type="internal-link" href="#" theme="dark" label="Explorar" className="mt-8" />
 					</div>
 				</article>
 				<article onMouseEnter={handleEnter2} onMouseLeave={handleLeave2} className="pr-[104px] h-full relative bg-dark-red-2 overflow-hidden">
@@ -123,13 +117,7 @@ const Museums = () => {
 								proceso histórico prehispánico.
 							</p>
 						</header>
-						<OutlineButton
-							type="internal-link"
-							href="#"
-							theme="light"
-							label="Explorar"
-							className="mt-8"
-						/>
+						<SecondaryButton type="internal-link" href="#" theme="dark" label="Explorar" className="mt-8" />
 					</div>
 				</article>
 			</div>

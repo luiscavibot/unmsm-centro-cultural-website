@@ -1,6 +1,5 @@
-import Link from 'next/link'
 import React from 'react'
-import OutlineButton from '@/infrastructure/ui/components/atoms/buttons/outline-button'
+import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button'
 
 const Contact: React.FC = () => {
 	return (
@@ -11,7 +10,7 @@ const Contact: React.FC = () => {
 						<h2 className="text-[32px] font-semibold leading-[normal] max-w-[337px]">Reserva una visita guiada</h2>
 						<p className="font-medium leading-[24px] max-w-[523px]">Vive una experiencia única en el corazón de la universidad más antigua de América ¡Te esperamos!</p>
 					</div>
-					<OutlineButton type="internal-link" href="/contactanos" theme="light" label="Contáctanos" />
+					<SecondaryButton type="internal-link" href="/contactanos" theme="dark" label="Contáctanos" />
 				</div>
 			</div>
 		</>
