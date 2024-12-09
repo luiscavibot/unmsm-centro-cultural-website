@@ -9,6 +9,7 @@
 	--white: #ffffff;
 	--black: #060707;
 	--gray: #2a2d31;
+	--gray-2: #171A1D;
 	--light-gray: #999b9d;
 	--dark-gray: rgb(23, 26, 29);
 	--dark-gray-transparent: rgba(23, 26, 29, 0.3);
@@ -32,6 +33,42 @@
 
 	--header-top-height: 72px;
 	--header-bottom-height: 49px;
+
+	/* Primary Button */
+
+	/* Primary Button DARK */
+
+	--text-color-primary-button-dark: var(--gray);
+	--text-color-primary-button-dark-hover: var(--gray-2);
+	--text-color-primary-button-dark-active: var(--black);
+	--text-color-primary-button-dark-disabled: var(--dark-white-3);
+	
+	--bg-color-primary-button-dark: var(--dark-white-2);
+	--bg-color-primary-button-dark-hover: var(--dark-white-2);
+	--bg-color-primary-button-dark-active: var(--light-gray);
+	--bg-color-primary-button-dark-disabled: var(--light-gray);
+
+	--border-color-primary-button-dark: var(--transparent);
+	--border-color-primary-button-dark-hover: var(--transparent);
+	--border-color-primary-button-dark-active: var(--transparent);
+	--border-color-primary-button-dark-disabled: var(--transparent);
+
+	/* Primary Button LIGHT */
+
+	--text-color-primary-button-light: var(--white);
+	--text-color-primary-button-light-hover: var(--white);
+	--text-color-primary-button-light-active: var(--white);
+	--text-color-primary-button-light-disabled: var(--dark-white-3);
+
+	--bg-color-primary-button-light: var(--gray);
+	--bg-color-primary-button-light-hover: var(--gray-2);
+	--bg-color-primary-button-light-active: var(--black);
+	--bg-color-primary-button-light-disabled: var(--light-gray);
+
+	--border-color-primary-button-light: var(--transparent);
+	--border-color-primary-button-light-hover: var(--transparent);
+	--border-color-primary-button-light-active: var(--transparent);
+	--border-color-primary-button-light-disabled: var(--transparent);
 
 	/* Secondary Button */
 

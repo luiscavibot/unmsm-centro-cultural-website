@@ -6,6 +6,7 @@ import EventsCard from '@/infrastructure/ui/components/molecules/events-card'
 import React, { useState } from 'react'
 import eventsDataToHome from '@/infrastructure/ui/mocks/events-data-to-home';
 import ArrowDropdownIcon from '@/infrastructure/ui/components/atoms/icons/arrow-dropdown-icon'
+import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button'
 import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button'
 
 type selectedTab = 'todos' | 'esta-semana'
@@ -60,6 +61,9 @@ export default function CulturalAgendaPage() {
 								</div>
 								<div className="">
 									<TertiaryButton label="Limpiar filtros" theme="light" type="on-click" onClick={() => {
+										console.log("click");
+									}} />
+									<PrimaryButton label="Aplicar" theme="light" type="on-click" onClick={() => {
 										console.log("click");
 									}} />
 								</div>

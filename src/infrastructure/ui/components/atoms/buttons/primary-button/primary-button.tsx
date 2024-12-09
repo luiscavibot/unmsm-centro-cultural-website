@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { FC } from "react"
 
-type TertiaryButtonProps = {
+type PrimaryButtonProps = {
 	theme: 'dark' | 'light',
 	label: string;
 	className?: string;
@@ -9,19 +9,19 @@ type TertiaryButtonProps = {
 }
 
 type Button =
-	| (TertiaryButtonProps & { type: 'external-link', href: string })
-	| (TertiaryButtonProps & { type: 'internal-link', href: string })
-	| (TertiaryButtonProps & { type: 'on-click', onClick: () => void })
+	| (PrimaryButtonProps & { type: 'external-link', href: string })
+	| (PrimaryButtonProps & { type: 'internal-link', href: string })
+	| (PrimaryButtonProps & { type: 'on-click', onClick: () => void })
 
 
 
-const TertiaryButton: FC<Button> = (props) => {
+const PrimaryButton: FC<Button> = (props) => {
 
 	const { theme, type, label, className, disabled = false } = props
 
 	const buttonTheme = {
-		dark: `${disabled ? 'text-tertiary-button-dark-text-disabled border-tertiary-button-dark-border-disabled' : 'text-tertiary-button-dark-text hover:text-tertiary-button-dark-text-hover active:text-tertiary-button-dark-text-active border-tertiary-button-dark-border hover:border-tertiary-button-dark-border-hover active:border-tertiary-button-dark-border-active bg-tertiary-button-dark-bg hover:bg-tertiary-button-dark-bg-hover active:bg-tertiary-button-dark-bg-active'}`,
-		light: `${disabled ? 'text-tertiary-button-dark-text-disabled border-tertiary-button-dark-border-disabled' : 'text-tertiary-button-light-text hover:text-tertiary-button-light-text-hover active:text-tertiary-button-light-text-active border-tertiary-button-light-border hover:border-tertiary-button-light-border-hover active:border-tertiary-button-light-border-active bg-tertiary-button-light-bg hover:bg-tertiary-button-light-bg-hover active:bg-tertiary-button-light-bg-active'}`,
+		dark: `${disabled ? 'text-primary-button-dark-text-disabled border-primary-button-dark-border-disabled' : 'text-primary-button-dark-text hover:text-primary-button-dark-text-hover active:text-primary-button-dark-text-active border-primary-button-dark-border hover:border-primary-button-dark-border-hover active:border-primary-button-dark-border-active bg-primary-button-dark-bg hover:bg-primary-button-dark-bg-hover active:bg-primary-button-dark-bg-active'}`,
+		light: `${disabled ? 'text-primary-button-dark-text-disabled border-primary-button-dark-border-disabled' : 'text-primary-button-light-text hover:text-primary-button-light-text-hover active:text-primary-button-light-text-active border-primary-button-light-border hover:border-primary-button-light-border-hover active:border-primary-button-light-border-active bg-primary-button-light-bg hover:bg-primary-button-light-bg-hover active:bg-primary-button-light-bg-active'}`,
 	}
 
 	switch (type) {
@@ -52,4 +52,4 @@ const TertiaryButton: FC<Button> = (props) => {
 	}
 }
 
-export default TertiaryButton
+export default PrimaryButton
