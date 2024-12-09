@@ -21,6 +21,7 @@
 	--dark-white-2: #f9fafb;
 	--dark-white-3: #eaebed;
 	--dark-white-4: #ECE7E7;
+	--dark-white-5: #A99191;
 	--red: #9c162b;
 	--dark-red: #430f10;
 	--dark-red-2: #1c0607;
@@ -34,8 +35,10 @@
 
 	/* Secondary Button */
 
-	--text-color-secondary-button-dark: var(--white);
-	--text-color-secondary-button-dark-hover: var(--gray);
+	/* Secondary Button DARK */
+
+	--text-color-secondary-button-dark: var(--dark-white-4);
+	--text-color-secondary-button-dark-hover: var(--dark-red-2);
 	--text-color-secondary-button-dark-active: var(--dark-red);
 	--text-color-secondary-button-dark-disabled: var(--light-gray);
 	
@@ -49,6 +52,7 @@
 	--border-color-secondary-button-dark-active: var(--transparent);
 	--border-color-secondary-button-dark-disabled: var(--light-gray);
 
+	/* Secondary Button LIGHT */
 
 	--text-color-secondary-button-light: var(--dark-red);
 	--text-color-secondary-button-light-hover: var(--dark-red);
@@ -65,6 +69,41 @@
 	--border-color-secondary-button-light-active: var(--transparent);
 	--border-color-secondary-button-light-disabled: var(--light-gray);
 
+	/* Tertiary Button */
+
+	/* Tertiary Button DARK */
+
+	--text-color-tertiary-button-dark: var(--dark-white-4);
+	--text-color-tertiary-button-dark-hover: var(--dark-white-4);
+	--text-color-tertiary-button-dark-active: var(--dark-white-4);
+	--text-color-tertiary-button-dark-disabled: var(--light-gray);
+	
+	--bg-color-tertiary-button-dark: var(--transparent);
+	--bg-color-tertiary-button-dark-hover: var(--transparent);
+	--bg-color-tertiary-button-dark-active: var(--dark-red-2);
+	--bg-color-tertiary-button-dark-disabled: var(--transparent);
+
+	--border-color-tertiary-button-dark: var(--transparent);
+	--border-color-tertiary-button-dark-hover: var(--white);
+	--border-color-tertiary-button-dark-active: var(--white);
+	--border-color-tertiary-button-dark-disabled: var(--transparent);
+
+	/* Tertiary Button LIGHT */
+
+	--text-color-tertiary-button-light: var(--dark-red);
+	--text-color-tertiary-button-light-hover: var(--dark-red);
+	--text-color-tertiary-button-light-active: var(--dark-red);
+	--text-color-tertiary-button-light-disabled: var(--light-gray);
+
+	--bg-color-tertiary-button-light: var(--transparent);
+	--bg-color-tertiary-button-light-hover: var(--transparent);
+	--bg-color-tertiary-button-light-active: var(--dark-white-5);
+	--bg-color-tertiary-button-light-disabled: var(--transparent);
+
+	--border-color-tertiary-button-light: var(--transparent);
+	--border-color-tertiary-button-light-hover: var(--dark-red);
+	--border-color-tertiary-button-light-active: var(--dark-red);
+	--border-color-tertiary-button-light-disabled: var(--light-gray);
 }
 
 @media (prefers-color-scheme: dark) {
