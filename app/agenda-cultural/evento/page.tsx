@@ -2,15 +2,18 @@
 
 import Badge from '@/infrastructure/ui/components/atoms/badge'
 import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button'
+import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button'
 import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon'
 import DateRangeIcon from '@/infrastructure/ui/components/atoms/icons/date-range-icon'
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon'
 import Title from '@/infrastructure/ui/components/atoms/title'
+import UpcomingEventsCard from '@/infrastructure/ui/components/molecules/upcoming-events-card'
+import eventsDataToHome from '@/infrastructure/ui/mocks/events-data-to-home'
 import React from 'react'
 
 export default function Evento() {
 	return (
-		<div className="px-4 lg:px-[104px] bg-white pb-6">
+		<div className="px-4 lg:px-[104px] bg-white pb-[104px]">
 			<div className="container">
 				<div className="max-w-[814px] mx-auto mb-[80px]">
 					<div className="flex justify-center">
@@ -53,6 +56,30 @@ export default function Evento() {
 						<p>¡Inscríbete y transforma tu visión museográfica!</p>
 					</div>
 					<PrimaryButton label="Registrarme" theme="light" type="external-link" href="#" className="mt-6" />
+				</div>
+				<div className="mt-[110px]">
+					<div className="flex justify-between items-center mb-[30px]">
+						<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">Eventos próximos</h2>
+						<TertiaryButton label="Ver todos" theme="light" type="internal-link" href="/agenda-cultural" />
+					</div>
+					<div className="grid grid-cols-3 gap-6">
+						{
+							eventsDataToHome.slice(-3).map((event: any, index: number) => (
+								<UpcomingEventsCard
+									key={index}
+									slug={event.slug}
+									title={event.title}
+									date={event.date}
+									dateString={event.dateString}
+									time={event.time}
+									timeString={event.timeString}
+									location={event.location}
+									type={event.type}
+									dependency={event.dependency}
+								/>
+							))
+						}
+					</div>
 				</div>
 			</div>
 		</div>
