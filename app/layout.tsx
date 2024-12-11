@@ -33,7 +33,7 @@ export default function RootLayout({
 			>
 				<div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
 					<Header />
-					<main className="relative lg:-mt-[--header-bottom-height]">{children}</main>
+					<main className="relative lg:-mt-[--header-bottom-height] overflow-hidden">{children}</main>
 					<Footer />
 				</div>
 			</body>
