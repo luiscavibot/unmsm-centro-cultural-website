@@ -19,9 +19,9 @@ interface UpcomingEventsCardProps {
 }
 
 const UpcomingEventsCard: React.FC<UpcomingEventsCardProps> = ({ slug, title, date, dateString, time, timeString, location, type, dependency }) => (
-	<Link className="inline-flex" href={`agenda-cultural/${slug}`}>
+	<Link className="inline-flex group" href={`agenda-cultural/${slug}`}>
 		{/* <article className="rounded-2xl overflow-hidden flex flex-row w-[620px] h-[240px]"> */}
-		<article className="rounded-2xl overflow-hidden flex flex-row w-[813pxpx] shadow-[0px_2px_13.4px_0px_rgba(0,0,0,0.04)]">
+		<article className="rounded-2xl overflow-hidden flex flex-row w-[813pxpx] shadow-[0px_2px_13.4px_0px_rgba(0,0,0,0.04)] group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300">
 			<div className="bg-white p-6 w-[553px] flex-shrink-0">
 				<header>
 					<Badge label={type} size="small" />
@@ -29,7 +29,7 @@ const UpcomingEventsCard: React.FC<UpcomingEventsCardProps> = ({ slug, title, da
 						<CalendarIcon className="shrink-0" ariaLabel="Fecha" color="dark" />
 						<time dateTime={date} className="text-dark-blue-2 text-sm leading-[21px]">{dateString}</time>
 					</div> */}
-					<h3 className="line-clamp-3 text-xl text-dark-blue font-semibold leading-[30px]">{title}</h3>
+					<h3 className="line-clamp-3 text-xl text-dark-blue font-semibold leading-[30px] group-hover:text-dark-red transition-colors duration-200">{title}</h3>
 					<span className="text-xs text-dark-blue-2">Dependencia: {dependency}</span>
 					<div className="leading-[normal] text-sm font-semibold mt-4 space-y-1">
 						<div className="flex p-1 gap-2 items-center">
