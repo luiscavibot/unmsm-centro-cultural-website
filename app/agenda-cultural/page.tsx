@@ -82,7 +82,7 @@ export default function CulturalAgendaPage() {
 			</div>
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
 				<div className="container">
-					<div className="flex flex-row justify-between gap-x-8">
+					<div className="flex flex-row justify-between gap-x-[105px]">
 						<div>
 							<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
 								<div>

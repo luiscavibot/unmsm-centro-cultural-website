@@ -21,21 +21,16 @@ interface EventsCardProps {
 }
 
 const EventsCard: React.FC<EventsCardProps> = ({ slug, imageUrl, title, summary, date, dateString, time, timeString, location, type, dependency }) => (
-	<Link className="inline-flex" href={`agenda-cultural/${slug}`}>
-		{/* <article className="rounded-2xl overflow-hidden flex flex-row w-[620px] h-[240px]"> */}
-		<article className="rounded-2xl overflow-hidden flex flex-row w-[813pxpx]">
-			{/* <figure className="relative w-[240px] h-[240px] flex-shrink-0"> */}
+	<Link className="inline-flex group" href={`agenda-cultural/${slug}`}>
+		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300">
 			<figure className="relative w-[260px] h-full flex-shrink-0">
 				<Image src={imageUrl} className="object-cover h-full" alt={title} layout="fill" />
 			</figure>
-			<div className="bg-white p-6 w-[553px] flex-shrink-0">
+			{/* <div className="bg-white p-6 w-[553px] flex-shrink-0"> */}
+			<div className="bg-white p-6 w-auto">
 				<header>
 					<Badge label={type} size="small" />
-					{/* <div className="flex flex-row items-center justify-start gap-2 mb-1">
-						<CalendarIcon className="shrink-0" ariaLabel="Fecha" color="dark" />
-						<time dateTime={date} className="text-dark-blue-2 text-sm leading-[21px]">{dateString}</time>
-					</div> */}
-					<h3 className="line-clamp-3 text-xl text-dark-blue font-semibold leading-[30px]">{title}</h3>
+					<h3 className="line-clamp-3 text-xl text-dark-blue font-semibold leading-[30px] group-hover:text-dark-red transition-colors duration-200">{title}</h3>
 					<span className="text-xs text-dark-blue-2">Dependencia: {dependency}</span>
 					<div className="leading-[normal] text-sm font-semibold mt-4 space-y-1">
 						<div className="flex p-1 gap-2 items-center">
