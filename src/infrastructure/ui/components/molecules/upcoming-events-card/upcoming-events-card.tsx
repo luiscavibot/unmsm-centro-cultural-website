@@ -19,7 +19,7 @@ interface UpcomingEventsCardProps {
 }
 
 const UpcomingEventsCard: React.FC<UpcomingEventsCardProps> = ({ slug, title, date, dateString, time, timeString, location, type, dependency }) => (
-	<Link className="inline-flex group" href={`agenda-cultural/${slug}`}>
+	<Link className="inline-flex group" href={`/agenda-cultural/${slug}`}>
 		{/* <article className="rounded-2xl overflow-hidden flex flex-row w-[620px] h-[240px]"> */}
 		<article className="rounded-2xl overflow-hidden flex flex-row w-[813pxpx] shadow-[0px_2px_13.4px_0px_rgba(0,0,0,0.04)] group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300">
 			<div className="bg-white p-6 w-[553px] flex-shrink-0">
