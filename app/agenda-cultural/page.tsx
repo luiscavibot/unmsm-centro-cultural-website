@@ -9,6 +9,7 @@ import ArrowDropdownIcon from '@/infrastructure/ui/components/atoms/icons/arrow-
 import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button'
 import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button'
 import Checkbox from '@/infrastructure/ui/components/atoms/inputs/checkbox'
+import Calendar from '@/infrastructure/ui/components/molecules/calendar'
 
 type selectedTab = 'todos' | 'esta-semana'
 
@@ -84,6 +85,9 @@ export default function CulturalAgendaPage() {
 				<div className="container">
 					<div className="flex flex-row justify-between gap-x-[105px]">
 						<div>
+							<div className="mb-8">
+								<Calendar />
+							</div>
 							<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
 								<div>
 									<div className="flex items-center justify-between h-6 mb-2">
@@ -132,7 +136,7 @@ export default function CulturalAgendaPage() {
 							</div>
 						</div>
 						<div>
-							<span className="font-medium leading-[24px] text-right block w-full mb-8">57 resultados en total</span>
+							<span className="font-medium leading-[24px] text-right flex items-end justify-end w-full mb-8 h-[56px]">57 resultados en total</span>
 							<ul className="flex flex-col space-y-8">
 								{
 									eventsDataToHome.map((event, index) => (

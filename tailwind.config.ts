@@ -47,6 +47,7 @@ const config: Config = {
 				green: 'var(--green)',
 				'dark-blue': 'var(--dark-blue)',
 				'dark-blue-2': 'var(--dark-blue-2)',
+				'dark-blue-2/70': 'var(--dark-blue-2-opacity-70)',
 				'dark-white': 'var(--dark-white)',
 				'dark-white-2': 'var(--dark-white-2)',
 				'dark-white-3': 'var(--dark-white-3)',
@@ -74,6 +75,7 @@ const config: Config = {
 				},
 				'light-text-button-color': 'var(--gray)',
 				'light-gray': 'var(--light-gray)',
+				'light-gray-2': 'var(--light-gray-2)',
 				'primary-button-dark': {
 					text: 'var(--text-color-primary-button-dark)',
 					'text-hover': 'var(--text-color-primary-button-dark-hover)',

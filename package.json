@@ -12,10 +12,14 @@
     "@evyweb/ioctopus": "^1.0.0",
     "@splidejs/react-splide": "^0.7.12",
     "axios": "^1.7.7",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "motion": "^12.0.0-alpha.2",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
+    "react-day-picker": "^9.4.3",
     "react-dom": "19.0.0-rc-66855b96-20241106",
+    "tailwind-merge": "^2.5.5",
     "zod": "^3.23.8"
   },
   "devDependencies": {
