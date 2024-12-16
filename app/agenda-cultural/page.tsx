@@ -10,6 +10,7 @@ import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-
 import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button'
 import Checkbox from '@/infrastructure/ui/components/atoms/inputs/checkbox'
 import Calendar from '@/infrastructure/ui/components/molecules/calendar'
+import Pagination from '@/infrastructure/ui/components/molecules/pagination'
 
 type selectedTab = 'todos' | 'esta-semana'
 
@@ -19,9 +20,13 @@ interface CheckboxItem {
 	checked: boolean;
 }
 
+let PageSize = 2;
+
 export default function CulturalAgendaPage() {
 
 	const [selectedTab, setSelectedTab] = useState<selectedTab>('todos')
+
+	const [currentPage, setCurrentPage] = useState(1);
 
 	const [checkboxesModalidad, setCheckboxesModalidad] = useState<CheckboxItem[]>([
 		{ id: 1, label: "Todos (120)", checked: false },
@@ -63,6 +68,10 @@ export default function CulturalAgendaPage() {
 			)
 		);
 	};
+
+	const handlePageChange = (page: number) => {
+		console.log(page);
+	}
 
 	return (
 		<>
@@ -146,6 +155,19 @@ export default function CulturalAgendaPage() {
 									))
 								}
 							</ul>
+							{/* <Pagination
+								onPageChange={handlePageChange}
+								totalCount={12}
+								currentPage={1}
+								pageSize={3}
+							/> */}
+							<Pagination
+								className="pagination-bar"
+								currentPage={currentPage}
+								totalCount={eventsDataToHome.length}
+								pageSize={PageSize}
+								onPageChange={page => setCurrentPage(page)}
+							/>
 						</div>
 					</div>
 				</div>

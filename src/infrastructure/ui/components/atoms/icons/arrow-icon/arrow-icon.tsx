@@ -1,17 +1,18 @@
 import React, { FC } from 'react'
 
 interface ArrowIconProps {
+	className?: string;
 	direction?: "right" | "left";
 	fillColor?: string;
 }
 
-const ArrowIcon: FC<ArrowIconProps> = ({ direction = 'right', fillColor }) => {
+const ArrowIcon: FC<ArrowIconProps> = ({ className, direction = 'right', fillColor }) => {
 
 	const rotation = direction === "left" ? "rotate-180" : "";
 
 	return (
 		<svg
-			className={rotation}
+			className={`${className} ${rotation}`}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
