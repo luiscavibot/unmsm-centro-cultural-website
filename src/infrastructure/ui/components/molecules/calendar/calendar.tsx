@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-// import { CalendarIcon } from "lucide-react";
 import { DayPicker, DateRange } from "react-day-picker";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
 import { cn } from "@/infrastructure/ui/helpers/cn";
 import { AnimatePresence, motion } from "framer-motion";
+import CalendarFilterIcon from "../../atoms/icons/calendar-filter-icon";
 
 const Calendar = () => {
 	const [date, setDate] = useState<DateRange | undefined>();
@@ -41,7 +41,7 @@ const Calendar = () => {
 		<div className="relative" ref={calendarRef}>
 			<button
 				className={cn(
-					"flex w-full items-center p-4 ring-1 ring-inset ring-light-gray-2 rounded-lg text-left leading-[24px] font-medium text-dark-blue-2",
+					"flex w-full items-center justify-between gap-4 p-4 ring-1 ring-inset ring-light-gray-2 rounded-lg text-left leading-[24px] font-medium text-dark-blue-2 bg-white",
 					!date && "text-dark-blue-2/70"
 				)}
 				onClick={(e) => {
@@ -49,8 +49,8 @@ const Calendar = () => {
 					setIsOpen((prev) => !prev);
 				}}
 			>
-				{/* <CalendarIcon className="mr-2 h-4 w-4" /> */}
 				{formattedDate}
+				<CalendarFilterIcon theme="dark" className="shrink-0" />
 			</button>
 			<AnimatePresence>
 				{isOpen && (

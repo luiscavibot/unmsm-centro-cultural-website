@@ -69,10 +69,6 @@ export default function CulturalAgendaPage() {
 		);
 	};
 
-	const handlePageChange = (page: number) => {
-		console.log(page);
-	}
-
 	return (
 		<>
 			<div className="px-4 lg:px-[104px] bg-white pb-6">
@@ -155,12 +151,6 @@ export default function CulturalAgendaPage() {
 									))
 								}
 							</ul>
-							{/* <Pagination
-								onPageChange={handlePageChange}
-								totalCount={12}
-								currentPage={1}
-								pageSize={3}
-							/> */}
 							<Pagination
 								className="pagination-bar"
 								currentPage={currentPage}
