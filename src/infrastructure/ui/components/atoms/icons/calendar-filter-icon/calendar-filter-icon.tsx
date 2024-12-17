@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 interface CalendarFilterIconProps {
 	theme?: 'light' | 'dark';
-	className: string;
+	className?: string;
 }
 
 const CalendarFilterIcon: FC<CalendarFilterIconProps> = ({ theme = 'dark', className }) => {

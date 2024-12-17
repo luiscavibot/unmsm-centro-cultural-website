@@ -5,7 +5,7 @@ import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
-import NewsCard from '@/infrastructure/ui/components/molecules/news-card';
+import NewsHomeCard from '@/infrastructure/ui/components/molecules/news-home-card';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls'
 import newsDataToHome from '@/infrastructure/ui/mocks/news-data-to-home';
 import ExternalLinkIcon from '../../../atoms/icons/external-link-icon';
@@ -59,7 +59,7 @@ const News = () => {
 						<SplideTrack>
 							{newsDataToHome.map((news, index) => (
 								<SplideSlide key={index}>
-									<NewsCard {...news} />
+									<NewsHomeCard {...news} />
 								</SplideSlide>
 							))}
 						</SplideTrack>

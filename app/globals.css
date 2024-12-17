@@ -45,7 +45,7 @@
 	--text-color-primary-button-dark-hover: var(--gray-2);
 	--text-color-primary-button-dark-active: var(--black);
 	--text-color-primary-button-dark-disabled: var(--dark-white-3);
-	
+
 	--bg-color-primary-button-dark: var(--dark-white-2);
 	--bg-color-primary-button-dark-hover: var(--dark-white-2);
 	--bg-color-primary-button-dark-active: var(--light-gray);
@@ -81,7 +81,7 @@
 	--text-color-secondary-button-dark-hover: var(--dark-red-2);
 	--text-color-secondary-button-dark-active: var(--dark-red);
 	--text-color-secondary-button-dark-disabled: var(--light-gray);
-	
+
 	--bg-color-secondary-button-dark: var(--transparent);
 	--bg-color-secondary-button-dark-hover: var(--dark-white-4);
 	--bg-color-secondary-button-dark-active: var(--dark-white-4);
@@ -117,7 +117,7 @@
 	--text-color-tertiary-button-dark-hover: var(--dark-white-4);
 	--text-color-tertiary-button-dark-active: var(--dark-white-4);
 	--text-color-tertiary-button-dark-disabled: var(--light-gray);
-	
+
 	--bg-color-tertiary-button-dark: var(--transparent);
 	--bg-color-tertiary-button-dark-hover: var(--transparent);
 	--bg-color-tertiary-button-dark-active: var(--dark-red-2);
@@ -221,31 +221,31 @@ body {
 	align-items: center;
 	gap: 4px;
 	font-weight: 500;
-  }
-  
-  .form-control--disabled {
+}
+
+.form-control--disabled {
 	cursor: not-allowed;
-  }
-  
-  input[type="checkbox"] {
+}
+
+input[type="checkbox"] {
 	position: relative;
 	-webkit-appearance: none;
 	appearance: none;
 	background-color: var(--form-background);
 	margin: 0;
-  
+
 	font: inherit;
 	width: 18px;
 	height: 18px;
-	border:2px solid var(--input-checkbox-border-color);
+	border: 2px solid var(--input-checkbox-border-color);
 	border-radius: 2px;
-  
+
 	display: grid;
 	place-content: center;
 	transition: 200ms all ease-in-out;
-  }
+}
 
-  input[type="checkbox"]::after {
+input[type="checkbox"]::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -259,22 +259,22 @@ body {
 	transition: 200ms all ease-in-out;
 	border-radius: 100px;
 	background-color: rgba(28, 6, 7, 0.08);
-  }
+}
 
-  input[type="checkbox"]:hover::after {
+input[type="checkbox"]:hover::after {
 	opacity: 1;
-  }
+}
 
-  input[type="checkbox"]:active::after {
+input[type="checkbox"]:active::after {
 	opacity: 1;
 	background-color: rgba(28, 6, 7, 0.12);
-  }
+}
 
-  input[type="checkbox"]:disabled::after {
+input[type="checkbox"]:disabled::after {
 	content: none;
-  }
-  
-  input[type="checkbox"]::before {
+}
+
+input[type="checkbox"]::before {
 	content: "";
 	width: 0.65em;
 	height: 0.65em;
@@ -282,151 +282,185 @@ body {
 	opacity: 0;
 	transition: 200ms all ease-in-out;
 	background-color: var(--input-checkbox-color-check);
-  }
-  
-  input[type="checkbox"]:checked::before {
-	opacity: 1;
-  }
+}
 
-  input[type="checkbox"]:checked {
+input[type="checkbox"]:checked::before {
+	opacity: 1;
+}
+
+input[type="checkbox"]:checked {
 	background-color: var(--input-checkbox-background-color-checked);
-	border:2px solid var(--transparent);
-  }
-  
-  input[type="checkbox"]:disabled {
+	border: 2px solid var(--transparent);
+}
+
+input[type="checkbox"]:disabled {
 	--form-control-color: var(--input-checkbox-disabled);
-	border:2px solid var(--input-checkbox-disabled);
+	border: 2px solid var(--input-checkbox-disabled);
 	color: var(--input-checkbox-disabled);
 	cursor: not-allowed;
-  }
+}
 
-  input[type="checkbox"]:disabled:checked {
+input[type="checkbox"]:disabled:checked {
 	--form-control-color: var(--input-checkbox-disabled);
-	border:2px solid var(--transparent);
+	border: 2px solid var(--transparent);
 	background-color: var(--input-checkbox-disabled);
 	color: var(--input-checkbox-disabled);
 	cursor: not-allowed;
-  }
+}
 
-  /* Calendar */
+/* Calendar */
 
-  .rdp-months {
+.rdp-months {
 	@apply relative;
-	  .rdp-nav {
+
+	.rdp-nav {
 		@apply absolute top-0 right-0;
-	  }
-	  .rdp-month {
+	}
+
+	.rdp-month {
 		.rdp-month_caption {
 			@apply uppercase ml-2 mb-3 text-xs font-semibold;
 		}
-		  .rdp-month_grid {
+
+		.rdp-month_grid {
 			@apply w-full;
+
 			.rdp-weekdays {
 				@apply text-[10px] font-medium capitalize;
 			}
-			td, th {
+
+			td,
+			th {
 				@apply w-[32px] h-[32px]
 			}
+
 			.rdp-day {
 				@apply text-center text-xs font-medium p-px bg-transparent transition-colors duration-150;
+
 				&.rdp-selected .rdp-day_button {
 					/* @apply border-[var(--dark-white-3)]; */
 				}
-				&.rdp-range_start, &.rdp-range_end {
+
+				&.rdp-range_start,
+				&.rdp-range_end {
 					@apply !text-white;
-					.rdp-day_button{
+
+					.rdp-day_button {
 						@apply !bg-dark-gray-2;
 					}
 				}
+
 				&.rdp-range_start {
 					background: linear-gradient(90deg, transparent 50%, var(--dark-white-3) 50%);
 				}
+
 				&.rdp-range_end {
 					background: linear-gradient(90deg, var(--dark-white-3) 50%, transparent 50%);
 				}
+
 				&.rdp-range_start.rdp-range_end {
 					background: revert;
 				}
+
 				&.rdp-today {
 					.rdp-day_button {
 						@apply border-dark-gray-2;
 					}
 				}
+
 				.rdp-day_button {
 					@apply w-[32px] h-[32px] rounded-full border-2 border-transparent bg-transparent transition-colors duration-150;
+
 					&:hover {
 						@apply bg-[var(--dark-white-3)];
 					}
 				}
+
 				&.rdp-range_middle {
 					@apply bg-[var(--dark-white-3)];
+
 					.rdp-day_button {
 						/* @apply bg-[var(--dark-white-3)]; */
 					}
 				}
 			}
-		  }
-	  }
-  }
+		}
+	}
+}
 
 
-  /* Pagination */
+/* Pagination */
 
-  .pagination-bar {
+.pagination-bar {
 	@apply w-full flex justify-center text-base font-semibold mt-10;
-  }
+}
 
-  .pagination-container {
+.pagination-container {
 	display: flex;
 	list-style-type: none;
-  
+
 	.pagination-item {
-	  padding: 0 4px;
-	  height: 40px;
-	  text-align: center;
-	  margin: auto 4px;
-	  display: flex;
-	  box-sizing: border-box;
-	  align-items: center;
-	  justify-content: center;
-	  letter-spacing: 0.01071em;
-	  border-radius: 8px;
-	  line-height: 1.43;
-	  min-width: 40px;
-	  transition: all 0.2s ease-in-out;
-  
-	  &.dots:hover {
-		background-color: transparent;
-		cursor: default;
-	  }
-	  &:hover {
-		background-color: var(--dark-white-3);
-		cursor: pointer;
-	  }
-  
-	  &.selected {
-		background-color: var(--gray-2);
-		color: var(--white);
-	  }
+		padding: 0 4px;
+		height: 40px;
+		text-align: center;
+		margin: auto 4px;
+		display: flex;
+		box-sizing: border-box;
+		align-items: center;
+		justify-content: center;
+		letter-spacing: 0.01071em;
+		border-radius: 8px;
+		line-height: 1.43;
+		min-width: 40px;
+		transition: all 0.2s ease-in-out;
 
-	  &.button-arrow {
-		@apply flex items-center justify-center gap-x-2 lg:px-4;
-	  }
-  
-	  &.disabled {
-		pointer-events: none;
-		color: var(--light-gray-2);
+		&.dots:hover {
+			background-color: transparent;
+			cursor: default;
+		}
 
-		.arrow {
-			path {
-				fill: var(--light-gray-2);
+		&:hover {
+			background-color: var(--dark-white-3);
+			cursor: pointer;
+		}
+
+		&.selected {
+			background-color: var(--gray-2);
+			color: var(--white);
+		}
+
+		&.button-arrow {
+			@apply flex items-center justify-center gap-x-2 lg:px-4;
+		}
+
+		&.disabled {
+			pointer-events: none;
+			color: var(--light-gray-2);
+
+			.arrow {
+				path {
+					fill: var(--light-gray-2);
+				}
+			}
+
+			&:hover {
+				background-color: transparent;
+				cursor: default;
 			}
 		}
-  
-		&:hover {
-		  background-color: transparent;
-		  cursor: default;
-		}
-	  }
 	}
-  }
+}
+
+/* input search */
+
+/* Ocultar la "x" en navegadores WebKit (Chrome, Safari) incluso al pasar el mouse */
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+	/* Oculta el botón de limpiar */
+}
+
+/* Opcional: Estilo para Edge e IE */
+input[type="search"]::-ms-clear {
+	display: none;
+	/* Oculta el botón de limpiar */
+}
