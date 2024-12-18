@@ -1,9 +1,8 @@
 'use client'
 
-import Tab from '@/infrastructure/ui/components/atoms/tab'
 import Title from '@/infrastructure/ui/components/atoms/title'
 import NewsCard from '@/infrastructure/ui/components/molecules/news-card'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import NewsDataToHome from '@/infrastructure/ui/mocks/news-data-to-home';
 import ArrowDropdownIcon from '@/infrastructure/ui/components/atoms/icons/arrow-dropdown-icon'
 import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button'
@@ -12,7 +11,16 @@ import Checkbox from '@/infrastructure/ui/components/atoms/inputs/checkbox'
 import Pagination from '@/infrastructure/ui/components/molecules/pagination'
 import Search from '@/infrastructure/ui/components/atoms/inputs/search'
 
-type selectedTab = 'todos' | 'esta-semana'
+import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import type { Splide as SplideType } from '@splidejs/splide';
+import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls'
+import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
+import FeaturedNewsCard from '@/infrastructure/ui/components/molecules/featured-news-card';
+
+interface ExtendedSplideType extends SplideType {
+	splide: SplideType;
+}
 
 interface CheckboxItem {
 	id: number;
@@ -23,6 +31,18 @@ interface CheckboxItem {
 let PageSize = 2;
 
 export default function CulturalAgendaPage() {
+
+	const splideRef = useRef<ExtendedSplideType>(null);
+
+	const splideOptions = {
+		type: 'slide',
+		width: '100%',
+		perPage: 1,
+		arrows: false,
+		pagination: false,
+		gap: '0px',
+		perMove: 1,
+	};
 
 	const [currentPage, setCurrentPage] = useState(1);
 
@@ -52,15 +72,47 @@ export default function CulturalAgendaPage() {
 		console.log(query);
 	};
 
+	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
+
 	return (
 		<>
 			<div className="px-4 lg:px-[104px] bg-white pb-6">
 				<div className="container">
 					<div className="max-w-[814px] mx-auto mb-[80px]">
 						<Title className="text-center">Noticias</Title>
-						<div className="leading-[24px] text-dark-blue-2">
-							<p className="mb-3">En este espacio te brindamos la agenda mensual de las actividades que realizan las diez direcciones que conforman el Centro Cultural de San Marcos.</p>
-							<p className="font-semibold">El ingreso es libre, salvo las que se indiquen.</p>
+						<div className="relative">
+							<Splide
+								onMoved={handleMove}
+								ref={splideRef}
+								hasTrack={false}
+								options={splideOptions}
+							>
+								<SplideTrack>
+									{NewsDataToHome.map((newData, index) => (
+										<SplideSlide key={index}>
+											<FeaturedNewsCard {...newData} />
+										</SplideSlide>
+									))}
+								</SplideTrack>
+							</Splide>
+							<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[20px] pointer-events-none">
+								<div className="container flex justify-between gap-x-2 relative">
+									<ArrowButton
+										className="pointer-events-auto"
+										theme="dark"
+										onClick={handlePrev}
+										direction="left"
+										disabled={isPrevDisabled}
+									/>
+									<ArrowButton
+										className="pointer-events-auto"
+										theme="dark"
+										onClick={handleNext}
+										direction="right"
+										disabled={isNextDisabled}
+									/>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -104,9 +156,9 @@ export default function CulturalAgendaPage() {
 							<span className="font-medium leading-[24px] text-right flex items-end justify-end w-full mb-8 h-[56px]">57 resultados en total</span>
 							<ul className="flex flex-col space-y-8">
 								{
-									NewsDataToHome.map((event, index) => (
+									NewsDataToHome.map((newData, index) => (
 										<li className="flex" key={index}>
-											<NewsCard {...event} />
+											<NewsCard {...newData} />
 										</li>
 									))
 								}

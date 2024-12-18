@@ -64,14 +64,16 @@ const News = () => {
 							))}
 						</SplideTrack>
 					</Splide>
-					<div className="flex justify-end gap-x-2 relative mt-4">
+					<div className="flex justify-end gap-x-2 relative mt-4 pointer-events-none">
 						<ArrowButton
+							className="pointer-events-auto"
 							theme="light"
 							onClick={handlePrev}
 							direction="left"
 							disabled={isPrevDisabled}
 						/>
 						<ArrowButton
+							className="pointer-events-auto"
 							theme="light"
 							onClick={handleNext}
 							direction="right"

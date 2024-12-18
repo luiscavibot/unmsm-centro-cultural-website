@@ -46,15 +46,17 @@ const CoursesAndWorkshops = () => {
 					))}
 				</SplideTrack>
 			</Splide>
-			<div className="absolute bottom-[56px] px-[104px] w-full">
+			<div className="absolute bottom-[56px] px-[104px] w-full pointer-events-none">
 				<div className="container flex justify-end gap-x-2 relative">
 					<ArrowButton
+						className="pointer-events-auto"
 						theme="light"
 						onClick={handlePrev}
 						direction="left"
 						disabled={isPrevDisabled}
 					/>
 					<ArrowButton
+						className="pointer-events-auto"
 						theme="light"
 						onClick={handleNext}
 						direction="right"
