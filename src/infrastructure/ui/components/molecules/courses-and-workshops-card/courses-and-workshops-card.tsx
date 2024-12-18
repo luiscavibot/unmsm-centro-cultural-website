@@ -16,7 +16,7 @@ interface CoursesAndWorkshopsCardProps {
 }
 
 const CoursesAndWorkshopsCard: React.FC<CoursesAndWorkshopsCardProps> = ({ slug, imageUrl, title, type, subtitle, description }) => (
-	<Link className="inline-flex group" href={`agenda-cultural/${slug}`}>
+	<Link className="inline-flex group" href={`cursos-y-talleres/${slug}`}>
 		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300">
 			<figure className="relative w-[260px] h-full flex-shrink-0">
 				<Image src={imageUrl} className="object-cover h-full" alt={title} layout="fill" />

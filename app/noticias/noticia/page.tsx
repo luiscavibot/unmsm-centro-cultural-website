@@ -8,7 +8,7 @@ import RecentNewsCard from '@/infrastructure/ui/components/molecules/recent-news
 import newsDataToHome from '@/infrastructure/ui/mocks/news-data-to-home'
 import React from 'react'
 
-export default function Evento() {
+export default function Noticia() {
 	return (
 		<div className="px-4 lg:px-[104px] bg-white pb-[104px]">
 			<div className="container">
