@@ -17,7 +17,7 @@ export default function Evento() {
 			<div className="container">
 				<div className="max-w-[814px] mx-auto mb-[80px]">
 					<div className="flex justify-center">
-						<Badge label="virtual" size="small" />
+						<Badge label="Virtual" size="small" />
 					</div>
 					<Title className="text-center mb-16">Letras breves: Canción popular costeña en el norte del Perú</Title>
 					<div className="flex gap-x-1 justify-center mb-14">

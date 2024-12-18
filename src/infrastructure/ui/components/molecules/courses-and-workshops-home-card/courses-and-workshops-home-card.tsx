@@ -8,7 +8,7 @@ import Badge from '@/infrastructure/ui/components/atoms/badge';
 interface CoursesAndWorkshopsHomeCardProps {
 	href: string;
 	imageUrl: string;
-	type: 'curso' | 'taller';
+	type: 'Curso' | 'Taller';
 	title: string;
 	subtitle: string;
 	description: string;

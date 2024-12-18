@@ -1,7 +1,7 @@
 interface CoursesAndWorkshopsDataToHome {
 	href: string;
 	imageUrl: string;
-	type: "curso" | "taller";
+	type: "Curso" | "Taller";
 	title: string;
 	subtitle: string;
 	description: string;
@@ -10,7 +10,7 @@ interface CoursesAndWorkshopsDataToHome {
 const coursesAndWorkshopsDataToHome: CoursesAndWorkshopsDataToHome[] = [
 	{
 		href: "#",
-		type: "taller",
+		type: "Taller",
 		imageUrl: "https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/talleres.jpg",
 		title: "Euphonio, tuba, trompeta y trombón 1",
 		subtitle: "Dirección de Música UNMSM",
@@ -18,7 +18,7 @@ const coursesAndWorkshopsDataToHome: CoursesAndWorkshopsDataToHome[] = [
 	},
 	{
 		href: "#",
-		type: "curso",
+		type: "Curso",
 		imageUrl: "https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/talleres.jpg",
 		title: "Euphonio, tuba, trompeta y trombón 2",
 		subtitle: "Dirección de Música UNMSM",
@@ -26,7 +26,7 @@ const coursesAndWorkshopsDataToHome: CoursesAndWorkshopsDataToHome[] = [
 	},
 	{
 		href: "#",
-		type: "taller",
+		type: "Taller",
 		imageUrl: "https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/talleres.jpg",
 		title: "Euphonio, tuba, trompeta y trombón 3",
 		subtitle: "Dirección de Música UNMSM",

@@ -21,7 +21,7 @@ const NewsHomeCard: React.FC<NewsHomeCardProps> = ({ imageUrl, date, dateString,
 				<header>
 					<div className="flex flex-row items-center justify-start gap-2 mb-1">
 						<CalendarIcon className="shrink-0" ariaLabel="Fecha" color="dark" />
-						<time dateTime={date} className="text-dark-blue-2 text-sm leading-[21px]">{dateString}</time>
+						<time dateTime={date} className="text-dark-blue-2 font-medium text-sm leading-[21px]">{dateString}</time>
 					</div>
 					<h3 className="line-clamp-3 text-xl text-dark-blue font-semibold leading-[30px] group-hover:text-dark-red transition-colors duration-200">{title}</h3>
 				</header>
