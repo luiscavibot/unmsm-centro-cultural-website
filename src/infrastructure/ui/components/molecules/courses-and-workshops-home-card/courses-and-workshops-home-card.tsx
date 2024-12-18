@@ -6,7 +6,7 @@ import React, { FC, useRef } from 'react';
 import Badge from '@/infrastructure/ui/components/atoms/badge';
 
 interface CoursesAndWorkshopsHomeCardProps {
-	href: string;
+	slug: string;
 	imageUrl: string;
 	type: 'Curso' | 'Taller';
 	title: string;
@@ -15,7 +15,7 @@ interface CoursesAndWorkshopsHomeCardProps {
 }
 
 const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
-	href,
+	slug,
 	imageUrl,
 	type,
 	title,
@@ -53,7 +53,7 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 				className="absolute top-0 left-0 w-full h-full -z-10 bg-courses-and-workshops opacity-[64%] transition-opacity duration-200 ease-in-out"
 			></div>
 			<div className="container">
-				<Link onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="inline-block" href={href}>
+				<Link onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="inline-block" href={`cursos-y-talleres/${slug}`}>
 					<div className="max-w-[459px]">
 						<header>
 							<Badge label={type} size="large" />

@@ -4,10 +4,11 @@ import SearchFilterIcon from '@/infrastructure/ui/components/atoms/icons/search-
 
 interface SearchProps {
 	onSearch: (query: string) => void;
+	placeholder?: string;
 	className?: string;
 }
 
-const Search: React.FC<SearchProps> = ({ onSearch, className }) => {
+const Search: React.FC<SearchProps> = ({ onSearch, placeholder, className }) => {
 	const [searchTerm, setSearchTerm] = useState('');
 
 	// Hook personalizado para retrasar la búsqueda
@@ -30,7 +31,7 @@ const Search: React.FC<SearchProps> = ({ onSearch, className }) => {
 			</span>
 			<input
 				type="search"
-				placeholder="¿Qué estás buscando?"
+				placeholder={placeholder}
 				value={searchTerm}
 				onChange={handleInputChange}
 				className="flex w-full items-center justify-between gap-4 p-4 pr-12 ring-1 ring-inset ring-light-gray-2 hover:ring-dark-blue-2 focus:ring-2 focus:ring-dark-red focus-visible:ring-2 focus-visible:ring-dark-red outline-none transition-all duration-200 rounded-lg text-left leading-[24px] font-medium text-dark-blue-2 bg-white placeholder:text-dark-blue-2/70"

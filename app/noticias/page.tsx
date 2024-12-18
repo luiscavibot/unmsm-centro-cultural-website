@@ -122,7 +122,7 @@ export default function CulturalAgendaPage() {
 					<div className="flex flex-row justify-between gap-x-[105px]">
 						<div>
 							<div className="mb-8">
-								<Search onSearch={handleSearch} />
+								<Search placeholder="¿Qué estás buscando?" onSearch={handleSearch} />
 							</div>
 							<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
 								<div>
