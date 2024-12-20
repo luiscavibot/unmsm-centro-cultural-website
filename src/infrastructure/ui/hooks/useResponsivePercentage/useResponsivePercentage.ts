@@ -5,9 +5,10 @@ const useResponsivePercentage = () => {
 	const wrapperRef = useRef<HTMLDivElement | null>(null);
 	const containerRef = useRef<HTMLDivElement | null>(null);
 	const [percentage, setPercentage] = useState<string>('58');
-	const [isLargeScreen, setIsLargeScreen] = useState<boolean>(window.innerWidth >= 1024);
+	const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
 
 	useEffect(() => {
+		if (typeof window === 'undefined') return;
 		const handleResize = () => {
 			setIsLargeScreen(window.innerWidth >= 1024);
 		};
