@@ -31,6 +31,7 @@ const News = () => {
 		breakpoints: {
 			1024: {
 				fixedWidth: "100%",
+				perMove: 1,
 			},
 		},
 	};
