@@ -51,8 +51,8 @@ const Museums = () => {
 	return (
 		<section id="museos" className="scroll-mt-28">
 			<h2 className="hidden sr-only">Museos</h2>
-			<div className="grid grid-cols-2 h-[480px]">
-				<article onMouseEnter={handleEnter1} onMouseLeave={handleLeave1} className="pl-[104px] h-full relative bg-black-custom overflow-hidden">
+			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
+				<article onMouseEnter={handleEnter1} onMouseLeave={handleLeave1} className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-black-custom overflow-hidden">
 					<figure ref={bgRef1} className="absolute -bottom-[25%] -right-[20px] origin-bottom-left transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arte-san-marcos-1.png"
@@ -69,12 +69,12 @@ const Museums = () => {
 							height={621}
 						/>
 					</figure>
-					<div className="relative pt-[96px] pb-[56px] pr-16 semi-container-l h-full">
+					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 semi-container-l h-full">
 						<header className="max-w-[459px] text-white">
-							<h3 className="text-[32px] font-bold leading-[normal]">
+							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
 								Museo de Arte de San Marcos
 							</h3>
-							<p className="mt-6 font-medium leading-[24px]">
+							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
 								Tiene como misión vincular sus colecciones con
 								los diversos públicos facilitando su
 								apreciación, conocimiento, identificación y
@@ -86,7 +86,7 @@ const Museums = () => {
 						<SecondaryButton type="internal-link" href="#" theme="dark" label="Explorar" className="mt-8" />
 					</div>
 				</article>
-				<article onMouseEnter={handleEnter2} onMouseLeave={handleLeave2} className="pr-[104px] h-full relative bg-dark-red-2 overflow-hidden">
+				<article onMouseEnter={handleEnter2} onMouseLeave={handleLeave2} className="px-6 lg:pr-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden">
 					<figure ref={bgRef2} className="absolute -bottom-[7%] -right-[164px] origin-bottom-left transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arqueologia-antropologia-1.png"
@@ -103,12 +103,12 @@ const Museums = () => {
 							height={621}
 						/>
 					</figure>
-					<div className="relative pt-[96px] pb-[56px] pl-16 semi-container-r h-full">
+					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 semi-container-r h-full">
 						<header className="max-w-[459px] text-white">
-							<h3 className="text-[32px] font-bold leading-[normal]">
+							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
 								Museo de Arqueología y Antropología
 							</h3>
-							<p className="mt-6 font-medium leading-[24px]">
+							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
 								Es uno de los museos universitarios más antiguos
 								y destacados del país y de la región, tanto por
 								la custodia de sus invaluables artefactos
