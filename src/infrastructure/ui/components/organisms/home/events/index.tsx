@@ -45,7 +45,7 @@ const Events: FC = () => {
 					))}
 				</SplideTrack>
 			</Splide>
-			<div className="absolute bottom-[56px] px-[104px] w-full pointer-events-none">
+			<div className="absolute bottom-[32px] lg:bottom-[56px] px-6 lg:px-[104px] w-full pointer-events-none">
 				<div className="container flex justify-end gap-x-2 relative">
 					<ArrowButton
 						className="pointer-events-auto"

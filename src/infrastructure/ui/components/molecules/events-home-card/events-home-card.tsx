@@ -22,18 +22,18 @@ interface EventsHomeCardProps {
 
 const EventsHomeCard: FC<EventsHomeCardProps> = ({ slug, imageUrl, title, summary, date, dateString, time, timeString, location }) => {
 
-	const { wrapperRef, containerRef, percentage } = useResponsivePercentage();
+	const { wrapperRef, containerRef, percentage, isLargeScreen } = useResponsivePercentage();
 
 	return (
 		<article
 			ref={wrapperRef}
-			className="h-[720px] relative bg-white px-[104px]"
+			className="lg:h-[720px] relative bg-white px-6 lg:px-[104px]"
 		>
-			<Link href={`agenda-cultural/${slug}`} className="absolute top-0 left-0 w-[57%] h-full block peer">
+			<Link href={`agenda-cultural/${slug}`} className="lg:absolute lg:top-0 lg:left-0 lg:w-[57%] max-lg:!h-[320px] lg:h-full block peer">
 				<figure>
 					<Image
 						src={imageUrl}
-						className="object-cover"
+						className="object-cover max-lg:!h-[320px]"
 						alt="events"
 						fill
 					/>
@@ -41,20 +41,20 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({ slug, imageUrl, title, summar
 			</Link>
 			<div
 				ref={containerRef}
-				className="grid h-[720px] container text-dark-text-color peer-hover:text-dark-red"
-				style={{ gridTemplateColumns: `${percentage}% auto` }}
+				className="grid lg:h-[720px] container text-dark-text-color peer-hover:text-dark-red"
+				style={isLargeScreen ? { gridTemplateColumns: `${percentage}% auto` } : undefined}
 			>
-				<div className="bg-white pl-16 py-14 flex items-end col-start-2">
+				<div className="bg-white lg:pl-16 py-8 lg:py-14 flex items-end col-start-2">
 					<Link href={`agenda-cultural/${slug}`} className="mb-16 hover:text-dark-red transition-colors duration-200">
 						<header>
-							<h3 className="block text-[40px] font-bold leading-[normal] mb-4 text-inherit">
+							<h3 className="block text-2xl lg:text-[40px] font-bold leading-[normal] mb-4 text-inherit">
 								{title}
 							</h3>
 						</header>
-						<p className="leading-6">
+						<p className="leading-6 text-sm lg:text-base">
 							{summary}
 						</p>
-						<div className="leading-[normal] text-sm font-semibold mt-5 space-y-1">
+						<div className="leading-[normal] text-sm font-semibold mt-4 lg:mt-5 space-y-1">
 							<div className="flex p-1 gap-2 items-center">
 								<DateRangeIcon className="shrink-0" ariaLabel="Fecha" color="dark" />
 								<time className="block" dateTime={date}>
