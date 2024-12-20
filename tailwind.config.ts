@@ -16,8 +16,10 @@ const config: Config = {
 				montserrat: ['var(--font-montserrat)'],
 			},
 			backgroundImage: {
-				'gradiente-carrusel-portada':
+				'gradiente-carrusel-portada-lg':
 					'linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 62%)',
+				'gradiente-carrusel-portada':
+					'linear-gradient(0deg, rgba(6, 7, 7, 0.64) 0%, rgba(6, 7, 7, 0.64) 100%)',
 			},
 			backgroundColor: {
 				'light-arrow-button-color': {

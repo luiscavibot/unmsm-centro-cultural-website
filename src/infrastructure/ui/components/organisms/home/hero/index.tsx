@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
 						))}
 					</Splide>
 				</div>
-				<div className="bg-gradiente-carrusel-portada opacity-40 absolute w-full h-full inset-0"></div>
+				<div className="bg-gradiente-carrusel-portada lg:bg-gradiente-carrusel-portada-lg opacity-40 absolute w-full h-full inset-0"></div>
 				<div className="relative px-6 lg:px-[104px] h-[360px] lg:h-[720px]">
 					<div className="container h-full flex justify-center lg:justify-start items-center">
 						<h2 className="leading-[160%] lg:leading-[48px] w-[245px] lg:w-[477px] font-messiri font-bold text-white max-lg:text-center">
