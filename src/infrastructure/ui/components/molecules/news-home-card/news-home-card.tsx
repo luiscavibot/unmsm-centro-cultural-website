@@ -12,12 +12,12 @@ interface NewsHomeCardProps {
 }
 
 const NewsHomeCard: React.FC<NewsHomeCardProps> = ({ imageUrl, date, dateString, title, summary, slug }) => (
-	<Link className="group" href={`noticias/${slug}`}>
-		<article className="rounded-2xl overflow-hidden flex flex-row w-[620px] h-[240px]">
-			<figure className="relative w-[240px] h-[240px] flex-shrink-0">
+	<Link className="group w-full lg:w-[620px] h-[240px]" href={`noticias/${slug}`}>
+		<article className="rounded-2xl overflow-hidden flex flex-row">
+			<figure className="max-lg:hidden relative w-[240px] h-[240px] flex-shrink-0">
 				<Image src={imageUrl} className="object-cover" alt={title} layout="fill" />
 			</figure>
-			<div className="bg-white p-6 w-[380px] flex-shrink-0">
+			<div className="bg-white p-6 w-auto lg:w-[380px] lg:flex-shrink-0">
 				<header>
 					<div className="flex flex-row items-center justify-start gap-2 mb-1">
 						<CalendarIcon className="shrink-0" ariaLabel="Fecha" color="dark" />

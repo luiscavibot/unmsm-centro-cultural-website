@@ -28,12 +28,17 @@ const News = () => {
 		pagination: false,
 		gap: '40px',
 		perMove: 2,
+		breakpoints: {
+			1024: {
+				fixedWidth: "100%",
+			},
+		},
 	};
 
 	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
 
 	return (
-		<section className="px-[104px] py-[56px] bg-red-custom scroll-mt-28 relative overflow-hidden" id="noticias">
+		<section className="px-6 lg:px-[104px] py-[32px] lg:py-[56px] bg-red-custom scroll-mt-28 relative overflow-hidden" id="noticias">
 			<div className="absolute -top-[100%] -left-20">
 				<Image
 					src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-noticias.svg"
@@ -42,14 +47,14 @@ const News = () => {
 					height={775}
 				/>
 			</div>
-			<div className="container grid grid-cols-[auto_minmax(0,1fr)] items-center justify-between gap-x-14 relative">
+			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-center justify-between gap-x-14 relative">
 				<div className="flex flex-row items-center justify-center p-2 gap-2">
-					<h2 className="font-messiri text-[40px] text-white">Noticias</h2>
+					<h2 className="font-messiri text-[24px] lg:text-[40px] text-white">Noticias</h2>
 					<Link href="/noticias">
 						<ExternalLinkIcon color="white" />
 					</Link>
 				</div>
-				<div id="slider">
+				<div className="max-lg:w-full" id="slider">
 					<Splide
 						onMoved={handleMove}
 						ref={splideRef}
