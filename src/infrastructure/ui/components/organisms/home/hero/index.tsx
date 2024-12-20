@@ -56,12 +56,12 @@ const Hero: React.FC = () => {
 					</Splide>
 				</div>
 				<div className="bg-gradiente-carrusel-portada opacity-40 absolute w-full h-full inset-0"></div>
-				<div className="relative px-[104px] h-[720px]">
-					<div className="container h-full flex justify-start items-center">
-						<h2 className="leading-[48px] w-[477px] font-messiri font-bold text-white">
-							<span className="text-[40px]">¡Descubre el</span>
+				<div className="relative px-6 lg:px-[104px] h-[360px] lg:h-[720px]">
+					<div className="container h-full flex justify-center lg:justify-start items-center">
+						<h2 className="leading-[160%] lg:leading-[48px] w-[245px] lg:w-[477px] font-messiri font-bold text-white max-lg:text-center">
+							<span className="text-base lg:text-[40px]">¡Descubre el</span>
 							<br />
-							<span className="text-[56px]">
+							<span className="text-[24px] lg:text-[56px]">
 								Centro Cultural San Marcos!
 							</span>
 						</h2>
