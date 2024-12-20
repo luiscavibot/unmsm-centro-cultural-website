@@ -12,7 +12,7 @@ import BaselineEmailIcon from '@/infrastructure/ui/components/atoms/icons/baseli
 
 const Siguenos = () => (
 	<>
-		<p className="mt-6 text-xs leading-[normal] font-semibold">Síguenos:</p>
+		<p className="text-xs leading-[normal] font-semibold">Síguenos:</p>
 		<div className="flex flex-row items-center gap-2 mt-2">
 			<a className="p-1 rounded-[4px] bg-dark-gray-2" href="" rel="noreferrer noopener" target="_blank">
 				<FacebookIcon />
@@ -43,7 +43,7 @@ const Footer: React.FC = () => (
 							height={74.8}
 						/>
 					</Link>
-					<div className="hidden lg:block">
+					<div className="hidden lg:block mt-6">
 						<Siguenos />
 					</div>
 				</div>
@@ -71,7 +71,8 @@ const Footer: React.FC = () => (
 						</p>
 					</address>
 				</div>
-				<div className="block lg:hidden max-lg:mt-20 max-lg:mx-auto">
+				<div className="my-10 w-[72px] mx-auto bg-light-gray-2 h-[1px] lg:hidden opacity-50"></div>
+				<div className="block lg:hidden max-lg:mx-auto">
 					<Siguenos />
 				</div>
 			</div>
