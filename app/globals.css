@@ -9,15 +9,15 @@
 	--white: #ffffff;
 	--black: #060707;
 	--gray: #2a2d31;
-	--gray-2: #171A1D;
+	--gray-2: #171a1d;
 	--light-gray: #999b9d;
-	--light-gray-2: #9DA3AD;
+	--light-gray-2: #9da3ad;
 	--dark-gray: rgb(23, 26, 29);
-	--dark-gray-transparent: rgba(23, 26, 29, 0.3);
+	--dark-gray-transparent: rgba(23, 26, 29, 0.76);
 	--dark-gray-2: #212529;
-	--dark-gray-3: #49454F;
+	--dark-gray-3: #49454f;
 	--green: #063e40;
-	--light-green: #E7F4F5;
+	--light-green: #e7f4f5;
 	--dark-blue: #1d2836;
 	--dark-blue-2: #29384c;
 	--dark-blue-2-opacity-70: rgba(41, 56, 76, 0.7);
@@ -25,12 +25,12 @@
 	--dark-white: #e9efff;
 	--dark-white-2: #f9fafb;
 	--dark-white-3: #eaebed;
-	--dark-white-4: #ECE7E7;
-	--dark-white-5: #A99191;
+	--dark-white-4: #ece7e7;
+	--dark-white-5: #a99191;
 	--red: #9c162b;
 	--dark-red: #430f10;
 	--dark-red-2: #1c0607;
-	--dark-red-3: #300B0B;
+	--dark-red-3: #300b0b;
 
 	--max-w-xl: 1600px;
 	--half-max-w-xl: calc(var(--max-w-xl) / 2);
@@ -153,8 +153,7 @@
 	--input-checkbox-border-color: var(--dark-gray-3);
 	--input-checkbox-border-color-hover: var(--dark-blue-2);
 	--input-checkbox-border-color-active: var(--dark-blue-2);
-	--input-checkbox-disabled: rgba(41, 56, 76, .38);
-
+	--input-checkbox-disabled: rgba(41, 56, 76, 0.38);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -228,7 +227,7 @@ body {
 	cursor: not-allowed;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
 	position: relative;
 	-webkit-appearance: none;
 	appearance: none;
@@ -246,8 +245,8 @@ input[type="checkbox"] {
 	transition: 200ms all ease-in-out;
 }
 
-input[type="checkbox"]::after {
-	content: "";
+input[type='checkbox']::after {
+	content: '';
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -262,21 +261,21 @@ input[type="checkbox"]::after {
 	background-color: rgba(28, 6, 7, 0.08);
 }
 
-input[type="checkbox"]:hover::after {
+input[type='checkbox']:hover::after {
 	opacity: 1;
 }
 
-input[type="checkbox"]:active::after {
+input[type='checkbox']:active::after {
 	opacity: 1;
 	background-color: rgba(28, 6, 7, 0.12);
 }
 
-input[type="checkbox"]:disabled::after {
+input[type='checkbox']:disabled::after {
 	content: none;
 }
 
-input[type="checkbox"]::before {
-	content: "";
+input[type='checkbox']::before {
+	content: '';
 	width: 0.65em;
 	height: 0.65em;
 	clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
@@ -285,23 +284,23 @@ input[type="checkbox"]::before {
 	background-color: var(--input-checkbox-color-check);
 }
 
-input[type="checkbox"]:checked::before {
+input[type='checkbox']:checked::before {
 	opacity: 1;
 }
 
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
 	background-color: var(--input-checkbox-background-color-checked);
 	border: 2px solid var(--transparent);
 }
 
-input[type="checkbox"]:disabled {
+input[type='checkbox']:disabled {
 	--form-control-color: var(--input-checkbox-disabled);
 	border: 2px solid var(--input-checkbox-disabled);
 	color: var(--input-checkbox-disabled);
 	cursor: not-allowed;
 }
 
-input[type="checkbox"]:disabled:checked {
+input[type='checkbox']:disabled:checked {
 	--form-control-color: var(--input-checkbox-disabled);
 	border: 2px solid var(--transparent);
 	background-color: var(--input-checkbox-disabled);
@@ -332,7 +331,7 @@ input[type="checkbox"]:disabled:checked {
 
 			td,
 			th {
-				@apply w-[32px] h-[32px]
+				@apply w-[32px] h-[32px];
 			}
 
 			.rdp-day {
@@ -352,11 +351,19 @@ input[type="checkbox"]:disabled:checked {
 				}
 
 				&.rdp-range_start {
-					background: linear-gradient(90deg, transparent 50%, var(--dark-white-3) 50%);
+					background: linear-gradient(
+						90deg,
+						transparent 50%,
+						var(--dark-white-3) 50%
+					);
 				}
 
 				&.rdp-range_end {
-					background: linear-gradient(90deg, var(--dark-white-3) 50%, transparent 50%);
+					background: linear-gradient(
+						90deg,
+						var(--dark-white-3) 50%,
+						transparent 50%
+					);
 				}
 
 				&.rdp-range_start.rdp-range_end {
@@ -388,7 +395,6 @@ input[type="checkbox"]:disabled:checked {
 		}
 	}
 }
-
 
 /* Pagination */
 
@@ -455,13 +461,13 @@ input[type="checkbox"]:disabled:checked {
 /* input search */
 
 /* Ocultar la "x" en navegadores WebKit (Chrome, Safari) incluso al pasar el mouse */
-input[type="search"]::-webkit-search-cancel-button {
+input[type='search']::-webkit-search-cancel-button {
 	display: none;
 	/* Oculta el botón de limpiar */
 }
 
 /* Opcional: Estilo para Edge e IE */
-input[type="search"]::-ms-clear {
+input[type='search']::-ms-clear {
 	display: none;
 	/* Oculta el botón de limpiar */
 }

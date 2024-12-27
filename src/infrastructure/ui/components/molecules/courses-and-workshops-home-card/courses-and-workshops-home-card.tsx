@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -22,7 +22,6 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 	subtitle,
 	description,
 }) => {
-
 	const coverRef = useRef<HTMLDivElement>(null);
 
 	const handleMouseEnter = () => {
@@ -33,7 +32,7 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 
 	const handleMouseLeave = () => {
 		if (coverRef.current) {
-			coverRef.current.style.opacity = '0.64';
+			coverRef.current.style.opacity = '1';
 		}
 	};
 
@@ -50,10 +49,15 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 			<div
 				ref={coverRef}
 				aria-hidden="true"
-				className="absolute top-0 left-0 w-full h-full -z-10 bg-courses-and-workshops opacity-[64%] transition-opacity duration-200 ease-in-out"
+				className="absolute top-0 left-0 w-full h-full -z-10 bg-gradiente-courses-and-workshops-home opacity-[100%] transition-opacity duration-200 ease-in-out"
 			></div>
 			<div className="container">
-				<Link onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="inline-block" href={`cursos-y-talleres/${slug}`}>
+				<Link
+					onMouseEnter={handleMouseEnter}
+					onMouseLeave={handleMouseLeave}
+					className="inline-block"
+					href={`cursos-y-talleres/${slug}`}
+				>
 					<div className="max-w-[459px]">
 						<header>
 							<Badge label={type} size="large" />
