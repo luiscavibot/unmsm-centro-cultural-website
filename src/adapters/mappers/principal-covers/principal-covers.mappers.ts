@@ -7,10 +7,10 @@ export interface IPrincipalCoversMapper {
 
 export class PrincipalCoversMapperToStrapi implements IPrincipalCoversMapper {
 	toDomain(response: StrapiPrincipalCoversResponse): PrincipalCover[] {
-		return response.data.attributes.imagenes.data.map((cover) => ({
+		return response.data.images.map((cover) => ({
 			id: cover.id,
-			url: cover.attributes.url,
-			alt: cover.attributes.alternativeText,
+			url: cover.url,
+			alt: cover.alternativeText,
 		}));
 	}
 }

@@ -6,10 +6,13 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import heroImageDataToHome from '@/infrastructure/ui/mocks/hero-image-data-to-home';
 
 import React from 'react';
+import { PrincipalCoversPresenterResp } from '@/adapters/presenters/principal-covers/principal-covers.presenter';
 
-//TODO: Cambiar importación de imagen en bg por url proveniente de Gestor de Contenido de CCSM
+interface HeroProps {
+	images: PrincipalCoversPresenterResp[];
+}
 
-const Hero: React.FC = () => {
+const Hero: React.FC<HeroProps> = ({ images }) => {
 	return (
 		<>
 			<div className="relative overflow-hidden">
@@ -40,11 +43,11 @@ const Hero: React.FC = () => {
 							},
 						}}
 					>
-						{heroImageDataToHome.map((imagen, index) => (
+						{images.map((imagen, index) => (
 							<SplideSlide className="!h-full" key={index}>
 								<Image
-									src={imagen.imageUrl}
-									alt={imagen.caption}
+									src={imagen.url}
+									alt={imagen.alt}
 									width={2732}
 									height={1232}
 									quality={100}
@@ -59,7 +62,9 @@ const Hero: React.FC = () => {
 				<div className="relative px-6 lg:px-[104px] h-[360px] lg:h-[720px]">
 					<div className="container h-full flex justify-center lg:justify-start items-center">
 						<h2 className="leading-[160%] lg:leading-[48px] w-[245px] lg:w-[477px] font-messiri font-bold text-white max-lg:text-center">
-							<span className="text-base lg:text-[40px]">¡Descubre el</span>
+							<span className="text-base lg:text-[40px]">
+								¡Descubre el
+							</span>
 							<br />
 							<span className="text-[24px] lg:text-[56px]">
 								Centro Cultural San Marcos!

@@ -13,11 +13,10 @@ export class PrincipalCoversRepositoryFromStrapi
 	async getPrincipalCovers() {
 		try {
 			const params = new URLSearchParams();
-			params.append('populate[imagenes][fields][0]', 'url');
-			params.append('populate[imagenes][fields][1]', 'alternativeText');
+			params.append('populate', 'images');
 			const response =
 				await strapiBackInstance.get<StrapiPrincipalCoversResponse>(
-					'/imagen-portada',
+					'/principal-cover',
 					{ params }
 				);
 			return this.principalCoversMapper.toDomain(response.data);

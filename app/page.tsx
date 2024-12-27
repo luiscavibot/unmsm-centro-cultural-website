@@ -14,13 +14,11 @@ export default async function Home() {
 		'IPrincipalCoversController'
 	);
 
-	const data = await principalCoversController.getAll();
-	console.log(data);
-
+	const principalCovers = await principalCoversController.getAll();
 	return (
 		<>
 			<h1 className="hidden sr-only">Centro Cultural de San Marcos</h1>
-			<Hero />
+			<Hero images={principalCovers} />
 			<Contact />
 			<Events />
 			<CoursesAndWorkshops />
