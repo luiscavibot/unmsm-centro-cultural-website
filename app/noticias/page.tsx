@@ -17,6 +17,7 @@ import type { Splide as SplideType } from '@splidejs/splide';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls'
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 import FeaturedNewsCard from '@/infrastructure/ui/components/molecules/featured-news-card';
+import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -29,6 +30,17 @@ interface CheckboxItem {
 }
 
 let PageSize = 2;
+
+const breadcrumbItems = [
+	{
+		title: 'Inicio',
+		path: '/'
+	},
+	{
+		title: 'Noticias',
+		path: '/noticias'
+	}
+]
 
 export default function CulturalAgendaPage() {
 
@@ -75,105 +87,107 @@ export default function CulturalAgendaPage() {
 	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
 
 	return (
-		<>
-			<div className="px-4 lg:px-[104px] bg-white pb-6">
-				<div className="container">
-					<div className="max-w-[814px] mx-auto mb-[80px]">
-						<Title className="text-center">Noticias</Title>
-						<div className="relative">
-							<Splide
-								onMoved={handleMove}
-								ref={splideRef}
-								hasTrack={false}
-								options={splideOptions}
-							>
-								<SplideTrack>
-									{NewsDataToHome.map((newData, index) => (
-										<SplideSlide key={index}>
-											<FeaturedNewsCard {...newData} />
-										</SplideSlide>
-									))}
-								</SplideTrack>
-							</Splide>
-							<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[20px] pointer-events-none">
-								<div className="container flex justify-between gap-x-2 relative">
-									<ArrowButton
-										className="pointer-events-auto"
-										theme="dark"
-										onClick={handlePrev}
-										direction="left"
-										disabled={isPrevDisabled}
-									/>
-									<ArrowButton
-										className="pointer-events-auto"
-										theme="dark"
-										onClick={handleNext}
-										direction="right"
-										disabled={isNextDisabled}
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
-				<div className="container">
-					<div className="flex flex-row justify-between gap-x-[105px]">
-						<div>
-							<div className="mb-8">
-								<Search placeholder="¿Qué estás buscando?" onSearch={handleSearch} />
-							</div>
-							<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
-								<div>
-									<div className="flex items-center justify-between h-6 mb-2">
-										<span className="font-bold leading-[19.2px]">Dependencias</span>
-										<ArrowDropdownIcon />
-									</div>
-									<div className="flex flex-col gap-y-1">
-										{checkboxesDependencias.map((checkbox) => (
-											<Checkbox
-												key={checkbox.id}
-												label={checkbox.label}
-												checked={checkbox.checked}
-												onChange={(e) => handleCheckboxChangeDependencias(checkbox.id, e.target.checked)}
-											/>
+		<Layout portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp" breadcrumbItems={breadcrumbItems}>
+			<>
+				<div className="px-4 lg:px-[104px] bg-white pb-6">
+					<div className="container">
+						<div className="max-w-[814px] mx-auto mb-[80px]">
+							<Title className="text-center">Noticias</Title>
+							<div className="relative">
+								<Splide
+									onMoved={handleMove}
+									ref={splideRef}
+									hasTrack={false}
+									options={splideOptions}
+								>
+									<SplideTrack>
+										{NewsDataToHome.map((newData, index) => (
+											<SplideSlide key={index}>
+												<FeaturedNewsCard {...newData} />
+											</SplideSlide>
 										))}
+									</SplideTrack>
+								</Splide>
+								<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[20px] pointer-events-none">
+									<div className="container flex justify-between gap-x-2 relative">
+										<ArrowButton
+											className="pointer-events-auto"
+											theme="dark"
+											onClick={handlePrev}
+											direction="left"
+											disabled={isPrevDisabled}
+										/>
+										<ArrowButton
+											className="pointer-events-auto"
+											theme="dark"
+											onClick={handleNext}
+											direction="right"
+											disabled={isNextDisabled}
+										/>
 									</div>
-								</div>
-								<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
-								<div className="flex gap-x-4">
-									<TertiaryButton label="Limpiar filtros" theme="light" type="on-click" onClick={() => {
-										console.log("click");
-									}} />
-									<PrimaryButton label="Aplicar" theme="light" type="on-click" onClick={() => {
-										console.log("click");
-									}} />
 								</div>
 							</div>
 						</div>
-						<div>
-							<span className="font-medium leading-[24px] text-right flex items-end justify-end w-full mb-8 h-[56px]">57 resultados en total</span>
-							<ul className="flex flex-col space-y-8">
-								{
-									NewsDataToHome.map((newData, index) => (
-										<li className="flex" key={index}>
-											<NewsCard {...newData} />
-										</li>
-									))
-								}
-							</ul>
-							<Pagination
-								className="pagination-bar"
-								currentPage={currentPage}
-								totalCount={NewsDataToHome.length}
-								pageSize={PageSize}
-								onPageChange={page => setCurrentPage(page)}
-							/>
+					</div>
+				</div>
+				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
+					<div className="container">
+						<div className="flex flex-row justify-between gap-x-[105px]">
+							<div>
+								<div className="mb-8">
+									<Search placeholder="¿Qué estás buscando?" onSearch={handleSearch} />
+								</div>
+								<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
+									<div>
+										<div className="flex items-center justify-between h-6 mb-2">
+											<span className="font-bold leading-[19.2px]">Dependencias</span>
+											<ArrowDropdownIcon />
+										</div>
+										<div className="flex flex-col gap-y-1">
+											{checkboxesDependencias.map((checkbox) => (
+												<Checkbox
+													key={checkbox.id}
+													label={checkbox.label}
+													checked={checkbox.checked}
+													onChange={(e) => handleCheckboxChangeDependencias(checkbox.id, e.target.checked)}
+												/>
+											))}
+										</div>
+									</div>
+									<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
+									<div className="flex gap-x-4">
+										<TertiaryButton label="Limpiar filtros" theme="light" type="on-click" onClick={() => {
+											console.log("click");
+										}} />
+										<PrimaryButton label="Aplicar" theme="light" type="on-click" onClick={() => {
+											console.log("click");
+										}} />
+									</div>
+								</div>
+							</div>
+							<div>
+								<span className="font-medium leading-[24px] text-right flex items-end justify-end w-full mb-8 h-[56px]">57 resultados en total</span>
+								<ul className="flex flex-col space-y-8">
+									{
+										NewsDataToHome.map((newData, index) => (
+											<li className="flex" key={index}>
+												<NewsCard {...newData} />
+											</li>
+										))
+									}
+								</ul>
+								<Pagination
+									className="pagination-bar"
+									currentPage={currentPage}
+									totalCount={NewsDataToHome.length}
+									pageSize={PageSize}
+									onPageChange={page => setCurrentPage(page)}
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</>
+			</>
+		</Layout>
 	)
 }

@@ -11,6 +11,7 @@ import Checkbox from '@/infrastructure/ui/components/atoms/inputs/checkbox'
 import Calendar from '@/infrastructure/ui/components/molecules/calendar'
 import Pagination from '@/infrastructure/ui/components/molecules/pagination'
 import Search from '@/infrastructure/ui/components/atoms/inputs/search';
+import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
 
 type selectedTab = 'todos' | 'esta-semana'
 
@@ -21,6 +22,17 @@ interface CheckboxItem {
 }
 
 let PageSize = 2;
+
+const breadcrumbItems = [
+	{
+		title: 'Inicio',
+		path: '/'
+	},
+	{
+		title: 'Cursos y talleres',
+		path: '/cursos-y-talleres'
+	}
+]
 
 export default function CulturalAgendaPage() {
 
@@ -82,112 +94,114 @@ export default function CulturalAgendaPage() {
 	};
 
 	return (
-		<>
-			<div className="px-4 lg:px-[104px] bg-white pb-14">
-				<div className="container">
-					<div className="max-w-[814px] mx-auto">
-						<Title className="text-center">Cursos y talleres</Title>
-						<div className="leading-[24px] text-dark-blue-2">
-							<p>En el Centro Cultural de San Marcos te ofrecemos cursos y talleres para niños, jóvenes y adultos. Tienes a tu disposición una variada lista de opciones: talleres musicales, de danza, artes plásticas, cursos especializados y mucho más. Te invitamos a revisar a continuación las opciones de cada una de las diez direcciones que conforman el Centro Cultural de la Universidad Decana de América.</p>
-						</div>
-						<div className="mt-20">
-							<Search className="max-w-[422px] mx-auto" placeholder="¿Qué te gustaría aprender?" onSearch={handleSearch} />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
-				<div className="container">
-					<div className="flex flex-row justify-between gap-x-[105px]">
-						<div>
-							<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
-								<div>
-									<div className="flex items-center justify-between h-6 mb-2">
-										<span className="font-bold leading-[19.2px]">Tipo</span>
-										<ArrowDropdownIcon />
-									</div>
-									<div className="flex flex-col gap-y-1">
-										{checkboxesTipo.map((checkbox) => (
-											<Checkbox
-												key={checkbox.id}
-												label={checkbox.label}
-												checked={checkbox.checked}
-												onChange={(e) => handleCheckboxChangeTipo(checkbox.id, e.target.checked)}
-											/>
-										))}
-									</div>
-								</div>
-								<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
-								<div>
-									<div className="flex items-center justify-between h-6 mb-2">
-										<span className="font-bold leading-[19.2px]">Dependencia</span>
-										<ArrowDropdownIcon />
-									</div>
-									<div>
-										<div className="flex flex-col gap-y-1">
-											{checkboxesDependencia.map((checkbox) => (
-												<Checkbox
-													key={checkbox.id}
-													label={checkbox.label}
-													checked={checkbox.checked}
-													onChange={(e) => handleCheckboxChangeDependencia(checkbox.id, e.target.checked)}
-												/>
-											))}
-										</div>
-									</div>
-								</div>
-								<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
-								<div>
-									<div className="flex items-center justify-between h-6 mb-2">
-										<span className="font-bold leading-[19.2px]">Modalidad</span>
-										<ArrowDropdownIcon />
-									</div>
-									<div>
-										<div className="flex flex-col gap-y-1">
-											{checkboxesModalidad.map((checkbox) => (
-												<Checkbox
-													key={checkbox.id}
-													label={checkbox.label}
-													checked={checkbox.checked}
-													onChange={(e) => handleCheckboxChangeModalidad(checkbox.id, e.target.checked)}
-												/>
-											))}
-										</div>
-									</div>
-								</div>
-								<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
-								<div className="flex gap-x-4">
-									<TertiaryButton label="Limpiar filtros" theme="light" type="on-click" onClick={() => {
-										console.log("click");
-									}} />
-									<PrimaryButton label="Aplicar" theme="light" type="on-click" onClick={() => {
-										console.log("click");
-									}} />
-								</div>
+		<Layout portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp" breadcrumbItems={breadcrumbItems}>
+			<>
+				<div className="px-4 lg:px-[104px] bg-white pb-14">
+					<div className="container">
+						<div className="max-w-[814px] mx-auto">
+							<Title className="text-center">Cursos y talleres</Title>
+							<div className="leading-[24px] text-dark-blue-2">
+								<p>En el Centro Cultural de San Marcos te ofrecemos cursos y talleres para niños, jóvenes y adultos. Tienes a tu disposición una variada lista de opciones: talleres musicales, de danza, artes plásticas, cursos especializados y mucho más. Te invitamos a revisar a continuación las opciones de cada una de las diez direcciones que conforman el Centro Cultural de la Universidad Decana de América.</p>
+							</div>
+							<div className="mt-20">
+								<Search className="max-w-[422px] mx-auto" placeholder="¿Qué te gustaría aprender?" onSearch={handleSearch} />
 							</div>
 						</div>
-						<div>
-							<span className="font-medium leading-[24px] text-right flex items-end justify-end w-full mb-8 h-[56px]">57 resultados en total</span>
-							<ul className="flex flex-col space-y-8">
-								{
-									coursesAndWorkshopsDataToHome.map((event, index) => (
-										<li className="flex" key={index}>
-											<CoursesAndWorkshopsCard {...event} />
-										</li>
-									))
-								}
-							</ul>
-							<Pagination
-								className="pagination-bar"
-								currentPage={currentPage}
-								totalCount={coursesAndWorkshopsDataToHome.length}
-								pageSize={PageSize}
-								onPageChange={page => setCurrentPage(page)}
-							/>
+					</div>
+				</div>
+				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
+					<div className="container">
+						<div className="flex flex-row justify-between gap-x-[105px]">
+							<div>
+								<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
+									<div>
+										<div className="flex items-center justify-between h-6 mb-2">
+											<span className="font-bold leading-[19.2px]">Tipo</span>
+											<ArrowDropdownIcon />
+										</div>
+										<div className="flex flex-col gap-y-1">
+											{checkboxesTipo.map((checkbox) => (
+												<Checkbox
+													key={checkbox.id}
+													label={checkbox.label}
+													checked={checkbox.checked}
+													onChange={(e) => handleCheckboxChangeTipo(checkbox.id, e.target.checked)}
+												/>
+											))}
+										</div>
+									</div>
+									<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
+									<div>
+										<div className="flex items-center justify-between h-6 mb-2">
+											<span className="font-bold leading-[19.2px]">Dependencia</span>
+											<ArrowDropdownIcon />
+										</div>
+										<div>
+											<div className="flex flex-col gap-y-1">
+												{checkboxesDependencia.map((checkbox) => (
+													<Checkbox
+														key={checkbox.id}
+														label={checkbox.label}
+														checked={checkbox.checked}
+														onChange={(e) => handleCheckboxChangeDependencia(checkbox.id, e.target.checked)}
+													/>
+												))}
+											</div>
+										</div>
+									</div>
+									<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
+									<div>
+										<div className="flex items-center justify-between h-6 mb-2">
+											<span className="font-bold leading-[19.2px]">Modalidad</span>
+											<ArrowDropdownIcon />
+										</div>
+										<div>
+											<div className="flex flex-col gap-y-1">
+												{checkboxesModalidad.map((checkbox) => (
+													<Checkbox
+														key={checkbox.id}
+														label={checkbox.label}
+														checked={checkbox.checked}
+														onChange={(e) => handleCheckboxChangeModalidad(checkbox.id, e.target.checked)}
+													/>
+												))}
+											</div>
+										</div>
+									</div>
+									<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
+									<div className="flex gap-x-4">
+										<TertiaryButton label="Limpiar filtros" theme="light" type="on-click" onClick={() => {
+											console.log("click");
+										}} />
+										<PrimaryButton label="Aplicar" theme="light" type="on-click" onClick={() => {
+											console.log("click");
+										}} />
+									</div>
+								</div>
+							</div>
+							<div>
+								<span className="font-medium leading-[24px] text-right flex items-end justify-end w-full mb-8 h-[56px]">57 resultados en total</span>
+								<ul className="flex flex-col space-y-8">
+									{
+										coursesAndWorkshopsDataToHome.map((event, index) => (
+											<li className="flex" key={index}>
+												<CoursesAndWorkshopsCard {...event} />
+											</li>
+										))
+									}
+								</ul>
+								<Pagination
+									className="pagination-bar"
+									currentPage={currentPage}
+									totalCount={coursesAndWorkshopsDataToHome.length}
+									pageSize={PageSize}
+									onPageChange={page => setCurrentPage(page)}
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</>
+			</>
+		</Layout>
 	)
 }
