@@ -22,6 +22,7 @@
 	--dark-blue-2: #29384c;
 	--dark-blue-2-opacity-70: rgba(41, 56, 76, 0.7);
 	--blue: #0e276b;
+	--blue-2: #072148;
 	--dark-white: #e9efff;
 	--dark-white-2: #f9fafb;
 	--dark-white-3: #eaebed;
@@ -187,7 +188,7 @@ body {
 }
 
 .link {
-	@apply hover:font-semibold underline transition-all duration-200;
+	@apply underline transition-all duration-200;
 }
 
 .dynamic-image {
@@ -351,19 +352,15 @@ input[type='checkbox']:disabled:checked {
 				}
 
 				&.rdp-range_start {
-					background: linear-gradient(
-						90deg,
-						transparent 50%,
-						var(--dark-white-3) 50%
-					);
+					background: linear-gradient(90deg,
+							transparent 50%,
+							var(--dark-white-3) 50%);
 				}
 
 				&.rdp-range_end {
-					background: linear-gradient(
-						90deg,
-						var(--dark-white-3) 50%,
-						transparent 50%
-					);
+					background: linear-gradient(90deg,
+							var(--dark-white-3) 50%,
+							transparent 50%);
 				}
 
 				&.rdp-range_start.rdp-range_end {
@@ -470,4 +467,14 @@ input[type='search']::-webkit-search-cancel-button {
 input[type='search']::-ms-clear {
 	display: none;
 	/* Oculta el botón de limpiar */
+}
+
+/* table */
+
+th {
+	@apply px-4 py-3;
+}
+
+td {
+	@apply border border-light-green p-4;
 }

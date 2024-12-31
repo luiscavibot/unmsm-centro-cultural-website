@@ -50,6 +50,8 @@ const config: Config = {
 				'dark-gray-2': 'var(--dark-gray-2)',
 				green: 'var(--green)',
 				'light-green': 'var(--light-green)',
+				blue: 'var(--blue)',
+				'blue-2': 'var(--blue-2)',
 				'dark-blue': 'var(--dark-blue)',
 				'dark-blue-2': 'var(--dark-blue-2)',
 				'dark-blue-2/70': 'var(--dark-blue-2-opacity-70)',
@@ -62,6 +64,7 @@ const config: Config = {
 				'red-custom': 'var(--red)',
 				'dark-red': 'var(--dark-red)',
 				'dark-red-2': 'var(--dark-red-2)',
+				'dark-red-3': 'var(--dark-red-3)',
 				'light-arrow-color': {
 					DEFAULT: 'var(--gray)',
 					hover: 'var(--dark-gray)',

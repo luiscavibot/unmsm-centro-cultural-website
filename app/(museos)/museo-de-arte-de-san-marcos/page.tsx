@@ -10,10 +10,19 @@ import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
+// import Colecciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/colecciones';
+// import Exposiciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones';
+// import Publicaciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/publicaciones';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 
-type selectedTab = 'colecciones' | 'exposiciones' | 'publicaciones'
+const tabs = {
+	colecciones: React.lazy(() => import('@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/colecciones')),
+	exposiciones: React.lazy(() => import('@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones')),
+	publicaciones: React.lazy(() => import('@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/publicaciones')),
+} as const;
+
+type TabKeys = keyof typeof tabs;
 
 const breadcrumbItems = [
 	{
@@ -28,10 +37,10 @@ const breadcrumbItems = [
 
 export default function MuseoDeArteDeSanMarcos() {
 
-	const [selectedTab, setSelectedTab] = useState<selectedTab>('colecciones')
+	const [currentTab, setCurrentTab] = useState<TabKeys>('colecciones')
 
-	const handleClick = (tab: selectedTab) => {
-		setSelectedTab(tab)
+	const handleClick = (tab: TabKeys) => {
+		setCurrentTab(tab)
 	}
 
 	return (
@@ -109,14 +118,19 @@ export default function MuseoDeArteDeSanMarcos() {
 						</div>
 					</div>
 				</div>
-				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[104px]">
+				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
 					<div className="container">
 						<div className="flex gap-x-4">
-							<Tab label="Colecciones" selected={selectedTab === 'colecciones'} onClick={() => { handleClick('colecciones') }} />
-							<Tab label="Exposiciones" selected={selectedTab === 'exposiciones'} onClick={() => { handleClick('exposiciones') }} />
-							<Tab label="Publicaciones" selected={selectedTab === 'publicaciones'} onClick={() => { handleClick('publicaciones') }} />
+							<Tab label="Colecciones" selected={currentTab === 'colecciones'} onClick={() => { handleClick('colecciones') }} />
+							<Tab label="Exposiciones" selected={currentTab === 'exposiciones'} onClick={() => { handleClick('exposiciones') }} />
+							<Tab label="Publicaciones" selected={currentTab === 'publicaciones'} onClick={() => { handleClick('publicaciones') }} />
 						</div>
 					</div>
+				</div>
+				<div>
+					<Suspense fallback={<div>Cargando...</div>}>
+						{React.createElement(tabs[currentTab])}
+					</Suspense>
 				</div>
 			</>
 		</Layout>
