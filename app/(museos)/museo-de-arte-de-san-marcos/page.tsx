@@ -1,3 +1,5 @@
+'use client'
+
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
 import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
@@ -6,9 +8,12 @@ import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/face
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
+import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
-import React from 'react'
+import React, { useState } from 'react'
+
+type selectedTab = 'colecciones' | 'exposiciones' | 'publicaciones'
 
 const breadcrumbItems = [
 	{
@@ -22,12 +27,19 @@ const breadcrumbItems = [
 ]
 
 export default function MuseoDeArteDeSanMarcos() {
+
+	const [selectedTab, setSelectedTab] = useState<selectedTab>('colecciones')
+
+	const handleClick = (tab: selectedTab) => {
+		setSelectedTab(tab)
+	}
+
 	return (
 		<Layout portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp" breadcrumbItems={breadcrumbItems}>
 			<>
-				<div className="px-4 lg:px-[104px] bg-white pb-6">
+				<div className="px-4 lg:px-[104px] bg-white pb-14">
 					<div className="container">
-						<div className="max-w-[814px] mx-auto mb-[80px]">
+						<div className="max-w-[814px] mx-auto">
 							<Title className="text-center">Museo de Arte de San Marcos</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">El Museo de Arte de San Marcos tiene como misión vincular sus colecciones con los diversos públicos facilitando su apreciación, conocimiento, identificación y reflexión, en tanto patrimonio cultural artístico, representativo de la memoria intercultural del Perú. Para ello, pone en valor a su valioso acervo, con una adecuada conservación, sostenida investigación y eficaz gestión.</p>
@@ -97,9 +109,13 @@ export default function MuseoDeArteDeSanMarcos() {
 						</div>
 					</div>
 				</div>
-				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
+				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[104px]">
 					<div className="container">
-
+						<div className="flex gap-x-4">
+							<Tab label="Colecciones" selected={selectedTab === 'colecciones'} onClick={() => { handleClick('colecciones') }} />
+							<Tab label="Exposiciones" selected={selectedTab === 'exposiciones'} onClick={() => { handleClick('exposiciones') }} />
+							<Tab label="Publicaciones" selected={selectedTab === 'publicaciones'} onClick={() => { handleClick('publicaciones') }} />
+						</div>
 					</div>
 				</div>
 			</>
