@@ -44,11 +44,11 @@ const menu: Menu[] = [
 		'sub-menu': [
 			{
 				title: 'Museo de Arte de San Marcos',
-				url: '/museos/museo-de-arte-de-san-marcos'
+				url: '/museo-de-arte-de-san-marcos'
 			},
 			{
 				title: 'Museo de Arqueología y Antropología',
-				url: '/museos/museo-de-arqueologia-y-antropologia'
+				url: '/museo-de-arqueologia-y-antropologia'
 			},
 			{
 				title: 'Exposiciones',
