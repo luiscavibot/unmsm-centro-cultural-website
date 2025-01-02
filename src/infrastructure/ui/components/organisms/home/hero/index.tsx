@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
-import heroImageDataToHome from '@/infrastructure/ui/mocks/hero-image-data-to-home';
 
 import React from 'react';
 import { PrincipalCoversPresenterResp } from '@/adapters/presenters/principal-covers/principal-covers.presenter';

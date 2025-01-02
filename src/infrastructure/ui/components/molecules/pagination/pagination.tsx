@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 // import classnames from 'classnames';
-import { cn as classnames } from "@/infrastructure/ui/helpers/cn";
+import { cn as classnames } from '@/infrastructure/ui/helpers/cn';
 import { usePagination, DOTS } from '@/infrastructure/ui/hooks/usePagination';
 import ArrowIcon from '@/infrastructure/ui/components/atoms/icons/arrow-icon';
 // import './pagination.scss';
@@ -14,22 +14,22 @@ interface PaginationProps {
 	className?: string;
 }
 
-const Pagination: FC<PaginationProps> = props => {
+const Pagination: FC<PaginationProps> = (props) => {
 	const {
 		onPageChange,
 		totalCount,
 		siblingCount = 1,
 		currentPage,
 		pageSize,
-		className = ""
+		className = '',
 	} = props;
 
 	const paginationRange = usePagination({
 		currentPage,
 		totalCount,
 		siblingCount,
-		pageSize
-	}) as (number | string)[] | null;;
+		pageSize,
+	}) as (number | string)[] | null;
 
 	// If there are less than 2 times in pagination range we shall not render the component
 	if (currentPage === 0 || !paginationRange || paginationRange.length < 2) {
@@ -44,15 +44,17 @@ const Pagination: FC<PaginationProps> = props => {
 		onPageChange(currentPage - 1);
 	};
 
-	let lastPage = paginationRange[paginationRange.length - 1];
+	const lastPage = paginationRange[paginationRange.length - 1];
 	return (
 		<ul
-			className={classnames('pagination-container', { [className]: className })}
+			className={classnames('pagination-container', {
+				[className]: className,
+			})}
 		>
 			{/* Left navigation arrow */}
 			<li
 				className={classnames('pagination-item button-arrow to-left', {
-					disabled: currentPage === 1
+					disabled: currentPage === 1,
 				})}
 				onClick={onPrevious}
 			>
@@ -61,10 +63,13 @@ const Pagination: FC<PaginationProps> = props => {
 				<span className="hidden lg:block">Anterior</span>
 			</li>
 			{paginationRange.map((pageNumber, i) => {
-
 				// If the pageItem is a DOT, render the DOTS unicode character
 				if (pageNumber === DOTS) {
-					return <li key={i} className="pagination-item dots">&#8230;</li>;
+					return (
+						<li key={i} className="pagination-item dots">
+							&#8230;
+						</li>
+					);
 				}
 
 				// Render our Page Pills
@@ -72,7 +77,7 @@ const Pagination: FC<PaginationProps> = props => {
 					<li
 						key={i}
 						className={classnames('pagination-item', {
-							selected: pageNumber === currentPage
+							selected: pageNumber === currentPage,
 						})}
 						onClick={() => onPageChange(Number(pageNumber))}
 					>
@@ -83,7 +88,7 @@ const Pagination: FC<PaginationProps> = props => {
 			{/*  Right Navigation arrow */}
 			<li
 				className={classnames('pagination-item button-arrow to-right', {
-					disabled: currentPage === lastPage
+					disabled: currentPage === lastPage,
 				})}
 				onClick={onNext}
 			>

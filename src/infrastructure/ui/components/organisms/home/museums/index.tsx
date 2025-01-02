@@ -1,11 +1,12 @@
-'use client'
+'use client';
 
 import Image from 'next/image';
 import React, { useRef } from 'react';
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
+import { useRouter } from 'next/navigation';
 
 const Museums = () => {
-
+	const router = useRouter();
 	const bgRef1 = useRef<HTMLDivElement>(null);
 	const coverRef1 = useRef<HTMLDivElement>(null);
 
@@ -52,16 +53,27 @@ const Museums = () => {
 		<section id="museos" className="scroll-mt-28">
 			<h2 className="hidden sr-only">Museos</h2>
 			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
-				<article onMouseEnter={handleEnter1} onMouseLeave={handleLeave1} className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-black-custom overflow-hidden">
-					<figure ref={bgRef1} className="absolute -bottom-[25%] -right-[20px] origin-bottom-left transition-transform duration-[800ms] ease-out">
+				<article
+					onClick={() => router.push('/museo-de-arte-de-san-marcos')}
+					onMouseEnter={handleEnter1}
+					onMouseLeave={handleLeave1}
+					className="cursor-pointer px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-black-custom overflow-hidden"
+				>
+					<figure
+						ref={bgRef1}
+						className="absolute -bottom-[25%] -right-[20px] origin-bottom-left transition-transform duration-[800ms] ease-out grayscale opacity-20 md:opacity-50"
+					>
 						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arte-san-marcos-1.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/masm_home_356d15dbe1.png"
 							alt="Museo de Arte de San Marcos"
 							width={350}
 							height={504}
 						/>
 					</figure>
-					<figure ref={coverRef1} className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out">
+					<figure
+						ref={coverRef1}
+						className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out"
+					>
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arte-san-marcos-2.svg"
 							alt="Museo de Arte de San Marcos"
@@ -83,19 +95,38 @@ const Museums = () => {
 								intercultural del Perú.
 							</p>
 						</header>
-						<SecondaryButton type="internal-link" href="#" theme="dark" label="Explorar" className="mt-8" />
+						<SecondaryButton
+							type="internal-link"
+							href="/museo-de-arte-de-san-marcos"
+							theme="dark"
+							label="Explorar"
+							className="mt-8"
+						/>
 					</div>
 				</article>
-				<article onMouseEnter={handleEnter2} onMouseLeave={handleLeave2} className="px-6 lg:pr-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden">
-					<figure ref={bgRef2} className="absolute -bottom-[7%] -right-[164px] origin-bottom-left transition-transform duration-[800ms] ease-out">
+				<article
+					onMouseEnter={handleEnter2}
+					onMouseLeave={handleLeave2}
+					onClick={() =>
+						router.push('/museo-de-arqueologia-y-antropologia')
+					}
+					className="cursor-pointer px-6 lg:pr-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden"
+				>
+					<figure
+						ref={bgRef2}
+						className="absolute -bottom-[7%] -right-[164px] origin-bottom-left transition-transform duration-[800ms] ease-out grayscale opacity-20 md:opacity-50"
+					>
 						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arqueologia-antropologia-1.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/maa_home_d26cd88048.png"
 							alt="Museo de Arqueología y Antropología"
 							width={432}
 							height={464}
 						/>
 					</figure>
-					<figure ref={coverRef2} className="absolute -top-[46%] -right-[270px] transition-transform duration-[800ms] ease-out">
+					<figure
+						ref={coverRef2}
+						className="absolute -top-[46%] -right-[270px] transition-transform duration-[800ms] ease-out"
+					>
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arqueologia-antropologia-2.svg"
 							alt="Museo de Arqueología y Antropología"
@@ -117,7 +148,13 @@ const Museums = () => {
 								proceso histórico prehispánico.
 							</p>
 						</header>
-						<SecondaryButton type="internal-link" href="#" theme="dark" label="Explorar" className="mt-8" />
+						<SecondaryButton
+							type="internal-link"
+							href="/museo-de-arqueologia-y-antropologia"
+							theme="dark"
+							label="Explorar"
+							className="mt-8"
+						/>
 					</div>
 				</article>
 			</div>

@@ -93,4 +93,6 @@ export interface Thumbnail {
 	sizeInBytes: number;
 }
 
-export interface Meta {}
+export interface Meta {
+	pagination: string;
+}

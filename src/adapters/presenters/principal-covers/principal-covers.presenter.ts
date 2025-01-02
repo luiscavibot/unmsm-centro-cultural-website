@@ -2,7 +2,7 @@ import { PrincipalCover } from '@/enterprise/entities/models/principal-cover';
 import { PrincipalCoverSchema } from '@/enterprise/entities/models/principal-cover';
 import { z } from 'zod';
 
-const PrincipalCoversPresenterRespSchema = PrincipalCoverSchema.extend({
+export const PrincipalCoversPresenterRespSchema = PrincipalCoverSchema.extend({
 	id: z.string(),
 });
 
