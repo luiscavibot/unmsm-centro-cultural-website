@@ -39,6 +39,8 @@
 	--header-top-height: 72px;
 	--header-bottom-height: 49px;
 
+	--total-header-height: calc(var(--header-top-height) + var(--header-bottom-height));
+
 	/* Primary Button */
 
 	/* Primary Button DARK */
