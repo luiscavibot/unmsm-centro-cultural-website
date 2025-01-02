@@ -14,6 +14,8 @@ export default async function Home() {
 		'IPrincipalCoversController'
 	);
 
+	//test
+
 	const principalCovers = await principalCoversController.getAll();
 	return (
 		<>
