@@ -102,7 +102,7 @@ export default function CulturalAgendaPage() {
 
 	return (
 		<Layout
-			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_4faf27014b.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
