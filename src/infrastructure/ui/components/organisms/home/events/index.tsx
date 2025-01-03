@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { FC, useRef } from 'react';
 import EventsHomeCard from '@/infrastructure/ui/components/molecules/events-home-card';
@@ -6,7 +6,7 @@ import eventsDataToHome from '@/infrastructure/ui/mocks/events-data-to-home';
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
-import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls'
+import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 
 interface ExtendedSplideType extends SplideType {
@@ -26,7 +26,13 @@ const Events: FC = () => {
 		perMove: 1,
 	};
 
-	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
+	const {
+		handlePrev,
+		handleNext,
+		handleMove,
+		isPrevDisabled,
+		isNextDisabled,
+	} = useSplideControls(splideRef);
 
 	return (
 		<section id="eventos" className="scroll-mt-28 relative">

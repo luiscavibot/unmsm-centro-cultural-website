@@ -9,6 +9,7 @@ import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne
 import Title from '@/infrastructure/ui/components/atoms/title';
 import UpcomingEventsCard from '@/infrastructure/ui/components/molecules/upcoming-events-card';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import useScrollOnLoad from '@/infrastructure/ui/hooks/use-scroll-on-load';
 import eventsDataToHome from '@/infrastructure/ui/mocks/events-data-to-home';
 import React from 'react';
 
@@ -28,9 +29,10 @@ const breadcrumbItems = [
 ];
 
 export default function Evento() {
+	useScrollOnLoad();
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_4faf27014b.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<div className="px-4 lg:px-[104px] bg-white pb-[104px]">
