@@ -8,7 +8,7 @@ const Exhibitions = () => {
 			<h2 className="hidden sr-only">Exposiciones</h2>
 			<div className="grid lg:grid-cols-2 auto-rows-[360px] lg:grid-rows-[repeat(3,360px)]">
 				<Link className="lg:row-span-2 group" href="#">
-					<article className="relative h-full px-6 lg:pl-[104px]">
+					<article className="relative h-full px-6 lg:pl-[104px] group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/tesoros_a5843db8a3.jpg"
@@ -30,7 +30,7 @@ const Exhibitions = () => {
 					</article>
 				</Link>
 				<Link href="#" className="group">
-					<article className="px-6 lg:pr-[104px] h-full relative">
+					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/la_universidad_ca330c65a0.jpg"
@@ -53,7 +53,7 @@ const Exhibitions = () => {
 					</article>
 				</Link>
 				<Link href="#" className="group">
-					<article className="px-6 lg:pr-[104px] h-full relative">
+					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/arte_moderno_86b0ecdc26.jpg"
@@ -75,7 +75,7 @@ const Exhibitions = () => {
 					</article>
 				</Link>
 				<Link href="#" className="group">
-					<article className="px-6 lg:pl-[104px] h-full relative">
+					<article className="px-6 lg:pl-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/buen_vivir_9c2a59f9d2.jpg"
@@ -98,7 +98,7 @@ const Exhibitions = () => {
 					</article>
 				</Link>
 				<Link href="#" className="group">
-					<article className="px-6 lg:pr-[104px] h-full relative">
+					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/vargas_llosa_5ba2050a06.jpg"
