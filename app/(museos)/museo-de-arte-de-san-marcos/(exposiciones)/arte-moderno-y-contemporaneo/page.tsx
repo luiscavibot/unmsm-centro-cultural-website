@@ -1,17 +1,25 @@
 'use client'
 
 import Badge from '@/infrastructure/ui/components/atoms/badge'
-import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button'
-import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button'
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon'
-import DateRangeIcon from '@/infrastructure/ui/components/atoms/icons/date-range-icon'
 import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon'
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon'
 import Title from '@/infrastructure/ui/components/atoms/title'
 import ExhibitionsCard from '@/infrastructure/ui/components/molecules/exhibitions-card'
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout'
 import exhibitions from '@/infrastructure/ui/mocks/exhibitions-arte-moderno-y-contemporaneo'
-import React from 'react'
+import React, { useRef } from 'react'
+
+import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import type { Splide as SplideType } from '@splidejs/splide';
+import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
+import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
+import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel'
+import Image from 'next/image'
+
+interface ExtendedSplideType extends SplideType {
+	splide: SplideType;
+}
 
 const breadcrumbItems = [
 	{
@@ -28,7 +36,28 @@ const breadcrumbItems = [
 	}
 ]
 
-export default function Evento() {
+export default function ArteModernoYContemporaneo() {
+
+	const splideRef = useRef<ExtendedSplideType>(null);
+
+	const splideOptions = {
+		type: 'slide',
+		width: '100%',
+		fixedWidth: '310px',
+		arrows: false,
+		pagination: false,
+		gap: '24px',
+		perMove: 1,
+		breakpoints: {
+			1024: {
+				fixedWidth: "100%",
+				perMove: 1,
+			},
+		},
+	};
+
+	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
+
 	return (
 		<Layout portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp" breadcrumbItems={breadcrumbItems} theme='dark'>
 			<div className="px-4 lg:px-[104px] bg-gray-2 text-white pb-[104px]">
@@ -71,6 +100,45 @@ export default function Evento() {
 									{...exhibition}
 								/>
 							))}
+						</div>
+					</div>
+					<div className="mt-[81px]">
+						<h2 className="font-bold text-xl leading-[30px] mb-10">Galería</h2>
+						<div className="max-lg:w-full relative">
+							<Splide
+								onMoved={handleMove}
+								ref={splideRef}
+								hasTrack={false}
+								options={splideOptions}
+							>
+								<SplideTrack>
+									{carouselExhibition.map((img, index) => (
+										<SplideSlide key={index}>
+											<figure className="max-lg:hidden relative w-[310px] h-[232px] flex-shrink-0 rounded-2xl overflow-hidden">
+												<Image src={img.imageUrl} className="object-cover" alt={"Exposición"} layout="fill" />
+											</figure>
+										</SplideSlide>
+									))}
+								</SplideTrack>
+							</Splide>
+							<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[20px] pointer-events-none">
+								<div className="container flex justify-between gap-x-2 relative">
+									<ArrowButton
+										className="pointer-events-auto"
+										theme="light"
+										onClick={handlePrev}
+										direction="left"
+										disabled={isPrevDisabled}
+									/>
+									<ArrowButton
+										className="pointer-events-auto"
+										theme="light"
+										onClick={handleNext}
+										direction="right"
+										disabled={isNextDisabled}
+									/>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

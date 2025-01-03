@@ -1,0 +1,1 @@
+export { default } from './exhibition-arte-moderno-y-contemporaneo-carousel';
