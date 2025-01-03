@@ -128,7 +128,14 @@ export default function MuseoDeArteDeSanMarcos() {
 					</div>
 				</div>
 				<div>
-					<Suspense fallback={<div>Cargando...</div>}>
+					<Suspense
+						fallback={
+							<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[24px]">
+								<div className="container">
+									<p className="max-w-[641px] leading-[24px] text-dark-blue-2">Cargando...</p>
+								</div>
+							</div>
+						}>
 						{React.createElement(tabs[currentTab])}
 					</Suspense>
 				</div>

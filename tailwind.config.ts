@@ -45,6 +45,7 @@ const config: Config = {
 				foreground: 'var(--foreground)',
 				'black-custom': 'var(--black)',
 				gray: 'var(--gray)',
+				'gray-2': 'var(--gray-2)',
 				'dark-gray': 'var(--dark-gray)',
 				'dark-gray-transparent': 'var(--dark-gray-transparent)',
 				'dark-gray-2': 'var(--dark-gray-2)',
