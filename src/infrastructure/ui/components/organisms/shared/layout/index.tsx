@@ -11,9 +11,16 @@ interface LayoutProps {
 	children: React.ReactNode
 	breadcrumbItems: BreadcrumbItem[]
 	portadaImage: string
+	theme?: 'dark' | 'light'
 }
 
-const Layout = ({ children, breadcrumbItems, portadaImage }: LayoutProps) => {
+const Layout = ({ children, breadcrumbItems, portadaImage, theme = 'light' }: LayoutProps) => {
+
+	const colors = {
+		dark: 'bg-gray-2 text-white',
+		light: 'bg-white'
+	}
+
 	return (
 		<section className="relative h-full">
 			<div id="imagen" className="fixed top-[--total-header-height] left-0 w-full h-[544px] z-[-1]">
@@ -26,9 +33,9 @@ const Layout = ({ children, breadcrumbItems, portadaImage }: LayoutProps) => {
 				/>
 			</div>
 			<div id="contenido" className="pt-[422px]">
-				<div className="px-4 lg:px-[104px] bg-white pt-16 rounded-t-[32px] overflow-hidden">
+				<div className={"px-4 lg:px-[104px] pt-16 rounded-t-[32px] overflow-hidden " + colors[theme]}>
 					<div className="container">
-						<Breadcrumb items={breadcrumbItems} />
+						<Breadcrumb theme={theme} items={breadcrumbItems} />
 					</div>
 				</div>
 				{children}

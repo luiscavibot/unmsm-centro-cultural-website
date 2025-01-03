@@ -2,14 +2,15 @@ import React, { FC } from 'react'
 
 interface OutlinePlaceIconProps {
 	className?: string;
-	color?: 'dark';
+	color?: 'dark' | 'light';
 	ariaLabel?: string;
 }
 
 const OutlinePlaceIcon: FC<OutlinePlaceIconProps> = ({ className, color = 'dark', ariaLabel }) => {
 
 	const colors = {
-		dark: 'fill-dark-blue'
+		dark: 'fill-dark-blue',
+		light: 'fill-white'
 	}
 
 	return (

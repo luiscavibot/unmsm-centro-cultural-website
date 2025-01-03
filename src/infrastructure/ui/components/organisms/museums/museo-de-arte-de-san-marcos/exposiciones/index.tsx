@@ -1,3 +1,6 @@
+import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon'
+import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon'
+import Link from 'next/link'
 import React from 'react'
 
 const Exposiciones = () => {
@@ -5,7 +8,7 @@ const Exposiciones = () => {
 		<>
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
 				<div className="container">
-					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">Los invitamos a explorar y valorar el arte peruano de diversas regiones, tendencias y periodos, celebrando la pluralidad de saberes, memorias e historias de vida presentes en cada una de las obras que integran la significativa colección del Museo de Arte de San Marcos. </p>
+					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">Los invitamos a explorar y valorar el arte peruano de diversas regiones, tendencias y periodos, celebrando la pluralidad de saberes, memorias e historias de vida presentes en cada una de las obras que integran la significativa colección del Museo de Arte de San Marcos.</p>
 				</div>
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-black text-white py-8 lg:py-[45px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arte-san-marcos-2.svg')] bg-no-repeat bg-[-123px_10px]">
@@ -14,6 +17,29 @@ const Exposiciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">Exposición permenente</span>
 						<h3 className="text-[32px] leading-[normal] font-semibold">Arte moderno y contemporáneo</h3>
 						<p className="font-medium leading-[24px] mt-6">La exposición dedicada a la colección de arte moderno y contemporáneo fue inaugurada en el año 2014, cuando era director del MASM el poeta y gestor cultural Germán Carnero.</p>
+						<div className="flex flex-col gap-y-2 mt-2">
+							<div className="flex gap-2 items-start">
+								<div className="flex items-center gap-1 shrink-0">
+									<OutlinePlaceIcon className="shrink-0 -mt-[1px]" ariaLabel="Lugar" color="light" />
+									<span className="font-bold">Lugar:</span>
+								</div>
+								<div>
+									<p className="font-normal">Segundo nivel del Patio de Letras</p>
+								</div>
+							</div>
+							<div className="flex gap-2 items-start">
+								<div className="flex items-center gap-1 shrink-0">
+									<ImageIcon className="shrink-0 -mt-[1px]" ariaLabel="Lugar" color="light" />
+									<span className="font-bold">Obras:</span>
+								</div>
+								<div>
+									<p className="font-normal">115 piezas en exhibición</p>
+								</div>
+							</div>
+						</div>
+						<Link href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo" className="link mt-8 inline-block">
+							Leer más
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -23,6 +49,29 @@ const Exposiciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">Exposición permenente</span>
 						<h3 className="text-[32px] leading-[normal] font-semibold">La universidad como «casa del saber»: Religiosos y laicos</h3>
 						<p className="font-medium leading-[24px] mt-6">Esta exposición pone al alcance de los interesados en el género del retrato una brevísima selección de obras de artistas importantes como Cristóbal de Aguilar (activo 1752-1771), Cota Carvallo (1909-1980), José Sabogal (1888-1956) y Etna Velarde (1943-2014), entre otros.</p>
+						<div className="flex flex-col gap-y-2 mt-2">
+							<div className="flex gap-2 items-start">
+								<div className="flex items-center gap-1 shrink-0">
+									<OutlinePlaceIcon className="shrink-0 -mt-[1px]" ariaLabel="Lugar" color="light" />
+									<span className="font-bold">Lugar:</span>
+								</div>
+								<div>
+									<p className="font-normal">Segundo nivel del Patio de Letras</p>
+								</div>
+							</div>
+							<div className="flex gap-2 items-start">
+								<div className="flex items-center gap-1 shrink-0">
+									<ImageIcon className="shrink-0 -mt-[1px]" ariaLabel="Lugar" color="light" />
+									<span className="font-bold">Obras:</span>
+								</div>
+								<div>
+									<p className="font-normal">22 piezas en exhibición</p>
+								</div>
+							</div>
+						</div>
+						<Link href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo" className="link mt-8 inline-block">
+							Leer más
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -32,6 +81,29 @@ const Exposiciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">Exposición permenente</span>
 						<h3 className="text-[32px] leading-[normal] font-semibold">Buen Vivir / Sumaq Kawsay / Suma Qamaña / Jakonax jatikaxbi jati</h3>
 						<p className="font-medium leading-[24px] mt-6">Una selección de obras de la Colección de Arte Popular y del Archivo de Dibujo y Pintura Campesina que revelan un conjunto de saberes y lógicas de relacionarse con el entorno natural.</p>
+						<div className="flex flex-col gap-y-2 mt-2">
+							<div className="flex gap-2 items-start">
+								<div className="flex items-center gap-1 shrink-0">
+									<OutlinePlaceIcon className="shrink-0 -mt-[1px]" ariaLabel="Lugar" color="light" />
+									<span className="font-bold">Lugar:</span>
+								</div>
+								<div>
+									<p className="font-normal">Segundo nivel del Patio de Letras</p>
+								</div>
+							</div>
+							<div className="flex gap-2 items-start">
+								<div className="flex items-center gap-1 shrink-0">
+									<ImageIcon className="shrink-0 -mt-[1px]" ariaLabel="Lugar" color="light" />
+									<span className="font-bold">Obras:</span>
+								</div>
+								<div>
+									<p className="font-normal">-Falta info-</p>
+								</div>
+							</div>
+						</div>
+						<Link href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo" className="link mt-8 inline-block">
+							Leer más
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -41,6 +113,9 @@ const Exposiciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">Eventos</span>
 						<h3 className="text-[32px] leading-[normal] font-semibold">Exposiciones temporales</h3>
 						<p className="font-medium leading-[24px] mt-6">Surge gracias a la donación de las hermanas Alicia y Celia Bustamante, el historiador Pablo Macera, el Milwaukee Public Museum, entre otros coleccionistas y artistas del arte popular. Cuenta con piezas representativas del arte tradicional peruano.</p>
+						<Link href="/agenda-cultural" className="link mt-4 inline-block">
+							Explorar
+						</Link>
 					</div>
 				</div>
 			</div>

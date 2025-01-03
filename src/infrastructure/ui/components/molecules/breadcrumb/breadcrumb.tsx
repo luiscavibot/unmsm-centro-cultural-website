@@ -7,9 +7,11 @@ interface BreadcrumbProps {
 		title: string,
 		path: string
 	}[]
+	theme?: 'dark' | 'light'
 }
 
-const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
+const Breadcrumb: FC<BreadcrumbProps> = ({ items, theme = 'light' }) => {
+
 	return (
 		<nav aria-label="breadcrumb" className="mb-[104px]">
 			<ol className="flex items-center gap-2">
@@ -20,13 +22,13 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
 								{
 									index !== items.length - 1 ?
 										<>
-											<Link href={item.path} className="text-gray hover:underline font-medium">
+											<Link href={item.path} className={"hover:underline font-medium" + (theme === 'dark' ? ' text-white' : 'text-gray')}>
 												{item.title}
 											</Link>
-											<ArrowBreadcrumbIcon color="dark" />
+											<ArrowBreadcrumbIcon color={theme} />
 										</>
 										:
-										<span className="text-dark-blue-2 font-semibold">
+										<span className={"font-semibold" + (theme === 'dark' ? ' text-white' : 'text-dark-blue-2')}>
 											{item.title}
 										</span>
 								}
