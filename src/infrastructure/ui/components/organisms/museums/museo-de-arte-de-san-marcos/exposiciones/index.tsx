@@ -25,7 +25,7 @@ const Exposiciones = () => {
 	const splideOptions = {
 		type: 'slide',
 		width: '100%',
-		fixedWidth: '184px',
+		fixedWidth: '390px',
 		arrows: false,
 		pagination: false,
 		gap: '24px',
@@ -90,7 +90,7 @@ const Exposiciones = () => {
 							<SplideTrack>
 								{carouselExhibition.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="max-lg:hidden relative w-[184px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
 											<Image src={img.imageUrl} className="object-cover" alt={"Exposición"} layout="fill" />
 										</figure>
 									</SplideSlide>
@@ -128,7 +128,7 @@ const Exposiciones = () => {
 							<SplideTrack>
 								{carouselExhibition.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="max-lg:hidden relative w-[184px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
 											<Image src={img.imageUrl} className="object-cover" alt={"Exposición"} layout="fill" />
 										</figure>
 									</SplideSlide>
@@ -222,7 +222,7 @@ const Exposiciones = () => {
 							<SplideTrack>
 								{carouselExhibition.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="max-lg:hidden relative w-[184px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
 											<Image src={img.imageUrl} className="object-cover" alt={"Exposición"} layout="fill" />
 										</figure>
 									</SplideSlide>
@@ -260,7 +260,7 @@ const Exposiciones = () => {
 							<SplideTrack>
 								{carouselExhibition.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="max-lg:hidden relative w-[184px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
 											<Image src={img.imageUrl} className="object-cover" alt={"Exposición"} layout="fill" />
 										</figure>
 									</SplideSlide>

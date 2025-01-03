@@ -480,3 +480,14 @@ th {
 td {
 	@apply border border-light-green p-4;
 }
+
+/* splide museo */
+
+/* .splide-museo {
+	.splide__slide.is-active {
+		@apply !w-[390px];
+		figure {
+			@apply !w-[390px];
+		}
+	}
+} */
