@@ -75,7 +75,7 @@ const Museums = () => {
 						className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out"
 					>
 						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arte-san-marcos-2.svg"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg"
 							alt="Museo de Arte de San Marcos"
 							width={801}
 							height={621}
@@ -128,7 +128,7 @@ const Museums = () => {
 						className="absolute -top-[46%] -right-[270px] transition-transform duration-[800ms] ease-out"
 					>
 						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-museo-arqueologia-antropologia-2.svg"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
 							alt="Museo de Arqueología y Antropología"
 							width={801}
 							height={621}
