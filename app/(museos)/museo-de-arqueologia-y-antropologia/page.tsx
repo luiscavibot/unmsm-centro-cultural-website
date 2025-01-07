@@ -17,6 +17,7 @@ const tabs = {
 	colecciones: React.lazy(() => import('@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones')),
 	exposiciones: React.lazy(() => import('@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/exposiciones')),
 	publicaciones: React.lazy(() => import('@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/publicaciones')),
+	'recursos-educativos': React.lazy(() => import('@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/recursos-educativos')),
 } as const;
 
 type TabKeys = keyof typeof tabs;
@@ -121,6 +122,7 @@ export default function MuseoDeArteDeSanMarcos() {
 							<Tab label="Colecciones" selected={currentTab === 'colecciones'} onClick={() => { handleClick('colecciones') }} />
 							<Tab label="Exposiciones" selected={currentTab === 'exposiciones'} onClick={() => { handleClick('exposiciones') }} />
 							<Tab label="Publicaciones" selected={currentTab === 'publicaciones'} onClick={() => { handleClick('publicaciones') }} />
+							<Tab label="Recursos educativos" selected={currentTab === 'recursos-educativos'} onClick={() => { handleClick('recursos-educativos') }} />
 						</div>
 					</div>
 				</div>

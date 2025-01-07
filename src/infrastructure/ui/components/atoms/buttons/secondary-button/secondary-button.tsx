@@ -27,7 +27,7 @@ const SecondaryButton: FC<Button> = (props) => {
 	switch (type) {
 		case 'external-link':
 			return (
-				<a className={`${disabled ? 'pointer-events-none select-none' : ''} ${buttonTheme[theme]} p-4 border-[1px] rounded-lg inline-flex items-center justify-center transition-colors duration-200 ${className}`} href={props.href}>
+				<a className={`${disabled ? 'pointer-events-none select-none' : ''} ${buttonTheme[theme]} p-4 border-[1px] rounded-lg inline-flex items-center justify-center transition-colors duration-200 ${className}`} href={props.href} rel="noopener noreferrer" target="_blank">
 					<span className="leading-[16px] font-semibold inline-block">{label}</span>
 				</a>
 			)
