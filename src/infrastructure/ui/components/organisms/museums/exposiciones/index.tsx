@@ -6,7 +6,8 @@ import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import ArteModerno from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/arte-moderno';
 import LaUniversidad from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/la-universidad';
 import BuenVivir from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/buen-vivir';
-import ExposicionesTemporales from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/exposiciones-temporales';
+import TesorosArqueologicosSanMarcos from '@/infrastructure/ui/components/organisms/museums/exposiciones/tesoros-arqueologicos-san-marcos';
+import SalaMarioVargasLlosa from '@/infrastructure/ui/components/organisms/museums/exposiciones/sala-mario-vargas-llosa';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -17,7 +18,8 @@ const Exposiciones = () => {
 	const splideRefExpoArte = useRef<ExtendedSplideType>(null);
 	const splideRefExpoUniversidad = useRef<ExtendedSplideType>(null);
 	const splideRefExpoBuenVivir = useRef<ExtendedSplideType>(null);
-	const splideRefExpoTemporales = useRef<ExtendedSplideType>(null);
+	const splideRefExpoTesoros = useRef<ExtendedSplideType>(null);
+	const splideRefSalaMarioVargasLlosa = useRef<ExtendedSplideType>(null);
 
 	const splideOptions: ResponsiveOptions = {
 		type: 'slide',
@@ -38,7 +40,8 @@ const Exposiciones = () => {
 	const { handlePrev: handlePrevExpoArte, handleNext: handleNextExpoArte, handleMove: handleMoveExpoArte, isPrevDisabled: isPrevDisabledExpoArte, isNextDisabled: isNextDisabledExpoArte } = useSplideControls(splideRefExpoArte);
 	const { handlePrev: handlePrevExpoUniversidad, handleNext: handleNextExpoUniversidad, handleMove: handleMoveExpoUniversidad, isPrevDisabled: isPrevDisabledExpoUniversidad, isNextDisabled: isNextDisabledExpoUniversidad } = useSplideControls(splideRefExpoUniversidad);
 	const { handlePrev: handlePrevExpoBuenVivir, handleNext: handleNextExpoBuenVivir, handleMove: handleMoveExpoBuenVivir, isPrevDisabled: isPrevDisabledExpoBuenVivir, isNextDisabled: isNextDisabledExpoBuenVivir } = useSplideControls(splideRefExpoBuenVivir);
-	const { handlePrev: handlePrevExpoTemporales, handleNext: handleNextExpoTemporales, handleMove: handleMoveExpoTemporales, isPrevDisabled: isPrevDisabledExpoTemporales, isNextDisabled: isNextDisabledExpoTemporales } = useSplideControls(splideRefExpoTemporales);
+	const { handlePrev: handlePrevExpoTesoros, handleNext: handleNextExpoTesoros, handleMove: handleMoveExpoTesoros, isPrevDisabled: isPrevDisabledExpoTesoros, isNextDisabled: isNextDisabledExpoTesoros } = useSplideControls(splideRefExpoTesoros);
+	const { handlePrev: handlePrevSalaMarioVargasLlosa, handleNext: handleNextSalaMarioVargasLlosa, handleMove: handleMoveSalaMarioVargasLlosa, isPrevDisabled: isPrevDisabledSalaMarioVargasLlosa, isNextDisabled: isNextDisabledSalaMarioVargasLlosa } = useSplideControls(splideRefSalaMarioVargasLlosa);
 
 	return (
 		<>
@@ -74,14 +77,23 @@ const Exposiciones = () => {
 				handlePrevExpoBuenVivir={handlePrevExpoBuenVivir}
 				handleNextExpoBuenVivir={handleNextExpoBuenVivir}
 			/>
-			<ExposicionesTemporales
-				handleMoveExpoTemporales={handleMoveExpoTemporales}
-				splideRefExpoTemporales={splideRefExpoTemporales}
+			<TesorosArqueologicosSanMarcos
+				handleMoveExpoTesoros={handleMoveExpoTesoros}
+				splideRefExpoTesoros={splideRefExpoTesoros}
 				splideOptions={splideOptions}
-				isPrevDisabledExpoTemporales={isPrevDisabledExpoTemporales}
-				isNextDisabledExpoTemporales={isNextDisabledExpoTemporales}
-				handlePrevExpoTemporales={handlePrevExpoTemporales}
-				handleNextExpoTemporales={handleNextExpoTemporales}
+				isPrevDisabledExpoTesoros={isPrevDisabledExpoTesoros}
+				isNextDisabledExpoTesoros={isNextDisabledExpoTesoros}
+				handlePrevExpoTesoros={handlePrevExpoTesoros}
+				handleNextExpoTesoros={handleNextExpoTesoros}
+			/>
+			<SalaMarioVargasLlosa
+				handleMoveSalaMarioVargasLlosa={handleMoveSalaMarioVargasLlosa}
+				splideRefSalaMarioVargasLlosa={splideRefSalaMarioVargasLlosa}
+				splideOptions={splideOptions}
+				isPrevDisabledSalaMarioVargasLlosa={isPrevDisabledSalaMarioVargasLlosa}
+				isNextDisabledSalaMarioVargasLlosa={isNextDisabledSalaMarioVargasLlosa}
+				handlePrevSalaMarioVargasLlosa={handlePrevSalaMarioVargasLlosa}
+				handleNextSalaMarioVargasLlosa={handleNextSalaMarioVargasLlosa}
 			/>
 		</>
 	)

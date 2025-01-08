@@ -52,7 +52,7 @@ const menu: Menu[] = [
 			},
 			{
 				title: 'Exposiciones',
-				url: '/museos/exposiciones'
+				url: '/exposiciones'
 			}
 		]
 	},

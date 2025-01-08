@@ -63,6 +63,7 @@ const config: Config = {
 				'light-info-color': 'var(--dark-white)',
 				'dark-info-color': 'var(--blue)',
 				'red-custom': 'var(--red)',
+				'red-2': 'var(--red-2)',
 				'dark-red': 'var(--dark-red)',
 				'dark-red-2': 'var(--dark-red-2)',
 				'dark-red-3': 'var(--dark-red-3)',
