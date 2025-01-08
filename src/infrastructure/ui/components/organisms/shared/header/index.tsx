@@ -36,10 +36,11 @@ const Header: React.FC = () => {
 					</div>
 					<Link className="px-2" href="/" >
 						<Image
+							className="h-[70px]"
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/logo-ccsm.svg"
 							alt="logo"
-							width={162}
-							height={40}
+							width={279}
+							height={84}
 						/>
 					</Link>
 					<div className="hidden lg:block">

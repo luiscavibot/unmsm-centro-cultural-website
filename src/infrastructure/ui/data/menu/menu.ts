@@ -58,20 +58,7 @@ const menu: Menu[] = [
 	},
 	{
 		title: 'Visítanos',
-		'sub-menu': [
-			{
-				title: 'Visitas guiadas',
-				url: '/visitanos/visitas-guiadas'
-			},
-			{
-				title: 'Dirección de turismo',
-				url: '/visitanos/direccion-de-turismo'
-			},
-			{
-				title: 'Casona de San Marcos',
-				url: '/visitanos/casona-de-san-marcos'
-			}
-		]
+		url: '/visitanos'
 	},
 	{
 		title: 'Biblioteca',
@@ -81,8 +68,12 @@ const menu: Menu[] = [
 		title: 'Nosotros',
 		'sub-menu': [
 			{
-				title: 'Transparencia',
-				url: '/nosotros/transparencia'
+				title: 'Casona de San Marcos',
+				url: '/nosotros/casona-de-san-marcos'
+			},
+			{
+				title: 'Dependencias administrativas',
+				url: '/nosotros/dependencias-administrativas'
 			},
 			{
 				title: 'Directorio',
