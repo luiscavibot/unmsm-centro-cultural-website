@@ -1,0 +1,1 @@
+export { default } from './exhibitions-sala-mario-vargas-llosa';

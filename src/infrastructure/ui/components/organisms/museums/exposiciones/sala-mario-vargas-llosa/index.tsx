@@ -60,7 +60,7 @@ const ArteModerno: React.FC<Props> = ({
 							</div>
 						</div>
 					</div>
-					<Link href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo" className="link mt-8 inline-block">
+					<Link href="/exposiciones/sala-mario-vargas-llosa" className="link mt-8 inline-block">
 						Leer más
 					</Link>
 				</div>

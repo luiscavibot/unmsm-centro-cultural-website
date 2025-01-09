@@ -1,0 +1,1 @@
+export { default } from './exhibition-vargas-llosa-card'
