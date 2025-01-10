@@ -52,6 +52,7 @@ export default function BandaUniversitariaHistoria() {
 										className="object-cover h-full"
 										alt="ballet 1"
 										layout="fill"
+										quality={100}
 									/>
 								</figure>
 							</div>
@@ -82,6 +83,7 @@ export default function BandaUniversitariaHistoria() {
 										className="object-cover h-full"
 										alt="ballet 2"
 										layout="fill"
+										quality={100}
 									/>
 								</figure>
 							</div>
