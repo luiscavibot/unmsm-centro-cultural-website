@@ -10,7 +10,7 @@ const breadcrumbItems = [
 		path: '/',
 	},
 	{
-		title: 'Direcciones artisticas',
+		title: 'Direcciones artísticas',
 		path: '',
 	},
 	{
