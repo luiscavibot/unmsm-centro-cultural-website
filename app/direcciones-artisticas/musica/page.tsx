@@ -14,12 +14,12 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Banda universitaria',
-		path: '/direcciones-artisticas/banda-universitaria',
+		title: 'Dirección de Música',
+		path: '/direcciones-artisticas/musica',
 	},
 ];
 
-export default function BandaUniversitaria() {
+export default function Musica() {
   return (
 	<Layout
 		portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
@@ -30,17 +30,23 @@ export default function BandaUniversitaria() {
 				<div className="container">
 					<div className="max-w-[814px] mx-auto pb-14">
 						<Title className="text-center">
-							Dirección de Banda universitaria
+							Dirección de Música
 						</Title>
 						<div className="leading-[24px] text-dark-blue-2 mb-4">
 							<p className="mb-5">
-								La Banda Universitaria de Música es una unidad artística, cultural, y protocolar de la Universidad Nacional Mayor de San Marcos. En este sentido, se constituye en la actualidad en una de las dependencias que forman parte del Centro Cultural de San Marcos.
+								El Coro Universitario (CUSM) fue fundado en noviembre de 1954, a propuesta de la Federación de Estudiantes de San Marcos (FUSM), por la musicóloga, arreglista y compositora Rosa Alarco Larrabure, quien dedicó su vida a la investigación de la música tradicional peruana.
+							</p>
+							<p className="mb-5">
+								Durante todos estos años de difusión musical, el Coro Universitario ha ofrecido innumerables presentaciones en diversos lugares de nuestro país, ha sido parte de festivales nacionales e internacionales y participa activamente de las actividades organizadas por la Universidad.
+							</p>
+							<p className="mb-5">
+								El coro de San Marcos es el coro universitario más antiguo del Perú y su actual elenco prepara, Obras escénico-musicales, de carácter clásico y popular. Está próximo a celebrar 70 años de fundado (Bodas de Titanio) por lo cual están preparando los eventos y actividades en celebración de dicha efeméride.
 							</p>
 							<p>
-								Su creación se remonta al año 1996, cuando las autoridades sanmarquinas concibieron la idea de dotar a nuestra universidad con una banda de música, con la finalidad de que esta agrupe a los alumnos sanmarquinos interesados en este rubro y así, el conjunto pueda participar en los actos protocolares e invitaciones oficiales de diversa índole. En la actualidad, la Banda Universitaria de Música realiza diversos proyectos artísticos que permiten llevar espectáculos de calidad al público en general, ejemplos de estos son Salsa Urbana, Boleros y Sones, El show del adulto mayor, entre otros.
+								En la actualidad el Coro Universitario está bajo la dirección de los Maestros José Mendieta Echevarría y Rafael González Carranza, quienes tienen a su cargo los cursos de Técnica vocal y lectura musical de la Dirección de Música del Centro Cultural de San Marcos.
 							</p>
 						</div>
-						<Link className="link text-dark-red font-medium" href="/direcciones-artisticas/banda-universitaria/historia">
+						<Link className="link text-dark-red font-medium" href="/direcciones-artisticas/musica/historia">
 							Conoce la historia
 						</Link>
 					</div>

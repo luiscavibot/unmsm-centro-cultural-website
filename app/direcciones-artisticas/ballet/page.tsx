@@ -33,7 +33,7 @@ export default function Ballet() {
 							Dirección de Ballet
 						</Title>
 						<div className="leading-[24px] text-dark-blue-2 mb-4">
-							<p className="mb-3">
+							<p className="mb-5">
 								A lo largo de sus 59 años de trayectoria, la compañía ha sido pionera en integrar el ballet clásico y la danza contemporánea en su repertorio, promoviendo la investigación artística y colaborando con reconocidos coreógrafos nacionales e internacionales. Además, ha expandido su impacto más allá de los auditorios universitarios, llevando el arte de la danza a comunidades en diversos distritos y ofreciendo talleres accesibles para todas las edades y niveles.
 							</p>
 							<p>
