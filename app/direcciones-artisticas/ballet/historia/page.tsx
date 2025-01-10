@@ -2,7 +2,6 @@ import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/second
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout'
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react'
 
 const breadcrumbItems = [
@@ -24,7 +23,7 @@ const breadcrumbItems = [
 	},
 ];
 
-export default function Ballet() {
+export default function BalletHistoria() {
   return (
 	<Layout
 		portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
@@ -39,7 +38,7 @@ export default function Ballet() {
 						</Title>
 						<div className="leading-[24px] text-dark-blue-2 mb-4 space-y-10">
 							<div>
-								<p className="mb-3">
+								<p className="mb-5">
 									La Universidad Nacional Mayor de San Marcos fue la primera universidad en el país en apoyar la danza cuando, en 1964, creó por resolución Rectoral Nº 22024 una Compañía y una escuela de danza, que llevaron el nombre de Ballet Universitario y Conservatorio de danza de San Marcos, contratando al maestro Roger Fenonjois, de la Ópera de París, para dirigir el proyecto.
 								</p>
 							</div>
@@ -50,13 +49,13 @@ export default function Ballet() {
 								<cite className="block font-semibold">Roger Fenonjois (Director Fundador)</cite>
 							</div>
 							<div>
-								<p className="mb-3">
+								<p className="mb-5">
 									A fin de llegar a esas metas propuestas por su director fundador, el Ballet San Marcos se ha dedicado a ser creativo y original en sus propuestas coreográficas, estimular la investigación de la realidad nacional y también mantenerse informado de las tendencias artísticas internacionales del momento.
 								</p>
-								<p className="mb-3">
+								<p className="mb-5">
 									En los primeros años, el Ballet San Marcos se dedicó al Ballet Clásico y a principios de los años 1970 incorporó la técnica de la Danza Contemporánea al entrenamiento del elenco y al currículo de su escuela. Reconocidos coreógrafos fueron invitados a trabajar con el joven elenco y así el repertorio de la compañía empezó a desarrollarse. Gracias al camino trazado por estos experimentados creadores, los bailarines formados en la escuela y los miembros de la Compañía empezaron a trabajar sus propias propuestas artísticas. En la actualidad, el elenco ha seguido recibiendo de manera continua la visita de importantes coreógrafos invitados que refuerzan la superación y el crecimiento de una generación de coreógrafos inspirados en la cultura nacional y universal.
 								</p>
-								<p className="mb-3">
+								<p className="mb-5">
 									Una de las metas del Ballet San Marcos está dirigida a la difusión de la danza entre los estudiantes sanmarquinos en el campus universitario. Esto se ha hecho posible gracias a los auditorios y otros espacios con los que cuenta la Universidad.
 								</p>
 							</div>
@@ -71,16 +70,16 @@ export default function Ballet() {
 								</figure>
 							</div>
 							<div>
-								<p className="mb-3">
+								<p className="mb-5">
 									Desde el año 2003, el Ballet San Marcos realiza una importante labor social, presentándose en distritos como Comas, Los Olivos, Independencia, entre otros, además de muchas otras actividades de proyección hacia la comunidad.
 								</p>
-								<p className="mb-3">
+								<p className="mb-5">
 									La Escuela de Ballet San Marcos funciona todo el año. Se imparten talleres de danza clásica y danza contemporánea dirigidos tanto a los miembros de la comunidad sanmarquina, como al público en general, abarcando diferentes edades y niveles.
 								</p>
-								<p className="mb-3">
+								<p className="mb-5">
 									La danza es, y ha sido siempre, un importante medio de comunicación para el hombre. Desde las danzas rituales, pasando por los cortejos y llegando a la pura expresión artística teatral, la danza juega un importante papel en el desarrollo del ser humano.
 								</p>
-								<p className="mb-3">
+								<p className="mb-5">
 									El ballet surge en las cortes del Renacimiento en el siglo XVI. Gracias al auspicio de Luis XIV de Francia, quien en 1661 establece la Real Academia de la Danza, aparecen los primeros bailarines profesionales que llevan la danza de las cortes hacia los teatros. Igualmente surgen los primeros teóricos, Jean Georges Noverre y Carlo Blasis. Durante los siglos XVIII y XIX, llegan a Rusia profesores de ballet italianos y franceses quienes, apoyados por la Corona de los Romanov, llevan el ballet a su máximo esplendor. Para el siglo XX, el ballet se populariza en Rusia, de donde se exportaron algunos de los más grandes exponentes hacia todo el mundo.
 								</p>
 							</div>
@@ -95,13 +94,13 @@ export default function Ballet() {
 								</figure>
 							</div>
 							<div>
-								<p className="mb-3">
+								<p className="mb-5">
 									Al mismo tiempo surge en Estados Unidos y Alemania, la Danza Moderna, una nueva forma de bailar que potenciaba la libre expresión representativa del nuevo siglo. Es precisamente en los Estados Unidos donde Margaret D'Houbler, quien trabaja en la Universidad de Wisconsin, en el departamento de Educación Física, introduce el estudio de la danza en el ámbito universitario. Desde allí se han constituido los programas de danza en las universidades en los Estados Unidos y en países en todo el mundo.
 								</p>
-								<p className="mb-3">
+								<p className="mb-5">
 									La danza es posiblemente una de las primeras artes a través de la cual se comunica el ser humano, y es importante destacar que tal vez sea la más simbólica ya que, al prescindir básicamente de la palabra, acentúa tal necesidad por medio de la trasmisión gestual. Es tan antigua como el hombre, y siempre ha estado en estrecha relación con el contexto en el cual se ha desarrollado.
 								</p>
-								<p className="mb-3">
+								<p className="mb-5">
 									La vanguardia universitaria en el Perú, dentro de la Universidad Nacional Mayor de San Marcos, ha quedado representada con Ballet San Marcos con una labor constante e ininterrumpida, artística, seria y comprometida por más de 57 años.
 								</p>
 							</div>
