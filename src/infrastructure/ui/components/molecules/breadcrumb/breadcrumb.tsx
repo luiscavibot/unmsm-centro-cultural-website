@@ -21,12 +21,24 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ items, theme = 'light' }) => {
 							<li key={index} className="flex items-center gap-2">
 								{
 									index !== items.length - 1 ?
-										<>
-											<Link href={item.path} className={"hover:underline font-medium" + (theme === 'dark' ? ' text-white' : 'text-gray')}>
-												{item.title}
-											</Link>
-											<ArrowBreadcrumbIcon color={theme} />
-										</>
+										(
+											item.path === '' ?
+												<>
+													<span className={"font-medium" + (theme === 'dark' ? ' text-white' : 'text-gray')}>
+														{item.title}
+													</span>
+													<ArrowBreadcrumbIcon color={theme} />
+												</>
+												:
+												(
+													<>
+														<Link href={item.path} className={"hover:underline font-medium" + (theme === 'dark' ? ' text-white' : 'text-gray')}>
+															{item.title}
+														</Link>
+														<ArrowBreadcrumbIcon color={theme} />
+													</>
+												)
+										)
 										:
 										<span className={"font-semibold" + (theme === 'dark' ? ' text-white' : 'text-dark-blue-2')}>
 											{item.title}
