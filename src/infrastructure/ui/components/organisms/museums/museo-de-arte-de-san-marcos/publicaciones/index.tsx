@@ -1,3 +1,5 @@
+import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button'
+import Image from 'next/image'
 import React from 'react'
 
 const Publicaciones = () => {
@@ -5,34 +7,55 @@ const Publicaciones = () => {
 		<>
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
 				<div className="container">
-					<div className="max-w-[603px] leading-[24px] text-dark-blue-2 mb-8">
-						<p className="mb-2">El área de Investigación del museo elabora publicaciones que contienen información clave acerca de cada exposición temporal llevada a cabo desde el año 2018, durante la gestión de su actual director Augusto del Valle Cárdenas. Los Cuadernillos MASM, nombre de estas publicaciones, cumplen el objetivo de resaltar la propuesta del artista o colectivo que expone en cualquiera de los espacios temporales bajo la administración del MASM: la Sala Juan Acha, Sala Vinatea Reinoso o Sala José María Arguedas.</p>
-						<p>En sus páginas el lector encuentra textos, fotografías, planos y documentos sobre las propuestas del arte actual difundido en los espacios del MASM. Se busca cubrir diversos puntos de vista: del curador, del museógrafo, del artista, de la institución (el museo) y también de escritores invitados a colaborar. El resultado es una publicación sencilla pero interesante por su mirada reflexiva y académica, diferente al de otras que abundan en el medio artístico peruano.</p>
-					</div>
-					<div className="relative overflow-x-auto max-w-[813px]">
-						<table className="max-w-full w-full">
-							<thead className="text-green bg-light-green">
-								<tr>
-									<th>N°</th>
-									<th className="text-left">Publicaciones</th>
-									<th>Títulos</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td className="text-center">1</td>
-									<td>CUADERNILLO MASM Nº 1- 2018</td>
-									<td><a href="#" className="link">Bajo el lente del museo I. Carlos Caamaño Proyecto Fotográfico.</a></td>
-								</tr>
-								<tr>
-									<td className="text-center">2</td>
-									<td>CUADERNILLO MASM Nº 2- 2018</td>
-									<td><a href="#" className="link">Bajo el lente del museo II. Taller de Artes Integradas ENSABAB 2015-2017 de Angie Bonino. Artistas: Amaro Serruche, Damaris Paredes, Andrés Yaques.</a></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
+						El área de Investigación del museo elabora publicaciones que contienen información clave acerca de cada exposición temporal llevada a cabo desde el año 2018.
+					</p>
 				</div>
+			</div>
+			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
+				<article
+					className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden"
+				>
+					<figure
+						className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out"
+					>
+						<Image
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
+							alt="Museo de Arte de San Marcos"
+							width={801}
+							height={621}
+						/>
+					</figure>
+					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 semi-container-l h-full">
+						<header className="max-w-[459px] text-white">
+							<span className="block mb-1 font-semibold leading-[24px]">
+								Documentos
+							</span>
+							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+								Cuadernillos MASM
+							</h3>
+							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+								En sus páginas el lector encontrará textos, fotografías, planos y documentos sobre las propuestas del arte actual difundido en los espacios del MASM
+							</p>
+						</header>
+						<SecondaryButton
+							type="external-link"
+							href="https://www.jigsawplanet.com/MAAUNMSM"
+							theme="dark"
+							label="Explorar"
+							className="mt-8"
+						/>
+					</div>
+				</article>
+				<figure className="relative w-full h-full mx-auto">
+					<Image
+						src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/cuadernilos-masm.webp"
+						className="object-cover h-full"
+						alt="cuadernillos MASM"
+						layout="fill"
+						quality={100}
+					/>
+				</figure>
 			</div>
 		</>
 	)
