@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function BalletHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_unmsm_25d0dcad56.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -187,14 +187,15 @@ export default function BalletHistoria() {
 										forma de bailar que potenciaba la libre
 										expresión representativa del nuevo
 										siglo. Es precisamente en los Estados
-										Unidos donde Margaret D'Houbler, quien
-										trabaja en la Universidad de Wisconsin,
-										en el departamento de Educación Física,
-										introduce el estudio de la danza en el
-										ámbito universitario. Desde allí se han
-										constituido los programas de danza en
-										las universidades en los Estados Unidos
-										y en países en todo el mundo.
+										Unidos donde Margaret D&apos;Houbler,
+										quien trabaja en la Universidad de
+										Wisconsin, en el departamento de
+										Educación Física, introduce el estudio
+										de la danza en el ámbito universitario.
+										Desde allí se han constituido los
+										programas de danza en las universidades
+										en los Estados Unidos y en países en
+										todo el mundo.
 									</p>
 									<p className="mb-5">
 										La danza es posiblemente una de las
@@ -221,33 +222,33 @@ export default function BalletHistoria() {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[45px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-contactanos.svg')] bg-no-repeat bg-[-123px_10px]">
-					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
-							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural San
-								Marcos
-							</h2>
-							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
-								Descubre un mundo de conocimiento, arte y
-								cultura con nuestras actividades exclusivas
-								¡Únete y sé parte de nuestra comunidad!
-							</p>
-						</div>
-						<div className="flex flex-col gap-y-4">
-							<SecondaryButton
-								type="internal-link"
-								href="/cursos-y-talleres"
-								theme="dark"
-								label="Cursos y talleres"
-							/>
-							<SecondaryButton
-								type="internal-link"
-								href="/agenda-cultural"
-								theme="dark"
-								label="Eventos"
-							/>
+					<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[45px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-contactanos.svg')] bg-no-repeat bg-[-123px_10px]">
+						<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+							<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
+								<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
+									Explora y aprende en el Centro Cultural San
+									Marcos
+								</h2>
+								<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
+									Descubre un mundo de conocimiento, arte y
+									cultura con nuestras actividades exclusivas
+									¡Únete y sé parte de nuestra comunidad!
+								</p>
+							</div>
+							<div className="flex flex-col gap-y-4">
+								<SecondaryButton
+									type="internal-link"
+									href="/cursos-y-talleres"
+									theme="dark"
+									label="Cursos y talleres"
+								/>
+								<SecondaryButton
+									type="internal-link"
+									href="/agenda-cultural"
+									theme="dark"
+									label="Eventos"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

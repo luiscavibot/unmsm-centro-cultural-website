@@ -24,8 +24,8 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección del Centro Universitario de Folklore (CUF)',
-		path: '/direcciones-artisticas/folklore',
+		title: 'Dirección de Cine y Producción audiovisual',
+		path: '/direcciones-artisticas/cine',
 	},
 ];
 
@@ -47,20 +47,17 @@ export default function Folklore() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center max-w-[550px] mx-auto">
-								Dirección del Centro Universitario de Folklore (CUF)
+								Dirección de Cine y Producción audiovisual
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Centro Universitario de Folklore (CUF) es una dependencia del Centro Cultural de la Universidad Nacional Mayor de San Marcos dedicada al trabajo exclusivo en el tema de las expresiones culturales de nuestro país en materia de música y danza.
+									Vive el séptimo arte y explora el mundo de la dirección audiovisual en la Sección de Cine y Dirección Audiovisual del Centro Cultural de San Marcos. Aquí, el talento y la creatividad de estudiantes, cineastas y docentes se expresan en proyectos que abordan temas culturales, sociales y artísticos, reflejando la identidad y diversidad del Perú.
 								</p>
 								<p className="mb-5">
-									El CUF este 2024, cuenta ya 54 años de arduo trabajo por la diversidad cultural del país. Este tiempo ha servido para institucionalizar la música y danza folklórica en la vida universitaria, con lo que se rescata elementos fundamentales de nuestra cultura andina aquí contenidos: la reciprocidad, la colectividad, el ayni, entre otros. Estos valores se desarrollan en experiencias cotidianas entre nuestros integrantes sanmarquinos, quienes los proyectan a la comunidad en general.
-								</p>
-								<p className="mb-5">
-									El Centro Universitario de Folklore tiene constituida una Escuela de Capacitación en danza folklórica y siete elencos artísticos que desarrollan espectáculos de música y danza de alto nivel, con los que se proyecta a la comunidad y a la vez aporta al estudio, promoción y difusión de las costumbres populares de nuestro país.
+									Desde proyecciones de cine hasta talleres y conversatorios, esta sección fomenta el desarrollo de nuevas miradas y propuestas cinematográficas, promoviendo el diálogo entre creadores y espectadores. Únete a esta experiencia y descubre cómo el cine y el audiovisual abren puertas a historias y realidades que enriquecen nuestro entendimiento del mundo.
 								</p>
 							</div>
-							<Link className="link text-dark-red font-medium" href="/direcciones-artisticas/folklore/historia">
+							<Link className="link text-dark-red font-medium" href="/direcciones-artisticas/cine/historia">
 								Conoce la historia
 							</Link>
 						</div>
@@ -81,7 +78,7 @@ export default function Folklore() {
 				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
 					<div className="container">
 						<div className="flex gap-x-4">
-							<Tab label="Elencos" selected={currentTab === 'elencos'} onClick={() => { handleClick('elencos') }} />
+							<Tab label="Colecciones" selected={currentTab === 'elencos'} onClick={() => { handleClick('elencos') }} />
 							<Tab label="Publicaciones" selected={currentTab === 'publicaciones'} onClick={() => { handleClick('publicaciones') }} />
 						</div>
 					</div>

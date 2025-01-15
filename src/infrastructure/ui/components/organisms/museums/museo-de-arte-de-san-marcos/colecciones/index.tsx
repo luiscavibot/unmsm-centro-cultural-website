@@ -5,7 +5,7 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
-import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
+// import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
 import Image from 'next/image';
 import { retratosSiglosXviXxi } from '@/infrastructure/ui/data/museums/retratos-siglos-xvi-xxi-data';
 import { artePopularData } from '@/infrastructure/ui/data/museums/arte-popular-data';
