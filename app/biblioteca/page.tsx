@@ -1,14 +1,10 @@
 'use client';
 
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
 import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
 import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
 import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
-import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
-import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
-import TicketIcon from '@/infrastructure/ui/components/atoms/icons/ticket-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 // import Colecciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/colecciones';
@@ -60,7 +56,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/museo_arte_san_marcos_0729c34c67.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_portrait_1_92ac023c53.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -72,13 +68,29 @@ export default function MuseoDeArteDeSanMarcos() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
-									La Biblioteca España de las Artes cuenta con aproximadamente veinte mil volúmenes entre diversas colecciones. A través de un trabajo de catalogación y archivo avanzado, en la actualidad se encuentran más de nueve mil títulos registrados en el sistema informático que están a disposición del público.
+									La Biblioteca España de las Artes cuenta con
+									aproximadamente veinte mil volúmenes entre
+									diversas colecciones. A través de un trabajo
+									de catalogación y archivo avanzado, en la
+									actualidad se encuentran más de nueve mil
+									títulos registrados en el sistema
+									informático que están a disposición del
+									público.
 								</p>
 								<p className="mb-3">
-									La BEA no sólo cuenta con libros sobre artes plásticas, sino también con títulos de literatura, arqueología, teatro y ciencias sociales, asimismo tiene libros especializados y revistas sobre folklore, ballet, música, literatura y humanidades.
+									La BEA no sólo cuenta con libros sobre artes
+									plásticas, sino también con títulos de
+									literatura, arqueología, teatro y ciencias
+									sociales, asimismo tiene libros
+									especializados y revistas sobre folklore,
+									ballet, música, literatura y humanidades.
 								</p>
 								<p>
-									Además, entre sus colecciones también se encuentran los números de la Revista Variedades publicada entre 1906 y 1929, así como un sin número de revistas antiguas extranjeras y peruanas del siglo XIX y XX.
+									Además, entre sus colecciones también se
+									encuentran los números de la Revista
+									Variedades publicada entre 1906 y 1929, así
+									como un sin número de revistas antiguas
+									extranjeras y peruanas del siglo XIX y XX.
 								</p>
 							</div>
 							<div className="max-w-[639px] mx-auto mt-14">
@@ -186,13 +198,13 @@ export default function MuseoDeArteDeSanMarcos() {
 									handleClick('servicios');
 								}}
 							/>
-								<Tab
-									label="Colecciones"
-									selected={currentTab === 'colecciones'}
-									onClick={() => {
-										handleClick('colecciones');
-									}}
-								/>
+							<Tab
+								label="Colecciones"
+								selected={currentTab === 'colecciones'}
+								onClick={() => {
+									handleClick('colecciones');
+								}}
+							/>
 						</div>
 					</div>
 				</div>
