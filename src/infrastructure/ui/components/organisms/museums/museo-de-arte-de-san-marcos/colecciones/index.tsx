@@ -16,6 +16,8 @@ interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
+// test
+
 const Colecciones = () => {
 	const splideRefColRetratos = useRef<ExtendedSplideType>(null);
 	const splideRefColArtePopular = useRef<ExtendedSplideType>(null);
