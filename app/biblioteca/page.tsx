@@ -7,6 +7,7 @@ import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline
 import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
+import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
 import TicketIcon from '@/infrastructure/ui/components/atoms/icons/ticket-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
@@ -17,22 +18,22 @@ import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
 import React, { Suspense, useState } from 'react';
 
 const tabs = {
+	'biblioteca-virtual': React.lazy(
+		() =>
+			import(
+				'@/infrastructure/ui/components/organisms/biblioteca/biblioteca-virtual'
+			)
+	),
+	servicios: React.lazy(
+		() =>
+			import(
+				'@/infrastructure/ui/components/organisms/biblioteca/servicios'
+			)
+	),
 	colecciones: React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/colecciones'
-			)
-	),
-	exposiciones: React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones'
-			)
-	),
-	publicaciones: React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/publicaciones'
+				'@/infrastructure/ui/components/organisms/biblioteca/colecciones'
 			)
 	),
 } as const;
@@ -45,13 +46,13 @@ const breadcrumbItems = [
 		path: '/',
 	},
 	{
-		title: 'Museo de Arte de San Marcos',
-		path: '/museo-de-arte-de-san-marcos',
+		title: 'Biblioteca España de las Artes',
+		path: '/biblioteca',
 	},
 ];
 
 export default function MuseoDeArteDeSanMarcos() {
-	const [currentTab, setCurrentTab] = useState<TabKeys>('colecciones');
+	const [currentTab, setCurrentTab] = useState<TabKeys>('biblioteca-virtual');
 
 	const handleClick = (tab: TabKeys) => {
 		setCurrentTab(tab);
@@ -59,7 +60,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/Museos_de_Arte_de_San_Marcos_portrait_a631148308.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/museo_arte_san_marcos_0729c34c67.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -67,52 +68,17 @@ export default function MuseoDeArteDeSanMarcos() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto">
 							<Title className="text-center">
-								Museo de Arte de San Marcos
+								Biblioteca España de las Artes
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
-									El Museo de Arte de San Marcos tiene como
-									misión vincular sus colecciones con los
-									diversos públicos facilitando su
-									apreciación, conocimiento, identificación y
-									reflexión, en tanto patrimonio cultural
-									artístico, representativo de la memoria
-									intercultural del Perú. Para ello, pone en
-									valor a su valioso acervo, con una adecuada
-									conservación, sostenida investigación y
-									eficaz gestión.
+									La Biblioteca España de las Artes cuenta con aproximadamente veinte mil volúmenes entre diversas colecciones. A través de un trabajo de catalogación y archivo avanzado, en la actualidad se encuentran más de nueve mil títulos registrados en el sistema informático que están a disposición del público.
 								</p>
 								<p className="mb-3">
-									Asimismo, como institución universitaria,
-									tiene la visión de ser un espacio que acoja
-									a los estudiantes interesados en la
-									investigación del arte peruano, con enfoque
-									intercultural, y con la vocación de
-									compartir, debatir y ampliar sus
-									particulares interpretaciones sobre el
-									patrimonio cultural del museo y su rol en la
-									formación de nuestra ciudadanía.
-								</p>
-								<p className="mb-3">
-									El MASM alberga importantes ejemplares de
-									arte peruano organizados en cuatro
-									colecciones: la de retratos, la de arte
-									popular, la de arte moderno y contemporáneo;
-									así como el archivo de dibujo y pintura
-									campesina.
+									La BEA no sólo cuenta con libros sobre artes plásticas, sino también con títulos de literatura, arqueología, teatro y ciencias sociales, asimismo tiene libros especializados y revistas sobre folklore, ballet, música, literatura y humanidades.
 								</p>
 								<p>
-									Estos conjuntos de obras, que ilustran la
-									gran variedad de arte que se produce en el
-									Perú, se han ido incrementando a lo largo de
-									la trayectoria del museo, ya sea por la
-									individual adquisición o donación de
-									artistas, como resultado de concursos,
-									salones o exposiciones; o mediante el
-									ingreso de un solo gran conjunto, tal es el
-									caso del archivo de dibujo y pintura
-									campesina que es custodiado por el museo
-									desde el año 2004.
+									Además, entre sus colecciones también se encuentran los números de la Revista Variedades publicada entre 1906 y 1929, así como un sin número de revistas antiguas extranjeras y peruanas del siglo XIX y XX.
 								</p>
 							</div>
 							<div className="max-w-[639px] mx-auto mt-14">
@@ -144,7 +110,7 @@ export default function MuseoDeArteDeSanMarcos() {
 											<p className="font-bold">Horario</p>
 											<p className="font-medium">
 												Lunes a viernes, 10:00 a.m. a
-												1:00 pm y de 2:00 p.m. a 4:00
+												1:00 pm y de 2:00 p.m. a 5:30
 												p.m.
 											</p>
 										</div>
@@ -160,7 +126,7 @@ export default function MuseoDeArteDeSanMarcos() {
 												Contacto
 											</p>
 											<p className="font-medium">
-												museoarte.ccsm@unmsm.edu.pe
+												biblioteca.ccsm@unmsm.edu.pe
 											</p>
 										</div>
 									</div>
@@ -168,7 +134,7 @@ export default function MuseoDeArteDeSanMarcos() {
 								<div className="flex flex-row items-center gap-2 mt-5 ml-7">
 									<a
 										className="p-1 rounded-[4px] bg-dark-gray-2"
-										href="https://www.facebook.com/museodearte.unmsm"
+										href="https://www.facebook.com/BibliotecaEspanaDeLasArtes"
 										rel="noreferrer noopener"
 										target="_blank"
 									>
@@ -176,20 +142,20 @@ export default function MuseoDeArteDeSanMarcos() {
 									</a>
 									<a
 										className="p-1 rounded-[4px] bg-dark-gray-2"
-										href="https://www.instagram.com/museoarteunmsm/"
+										href="https://www.instagram.com/biblioteca.ccsanmarcos/"
 										rel="noreferrer noopener"
 										target="_blank"
 									>
 										<InstagramIcon />
 									</a>
-									<a
+									{/* <a
 										className="p-1 rounded-[4px] bg-dark-gray-2"
 										href="https://www.tiktok.com/@museoarte.unmsm"
 										rel="noreferrer noopener"
 										target="_blank"
 									>
 										<TiktokIcon />
-									</a>
+									</a> */}
 									{/* <a
 										className="p-1 rounded-[4px] bg-dark-gray-2"
 										href=""
@@ -203,65 +169,30 @@ export default function MuseoDeArteDeSanMarcos() {
 						</div>
 					</div>
 				</div>
-				<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[45px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-contactanos.svg')] bg-no-repeat bg-[-123px_10px]">
-					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
-							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural San
-								Marcos
-							</h2>
-							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
-								Descubre un mundo de conocimiento, arte y
-								cultura con nuestras actividades exclusivas
-								¡Únete y sé parte de nuestra comunidad!
-							</p>
-						</div>
-						<div className="flex flex-col gap-y-4">
-							<SecondaryButton
-								type="internal-link"
-								href="/cursos-y-talleres"
-								theme="dark"
-								label="Cursos y talleres"
-							/>
-							<SecondaryButton
-								type="internal-link"
-								href="/agenda-cultural"
-								theme="dark"
-								label="Agenda Cultural"
-							/>
-						</div>
-					</div>
-				</div>
 				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
 					<div className="container">
 						<div className="flex gap-x-4">
 							<Tab
-								label="Colecciones"
-								selected={currentTab === 'colecciones'}
+								label="Biblioteca virtual"
+								selected={currentTab === 'biblioteca-virtual'}
 								onClick={() => {
-									handleClick('colecciones');
+									handleClick('biblioteca-virtual');
 								}}
 							/>
 							<Tab
-								label="Exposiciones"
-								selected={currentTab === 'exposiciones'}
+								label="Servicios"
+								selected={currentTab === 'servicios'}
 								onClick={() => {
-									handleClick('exposiciones');
+									handleClick('servicios');
 								}}
 							/>
-							<Tab
-								label="Publicaciones"
-								selected={currentTab === 'publicaciones'}
-								onClick={() => {
-									handleClick('publicaciones');
-								}}
-							/>
-							<Tab
-								label="Visítanos"
-								icon={<TicketIcon />}
-								type="internal-link"
-								link="/visitanos"
-							/>
+								<Tab
+									label="Colecciones"
+									selected={currentTab === 'colecciones'}
+									onClick={() => {
+										handleClick('colecciones');
+									}}
+								/>
 						</div>
 					</div>
 				</div>

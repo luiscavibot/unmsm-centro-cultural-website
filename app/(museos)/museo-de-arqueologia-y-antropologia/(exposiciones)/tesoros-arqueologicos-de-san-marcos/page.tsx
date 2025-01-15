@@ -81,21 +81,6 @@ export default function TesorosAqueologicosDeSanMarcos() {
 						<div className="flex flex-col gap-y-2 mt-6">
 							<div className="flex gap-2 items-start">
 								<div className="flex items-center gap-1 shrink-0">
-									<OutlinePlaceIcon
-										className="shrink-0 -mt-[1px]"
-										ariaLabel="Lugar"
-										color="light"
-									/>
-									<span className="font-bold">Lugar:</span>
-								</div>
-								<div>
-									<p className="font-normal">
-										Segundo nivel del Patio de Letras
-									</p>
-								</div>
-							</div>
-							<div className="flex gap-2 items-start">
-								<div className="flex items-center gap-1 shrink-0">
 									<ImageIcon
 										className="shrink-0 -mt-[1px]"
 										ariaLabel="Lugar"
@@ -106,6 +91,21 @@ export default function TesorosAqueologicosDeSanMarcos() {
 								<div>
 									<p className="font-normal">
 										115 piezas en exhibición
+									</p>
+								</div>
+							</div>
+							<div className="flex gap-2 items-start">
+								<div className="flex items-center gap-1 shrink-0">
+									<OutlinePlaceIcon
+										className="shrink-0 -mt-[1px]"
+										ariaLabel="Lugar"
+										color="light"
+									/>
+									<span className="font-bold">Lugar:</span>
+								</div>
+								<div>
+									<p className="font-normal">
+										Patio de Letras
 									</p>
 								</div>
 							</div>
