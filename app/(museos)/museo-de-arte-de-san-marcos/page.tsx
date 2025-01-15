@@ -7,7 +7,6 @@ import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline
 import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
-import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
 import TicketIcon from '@/infrastructure/ui/components/atoms/icons/ticket-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
@@ -60,7 +59,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/museo_arte_san_marcos_0729c34c67.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/Museos_de_Arte_de_San_Marcos_portrait_a631148308.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -259,11 +258,9 @@ export default function MuseoDeArteDeSanMarcos() {
 							/>
 							<Tab
 								label="Visítanos"
-								icon={
-									<TicketIcon />
-								}
-								type='internal-link'
-								link='/visitanos'
+								icon={<TicketIcon />}
+								type="internal-link"
+								link="/visitanos"
 							/>
 						</div>
 					</div>
