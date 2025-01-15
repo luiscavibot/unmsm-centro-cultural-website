@@ -17,13 +17,18 @@ const Events: FC = () => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
-		type: 'slide',
+		type: 'loop',
 		width: '100%',
 		perPage: 1,
 		arrows: false,
 		pagination: false,
 		gap: '0px',
 		perMove: 1,
+		//configurar autoplay cada 3 segundos y que no se detenga al hacer hover y que rote infinitamente
+		interval: 3000,
+		autoplay: true,
+		pauseOnHover: false,
+		loop: true,
 	};
 
 	const {

@@ -1,6 +1,6 @@
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button'
-import Image from 'next/image'
-import React from 'react'
+import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
+import Image from 'next/image';
+import React from 'react';
 
 const Publicaciones = () => {
 	return (
@@ -8,17 +8,15 @@ const Publicaciones = () => {
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
 				<div className="container">
 					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
-						El área de Investigación del museo elabora publicaciones que contienen información clave acerca de cada exposición temporal llevada a cabo desde el año 2018.
+						El área de Investigación del museo elabora publicaciones
+						que contienen información clave acerca de cada
+						exposición temporal llevada a cabo desde el año 2018.
 					</p>
 				</div>
 			</div>
 			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
-				<article
-					className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden"
-				>
-					<figure
-						className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out"
-					>
+				<article className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden">
+					<figure className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
 							alt="Museo de Arte de San Marcos"
@@ -35,12 +33,15 @@ const Publicaciones = () => {
 								Cuadernillos MASM
 							</h3>
 							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
-								En sus páginas el lector encontrará textos, fotografías, planos y documentos sobre las propuestas del arte actual difundido en los espacios del MASM
+								En sus páginas el lector encontrará textos,
+								fotografías, planos y documentos sobre las
+								propuestas del arte actual difundido en los
+								espacios del MASM
 							</p>
 						</header>
 						<SecondaryButton
 							type="external-link"
-							href="https://www.jigsawplanet.com/MAAUNMSM"
+							href="https://independent.academia.edu/museoarteunmsm"
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
@@ -58,7 +59,7 @@ const Publicaciones = () => {
 				</figure>
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default Publicaciones
+export default Publicaciones;

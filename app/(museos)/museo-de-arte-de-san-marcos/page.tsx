@@ -7,7 +7,6 @@ import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline
 import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
-import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 // import Colecciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/colecciones';
@@ -59,7 +58,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/museo_arte_san_marcos_0729c34c67.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/Museos_de_Arte_de_San_Marcos_portrait_a631148308.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
