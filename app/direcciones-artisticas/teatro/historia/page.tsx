@@ -86,7 +86,7 @@ export default function TeatroHistoria() {
 							</div>
 							<div>
 								<p className="mb-5">
-									“Todos los Hijos de Dios Tienen Alas” de Eugene O'Neill fue la primera obra que se presentó y fue dirigida por Humberto Napurí. Los montajes se desarrollaban en el Salón General de la Casona de San Marcos y luego en el Teatro Segura. Es durante esta gestión que también se da inicio a la formación de la Biblioteca del Teatro que poco a poco fue enriqueciendo su bibliografía, con textos y revistas de la época, documentos que hoy se encuentran en el Archivo de Teatro Peruano de la Biblioteca España de las Artes.
+									“Todos los Hijos de Dios Tienen Alas” de Eugene O&apos;Neill fue la primera obra que se presentó y fue dirigida por Humberto Napurí. Los montajes se desarrollaban en el Salón General de la Casona de San Marcos y luego en el Teatro Segura. Es durante esta gestión que también se da inicio a la formación de la Biblioteca del Teatro que poco a poco fue enriqueciendo su bibliografía, con textos y revistas de la época, documentos que hoy se encuentran en el Archivo de Teatro Peruano de la Biblioteca España de las Artes.
 								</p>
 								<p className="mb-5">
 									En 1958, asumió la Dirección del Teatro Universitario, Guillermo Ugarte Chamorro (quien hasta 1957 había sido Director de la desaparecida Escuela Nacional de Arte Escénico - ENAE), iniciando así un largo periodo de 30 años de gestión a su cargo. Tiempo durante el cual el TUSM tuvo una labor permanente, donde la promoción y difusión de las actividades teatrales se trasladaron a sectores alejados de la población.

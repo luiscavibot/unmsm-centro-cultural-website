@@ -7,7 +7,7 @@ import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 // import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
-import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
+// import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
 import Image from 'next/image';
 import { tesorosArqueologicosDeSanMarcosData } from '@/infrastructure/ui/data/museums/tesoros-arqueologicos-de-san-marcos-data';
 

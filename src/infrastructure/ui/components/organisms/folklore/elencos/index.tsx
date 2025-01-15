@@ -3,10 +3,10 @@ import React, { useRef } from 'react'
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
-import ArteModerno from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/arte-moderno';
-import LaUniversidad from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/la-universidad';
-import BuenVivir from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/buen-vivir';
-import ExposicionesTemporales from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/exposiciones-temporales';
+// import ArteModerno from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/arte-moderno';
+// import LaUniversidad from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/la-universidad';
+// import BuenVivir from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/buen-vivir';
+// import ExposicionesTemporales from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/exposiciones-temporales';
 import ElencoMayor from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-mayor';
 import ElencoTaller from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-taller';
 import ElencoDeMarinera from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-de-marinera';

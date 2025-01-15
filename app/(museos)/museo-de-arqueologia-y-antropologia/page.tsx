@@ -6,7 +6,7 @@ import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne
 import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
 import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
-import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
+// import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';

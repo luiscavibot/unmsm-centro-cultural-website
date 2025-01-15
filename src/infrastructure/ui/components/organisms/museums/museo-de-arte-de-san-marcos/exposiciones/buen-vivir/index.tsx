@@ -1,13 +1,13 @@
 import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon';
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import Link from 'next/link';
+// import Link from 'next/link';
 import React from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 // import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
-import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
+// import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
 import Image from 'next/image';
 import { buenVivirSumaqKawsaySumaQamanaJakonaxJatikaxbiJatiData } from '@/infrastructure/ui/data/museums/exposiciones/buen-vivir-sumaq-kawsay-suma-qamana-jakonax-jatikaxbi-jati';
 

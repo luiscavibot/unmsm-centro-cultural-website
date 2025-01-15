@@ -97,7 +97,7 @@ export default function BalletHistoria() {
 							</div>
 							<div>
 								<p className="mb-5">
-									Al mismo tiempo surge en Estados Unidos y Alemania, la Danza Moderna, una nueva forma de bailar que potenciaba la libre expresión representativa del nuevo siglo. Es precisamente en los Estados Unidos donde Margaret D'Houbler, quien trabaja en la Universidad de Wisconsin, en el departamento de Educación Física, introduce el estudio de la danza en el ámbito universitario. Desde allí se han constituido los programas de danza en las universidades en los Estados Unidos y en países en todo el mundo.
+									Al mismo tiempo surge en Estados Unidos y Alemania, la Danza Moderna, una nueva forma de bailar que potenciaba la libre expresión representativa del nuevo siglo. Es precisamente en los Estados Unidos donde Margaret D&apos;Houbler, quien trabaja en la Universidad de Wisconsin, en el departamento de Educación Física, introduce el estudio de la danza en el ámbito universitario. Desde allí se han constituido los programas de danza en las universidades en los Estados Unidos y en países en todo el mundo.
 								</p>
 								<p className="mb-5">
 									La danza es posiblemente una de las primeras artes a través de la cual se comunica el ser humano, y es importante destacar que tal vez sea la más simbólica ya que, al prescindir básicamente de la palabra, acentúa tal necesidad por medio de la trasmisión gestual. Es tan antigua como el hombre, y siempre ha estado en estrecha relación con el contexto en el cual se ha desarrollado.
