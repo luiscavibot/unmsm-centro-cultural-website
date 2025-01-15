@@ -8,6 +8,7 @@ import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/face
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
+import TicketIcon from '@/infrastructure/ui/components/atoms/icons/ticket-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 // import Colecciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/colecciones';
@@ -255,6 +256,14 @@ export default function MuseoDeArteDeSanMarcos() {
 								onClick={() => {
 									handleClick('publicaciones');
 								}}
+							/>
+							<Tab
+								label="Visítanos"
+								icon={
+									<TicketIcon />
+								}
+								type='internal-link'
+								link='/visitanos'
 							/>
 						</div>
 					</div>
