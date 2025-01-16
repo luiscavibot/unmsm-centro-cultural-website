@@ -1,85 +1,72 @@
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button'
-// import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon'
+// import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button'
+import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon'
 import Image from 'next/image'
 import React from 'react'
 
 const Servicios = () => {
 	return (
 		<>
-			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
-				<div className="container">
-					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">¡Descubre el fascinante mundo de la antropología y arqueología peruana de manera interactiva! En esta sección de recursos educativos de la Casona de la UNMSM, te invitamos a explorar:</p>
+			<div className="bg-dark-red-2 relative">
+				<div
+					className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative"
+				>
+					<div className="container">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px]">
+							<div className="basis-1/2">
+								<ul className="list-outside list-disc pl-6">
+									<li className="font-bold">Lectura y préstamo en sala</li>
+									<p className="mb-4">
+										Ofrece a los usuarios los ambientes para lectura, estudio e investigación, y brinda la oportunidad de consultar en la sala de lectura sus colecciones.
+									</p>
+									<p className="mb-5">
+										Pueden también realizar consultas en línea a las bases de datos, repositorios, gestores bibliográficos, y recursos virtuales.
+									</p>
+									<li className="font-bold">Referencia InfoArte</li>
+									<p className="break-words mb-5">
+										El público podrá realizar consultas en línea a través del correo biblioteca.ccsm@unmsm.edu.pe y también a través del Facebook de BEA.
+									</p>
+									<li className="font-bold">Capacitación de recursos de información</li>
+									<p>
+										Su finalidad es proporcionar apoyo y asesoramiento al usuario para el mejor aprovechamiento de los recursos de información que se brinda.
+									</p>
+								</ul>
+							</div>
+							<div className="basis-1/2">
+								<ul className="list-outside list-disc pl-6">
+									<li className="font-bold">Actividades y Talleres</li>
+									<p>
+										Acceso a cursos y/o talleres organizados por la Biblioteca España de las Artes, en temas culturales, de investigación, de acceso a fuentes de información y temas relacionados al área.
+									</p>
+									<li className="font-bold">Servicio de Wi-fi</li>
+									<p>
+										Se brinda acceso a Internet gratuito en la sala de lectura, para fines de trabajo y/o investigación, así como el acceso al catálogo en línea y bases de datos virtuales.
+									</p>
+								</ul>
+								<div className="mt-8 bg-dark-red-3 rounded-2xl p-6">
+									<p className="font-bold">Carné de lector anual:</p>
+									<ul className="list-outside list-disc pl-6">
+										<li>Público en general: S/30.00</li>
+										<li>Escolares: S/. 5.00</li>
+										<li>Pase temporal: S/.1.00</li>
+										<li>Comunidad sanmarquina: Ingreso libre</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
 				</div>
-			</div>
-			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
-				<article
-					className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-black-custom overflow-hidden"
-				>
-					<figure
-						className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out"
-					>
+				<div className="shrink-0 w-[523px] absolute right-0 top-0 h-full">
+					<figure className="relative w-full h-full mx-auto">
 						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg"
-							alt="Museo de Arte de San Marcos"
-							width={801}
-							height={621}
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/biblioteca-servicios.webp"
+							className="object-cover h-full"
+							alt="biblioteca servicios"
+							layout="fill"
+							quality={100}
 						/>
 					</figure>
-					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 semi-container-l h-full">
-						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
-								Revista
-							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
-								Folklore: Arte cultura y sociedad
-							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
-								En 2007, el Centro Universitario de Folklore de la UNMSM lanzó la revista FOLKLORE: Arte, cultura y sociedad, con el propósito de llenar vacíos en la investigación de las manifestaciones folklóricas del Perú y consolidarse como referente en el ámbito académico.
-							</p>
-						</header>
-						<SecondaryButton
-							type="external-link"
-							href="https://cedoc.sisbib.unmsm.edu.pe/biblioteca-digital/revistas/folklore?pagina=1"
-							theme="dark"
-							label="Explorar"
-							className="mt-8"
-						/>
-					</div>
-				</article>
-				<article
-					className="px-6 lg:pr-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden"
-				>
-					<figure
-						className="absolute -top-[46%] -right-[270px] transition-transform duration-[800ms] ease-out"
-					>
-						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
-							alt="Museo de Arqueología y Antropología"
-							width={801}
-							height={621}
-						/>
-					</figure>
-					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 semi-container-r h-full">
-						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
-								Boletín
-							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
-								Haylli
-							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
-								A través de análisis, entrevistas y debates, este espacio profundiza en el arte cinematográfico, explorando temas de estética, narrativa y técnica en películas de todos los géneros y épocas.
-							</p>
-						</header>
-						<SecondaryButton
-							type="external-link"
-							href="#"
-							theme="dark"
-							label="Explorar"
-							className="mt-8"
-						/>
-					</div>
-				</article>
+				</div>
 			</div>
 		</>
 	)
