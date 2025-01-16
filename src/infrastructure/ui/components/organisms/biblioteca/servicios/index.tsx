@@ -11,7 +11,7 @@ const Servicios = () => {
 					className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative"
 				>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px]">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px] font-medium">
 							<div className="basis-1/2">
 								<ul className="list-outside list-disc pl-6">
 									<li className="font-bold">Lectura y préstamo en sala</li>
