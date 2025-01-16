@@ -1,5 +1,3 @@
-// import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button'
-import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon'
 import Image from 'next/image'
 import React from 'react'
 

@@ -10,7 +10,7 @@ const MaterialMultimedia = () => {
 			</div>
 			<div>
 				<li className="font-bold">Recursos multimedia</li>
-				<p className="font-normal">Cd's, dvd's, discos laser, cintas de video.</p>
+				<p className="font-normal">Cd&apos;s, dvd&apos;s, discos laser, cintas de video.</p>
 			</div>
 			<div>
 				<li className="font-bold">Repositorio digital de la UNMSM</li>
