@@ -19,15 +19,15 @@ const Tab: React.FC<TabProps> = ({ label, icon, selected, onClick, link, type })
 					className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-3xl inline-flex items-center justify-center gap-x-2 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-light-text-button-color bg-light-bg-button-color'}`}
 					href={link}
 				>
+					<span className="w-full text-left">
+						{label}
+					</span>
 					{
 						icon &&
 						<div className="shrink-0">
 							{icon}
 						</div>
 					}
-					<span className="w-full text-left">
-						{label}
-					</span>
 				</Link>
 			)
 		} else {
@@ -38,15 +38,15 @@ const Tab: React.FC<TabProps> = ({ label, icon, selected, onClick, link, type })
 					target="_blank"
 					rel="noreferrer noopener"
 				>
+					<span className="w-full text-left">
+						{label}
+					</span>
 					{
 						icon &&
 						<div className="shrink-0">
 							{icon}
 						</div>
 					}
-					<span className="w-full text-left">
-						{label}
-					</span>
 				</a>
 			)
 		}
@@ -56,15 +56,15 @@ const Tab: React.FC<TabProps> = ({ label, icon, selected, onClick, link, type })
 				className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-3xl inline-flex items-center justify-center gap-x-2 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-light-text-button-color bg-light-bg-button-color'}`}
 				onClick={onClick}
 			>
+				<span className="w-full text-left">
+					{label}
+				</span>
 				{
 					icon &&
 					<div className="shrink-0">
 						{icon}
 					</div>
 				}
-				<span className="w-full text-left">
-					{label}
-				</span>
 			</button>
 		)
 	}
