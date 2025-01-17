@@ -21,7 +21,7 @@ const BibliotecaVirtual = () => {
 						/>
 					</figure>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[644px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px]">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[644px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px] font-medium">
 							<div className="max-w-[310px]">
 								<p>
 									Explora el vasto legado académico y cultural de la Universidad Nacional Mayor de San Marcos desde cualquier lugar. Nuestra biblioteca virtual te brinda acceso a una amplia colección de recursos digitales,
