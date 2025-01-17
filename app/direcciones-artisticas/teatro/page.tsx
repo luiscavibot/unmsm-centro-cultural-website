@@ -1,5 +1,6 @@
 import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button';
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
+import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
@@ -133,6 +134,18 @@ export default function Teatro() {
 					<div className="container">
 						<div className="flex gap-x-4">
 							<Tab label="Equipo" selected={true} />
+							<Tab
+								label="Investigación"
+								icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
+								type="internal-link"
+								link="#"
+							/>
+							<Tab
+								label="Entrevistas"
+								icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
+								type="internal-link"
+								link="#"
+							/>
 						</div>
 					</div>
 				</div>

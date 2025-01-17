@@ -81,12 +81,14 @@ const Publicaciones = () => {
 										href="https://cedoc.sisbib.unmsm.edu.pe/biblioteca_digital/revistas/cuadernos-de-investigacion-del-archivo-tello?pagina=1"
 										theme="dark"
 										label="Cuadernos N° 1 - 15"
+										icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
 									/>
 									<SecondaryButton
 										type="external-link"
 										href="https://fondoeditorial.unmsm.edu.pe/catalogo"
 										theme="dark"
 										label="Cuadernos N° 16 -17"
+										icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
 									/>
 								</div>
 							</div>

@@ -69,16 +69,16 @@ const Colecciones = () => {
 							y la pasión del Dr. Tello por preservar y estudiar
 							el rico patrimonio cultural del Perú.
 						</p>
-						<span className="mt-6 inline-flex items-center gap-x-2">
+						<p className="mt-6">
 							<a
 								href="https://issuu.com/maa-unmsm"
-								className="link"
+								className="link inline-flex items-center gap-x-2"
 								target="_blank"
 							>
 								Explorar
+								<ExternalLinkIcon className="h-4 w-4 shrink-0" />
 							</a>
-							<ExternalLinkIcon className="h-4 w-4 shrink-0" />
-						</span>
+						</p>
 					</div>
 					<div className="max-lg:w-full">
 						<Splide

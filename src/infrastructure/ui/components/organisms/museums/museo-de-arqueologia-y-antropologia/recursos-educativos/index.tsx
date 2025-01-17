@@ -1,5 +1,5 @@
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-// import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
+import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 import Image from 'next/image';
 import React from 'react';
 
@@ -47,6 +47,7 @@ const RecursosEducativos = () => {
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
+							icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
 						/>
 					</div>
 				</article>
@@ -80,6 +81,7 @@ const RecursosEducativos = () => {
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
+							icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
 						/>
 					</div>
 				</article>
@@ -106,6 +108,7 @@ const RecursosEducativos = () => {
 						href="https://www.youtube.com/@museodearqueologiayantropo1140/videos"
 						theme="dark"
 						label="Explorar"
+						icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
 					/>
 				</div>
 			</div>
