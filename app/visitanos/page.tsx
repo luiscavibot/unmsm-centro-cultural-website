@@ -1,6 +1,7 @@
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
@@ -91,45 +92,47 @@ export default function Visitanos() {
 						</div>
 					</div>
 				</div>
-				<div className="px-4 lg:px-[104px] bg-dark-red-2 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg')] bg-no-repeat bg-[161px_-290px] flex flex-row gap-y-8 gap-x-6 leading-[24px]">
-					<div className="basis-1/3 space-y-8">
-						<div>
-							<h2 className="text-[40px] font-bold leading-[60px] mb-3">Programas educativos para escolares</h2>
-							<p>Casona de San Marcos: el Aula de clase de la Historia del Perú. El recinto como un aula de clase abierta a partir de su historia y la historia de la Universidad Decana de América permite los conceptos previos o la consolidación de los mismos a partir del desarrollo de sus recorridos temáticos.</p>
+				<div className="px-4 lg:px-[104px] bg-dark-red-2 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg')] bg-no-repeat bg-[161px_-290px]">
+					<div className="container flex flex-row gap-y-8 gap-x-6 leading-[24px]">
+						<div className="basis-1/3 space-y-8">
+							<div>
+								<h2 className="text-[40px] font-bold leading-[60px] mb-3">Programas educativos para escolares</h2>
+								<p>Casona de San Marcos: el Aula de clase de la Historia del Perú. El recinto como un aula de clase abierta a partir de su historia y la historia de la Universidad Decana de América permite los conceptos previos o la consolidación de los mismos a partir del desarrollo de sus recorridos temáticos.</p>
+							</div>
+							<div>
+								<h3 className="mb-2 font-bold">Perú colonial</h3>
+								<p>Como noviciado de la Compañía de Jesús, local del Real Convictorio de San Carlos y con la impronta de la Universidad de San Marcos; la Casona sanmarquina es un lugar único para el conocimiento del Perú de la Colonia tanto en lo político, social, económico y de mentalidades.</p>
+							</div>
+							<div>
+								<h3 className="mb-2 font-bold">Educación colonial</h3>
+								<p>La Casona sanmarquina albergó al noviciado jesuita de San Antonio Abad, al Real Convictorio de San Carlos y la Universidad de San Marcos: tres instituciones que marcaron la educación en el Perú de la Colonia. El conocimiento de ellas permite adentrarnos en la particularidad educativa de aquel tiempo.</p>
+							</div>
 						</div>
-						<div>
-							<h3 className="mb-2 font-bold">Perú colonial</h3>
-							<p>Como noviciado de la Compañía de Jesús, local del Real Convictorio de San Carlos y con la impronta de la Universidad de San Marcos; la Casona sanmarquina es un lugar único para el conocimiento del Perú de la Colonia tanto en lo político, social, económico y de mentalidades.</p>
+						<div className="basis-1/3 space-y-8">
+							<div>
+								<h3 className="mb-2 font-bold">Proceso de la independecia</h3>
+								<p className="mb-8">En el Real Convictorio de San Carlos se formaron los intelectuales de la independencia. El hombre responsable, en gran parte de esa hazaña, fue Toribio Rodríguez de Mendoza quien propició un conjunto de reformas educativas acorde a las modernas ideas de la ilustración.</p>
+								<p>A tono con las celebraciones de la fiesta del Centenario se inauguró en 1921 el Parque Universitario y se transformó en 1924 la antigua iglesia San Antonio de Abad en el Panteón de los Próceres como lugar de memoria y celebración de los grandes hombres de la independencia.</p>
+							</div>
+							<div>
+								<h3 className="mb-2 font-bold">Mujeres en San Marcos</h3>
+								<p className="mb-8">En 1882 Margarita Muñoz Seguín se matriculó en la Facultad de Letras de la Universidad de San Marcos inaugurando la presencia femenina en la Decana de América. El 1908 de dio la Ley 801 que permitió el ingreso de las mujeres a la universidad.</p>
+								<p>El recorrido presentará el panorama de la mujer en relación a la educación y especialmente su acceso a la universidad. Conoceremos a un conjunto de destacadas exponentes sanmarquinas de las letras y las ciencias en el Perú de los siglos XIX y XX.</p>
+							</div>
 						</div>
-						<div>
-							<h3 className="mb-2 font-bold">Educación colonial</h3>
-							<p>La Casona sanmarquina albergó al noviciado jesuita de San Antonio Abad, al Real Convictorio de San Carlos y la Universidad de San Marcos: tres instituciones que marcaron la educación en el Perú de la Colonia. El conocimiento de ellas permite adentrarnos en la particularidad educativa de aquel tiempo.</p>
-						</div>
-					</div>
-					<div className="basis-1/3 space-y-8">
-						<div>
-							<h3 className="mb-2 font-bold">Proceso de la independecia</h3>
-							<p className="mb-8">En el Real Convictorio de San Carlos se formaron los intelectuales de la independencia. El hombre responsable, en gran parte de esa hazaña, fue Toribio Rodríguez de Mendoza quien propició un conjunto de reformas educativas acorde a las modernas ideas de la ilustración.</p>
-							<p>A tono con las celebraciones de la fiesta del Centenario se inauguró en 1921 el Parque Universitario y se transformó en 1924 la antigua iglesia San Antonio de Abad en el Panteón de los Próceres como lugar de memoria y celebración de los grandes hombres de la independencia.</p>
-						</div>
-						<div>
-							<h3 className="mb-2 font-bold">Mujeres en San Marcos</h3>
-							<p className="mb-8">En 1882 Margarita Muñoz Seguín se matriculó en la Facultad de Letras de la Universidad de San Marcos inaugurando la presencia femenina en la Decana de América. El 1908 de dio la Ley 801 que permitió el ingreso de las mujeres a la universidad.</p>
-							<p>El recorrido presentará el panorama de la mujer en relación a la educación y especialmente su acceso a la universidad. Conoceremos a un conjunto de destacadas exponentes sanmarquinas de las letras y las ciencias en el Perú de los siglos XIX y XX.</p>
-						</div>
-					</div>
-					<div className="basis-1/3 space-y-8">
-						<div>
-							<h3 className="mb-2 font-bold">Guerra del Pacífico</h3>
-							<p>La Universidad de San Marcos participó activamente en la guerra de 1879. Desde la formación de las legiones estudiantiles militares, la colaboración económica de las autoridades y de los profesores sanmarquinos, la presencia de estudiantes sanmarquinos en la Campaña del Sur, el sacrificio en la defensa de Lima y la ocupación de la Casona como cuartel del ejército chileno donde se vivió la violencia y el saqueo.</p>
-						</div>
-						<div>
-							<h3 className="mb-2 font-bold">República aristocrática</h3>
-							<p>Entre 1895 y 1919, el claustro sanmarquino fue un bastión importante de la fuerza política predominante; el Partido Civil además de ser el centro irradiador de la ideología aristocrática marcada por sus catedráticos y alumnos donde destacaban los integrantes de la Generación del 900 entre ellos José de la Riva Agüero y Osma.</p>
-						</div>
-						<div>
-							<h3 className="mb-2 font-bold">Casona de San Marcos y su entorno</h3>
-							<p>La Casona de San Marcos y el Panteón de los Próceres constituyen uno de los complejos arquitectónicos más destacados del Centro Histórico de Lima donde memoria, tradición y celebración se entrecruzan para un mejor conocimiento de la Historia del Perú. Recorremos la Casona de San Marcos y el Panteón de los Próceres.</p>
+						<div className="basis-1/3 space-y-8">
+							<div>
+								<h3 className="mb-2 font-bold">Guerra del Pacífico</h3>
+								<p>La Universidad de San Marcos participó activamente en la guerra de 1879. Desde la formación de las legiones estudiantiles militares, la colaboración económica de las autoridades y de los profesores sanmarquinos, la presencia de estudiantes sanmarquinos en la Campaña del Sur, el sacrificio en la defensa de Lima y la ocupación de la Casona como cuartel del ejército chileno donde se vivió la violencia y el saqueo.</p>
+							</div>
+							<div>
+								<h3 className="mb-2 font-bold">República aristocrática</h3>
+								<p>Entre 1895 y 1919, el claustro sanmarquino fue un bastión importante de la fuerza política predominante; el Partido Civil además de ser el centro irradiador de la ideología aristocrática marcada por sus catedráticos y alumnos donde destacaban los integrantes de la Generación del 900 entre ellos José de la Riva Agüero y Osma.</p>
+							</div>
+							<div>
+								<h3 className="mb-2 font-bold">Casona de San Marcos y su entorno</h3>
+								<p>La Casona de San Marcos y el Panteón de los Próceres constituyen uno de los complejos arquitectónicos más destacados del Centro Histórico de Lima donde memoria, tradición y celebración se entrecruzan para un mejor conocimiento de la Historia del Perú. Recorremos la Casona de San Marcos y el Panteón de los Próceres.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -151,6 +154,76 @@ export default function Visitanos() {
 							theme="dark"
 							label="Leer más"
 						/>
+					</div>
+				</div>
+				<div className="px-4 lg:px-[104px] bg-white py-8 lg:pt-[80px] lg:pb-[104px] pb-20">
+					<div className="container grid  grid-cols-2 grid-rows-[repeat(4,220px)] gap-6">
+						<div className="order-1 col-span-1 row-span-2">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-ballet-1.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="order-4">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-ballet-1.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="order-6">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_portrait_1_92ac023c53.jpg"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="order-2">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_portrait_1_92ac023c53.jpg"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="order-3">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-ballet-1.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="order-5 col-span-1 row-span-2">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-ballet-1.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
 					</div>
 				</div>
 			</>
