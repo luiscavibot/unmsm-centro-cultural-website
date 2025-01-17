@@ -1,7 +1,7 @@
 // import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon'
 // import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon'
 // import Link from 'next/link'
-import React from 'react'
+import React from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 // import '@splidejs/splide/dist/css/splide.min.css';
@@ -9,19 +9,20 @@ import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
 import Image from 'next/image';
+import { elencoTallerData } from '@/infrastructure/ui/data/direcciones/elenco-taller-data';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
 interface Props {
-	handleMoveElencoTaller: () => void
-	splideRefElencoTaller: React.RefObject<ExtendedSplideType>
-	splideOptions: ResponsiveOptions
-	isPrevDisabledElencoTaller: boolean
-	isNextDisabledElencoTaller: boolean
-	handlePrevElencoTaller: () => void
-	handleNextElencoTaller: () => void
+	handleMoveElencoTaller: () => void;
+	splideRefElencoTaller: React.RefObject<ExtendedSplideType>;
+	splideOptions: ResponsiveOptions;
+	isPrevDisabledElencoTaller: boolean;
+	isNextDisabledElencoTaller: boolean;
+	handlePrevElencoTaller: () => void;
+	handleNextElencoTaller: () => void;
 }
 
 const ElencoTaller: React.FC<Props> = ({
@@ -44,10 +45,15 @@ const ElencoTaller: React.FC<Props> = ({
 						options={splideOptions}
 					>
 						<SplideTrack>
-							{carouselExhibition.map((img, index) => (
+							{elencoTallerData.map((img, index) => (
 								<SplideSlide key={index}>
 									<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
-										<Image src={img.imageUrl} className="object-cover" alt={"Exposición"} layout="fill" />
+										<Image
+											src={img.imageUrl}
+											className="object-cover"
+											alt={'Exposición'}
+											layout="fill"
+										/>
 									</figure>
 								</SplideSlide>
 							))}
@@ -71,19 +77,31 @@ const ElencoTaller: React.FC<Props> = ({
 					</div>
 				</div>
 				<div className="max-w-[394px] mt-0 lg:mt-10">
-					<h3 className="text-[32px] leading-[normal] font-semibold">Elenco taller</h3>
+					<h3 className="text-[32px] leading-[normal] font-semibold">
+						Elenco taller
+					</h3>
 					<div className="font-medium leading-[24px] mt-6">
 						<p className="mb-5">
-							El Elenco Taller del Centro Universitario de Folklore (CUF) es uno de los principales difusores del folklore peruano de la Universidad Nacional Mayor de San Marcos y tiene como finalidad proyectar mensajes culturales de nuestra riqueza peruana a través de diversas danzas regionales.
+							El Elenco Taller del Centro Universitario de
+							Folklore (CUF) es uno de los principales difusores
+							del folklore peruano de la Universidad Nacional
+							Mayor de San Marcos y tiene como finalidad proyectar
+							mensajes culturales de nuestra riqueza peruana a
+							través de diversas danzas regionales.
 						</p>
 						<p>
-							Se caracteriza por tener como integrantes a estudiantes del CUF de la Decana de América, quienes buscan ser difusores técnicos de la danza tradicional y formadores en diversidad cultural en las diferentes instituciones y realidades educativas del Perú.
+							Se caracteriza por tener como integrantes a
+							estudiantes del CUF de la Decana de América, quienes
+							buscan ser difusores técnicos de la danza
+							tradicional y formadores en diversidad cultural en
+							las diferentes instituciones y realidades educativas
+							del Perú.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default ElencoTaller
+export default ElencoTaller;
