@@ -1,6 +1,6 @@
 import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon';
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-// import Link from 'next/link';
+import Link from 'next/link';
 import React from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
@@ -80,12 +80,12 @@ const ArteModerno: React.FC<Props> = ({
 							</div>
 						</div>
 					</div>
-					{/* <Link
+					<Link
 						href="/exposiciones/sala-mario-vargas-llosa"
 						className="link mt-8 inline-block"
 					>
 						Leer más
-					</Link> */}
+					</Link>
 				</div>
 				<div className="max-lg:w-full">
 					<Splide

@@ -7,7 +7,10 @@ const Exhibitions = () => {
 		<section id="exposiciones" className="scroll-mt-28">
 			<h2 className="hidden sr-only">Exposiciones</h2>
 			<div className="grid lg:grid-cols-2 auto-rows-[360px] lg:grid-rows-[repeat(3,360px)]">
-				<Link className="lg:row-span-2 group" href="#">
+				<Link
+					className="lg:row-span-2 group"
+					href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo"
+				>
 					<article className="relative h-full px-6 lg:pl-[104px] group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
@@ -29,7 +32,10 @@ const Exhibitions = () => {
 						</div>
 					</article>
 				</Link>
-				<Link href="#" className="group">
+				<Link
+					href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo"
+					className="group"
+				>
 					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
@@ -52,7 +58,10 @@ const Exhibitions = () => {
 						</div>
 					</article>
 				</Link>
-				<Link href="#" className="group">
+				<Link
+					href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo"
+					className="group"
+				>
 					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
@@ -74,7 +83,10 @@ const Exhibitions = () => {
 						</div>
 					</article>
 				</Link>
-				<Link href="#" className="group">
+				<Link
+					href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo"
+					className="group"
+				>
 					<article className="px-6 lg:pl-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
@@ -97,7 +109,10 @@ const Exhibitions = () => {
 						</div>
 					</article>
 				</Link>
-				<Link href="#" className="group">
+				<Link
+					href="/exposiciones/sala-mario-vargas-llosa"
+					className="group"
+				>
 					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image

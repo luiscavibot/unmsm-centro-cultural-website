@@ -28,7 +28,7 @@ const Library = () => {
 						</p>
 						<SecondaryButton
 							type="internal-link"
-							href="#"
+							href="/biblioteca"
 							theme="dark"
 							label="Explorar"
 							className="mt-6 lg:mt-8"

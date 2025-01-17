@@ -1,21 +1,21 @@
 'use client';
 
-import Badge from '@/infrastructure/ui/components/atoms/badge'
-import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon'
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon'
-import Title from '@/infrastructure/ui/components/atoms/title'
-import ExhibitionsCard from '@/infrastructure/ui/components/molecules/exhibitions-card'
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout'
-import exhibitions from '@/infrastructure/ui/mocks/exhibitions-arte-moderno-y-contemporaneo'
-import React, { useRef } from 'react'
+import Badge from '@/infrastructure/ui/components/atoms/badge';
+import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon';
+import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
+import Title from '@/infrastructure/ui/components/atoms/title';
+import ExhibitionsCard from '@/infrastructure/ui/components/molecules/exhibitions-card';
+import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import exhibitions from '@/infrastructure/ui/mocks/exhibitions-arte-moderno-y-contemporaneo';
+import React, { useRef } from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
-import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel'
-import Image from 'next/image'
+import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
+import Image from 'next/image';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -37,7 +37,6 @@ const breadcrumbItems = [
 ];
 
 export default function ArteModernoYContemporaneo() {
-
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
@@ -50,17 +49,23 @@ export default function ArteModernoYContemporaneo() {
 		perMove: 1,
 		breakpoints: {
 			1024: {
-				fixedWidth: "100%",
+				fixedWidth: '100%',
 				perMove: 1,
 			},
 		},
 	};
 
-	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
+	const {
+		handlePrev,
+		handleNext,
+		handleMove,
+		isPrevDisabled,
+		isNextDisabled,
+	} = useSplideControls(splideRef);
 
 	return (
 		<Layout
-			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/COLECC_1_1acec4e15d.jpg"
 			breadcrumbItems={breadcrumbItems}
 			theme="dark"
 		>
@@ -138,7 +143,9 @@ export default function ArteModernoYContemporaneo() {
 						</div>
 					</div>
 					<div className="mt-[81px]">
-						<h2 className="font-bold text-xl leading-[30px] mb-10">Galería</h2>
+						<h2 className="font-bold text-xl leading-[30px] mb-10">
+							Galería
+						</h2>
 						<div className="max-lg:w-full relative">
 							<Splide
 								onMoved={handleMove}
@@ -150,7 +157,12 @@ export default function ArteModernoYContemporaneo() {
 									{carouselExhibition.map((img, index) => (
 										<SplideSlide key={index}>
 											<figure className="max-lg:hidden relative w-[310px] h-[232px] flex-shrink-0 rounded-2xl overflow-hidden">
-												<Image src={img.imageUrl} className="object-cover" alt={"Exposición"} layout="fill" />
+												<Image
+													src={img.imageUrl}
+													className="object-cover"
+													alt={'Exposición'}
+													layout="fill"
+												/>
 											</figure>
 										</SplideSlide>
 									))}
