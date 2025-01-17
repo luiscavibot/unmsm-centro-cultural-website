@@ -1,4 +1,4 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 import React from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
@@ -88,12 +88,12 @@ const ExposicionesTemporales: React.FC<Props> = ({
 						artistas del arte popular. Cuenta con piezas
 						representativas del arte tradicional peruano.
 					</p>
-					{/* <Link
+					<Link
 						href="/agenda-cultural"
 						className="link mt-4 inline-block"
 					>
 						Explorar
-					</Link> */}
+					</Link>
 				</div>
 			</div>
 		</div>

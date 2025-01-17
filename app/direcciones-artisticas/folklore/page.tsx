@@ -3,13 +3,21 @@
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout'
+import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
 import Link from 'next/link';
-import React, { Suspense, useState } from 'react'
+import React, { Suspense, useState } from 'react';
 
 const tabs = {
-	elencos: React.lazy(() => import('@/infrastructure/ui/components/organisms/folklore/elencos')),
-	publicaciones: React.lazy(() => import('@/infrastructure/ui/components/organisms/folklore/publicaciones')),
+	elencos: React.lazy(
+		() =>
+			import('@/infrastructure/ui/components/organisms/folklore/elencos')
+	),
+	publicaciones: React.lazy(
+		() =>
+			import(
+				'@/infrastructure/ui/components/organisms/folklore/publicaciones'
+			)
+	),
 } as const;
 
 type TabKeys = keyof typeof tabs;
@@ -30,16 +38,15 @@ const breadcrumbItems = [
 ];
 
 export default function Folklore() {
+	const [currentTab, setCurrentTab] = useState<TabKeys>('elencos');
 
-	const [currentTab, setCurrentTab] = useState<TabKeys>('elencos')
-	
 	const handleClick = (tab: TabKeys) => {
-		setCurrentTab(tab)
-	}
+		setCurrentTab(tab);
+	};
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/folklore_ccsm_1_6e758bd864.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -47,20 +54,47 @@ export default function Folklore() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center max-w-[550px] mx-auto">
-								Dirección del Centro Universitario de Folklore (CUF)
+								Dirección del Centro Universitario de Folklore
+								(CUF)
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Centro Universitario de Folklore (CUF) es una dependencia del Centro Cultural de la Universidad Nacional Mayor de San Marcos dedicada al trabajo exclusivo en el tema de las expresiones culturales de nuestro país en materia de música y danza.
+									El Centro Universitario de Folklore (CUF) es
+									una dependencia del Centro Cultural de la
+									Universidad Nacional Mayor de San Marcos
+									dedicada al trabajo exclusivo en el tema de
+									las expresiones culturales de nuestro país
+									en materia de música y danza.
 								</p>
 								<p className="mb-5">
-									El CUF este 2024, cuenta ya 54 años de arduo trabajo por la diversidad cultural del país. Este tiempo ha servido para institucionalizar la música y danza folklórica en la vida universitaria, con lo que se rescata elementos fundamentales de nuestra cultura andina aquí contenidos: la reciprocidad, la colectividad, el ayni, entre otros. Estos valores se desarrollan en experiencias cotidianas entre nuestros integrantes sanmarquinos, quienes los proyectan a la comunidad en general.
+									El CUF este 2024, cuenta ya 54 años de arduo
+									trabajo por la diversidad cultural del país.
+									Este tiempo ha servido para
+									institucionalizar la música y danza
+									folklórica en la vida universitaria, con lo
+									que se rescata elementos fundamentales de
+									nuestra cultura andina aquí contenidos: la
+									reciprocidad, la colectividad, el ayni,
+									entre otros. Estos valores se desarrollan en
+									experiencias cotidianas entre nuestros
+									integrantes sanmarquinos, quienes los
+									proyectan a la comunidad en general.
 								</p>
 								<p className="mb-5">
-									El Centro Universitario de Folklore tiene constituida una Escuela de Capacitación en danza folklórica y siete elencos artísticos que desarrollan espectáculos de música y danza de alto nivel, con los que se proyecta a la comunidad y a la vez aporta al estudio, promoción y difusión de las costumbres populares de nuestro país.
+									El Centro Universitario de Folklore tiene
+									constituida una Escuela de Capacitación en
+									danza folklórica y siete elencos artísticos
+									que desarrollan espectáculos de música y
+									danza de alto nivel, con los que se proyecta
+									a la comunidad y a la vez aporta al estudio,
+									promoción y difusión de las costumbres
+									populares de nuestro país.
 								</p>
 							</div>
-							<Link className="link text-dark-red font-medium" href="/direcciones-artisticas/folklore/historia">
+							<Link
+								className="link text-dark-red font-medium"
+								href="/direcciones-artisticas/folklore/historia"
+							>
 								Conoce la historia
 							</Link>
 						</div>
@@ -69,20 +103,49 @@ export default function Folklore() {
 				<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[45px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-contactanos.svg')] bg-no-repeat bg-[-123px_10px]">
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
-							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">Explora y aprende en el Centro Cultural San Marcos</h2>
-							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">Descubre un mundo de conocimiento, arte y cultura con nuestras actividades exclusivas ¡Únete y sé parte de nuestra comunidad!</p>
+							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
+								Explora y aprende en el Centro Cultural San
+								Marcos
+							</h2>
+							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
+								Descubre un mundo de conocimiento, arte y
+								cultura con nuestras actividades exclusivas
+								¡Únete y sé parte de nuestra comunidad!
+							</p>
 						</div>
 						<div className="flex flex-col gap-y-4">
-							<SecondaryButton type="internal-link" href="/cursos-y-talleres" theme="dark" label="Cursos y talleres" />
-							<SecondaryButton type="internal-link" href="/agenda-cultural" theme="dark" label="Eventos" />
+							<SecondaryButton
+								type="internal-link"
+								href="/cursos-y-talleres"
+								theme="dark"
+								label="Cursos y talleres"
+							/>
+							<SecondaryButton
+								type="internal-link"
+								href="/agenda-cultural"
+								theme="dark"
+								label="Eventos"
+							/>
 						</div>
 					</div>
 				</div>
 				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
 					<div className="container">
 						<div className="flex gap-x-4">
-							<Tab label="Elencos" selected={currentTab === 'elencos'} onClick={() => { handleClick('elencos') }} />
-							<Tab label="Publicaciones" selected={currentTab === 'publicaciones'} onClick={() => { handleClick('publicaciones') }} />
+							<Tab
+								label="Elencos"
+								selected={currentTab === 'elencos'}
+								onClick={() => {
+									handleClick('elencos');
+								}}
+							/>
+							<Tab
+								label="Publicaciones"
+								selected={currentTab === 'publicaciones'}
+								onClick={() => {
+									handleClick('publicaciones');
+								}}
+							/>
 						</div>
 					</div>
 				</div>
@@ -91,14 +154,17 @@ export default function Folklore() {
 						fallback={
 							<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[24px]">
 								<div className="container">
-									<p className="max-w-[641px] leading-[24px] text-dark-blue-2">Cargando...</p>
+									<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
+										Cargando...
+									</p>
 								</div>
 							</div>
-						}>
+						}
+					>
 						{React.createElement(tabs[currentTab])}
 					</Suspense>
 				</div>
 			</>
 		</Layout>
-	)
+	);
 }

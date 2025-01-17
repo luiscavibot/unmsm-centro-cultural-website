@@ -10,7 +10,10 @@ const ArtisticDirections: React.FC = () => {
 		>
 			<div className="container grid lg:grid-cols-3 gap-4 lg:gap-6">
 				<div className="space-y-4 lg:space-y-6 lg:order-1 order-2">
-					<div className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
+					<Link
+						href="/direcciones-artisticas/ballet"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+					>
 						<div className="absolute top-0 left-0 w-full h-full">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/ballet_af1aa51a37.png"
@@ -22,8 +25,11 @@ const ArtisticDirections: React.FC = () => {
 						<h3 className="relative text-2xl font-bold text-center text-white">
 							Ballet
 						</h3>
-					</div>
-					<div className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
+					</Link>
+					<Link
+						href="/direcciones-artisticas/folklore"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+					>
 						<div className="absolute top-0 left-0 w-full h-full">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/folfklore_9bc15b5189.png"
@@ -35,7 +41,7 @@ const ArtisticDirections: React.FC = () => {
 						<h3 className="relative text-2xl font-bold text-center text-white">
 							Folklore
 						</h3>
-					</div>
+					</Link>
 				</div>
 				<div className="space-y-4 lg:space-y-6 lg:order-2 order-1">
 					<div className="text-center text-white mb-8 lg:mb-12">
@@ -47,11 +53,14 @@ const ArtisticDirections: React.FC = () => {
 							estudiantes y maestros que dan vida a expresiones
 							únicas.
 						</p>
-						<Link href="/direcciones-artisticas" className="link">
+						<Link href="#" className="link">
 							Leer más
 						</Link>
 					</div>
-					<div className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
+					<Link
+						href="/direcciones-artisticas/cine"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+					>
 						<div className="absolute top-0 left-0 w-full h-full">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/cine_4386cce50d.png"
@@ -63,8 +72,11 @@ const ArtisticDirections: React.FC = () => {
 						<h3 className="relative text-2xl font-bold text-center text-white max-w-[211px]">
 							Cine y Dirección audiovisual
 						</h3>
-					</div>
-					<div className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
+					</Link>
+					<Link
+						href="/banda-universitaria"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+					>
 						<div className="absolute top-0 left-0 w-full h-full">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/banda_2350d3997d.png"
@@ -76,10 +88,13 @@ const ArtisticDirections: React.FC = () => {
 						<h3 className="relative text-2xl font-bold text-center text-white">
 							Banda universitaria
 						</h3>
-					</div>
+					</Link>
 				</div>
 				<div className="space-y-4 lg:space-y-6 lg:order-3 order-3">
-					<div className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
+					<Link
+						href="/direcciones-artisticas/musica"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+					>
 						<div className="absolute top-0 left-0 w-full h-full">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/musica_71975d0c1c.png"
@@ -91,8 +106,11 @@ const ArtisticDirections: React.FC = () => {
 						<h3 className="relative text-2xl font-bold text-center text-white">
 							Música
 						</h3>
-					</div>
-					<div className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden">
+					</Link>
+					<Link
+						href="/direcciones-artisticas/teatro"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+					>
 						<div className="absolute top-0 left-0 w-full h-full">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/teatro_2a62a910e8.png"
@@ -104,7 +122,7 @@ const ArtisticDirections: React.FC = () => {
 						<h3 className="relative text-2xl font-bold text-center text-white">
 							Teatro
 						</h3>
-					</div>
+					</Link>
 				</div>
 			</div>
 		</section>
