@@ -8,7 +8,7 @@ import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-butt
 import NewsHomeCard from '@/infrastructure/ui/components/molecules/news-home-card';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import newsDataToHome from '@/infrastructure/ui/mocks/news-data-to-home';
-import ExternalLinkIcon from '../../../atoms/icons/external-link-icon';
+import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -57,12 +57,12 @@ const News = () => {
 				/>
 			</div>
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-center justify-between gap-x-14 relative">
-				<div className="flex flex-row items-center justify-center p-2 gap-2">
-					<h2 className="font-messiri text-[24px] lg:text-[40px] text-white">
+				<div className="flex flex-row items-center justify-center p-2 gap-2 text-white">
+					<h2 className="font-messiri text-[24px] lg:text-[40px]">
 						Noticias
 					</h2>
 					<Link href="/noticias">
-						<ExternalLinkIcon color="white" />
+						<ExternalLinkIcon />
 					</Link>
 				</div>
 				<div className="max-lg:w-full" id="slider">

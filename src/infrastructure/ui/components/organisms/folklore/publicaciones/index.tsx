@@ -1,7 +1,7 @@
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button'
-// import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon'
 import Image from 'next/image'
 import React from 'react'
+import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 
 const Publicaciones = () => {
 	return (
@@ -43,6 +43,7 @@ const Publicaciones = () => {
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
+							icon={<ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" />}
 						/>
 					</div>
 				</article>
@@ -77,6 +78,7 @@ const Publicaciones = () => {
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
+							icon={<ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" />}
 						/>
 					</div>
 				</article>

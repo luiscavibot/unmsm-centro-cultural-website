@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { useRef } from 'react';
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
 import { useRouter } from 'next/navigation';
+import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 
 const Museums = () => {
 	const router = useRouter();

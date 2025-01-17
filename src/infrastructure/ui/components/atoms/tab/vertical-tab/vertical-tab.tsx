@@ -19,12 +19,15 @@ const VerticalTab: React.FC<VerticalTabProps> = ({ label, icon, selected, onClic
 					className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-lg inline-flex items-center justify-left gap-x-4 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-dark-blue-2 bg-white'}`}
 					href={link}
 				>
-					<div className="shrink-0">
-						{icon}
-					</div>
-					<div className="w-full text-left">
+					{
+						icon &&
+						<div className="shrink-0">
+							{icon}
+						</div>
+					}
+					<span className="w-full text-left">
 						{label}
-					</div>
+					</span>
 				</Link>
 			)
 		} else {
@@ -35,12 +38,15 @@ const VerticalTab: React.FC<VerticalTabProps> = ({ label, icon, selected, onClic
 					target="_blank"
 					rel="noreferrer noopener"
 				>
-					<div className="shrink-0">
-						{icon}
-					</div>
-					<div className="w-full text-left">
+					{
+						icon &&
+						<div className="shrink-0">
+							{icon}
+						</div>
+					}
+					<span className="w-full text-left">
 						{label}
-					</div>
+					</span>
 				</a>
 			)
 		}
@@ -50,12 +56,15 @@ const VerticalTab: React.FC<VerticalTabProps> = ({ label, icon, selected, onClic
 				className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-lg inline-flex items-center justify-left gap-x-4 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-dark-blue-2 bg-white'}`}
 				onClick={onClick}
 			>
-				<div className="shrink-0">
-					{icon}
-				</div>
-				<div className="w-full text-left">
+				{
+					icon &&
+					<div className="shrink-0">
+						{icon}
+					</div>
+				}
+				<span className="w-full text-left">
 					{label}
-				</div>
+				</span>
 			</button>
 		)
 	}
