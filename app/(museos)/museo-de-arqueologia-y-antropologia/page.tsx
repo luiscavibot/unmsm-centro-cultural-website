@@ -2,12 +2,14 @@
 
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
 import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
+import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
 import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
 import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
 import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 // import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
+import TicketIcon from '@/infrastructure/ui/components/atoms/icons/ticket-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
@@ -176,7 +178,7 @@ export default function MuseoDeArteDeSanMarcos() {
 								<div className="flex flex-row items-center gap-2 mt-5 ml-7">
 									<a
 										className="p-1 rounded-[4px] bg-dark-gray-2"
-										href=""
+										href="https://www.facebook.com/MuseoArqUNMSM"
 										rel="noreferrer noopener"
 										target="_blank"
 									>
@@ -184,7 +186,7 @@ export default function MuseoDeArteDeSanMarcos() {
 									</a>
 									<a
 										className="p-1 rounded-[4px] bg-dark-gray-2"
-										href=""
+										href="https://www.instagram.com/museoarqunmsm/"
 										rel="noreferrer noopener"
 										target="_blank"
 									>
@@ -200,7 +202,7 @@ export default function MuseoDeArteDeSanMarcos() {
 									</a> */}
 									<a
 										className="p-1 rounded-[4px] bg-dark-gray-2"
-										href=""
+										href="https://www.youtube.com/channel/UC_eAKbCR1NOXhnEs8UifZAQ"
 										rel="noreferrer noopener"
 										target="_blank"
 									>
@@ -270,6 +272,18 @@ export default function MuseoDeArteDeSanMarcos() {
 								onClick={() => {
 									handleClick('recursos-educativos');
 								}}
+							/>
+							<Tab
+								label="Galería"
+								icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
+								type="internal-link"
+								link="/museo-de-arqueologia-y-antropologia#"
+							/>
+							<Tab
+								label="Visítanos"
+								icon={<TicketIcon />}
+								type="internal-link"
+								link="/visitanos"
 							/>
 						</div>
 					</div>

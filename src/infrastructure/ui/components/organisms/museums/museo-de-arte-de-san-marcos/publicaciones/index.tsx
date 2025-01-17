@@ -1,4 +1,5 @@
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
+import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 import Image from 'next/image';
 import React from 'react';
 
@@ -45,6 +46,7 @@ const Publicaciones = () => {
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
+							icon={<ExternalLinkIcon className="h-4 w-4 inline mb-[1px]" />}
 						/>
 					</div>
 				</article>
