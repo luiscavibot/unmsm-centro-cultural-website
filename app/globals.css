@@ -17,6 +17,7 @@
 	--dark-gray-2: #212529;
 	--dark-gray-3: #49454f;
 	--green: #063e40;
+	--green-2: #0B686C;
 	--light-green: #e7f4f5;
 	--dark-blue: #1d2836;
 	--dark-blue-2: #29384c;
@@ -475,11 +476,60 @@ input[type='search']::-ms-clear {
 /* table */
 
 th {
-	@apply px-4 py-3;
+	@apply px-4 py-3 border border-light-green;
 }
 
 td {
 	@apply border border-light-green p-4;
+}
+
+table th:not(:last-child),
+table td:not(:last-child) {
+	@apply border-r border-light-green;
+}
+
+table>thead>tr:not(:last-child)>th,
+table>thead>tr:not(:last-child)>td,
+table>tbody>tr:not(:last-child)>th,
+table>tbody>tr:not(:last-child)>td,
+table>tfoot>tr:not(:last-child)>th,
+table>tfoot>tr:not(:last-child)>td,
+table>tr:not(:last-child)>td,
+table>tr:not(:last-child)>th,
+table>thead:not(:last-child),
+table>tbody:not(:last-child),
+table>tfoot:not(:last-child) {
+	@apply border-b border-light-green;
+}
+
+table {
+	@apply border-separate border-spacing-0 overflow-hidden;
+}
+
+table thead tr:first-child {
+	@apply text-green bg-light-green;
+	border-radius: 8px 8px 0 0;
+}
+
+table thead tr:first-child th:first-child {
+	border-top-left-radius: 8px;
+}
+
+table thead tr:first-child th:last-child {
+	border-top-right-radius: 8px;
+}
+
+table tbody tr:last-child {
+	/* background-color: #000; */
+	border-radius: 0 0 8px 8px;
+}
+
+table tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 8px;
+}
+
+table tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 8px;
 }
 
 /* splide museo */
