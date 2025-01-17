@@ -43,7 +43,7 @@ const Publicaciones = () => {
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
-							icon={<ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" />}
+							icon={<ExternalLinkIcon className="h-4 w-4 inline mb-[1px]" />}
 						/>
 					</div>
 				</article>
@@ -78,7 +78,7 @@ const Publicaciones = () => {
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
-							icon={<ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" />}
+							icon={<ExternalLinkIcon className="h-4 w-4 inline mb-[1px]" />}
 						/>
 					</div>
 				</article>
