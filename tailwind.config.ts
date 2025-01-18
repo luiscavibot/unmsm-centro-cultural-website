@@ -50,6 +50,7 @@ const config: Config = {
 				'dark-gray-transparent': 'var(--dark-gray-transparent)',
 				'dark-gray-2': 'var(--dark-gray-2)',
 				green: 'var(--green)',
+				'green-2': 'var(--green-2)',
 				'light-green': 'var(--light-green)',
 				blue: 'var(--blue)',
 				'blue-2': 'var(--blue-2)',
