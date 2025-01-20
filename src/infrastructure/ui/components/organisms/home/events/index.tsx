@@ -27,7 +27,7 @@ const Events: FC = () => {
 		//configurar autoplay cada 3 segundos y que no se detenga al hacer hover y que rote infinitamente
 		interval: 3000,
 		autoplay: true,
-		pauseOnHover: true,
+		// pauseOnHover: true,
 		loop: true,
 	};
 
