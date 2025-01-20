@@ -12,9 +12,9 @@ const ArtisticDirections: React.FC = () => {
 				<div className="space-y-4 lg:space-y-6 lg:order-1 order-2">
 					<Link
 						href="/direcciones-artisticas/ballet"
-						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden group"
 					>
-						<div className="absolute top-0 left-0 w-full h-full">
+						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/ballet_af1aa51a37.png"
 								className="object-cover"
@@ -28,9 +28,9 @@ const ArtisticDirections: React.FC = () => {
 					</Link>
 					<Link
 						href="/direcciones-artisticas/folklore"
-						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden group"
 					>
-						<div className="absolute top-0 left-0 w-full h-full">
+						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/folfklore_9bc15b5189.png"
 								className="object-cover"
@@ -59,9 +59,9 @@ const ArtisticDirections: React.FC = () => {
 					</div>
 					<Link
 						href="/direcciones-artisticas/cine"
-						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden group"
 					>
-						<div className="absolute top-0 left-0 w-full h-full">
+						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/cine_4386cce50d.png"
 								className="object-cover"
@@ -75,9 +75,9 @@ const ArtisticDirections: React.FC = () => {
 					</Link>
 					<Link
 						href="/banda-universitaria"
-						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden group"
 					>
-						<div className="absolute top-0 left-0 w-full h-full">
+						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/banda_2350d3997d.png"
 								className="object-cover"
@@ -93,9 +93,9 @@ const ArtisticDirections: React.FC = () => {
 				<div className="space-y-4 lg:space-y-6 lg:order-3 order-3">
 					<Link
 						href="/direcciones-artisticas/musica"
-						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden group"
 					>
-						<div className="absolute top-0 left-0 w-full h-full">
+						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/musica_71975d0c1c.png"
 								className="object-cover"
@@ -109,9 +109,9 @@ const ArtisticDirections: React.FC = () => {
 					</Link>
 					<Link
 						href="/direcciones-artisticas/teatro"
-						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden"
+						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden group"
 					>
-						<div className="absolute top-0 left-0 w-full h-full">
+						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/teatro_2a62a910e8.png"
 								className="object-cover"

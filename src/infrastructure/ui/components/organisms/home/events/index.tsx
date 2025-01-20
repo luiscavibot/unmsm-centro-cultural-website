@@ -8,6 +8,7 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
+import { Intersection } from '@splidejs/splide-extension-intersection';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -24,11 +25,18 @@ const Events: FC = () => {
 		pagination: false,
 		gap: '0px',
 		perMove: 1,
-		//configurar autoplay cada 3 segundos y que no se detenga al hacer hover y que rote infinitamente
 		interval: 3000,
 		autoplay: true,
-		// pauseOnHover: true,
+		pauseOnHover: false,
 		loop: true,
+		extensions: { Intersection }, // Incluye la extensión aquí
+		intersection: {
+			once: true,
+			threshold: 0.5, // Porcentaje de visibilidad requerido para activar el autoplay
+			inView: {
+				autoplay: true,
+			},
+		},
 	};
 
 	const {

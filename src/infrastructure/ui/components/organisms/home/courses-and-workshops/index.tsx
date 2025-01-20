@@ -1,33 +1,50 @@
-'use client'
+'use client';
 
-import React, { useRef } from 'react'
-import CoursesAndWorkshopsHomeCard from '@/infrastructure/ui/components/molecules/courses-and-workshops-home-card'
-import coursesAndWorkshopsDataToHome from '@/infrastructure/ui/mocks/courses-and-workshops-data-to-home'
+import React, { useRef } from 'react';
+import CoursesAndWorkshopsHomeCard from '@/infrastructure/ui/components/molecules/courses-and-workshops-home-card';
+import coursesAndWorkshopsDataToHome from '@/infrastructure/ui/mocks/courses-and-workshops-data-to-home';
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
-import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls'
+import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
+import { Intersection } from '@splidejs/splide-extension-intersection';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
 const CoursesAndWorkshops = () => {
-
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
-		type: 'fade',
+		type: 'loop',
 		width: '100%',
 		perPage: 1,
 		arrows: false,
 		pagination: false,
 		gap: '0px',
 		perMove: 1,
+		interval: 3000,
+		autoplay: true,
+		pauseOnHover: false,
+		loop: true,
+		extensions: { Intersection }, // Incluye la extensión aquí
+		intersection: {
+			threshold: 0.5, // Porcentaje de visibilidad requerido para activar el autoplay
+			inView: {
+				autoplay: true,
+			},
+		},
 	};
 
-	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
+	const {
+		handlePrev,
+		handleNext,
+		handleMove,
+		isPrevDisabled,
+		isNextDisabled,
+	} = useSplideControls(splideRef);
 
 	return (
 		<section id="cursos-y-talleres" className="scroll-mt-28 relative">
@@ -41,7 +58,10 @@ const CoursesAndWorkshops = () => {
 				<SplideTrack>
 					{coursesAndWorkshopsDataToHome.map((course, index) => (
 						<SplideSlide key={index}>
-							<CoursesAndWorkshopsHomeCard key={index} {...course} />
+							<CoursesAndWorkshopsHomeCard
+								key={index}
+								{...course}
+							/>
 						</SplideSlide>
 					))}
 				</SplideTrack>
@@ -65,7 +85,7 @@ const CoursesAndWorkshops = () => {
 				</div>
 			</div>
 		</section>
-	)
-}
+	);
+};
 
-export default CoursesAndWorkshops
+export default CoursesAndWorkshops;

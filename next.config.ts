@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
 				protocol: 'https',
 				hostname: 'ccsm.unmsm.edu.pe',
 			},
+			{
+				protocol: 'https',
+				hostname: 'centroculturaldesanmarcos.wordpress.com',
+			},
 		],
 	},
 };

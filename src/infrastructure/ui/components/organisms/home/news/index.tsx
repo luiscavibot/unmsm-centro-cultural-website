@@ -20,7 +20,7 @@ const News = () => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
-		type: 'slide',
+		type: 'loop',
 		width: '100%',
 		fixedWidth: '620px',
 		arrows: false,
@@ -33,6 +33,10 @@ const News = () => {
 				perMove: 1,
 			},
 		},
+		interval: 3000,
+		autoplay: true,
+		pauseOnHover: false,
+		loop: true,
 	};
 
 	const {
