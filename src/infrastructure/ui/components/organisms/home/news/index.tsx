@@ -35,7 +35,7 @@ const News = () => {
 		},
 		interval: 3000,
 		autoplay: true,
-		pauseOnHover: false,
+		pauseOnHover: true,
 		loop: true,
 	};
 

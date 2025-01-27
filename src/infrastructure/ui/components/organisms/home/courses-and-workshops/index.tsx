@@ -8,7 +8,6 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
-import { Intersection } from '@splidejs/splide-extension-intersection';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -27,15 +26,8 @@ const CoursesAndWorkshops = () => {
 		perMove: 1,
 		interval: 3000,
 		autoplay: true,
-		pauseOnHover: false,
+		pauseOnHover: true,
 		loop: true,
-		extensions: { Intersection }, // Incluye la extensión aquí
-		intersection: {
-			threshold: 0.5, // Porcentaje de visibilidad requerido para activar el autoplay
-			inView: {
-				autoplay: true,
-			},
-		},
 	};
 
 	const {
