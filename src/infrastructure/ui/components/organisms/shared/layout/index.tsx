@@ -23,7 +23,7 @@ const Layout = ({ children, breadcrumbItems, portadaImage, theme = 'light' }: La
 
 	return (
 		<section className="relative h-full">
-			<div id="imagen" className="fixed top-[--total-header-height] left-0 w-full h-[544px] z-[-1]">
+			<div id="imagen" className="fixed top-[--total-header-height] left-0 w-full h-[544px] -z-50">
 				<Image
 					// src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp"
 					src={portadaImage}
