@@ -2,7 +2,6 @@ import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/second
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
 const breadcrumbItems = [

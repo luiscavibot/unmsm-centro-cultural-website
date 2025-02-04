@@ -74,7 +74,7 @@ const menu: Menu[] = [
 			},
 			{
 				title: 'Directorio',
-				url: '/nosotros/directorio',
+				url: '/directorio',
 			},
 		],
 	},
