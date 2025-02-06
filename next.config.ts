@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
 				protocol: 'https',
 				hostname: 'centroculturaldesanmarcos.wordpress.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'i3.ytimg.com',
+			},
 		],
 	},
 };
