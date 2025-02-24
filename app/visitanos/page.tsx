@@ -49,7 +49,7 @@ export default function Visitanos() {
 								</p>
 								<p className="font-medium text-center">
 									De lunes a sábado, de 10:00 a 1:00 p.m. y de
-									2:00 a 5:00 p. m.
+									2:00 a 4:00 p. m.
 								</p>
 								<p className="font-medium text-center">
 									Av. Nicolás de Piérola 1222, Parque
@@ -66,13 +66,17 @@ export default function Visitanos() {
 										históricos patios y salones ceremoniales
 									</span>{' '}
 									del complejo arquitectónico de la Casona de
-									San Marcos además de las muestras
-									permanentes: Colección de retratos de
-									catedráticos y rectores de la Universidad de
-									San Marcos (siglos XVI-XXI), Vargas Llosa en
-									San Marcos y exposiciones presentadas por el
-									Museo de Arte de San Marcos y el Museo de
-									Arqueología y Antropología de San Marcos.
+									San Marcos además de las muestras temporales y
+									permanentes como: La universidad como casa del
+									saber: religiosos y laicos y la muestra arqueológica
+									Tesoros Arqueológicos de San Marcos, igualmente
+									a las exposiciones temporales.
+								</p>
+								<p className="mb-6">
+									Las salas de exposición del Museo de Arqueología y Antropología y del Museo de Arte de San Marcos se encuentran abiertas solo de lunes a viernes.
+								</p>
+								<p className="mb-6">
+									El Centro Cultural de San Marcos no atiende los días domingos y declarados feriados.
 								</p>
 								<p>
 									<span className="font-bold">
