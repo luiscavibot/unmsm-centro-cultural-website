@@ -21,7 +21,7 @@ const Servicios = () => {
 									</p>
 									<li className="font-bold">Referencia InfoArte</li>
 									<p className="break-words mb-5">
-										El público podrá realizar consultas en línea a través del correo biblioteca.ccsm@unmsm.edu.pe y también a través del Facebook de BEA.
+										El público podrá realizar consultas en línea a través del correo biblioteca.ccsm@unmsm.edu.pe y también a través del <a href="https://www.facebook.com/BibliotecaEspanaDeLasArtes" rel="noopener noreferrer" target="_blank" className="link">Facebook de BEA</a>.
 									</p>
 									<li className="font-bold">Capacitación de recursos de información</li>
 									<p>

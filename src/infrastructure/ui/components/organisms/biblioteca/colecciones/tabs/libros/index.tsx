@@ -27,7 +27,7 @@ const Libros = () => {
 				<p className="font-normal">
 					Libros y folletos para niños en edad pre-escolar y escolar, compuesta por cuentos, libros de dibujos y aprendizaje.
 					<br />
-					Literatura infantil y juvenil en inglés. Destacadas obras literarias en lengua inglesa.
+					Destacadas obras literarias en lengua inglesa.
 				</p>
 			</div>
 			<div>

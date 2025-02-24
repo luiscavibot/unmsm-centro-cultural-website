@@ -29,19 +29,19 @@ const BibliotecaVirtual = () => {
 							</div>
 							<div className="space-y-4">
 								<p>
-									<a className="link" href="#" rel='noopener noreferrer' target='_blank'>Catálogo virtual <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a>
+									<a className="link" href="https://unmsm.ent.sirsi.net/client/es_ES/BEA" rel='noopener noreferrer' target='_blank'>Catálogo virtual <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a>
 								</p>
 								<div>
 									<p className="font-semibold mb-4">Publicaciones digitalizadas (BEA - CEDOC)</p>
 									<ul className="list-disc list-outside pl-6 space-y-4">
-										<li><a className='link' href="#" rel='noopener noreferrer' target='_blank'>Butacas sanmarquinas <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a></li>
-										<li><a className='link' href="#" rel='noopener noreferrer' target='_blank'>Cuadernos de investigación del Archivo Tello <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a></li>
-										<li><a className='link' href="#" rel='noopener noreferrer' target='_blank'>Folklore: Arte, cultura y sociedad <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a></li>
-										<li><a className='link' href="#" rel='noopener noreferrer' target='_blank'>Vicionario: revista de literatura y arte <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a></li>
+										<li><a className='link' href="https://cedoc.sisbib.unmsm.edu.pe/biblioteca-digital/revistas/butaca-sanmarquina?pagina=1" rel='noopener noreferrer' target='_blank'>Butaca sanmarquinas <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a></li>
+										<li><a className='link' href="https://cedoc.sisbib.unmsm.edu.pe/biblioteca-digital/revistas/cuadernos-de-investigacion-del-archivo-tello?pagina=1" rel='noopener noreferrer' target='_blank'>Cuadernos de investigación del Archivo Tello <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a></li>
+										<li><a className='link' href="https://cedoc.sisbib.unmsm.edu.pe/biblioteca-digital/revistas/folklore?pagina=1" rel='noopener noreferrer' target='_blank'>Folklore: Arte, cultura y sociedad <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a></li>
+										<li><a className='link' href="https://cedoc.sisbib.unmsm.edu.pe/biblioteca-digital/revistas/vicionario?pagina=1" rel='noopener noreferrer' target='_blank'>Vicionario: revista de literatura y arte <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a></li>
 									</ul>
 								</div>
 								<p>
-									<a className="link" href="#" rel='noopener noreferrer' target='_blank'>Bases de datos y repositorios UNMSM <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a>
+									<a className="link" href="https://sisbib.unmsm.edu.pe/?page=2" rel='noopener noreferrer' target='_blank'>Bases de datos y repositorios UNMSM <ExternalLinkIcon className="ml-2 h-4 w-4 inline mb-1" /></a>
 								</p>
 							</div>
 						</div>

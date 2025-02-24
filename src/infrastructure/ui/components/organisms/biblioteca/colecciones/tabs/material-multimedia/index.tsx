@@ -8,10 +8,10 @@ const MaterialMultimedia = () => {
 				<li className="font-bold">Bases de datos científicas</li>
 				<p className="font-normal">Revistas y libros electrónicos.</p>
 			</div>
-			<div>
+			{/* <div>
 				<li className="font-bold">Recursos multimedia</li>
 				<p className="font-normal">Cd&apos;s, dvd&apos;s, discos laser, cintas de video.</p>
-			</div>
+			</div> */}
 			<div>
 				<li className="font-bold">Repositorio digital de la UNMSM</li>
 				<p className="font-normal">Periódicos y revistas nacionales e internacionales publicadas a partir del siglo XX. Incluye los siguientes repositorios:</p>
