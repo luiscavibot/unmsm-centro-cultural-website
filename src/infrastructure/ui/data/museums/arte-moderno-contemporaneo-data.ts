@@ -5,10 +5,10 @@ export const arteModernoContemporaneoData: Exhibition[] = [
 		imageUrl:
 			'https://ccsm.unmsm.edu.pe/ccsm/Coca_Claudia_Aparecida_2007_Acrilico_sobre_lienzo_130x180_cm_9ddfadb793.jpg',
 	},
-	{
-		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/Tsuchiya_Tilsa_St_1977_Litografia_40x62_cm_18d7b45e59.jpg',
-	},
+	// {
+	// 	imageUrl:
+	// 		'https://ccsm.unmsm.edu.pe/ccsm/Tsuchiya_Tilsa_St_1977_Litografia_40x62_cm_18d7b45e59.jpg',
+	// },
 	{
 		imageUrl:
 			'https://ccsm.unmsm.edu.pe/ccsm/Llona_Ramiro_La_anunciacion_triptico_1993_Oleo_sobre_tela_173x310_cm_d038ec688a.jpg',

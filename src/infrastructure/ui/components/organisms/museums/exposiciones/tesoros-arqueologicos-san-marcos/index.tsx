@@ -80,7 +80,7 @@ const TesorosArqueologicosSanMarcos: React.FC<Props> = ({
 				</div>
 				<div className="max-w-[394px] mt-0 lg:mt-10">
 					<span className="text-sm font-semibold mb-1 inline-block">
-						Exposición permenente
+						Exposición permanente
 					</span>
 					<h3 className="text-[32px] leading-[normal] font-semibold">
 						Tesoros Arqueológicos de San Marcos

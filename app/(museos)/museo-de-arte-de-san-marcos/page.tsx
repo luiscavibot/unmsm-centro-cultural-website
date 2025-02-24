@@ -107,7 +107,7 @@ export default function MuseoDeArteDeSanMarcos() {
 									Perú, se han ido incrementando a lo largo de
 									la trayectoria del museo, ya sea por la
 									individual adquisición o donación de
-									artistas, como resultado de concursos,
+									artistas y coleccionaistas; como resultado de concursos,
 									salones o exposiciones; o mediante el
 									ingreso de un solo gran conjunto, tal es el
 									caso del archivo de dibujo y pintura

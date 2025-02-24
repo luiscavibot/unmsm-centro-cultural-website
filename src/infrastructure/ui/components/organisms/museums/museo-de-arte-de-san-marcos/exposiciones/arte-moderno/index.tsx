@@ -38,7 +38,7 @@ const ArteModerno: React.FC<Props> = ({
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
 				<div className="max-w-[394px] mt-0 lg:mt-10">
 					<span className="text-sm font-semibold mb-1 inline-block">
-						Exposición permenente
+						Exposición permanente
 					</span>
 					<h3 className="text-[32px] leading-[normal] font-semibold">
 						Arte moderno y contemporáneo

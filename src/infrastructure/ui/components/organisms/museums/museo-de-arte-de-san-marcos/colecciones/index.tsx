@@ -196,7 +196,9 @@ const Colecciones = () => {
 							regiones del Perú. La colección nace con piezas
 							recopiladas por dos importantes personalidades, la
 							artista Alicia Bustamante y el historiador Pablo
-							Macera.
+							Macera, quienes donaron parte de sus importantes
+							colecciones al momento de la creación del MASM en
+							1970.
 						</p>
 					</div>
 				</div>
