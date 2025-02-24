@@ -216,11 +216,7 @@ const Exposiciones = () => {
 							Exposiciones temporales
 						</h3>
 						<p className="font-medium leading-[24px] mt-6">
-							Surge gracias a la donación de las hermanas Alicia y
-							Celia Bustamante, el historiador Pablo Macera, el
-							Milwaukee Public Museum, entre otros coleccionistas
-							y artistas del arte popular. Cuenta con piezas
-							representativas del arte tradicional peruano.
+							Generalmente presenta una temática conmemorativa, destacando a personajes vinculados a la arqueología, antropología e historia relacionados con el trabajo del museo.
 						</p>
 						{/* <Link
 							href="/agenda-cultural"

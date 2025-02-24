@@ -86,11 +86,7 @@ const TesorosArqueologicosSanMarcos: React.FC<Props> = ({
 						Tesoros Arqueológicos de San Marcos
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
-						Adéntrate en la historia milenaria del Perú a través de
-						una exposición que nos conecta con las antiguas
-						civilizaciones que dieron forma a nuestra identidad
-						cultural. Esta colección única nos revela piezas de
-						cerámica, textiles, esculturas y objetos ceremoniales.
+						Adéntrate en la historia milenaria del Perú a través de una exposición en la que exploramos el pasado mediante las colecciones: conjunto razonado de objetos vinculados con actividades, tiempo, lugares y personas; además, de ser portadores de memoria. Esta exposición única nos revela piezas de cerámica, textiles, esculturas de piedra y objetos ceremoniales.
 					</p>
 					<div className="flex flex-col gap-y-2 mt-2">
 						<div className="flex gap-2 items-start">
@@ -104,7 +100,7 @@ const TesorosArqueologicosSanMarcos: React.FC<Props> = ({
 							</div>
 							<div>
 								<p className="font-normal">
-									Segundo nivel del Patio de Letras
+									Primer nivel del Patio de Letras
 								</p>
 							</div>
 						</div>
@@ -119,7 +115,7 @@ const TesorosArqueologicosSanMarcos: React.FC<Props> = ({
 							</div>
 							<div>
 								<p className="font-normal">
-									115 piezas en exhibición
+									65 piezas en exhibición
 								</p>
 							</div>
 						</div>
