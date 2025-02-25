@@ -49,7 +49,7 @@ const Elencos = () => {
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
 				<div className="container">
 					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
-						Desde clásicos inmortales hasta piezas innovadoras, nuestra compañía trabaja con pasión y dedicación para llevar a los espectadores en un viaje visual y sonoro único.
+						Los elencos artísticos a cargo del Centro Universitario de Folklore, son los representantes oficiales de nuestra universidad en materia de música y danzas tradicionales, una forma de mantener nuestra cultura tradicional viva y su difusión a nivel nacional e internacional
 					</p>
 				</div>
 			</div>

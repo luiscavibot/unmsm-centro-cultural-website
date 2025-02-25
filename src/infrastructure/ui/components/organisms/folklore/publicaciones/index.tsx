@@ -69,7 +69,7 @@ const Publicaciones = () => {
 								Haylli
 							</h3>
 							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
-								A través de análisis, entrevistas y debates, este espacio profundiza en el arte cinematográfico, explorando temas de estética, narrativa y técnica en películas de todos los géneros y épocas.
+								Boletín del Centro Universitario de Folklore de la Universidad Nacional Mayor de San Marcos, donde se publican artículos cortos de una o dos páginas, de fácil lectura, relacionados a temas de folklore y educación; estos son escritos por investigadores, estudiantes de la cultura y estudiantes de nuestra Escuela de Capacitación en Folklore.
 							</p>
 						</header>
 						<SecondaryButton
