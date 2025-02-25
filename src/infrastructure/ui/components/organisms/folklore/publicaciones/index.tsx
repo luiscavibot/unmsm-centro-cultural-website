@@ -8,7 +8,7 @@ const Publicaciones = () => {
 		<>
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
 				<div className="container">
-					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">¡Descubre el fascinante mundo de la antropología y arqueología peruana de manera interactiva! En esta sección de recursos educativos de la Casona de la UNMSM, te invitamos a explorar:</p>
+					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">Cada publicación es una ventana abierta a la diversidad y profundidad de nuestras raíces, presentando investigaciones y relatos que honran la herencia cultural de nuestro país.</p>
 				</div>
 			</div>
 			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
