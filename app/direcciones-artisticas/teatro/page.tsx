@@ -159,11 +159,11 @@ export default function Teatro() {
 									compromiso, dedicación y esfuerzo para su
 									crecimiento artístico y personal.
 								</p>
-								<p className="mb-3">Actualmente contamos con:</p>
+								{/* <p className="mb-3">Actualmente contamos con:</p>
 								<ul className="mb-5 list-disc list-outside pl-5">
 									<li>Elenco de Teatro</li>
 									<li>Elenco de Improvisación Teatral</li>
-								</ul>
+								</ul> */}
 								<p className="mb-5 font-bold">
 									🎭 ¡Únete al Elenco de Teatro de La Casona!
 									🎭
