@@ -31,7 +31,7 @@ export default function Visitanos() {
 								<p className="mb-3">
 									La{' '}
 									<Link
-										href="/nosostros/direccion-de-turismo"
+										href="/nosotros/dependencias-administrativas/direccion-de-turismo"
 										className="underline text-dark-red font-medium"
 									>
 										Dirección de Turismo
