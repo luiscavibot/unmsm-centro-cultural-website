@@ -120,12 +120,12 @@ const TesorosArqueologicosSanMarcos: React.FC<Props> = ({
 							</div>
 						</div>
 					</div>
-					<Link
+					{/* <Link
 						href="/museo-de-arqueologia-y-antropologia/tesoros-arqueologicos-de-san-marcos"
 						className="link mt-8 inline-block"
 					>
 						Leer más
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 		</div>

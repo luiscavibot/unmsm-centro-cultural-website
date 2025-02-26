@@ -81,12 +81,12 @@ const ArteModerno: React.FC<Props> = ({
 							</div>
 						</div>
 					</div>
-					<Link
+					{/* <Link
 						href="/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo"
 						className="link mt-8 inline-block"
 					>
 						Leer más
-					</Link>
+					</Link> */}
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
