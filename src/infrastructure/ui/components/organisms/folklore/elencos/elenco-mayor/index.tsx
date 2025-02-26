@@ -69,6 +69,7 @@ const ElencoMayor: React.FC<Props> = ({
 											className="object-cover"
 											alt={'Exposición'}
 											layout="fill"
+											quality={100}
 										/>
 									</figure>
 								</SplideSlide>

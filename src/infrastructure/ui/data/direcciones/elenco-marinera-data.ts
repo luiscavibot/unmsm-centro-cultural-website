@@ -3,14 +3,20 @@ import { Exhibition } from '../../interfaces/museums/exhibition.interface';
 export const elencoMarineraData: Exhibition[] = [
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/d306e541adfea0740bdbb25395df4e7c_e7aa26730f.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/IMG_0008_1cd29639ce.jpg',
 	},
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/f1a3e19b032e869b903498b9d1db4e43_13c852dc96.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/IMG_0017_e3fd97c35b.jpg',
 	},
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/54d0a7b1c718b7cd9e4a16d8808207e4_e5a9ae994d.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/IMG_0050_74a603aef8.jpg',
+	},
+	{
+		imageUrl: 'https://ccsm.unmsm.edu.pe/ccsm/IMG_0063_d737d70886.jpg',
+	},
+	{
+		imageUrl: 'https://ccsm.unmsm.edu.pe/ccsm/IMG_0069_544b2ea73f.jpg',
 	},
 ];

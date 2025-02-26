@@ -3,14 +3,23 @@ import { Exhibition } from '../../interfaces/museums/exhibition.interface';
 export const elencoCaporalesData: Exhibition[] = [
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/b3c6819f52464da293f16fba8cba93df_a0222d16cc.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/en_el_Gran_Teatro_Nacional_comparsa_2_787cd6f0ff.jpg',
 	},
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/338d9f713dca474626556c2764c8c0af_ef69135f04.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/en_el_gran_teatro_nacional_comparsa_4_b9f7193ce5.jpg',
 	},
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/d15d41a825c0183efbe91fec63a0896f_e014ec0086.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/en_el_Gran_Teatro_Nacional_comparsa_e2ab65a492.jpg',
+	},
+	{
+		imageUrl: 'https://ccsm.unmsm.edu.pe/ccsm/en_pasacalle_472_Aniversario_UNMSM_mayo_2023_b_a9a34530b6.jpg',
+	},
+	{
+		imageUrl: 'https://ccsm.unmsm.edu.pe/ccsm/en_pasacalle_472_Aniversario_UNMSM_mayo_2023_c_f6e89443e1.jpg',
+	},
+	{
+		imageUrl: 'https://ccsm.unmsm.edu.pe/ccsm/en_pasacalle_472_Aniversario_UNMSM_mayo_2023_bf55c31d62.jpg',
 	},
 ];
