@@ -1,62 +1,59 @@
-// import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon'
-// import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon'
-// import Link from 'next/link'
 import React from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
-// import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 import Image from 'next/image';
-import { elencoMarineraData } from '@/infrastructure/ui/data/direcciones/elenco-marinera-data';
+import { conjuntoDeZamponas } from '@/infrastructure/ui/data/direcciones/conjunto-de-zamponas-data';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
 interface Props {
-	handleMoveElencoDeMarinera: () => void;
-	splideRefElencoDeMarinera: React.RefObject<ExtendedSplideType>;
+	handleMoveConjuntoDeZamponas: () => void;
+	splideRefConjuntoDeZamponas: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
-	isPrevDisabledElencoDeMarinera: boolean;
-	isNextDisabledElencoDeMarinera: boolean;
-	handlePrevElencoDeMarinera: () => void;
-	handleNextElencoDeMarinera: () => void;
+	isPrevDisabledConjuntoDeZamponas: boolean;
+	isNextDisabledConjuntoDeZamponas: boolean;
+	handlePrevConjuntoDeZamponas: () => void;
+	handleNextConjuntoDeZamponas: () => void;
 }
 
-const ElencoDeMarinera: React.FC<Props> = ({
-	handleMoveElencoDeMarinera,
-	splideRefElencoDeMarinera,
+const ConjuntoDeZamponas: React.FC<Props> = ({
+	handleMoveConjuntoDeZamponas,
+	splideRefConjuntoDeZamponas,
 	splideOptions,
-	isPrevDisabledElencoDeMarinera,
-	isNextDisabledElencoDeMarinera,
-	handlePrevElencoDeMarinera,
-	handleNextElencoDeMarinera,
+	isPrevDisabledConjuntoDeZamponas,
+	isNextDisabledConjuntoDeZamponas,
+	handlePrevConjuntoDeZamponas,
+	handleNextConjuntoDeZamponas,
 }) => {
 	return (
 		<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-4.svg')] bg-no-repeat bg-[-123px_10px]">
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
 				<div className="max-w-[394px] mt-0 lg:mt-10">
 					<h3 className="text-[32px] leading-[normal] font-semibold">
-						Elenco de Marinera de la Universidad Nacional Mayor de San Marcos
+						Conjunto de Zampoñas de San Marcos
 					</h3>
-					<p className="font-medium leading-[24px] mt-6">
-						Basado en el clásico de Cervantes, este ballet sigue las
-						aventuras de Basilio y Quiteria (Kitri), una pareja de
-						amantes que desafía a sus familias para estar juntos. Es
-						una obra vibrante, llena de energía, color y virtuosismo
-						técnico.
-					</p>
+					<div className="font-medium leading-[24px] mt-6">
+						<p className="mb-5">
+							El Conjunto de Zampoñas de la UNMSM fue fundado en 1977 y desde entonces ha difundido de manera ininterrumpida el arte del sikuri o ejecución de zampoña en sus diferentes versiones. Asimismo, ha estado presente en distintos eventos a nivel nacional, donde destaca su participación durante dos años consecutivos en la festividad de la Virgen de la Candelaria en Puno.
+						</p>
+						<p>
+							Tienen dos producciones musicales y han llevados a cabo diferentes eventos artísticos culturales de gran acogida como son los Encuentros Inter-escolar de sikuris, el cual en noviembre del 2015 se realizó su sexta edición.
+						</p>
+					</div>
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveElencoDeMarinera}
-						ref={splideRefElencoDeMarinera}
+						onMoved={handleMoveConjuntoDeZamponas}
+						ref={splideRefConjuntoDeZamponas}
 						hasTrack={false}
 						options={splideOptions}
 					>
 						<SplideTrack>
-							{elencoMarineraData.map((img, index) => (
+							{conjuntoDeZamponas.map((img, index) => (
 								<SplideSlide key={index}>
 									<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
@@ -74,16 +71,16 @@ const ElencoDeMarinera: React.FC<Props> = ({
 						<ArrowButton
 							className="pointer-events-auto"
 							theme="light"
-							onClick={handlePrevElencoDeMarinera}
+							onClick={handlePrevConjuntoDeZamponas}
 							direction="left"
-							disabled={isPrevDisabledElencoDeMarinera}
+							disabled={isPrevDisabledConjuntoDeZamponas}
 						/>
 						<ArrowButton
 							className="pointer-events-auto"
 							theme="light"
-							onClick={handleNextElencoDeMarinera}
+							onClick={handleNextConjuntoDeZamponas}
 							direction="right"
-							disabled={isNextDisabledElencoDeMarinera}
+							disabled={isNextDisabledConjuntoDeZamponas}
 						/>
 					</div>
 				</div>
@@ -92,4 +89,4 @@ const ElencoDeMarinera: React.FC<Props> = ({
 	);
 };
 
-export default ElencoDeMarinera;
+export default ConjuntoDeZamponas;

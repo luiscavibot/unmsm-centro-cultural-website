@@ -35,7 +35,7 @@ const ElencoMayor: React.FC<Props> = ({
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
 				<div className="max-w-[394px] mt-0 lg:mt-10">
 					<h3 className="text-[32px] leading-[normal] font-semibold">
-						Elenco mayor
+						Elenco de Danzas de la Universidad Nacional Mayor de San Marcos
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
 						El Elenco Mayor de Danzas es la unidad artística

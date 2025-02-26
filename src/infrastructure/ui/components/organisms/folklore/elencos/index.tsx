@@ -11,6 +11,9 @@ import ElencoMayor from '@/infrastructure/ui/components/organisms/folklore/elenc
 import ElencoTaller from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-taller';
 import ElencoDeMarinera from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-de-marinera';
 import ElencoCaporales from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-caporales';
+import ElencoInfantil from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-infantil';
+import ElencoDeMusica from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-de-musica';
+import ConjuntoDeZamponas from '@/infrastructure/ui/components/organisms/folklore/elencos/conjunto-de-zamponas';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -22,6 +25,9 @@ const Elencos = () => {
 	const splideRefElencoTaller = useRef<ExtendedSplideType>(null);
 	const splideRefElencoDeMarinera = useRef<ExtendedSplideType>(null);
 	const splideRefElencoCaporales = useRef<ExtendedSplideType>(null);
+	const splideRefElencoInfantil = useRef<ExtendedSplideType>(null);
+	const splideRefElencoDeMusica = useRef<ExtendedSplideType>(null);
+	const splideRefConjuntoDeZamponas = useRef<ExtendedSplideType>(null);
 
 	const splideOptions: ResponsiveOptions = {
 		type: 'slide',
@@ -43,6 +49,9 @@ const Elencos = () => {
 	const { handlePrev: handlePrevElencoTaller, handleNext: handleNextElencoTaller, handleMove: handleMoveElencoTaller, isPrevDisabled: isPrevDisabledElencoTaller, isNextDisabled: isNextDisabledElencoTaller } = useSplideControls(splideRefElencoTaller);
 	const { handlePrev: handlePrevElencoDeMarinera, handleNext: handleNextElencoDeMarinera, handleMove: handleMoveElencoDeMarinera, isPrevDisabled: isPrevDisabledElencoDeMarinera, isNextDisabled: isNextDisabledElencoDeMarinera } = useSplideControls(splideRefElencoDeMarinera);
 	const { handlePrev: handlePrevElencoCaporales, handleNext: handleNextElencoCaporales, handleMove: handleMoveElencoCaporales, isPrevDisabled: isPrevDisabledElencoCaporales, isNextDisabled: isNextDisabledElencoCaporales } = useSplideControls(splideRefElencoCaporales);
+	const { handlePrev: handlePrevElencoInfantil, handleNext: handleNextElencoInfantil, handleMove: handleMoveElencoInfantil, isPrevDisabled: isPrevDisabledElencoInfantil, isNextDisabled: isNextDisabledElencoInfantil } = useSplideControls(splideRefElencoInfantil);
+	const { handlePrev: handlePrevElencoDeMusica, handleNext: handleNextElencoDeMusica, handleMove: handleMoveElencoDeMusica, isPrevDisabled: isPrevDisabledElencoDeMusica, isNextDisabled: isNextDisabledElencoDeMusica } = useSplideControls(splideRefElencoDeMusica);
+	const { handlePrev: handlePrevConjuntoDeZamponas, handleNext: handleNextConjuntoDeZamponas, handleMove: handleMoveConjuntoDeZamponas, isPrevDisabled: isPrevDisabledConjuntoDeZamponas, isNextDisabled: isNextDisabledConjuntoDeZamponas } = useSplideControls(splideRefConjuntoDeZamponas);
 
 	return (
 		<>
@@ -88,6 +97,33 @@ const Elencos = () => {
 				isNextDisabledElencoCaporales={isNextDisabledElencoCaporales}
 				handlePrevElencoCaporales={handlePrevElencoCaporales}
 				handleNextElencoCaporales={handleNextElencoCaporales}
+			/>
+			<ElencoInfantil
+				handleMoveElencoInfantil={handleMoveElencoInfantil}
+				splideRefElencoInfantil={splideRefElencoInfantil}
+				splideOptions={splideOptions}
+				isPrevDisabledElencoInfantil={isPrevDisabledElencoInfantil}
+				isNextDisabledElencoInfantil={isNextDisabledElencoInfantil}
+				handlePrevElencoInfantil={handlePrevElencoInfantil}
+				handleNextElencoInfantil={handleNextElencoInfantil}
+			/>
+			<ElencoDeMusica
+				handleMoveElencoDeMusica={handleMoveElencoDeMusica}
+				splideRefElencoDeMusica={splideRefElencoDeMusica}
+				splideOptions={splideOptions}
+				isPrevDisabledElencoDeMusica={isPrevDisabledElencoDeMusica}
+				isNextDisabledElencoDeMusica={isNextDisabledElencoDeMusica}
+				handlePrevElencoDeMusica={handlePrevElencoDeMusica}
+				handleNextElencoDeMusica={handleNextElencoDeMusica}
+			/>
+			<ConjuntoDeZamponas
+				handleMoveConjuntoDeZamponas={handleMoveConjuntoDeZamponas}
+				splideRefConjuntoDeZamponas={splideRefConjuntoDeZamponas}
+				splideOptions={splideOptions}
+				isPrevDisabledConjuntoDeZamponas={isPrevDisabledConjuntoDeZamponas}
+				isNextDisabledConjuntoDeZamponas={isNextDisabledConjuntoDeZamponas}
+				handlePrevConjuntoDeZamponas={handlePrevConjuntoDeZamponas}
+				handleNextConjuntoDeZamponas={handleNextConjuntoDeZamponas}
 			/>
 		</>
 	)
