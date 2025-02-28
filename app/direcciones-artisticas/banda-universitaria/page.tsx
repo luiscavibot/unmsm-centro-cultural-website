@@ -22,7 +22,7 @@ const breadcrumbItems = [
 export default function BandaUniversitaria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/banda_ccsm_246889fabb.jpeg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/banda_universitaria_ccsm_portada_5fdd4aad8a.webp"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

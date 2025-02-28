@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function BalletHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_unmsm_25d0dcad56.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_ccsm_portada_b28c850aa6.webp"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

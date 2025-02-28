@@ -22,7 +22,7 @@ const breadcrumbItems = [
 export default function DependenciasAdministrativas() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_unmsm_25d0dcad56.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/dependencias_administrativas_ccsm_portada_7b369877b0.webp"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -43,10 +43,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/banda_universitaria_ccsm_portada_5fdd4aad8a.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -71,10 +72,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/ballet_ccsm_portada_b28c850aa6.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -99,10 +101,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/folklore_ccsm_portada_8a23d82d7d.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -127,10 +130,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_depedencia_administrativa_c40348a24f.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -155,10 +159,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/cine_ccsm_dependencia_administrativa_d16677d54f.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -183,10 +188,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/musica_ccsm_dependencia_administrativa_1469ae4b83.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -211,10 +217,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/turismo_ccsm_dependencia_administrativa_7f96e435e8.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -239,10 +246,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/museo_arqueologia_antropologia_ccsm_dependencia_administrativa_71ccba02d3.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -267,10 +275,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/museo_arte_san_marcos_ccsm_dependencia_administrativa_0ab1037160.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>
@@ -295,10 +304,11 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+							src="https://ccsm.unmsm.edu.pe/ccsm/teatro_ccsm_dependencia_administrativa_9caa8c8474.webp"
 							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
+							quality={100}
 						/>
 					</figure>
 					<div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(23,26,29,0.64)]"></div>

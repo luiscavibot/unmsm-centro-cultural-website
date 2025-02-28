@@ -30,6 +30,7 @@ const Layout = ({ children, breadcrumbItems, portadaImage, theme = 'light' }: La
 					alt="background"
 					fill
 					objectFit="cover"
+					quality={100}
 				/>
 			</div>
 			<div id="contenido" className="pt-[422px]">
