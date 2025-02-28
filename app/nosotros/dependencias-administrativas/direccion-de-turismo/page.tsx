@@ -13,6 +13,7 @@ import type { Splide as SplideType } from '@splidejs/splide';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 import videosDireccionDeTurismo from '@/infrastructure/ui/mocks/videos-direccion-de-turismo';
+import { galeriaTurismoData } from '@/infrastructure/ui/data/turismo/galeria-turismo-data';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -39,9 +40,10 @@ const breadcrumbItems = [
 
 export default function DireccionDeTurismo() {
 
-	const splideRef = useRef<ExtendedSplideType>(null);
+	const splideRefVideosGalery = useRef<ExtendedSplideType>(null);
+	const splideRefImagesGalery = useRef<ExtendedSplideType>(null);
 	
-	const splideOptions = {
+	const splideOptionsVideosGalery = {
 		type: 'loop',
 		width: '100%',
 		fixedWidth: '308px',
@@ -60,15 +62,33 @@ export default function DireccionDeTurismo() {
 		loop: true,
 	};
 
+	const splideOptionsImagesGalery = {
+		type: 'slide',
+		width: '100%',
+		perPage: 1,
+		arrows: false,
+		pagination: false,
+		gap: '0px',
+		perMove: 1,
+	};
+
 	const {
-		handleNext,
-		handleMove,
-		isNextDisabled,
-	} = useSplideControls(splideRef);
+		handleNext: handleNextVideosGalery,
+		handleMove: handleMoveVideosGlaery,
+		isNextDisabled: isNextDisabledVideosGalery,
+	} = useSplideControls(splideRefVideosGalery);
+
+	const {
+		handleNext: handleNextImagesGalery,
+		handlePrev: handlePrevImagesGalery,
+		handleMove: handleMoveImagesGalery,
+		isNextDisabled: isNextDisabledImagesGalery,
+		isPrevDisabled: isPrevDisabledImagesGalery,
+	} = useSplideControls(splideRefImagesGalery);
 
     return (
         <Layout
-            portadaImage="https://ccsm.unmsm.edu.pe/ccsm/banda_universitaria_ccsm_portada_5fdd4aad8a.webp"
+            portadaImage="https://ccsm.unmsm.edu.pe/ccsm/turismo_ccsm_portada_ede94147b2.webp"
             breadcrumbItems={breadcrumbItems}
         >
             <>
@@ -90,9 +110,9 @@ export default function DireccionDeTurismo() {
                                 <div>
                                     <figure className="relative h-[400px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
                                         <Image
-                                            src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-banda-universitaria-1.webp"
+                                            src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_1_d7bec10950.webp"
                                             className="object-cover h-full"
-                                            alt="ballet 1"
+                                            alt="direccion de turismo 1"
                                             layout="fill"
                                             quality={100}
                                         />
@@ -109,9 +129,9 @@ export default function DireccionDeTurismo() {
                                 <div>
                                     <figure className="relative h-[400px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
                                         <Image
-                                            src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-banda-universitaria-2.webp"
+                                            src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_2_775041a8e7.webp"
                                             className="object-cover h-full"
-                                            alt="ballet 2"
+                                            alt="direccion de turismo 2"
                                             layout="fill"
                                             quality={100}
                                         />
@@ -122,6 +142,50 @@ export default function DireccionDeTurismo() {
 									Desde el año 2011 hasta la actualidad, el historiador Marco Rosales León rige la conducción y liderazgo de la dependencia. El eje de trabajo se centra en promover una política cultural desde la tradición institucional que se refleja en la investigación, reflexión y crítica. Aportando al sector turismo desde la organización de conferencias y cursos que señalen su problemática, planteamiento de soluciones y responsabilidad de su ejercicio. Nuestra labor informativa de historia y patrimonio y el desarrollo de nuestros servicios de visitas guiadas se centran en la posibilidad de conocer la Historia del Perú a partir de la Historia de la Universidad de San Marcos, Decana de América.
                                     </p>
                                 </div>
+								<div className="relative">
+								<Splide
+									onMoved={handleMoveImagesGalery}
+									ref={splideRefImagesGalery}
+									hasTrack={false}
+									options={splideOptionsImagesGalery}
+								>
+									<SplideTrack>
+										{galeriaTurismoData.map(
+											(ImageData, index) => (
+												<SplideSlide key={index}>
+													<figure className="relative h-[400px] max-w-full rounded-3xl overflow-hidden mx-auto">
+														<Image
+															src={ImageData.imageUrl}
+															className="object-cover h-full"
+															alt={`galeria turismo ${index + 1}`}
+															layout="fill"
+															quality={100}
+														/>
+													</figure>
+												</SplideSlide>
+											)
+										)}
+									</SplideTrack>
+								</Splide>
+								<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[20px] pointer-events-none">
+									<div className="container flex justify-between gap-x-2 relative">
+										<ArrowButton
+											className="pointer-events-auto"
+											theme="dark"
+											onClick={handlePrevImagesGalery}
+											direction="left"
+											disabled={isPrevDisabledImagesGalery}
+										/>
+										<ArrowButton
+											className="pointer-events-auto"
+											theme="dark"
+											onClick={handleNextImagesGalery}
+											direction="right"
+											disabled={isNextDisabledImagesGalery}
+										/>
+									</div>
+								</div>
+							</div>
                             </div>
                         </div>
                     </div>
@@ -176,10 +240,10 @@ export default function DireccionDeTurismo() {
 						</div>
 						<div className="max-lg:w-full relative" id="slider">
 							<Splide
-								onMoved={handleMove}
-								ref={splideRef}
+								onMoved={handleMoveVideosGlaery}
+								ref={splideRefVideosGalery}
 								hasTrack={false}
-								options={splideOptions}
+								options={splideOptionsVideosGalery}
 							>
 								<SplideTrack>
 									{videosDireccionDeTurismo.map((video, index) => (
@@ -204,9 +268,9 @@ export default function DireccionDeTurismo() {
 									<ArrowButton
 										className="pointer-events-auto"
 										theme="light"
-										onClick={handleNext}
+										onClick={handleNextVideosGalery}
 										direction="right"
-										disabled={isNextDisabled}
+										disabled={isNextDisabledVideosGalery}
 									/>
 								</div>
 							</div>
