@@ -76,30 +76,10 @@ export default function MuseoDeArteDeSanMarcos() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
-									El Museo de Arqueología y Antropología (MAA)
-									de la Universidad Nacional Mayor de San
-									Marcos (UNMSM) es uno de los museos
-									universitarios más antiguos y destacados del
-									país y de la región, tanto por la custodia
-									de sus invaluables artefactos cerámicos,
-									textiles y líticos, así como por
-									proporcionar una vista panorámica de todo el
-									proceso histórico prehispánico.
+									Es uno de los museos universitarios más antiguos y destacados del país y de la región, tanto por la custodia de sus invaluables artefactos cerámicos, textiles y líticos, así como por proporcionar una vista panorámica de todo el proceso histórico prehispánico.
 								</p>
 								<p className="mb-3">
-									El Museo fue fundado el 21 de octubre de
-									1919 por Julio César Tello, arqueólogo
-									peruano, quien representa una parte
-									importante de la historia de este museo. La
-									historia del Museo, además, se asocia a la
-									vida y trabajos de destacados intelectuales
-									como Toribio Mejía Xesspe, Rebeca Carrión
-									Cachot, Pedro Weiss, Luis E. Valcárcel,
-									Jorge Muelle, Duccio Bonavía, Ernesto Tabío,
-									Edward Lanning, Richard McNeish, Hans
-									Horkheimer, Arturo Jiménez Borja, Ramiro
-									Matos, Luis Guillermo Lumbreras, Rosa Fung,
-									Ruth Shady, entre otros.
+									Fue fundado el 21 de octubre de 1919 por Julio César Tello, arqueólogo peruano, quien representa una parte importante de la historia de este museo. La historia del Museo, además, se asocia a la vida y trabajos de destacados intelectuales como Toribio Mejía Xesspe, Rebeca Carrión Cachot, Pedro Weiss, Luis E. Valcárcel, Jorge Muelle, Duccio Bonavía, Ernesto Tabío, Edward Lanning, Richard McNeish, Hans Horkheimer, Arturo Jiménez Borja, Ramiro Matos, Luis Guillermo Lumbreras, Rosa Fung, Ruth Shady, entre otros.
 								</p>
 								<p className="mb-3">
 									El MAA promueve y apoya la investigación, el
@@ -115,12 +95,24 @@ export default function MuseoDeArteDeSanMarcos() {
 									aprendizaje con el fin de enriquecer el
 									desarrollo profesional.
 								</p>
-								<p>
+								<p className="mb-5">
 									El museo se proyecta a la colectividad
 									mediante conferencias semanales, la
 									publicación de libros y revistas académicas,
 									además de presentar exposiciones
 									museográficas.
+								</p>
+								<p className="font-bold mb-5">
+									Archivo Julio C. Tello
+								</p>
+								<p className="mb-3">
+									El museo tiene en custodia el archivo personal del notable arqueólogo peruano, Dr. Julio César Tello Rojas. Fue entregado a la Universidad Nacional Mayor de San Marcos, tal como consta en el testamento del sabio tras su deceso el 3 de junio de 1947.
+								</p>
+								<p className="mb-3">
+									El principal objetivo de este archivo es la difusión de su contenido a la comunidad académica y público en general. Los materiales documentarios reunidos en el archivo son producto de las numerosas expediciones científicas, que el Dr. Tello y su notable equipo de asistentes, llevaron a cabo en diversas regiones del país entre 1915 y 1945. Así, encontramos cuadernos de campo, un vasto archivo fotográfico, dibujos, acuarelas, planos y mapas de lugares como Paracas, Chavín, Casma, Pachacamac, valle de Lima, Marañón, Nepeña, Nasca, etc.
+								</p>
+								<p>
+									Revisa más información en la subsección de publicaciones.
 								</p>
 							</div>
 							<div className="max-w-[639px] mx-auto mt-14">
