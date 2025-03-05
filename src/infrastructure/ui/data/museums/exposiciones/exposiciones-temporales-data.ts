@@ -3,14 +3,14 @@ import { Exhibition } from '@/infrastructure/ui/interfaces/museums/exhibition.in
 export const exposicionesTemporalesData: Exhibition[] = [
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/exposiciones_temporales_2_3782b1a7a4.png',
+			'https://ccsm.unmsm.edu.pe/ccsm/exposiciones_temporales_1_6c6c73bc5d.jpg',
 	},
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/exposiciones_temporales_3_1611d61177.png',
+			'https://ccsm.unmsm.edu.pe/ccsm/exposiciones_temporales_2_15f6b82088.jpg',
 	},
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/exposiciones_temporales_cc0512b2a0.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/exposiciones_temporales_3_8bed61ca83.jpg',
 	},
 ];
