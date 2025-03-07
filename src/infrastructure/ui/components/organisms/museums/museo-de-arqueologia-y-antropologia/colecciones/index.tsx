@@ -1,14 +1,12 @@
 import React, { useRef } from 'react';
 
-import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
-import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
-// import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
-import Image from 'next/image';
-import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
-import { archivoJulioCTelloData } from '@/infrastructure/ui/data/museums/archivo-julio-c-tello-data';
+import ArchivoJulioCTello from '@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones/archivo-julio-c-tello';
+import TeofiloCastillo from '@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones/teofilo-castillo';
+import JimenezBorja from '@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones/jimenez-borja';
+import ExpedicionSierraCentral from '@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones/expedicion-sierra-central';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -16,6 +14,9 @@ interface ExtendedSplideType extends SplideType {
 
 const Colecciones = () => {
 	const splideRefColArchivoJulio = useRef<ExtendedSplideType>(null);
+	const splideRefColTeofiloCastillo = useRef<ExtendedSplideType>(null);
+	const splideRefColJimenezBorja = useRef<ExtendedSplideType>(null);
+	const splideRefColExpedicionSierraCentral = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
 		type: 'slide',
@@ -41,6 +42,30 @@ const Colecciones = () => {
 		isNextDisabled: isNextDisabledColArchivoJulio,
 	} = useSplideControls(splideRefColArchivoJulio);
 
+	const {
+		handlePrev: handlePrevColTeofiloCastillo,
+		handleNext: handleNextColTeofiloCastillo,
+		handleMove: handleMoveColTeofiloCastillo,
+		isPrevDisabled: isPrevDisabledColTeofiloCastillo,
+		isNextDisabled: isNextDisabledColTeofiloCastillo,
+	} = useSplideControls(splideRefColTeofiloCastillo);
+
+	const {
+		handlePrev: handlePrevColJimenezBorja,
+		handleNext: handleNextColJimenezBorja,
+		handleMove: handleMoveColJimenezBorja,
+		isPrevDisabled: isPrevDisabledColJimenezBorja,
+		isNextDisabled: isNextDisabledColJimenezBorja,
+	} = useSplideControls(splideRefColJimenezBorja);
+
+	const {
+		handlePrev: handlePrevColExpedicionSierraCentral,
+		handleNext: handleNextColExpedicionSierraCentral,
+		handleMove: handleMoveColExpedicionSierraCentral,
+		isPrevDisabled: isPrevDisabledColExpedicionSierraCentral,
+		isNextDisabled: isNextDisabledColExpedicionSierraCentral,
+	} = useSplideControls(splideRefColExpedicionSierraCentral);
+
 	return (
 		<>
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
@@ -54,74 +79,42 @@ const Colecciones = () => {
 					</p>
 				</div>
 			</div>
-			<div className="px-4 lg:px-[104px] gap-5 bg-black text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg')] bg-no-repeat bg-[-123px_10px]">
-				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
-					<div className="max-w-[394px] mt-0 lg:mt-10">
-						<span className="text-sm font-semibold mb-1 inline-block">
-							Colección
-						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
-							Archivo Julio C. Tello
-						</h3>
-						<p className="font-medium leading-[24px] mt-6">
-							Esta colección reúne manuscritos, fotografías y
-							dibujos que reflejan la dedicación, el conocimiento
-							y la pasión del Dr. Tello por preservar y estudiar
-							el rico patrimonio cultural del Perú.
-						</p>
-						<p className="mt-6">
-							<a
-								href="https://issuu.com/maa-unmsm"
-								className="link inline-flex items-center gap-x-2"
-								target="_blank"
-							>
-								Explorar
-								<ExternalLinkIcon className="h-4 w-4 shrink-0" />
-							</a>
-						</p>
-					</div>
-					<div className="max-lg:w-full">
-						<Splide
-							className="splide-museo"
-							onMoved={handleMoveColArchivoJulio}
-							ref={splideRefColArchivoJulio}
-							hasTrack={false}
-							options={splideOptions}
-						>
-							<SplideTrack>
-								{archivoJulioCTelloData.map((img, index) => (
-									<SplideSlide key={index}>
-										<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
-											<Image
-												src={img.imageUrl}
-												className="object-cover"
-												alt={'Exposición'}
-												layout="fill"
-											/>
-										</figure>
-									</SplideSlide>
-								))}
-							</SplideTrack>
-						</Splide>
-						<div className="flex justify-end gap-x-2 relative mt-4 pointer-events-none">
-							<ArrowButton
-								className="pointer-events-auto"
-								theme="light"
-								onClick={handlePrevColArchivoJulio}
-								direction="left"
-								disabled={isPrevDisabledColArchivoJulio}
-							/>
-							<ArrowButton
-								className="pointer-events-auto"
-								theme="light"
-								onClick={handleNextColArchivoJulio}
-								direction="right"
-								disabled={isNextDisabledColArchivoJulio}
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
+			<ArchivoJulioCTello
+				handleMoveColArchivoJulio={handleMoveColArchivoJulio}
+				splideRefColArchivoJulio={splideRefColArchivoJulio}
+				splideOptions={splideOptions}
+				isPrevDisabledColArchivoJulio={isPrevDisabledColArchivoJulio}
+				isNextDisabledColArchivoJulio={isNextDisabledColArchivoJulio}
+				handlePrevColArchivoJulio={handlePrevColArchivoJulio}
+				handleNextColArchivoJulio={handleNextColArchivoJulio}
+			/>
+			<TeofiloCastillo
+				handleMoveColTeofiloCastillo={handleMoveColTeofiloCastillo}
+				splideRefColTeofiloCastillo={splideRefColTeofiloCastillo}
+				splideOptions={splideOptions}
+				isPrevDisabledColTeofiloCastillo={isPrevDisabledColTeofiloCastillo}
+				isNextDisabledColTeofiloCastillo={isNextDisabledColTeofiloCastillo}
+				handlePrevColTeofiloCastillo={handlePrevColTeofiloCastillo}
+				handleNextColTeofiloCastillo={handleNextColTeofiloCastillo}
+			/>
+			<JimenezBorja
+				handleMoveColJimenezBorja={handleMoveColJimenezBorja}
+				splideRefColJimenezBorja={splideRefColJimenezBorja}
+				splideOptions={splideOptions}
+				isPrevDisabledColJimenezBorja={isPrevDisabledColJimenezBorja}
+				isNextDisabledColJimenezBorja={isNextDisabledColJimenezBorja}
+				handlePrevColJimenezBorja={handlePrevColJimenezBorja}
+				handleNextColJimenezBorja={handleNextColJimenezBorja}
+			/>
+			<ExpedicionSierraCentral
+				handleMoveColExpedicionSierraCentral={handleMoveColExpedicionSierraCentral}
+				splideRefColExpedicionSierraCentral={splideRefColExpedicionSierraCentral}
+				splideOptions={splideOptions}
+				isPrevDisabledColExpedicionSierraCentral={isPrevDisabledColExpedicionSierraCentral}
+				isNextDisabledColExpedicionSierraCentral={isNextDisabledColExpedicionSierraCentral}
+				handlePrevColExpedicionSierraCentral={handlePrevColExpedicionSierraCentral}
+				handleNextColExpedicionSierraCentral={handleNextColExpedicionSierraCentral}
+			/>
 		</>
 	);
 };

@@ -268,8 +268,8 @@ export default function MuseoDeArteDeSanMarcos() {
 							<Tab
 								label="Galería"
 								icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
-								type="internal-link"
-								link="/museo-de-arqueologia-y-antropologia#"
+								type="external-link"
+								link="https://www.flickr.com/people/190570086@N08/"
 							/>
 							<Tab
 								label="Visítanos"
