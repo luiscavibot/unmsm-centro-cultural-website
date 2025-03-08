@@ -34,10 +34,10 @@ const tabs = {
 				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/publicaciones'
 			)
 	),
-	'recursos-educativos': React.lazy(
+	'recursos-visuales': React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/recursos-educativos'
+				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/recursos-visuales'
 			)
 	),
 } as const;
@@ -259,10 +259,10 @@ export default function MuseoDeArteDeSanMarcos() {
 								}}
 							/>
 							<Tab
-								label="Recursos educativos"
-								selected={currentTab === 'recursos-educativos'}
+								label="Recursos visuales"
+								selected={currentTab === 'recursos-visuales'}
 								onClick={() => {
-									handleClick('recursos-educativos');
+									handleClick('recursos-visuales');
 								}}
 							/>
 							<Tab
