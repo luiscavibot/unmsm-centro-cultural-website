@@ -85,7 +85,7 @@ const ExpedicionSierraCentral: React.FC<Props> = ({
 					</div>
 					<p className="mt-6">
 						<a
-							href="https://issuu.com/maa-unmsm"
+							href="https://www.flickr.com/photos/190570086@N08/albums/72157717943965197/"
 							className="link inline-flex items-center gap-x-2"
 							target="_blank"
 						>
