@@ -92,13 +92,11 @@ const Colecciones = () => {
 						<h3 className="text-[32px] leading-[normal] font-semibold">
 							Retratos (siglos XVI-XXI)
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
-							Se trata de una de las colecciones más importantes
-							de este género artístico en nuestro país; abarca
-							obras desde el siglo XVI hasta la actualidad, que
-							nos permite recorrer los diversos estilos de la
-							pintura limeña.
-						</p>
+						<div className="font-medium leading-[24px] mt-6">
+							<p>
+								Es una de las colecciones más importantes de este género artístico en nuestro país; y nos permite recorrer los diversos estilos de la pintura limeña. Tiene gran relevancia institucional e histórica pues está integrada por retratos de autoridades y personajes ilustres, entre ellos, hombres de letras, teólogos, científicos y matemáticos, muchos de los cuales fueron rectores y catedráticos de la Universidad. Cabe destacar dentro de esta colección, la presencia de grandes artistas como Bernardo Bitti (siglo XVI), Rafael Ortega, Ramón Muñiz, Teófilo Castillo (siglo XIX - XX), Felipe Cossio del Pomar (siglo XX) y Etna Velarde (siglo XXI), entre otros.
+							</p>
+						</div>
 					</div>
 					<div className="max-lg:w-full">
 						<Splide
@@ -190,16 +188,11 @@ const Colecciones = () => {
 						<h3 className="text-[32px] leading-[normal] font-semibold">
 							Arte popular
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
-							Colección conformada por piezas representativas del
-							arte tradicional, procedentes de las distintas
-							regiones del Perú. La colección nace con piezas
-							recopiladas por dos importantes personalidades, la
-							artista Alicia Bustamante y el historiador Pablo
-							Macera, quienes donaron parte de sus importantes
-							colecciones al momento de la creación del MASM en
-							1970.
-						</p>
+						<div className="font-medium leading-[24px] mt-6">
+							<p>
+								Conformada por piezas representativas del arte tradicional, procedentes de las distintas regiones del Perú. Destacan piezas de cerámica, retablos, imaginería, keros, mates, cuernos, textiles, cueros y piedras de Huamanga, realizadas a lo largo de todo el siglo XX, así como algunos ejemplares del siglo XVIII y XIX. La colección nace con piezas recopiladas por dos importantes personalidades, la artista Alicia Bustamante y el historiador Pablo Macera, quienes donaron parte de sus importantes colecciones al momento de la creación del MASM en 1970. Desde entonces, la colección ha ido incrementándose gracias al empeño e iniciativa de investigadores, coleccionistas y artistas que han realizado generosos donativos, que evidencian las transformaciones que se experimentan en el amplio campo del arte elaborado a lo largo del Perú.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -212,13 +205,14 @@ const Colecciones = () => {
 						<h3 className="text-[32px] leading-[normal] font-semibold">
 							Arte moderno y contemporáneo
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
-							Incluye pinturas, esculturas, fotografías, vídeos,
-							instalaciones, entre otras técnicas del arte peruano
-							contemporáneo, que configura un amplio panorama de
-							las artes visuales en Perú, desde las primeras
-							décadas del siglo XX hasta la actualidad.
-						</p>
+						<div className="font-medium leading-[24px] mt-6">
+							<p className="mb-6">
+								Incluye pinturas, esculturas, fotografías, vídeos, instalaciones, entre otras técnicas del arte peruano contemporáneo, que configura un amplio panorama de las artes visuales en Perú, desde las primeras décadas del siglo XX hasta la actualidad. Presentes están importantes tendencias artísticas como el indigenismo, el surrealismo, la abstracción geométrica, el pop art, el op art, el realismo político social, entre otras.
+							</p>
+							<p>
+								Parte de estas obras proceden de los Salones Nacionales de Artes Plásticas que la UNMSM organizó entre las décadas de 1950 y 1960. Además figuran piezas cedidas por los propios artistas gracias a gestión de distintos directores; como producto de las muestras individuales y salones de arte organizados entre las décadas de 1970 y 2000; así como otras actividades de carácter internacional como la Bienal Iberoamericana de Lima.
+							</p>
+						</div>
 					</div>
 					<div className="max-lg:w-full">
 						<Splide
@@ -313,13 +307,11 @@ const Colecciones = () => {
 						<h3 className="text-[32px] leading-[normal] font-semibold">
 							Archivo de dibujo y pintura campesina
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
-							Valioso documento gráfico y escrito sobre la
-							historia rural contemporánea de nuestro país,
-							contada por sus propios protagonistas cuyas memorias
-							han sido realizadas con diversos materiales y
-							técnicas.
-						</p>
+						<div className="font-medium leading-[24px] mt-6">
+							<p>
+								En el año 2004, la Asociación de Servicios Educativos Rurales (SER) donó al museo más de cuatro mil obras provenientes del Concurso Nacional de Dibujo y Pintura Campesina, realizado entre 1984 y 1996, certámenes que congregaron una numerosa cantidad de participantes de diversas zonas rurales del país. Esta colección constituye un valioso documento gráfico y escrito sobre la historia rural contemporánea de nuestro país, contada por sus propios protagonistas cuyas memorias han sido realizadas con diversos materiales y técnicas. Los temas que abordan estos testimonios son variados: sucesos relacionados con la violencia política, la pobreza, la situación de las mujeres en el campo, los cambios que se vienen operando en el campo a raíz del intercambio con la ciudad y el fenómeno de la globalización, la marginación, los sueños y esperanzas en el futuro, entre otros.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
