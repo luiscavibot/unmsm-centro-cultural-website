@@ -82,11 +82,7 @@ const ExposicionesTemporales: React.FC<Props> = ({
 						Exposiciones temporales
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
-						Surge gracias a la donación de las hermanas Alicia y
-						Celia Bustamante, el historiador Pablo Macera, el
-						Milwaukee Public Museum, entre otros coleccionistas y
-						artistas del arte popular. Cuenta con piezas
-						representativas del arte tradicional peruano.
+						El Centro Cultural de San Marcos organiza exposiciones temporales en las salas de sus museos de Arte y de Antropología y Arqueología. Estas muestras, cuya duración varía según su relevancia y la afluencia de público, brindan valiosas experiencias artísticas y patrimoniales, enriqueciendo la vivencia cultural de los visitantes
 					</p>
 					<Link
 						href="/agenda-cultural"
