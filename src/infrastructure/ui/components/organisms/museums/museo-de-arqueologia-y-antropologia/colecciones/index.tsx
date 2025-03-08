@@ -71,11 +71,7 @@ const Colecciones = () => {
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
 				<div className="container">
 					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
-						Nuestras colecciones te invitan a recorrer el tiempo y
-						el espacio, descubriendo historias fascinantes que nos
-						conectan con el pasado, el presente y el futuro. Cada
-						sala de nuestro museo guarda tesoros únicos, desde obras
-						maestras de grandes artistas.
+						A través de la selección de algunas imágenes, brindamos una primera vista a alguna de las colecciones que alberga el museo. Estas recopilaciones buscan promover la difusión del patrimonio cultural peruano, a través del acceso a objetos que resguardan el legado y la memoria colectiva de sociedades prehispánicas.
 					</p>
 				</div>
 			</div>
