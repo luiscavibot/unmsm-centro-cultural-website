@@ -3,7 +3,7 @@ import { Exhibition } from '../../interfaces/museums/exhibition.interface';
 export const archivoJulioCTelloData: Exhibition[] = [
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/col_julio_c_tello_1_6131025268.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/col_julio_c_tello_1_ce50fcae0d.jpg',
 	},
 	{
 		imageUrl:
@@ -19,6 +19,6 @@ export const archivoJulioCTelloData: Exhibition[] = [
 	},
 	{
 		imageUrl:
-			'https://ccsm.unmsm.edu.pe/ccsm/col_julio_c_tello_5_5f5846e6de.jpg',
+			'https://ccsm.unmsm.edu.pe/ccsm/col_julio_c_tello_5_5070345065.jpg',
 	},
 ];
