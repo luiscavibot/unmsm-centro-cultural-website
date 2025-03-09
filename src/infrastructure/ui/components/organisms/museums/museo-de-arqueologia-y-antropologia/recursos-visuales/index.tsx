@@ -21,9 +21,17 @@ const RecursosVisuales = () => {
 					<figure className="absolute -bottom-[92%] -left-[82px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg"
-							alt="Museo de Arte de San Marcos"
+							alt="waves Juega Comparte Museo"
 							width={801}
 							height={621}
+						/>
+					</figure>
+					<figure className="absolute -bottom-[10%] -right-[30px] transition-transform duration-[800ms] ease-out">
+						<Image
+							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_rompecabezas_8c006e5e99.png"
+							alt="Juega Comparte Museo"
+							width={415}
+							height={258}
 						/>
 					</figure>
 					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 semi-container-l h-full">
@@ -55,9 +63,17 @@ const RecursosVisuales = () => {
 					<figure className="absolute -top-[46%] -right-[270px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
-							alt="Museo de Arqueología y Antropología"
+							alt="waves Línea del tiempo"
 							width={801}
 							height={621}
+						/>
+					</figure>
+					<figure className="absolute -bottom-[19%] -right-[50px] transition-transform duration-[800ms] ease-out -rotate-[3.16deg]">
+						<Image
+							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_linea_del_tiempo_2c40c3dab0.png"
+							alt="Línea del tiempo"
+							width={544}
+							height={285}
 						/>
 					</figure>
 					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 semi-container-r h-full">
@@ -86,10 +102,18 @@ const RecursosVisuales = () => {
 					</div>
 				</article>
 				<article className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-blue-2 overflow-hidden">
+					<figure className="absolute -bottom-[2%] -right-[0px] transition-transform duration-[800ms] ease-out">
+						<Image
+							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_canal_youtube_59e0055fcb.png"
+							alt="Youtube Museo de Arqueología y Antropología UNMSM"
+							width={326}
+							height={207}
+						/>
+					</figure>
 					<figure className="absolute -bottom-[92%] -left-[82px] transition-transform duration-[800ms] ease-out transform scale-x-[-1]">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-blue-2.svg"
-							alt="Museo de Arte de San Marcos"
+							alt="waves Museo de Arqueología y Antropología UNMSM"
 							width={801}
 							height={621}
 						/>
@@ -120,9 +144,17 @@ const RecursosVisuales = () => {
 					<figure className="absolute -top-[70%] -right-[270px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-4.svg"
-							alt="Museo de Arqueología y Antropología"
+							alt="waves Fichas informativas"
 							width={801}
 							height={621}
+						/>
+					</figure>
+					<figure className="absolute -bottom-[15%] -right-[30px] transition-transform duration-[800ms] ease-out">
+						<Image
+							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_fichas_informativas_ebeada0e49.png"
+							alt="Fichas informativas"
+							width={326}
+							height={207}
 						/>
 					</figure>
 					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 semi-container-r h-full">
