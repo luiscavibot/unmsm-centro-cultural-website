@@ -40,6 +40,12 @@ const tabs = {
 				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/recursos-visuales'
 			)
 	),
+	'centro-de-documentacion': React.lazy(
+		() =>
+			import(
+				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/centro-de-documentacion'
+			)
+	),
 } as const;
 
 type TabKeys = keyof typeof tabs;
@@ -263,6 +269,13 @@ export default function MuseoDeArteDeSanMarcos() {
 								selected={currentTab === 'recursos-visuales'}
 								onClick={() => {
 									handleClick('recursos-visuales');
+								}}
+							/>
+							<Tab
+								label="Centro de documentación"
+								selected={currentTab === 'centro-de-documentacion'}
+								onClick={() => {
+									handleClick('centro-de-documentacion');
 								}}
 							/>
 							<Tab
