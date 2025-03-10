@@ -18,6 +18,12 @@ const tabs = {
 				'@/infrastructure/ui/components/organisms/folklore/publicaciones'
 			)
 	),
+	'escuela-para-formadores': React.lazy(
+		() =>
+			import(
+				'@/infrastructure/ui/components/organisms/folklore/escuela-para-formadores'
+			)
+	),
 } as const;
 
 type TabKeys = keyof typeof tabs;
@@ -144,6 +150,15 @@ export default function Folklore() {
 								selected={currentTab === 'publicaciones'}
 								onClick={() => {
 									handleClick('publicaciones');
+								}}
+							/>
+							<Tab
+								label="Escuela para formadores"
+								selected={
+									currentTab === 'escuela-para-formadores'
+								}
+								onClick={() => {
+									handleClick('escuela-para-formadores');
 								}}
 							/>
 						</div>
