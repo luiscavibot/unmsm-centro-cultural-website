@@ -12,6 +12,7 @@ import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import Image from 'next/image';
 import { tesorosArqueologicosDeSanMarcosData } from '@/infrastructure/ui/data/museums/tesoros-arqueologicos-de-san-marcos-data';
 import { exposicionesTemporalesData } from '@/infrastructure/ui/data/museums/exposiciones/exposiciones-temporales-data';
+import Link from 'next/link';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -165,9 +166,27 @@ const Exposiciones = () => {
 					</div>
 				</div>
 			</div>
-			<div className="px-4 lg:px-[104px] gap-5 bg-red-custom text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-red.svg')] bg-no-repeat bg-[-123px_10px]">
-				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
-					<div className="max-lg:w-full">
+			<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-4.svg')] bg-no-repeat bg-[-123px_10px]">
+				<div id="test" className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
+					<div className="max-w-[394px] mt-0 lg:mt-10 order-2">
+						<span className="text-sm font-semibold mb-1 inline-block">
+							Exposición finalizada
+						</span>
+						<h3 className="text-[32px] leading-[normal] font-semibold">
+							Paracas, Vientos del Sur
+						</h3>
+						<p className="font-medium leading-[24px] mt-6">
+							Realizada en 2016, esta exposición contó con piezas del catálogo "Colección Paracas Joyas Sanmarquinas", que puede revisarse en el enlace.
+						</p>
+						<Link
+							href="https://www.flickr.com/photos/190570086@N08/albums/72157716272700246/"
+							className="link mt-4 inline-block"
+							target="_blank"
+						>
+							Explorar
+						</Link>
+					</div>
+					<div className="max-lg:w-full order-1">
 						<Splide
 							onMoved={handleMoveExpoTemporales}
 							ref={splideRefExpoTemporales}
@@ -208,7 +227,52 @@ const Exposiciones = () => {
 							/>
 						</div>
 					</div>
-					<div className="max-w-[394px] mt-0 lg:mt-10">
+				</div>
+			</div>
+			<div className="px-4 lg:px-[104px] gap-5 bg-red-custom text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-red.svg')] bg-no-repeat bg-[-123px_10px]">
+				<div id="test" className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
+					<div className="max-lg:w-full order-1 lg:order-2">
+						<Splide
+							onMoved={handleMoveExpoTemporales}
+							ref={splideRefExpoTemporales}
+							hasTrack={false}
+							options={splideOptions}
+						>
+							<SplideTrack>
+								{exposicionesTemporalesData.map(
+									(img, index) => (
+										<SplideSlide key={index}>
+											<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+												<Image
+													src={img.imageUrl}
+													className="object-cover"
+													alt={'Exposición'}
+													layout="fill"
+												/>
+											</figure>
+										</SplideSlide>
+									)
+								)}
+							</SplideTrack>
+						</Splide>
+						<div className="flex justify-end gap-x-2 relative mt-4 pointer-events-none">
+							<ArrowButton
+								className="pointer-events-auto"
+								theme="light"
+								onClick={handlePrevExpoTemporales}
+								direction="left"
+								disabled={isPrevDisabledExpoTemporales}
+							/>
+							<ArrowButton
+								className="pointer-events-auto"
+								theme="light"
+								onClick={handleNextExpoTemporales}
+								direction="right"
+								disabled={isNextDisabledExpoTemporales}
+							/>
+						</div>
+					</div>
+					<div className="max-w-[394px] mt-0 lg:mt-10 order-2 lg:order-1">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Eventos
 						</span>
@@ -216,7 +280,7 @@ const Exposiciones = () => {
 							Exposiciones temporales
 						</h3>
 						<p className="font-medium leading-[24px] mt-6">
-							Generalmente presenta una temática conmemorativa, destacando a personajes vinculados a la arqueología, antropología e historia relacionados con el trabajo del museo.
+							El Centro Cultural de San Marcos organiza exposiciones temporales en las salas de sus museos de Arte y de Antropología y Arqueología. Estas muestras, cuya duración varía según su relevancia y la afluencia de público, brindan valiosas experiencias artísticas y patrimoniales, enriqueciendo la vivencia cultural de los visitantes.
 						</p>
 						{/* <Link
 							href="/agenda-cultural"

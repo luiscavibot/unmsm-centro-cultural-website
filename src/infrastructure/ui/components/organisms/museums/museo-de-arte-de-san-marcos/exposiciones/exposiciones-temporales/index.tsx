@@ -82,7 +82,7 @@ const ExposicionesTemporales: React.FC<Props> = ({
 						Exposiciones temporales
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
-						El Centro Cultural de San Marcos organiza exposiciones temporales en las salas de sus museos de Arte y de Antropología y Arqueología. Estas muestras, cuya duración varía según su relevancia y la afluencia de público, brindan valiosas experiencias artísticas y patrimoniales, enriqueciendo la vivencia cultural de los visitantes
+						El Centro Cultural de San Marcos organiza exposiciones temporales en las salas de sus museos de Arte y de Antropología y Arqueología. Estas muestras, cuya duración varía según su relevancia y la afluencia de público, brindan valiosas experiencias artísticas y patrimoniales, enriqueciendo la vivencia cultural de los visitantes.
 					</p>
 					<Link
 						href="/agenda-cultural"
