@@ -13,10 +13,10 @@ const breadcrumbItems = [
 	},
 ];
 
-export default function DependenciasAdministrativas() {
+export default function Directorio() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_ccsm_portada_b28c850aa6.webp"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/directorio_ccsm_portada_5a837f9a78.webp"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
