@@ -8,14 +8,20 @@ import Link from 'next/link';
 import React, { Suspense, useState } from 'react';
 
 const tabs = {
-	elencos: React.lazy(
+	actividades: React.lazy(
 		() =>
-			import('@/infrastructure/ui/components/organisms/folklore/elencos')
+			import('@/infrastructure/ui/components/organisms/cine/actividades')
 	),
-	publicaciones: React.lazy(
+	'profundidad-de-campo': React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/folklore/publicaciones'
+				'@/infrastructure/ui/components/organisms/cine/profundidad-de-campo'
+			)
+	),
+	'archivo-filmico-y-audiovisual': React.lazy(
+		() =>
+			import(
+				'@/infrastructure/ui/components/organisms/cine/archivo-filmico-y-audiovisual'
 			)
 	),
 } as const;
@@ -38,7 +44,7 @@ const breadcrumbItems = [
 ];
 
 export default function Folklore() {
-	const [currentTab, setCurrentTab] = useState<TabKeys>('elencos');
+	const [currentTab, setCurrentTab] = useState<TabKeys>('actividades');
 
 	const handleClick = (tab: TabKeys) => {
 		setCurrentTab(tab);
@@ -122,17 +128,24 @@ export default function Folklore() {
 					<div className="container">
 						<div className="flex gap-x-4">
 							<Tab
-								label="Colecciones"
-								selected={currentTab === 'elencos'}
+								label="Actividades"
+								selected={currentTab === 'actividades'}
 								onClick={() => {
-									handleClick('elencos');
+									handleClick('actividades');
 								}}
 							/>
 							<Tab
-								label="Publicaciones"
-								selected={currentTab === 'publicaciones'}
+								label="Profundidad de campo"
+								selected={currentTab === 'profundidad-de-campo'}
 								onClick={() => {
-									handleClick('publicaciones');
+									handleClick('profundidad-de-campo');
+								}}
+							/>
+							<Tab
+								label="Archivo fílmico y audiovisual"
+								selected={currentTab === 'archivo-filmico-y-audiovisual'}
+								onClick={() => {
+									handleClick('archivo-filmico-y-audiovisual');
 								}}
 							/>
 						</div>
