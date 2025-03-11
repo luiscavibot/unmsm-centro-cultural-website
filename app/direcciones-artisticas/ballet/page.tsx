@@ -12,12 +12,12 @@ const tabs = {
 		() =>
 			import('@/infrastructure/ui/components/organisms/ballet/compania')
 	),
-	// escuela: React.lazy(
-	// 	() =>
-	// 		import(
-	// 			'@/infrastructure/ui/components/organisms/ballet/escuela'
-	// 		)
-	// ),
+	escuela: React.lazy(
+		() =>
+			import(
+				'@/infrastructure/ui/components/organisms/ballet/escuela'
+			)
+	),
 	// investigacion: React.lazy(
 	// 	() =>
 	// 		import(
@@ -133,13 +133,13 @@ export default function Ballet() {
 									handleClick('compania');
 								}}
 							/>
-							{/* <Tab
+							<Tab
 								label="Escuela"
 								selected={currentTab === 'escuela'}
 								onClick={() => {
 									handleClick('escuela');
 								}}
-							/> */}
+							/>
 							{/* <Tab
 								label="Investigación"
 								selected={
