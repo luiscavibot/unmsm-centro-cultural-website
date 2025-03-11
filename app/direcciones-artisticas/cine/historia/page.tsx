@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function CineHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_ccsm_portada_0f01f64ed1.webp"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/direccion_de_cine_y_produccion_audiovisual_portada_59dabd60c3.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

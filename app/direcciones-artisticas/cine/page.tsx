@@ -52,7 +52,7 @@ export default function Folklore() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cine_ccsm_75744af0a1.jpeg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/direccion_de_cine_y_produccion_audiovisual_portada_59dabd60c3.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
