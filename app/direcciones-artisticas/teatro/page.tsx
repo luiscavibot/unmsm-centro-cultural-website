@@ -1,12 +1,11 @@
-import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button';
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
-import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Facebook2Icon from '@/infrastructure/ui/components/atoms/icons/social/facebook-2-icon'
+import Instagram2Icon from '@/infrastructure/ui/components/atoms/icons/social/instagram-2-icon'
 
 const breadcrumbItems = [
 	{
@@ -38,58 +37,16 @@ export default function Teatro() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									Como base de la actividad humana, el teatro
-									potencia el desarrollo de la expresión oral
-									y corporal, elementos fundamentales de la
-									comunicación y hace la metodología más
-									participativa y democrática. El teatro es un
-									valioso instrumento para la formación
-									integral del ser humano, por lo tanto,
-									también es un excelente complemento para la
-									educación y el desarrollo de la vida misma.
-									Asimismo, fomenta la cooperación, el trabajo
-									en grupo y estimula la reflexión sobre las
-									distintas actividades, convirtiéndose en un
-									vehículo para transmitir valores de
-									tolerancia, respeto, solidaridad, crítica y
-									denuncia.
+									El Teatro Universitario de San Marcos (TUSM) es una dependencia de la Universidad Nacional de San Marcos (UNMSM) que, en consonancia con sus principios y compromiso social, tiene como misión la formación de un elenco de teatro universitario conformado por alumnos y trabajadores de la universidad. Esta formación se basa en el compromiso, dedicación y esfuerzo de sus integrantes, promoviendo tanto su crecimiento artístico como su desarrollo personal.
 								</p>
 								<p className="mb-5">
-									Siendo el teatro el arte en el que confluyen
-									las otras artes, este nos permite
-									desarrollar múltiples capacidades y valores
-									a través del proceso creativo o la dinámica
-									del juego. Gracias al teatro, el ser humano
-									ha logrado mejorar su sociabilización,
-									haciéndola más natural; el trabajo teatral
-									permite mejorar la autoestima, la
-									disciplina, el manejo de la frustración, la
-									adquisición de hábitos responsables, el
-									incremento de valores y normas de
-									convivencia, el respeto por el otro, el
-									desarrollo de la seguridad en sí mismo y de
-									las relaciones con los otros.
+									Si bien la formación del elenco es fundamental, el siguiente paso es la creación, producción y difusión de proyectos teatrales que se presenten en nuestra sala, asegurando así su actividad constante y su consolidación como un espacio de referencia. Al mismo tiempo, buscamos el reconocimiento del elenco como un grupo universitario oficial, fomentando el intercambio y la extensión dentro del medio artístico teatral, tanto en las diferentes facultades de la UNMSM como en el ámbito nacional e internacional. De este modo, el TUSM no solo impulsa la participación de su comunidad, sino que también fortalece su presencia en la escena teatral.
 								</p>
 								<p className="mb-5">
-									Igualmente, permite afianzar los hábitos de
-									lectura y de escritura, fomentar el
-									pensamiento y el diálogo interno, la
-									estimulación de la imaginación, la
-									agudización de los sentidos y la
-									potenciación de la creatividad.
+									Fundado el 4 de septiembre de 1946, el TUSM experimentó un nuevo impulso con su retorno a su sala histórica en julio de 2016, lo que permitió la ampliación de sus actividades y el fortalecimiento de su misión y visión. En este proceso, se ha trabajado constantemente para posicionar la sala del TUSM como un referente del entretenimiento alternativo en el Centro Histórico de Lima, priorizando la exhibición de producciones propias.
 								</p>
 								<p className="mb-5">
-									Uno de los logros del Teatro Universitario
-									de San Marcos, durante su gestión, ha sido
-									la reincorporación al Centro Cultural de San
-									Marcos de la sala “Guillermo Ugarte
-									Chamorro”, histórico local ubicado en el Jr.
-									Lampa N° 833, en el Centro Histórico de
-									Lima. Además, otra de las gestiones más
-									resaltantes es la de lograr que esta
-									dependencia está conformada íntegramente por
-									estudiantes sanmarquinos, fomentando la
-									unidad e identificación con la institución.
+									Como parte de nuestro compromiso con la comunidad sanmarquina y el público en general, buscamos facilitar el acceso al arte dramático a través de funciones en nuestra sala y talleres que promuevan el acercamiento a las artes escénicas.
 								</p>
 							</div>
 							<Link
@@ -130,71 +87,117 @@ export default function Teatro() {
 						</div>
 					</div>
 				</div>
-				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
-					<div className="container">
-						<div className="flex gap-x-4">
-							<Tab label="Equipo" selected={true} />
-							<Tab
-								label="Investigación"
-								icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
-								type="internal-link"
-								link="#"
-							/>
-							<Tab
-								label="Entrevistas"
-								icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
-								type="internal-link"
-								link="#"
-							/>
-						</div>
-					</div>
-				</div>
 				<div>
-					<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
+					<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[64px] pb-[56px]">
 						<div className="container flex flex-row justify-between gap-x-[68px]">
 							<div className="max-w-[641px] leading-[24px] text-dark-blue-2">
 								<p className="mb-5">
-									El TUSM está integrado por alumnos y
-									trabajadores de la UNMSM. Con base en el
-									compromiso, dedicación y esfuerzo para su
-									crecimiento artístico y personal.
-								</p>
-								{/* <p className="mb-3">Actualmente contamos con:</p>
-								<ul className="mb-5 list-disc list-outside pl-5">
-									<li>Elenco de Teatro</li>
-									<li>Elenco de Improvisación Teatral</li>
-								</ul> */}
-								<p className="mb-5 font-bold">
-									🎭 ¡Únete al Elenco de Teatro de La Casona!
-									🎭
+									El TUSM está integrado por alumnos y trabajadores de la UNMSM. Con base en el compromiso, dedicación y esfuerzo  para su crecimiento artístico y personal.
 								</p>
 								<p className="mb-5">
-									¿Tienes una pasión por la actuación y el
-									arte escénico? ¡Esta es tu oportunidad! Te
-									invitamos a registrarte y formar parte del
-									Elenco de Teatro de La Casona de la UNMSM.
-									Aquí encontrarás un espacio donde podrás
-									expresar tu creatividad, explorar nuevos
-									personajes y compartir el escenario con
-									otros entusiastas del teatro.
+									Actualmente contamos con dos elencos: Elenco de teatro y elenco de improvisación teatral.
 								</p>
-								<PrimaryButton
-									type="external-link"
-									href="#"
-									label="Registrarse"
-									theme="light"
-								/>
+								<p className="mb-5 font-bold">
+									🎭 ¡Únete al Teatro Universitario de San Marcos! 🎭
+								</p>
+								<p className="mb-5">
+									Si tienes pasión por las artes escénicas, entérate de nuestras <b>convocatorias a través de nuestras redes sociales</b> ¡te esperamos!
+								</p>
+								<ul className="list-none mb-5">
+									<li className="">
+										<a className="flex items-baseline gap-x-2" href="https://www.instagram.com/teatrodesanmarcos/?hl=es" target="_blank" rel="noreferrer noopener">
+											<span className="relative top-[1px]"><Instagram2Icon color="orange" /></span> <span className="underline">Instagram</span>
+										</a>
+									</li>
+									<li className="">
+										<a className="flex items-baseline gap-x-2" href="https://www.facebook.com/TeatroSanMarcos/?locale=es_LA" target="_blank" rel="noreferrer noopener">
+											<span className="relative top-[1px]"><Facebook2Icon color="orange" /></span> <span className="underline">Facebook</span>
+										</a>
+									</li>
+								</ul>
 							</div>
 							<div className="shrink-0">
-								<figure className="relative w-[523px] h-[444px] mx-auto">
+								<figure className="relative w-[523px] h-[349px] mx-auto">
 									<Image
-										src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/equipo-teatro-1.webp"
+										src="https://ccsm.unmsm.edu.pe/ccsm/teatro_unete_18acf6440a.jpg"
 										className="object-cover h-full"
-										alt="ballet 2"
+										alt="Teatro Únete"
 										layout="fill"
 										quality={100}
 									/>
 								</figure>
+							</div>
+						</div>
+					</div>
+					<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
+						<div className="container">
+							<div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[repeat(8,402px)]">
+								<div className="col-span-2 row-span-2">
+									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<Image
+											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_1_f94c72923e.jpg"
+											className="object-cover"
+											alt="Teatro 1"
+											layout="fill"
+											quality={100}
+										/>
+									</figure>
+								</div>
+								<div className="row-span-2 row-start-3">
+									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<Image
+											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_2_e5c614977e.jpg"
+											className="object-cover"
+											alt="Teatro 2"
+											layout="fill"
+											quality={100}
+										/>
+									</figure>
+								</div>
+								<div className="row-start-3">
+									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<Image
+											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_3_3214ff5391.jpg"
+											className="object-cover"
+											alt="Teatro 3"
+											layout="fill"
+											quality={100}
+										/>
+									</figure>
+								</div>
+								<div className="col-start-2 row-start-4">
+									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<Image
+											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_4_cb810cbe5e.jpg"
+											className="object-cover"
+											alt="Teatro 4"
+											layout="fill"
+											quality={100}
+										/>
+									</figure>
+								</div>
+								<div className="col-span-2 row-span-2 row-start-5">
+									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<Image
+											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_5_7059af83a1.jpg"
+											className="object-cover"
+											alt="Teatro 5"
+											layout="fill"
+											quality={100}
+										/>
+									</figure>
+								</div>
+								<div className="col-span-2 row-span-2 row-start-7">
+									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<Image
+											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_6_2d529b7a70.jpg"
+											className="object-cover"
+											alt="Teatro 6"
+											layout="fill"
+											quality={100}
+										/>
+									</figure>
+								</div>
 							</div>
 						</div>
 					</div>

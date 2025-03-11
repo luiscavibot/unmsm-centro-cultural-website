@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import Facebook2Icon from '../../../atoms/icons/social/facebook-2-icon'
-import Instagram2Icon from '../../../atoms/icons/social/instagram-2-icon'
+import Facebook2Icon from '@/infrastructure/ui/components/atoms/icons/social/facebook-2-icon'
+import Instagram2Icon from '@/infrastructure/ui/components/atoms/icons/social/instagram-2-icon'
 
 const Escuela = () => {
 	return (
