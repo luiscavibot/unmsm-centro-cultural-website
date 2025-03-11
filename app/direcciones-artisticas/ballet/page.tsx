@@ -1,8 +1,32 @@
+'use client';
+
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
+import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
 import Link from 'next/link';
-import React from 'react';
+import React, { Suspense, useState } from 'react';
+
+const tabs = {
+	compania: React.lazy(
+		() =>
+			import('@/infrastructure/ui/components/organisms/ballet/compania')
+	),
+	// escuela: React.lazy(
+	// 	() =>
+	// 		import(
+	// 			'@/infrastructure/ui/components/organisms/ballet/escuela'
+	// 		)
+	// ),
+	// investigacion: React.lazy(
+	// 	() =>
+	// 		import(
+	// 			'@/infrastructure/ui/components/organisms/ballet/investigacion'
+	// 		)
+	// ),
+} as const;
+
+type TabKeys = keyof typeof tabs;
 
 const breadcrumbItems = [
 	{
@@ -20,6 +44,12 @@ const breadcrumbItems = [
 ];
 
 export default function Ballet() {
+	const [currentTab, setCurrentTab] = useState<TabKeys>('compania');
+	
+	const handleClick = (tab: TabKeys) => {
+		setCurrentTab(tab);
+	};
+
 	return (
 		<Layout
 			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_ccsm_portada_0f01f64ed1.webp"
@@ -92,6 +122,50 @@ export default function Ballet() {
 							/>
 						</div>
 					</div>
+				</div>
+				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
+					<div className="container">
+						<div className="flex gap-x-4">
+							<Tab
+								label="Compañía"
+								selected={currentTab === 'compania'}
+								onClick={() => {
+									handleClick('compania');
+								}}
+							/>
+							{/* <Tab
+								label="Escuela"
+								selected={currentTab === 'escuela'}
+								onClick={() => {
+									handleClick('escuela');
+								}}
+							/> */}
+							{/* <Tab
+								label="Investigación"
+								selected={
+									currentTab === 'investigacion'
+								}
+								onClick={() => {
+									handleClick('investigacion');
+								}}
+							/> */}
+						</div>
+					</div>
+				</div>
+				<div>
+					<Suspense
+						fallback={
+							<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[24px]">
+								<div className="container">
+									<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
+										Cargando...
+									</p>
+								</div>
+							</div>
+						}
+					>
+						{React.createElement(tabs[currentTab])}
+					</Suspense>
 				</div>
 			</>
 		</Layout>
