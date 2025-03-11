@@ -176,7 +176,7 @@ const Exposiciones = () => {
 							Paracas, Vientos del Sur
 						</h3>
 						<p className="font-medium leading-[24px] mt-6">
-							Realizada en 2016, esta exposición contó con piezas del catálogo "Colección Paracas Joyas Sanmarquinas", que puede revisarse en el enlace.
+							Realizada en 2016, esta exposición contó con piezas del catálogo &quot;Colección Paracas Joyas Sanmarquinas&quot;, que puede revisarse en el enlace.
 						</p>
 						<Link
 							href="https://www.flickr.com/photos/190570086@N08/albums/72157716272700246/"
