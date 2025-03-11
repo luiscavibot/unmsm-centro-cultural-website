@@ -66,7 +66,7 @@ const Hero: React.FC<HeroProps> = ({ images }) => {
 							</span>
 							<br />
 							<span className="text-[24px] lg:text-[56px]">
-								Centro Cultural San Marcos!
+								Centro Cultural de San Marcos!
 							</span>
 						</h2>
 					</div>
