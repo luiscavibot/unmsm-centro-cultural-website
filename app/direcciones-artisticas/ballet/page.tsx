@@ -18,12 +18,12 @@ const tabs = {
 				'@/infrastructure/ui/components/organisms/ballet/escuela'
 			)
 	),
-	// investigacion: React.lazy(
-	// 	() =>
-	// 		import(
-	// 			'@/infrastructure/ui/components/organisms/ballet/investigacion'
-	// 		)
-	// ),
+	investigacion: React.lazy(
+		() =>
+			import(
+				'@/infrastructure/ui/components/organisms/ballet/investigacion'
+			)
+	),
 } as const;
 
 type TabKeys = keyof typeof tabs;
@@ -140,7 +140,7 @@ export default function Ballet() {
 									handleClick('escuela');
 								}}
 							/>
-							{/* <Tab
+							<Tab
 								label="Investigación"
 								selected={
 									currentTab === 'investigacion'
@@ -148,7 +148,7 @@ export default function Ballet() {
 								onClick={() => {
 									handleClick('investigacion');
 								}}
-							/> */}
+							/>
 						</div>
 					</div>
 				</div>

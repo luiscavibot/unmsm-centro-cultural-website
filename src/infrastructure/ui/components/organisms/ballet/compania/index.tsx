@@ -33,7 +33,7 @@ const Compania = () => {
 							<div className="basis-1/2">
 								<p className="font-bold mb-5">Principales actividades</p>
 								<ul className="list-outside list-disc pl-6 space-y-5">
-									<li><b>Difusión para niños y jóvenes, mediante funciones didáctica</b>s donde el público puede participar activamente en cada sesión</li>
+									<li><b>Difusión para niños y jóvenes, mediante funciones didácticas</b> donde el público puede participar activamente en cada sesión</li>
 									<li><b>Realización de funciones artísticas en auditorios y teatros nacionales y extranjeros</b> y el intercambio con artistas de danza de diversos países, introduciendo recientes técnicas y elementos del lenguaje dancístico contemporáneo. Cada una de las presentaciones de la compañía profesional lleva el sello de calidad y excelencia que han plasmado sus directores y maestros de danza y que, en la actualidad, se mantiene en base a trabajo y exigencia diaria.</li>
 								</ul>
 							</div>

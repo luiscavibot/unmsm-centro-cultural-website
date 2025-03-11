@@ -7,55 +7,46 @@ const Investigacion = () => {
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
 				<div className="container">
 					<div className="max-w-[641px] leading-[24px] text-dark-blue-2">
-						<p >
-							Descubre cómo nuestra compañía investiga las raíces de la danza peruana y crea nuevas propuestas artísticas
+						<p>
+							Descubre cómo nuestra compañía investiga las raíces de la danza peruana y crea nuevas propuestas artísticas.
 						</p>
 					</div>
 				</div>
 			</div>
-			<div className="bg-dark-red-2 relative">
+			<div className="bg-blue-2 relative">
 				<div
 					className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative"
 				>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px] font-medium">
-							<div className="basis-1/2">
-								<p className="mb-5">
-									<b>Los bailarines de la compañía profesional entrenan diariamente en el ballet clásico y danza contemporánea.</b> Su rutina continúa con la práctica diaria del repertorio que la agrupación tiene en su haber, nutrido, además, de nuevas creaciones planteadas por coreógrafos de la propia compañía y por colegas nacionales e internacionales invitados.
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-row gap-7 leading-[24px] font-normal">
+							<div className="basis-[47%]">
+								<p className="mb-5 font-bold">
+									Más que danza, un legado de investigación
 								</p>
 								<p>
-									<b>El trabajo de la compañía se basa en difundir el arte escénico a través de la danza contemporánea</b>, dando a conocer la expresividad y la trascendencia de esta forma dancística, sus posibilidades comunicativas y expresivas y, de ese modo, sensibilizar al público llevándolo a disfrutar de nuevas sensaciones y experimentaciones.
+									El Ballet San Marcos no solo es reconocido por sus impactantes presentaciones, sino también por su incansable búsqueda de conocimiento y la preservación de elementos de la danza peruana. A través de nuestro Centro de Investigación, exploramos las raíces históricas del ballet y la danza moderna y contemporánea en nuestro país, rescatamos coreografías de repertorio y desarrollamos nuevas propuestas artísticas.
 								</p>
-								<ul className="list-outside list-disc pl-6">
-									<li>El programa está dirigido a toda persona que tiene interés en capacitarse y actualizarse en la promoción (enseñanza) de las danzas folklóricas.</li>
-									<li>El plan de estudios se divide en seis módulos, cada uno con la duración de un semestre (cuatro meses) , haciendo un total aproximado de 1800 horas pedagógicas.</li>
-									<li>Cada módulo desarrolla cursos prácticos (talleres) y teóricos de formación específica y complementaria, además de la práctica aplicada.</li>
-									<li>El programa no conduce a la obtención de un título.</li>
-								</ul>
 							</div>
-							<div className="basis-1/2">
-								<p className="font-bold">Sobre la certificación</p>
-								<ul className="list-outside list-disc pl-6">
-									<li>El programa entrega certificados por cada uno de los módulos.</li>
-									<li>Al aprobar los seis módulos se entrega la certificación como: Promotor en Danzas Folklóricas.</li>
-									<li>Para obtener esta certificación, el alumno debe además sustentar un trabajo de investigación o realizar una clase modelo. En ambos casos deberá tener las horas de práctica aplicada en alguna institución educativa.</li>
-									<li>Los certificados tienen validez para el escalafón.</li>
+							<div className="basis-[53%]">
+								<p className="font-bold mb-5">Actualmente, estamos desarrollando varios proyectos de investigación que buscan:</p>
+								<ul className="list-outside list-disc pl-6 space-y-2">
+									<li><span className="font-medium">Recuperar coreografías de repertorio:</span> Rescatamos y reconstruimos obras de gran impacto hechas en el Ballet de San Marcos en las décadas de los años 70 a los años 2000.</li>
+									<li><span className="font-medium">Desarrollar nuevas propuestas creativas:</span> A través de nuevas tendencias y propiciando la fusión con elementos tradicionales y de otras vertientes artísticas.</li>
+									<li><span className="font-medium">Estudiar la influencia de la danza en la sociedad:</span> Analizamos el papel de la danza en la construcción de nuestra identidad nacional y su impacto en las diferentes comunidades.</li>
+									<li><span className="font-medium">Desarrollar nuevas metodologías de enseñanza:</span> Investigamos y experimentamos con nuevas formas de enseñar danza, adaptándonos a las necesidades físicas y emocionales de las nuevas generaciones.</li>
+									<li><span className="font-medium">Contribuir con la construcción de la historia de la danza clásica y contemporánea en el Perú:</span> Rescatando fuentes documentales existentes y construyendo un archivo físico y virtual que propicie la investigación de estudiosos de la historia de la danza peruana.</li>
 								</ul>
-								<div className="mt-8 bg-dark-red-3 rounded-2xl p-6">
-									<p className="font-bold">Contacto para consultas:</p>
-									<p className="break-words">folklore.ccsm@unmsm.edu.pe</p>
-								</div>
 							</div>
 						</div>
 
 					</div>
 				</div>
-				<div className="shrink-0 w-[523px] absolute right-0 top-0 h-full">
+				<div className="shrink-0 w-[544px] absolute right-0 top-0 h-full">
 					<figure className="relative w-full h-full mx-auto">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/escuela_para_formadores_d87bdc40bb.webp"
+							src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_grid_7_e28ec3c9e8.jpg"
 							className="object-cover h-full"
-							alt="Escuela para formadores"
+							alt="Ballet Investigación"
 							layout="fill"
 							quality={100}
 						/>
