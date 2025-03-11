@@ -12,6 +12,7 @@ import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
 import Image from 'next/image';
 import { tesorosArqueologicosDeSanMarcosData } from '@/infrastructure/ui/data/museums/tesoros-arqueologicos-de-san-marcos-data';
 import { exposicionesTemporalesData } from '@/infrastructure/ui/data/museums/exposiciones/exposiciones-temporales-data';
+import { paracasVientosDelSurData } from '@/infrastructure/ui/data/museums/exposiciones/paracas-vientos-del-sur-data';
 import Link from 'next/link';
 
 interface ExtendedSplideType extends SplideType {
@@ -20,6 +21,7 @@ interface ExtendedSplideType extends SplideType {
 
 const Exposiciones = () => {
 	const splideRefExpoTesoros = useRef<ExtendedSplideType>(null);
+	const splideRefParacasVientosDelSur = useRef<ExtendedSplideType>(null);
 	const splideRefExpoTemporales = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
@@ -45,6 +47,13 @@ const Exposiciones = () => {
 		isPrevDisabled: isPrevDisabledExpoTesoros,
 		isNextDisabled: isNextDisabledExpoTesoros,
 	} = useSplideControls(splideRefExpoTesoros);
+	const {
+		handlePrev: handlePrevParacasVientosDelSur,
+		handleNext: handleNextParacasVientosDelSur,
+		handleMove: handleMoveParacasVientosDelSur,
+		isPrevDisabled: isPrevDisabledParacasVientosDelSur,
+		isNextDisabled: isNextDisabledParacasVientosDelSur,
+	} = useSplideControls(splideRefParacasVientosDelSur);
 	const {
 		handlePrev: handlePrevExpoTemporales,
 		handleNext: handleNextExpoTemporales,
@@ -188,13 +197,13 @@ const Exposiciones = () => {
 					</div>
 					<div className="max-lg:w-full order-1">
 						<Splide
-							onMoved={handleMoveExpoTemporales}
-							ref={splideRefExpoTemporales}
+							onMoved={handleMoveParacasVientosDelSur}
+							ref={splideRefParacasVientosDelSur}
 							hasTrack={false}
 							options={splideOptions}
 						>
 							<SplideTrack>
-								{exposicionesTemporalesData.map(
+								{paracasVientosDelSurData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
 											<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
@@ -214,16 +223,16 @@ const Exposiciones = () => {
 							<ArrowButton
 								className="pointer-events-auto"
 								theme="light"
-								onClick={handlePrevExpoTemporales}
+								onClick={handlePrevParacasVientosDelSur}
 								direction="left"
-								disabled={isPrevDisabledExpoTemporales}
+								disabled={isPrevDisabledParacasVientosDelSur}
 							/>
 							<ArrowButton
 								className="pointer-events-auto"
 								theme="light"
-								onClick={handleNextExpoTemporales}
+								onClick={handleNextParacasVientosDelSur}
 								direction="right"
-								disabled={isNextDisabledExpoTemporales}
+								disabled={isNextDisabledParacasVientosDelSur}
 							/>
 						</div>
 					</div>
