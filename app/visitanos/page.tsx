@@ -26,7 +26,7 @@ export default function Visitanos() {
 				<div className="px-4 lg:px-[104px] bg-white pb-20">
 					<div className="container">
 						<div className="max-w-[641px] mx-auto mb-14">
-							<Title className="text-center">Visítanos</Title>
+							<Title className="text-center">Visitas guiadas</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
 									La{' '}
@@ -66,19 +66,21 @@ export default function Visitanos() {
 										históricos patios y salones ceremoniales
 									</span>{' '}
 									del complejo arquitectónico de la Casona de
-									San Marcos además de las muestras temporales y
-									permanentes como: La universidad como casa del
-									saber: religiosos y laicos y la muestra arqueológica
-									Tesoros Arqueológicos de San Marcos, igualmente
-									a las exposiciones temporales.
+									San Marcos además de las <span className="font-bold">muestras permanentes: Colección de retratos de catedráticos y rectores de la Universidad de San Marcos (siglos XVI-XXI), Vargas Llosa en San Marcos</span>.
 								</p>
 								<p className="mb-6">
-									Las salas de exposición del Museo de Arqueología y Antropología y del Museo de Arte de San Marcos se encuentran abiertas solo de lunes a viernes.
+									Además se recorren las exposiciones presentadas por el Museo de Arte de San Marcos y el Museo de Arqueología y Antropología de San Marcos, siempre y cuando se encuentren dentro de su horario de atención:
 								</p>
+								<ul className="list-outside list-disc pl-6 space-y-2 mb-6">
+									<li><b>Exposiciones Museo de Arte :</b> De lunes a viernes, de 10 a.m. a 1 p.m. y de 2 a 4:00 p. m.</li>
+									<li><b>Exposiciones Museo Arqueología y Antropología:</b> De lunes a viernes, de 10 a.m.  a 1 p.m. y de 2 a 3:30 p. m.</li>
+								</ul>
 								<p className="mb-6">
 									El Centro Cultural de San Marcos no atiende los días domingos y declarados feriados.
 								</p>
-								<p>
+							</div>
+							<div className="basis-1/2">
+								<p className="mb-7">
 									<span className="font-bold">
 										Información y reservas:
 									</span>
@@ -92,8 +94,7 @@ export default function Visitanos() {
 									(Llamar solo de lunes a viernes en horario
 									de oficina.)
 								</p>
-							</div>
-							<div className="basis-1/2">
+								<p className="mb-3 font-bold">Costo de entrada:</p>
 								<div className="relative overflow-x-auto max-w-[813px]">
 									<table className="max-w-full w-full">
 										<thead>
@@ -301,8 +302,8 @@ export default function Visitanos() {
 							</p>
 						</div>
 						<SecondaryButton
-							type="external-link"
-							href="https://www.youtube.com/@museodearqueologiayantropo1140/videos"
+							type="internal-link"
+							href="/nosotros/casona-de-san-marcos"
 							theme="dark"
 							label="Leer más"
 						/>
