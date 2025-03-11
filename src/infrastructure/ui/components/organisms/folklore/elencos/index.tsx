@@ -14,6 +14,7 @@ import ElencoCaporales from '@/infrastructure/ui/components/organisms/folklore/e
 import ElencoInfantil from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-infantil';
 import ElencoDeMusica from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-de-musica';
 import ConjuntoDeZamponas from '@/infrastructure/ui/components/organisms/folklore/elencos/conjunto-de-zamponas';
+import ElencoJuvenil from '@/infrastructure/ui/components/organisms/folklore/elencos/elenco-juvenil';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -28,6 +29,7 @@ const Elencos = () => {
 	const splideRefElencoInfantil = useRef<ExtendedSplideType>(null);
 	const splideRefElencoDeMusica = useRef<ExtendedSplideType>(null);
 	const splideRefConjuntoDeZamponas = useRef<ExtendedSplideType>(null);
+	const splideRefElencoJuvenil = useRef<ExtendedSplideType>(null);
 
 	const splideOptions: ResponsiveOptions = {
 		type: 'slide',
@@ -52,6 +54,7 @@ const Elencos = () => {
 	const { handlePrev: handlePrevElencoInfantil, handleNext: handleNextElencoInfantil, handleMove: handleMoveElencoInfantil, isPrevDisabled: isPrevDisabledElencoInfantil, isNextDisabled: isNextDisabledElencoInfantil } = useSplideControls(splideRefElencoInfantil);
 	const { handlePrev: handlePrevElencoDeMusica, handleNext: handleNextElencoDeMusica, handleMove: handleMoveElencoDeMusica, isPrevDisabled: isPrevDisabledElencoDeMusica, isNextDisabled: isNextDisabledElencoDeMusica } = useSplideControls(splideRefElencoDeMusica);
 	const { handlePrev: handlePrevConjuntoDeZamponas, handleNext: handleNextConjuntoDeZamponas, handleMove: handleMoveConjuntoDeZamponas, isPrevDisabled: isPrevDisabledConjuntoDeZamponas, isNextDisabled: isNextDisabledConjuntoDeZamponas } = useSplideControls(splideRefConjuntoDeZamponas);
+	const { handlePrev: handlePrevElencoJuvenil, handleNext: handleNextElencoJuvenil, handleMove: handleMoveElencoJuvenil, isPrevDisabled: isPrevDisabledElencoJuvenil, isNextDisabled: isNextDisabledElencoJuvenil } = useSplideControls(splideRefElencoJuvenil);
 
 	return (
 		<>
@@ -124,6 +127,15 @@ const Elencos = () => {
 				isNextDisabledConjuntoDeZamponas={isNextDisabledConjuntoDeZamponas}
 				handlePrevConjuntoDeZamponas={handlePrevConjuntoDeZamponas}
 				handleNextConjuntoDeZamponas={handleNextConjuntoDeZamponas}
+			/>
+			<ElencoJuvenil
+				handleMoveElencoJuvenil={handleMoveElencoJuvenil}
+				splideRefElencoJuvenil={splideRefElencoJuvenil}
+				splideOptions={splideOptions}
+				isPrevDisabledElencoJuvenil={isPrevDisabledElencoJuvenil}
+				isNextDisabledElencoJuvenil={isNextDisabledElencoJuvenil}
+				handlePrevElencoJuvenil={handlePrevElencoJuvenil}
+				handleNextElencoJuvenil={handleNextElencoJuvenil}
 			/>
 		</>
 	)
