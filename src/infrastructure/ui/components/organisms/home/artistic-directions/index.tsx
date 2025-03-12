@@ -81,12 +81,12 @@ const ArtisticDirections: React.FC = () => {
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/banda_2350d3997d.png"
 								className="object-cover"
-								alt="Banda universitaria"
+								alt="Banda Universitaria"
 								fill
 							/>
 						</div>
 						<h3 className="relative text-2xl font-bold text-center text-white">
-							Banda universitaria
+							Banda Universitaria
 						</h3>
 					</Link>
 				</div>

@@ -18,7 +18,7 @@ const breadcrumbItems = [
 		path: '/direcciones-artisticas/musica',
 	},
 	{
-		title: 'Historia de la dirección de Banda universitaria',
+		title: 'Historia de la dirección de Música',
 		path: '/direcciones-artisticas/musica/historia',
 	},
 ];

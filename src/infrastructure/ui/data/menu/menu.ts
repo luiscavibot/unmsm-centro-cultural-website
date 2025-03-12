@@ -35,7 +35,7 @@ const menu: Menu[] = [
 			},
 			{
 				url: '/direcciones-artisticas/banda-universitaria',
-				title: 'Banda universitaria',
+				title: 'Banda Universitaria',
 			},
 		],
 	},

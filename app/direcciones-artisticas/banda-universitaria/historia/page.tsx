@@ -14,11 +14,11 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Banda universitaria',
+		title: 'Dirección de Banda Universitaria',
 		path: '/direcciones-artisticas/banda-universitaria',
 	},
 	{
-		title: 'Historia de la dirección de Banda universitaria',
+		title: 'Historia de la dirección de Banda Universitaria',
 		path: '/direcciones-artisticas/banda-universitaria/historia',
 	},
 ];
