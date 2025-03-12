@@ -74,7 +74,7 @@ const Publicaciones = () => {
 						</header>
 						<SecondaryButton
 							type="external-link"
-							href="#"
+							href="https://drive.google.com/drive/folders/1vtC6N0BTi0rE28PE1LUpcssQ5S32kOP7"
 							theme="dark"
 							label="Explorar"
 							className="mt-8"
