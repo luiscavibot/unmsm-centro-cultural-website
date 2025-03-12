@@ -53,9 +53,9 @@ const ArtisticDirections: React.FC = () => {
 							estudiantes y maestros que dan vida a expresiones
 							únicas.
 						</p>
-						<Link href="#" className="link">
+						{/* <Link href="#" className="link">
 							Leer más
-						</Link>
+						</Link> */}
 					</div>
 					<Link
 						href="/direcciones-artisticas/cine"

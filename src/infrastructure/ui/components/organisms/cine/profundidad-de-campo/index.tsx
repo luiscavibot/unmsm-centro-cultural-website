@@ -19,7 +19,7 @@ const ProfundidadDeCampo = () => {
 						</p>
 						<PrimaryButton
 							type="external-link"
-							href="#"
+							href="https://www.youtube.com/playlist?list=PLlBheX_vkEklaD8NvtWc-x4vkIiogVXUH"
 							label="Ver en Youtube"
 							theme="light"
 						/>
