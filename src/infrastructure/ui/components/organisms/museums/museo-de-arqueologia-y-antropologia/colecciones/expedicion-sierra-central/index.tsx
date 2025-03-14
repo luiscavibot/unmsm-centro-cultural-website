@@ -83,7 +83,7 @@ const ExpedicionSierraCentral: React.FC<Props> = ({
 							En 1957 el Instituto de Etnología y Arqueología de la UNMSM, en cooperación con el Dr. Carlos Carrasco Ramírez, organizaron la Expedición a la Sierra Central. Excavaron el sitio arqueológico de Wari-Willka en Junín. Además, se adquirieron las vasijas expuestas, las que fueron encontradas debajo de amontonamientos de piedras a manera de ofrendas.
 						</p>
 					</div>
-					<p className="mt-6">
+					{/* <p className="mt-6">
 						<a
 							href="https://www.flickr.com/photos/190570086@N08/albums/72157717943965197/"
 							className="link inline-flex items-center gap-x-2"
@@ -92,7 +92,7 @@ const ExpedicionSierraCentral: React.FC<Props> = ({
 							Explorar
 							<ExternalLinkIcon className="h-4 w-4 shrink-0" />
 						</a>
-					</p>
+					</p> */}
 				</div>
 			</div>
 		</div>

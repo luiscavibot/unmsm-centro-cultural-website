@@ -83,7 +83,7 @@ const TeofiloCastillo: React.FC<Props> = ({
 							El artista peruano Teófilo Castillo fue representante de la comunidad académica de pintores peruanos de inicios del siglo XX. Fue pionero al representar elementos de la sociedad Nasca, Moche y la arquitectura prehispánica asignándoles un valor artístico. En 1920, organizó una exposición de su colección y, posteriormente, nuestra universidad adquirió su colección de objetos prehispánicos, encontrándose entre ellos esta botella Moche.
 						</p>
 					</div>
-					<p className="mt-6">
+					{/* <p className="mt-6">
 						<a
 							href="https://www.flickr.com/photos/190570086@N08/albums/72157719195578740/"
 							className="link inline-flex items-center gap-x-2"
@@ -92,7 +92,7 @@ const TeofiloCastillo: React.FC<Props> = ({
 							Explorar
 							<ExternalLinkIcon className="h-4 w-4 shrink-0" />
 						</a>
-					</p>
+					</p> */}
 				</div>
 			</div>
 		</div>

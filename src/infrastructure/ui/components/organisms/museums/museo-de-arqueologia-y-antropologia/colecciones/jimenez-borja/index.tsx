@@ -44,7 +44,7 @@ const JimenezBorja: React.FC<Props> = ({
 							Arturo Jiménez Borja investigó los instrumentos musicales prehispánicos. Los clasificó de acuerdo a la producción del sonido y por el tipo de materia prima: a) &ldquo;instrumentos ordinarios&rdquo;, elaborados en caña y huesos (aerófonos), semillas (idiófonos) y cuero (membranófonos); y b) &ldquo;instrumentos elaborados&rdquo;, confeccionados sobre metal y arcilla para representar diversos objetos sonoros. En 1972 donó su colección compuesta por 181 objetos a nuestro museo, conformada por instrumentos prehispánicos y representaciones de músicos como los expuestos en esta vitrina.
 						</p>
 					</div>
-					<p className="mt-6">
+					{/* <p className="mt-6">
 						<a
 							href="https://www.flickr.com/photos/190570086@N08/albums/72157718037708308/"
 							className="link inline-flex items-center gap-x-2"
@@ -53,7 +53,7 @@ const JimenezBorja: React.FC<Props> = ({
 							Explorar
 							<ExternalLinkIcon className="h-4 w-4 shrink-0" />
 						</a>
-					</p>
+					</p> */}
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
