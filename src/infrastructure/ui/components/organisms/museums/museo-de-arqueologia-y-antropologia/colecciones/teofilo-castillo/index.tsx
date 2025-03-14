@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
-import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
+// import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 import { teofiloCastilloData } from '@/infrastructure/ui/data/museums/teofilo-castillo-data';
 
 interface ExtendedSplideType extends SplideType {
