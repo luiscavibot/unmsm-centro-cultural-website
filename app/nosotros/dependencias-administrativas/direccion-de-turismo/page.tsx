@@ -33,7 +33,7 @@ const breadcrumbItems = [
         path: '/nosotros/dependencias-administrativas',
     },
     {
-        title: 'Dirección de turismo',
+        title: 'Dirección de Turismo',
         path: '/nosotros/dependencias-administrativas/direccion-de-turismo',
     },
 ];
@@ -96,7 +96,7 @@ export default function DireccionDeTurismo() {
                     <div className="container">
                         <div className="max-w-[814px] mx-auto pb-14">
                             <Title className="text-center max-w-[437px] mx-auto">
-                                Dirección de turismo
+                                Dirección de Turismo
                             </Title>
                             <div className="leading-[24px] text-dark-blue-2 mb-4 space-y-10">
                                 <div>
