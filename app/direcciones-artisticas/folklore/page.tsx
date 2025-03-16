@@ -38,7 +38,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección del Centro Universitario de Folklore (CUF)',
+		title: 'Centro Universitario de Folklore',
 		path: '/direcciones-artisticas/folklore',
 	},
 ];
@@ -60,8 +60,7 @@ export default function Folklore() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center max-w-[550px] mx-auto">
-								Dirección del Centro Universitario de Folklore
-								(CUF)
+								Centro Universitario de Folklore
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">

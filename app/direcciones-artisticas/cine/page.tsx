@@ -43,7 +43,7 @@ const breadcrumbItems = [
 	},
 ];
 
-export default function Folklore() {
+export default function Cine() {
 	const [currentTab, setCurrentTab] = useState<TabKeys>('actividades');
 
 	const handleClick = (tab: TabKeys) => {
