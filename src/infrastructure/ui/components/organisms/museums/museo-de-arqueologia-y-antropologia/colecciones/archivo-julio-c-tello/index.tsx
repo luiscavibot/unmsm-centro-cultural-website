@@ -37,7 +37,7 @@ const ArchivoJulioCTello: React.FC<Props> = ({
 						Colección
 					</span>
 					<h3 className="text-[32px] leading-[normal] font-semibold">
-						Archivo Julio C. Tello
+						Julio C. Tello
 					</h3>
 					<div className="font-medium leading-[24px] mt-6">
 						<p className="mb-6">
