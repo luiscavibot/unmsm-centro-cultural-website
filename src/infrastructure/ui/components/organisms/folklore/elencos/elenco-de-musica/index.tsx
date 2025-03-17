@@ -4,7 +4,7 @@ import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 import Image from 'next/image';
-import { elencoTallerData } from '@/infrastructure/ui/data/direcciones/elenco-taller-data';
+import { elencoDeMusicaData } from '@/infrastructure/ui/data/direcciones/elenco-de-musica-data';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -41,7 +41,7 @@ const ElencoDeMusica: React.FC<Props> = ({
 						options={splideOptions}
 					>
 						<SplideTrack>
-							{elencoTallerData.map((img, index) => (
+							{elencoDeMusicaData.map((img, index) => (
 								<SplideSlide key={index}>
 									<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
