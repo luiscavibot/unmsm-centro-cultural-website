@@ -105,7 +105,7 @@ const Exposiciones = () => {
 								</div>
 								<div>
 									<p className="font-normal">
-										Segundo nivel del Patio de Letras
+										Primer nivel del Patio de Letras
 									</p>
 								</div>
 							</div>
@@ -120,7 +120,7 @@ const Exposiciones = () => {
 								</div>
 								<div>
 									<p className="font-normal">
-										115 piezas en exhibición
+										65 piezas en exhibición
 									</p>
 								</div>
 							</div>
