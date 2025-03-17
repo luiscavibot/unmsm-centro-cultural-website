@@ -2,7 +2,7 @@
 
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
 import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
+// import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
 import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
 import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
 import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
