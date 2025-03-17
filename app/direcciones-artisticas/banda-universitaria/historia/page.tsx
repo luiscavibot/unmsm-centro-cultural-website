@@ -14,7 +14,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Banda Universitaria',
+		title: 'Banda Universitaria',
 		path: '/direcciones-artisticas/banda-universitaria',
 	},
 	{

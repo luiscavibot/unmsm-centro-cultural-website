@@ -14,7 +14,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Banda Universitaria',
+		title: 'Banda Universitaria',
 		path: '/direcciones-artisticas/banda-universitaria',
 	},
 ];
@@ -30,7 +30,7 @@ export default function BandaUniversitaria() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center">
-								Dirección de Banda Universitaria
+							Banda Universitaria
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
