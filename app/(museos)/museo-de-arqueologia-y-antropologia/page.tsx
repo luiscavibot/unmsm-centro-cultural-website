@@ -108,7 +108,7 @@ export default function MuseoDeArteDeSanMarcos() {
 									además de presentar exposiciones
 									museográficas.
 								</p>
-								<p className="font-bold mb-5">
+								{/* <p className="font-bold mb-5">
 									Archivo Julio C. Tello
 								</p>
 								<p className="mb-3">
@@ -119,7 +119,7 @@ export default function MuseoDeArteDeSanMarcos() {
 								</p>
 								<p>
 									Revisa más información en la subsección de publicaciones.
-								</p>
+								</p> */}
 							</div>
 							<div className="max-w-[639px] mx-auto mt-14">
 								<div className="leading-[24px] space-y-1 text-dark-blue-2">
