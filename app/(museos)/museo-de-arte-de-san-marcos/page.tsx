@@ -141,11 +141,11 @@ export default function MuseoDeArteDeSanMarcos() {
 											color="dark"
 										/>
 										<div>
-											<p className="font-bold">Horario</p>
+											<p className="font-bold">Horario de atención</p>
 											<p className="font-medium">
-												Lunes a viernes, 10:00 a.m. a
-												1:00 pm y de 2:00 p.m. a 4:00
-												p.m.
+												Oficina: Lunes a viernes, de 8:15 a.m. a 1 p.m. y de 2 a 4 p.m.
+												<br />
+												Exposiciones: Lunes a viernes, de 10 a.m. a 1 p.m. y de 2 a 4 p. m.
 											</p>
 										</div>
 									</div>
