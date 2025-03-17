@@ -41,7 +41,7 @@ const ConjuntoDeZamponas: React.FC<Props> = ({
 							El Conjunto de Zampoñas de la UNMSM fue fundado en 1977 y desde entonces ha difundido de manera ininterrumpida el arte del sikuri o ejecución de zampoña en sus diferentes versiones. Asimismo, ha estado presente en distintos eventos a nivel nacional, donde destaca su participación durante dos años consecutivos en la festividad de la Virgen de la Candelaria en Puno.
 						</p>
 						<p>
-							Tienen dos producciones musicales y han llevados a cabo diferentes eventos artísticos culturales de gran acogida como son los Encuentros Inter-escolar de sikuris, el cual en noviembre del 2015 se realizó su sexta edición.
+							Tienen dos producciones musicales y han llevado a cabo diferentes eventos artísticos culturales de gran acogida como son los Encuentros Inter-escolar de sikuris, habiendo realizado su décimo quinta edición en el 2024.
 						</p>
 					</div>
 				</div>
