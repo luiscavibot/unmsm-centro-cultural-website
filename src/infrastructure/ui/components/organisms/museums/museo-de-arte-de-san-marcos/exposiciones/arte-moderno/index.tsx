@@ -44,10 +44,7 @@ const ArteModerno: React.FC<Props> = ({
 						Arte moderno y contemporáneo
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
-						La exposición dedicada a la colección de arte moderno y
-						contemporáneo fue inaugurada en el año 2014, cuando era
-						director del MASM el poeta y gestor cultural Germán
-						Carnero.
+						La exposición dedicada a la colección de arte moderno y contemporáneo fue inaugurada en el año 2010, cuando era director del MASM el poeta y gestor cultural Germán Carnero.
 					</p>
 					<div className="flex flex-col gap-y-2 mt-2">
 						<div className="flex gap-2 items-start">
