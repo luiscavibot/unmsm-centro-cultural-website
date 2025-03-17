@@ -60,16 +60,20 @@ const Footer: React.FC = () => (
 					<address className="space-y-4 text-xs lg:text-sm not-italic">
 						<p className="flex items-baseline gap-2">
 							<BaselinePlaceIcon className="shrink-0 relative top-1" ariaLabel="Ubicación" color="white" />
-							<span>Parque Universitario, de, Av. Nicolás de Piérola 1222, Cercado de Lima 15001</span>
+							<span>
+								Av. Nicolás de Piérola #1222
+								<br />
+								Parque Universitario, Centro Histórico de Lima
+							</span>
 						</p>
 						<p className="flex items-baseline gap-2">
 							<PhoneIcon className="shrink-0 relative top-1" ariaLabel="Teléfono" color="white" />
 							<span>(01) 6197000</span>
 						</p>
-						<p className="flex items-baseline gap-2">
+						{/* <p className="flex items-baseline gap-2">
 							<BaselineEmailIcon className="shrink-0 relative top-1" ariaLabel="Correo electrónico" color="white" />
 							<span>correo.ccsm@unmsm.edu.pe</span>
-						</p>
+						</p> */}
 					</address>
 				</div>
 				<div className="my-10 w-[72px] mx-auto bg-light-gray-2 h-[1px] lg:hidden opacity-50"></div>
