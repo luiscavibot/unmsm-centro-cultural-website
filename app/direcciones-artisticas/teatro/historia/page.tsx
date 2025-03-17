@@ -14,7 +14,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Teatro universitario',
+		title: 'Teatro Universitario de San Marcos',
 		path: '/direcciones-artisticas/teatro',
 	},
 	{

@@ -17,7 +17,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Teatro universitario',
+		title: 'Teatro Universitario de San Marcos',
 		path: '/direcciones-artisticas/teatro',
 	},
 ];
@@ -33,7 +33,7 @@ export default function Teatro() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center">
-								Dirección de Teatro universitario
+								Teatro Universitario de San Marcos
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
