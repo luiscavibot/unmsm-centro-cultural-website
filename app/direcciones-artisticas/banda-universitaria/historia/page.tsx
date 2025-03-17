@@ -40,50 +40,10 @@ export default function BandaUniversitariaHistoria() {
 							<div className="leading-[24px] text-dark-blue-2 mb-4 space-y-10">
 								<div>
 									<p className="mb-5">
-										La Dirección de Banda Universitaria de
-										Música, es el resultado de un proceso
-										ordenado y meticuloso. Sus antecedentes
-										más remotos los encontramos en julio de
-										1996, cuando la UNMSM participó en el
-										Gran Desfile de Fiestas Patrias. En
-										aquel momento las autoridades de nuestra
-										casa de estudios se percataron de que la
-										universidad carecía de una Banda de
-										Música, que antecediera la gallarda
-										marcha del contingente sanmarquino. El
-										reto estaba dado, era importante que la
-										Decana de América pudiera contar con una
-										Banda de Música propia. Fue por eso que
-										a inicios del año siguiente (1997),
-										nuestras autoridades decidieron
-										contactarse con el Profesor Manuel León
-										Alva.
+										La dirección de la Banda Universitaria de Música, es el resultado de un proceso ordenado y meticuloso. Sus antecedentes más remotos los encontramos en julio de 1996, cuando la UNMSM participó en el gran desfile de Fiestas Patrias. En aquel momento las autoridades de nuestra casa de estudios se percataron de que la universidad carecía de una banda de música, que antecediera la gallarda marcha del contingente sanmarquino. Por lo que consideraron importante que, la Decana de América contara con una agrupación propia. Fue por eso que, a inicios del año 1997, nuestras autoridades decidieron contactarse con el profesor Manuel León Alva.
 									</p>
 									<p className="mb-5">
-										A este destacado músico, arreglista,
-										compositor y experimentado conductor de
-										bandas y agrupaciones orquestales se le
-										encargó la elaboración del “Proyecto de
-										la Banda de Música de la UNMSM”, el
-										mismo que fue sustentado y aprobado en
-										mayo de aquel año convirtiéndose este en
-										su primer director. De este modo, fue
-										que se iniciaron las gestiones
-										comerciales a fin de adquirir los
-										mejores instrumentos musicales del
-										mercado estadounidense. Acto seguido se
-										realizó una gran convocatoria dirigida a
-										toda la comunidad sanmarquina que atrajo
-										a un conjunto de 180 alumnos, 120 de los
-										cuales comenzaron días después los
-										ensayos con el Profesor León. No
-										obstante, la falta de instrumentos -los
-										cuales recién llegaron al Perú el 23 de
-										julio de aquel año- los ensayos se
-										realizaron con instrumentos que fueron
-										prestados a la Banda Universitaria de
-										Música de San Marcos, gracias a las
-										gestiones del Director de la Banda.
+										A este destacado músico, arreglista, compositor y experimentado conductor de bandas y agrupaciones orquestales se le encargó la elaboración del “Proyecto de la Banda de Música de la UNMSM”, el mismo que fue sustentado y aprobado en mayo de aquel año, convirtiéndose el maestro León en su primer director. Posteriormente, se iniciaron las gestiones para adquirir los mejores instrumentos musicales del mercado estadounidense y se realizó una gran convocatoria dirigida a toda la comunidad sanmarquina, en la cual participó un conjunto de 180 alumnos, llegando a consolidarse 120 de ellos, en los ensayos, teniendo que realizar sus primeros ensayos con instrumentos prestados, hasta que llegaron los implementos solicitados.
 									</p>
 								</div>
 								<div>
@@ -99,66 +59,10 @@ export default function BandaUniversitariaHistoria() {
 								</div>
 								<div>
 									<p className="mb-5">
-										En 1999, nuestra banda de música llegó a
-										ser considerada modelo en su género. La
-										meta proyectada empezó con bríos y buen
-										desempeño sin embargo estaban
-										proyectados otros logros adicionales. En
-										1999 se formó el elenco de la BIG BAND
-										de la UNMSM la cual logró un éxito
-										rotundo con el extenso repertorio de
-										música que abarcaba con géneros como el
-										fox trox, danzones, boleros, sones,
-										cha-cha-chas, swing, etc. además de los
-										géneros de moda de ese momento.
+										En 1999, la banda de música de la UNMSM llegó a ser considerada modelo en su género. La meta proyectada empezó con bríos y buen desempeño, sin embargo, faltaban concretarse algunos logros adicionales. Es por ello, que en 1999 se formó el elenco de la Big Band de la UNMSM, la cual logró tener un éxito rotundo con el extenso repertorio de música de diversos géneros de moda de ese momento. Posteriormente, en el año 2000 se logró la creación de otros elencos que conforman la Dirección de Banda y Orquesta, estos fueron: la Orquesta Internacional, el Grupo de Jazz Contempo y la Farandola.
 									</p>
 									<p className="mb-5">
-										En el año 2000 se logró adquirir todos
-										los módulos de audio, los cuales
-										formarían parte de las Salas de Estudio
-										y Grabación, respectivamente. Luego
-										vendría la creación de otros elencos que
-										conforman la Dirección de Banda y
-										Orquesta, estos fueron: la Orquesta
-										Internacional, el Grupo de Jazz Contempo
-										y la Farandola. Quedando un plan maestro
-										para el engrandecimiento de la unidad.
-									</p>
-									<p className="mb-5">
-										La banda desde su fundación a través de
-										todos estos años es un soporte musical
-										para las diferentes actividades
-										académicas, culturales, deportivas y
-										protocolares tanto en el ámbito
-										universitario como para instituciones
-										del ámbito externo.
-									</p>
-									<p className="mb-5">
-										La banda es un elenco vivo de San Marcos
-										y durante toda su trayectoria de sus
-										integrantes la gran mayoría son miembros
-										de la comunidad sanmarquina y además de
-										los alumnos de talleres dirigidos al
-										público en general.
-									</p>
-									<p className="mb-5">
-										Desde el mes de setiembre del año 2018,
-										esta dependencia tiene como Director al
-										destacado músico Juan Carlos Rodríguez
-										Pomar, siguiendo con su labor de
-										difusión cultural para brindar servicios
-										a todos los grupos interesados en la
-										música, así como el descubrimiento de
-										nuevos talentos.
-									</p>
-									<p className="mb-5">
-										A partir de 2019 la Banda Universitaria
-										de San Marcos realizó presentaciones en
-										diferentes teatros como “Ella Dunbar”
-										UNMSM, en la plaza de armas en tiempos
-										de navidad, teatro de la UNI y en
-										diferentes ceremonias protocolares y
-										actividades de la universidad.
+										La banda desde su fundación a través de estos años, se ha convertido en un soporte musical para las diferentes actividades académicas, culturales, deportivas y protocolares tanto en el ámbito universitario como para instituciones del ámbito externo. Siendo un elenco vivo de San Marcos y durante toda la trayectoria de los integrantes que la han conformado, en su gran mayoría son miembros de la comunidad sanmarquina y alumnos de los talleres.
 									</p>
 								</div>
 								<div>
@@ -174,29 +78,11 @@ export default function BandaUniversitariaHistoria() {
 								</div>
 								<div>
 									<p className="mb-5">
-										Contamos con capacitaciones, festivales,
-										clases maestras con diferentes artistas
-										internacionales y nacionales.
+										Continuando con su labor de difusión cultural para brindar servicios a todos los grupos interesados en la música, así como el descubrimiento de nuevos talentos, la Banda Universitaria de Música ha realizado diversas presentaciones en ceremonias protocolares, eventos académicos y culturales, en lugares importantes como: el Auditorio “Ella Dunbar” de nuestra alma máter, en el Teatro de la Universidad Nacional de Ingeniería, el Gran Teatro Nacional, Plaza de Armas de Lima, entre otros escenarios de la ciudad.
 									</p>
 									<p className="mb-5">
-										Talleres de música donde los estudiantes
-										descubran sus dones y talentos.
+										Asimismo, como actividades de nivel académico esta dependencia del Centro Cultural de San Marcos dicta talleres al público en general desde el nivel básico al avanzando, en los diferentes instrumentos musicales de viento-madera, viento-metales, cuerdas, producción musical, órgano electrónico y percusión, así también se realizan festivales de música, cursos de capacitación docente, clases maestras con artistas nacionales e internacionales.
 									</p>
-									<p className="mb-1">
-										Actualmente se cuenta con diferentes
-										elencos:
-									</p>
-									<ul className="list-none">
-										<li>San Marcos Big Band</li>
-										<li>
-											Banda Universitaria de San marcos
-										</li>
-										<li>
-											Ensambles de profesores y
-											estudiantes (MPP) significa Música
-											popular peruana.
-										</li>
-									</ul>
 								</div>
 							</div>
 						</div>
