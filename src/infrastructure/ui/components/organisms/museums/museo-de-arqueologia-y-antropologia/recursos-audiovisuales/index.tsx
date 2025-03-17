@@ -3,7 +3,7 @@ import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/externa
 import Image from 'next/image';
 import React from 'react';
 
-const RecursosVisuales = () => {
+const RecursosAudiovisuales = () => {
 	return (
 		<>
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
@@ -184,4 +184,4 @@ const RecursosVisuales = () => {
 	);
 };
 
-export default RecursosVisuales;
+export default RecursosAudiovisuales;
