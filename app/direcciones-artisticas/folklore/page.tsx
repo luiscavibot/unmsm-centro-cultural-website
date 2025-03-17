@@ -64,36 +64,13 @@ export default function Folklore() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Centro Universitario de Folklore (CUF) es
-									una dependencia del Centro Cultural de la
-									Universidad Nacional Mayor de San Marcos
-									dedicada al trabajo exclusivo en el tema de
-									las expresiones culturales de nuestro país
-									en materia de música y danza.
+									El Centro Universitario de Folklore (CUF) es una dependencia del Centro Cultural de la Universidad Nacional Mayor de San Marcos dedicada al trabajo exclusivo en el tema de las expresiones culturales de nuestro país en materia de la música y danza tradicional.
 								</p>
 								<p className="mb-5">
-									El CUF este 2024, cuenta ya 54 años de arduo
-									trabajo por la diversidad cultural del país.
-									Este tiempo ha servido para
-									institucionalizar la música y danza
-									folklórica en la vida universitaria, con lo
-									que se rescata elementos fundamentales de
-									nuestra cultura andina aquí contenidos: la
-									reciprocidad, la colectividad, el ayni,
-									entre otros. Estos valores se desarrollan en
-									experiencias cotidianas entre nuestros
-									integrantes sanmarquinos, quienes los
-									proyectan a la comunidad en general.
+									El CUF este 2025, cuenta ya 55 años de arduo trabajo por la diversidad cultural del país. Este tiempo ha servido para institucionalizar la música y danza folklórica en la vida universitaria y ser referente a nivel nacional, con este trabajo se rescata elementos fundamentales de nuestra cultura andina aquí contenidos: la reciprocidad, la colectividad, el ayni, entre otros. Estos valores se desarrollan en experiencias cotidianas entre nuestros integrantes sanmarquinos, quienes los proyectan a la comunidad en general.
 								</p>
 								<p className="mb-5">
-									El Centro Universitario de Folklore tiene
-									constituida una Escuela de Capacitación en
-									danza folklórica y siete elencos artísticos
-									que desarrollan espectáculos de música y
-									danza de alto nivel, con los que se proyecta
-									a la comunidad y a la vez aporta al estudio,
-									promoción y difusión de las costumbres
-									populares de nuestro país.
+									El Centro Universitario de Folklore tiene constituida una Escuela de Capacitación Docente en Folklore y siete elencos artísticos que desarrollan espectáculos de música y danza de alto nivel, con los que se proyecta a la comunidad y a la vez aporta al estudio, promoción y difusión de las costumbres populares de nuestro país.
 								</p>
 							</div>
 							<Link
