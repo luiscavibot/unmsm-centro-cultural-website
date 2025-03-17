@@ -101,6 +101,15 @@ const Elencos = () => {
 				handlePrevElencoCaporales={handlePrevElencoCaporales}
 				handleNextElencoCaporales={handleNextElencoCaporales}
 			/>
+			<ElencoJuvenil
+				handleMoveElencoJuvenil={handleMoveElencoJuvenil}
+				splideRefElencoJuvenil={splideRefElencoJuvenil}
+				splideOptions={splideOptions}
+				isPrevDisabledElencoJuvenil={isPrevDisabledElencoJuvenil}
+				isNextDisabledElencoJuvenil={isNextDisabledElencoJuvenil}
+				handlePrevElencoJuvenil={handlePrevElencoJuvenil}
+				handleNextElencoJuvenil={handleNextElencoJuvenil}
+			/>
 			<ElencoInfantil
 				handleMoveElencoInfantil={handleMoveElencoInfantil}
 				splideRefElencoInfantil={splideRefElencoInfantil}
@@ -127,15 +136,6 @@ const Elencos = () => {
 				isNextDisabledConjuntoDeZamponas={isNextDisabledConjuntoDeZamponas}
 				handlePrevConjuntoDeZamponas={handlePrevConjuntoDeZamponas}
 				handleNextConjuntoDeZamponas={handleNextConjuntoDeZamponas}
-			/>
-			<ElencoJuvenil
-				handleMoveElencoJuvenil={handleMoveElencoJuvenil}
-				splideRefElencoJuvenil={splideRefElencoJuvenil}
-				splideOptions={splideOptions}
-				isPrevDisabledElencoJuvenil={isPrevDisabledElencoJuvenil}
-				isNextDisabledElencoJuvenil={isNextDisabledElencoJuvenil}
-				handlePrevElencoJuvenil={handlePrevElencoJuvenil}
-				handleNextElencoJuvenil={handleNextElencoJuvenil}
 			/>
 		</>
 	)

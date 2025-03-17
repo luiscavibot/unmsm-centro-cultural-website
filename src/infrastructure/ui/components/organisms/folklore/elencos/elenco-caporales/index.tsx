@@ -82,15 +82,7 @@ const ElencoCaporales: React.FC<Props> = ({
 					</h3>
 					<div className="font-medium leading-[24px] mt-6">
 						<p>
-							La Comparsa de Caporales de la UNMSM nace en el 2007
-							con el objetivo de promover la difusión de las
-							danzas altiplánicas en espacios culturales de
-							nuestro medio. Desarrolla también danzas denominadas
-							“de luces”, como la diablada, morenada y tinkus. Su
-							desempeño ha generado gran impacto en diversas
-							actividades, tales como pasacalles, corsos,
-							desfiles, entre otros, realizados por diversas
-							entidades públicas y privadas.
+							La Comparsa de Caporales de la UNMSM nace en el 2007 con el objetivo de promover la difusión de las danzas altiplánicas en espacios culturales de nuestro medio. Desarrolla también danzas denominadas “de luces”, como la diablada y morenada. Su desempeño ha generado gran impacto en diversas actividades, tales como pasacalles, corsos, desfiles, entre otros, realizados por diversas entidades públicas y privadas.
 						</p>
 					</div>
 				</div>

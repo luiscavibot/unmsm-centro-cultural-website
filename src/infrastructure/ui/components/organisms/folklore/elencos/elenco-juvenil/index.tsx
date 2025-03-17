@@ -34,9 +34,10 @@ const ElencoJuvenil: React.FC<Props> = ({
 	handleNextElencoJuvenil,
 }) => {
 	return (
-		<div className="px-4 lg:px-[104px] gap-5 bg-blue-2 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-blue.svg')] bg-no-repeat bg-[-123px_10px]">
-			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
-				<div className="max-lg:w-full">
+		// <div className="px-4 lg:px-[104px] gap-5 bg-blue-2 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-blue.svg')] bg-no-repeat bg-[-123px_10px]">
+		<div className="px-4 lg:px-[104px] gap-5 bg-black text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg')] bg-no-repeat bg-[-123px_10px]">
+			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
+				<div className="max-lg:w-full order-2">
 					<Splide
 						onMoved={handleMoveElencoJuvenil}
 						ref={splideRefElencoJuvenil}
@@ -59,7 +60,7 @@ const ElencoJuvenil: React.FC<Props> = ({
 							))}
 						</SplideTrack>
 					</Splide>
-					<div className="flex justify-start gap-x-2 relative mt-4 pointer-events-none">
+					<div className="flex justify-end gap-x-2 relative mt-4 pointer-events-none">
 						<ArrowButton
 							className="pointer-events-auto"
 							theme="light"
