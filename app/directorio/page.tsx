@@ -78,7 +78,9 @@ export default function Directorio() {
 										<td>Mesa de Partes Virtual</td>
 										<td>Lludy Labajos Mesia</td>
 										<td></td>
-										<td className="break-words">mesadepartesvirtual.centrocultural@unmsm.edu.pe</td>
+										<td className="break-words">
+											mesadepartesvirtual.centrocultural@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td></td>
@@ -93,10 +95,12 @@ export default function Directorio() {
 									</tr>
 									<tr>
 										<td>Dirección Ejecutiva</td>
-										<td>Directora</td>
+										<td>Directora </td>
 										<td>Liliana Christina Villanueva Meyhuay</td>
 										<td>5221</td>
-										<td className="break-words">direccion-e.ccsm@unmsm.edu.pe</td>
+										<td className="break-words">
+											direccion-e.ccsm@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td></td>
@@ -114,55 +118,73 @@ export default function Directorio() {
 										<td>Coordinadora</td>
 										<td>Verónika Rodriguez</td>
 										<td></td>
-										<td className="break-words">ballet.ccsm@unmsm.edu.pe</td>
+										<td className="break-words">
+											ballet.ccsm@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td>Banda Universitaria de Música</td>
-										<td>Director</td>
-										<td>Moisés Hospina Zúñiga</td>
 										<td></td>
-										<td className="break-words">bandauniversitaria.ccsm@unmsm.edu.pe</td>
+										<td></td>
+										<td></td>
+										<td className="break-words">
+											bandauniversitaria.ccsm@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td>Biblioteca España de las Artes</td>
-										<td>Directora</td>
-										<td>Jhoana Hancco Teccsirupay</td>
-										<td></td>
-										<td className="break-words">biblioteca.ccsm@unmsm.edu.pe</td>
+										<td>Encargado</td>
+										<td>Elio Obregón</td>
+										<td>5213</td>
+										<td className="break-words">
+											biblioteca.ccsm@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td>Dirección de Cine y Producción Audiovisual</td>
 										<td>Directora</td>
 										<td>Estefanía De Cara</td>
 										<td>5211</td>
-										<td className="break-words">dcpa.centrocultural@unmsm.edu.pe</td>
+										<td className="break-words">
+											dcpa.centrocultural@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td>Centro Universitario de Folklore</td>
 										<td>Director</td>
 										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
-										<td className="break-words">folklore.ccsm@unmsm.edu.pe</td>
+										<td></td>
+										<td className="break-words">
+											folklore.ccsm@unmsm.edu.pe
+											<br />
+											WhatsApp: 951 138 146
+										</td>
 									</tr>
 									<tr>
 										<td>Dirección de Música</td>
+										<td>Encargado</td>
+										<td>José Mendieta Echevarria</td>
 										<td></td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
-										<td className="break-words">direcciondemusica@unmsm.edu.pe</td>
+										<td className="break-words">
+											direcciondemusica@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td>Teatro Universitario de San Marcos</td>
 										<td>Coordinadora</td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
-										<td className="break-words">teatro.ccsm@unmsm.edu.pe</td>
+										<td>Cristina Lozano Cuba</td>
+										<td></td>
+										<td className="break-words">
+											teatro.ccsm@unmsm.edu.pe
+											<br />
+											WhatsApp: 944 780 420
+										</td>
 									</tr>
 									<tr>
 										<td>Dirección de Turismo</td>
 										<td>Coordinador</td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
+										<td>Marco Ernesto Rosales León</td>
+										<td></td>
 										<td className="break-words">
 											turismo.ccsm@unmsm.edu.pe
 											<br />
@@ -172,41 +194,47 @@ export default function Directorio() {
 									<tr>
 										<td>Museo de Arqueología y Antropología</td>
 										<td>Director</td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
+										<td></td>
+										<td>5216</td>
 										<td className="break-words">
 											museoarql.ccsm@unmsm.edu.pe
-											<br />
-											htantaleany@unmsm.edu.pe
 										</td>
 									</tr>
 									<tr>
 										<td>Museo de Arte</td>
 										<td>Directora</td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
-										<td className="break-words">museoarte.ccsm@unmsm.edu.pe</td>
+										<td>Patricia Mondoñedo Murillo</td>
+										<td>5214</td>
+										<td className="break-words">
+											museoarte.ccsm@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td>Dirección de Comunicaciones</td>
 										<td>Director</td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
-										<td className="break-words">prensa.ccsm@unmsm.edu.pe</td>
+										<td>Luís Guerra Núñez</td>
+										<td></td>
+										<td className="break-words">
+											prensa.ccsm@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td>Unidad de Control de Asistencia</td>
 										<td>Jefe(e)</td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
-										<td className="break-words">javier.rodriguez@unmsm.edu.pe</td>
+										<td>Javier Antonio Rodriguez Bustos</td>
+										<td>5208</td>
+										<td className="break-words">
+											javier.rodriguez@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td>Unidad de Servicios Generales</td>
 										<td>Encargado</td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td>Text</td>
-										<td className="break-words">jariasb_ac@unmsm.edu.pe</td>
+										<td>Juan Arias Blanco</td>
+										<td></td>
+										<td className="break-words">
+											jariasb_ac@unmsm.edu.pe
+										</td>
 									</tr>
 								</tbody>
 							</table>
