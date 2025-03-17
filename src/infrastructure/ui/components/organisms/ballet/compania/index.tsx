@@ -7,11 +7,8 @@ const Compania = () => {
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
 				<div className="container">
 					<div className="max-w-[641px] leading-[24px] text-dark-blue-2">
-						<p className="mb-3">
-							La Compañía de Ballet San Marcos es el conjunto de bailarines profesionales contratados por la universidad, encargados de representarla al más alto nivel.
-						</p>
 						<p>
-							Históricamente y hasta la actualidad, es una de las pocas compañías limeñas con un elenco de bailarines contratados dedicados exclusivamente a su labor en danza.
+							La Compañía de Ballet San Marcos está conformada por bailarines profesionales contratados por la Universidad Nacional Mayor de San Marcos, quienes representan a la institución en escenarios nacionales e internacionales. Es una de las pocas compañías limeñas con un elenco estable de bailarines dedicados exclusivamente a su labor artística.
 						</p>
 					</div>
 				</div>
@@ -21,21 +18,31 @@ const Compania = () => {
 					className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative"
 				>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-row gap-9 leading-[24px] font-normal">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[730px] mr-auto h-full text-white flex flex-row gap-9 leading-[24px] font-normal">
 							<div className="basis-1/2">
 								<p className="mb-5">
-									<b>Los bailarines de la compañía profesional entrenan diariamente en el ballet clásico y danza contemporánea.</b> Su rutina continúa con la práctica diaria del repertorio que la agrupación tiene en su haber, nutrido, además, de nuevas creaciones planteadas por coreógrafos de la propia compañía y por colegas nacionales e internacionales invitados.
+									<b>Los integrantes de la compañía entrenan diariamente en danza contemporánea y ballet</b>, complementando su preparación con la exploración de nuevas técnicas y lenguajes escénicos. 
+								</p>
+								<p className="mb-5">
+									Su repertorio está compuesto por creaciones contemporáneas de coreógrafos nacionales e internacionales, quienes han aportado con su visión y estilo a la evolución artística del elenco.
 								</p>
 								<p>
-									<b>El trabajo de la compañía se basa en difundir el arte escénico a través de la danza contemporánea</b>, dando a conocer la expresividad y la trascendencia de esta forma dancística, sus posibilidades comunicativas y expresivas y, de ese modo, sensibilizar al público llevándolo a disfrutar de nuevas sensaciones y experimentaciones.
+									La labor de la compañía se centra en la difusión de la danza contemporánea como una forma de expresión y comunicación. A través de sus presentaciones, busca generar experiencias sensibles y reflexivas en el público, acercándolo a diversas formas de experimentación escénica.
 								</p>
 							</div>
 							<div className="basis-1/2">
 								<p className="font-bold mb-5">Principales actividades</p>
-								<ul className="list-outside list-disc pl-6 space-y-5">
-									<li><b>Difusión para niños y jóvenes, mediante funciones didácticas</b> donde el público puede participar activamente en cada sesión</li>
-									<li><b>Realización de funciones artísticas en auditorios y teatros nacionales y extranjeros</b> y el intercambio con artistas de danza de diversos países, introduciendo recientes técnicas y elementos del lenguaje dancístico contemporáneo. Cada una de las presentaciones de la compañía profesional lleva el sello de calidad y excelencia que han plasmado sus directores y maestros de danza y que, en la actualidad, se mantiene en base a trabajo y exigencia diaria.</li>
+								<ul className="list-outside list-disc pl-6 space-y-5 mb-5">
+									<li><b>Funciones didácticas dirigidas a niños y jóvenes</b>, fomentando la apreciación de la danza a través de la participación activa del público.</li>
+									<li><b>Presentaciones en teatros y auditorios dentro y fuera del país</b>, fortaleciendo el intercambio con artistas y compañías internacionales.</li>
+									<li><b>Residencias y colaboraciones con coreógrafos invitados</b>, lo que permite la incorporación de nuevas propuestas escénicas y el enriquecimiento del repertorio.</li>
 								</ul>
+								<p className="mb-5">
+									Cada función de la Compañía de Ballet San Marcos refleja la dedicación y excelencia que han caracterizado su trayectoria, manteniendo un alto nivel artístico gracias al trabajo constante de sus directores y maestros.
+								</p>
+								<p>
+									Actualmente, la coordinación de la Compañía de Ballet San Marcos está a cargo de Juan Salas Ariza y Raúl Trujillo Silva, bailarines de la propia compañía, quienes contribuyen a la gestión y desarrollo artístico del elenco.
+								</p>
 							</div>
 						</div>
 
