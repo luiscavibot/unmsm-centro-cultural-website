@@ -41,11 +41,7 @@ const ElencoDeMarinera: React.FC<Props> = ({
 						Elenco de Marinera de la Universidad Nacional Mayor de San Marcos
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
-						Basado en el clásico de Cervantes, este ballet sigue las
-						aventuras de Basilio y Quiteria (Kitri), una pareja de
-						amantes que desafía a sus familias para estar juntos. Es
-						una obra vibrante, llena de energía, color y virtuosismo
-						técnico.
+						Esta agrupación se formó en el año 2009, proyectándose desde ahí a la búsqueda de objetivos artísticos para el Centro Universitario de Folklore. Uno de los principales fue la realización de los Concursos Nacionales de Marinera Norteña “San Marcos”. Desde su primera edición, llevada a cabo en el 2010, este certamen es considerado por muchos críticos y conocedores como uno de los mejores a nivel nacional. Así se inició un nuevo camino pensado en el posicionamiento de este nuevo elenco del CUF, que obtiene un significativo crecimiento gracias a diversas presentaciones a nivel local y numerosas presentaciones en diversas ciudades, tales como Mala (Lima), Yungay (Áncash), entre otros escenarios. Su relevancia nacional se encumbra en el año 2014 con su participación en el Concurso Nacional de Marinera en la ciudad de Trujillo, donde obtuvo el segundo lugar con una puesta en escena de homenaje a los profesionales de la medicina peruana.
 					</p>
 				</div>
 				<div className="max-lg:w-full">
