@@ -34,29 +34,10 @@ export default function BandaUniversitaria() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									La Banda Universitaria de Música es una
-									unidad artística, cultural, y protocolar de
-									la Universidad Nacional Mayor de San Marcos.
-									En este sentido, se constituye en la
-									actualidad en una de las dependencias que
-									forman parte del Centro Cultural de San
-									Marcos.
+									La Banda Universitaria de Música es una unidad artística, cultural, y protocolar de la Universidad Nacional Mayor de San Marcos (UNMSM). Se constituye hoy en día, como una de las dependencias que forma parte del Centro Cultural de San Marcos.
 								</p>
 								<p>
-									Su creación se remonta al año 1996, cuando
-									las autoridades sanmarquinas concibieron la
-									idea de dotar a nuestra universidad con una
-									banda de música, con la finalidad de que
-									esta agrupe a los alumnos sanmarquinos
-									interesados en este rubro y así, el conjunto
-									pueda participar en los actos protocolares e
-									invitaciones oficiales de diversa índole. En
-									la actualidad, la Banda Universitaria de
-									Música realiza diversos proyectos artísticos
-									que permiten llevar espectáculos de calidad
-									al público en general, ejemplos de estos son
-									Salsa Urbana, Boleros y Sones, El show del
-									adulto mayor, entre otros.
+									Su creación se remonta al año 1996, cuando las autoridades sanmarquinas concibieron la idea de dotar a nuestra universidad con una banda de música, con la finalidad de que ésta agrupe a los alumnos sanmarquinos interesados en este rubro y que el conjunto pueda participar en los actos protocolares e invitaciones oficiales de diversa índole. En la actualidad, la Banda Universitaria de Música realiza diversos proyectos artísticos que permiten llevar espectáculos de calidad al público sanmarquino y a la comunidad en general.
 								</p>
 							</div>
 							<Link
