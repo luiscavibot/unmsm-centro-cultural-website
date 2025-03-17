@@ -278,12 +278,12 @@ export default function MuseoDeArteDeSanMarcos() {
 									handleClick('centro-de-documentacion');
 								}}
 							/>
-							<Tab
+							{/* <Tab
 								label="Galería"
 								icon={<ExternalLinkIcon className="w-4 h-4 mb-[1px]" />}
 								type="external-link"
 								link="https://www.flickr.com/people/190570086@N08/"
-							/>
+							/> */}
 							<Tab
 								label="Visítanos"
 								icon={<TicketIcon />}
