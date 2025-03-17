@@ -1,6 +1,11 @@
 'use client';
 
 import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
+import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
+import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
+import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
+import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
+import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
 import Tab from '@/infrastructure/ui/components/atoms/tab';
 import Title from '@/infrastructure/ui/components/atoms/title';
 import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
@@ -79,6 +84,91 @@ export default function Folklore() {
 							>
 								Conoce la historia
 							</Link>
+							<div className="max-w-[639px] mx-auto mt-14">
+								<div className="leading-[24px] space-y-1 text-dark-blue-2">
+									<div className="flex p-1 gap-2 items-start">
+										<OutlinePlaceIcon
+											className="shrink-0 mt-[2px]"
+											ariaLabel="Lugar"
+											color="dark"
+										/>
+										<div>
+											<p className="font-bold">Lugar</p>
+											<p className="font-medium">
+												Centro cultural UNMSM
+												<br />
+												Av. Nicolás de Piérola 1222.
+												Parque Universitario. Centro
+												Histórico de Lima
+											</p>
+										</div>
+									</div>
+									<div className="flex p-1 gap-2 items-start">
+										<ClockIcon
+											className="shrink-0 mt-[2px]"
+											ariaLabel="Horario"
+											color="dark"
+										/>
+										<div>
+											<p className="font-bold">Horario de atención en oficina</p>
+											<p className="font-medium">
+												Lunes a viernes de 8 a.m. a 1 p.m. y de 2 a 7 p.m.
+												<br />
+												Sábados de 9:30 a.m. a 1 p.m.
+											</p>
+										</div>
+									</div>
+									<div className="flex p-1 gap-2 items-start">
+										<OutlineEmailIcon
+											className="shrink-0 mt-[2px]"
+											ariaLabel="Contacto"
+											color="dark"
+										/>
+										<div>
+											<p className="font-bold">
+												Contacto
+											</p>
+											<p className="font-medium">
+												folklore.ccsm@unmsm.edu.pe
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className="flex flex-row items-center gap-2 mt-5 ml-7">
+									<a
+										className="p-1 rounded-[4px] bg-dark-gray-2"
+										href="https://www.instagram.com/folklore.unmsm/"
+										rel="noreferrer noopener"
+										target="_blank"
+									>
+										<InstagramIcon />
+									</a>
+									<a
+										className="p-1 rounded-[4px] bg-dark-gray-2"
+										href="https://www.facebook.com/folklore.unmsm/?locale=es_LA"
+										rel="noreferrer noopener"
+										target="_blank"
+									>
+										<FacebookIcon />
+									</a>
+									{/* <a
+										className="p-1 rounded-[4px] bg-dark-gray-2"
+										href="https://www.tiktok.com/@museoarte.unmsm"
+										rel="noreferrer noopener"
+										target="_blank"
+									>
+										<TiktokIcon />
+									</a> */}
+									{/* <a
+										className="p-1 rounded-[4px] bg-dark-gray-2"
+										href=""
+										rel="noreferrer noopener"
+										target="_blank"
+									>
+										<YoutubeIcon />
+									</a> */}
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
