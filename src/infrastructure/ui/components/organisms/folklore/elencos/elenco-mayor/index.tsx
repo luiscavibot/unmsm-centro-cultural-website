@@ -38,19 +38,7 @@ const ElencoMayor: React.FC<Props> = ({
 						Elenco de Danzas de la Universidad Nacional Mayor de San Marcos
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
-						El Elenco Mayor de Danzas es la unidad artística
-						representativa del Centro Universitario de Folklore en
-						materia de danza. Sus inicios data de 1970, desde la
-						conformación misma del CUF y sus integrantes son
-						escogidos en su totalidad de las diferentes facultades
-						de la UNMSM. Este elenco representa oficialmente a la
-						Decana de América en diversos eventos a los que se le
-						invita, siempre con gran calidad interpretativa y gran
-						reconocimiento del público. Se torna además en un
-						colectivo de gran integración profesional y cultural,
-						donde se busca también complementar la formación
-						profesional e integral de sus miembros con las virtudes
-						y valores de la danza folklórica peruana.
+						El Elenco Mayor de Danzas es la unidad artística representativa de la universidad en materia de danza. Sus inicios data de 1970, desde la conformación misma del CUF y sus integrantes son escogidos en su totalidad de las diferentes facultades de la UNMSM. Este elenco representa oficialmente a la Decana de América en diversos eventos a los que se le invita, siempre con gran calidad interpretativa y gran reconocimiento del público. Se torna además en un colectivo de gran integración profesional y cultural, donde se busca también complementar la formación profesional e integral de sus miembros con las virtudes y valores de la danza folklórica peruana.
 					</p>
 				</div>
 				<div className="max-lg:w-full">
