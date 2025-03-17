@@ -49,14 +49,14 @@ const Footer: React.FC = () => (
 					</div>
 				</div>
 				<div className="max-w-[386px] leading-[16.8px] flex flex-col gap-y-8">
-					<div>
+					{/* <div>
 						<p className="text-[15px] lg:text-base font-bold">Ubicación:</p>
 						<p className="text-sm lg:text-base">
 							Av. Nicolás de Piérola #1222
 							<br />
 							Parque Universitario, Centro Histórico de Lima
 						</p>
-					</div>
+					</div> */}
 					<address className="space-y-4 text-xs lg:text-sm not-italic">
 						<p className="flex items-baseline gap-2">
 							<BaselinePlaceIcon className="shrink-0 relative top-1" ariaLabel="Ubicación" color="white" />
