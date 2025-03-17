@@ -7,7 +7,7 @@ import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
 // import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
 import Image from 'next/image';
-import { exposicionesTemporalesData } from '@/infrastructure/ui/data/museums/exposiciones/exposiciones-temporales-data';
+import { exposicionesTemporalesMuseoArtesData } from '@/infrastructure/ui/data/museums/exposiciones/exposiciones-temporales-museo-arte-data';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -43,7 +43,7 @@ const ExposicionesTemporales: React.FC<Props> = ({
 						options={splideOptions}
 					>
 						<SplideTrack>
-							{exposicionesTemporalesData.map((img, index) => (
+							{exposicionesTemporalesMuseoArtesData.map((img, index) => (
 								<SplideSlide key={index}>
 									<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
