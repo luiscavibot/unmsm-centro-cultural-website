@@ -64,25 +64,19 @@ export default function Ballet() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									A lo largo de sus 59 años de trayectoria, la
-									compañía ha sido pionera en integrar el
-									ballet clásico y la danza contemporánea en
-									su repertorio, promoviendo la investigación
-									artística y colaborando con reconocidos
-									coreógrafos nacionales e internacionales.
-									Además, ha expandido su impacto más allá de
-									los auditorios universitarios, llevando el
-									arte de la danza a comunidades en diversos
-									distritos y ofreciendo talleres accesibles
-									para todas las edades y niveles.
+									El Ballet San Marcos es la primera compañía profesional de danza establecida en el Perú y en la Universidad Nacional Mayor de San Marcos. Fundado en 1964 bajo la rectoría del Dr. Luis Alberto Sánchez, su creación se formalizó mediante la Resolución Rectoral 22024, marcando un hito en la historia de la danza en el país.
+								</p>
+								<p className="mb-5">
+									Desde sus inicios, la compañía ha promovido la excelencia artística con una sólida labor de investigación y renovación del patrimonio dancístico peruano. Inicialmente orientado al ballet clásico bajo la dirección del bailarín francés Roger Fenonjois, estrella de la Ópera de París, en 1972 la dirección pasó a la maestra Vera Stastny, formada en el Royal Ballet de Londres, quien incorporó la danza contemporánea como parte del entrenamiento de la compañía y el currículo de la escuela.
+								</p>
+								<p className="mb-5">
+									Actualmente, el Ballet San Marcos cuenta con una Coordinación General a cargo de Verónika Rodríguez Trujillo, quien ha impulsado una nueva etapa en la compañía, enfocada en ampliar el desarrollo de la danza contemporánea en el país. Desde esta gestión, se han generado espacios de apertura para más agrupaciones de danza contemporánea, promoviendo el intercambio y la colaboración artística. Asimismo, se ha fortalecido el trabajo en alianzas estratégicas con instituciones dedicadas a la danza contemporánea, consolidando al Ballet San Marcos como un referente en el sector.
+								</p>
+								<p className="mb-5">
+									El Ballet San Marcos está conformado por una compañía de danza contemporánea, un grupo de investigación y una escuela de danza. En esta etapa, la compañía ha logrado una mayor proyección a nivel nacional e internacional, con presentaciones en diversos escenarios que amplían su alcance y fortalecen su impacto en la escena dancística. Por su parte, la escuela ha consolidado su programa de formación y ha potenciado las oportunidades de sus estudiantes, brindándoles mayor acceso a clases maestras y presentaciones en escenarios, lo que contribuye significativamente a su formación y desarrollo en la danza.
 								</p>
 								<p>
-									El Ballet San Marcos no solo representa una
-									rica tradición de excelencia artística, sino
-									también una apuesta por el desarrollo
-									cultural, social y académico, reafirmando el
-									papel de la danza como un lenguaje universal
-									y esencial en la evolución del ser humano.
+									Con más de 60 años de trayectoria, el Ballet San Marcos reafirma su compromiso con la innovación, la formación y la difusión de la danza, consolidándose como un espacio clave para el crecimiento de la danza contemporánea en el Perú y en el ámbito internacional.
 								</p>
 							</div>
 							<Link
