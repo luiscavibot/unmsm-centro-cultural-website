@@ -42,12 +42,16 @@ const Servicios = () => {
 								</ul>
 								<div className="mt-8 bg-dark-red-3 rounded-2xl p-6">
 									<p className="font-bold">Carné de lector anual:</p>
-									<ul className="list-outside list-disc pl-6">
+									<ul className="list-outside list-disc pl-6 mb-3">
 										<li>Público en general: S/30.00</li>
 										<li>Escolares: S/. 5.00</li>
-										<li>Pase temporal: S/.1.00</li>
-										<li>Comunidad sanmarquina: Ingreso libre</li>
 									</ul>
+									<p className="font-bold">Pase temporal diario:</p>
+									<ul className="list-outside list-disc pl-6 mb-3">
+										<li>General: S/1.00</li>
+									</ul>
+									<p className="font-bold">Comunidad Sanmarquina:</p>
+									<p>Ingreso libre presentando carné de estudiante o de la Biblioteca Central</p>
 								</div>
 							</div>
 						</div>
