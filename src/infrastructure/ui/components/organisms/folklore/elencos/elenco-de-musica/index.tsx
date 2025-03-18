@@ -73,7 +73,7 @@ const ElencoDeMusica: React.FC<Props> = ({
 						/>
 					</div>
 				</div>
-				<div className="max-w-[394px] mt-0 lg:mt-10">
+				<div className="max-w-[394px]">
 					<h3 className="text-[32px] leading-[normal] font-semibold">
 						Elenco de Música de la Universidad Nacional Mayor de San Marcos
 					</h3>

@@ -78,7 +78,7 @@ const Exposiciones = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-black text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg')] bg-no-repeat bg-[-123px_10px]">
 				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
-					<div className="max-w-[394px] mt-0 lg:mt-10">
+					<div className="max-w-[394px]">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Exposición permanente
 						</span>
@@ -177,7 +177,7 @@ const Exposiciones = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-4.svg')] bg-no-repeat bg-[-123px_10px]">
 				<div id="test" className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
-					<div className="max-w-[394px] mt-0 lg:mt-10 order-2">
+					<div className="max-w-[394px] order-2">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Exposición finalizada
 						</span>
@@ -281,7 +281,7 @@ const Exposiciones = () => {
 							/>
 						</div>
 					</div>
-					<div className="max-w-[394px] mt-0 lg:mt-10 order-2 lg:order-1">
+					<div className="max-w-[394px] order-2 lg:order-1">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Eventos
 						</span>

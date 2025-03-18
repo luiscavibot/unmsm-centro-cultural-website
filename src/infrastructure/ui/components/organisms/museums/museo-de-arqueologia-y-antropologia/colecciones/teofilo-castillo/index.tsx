@@ -71,7 +71,7 @@ const TeofiloCastillo: React.FC<Props> = ({
 						/>
 					</div>
 				</div>
-				<div className="max-w-[394px] mt-0 lg:mt-10">
+				<div className="max-w-[394px]">
 					<span className="text-sm font-semibold mb-1 inline-block">
 						Colección
 					</span>
