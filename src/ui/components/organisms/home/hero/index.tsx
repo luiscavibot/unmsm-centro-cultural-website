@@ -1,17 +1,12 @@
 'use client';
 
-import Image from 'next/image';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import Image from 'next/image';
+import { Splide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
 import React from 'react';
-import { PrincipalCoversPresenterResp } from '@/adapters/presenters/principal-covers/principal-covers.presenter';
 
-interface HeroProps {
-	images: PrincipalCoversPresenterResp[];
-}
-
-const Hero: React.FC<HeroProps> = ({ images }) => {
+const Hero: React.FC<any> = () => {
 	return (
 		<>
 			<div className="relative overflow-hidden">
@@ -42,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ images }) => {
 							},
 						}}
 					>
-						{images.map((imagen, index) => (
+						{/* {images.map((imagen, index) => (
 							<SplideSlide className="!h-full" key={index}>
 								<Image
 									src={imagen.url}
@@ -54,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ images }) => {
 									sizes="100vw"
 								/>
 							</SplideSlide>
-						))}
+						))} */}
 					</Splide>
 				</div>
 				<div className="bg-gradiente-carrusel-portada lg:bg-gradiente-carrusel-portada-lg opacity-40 absolute w-full h-full inset-0"></div>
