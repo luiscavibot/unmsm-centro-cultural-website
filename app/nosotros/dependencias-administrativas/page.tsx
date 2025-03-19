@@ -34,8 +34,7 @@ export default function DependenciasAdministrativas() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Centro Cultural de la Universidad
-									Nacional Mayor de San Marcos (UNMSM) es un
+									El Centro Cultural de San Marcos es un
 									punto de encuentro para la difusión del
 									arte, la historia y la cultura. Sus diversas
 									dependencias ofrecen espacios dedicados al

@@ -64,8 +64,7 @@ export default function Folklore() {
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
 									El Centro Universitario de Folklore (CUF) es
-									una dependencia del Centro Cultural de la
-									Universidad Nacional Mayor de San Marcos
+									una dependencia del Centro Cultural de San Marcos
 									dedicada al trabajo exclusivo en el tema de
 									las expresiones culturales de nuestro país
 									en materia de la música y danza tradicional.
@@ -113,7 +112,7 @@ export default function Folklore() {
 										<div>
 											<p className="font-bold">Lugar</p>
 											<p className="font-medium">
-												Centro cultural UNMSM
+												Centro Cultural de San Marcos
 												<br />
 												Av. Nicolás de Piérola 1222.
 												Parque Universitario. Centro
@@ -197,8 +196,7 @@ export default function Folklore() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural San
-								Marcos
+								Explora y aprende en el Centro Cultural de San Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y

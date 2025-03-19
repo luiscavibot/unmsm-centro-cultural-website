@@ -241,8 +241,7 @@ export default function CasonaDeSanMarcos() {
 												Centro Cultural de San Marcos:
 											</span>{' '}
 											Hoy en día, La Casona alberga el
-											Centro Cultural de la Universidad de
-											San Marcos, donde se realizan
+											Centro Cultural de San Marcos, donde se realizan
 											actividades culturales,
 											exposiciones, y eventos académicos.
 										</p>

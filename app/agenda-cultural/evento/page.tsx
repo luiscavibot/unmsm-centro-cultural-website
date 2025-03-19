@@ -94,7 +94,7 @@ export default function Evento() {
 									</span>
 								</div>
 								<p className="pl-5 font-medium leading-[21px] text-sm">
-									Centro cultural UNMSM
+									Centro Cultural de San Marcos
 								</p>
 							</div>
 						</div>

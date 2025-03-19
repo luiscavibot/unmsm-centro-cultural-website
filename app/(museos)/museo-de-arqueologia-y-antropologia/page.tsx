@@ -150,7 +150,7 @@ export default function MuseoDeArteDeSanMarcos() {
 										<div>
 											<p className="font-bold">Lugar</p>
 											<p className="font-medium">
-												Centro cultural UNMSM
+												Centro Cultural de San Marcos
 												<br />
 												Av. Nicolás de Piérola 1222.
 												Parque Universitario. Centro
