@@ -8,7 +8,6 @@ import TiktokIcon from '@/ui/components/atoms/icons/social/tiktok-icon';
 import YoutubeIcon from '@/ui/components/atoms/icons/social/youtube-icon';
 import BaselinePlaceIcon from '@/ui/components/atoms/icons/baseline-place-icon';
 import PhoneIcon from '@/ui/components/atoms/icons/phone-icon';
-import BaselineEmailIcon from '@/ui/components/atoms/icons/baseline-email-icon';
 import {
 	FACEBOOK_URL,
 	INSTAGRAM_URL,
