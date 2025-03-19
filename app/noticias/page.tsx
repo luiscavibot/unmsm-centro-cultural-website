@@ -1,23 +1,23 @@
 'use client';
 
-import Title from '@/infrastructure/ui/components/atoms/title';
-import NewsCard from '@/infrastructure/ui/components/molecules/news-card';
+import Title from '@/ui/components/atoms/title';
+import NewsCard from '@/ui/components/molecules/news-card';
 import React, { useRef, useState } from 'react';
-import NewsDataToHome from '@/infrastructure/ui/mocks/news-data-to-home';
-import ArrowDropdownIcon from '@/infrastructure/ui/components/atoms/icons/arrow-dropdown-icon';
-import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button';
-import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button';
-import Checkbox from '@/infrastructure/ui/components/atoms/inputs/checkbox';
-import Pagination from '@/infrastructure/ui/components/molecules/pagination';
-import Search from '@/infrastructure/ui/components/atoms/inputs/search';
+import NewsDataToHome from '@/ui/mocks/news-data-to-home';
+import ArrowDropdownIcon from '@/ui/components/atoms/icons/arrow-dropdown-icon';
+import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
+import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
+import Checkbox from '@/ui/components/atoms/inputs/checkbox';
+import Pagination from '@/ui/components/molecules/pagination';
+import Search from '@/ui/components/atoms/inputs/search';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
-import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
-import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
-import FeaturedNewsCard from '@/infrastructure/ui/components/molecules/featured-news-card';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import useSplideControls from '@/ui/hooks/useSplideControls';
+import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
+import FeaturedNewsCard from '@/ui/components/molecules/featured-news-card';
+import Layout from '@/ui/components/organisms/shared/layout';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;

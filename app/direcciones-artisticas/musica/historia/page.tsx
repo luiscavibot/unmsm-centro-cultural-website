@@ -1,6 +1,6 @@
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 // import Image from 'next/image';
 import React from 'react';
 

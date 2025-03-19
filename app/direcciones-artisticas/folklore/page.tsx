@@ -1,33 +1,27 @@
 'use client';
 
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
-import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
-import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
-import Tab from '@/infrastructure/ui/components/atoms/tab';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import OutlineEmailIcon from '@/ui/components/atoms/icons/outline-email-icon';
+import FacebookIcon from '@/ui/components/atoms/icons/social/facebook-icon';
+import InstagramIcon from '@/ui/components/atoms/icons/social/instagram-icon';
+import Tab from '@/ui/components/atoms/tab';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import Link from 'next/link';
 import React, { Suspense, useState } from 'react';
 
 const tabs = {
 	elencos: React.lazy(
-		() =>
-			import('@/infrastructure/ui/components/organisms/folklore/elencos')
+		() => import('@/ui/components/organisms/folklore/elencos')
 	),
 	publicaciones: React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/folklore/publicaciones'
-			)
+		() => import('@/ui/components/organisms/folklore/publicaciones')
 	),
 	'escuela-para-formadores': React.lazy(
 		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/folklore/escuela-para-formadores'
-			)
+			import('@/ui/components/organisms/folklore/escuela-para-formadores')
 	),
 } as const;
 
@@ -69,13 +63,37 @@ export default function Folklore() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Centro Universitario de Folklore (CUF) es una dependencia del Centro Cultural de la Universidad Nacional Mayor de San Marcos dedicada al trabajo exclusivo en el tema de las expresiones culturales de nuestro país en materia de la música y danza tradicional.
+									El Centro Universitario de Folklore (CUF) es
+									una dependencia del Centro Cultural de la
+									Universidad Nacional Mayor de San Marcos
+									dedicada al trabajo exclusivo en el tema de
+									las expresiones culturales de nuestro país
+									en materia de la música y danza tradicional.
 								</p>
 								<p className="mb-5">
-									El CUF este 2025, cuenta ya 55 años de arduo trabajo por la diversidad cultural del país. Este tiempo ha servido para institucionalizar la música y danza folklórica en la vida universitaria y ser referente a nivel nacional, con este trabajo se rescata elementos fundamentales de nuestra cultura andina aquí contenidos: la reciprocidad, la colectividad, el ayni, entre otros. Estos valores se desarrollan en experiencias cotidianas entre nuestros integrantes sanmarquinos, quienes los proyectan a la comunidad en general.
+									El CUF este 2025, cuenta ya 55 años de arduo
+									trabajo por la diversidad cultural del país.
+									Este tiempo ha servido para
+									institucionalizar la música y danza
+									folklórica en la vida universitaria y ser
+									referente a nivel nacional, con este trabajo
+									se rescata elementos fundamentales de
+									nuestra cultura andina aquí contenidos: la
+									reciprocidad, la colectividad, el ayni,
+									entre otros. Estos valores se desarrollan en
+									experiencias cotidianas entre nuestros
+									integrantes sanmarquinos, quienes los
+									proyectan a la comunidad en general.
 								</p>
 								<p className="mb-5">
-									El Centro Universitario de Folklore tiene constituida una Escuela de Capacitación Docente en Folklore y siete elencos artísticos que desarrollan espectáculos de música y danza de alto nivel, con los que se proyecta a la comunidad y a la vez aporta al estudio, promoción y difusión de las costumbres populares de nuestro país.
+									El Centro Universitario de Folklore tiene
+									constituida una Escuela de Capacitación
+									Docente en Folklore y siete elencos
+									artísticos que desarrollan espectáculos de
+									música y danza de alto nivel, con los que se
+									proyecta a la comunidad y a la vez aporta al
+									estudio, promoción y difusión de las
+									costumbres populares de nuestro país.
 								</p>
 							</div>
 							<Link
@@ -110,9 +128,12 @@ export default function Folklore() {
 											color="dark"
 										/>
 										<div>
-											<p className="font-bold">Horario de atención en oficina</p>
+											<p className="font-bold">
+												Horario de atención en oficina
+											</p>
 											<p className="font-medium">
-												Lunes a viernes de 8 a.m. a 1 p.m. y de 2 a 7 p.m.
+												Lunes a viernes de 8 a.m. a 1
+												p.m. y de 2 a 7 p.m.
 												<br />
 												Sábados de 9:30 a.m. a 1 p.m.
 											</p>

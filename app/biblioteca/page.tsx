@@ -1,41 +1,32 @@
 'use client';
 
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-// import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
-import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
-import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
-// import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
-// import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
-// import TicketIcon from '@/infrastructure/ui/components/atoms/icons/ticket-icon';
-import Tab from '@/infrastructure/ui/components/atoms/tab';
-import Title from '@/infrastructure/ui/components/atoms/title';
-// import Colecciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/colecciones';
-// import Exposiciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones';
-// import Publicaciones from '@/infrastructure/ui/components/organisms/museums/museo-de-arte-de-san-marcos/publicaciones';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+// import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import OutlineEmailIcon from '@/ui/components/atoms/icons/outline-email-icon';
+import FacebookIcon from '@/ui/components/atoms/icons/social/facebook-icon';
+import InstagramIcon from '@/ui/components/atoms/icons/social/instagram-icon';
+// import TiktokIcon from '@/ui/components/atoms/icons/social/tiktok-icon';
+// import YoutubeIcon from '@/ui/components/atoms/icons/social/youtube-icon';
+// import TicketIcon from '@/ui/components/atoms/icons/ticket-icon';
+import Tab from '@/ui/components/atoms/tab';
+import Title from '@/ui/components/atoms/title';
+// import Colecciones from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/colecciones';
+// import Exposiciones from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones';
+// import Publicaciones from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/publicaciones';
+import Layout from '@/ui/components/organisms/shared/layout';
 import React, { Suspense, useState } from 'react';
 
 const tabs = {
 	'biblioteca-virtual': React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/biblioteca/biblioteca-virtual'
-			)
+		() => import('@/ui/components/organisms/biblioteca/biblioteca-virtual')
 	),
 	servicios: React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/biblioteca/servicios'
-			)
+		() => import('@/ui/components/organisms/biblioteca/servicios')
 	),
 	colecciones: React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/biblioteca/colecciones'
-			)
+		() => import('@/ui/components/organisms/biblioteca/colecciones')
 	),
 } as const;
 

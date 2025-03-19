@@ -1,6 +1,6 @@
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import Image from 'next/image';
 import React from 'react';
 
@@ -39,7 +39,21 @@ export default function BalletHistoria() {
 							<div className="leading-[24px] text-dark-blue-2 mb-4 space-y-10">
 								<div>
 									<p className="mb-5">
-										El Ballet San Marcos fue fundado en 1964 por iniciativa de la Universidad Nacional Mayor de San Marcos, convirtiéndose en la primera institución universitaria en el Perú en crear una compañía y una escuela de danza. Bajo la dirección del maestro Roger Fenonjois, de la Ópera de París, se establecieron el Ballet Universitario y el Conservatorio de Danza de San Marcos con el objetivo de ofrecer una formación gratuita y completa a futuros bailarines, además de mantener en actividad un cuerpo de baile profesional.
+										El Ballet San Marcos fue fundado en 1964
+										por iniciativa de la Universidad
+										Nacional Mayor de San Marcos,
+										convirtiéndose en la primera institución
+										universitaria en el Perú en crear una
+										compañía y una escuela de danza. Bajo la
+										dirección del maestro Roger Fenonjois,
+										de la Ópera de París, se establecieron
+										el Ballet Universitario y el
+										Conservatorio de Danza de San Marcos con
+										el objetivo de ofrecer una formación
+										gratuita y completa a futuros
+										bailarines, además de mantener en
+										actividad un cuerpo de baile
+										profesional.
 									</p>
 								</div>
 								<div className="text-right mb-[72px] max-w-[592px] ml-[auto]">
@@ -59,9 +73,28 @@ export default function BalletHistoria() {
 								</div>
 								<div>
 									<p className="mb-5">
-										Desde sus inicios, el Ballet San Marcos se enfocó en el ballet clásico, contando con la guía de destacados maestros que marcaron su desarrollo. Entre ellos, Alexander Plisetski, reconocido pedagogo ruso y exbailarín del Bolshoi, quien aportó con su conocimiento técnico y estilístico en la formación de los bailarines. También fueron fundamentales en esta etapa Rosemary Helliwell, destacada pedagoga en la técnica clásica; Iacob Lascú, maestro rumano con una visión rigurosa de la enseñanza del ballet; y Sara Pardo, importante figura de la danza en el Perú. Otros maestros que contribuyeron con sus enseñanzas al Ballet San Marcos fueron Jane Devonshire, quien dejó su huella en la enseñanza del ballet dentro de la institución.
+										Desde sus inicios, el Ballet San Marcos
+										se enfocó en el ballet clásico, contando
+										con la guía de destacados maestros que
+										marcaron su desarrollo. Entre ellos,
+										Alexander Plisetski, reconocido pedagogo
+										ruso y exbailarín del Bolshoi, quien
+										aportó con su conocimiento técnico y
+										estilístico en la formación de los
+										bailarines. También fueron fundamentales
+										en esta etapa Rosemary Helliwell,
+										destacada pedagoga en la técnica
+										clásica; Iacob Lascú, maestro rumano con
+										una visión rigurosa de la enseñanza del
+										ballet; y Sara Pardo, importante figura
+										de la danza en el Perú. Otros maestros
+										que contribuyeron con sus enseñanzas al
+										Ballet San Marcos fueron Jane
+										Devonshire, quien dejó su huella en la
+										enseñanza del ballet dentro de la
+										institución.
 									</p>
-									
+
 									{/* <p className="mb-5">
 										Una de las metas del Ballet San Marcos
 										está dirigida a la difusión de la danza
@@ -85,13 +118,61 @@ export default function BalletHistoria() {
 								</div>
 								<div>
 									<p className="mb-5">
-										A partir de los años 70, el Ballet San Marcos incorporó la danza contemporánea a su entrenamiento y repertorio, ampliando así su propuesta artística. Desde entonces, la compañía ha apostado por la creatividad, la investigación en la danza y la actualización constante con las tendencias internacionales. Para ello, ha contado con la colaboración de reconocidos coreógrafos y maestros internacionales, como Royston Maldoom, coreógrafo británico famoso por su trabajo en danza comunitaria; Dana Tai Soon Burgess, coreógrafo estadounidense de origen coreano con una visión que fusiona la danza contemporánea con la exploración de la identidad cultural; y Christopher Roman, bailarín y coreógrafo que trabajó en el Frankfurt Ballet bajo la dirección de William Forsythe.
+										A partir de los años 70, el Ballet San
+										Marcos incorporó la danza contemporánea
+										a su entrenamiento y repertorio,
+										ampliando así su propuesta artística.
+										Desde entonces, la compañía ha apostado
+										por la creatividad, la investigación en
+										la danza y la actualización constante
+										con las tendencias internacionales. Para
+										ello, ha contado con la colaboración de
+										reconocidos coreógrafos y maestros
+										internacionales, como Royston Maldoom,
+										coreógrafo británico famoso por su
+										trabajo en danza comunitaria; Dana Tai
+										Soon Burgess, coreógrafo estadounidense
+										de origen coreano con una visión que
+										fusiona la danza contemporánea con la
+										exploración de la identidad cultural; y
+										Christopher Roman, bailarín y coreógrafo
+										que trabajó en el Frankfurt Ballet bajo
+										la dirección de William Forsythe.
 									</p>
 									<p className="mb-5">
-										También han contribuido Francisco Centeno, coreógrafo costarricense; Tamara McLorg, coreógrafa británica creadora de la obra &quot;Añoranza&quot; para el Ballet San Marcos; Marc Foeringer, coreógrafo suizo con propuestas innovadoras en la danza contemporánea; Rogelio López, coreógrafo costarricense que en 2001 creó las piezas &quot;Rojísimo sobre blanco&quot; y &quot;El abrazo nuestro de cada día&quot; durante su residencia en la compañía; Susana Linke, reconocida intérprete de la danza moderna alemana; Healther Cooper y Brian Fisher, ambos con importantes aportes a la danza contemporánea.
+										También han contribuido Francisco
+										Centeno, coreógrafo costarricense;
+										Tamara McLorg, coreógrafa británica
+										creadora de la obra &quot;Añoranza&quot;
+										para el Ballet San Marcos; Marc
+										Foeringer, coreógrafo suizo con
+										propuestas innovadoras en la danza
+										contemporánea; Rogelio López, coreógrafo
+										costarricense que en 2001 creó las
+										piezas &quot;Rojísimo sobre blanco&quot;
+										y &quot;El abrazo nuestro de cada
+										día&quot; durante su residencia en la
+										compañía; Susana Linke, reconocida
+										intérprete de la danza moderna alemana;
+										Healther Cooper y Brian Fisher, ambos
+										con importantes aportes a la danza
+										contemporánea.
 									</p>
 									<p className="mb-5">
-										En 2024, el Ballet San Marcos conmemoró sus 60 años de fundación institucional con el espectáculo Resurgir, presentado el 17 de junio en el Gran Teatro Nacional del Ministerio de Cultura. Este evento incluyó cuatro piezas coreográficas que reflejaron la diversidad y riqueza artística de la institución. Ese mismo año, el Ballet San Marcos participó en Danza Nueva, edición XXXVI, organizado, donde presentó Ello Sensible, obra compuesta por tres piezas coreográficas especialmente pensadas para el festival.
+										En 2024, el Ballet San Marcos conmemoró
+										sus 60 años de fundación institucional
+										con el espectáculo Resurgir, presentado
+										el 17 de junio en el Gran Teatro
+										Nacional del Ministerio de Cultura. Este
+										evento incluyó cuatro piezas
+										coreográficas que reflejaron la
+										diversidad y riqueza artística de la
+										institución. Ese mismo año, el Ballet
+										San Marcos participó en Danza Nueva,
+										edición XXXVI, organizado, donde
+										presentó Ello Sensible, obra compuesta
+										por tres piezas coreográficas
+										especialmente pensadas para el festival.
 									</p>
 								</div>
 								<div>
@@ -107,10 +188,36 @@ export default function BalletHistoria() {
 								</div>
 								<div>
 									<p className="mb-5">
-										El Ballet San Marcos mantiene un firme compromiso con la difusión de la danza dentro y fuera del campus universitario, desarrollando una intensa labor de proyección nacional e internacional. En los últimos años, ha fortalecido su presencia en escenarios locales y ha establecido alianzas estratégicas con instituciones culturales y educativas que contribuyen al desarrollo de la danza en el país. A través de sus redes sociales y plataformas digitales, ha promovido la visibilidad de sus actividades y proyectos, logrando una mayor conexión con el público y la comunidad artística.
+										El Ballet San Marcos mantiene un firme
+										compromiso con la difusión de la danza
+										dentro y fuera del campus universitario,
+										desarrollando una intensa labor de
+										proyección nacional e internacional. En
+										los últimos años, ha fortalecido su
+										presencia en escenarios locales y ha
+										establecido alianzas estratégicas con
+										instituciones culturales y educativas
+										que contribuyen al desarrollo de la
+										danza en el país. A través de sus redes
+										sociales y plataformas digitales, ha
+										promovido la visibilidad de sus
+										actividades y proyectos, logrando una
+										mayor conexión con el público y la
+										comunidad artística.
 									</p>
 									<p className="mb-5">
-										Actualmente, el Ballet San Marcos continúa consolidándose como un referente en la escena dancística nacional. La Escuela de Ballet San Marcos ofrece formación continua en danza clásica y contemporánea a la comunidad sanmarquina y al público en general. Gracias a su labor constante e ininterrumpida, el Ballet San Marcos sigue siendo una institución clave en la promoción y desarrollo de la danza en el Perú.
+										Actualmente, el Ballet San Marcos
+										continúa consolidándose como un
+										referente en la escena dancística
+										nacional. La Escuela de Ballet San
+										Marcos ofrece formación continua en
+										danza clásica y contemporánea a la
+										comunidad sanmarquina y al público en
+										general. Gracias a su labor constante e
+										ininterrumpida, el Ballet San Marcos
+										sigue siendo una institución clave en la
+										promoción y desarrollo de la danza en el
+										Perú.
 									</p>
 								</div>
 							</div>

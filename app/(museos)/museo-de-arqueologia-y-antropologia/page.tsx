@@ -1,49 +1,49 @@
 'use client';
 
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-// import ExternalLinkIcon from '@/infrastructure/ui/components/atoms/icons/external-link-icon';
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
-import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
-import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
-// import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok-icon';
-import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
-import TicketIcon from '@/infrastructure/ui/components/atoms/icons/ticket-icon';
-import Tab from '@/infrastructure/ui/components/atoms/tab';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+// import ExternalLinkIcon from '@/ui/components/atoms/icons/external-link-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import OutlineEmailIcon from '@/ui/components/atoms/icons/outline-email-icon';
+import FacebookIcon from '@/ui/components/atoms/icons/social/facebook-icon';
+import InstagramIcon from '@/ui/components/atoms/icons/social/instagram-icon';
+// import TiktokIcon from '@/ui/components/atoms/icons/social/tiktok-icon';
+import YoutubeIcon from '@/ui/components/atoms/icons/social/youtube-icon';
+import TicketIcon from '@/ui/components/atoms/icons/ticket-icon';
+import Tab from '@/ui/components/atoms/tab';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import React, { Suspense, useState } from 'react';
 
 const tabs = {
 	colecciones: React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones'
+				'@/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones'
 			)
 	),
 	exposiciones: React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/exposiciones'
+				'@/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/exposiciones'
 			)
 	),
 	publicaciones: React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/publicaciones'
+				'@/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/publicaciones'
 			)
 	),
 	'recursos-audiovisuales': React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/recursos-audiovisuales'
+				'@/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/recursos-audiovisuales'
 			)
 	),
 	'centro-de-documentacion': React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/centro-de-documentacion'
+				'@/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/centro-de-documentacion'
 			)
 	),
 } as const;
@@ -82,10 +82,28 @@ export default function MuseoDeArteDeSanMarcos() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
-									Es uno de los museos universitarios más antiguos y destacados del país y de la región, tanto por la custodia de sus invaluables artefactos cerámicos, textiles y líticos, así como por proporcionar una vista panorámica de todo el proceso histórico prehispánico.
+									Es uno de los museos universitarios más
+									antiguos y destacados del país y de la
+									región, tanto por la custodia de sus
+									invaluables artefactos cerámicos, textiles y
+									líticos, así como por proporcionar una vista
+									panorámica de todo el proceso histórico
+									prehispánico.
 								</p>
 								<p className="mb-3">
-									Fue fundado el 21 de octubre de 1919 por Julio César Tello, arqueólogo peruano, quien representa una parte importante de la historia de este museo. La historia del Museo, además, se asocia a la vida y trabajos de destacados intelectuales como Toribio Mejía Xesspe, Rebeca Carrión Cachot, Pedro Weiss, Luis E. Valcárcel, Jorge Muelle, Duccio Bonavía, Ernesto Tabío, Edward Lanning, Richard McNeish, Hans Horkheimer, Arturo Jiménez Borja, Ramiro Matos, Luis Guillermo Lumbreras, Rosa Fung, Ruth Shady, entre otros.
+									Fue fundado el 21 de octubre de 1919 por
+									Julio César Tello, arqueólogo peruano, quien
+									representa una parte importante de la
+									historia de este museo. La historia del
+									Museo, además, se asocia a la vida y
+									trabajos de destacados intelectuales como
+									Toribio Mejía Xesspe, Rebeca Carrión Cachot,
+									Pedro Weiss, Luis E. Valcárcel, Jorge
+									Muelle, Duccio Bonavía, Ernesto Tabío,
+									Edward Lanning, Richard McNeish, Hans
+									Horkheimer, Arturo Jiménez Borja, Ramiro
+									Matos, Luis Guillermo Lumbreras, Rosa Fung,
+									Ruth Shady, entre otros.
 								</p>
 								<p className="mb-3">
 									El MAA promueve y apoya la investigación, el
@@ -151,9 +169,12 @@ export default function MuseoDeArteDeSanMarcos() {
 												Horario de atención
 											</p>
 											<p className="font-medium">
-												Oficina: Lunes a viernes, de 8 a.m. a 1 p.m. y de 2 a 3:45 p.m.
+												Oficina: Lunes a viernes, de 8
+												a.m. a 1 p.m. y de 2 a 3:45 p.m.
 												<br />
-												Exposiciones: Lunes a viernes, de 10 a.m. a 1 p.m. y de 2 a 3:30 p.m.
+												Exposiciones: Lunes a viernes,
+												de 10 a.m. a 1 p.m. y de 2 a
+												3:30 p.m.
 											</p>
 										</div>
 									</div>
@@ -266,14 +287,18 @@ export default function MuseoDeArteDeSanMarcos() {
 							/>
 							<Tab
 								label="Recursos Audiovisuales"
-								selected={currentTab === 'recursos-audiovisuales'}
+								selected={
+									currentTab === 'recursos-audiovisuales'
+								}
 								onClick={() => {
 									handleClick('recursos-audiovisuales');
 								}}
 							/>
 							<Tab
 								label="Centro de documentación"
-								selected={currentTab === 'centro-de-documentacion'}
+								selected={
+									currentTab === 'centro-de-documentacion'
+								}
 								onClick={() => {
 									handleClick('centro-de-documentacion');
 								}}

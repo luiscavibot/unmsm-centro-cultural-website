@@ -1,16 +1,16 @@
 'use client';
 
-import Title from '@/infrastructure/ui/components/atoms/title';
-import CoursesAndWorkshopsCard from '@/infrastructure/ui/components/molecules/courses-and-workshops-card';
+import Title from '@/ui/components/atoms/title';
+import CoursesAndWorkshopsCard from '@/ui/components/molecules/courses-and-workshops-card';
 import React, { useState } from 'react';
-import coursesAndWorkshopsDataToHome from '@/infrastructure/ui/mocks/courses-and-workshops-data-to-home';
-import ArrowDropdownIcon from '@/infrastructure/ui/components/atoms/icons/arrow-dropdown-icon';
-import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button';
-import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button';
-import Checkbox from '@/infrastructure/ui/components/atoms/inputs/checkbox';
-import Pagination from '@/infrastructure/ui/components/molecules/pagination';
-import Search from '@/infrastructure/ui/components/atoms/inputs/search';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import coursesAndWorkshopsDataToHome from '@/ui/mocks/courses-and-workshops-data-to-home';
+import ArrowDropdownIcon from '@/ui/components/atoms/icons/arrow-dropdown-icon';
+import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
+import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
+import Checkbox from '@/ui/components/atoms/inputs/checkbox';
+import Pagination from '@/ui/components/molecules/pagination';
+import Search from '@/ui/components/atoms/inputs/search';
+import Layout from '@/ui/components/organisms/shared/layout';
 
 interface CheckboxItem {
 	id: number;

@@ -1,20 +1,20 @@
 'use client';
 
-import Badge from '@/infrastructure/ui/components/atoms/badge';
-import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon';
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import ExhibitionsCard from '@/infrastructure/ui/components/molecules/exhibitions-card';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
-import exhibitions from '@/infrastructure/ui/mocks/exhibitions-arte-moderno-y-contemporaneo';
+import Badge from '@/ui/components/atoms/badge';
+import ImageIcon from '@/ui/components/atoms/icons/imagen-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import Title from '@/ui/components/atoms/title';
+import ExhibitionsCard from '@/ui/components/molecules/exhibitions-card';
+import Layout from '@/ui/components/organisms/shared/layout';
+import exhibitions from '@/ui/mocks/exhibitions-arte-moderno-y-contemporaneo';
 import React, { useRef } from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
-import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
-import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
-import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
+import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
+import useSplideControls from '@/ui/hooks/useSplideControls';
+import carouselExhibition from '@/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
 import Image from 'next/image';
 
 interface ExtendedSplideType extends SplideType {

@@ -1,16 +1,13 @@
 'use client';
 
-import Tab from '@/infrastructure/ui/components/atoms/tab';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import Tab from '@/ui/components/atoms/tab';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import React, { Suspense, useState } from 'react';
 
 const tabs = {
 	exposiciones: React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/museums/exposiciones'
-			)
+		() => import('@/ui/components/organisms/museums/exposiciones')
 	),
 } as const;
 

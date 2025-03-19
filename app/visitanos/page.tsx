@@ -1,6 +1,6 @@
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -26,7 +26,9 @@ export default function Visitanos() {
 				<div className="px-4 lg:px-[104px] bg-white pb-20">
 					<div className="container">
 						<div className="max-w-[641px] mx-auto mb-14">
-							<Title className="text-center">Visitas guiadas</Title>
+							<Title className="text-center">
+								Visitas guiadas
+							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
 									La{' '}
@@ -66,17 +68,41 @@ export default function Visitanos() {
 										históricos patios y salones ceremoniales
 									</span>{' '}
 									del complejo arquitectónico de la Casona de
-									San Marcos además de las <span className="font-bold">muestras permanentes: Colección de retratos de catedráticos y rectores de la Universidad de San Marcos (siglos XVI-XXI), Vargas Llosa en San Marcos</span>.
+									San Marcos además de las{' '}
+									<span className="font-bold">
+										muestras permanentes: Colección de
+										retratos de catedráticos y rectores de
+										la Universidad de San Marcos (siglos
+										XVI-XXI), Vargas Llosa en San Marcos
+									</span>
+									.
 								</p>
 								<p className="mb-6">
-									Además se recorren las exposiciones presentadas por el Museo de Arte de San Marcos y el Museo de Arqueología y Antropología de San Marcos, siempre y cuando se encuentren dentro de su horario de atención:
+									Además se recorren las exposiciones
+									presentadas por el Museo de Arte de San
+									Marcos y el Museo de Arqueología y
+									Antropología de San Marcos, siempre y cuando
+									se encuentren dentro de su horario de
+									atención:
 								</p>
 								<ul className="list-outside list-disc pl-6 space-y-2 mb-6">
-									<li><b>Exposiciones Museo de Arte :</b> De lunes a viernes, de 10 a.m. a 1 p.m. y de 2 a 4:00 p. m.</li>
-									<li><b>Exposiciones Museo Arqueología y Antropología:</b> De lunes a viernes, de 10 a.m.  a 1 p.m. y de 2 a 3:30 p. m.</li>
+									<li>
+										<b>Exposiciones Museo de Arte :</b> De
+										lunes a viernes, de 10 a.m. a 1 p.m. y
+										de 2 a 4:00 p. m.
+									</li>
+									<li>
+										<b>
+											Exposiciones Museo Arqueología y
+											Antropología:
+										</b>{' '}
+										De lunes a viernes, de 10 a.m. a 1 p.m.
+										y de 2 a 3:30 p. m.
+									</li>
 								</ul>
 								<p className="mb-6">
-									El Centro Cultural de San Marcos no atiende los días domingos y declarados feriados.
+									El Centro Cultural de San Marcos no atiende
+									los días domingos y declarados feriados.
 								</p>
 							</div>
 							<div className="basis-1/2">
@@ -94,7 +120,9 @@ export default function Visitanos() {
 									(Llamar solo de lunes a viernes en horario
 									de oficina.)
 								</p>
-								<p className="mb-3 font-bold">Costo de entrada:</p>
+								<p className="mb-3 font-bold">
+									Costo de entrada:
+								</p>
 								<div className="relative overflow-x-auto max-w-[813px]">
 									<table className="max-w-full w-full">
 										<thead>

@@ -1,16 +1,16 @@
 'use client';
 
-import Badge from '@/infrastructure/ui/components/atoms/badge';
-import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button';
-import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button';
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-import DateRangeIcon from '@/infrastructure/ui/components/atoms/icons/date-range-icon';
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import UpcomingEventsCard from '@/infrastructure/ui/components/molecules/upcoming-events-card';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
-import useScrollOnLoad from '@/infrastructure/ui/hooks/use-scroll-on-load';
-import eventsDataToHome from '@/infrastructure/ui/mocks/events-data-to-home';
+import Badge from '@/ui/components/atoms/badge';
+import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
+import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+import DateRangeIcon from '@/ui/components/atoms/icons/date-range-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import Title from '@/ui/components/atoms/title';
+import UpcomingEventsCard from '@/ui/components/molecules/upcoming-events-card';
+import Layout from '@/ui/components/organisms/shared/layout';
+import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
+import eventsDataToHome from '@/ui/mocks/events-data-to-home';
 import React from 'react';
 
 const breadcrumbItems = [

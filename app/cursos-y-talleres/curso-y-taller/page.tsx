@@ -1,14 +1,14 @@
 'use client';
 
-import Badge from '@/infrastructure/ui/components/atoms/badge';
-import ClassIcon from '@/infrastructure/ui/components/atoms/icons/class-icon';
-import CalendarIcon from '@/infrastructure/ui/components/atoms/icons/calendar-icon';
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import Title from '@/infrastructure/ui/components/atoms/title';
+import Badge from '@/ui/components/atoms/badge';
+import ClassIcon from '@/ui/components/atoms/icons/class-icon';
+import CalendarIcon from '@/ui/components/atoms/icons/calendar-icon';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import Title from '@/ui/components/atoms/title';
 import React from 'react';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
-import useScrollOnLoad from '@/infrastructure/ui/hooks/use-scroll-on-load';
+import Layout from '@/ui/components/organisms/shared/layout';
+import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 
 const breadcrumbItems = [
 	{

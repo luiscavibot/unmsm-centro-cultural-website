@@ -1,24 +1,17 @@
-import ArtisticDirections from '@/infrastructure/ui/components/organisms/home/artistic-directions';
-import Contact from '@/infrastructure/ui/components/organisms/home/contact';
-import CoursesAndWorkshops from '@/infrastructure/ui/components/organisms/home/courses-and-workshops';
-import Events from '@/infrastructure/ui/components/organisms/home/events';
-import Exhibitions from '@/infrastructure/ui/components/organisms/home/exhibitions';
-import Hero from '@/infrastructure/ui/components/organisms/home/hero';
-import Library from '@/infrastructure/ui/components/organisms/home/library';
-import Museums from '@/infrastructure/ui/components/organisms/home/museums';
-import News from '@/infrastructure/ui/components/organisms/home/news';
-import { getInjection } from '../di/container';
+import Contact from '@/ui/components/organisms/home/contact';
+import Events from '@/ui/components/organisms/home/events';
+import CoursesAndWorkshops from '@/ui/components/organisms/home/courses-and-workshops';
+import News from '@/ui/components/organisms/home/news';
+import Museums from '@/ui/components/organisms/home/museums';
+import Exhibitions from '@/ui/components/organisms/home/exhibitions';
+import Library from '@/ui/components/organisms/home/library';
+import ArtisticDirections from '@/ui/components/organisms/home/artistic-directions';
 
 export default async function Home() {
-	const principalCoversController = getInjection(
-		'IPrincipalCoversController'
-	);
-
-	const principalCovers = await principalCoversController.getAll();
 	return (
 		<>
 			<h1 className="hidden sr-only">Centro Cultural de San Marcos</h1>
-			<Hero images={principalCovers} />
+			{/* <Hero images={principalCovers} /> */}
 			<Contact />
 			<Events />
 			<CoursesAndWorkshops />

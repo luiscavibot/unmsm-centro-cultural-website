@@ -1,16 +1,16 @@
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Facebook2Icon from '@/infrastructure/ui/components/atoms/icons/social/facebook-2-icon'
-import Instagram2Icon from '@/infrastructure/ui/components/atoms/icons/social/instagram-2-icon'
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
-import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
-import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
+import Facebook2Icon from '@/ui/components/atoms/icons/social/facebook-2-icon';
+import Instagram2Icon from '@/ui/components/atoms/icons/social/instagram-2-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+import OutlineEmailIcon from '@/ui/components/atoms/icons/outline-email-icon';
+import InstagramIcon from '@/ui/components/atoms/icons/social/instagram-icon';
+import FacebookIcon from '@/ui/components/atoms/icons/social/facebook-icon';
 
 const breadcrumbItems = [
 	{
@@ -42,16 +42,56 @@ export default function Teatro() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Teatro Universitario de San Marcos (TUSM) es una dependencia de la Universidad Nacional de San Marcos (UNMSM) que, en consonancia con sus principios y compromiso social, tiene como misión la formación de un elenco de teatro universitario conformado por alumnos y trabajadores de la universidad. Esta formación se basa en el compromiso, dedicación y esfuerzo de sus integrantes, promoviendo tanto su crecimiento artístico como su desarrollo personal.
+									El Teatro Universitario de San Marcos (TUSM)
+									es una dependencia de la Universidad
+									Nacional de San Marcos (UNMSM) que, en
+									consonancia con sus principios y compromiso
+									social, tiene como misión la formación de un
+									elenco de teatro universitario conformado
+									por alumnos y trabajadores de la
+									universidad. Esta formación se basa en el
+									compromiso, dedicación y esfuerzo de sus
+									integrantes, promoviendo tanto su
+									crecimiento artístico como su desarrollo
+									personal.
 								</p>
 								<p className="mb-5">
-									Si bien la formación del elenco es fundamental, el siguiente paso es la creación, producción y difusión de proyectos teatrales que se presenten en nuestra sala, asegurando así su actividad constante y su consolidación como un espacio de referencia. Al mismo tiempo, buscamos el reconocimiento del elenco como un grupo universitario oficial, fomentando el intercambio y la extensión dentro del medio artístico teatral, tanto en las diferentes facultades de la UNMSM como en el ámbito nacional e internacional. De este modo, el TUSM no solo impulsa la participación de su comunidad, sino que también fortalece su presencia en la escena teatral.
+									Si bien la formación del elenco es
+									fundamental, el siguiente paso es la
+									creación, producción y difusión de proyectos
+									teatrales que se presenten en nuestra sala,
+									asegurando así su actividad constante y su
+									consolidación como un espacio de referencia.
+									Al mismo tiempo, buscamos el reconocimiento
+									del elenco como un grupo universitario
+									oficial, fomentando el intercambio y la
+									extensión dentro del medio artístico
+									teatral, tanto en las diferentes facultades
+									de la UNMSM como en el ámbito nacional e
+									internacional. De este modo, el TUSM no solo
+									impulsa la participación de su comunidad,
+									sino que también fortalece su presencia en
+									la escena teatral.
 								</p>
 								<p className="mb-5">
-									Fundado el 4 de septiembre de 1946, el TUSM experimentó un nuevo impulso con su retorno a su sala histórica en julio de 2016, lo que permitió la ampliación de sus actividades y el fortalecimiento de su misión y visión. En este proceso, se ha trabajado constantemente para posicionar la sala del TUSM como un referente del entretenimiento alternativo en el Centro Histórico de Lima, priorizando la exhibición de producciones propias.
+									Fundado el 4 de septiembre de 1946, el TUSM
+									experimentó un nuevo impulso con su retorno
+									a su sala histórica en julio de 2016, lo que
+									permitió la ampliación de sus actividades y
+									el fortalecimiento de su misión y visión. En
+									este proceso, se ha trabajado constantemente
+									para posicionar la sala del TUSM como un
+									referente del entretenimiento alternativo en
+									el Centro Histórico de Lima, priorizando la
+									exhibición de producciones propias.
 								</p>
 								<p className="mb-5">
-									Como parte de nuestro compromiso con la comunidad sanmarquina y el público en general, buscamos facilitar el acceso al arte dramático a través de funciones en nuestra sala y talleres que promuevan el acercamiento a las artes escénicas.
+									Como parte de nuestro compromiso con la
+									comunidad sanmarquina y el público en
+									general, buscamos facilitar el acceso al
+									arte dramático a través de funciones en
+									nuestra sala y talleres que promuevan el
+									acercamiento a las artes escénicas.
 								</p>
 							</div>
 							<Link
@@ -82,9 +122,12 @@ export default function Teatro() {
 											color="dark"
 										/>
 										<div>
-											<p className="font-bold">Horario de atención en oficina</p>
+											<p className="font-bold">
+												Horario de atención en oficina
+											</p>
 											<p className="font-medium">
-												Lunes a viernes de 9:30 a.m. a 12:30 p.m. y 2:30 a 5 p.m.
+												Lunes a viernes de 9:30 a.m. a
+												12:30 p.m. y 2:30 a 5 p.m.
 											</p>
 										</div>
 									</div>
@@ -178,26 +221,57 @@ export default function Teatro() {
 						<div className="container flex flex-row justify-between gap-x-[68px]">
 							<div className="max-w-[641px] leading-[24px] text-dark-blue-2">
 								<p className="mb-5">
-									El TUSM está integrado por alumnos y trabajadores de la UNMSM. Con base en el compromiso, dedicación y esfuerzo  para su crecimiento artístico y personal.
+									El TUSM está integrado por alumnos y
+									trabajadores de la UNMSM. Con base en el
+									compromiso, dedicación y esfuerzo para su
+									crecimiento artístico y personal.
 								</p>
 								<p className="mb-5">
-									Actualmente contamos con dos elencos: Elenco de teatro y elenco de improvisación teatral.
+									Actualmente contamos con dos elencos: Elenco
+									de teatro y elenco de improvisación teatral.
 								</p>
 								<p className="mb-5 font-bold">
-									🎭 ¡Únete al Teatro Universitario de San Marcos! 🎭
+									🎭 ¡Únete al Teatro Universitario de San
+									Marcos! 🎭
 								</p>
 								<p className="mb-5">
-									Si tienes pasión por las artes escénicas, entérate de nuestras <b>convocatorias a través de nuestras redes sociales</b> ¡te esperamos!
+									Si tienes pasión por las artes escénicas,
+									entérate de nuestras{' '}
+									<b>
+										convocatorias a través de nuestras redes
+										sociales
+									</b>{' '}
+									¡te esperamos!
 								</p>
 								<ul className="list-none mb-5">
 									<li className="">
-										<a className="flex items-baseline gap-x-2" href="https://www.instagram.com/teatrodesanmarcos/?hl=es" target="_blank" rel="noreferrer noopener">
-											<span className="relative top-[1px]"><Instagram2Icon color="orange" /></span> <span className="underline">Instagram</span>
+										<a
+											className="flex items-baseline gap-x-2"
+											href="https://www.instagram.com/teatrodesanmarcos/?hl=es"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											<span className="relative top-[1px]">
+												<Instagram2Icon color="orange" />
+											</span>{' '}
+											<span className="underline">
+												Instagram
+											</span>
 										</a>
 									</li>
 									<li className="">
-										<a className="flex items-baseline gap-x-2" href="https://www.facebook.com/TeatroSanMarcos/?locale=es_LA" target="_blank" rel="noreferrer noopener">
-											<span className="relative top-[1px]"><Facebook2Icon color="orange" /></span> <span className="underline">Facebook</span>
+										<a
+											className="flex items-baseline gap-x-2"
+											href="https://www.facebook.com/TeatroSanMarcos/?locale=es_LA"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											<span className="relative top-[1px]">
+												<Facebook2Icon color="orange" />
+											</span>{' '}
+											<span className="underline">
+												Facebook
+											</span>
 										</a>
 									</li>
 								</ul>

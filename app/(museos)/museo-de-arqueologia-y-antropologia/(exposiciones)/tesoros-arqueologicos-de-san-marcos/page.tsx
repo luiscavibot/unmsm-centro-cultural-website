@@ -1,21 +1,21 @@
 'use client';
 
-import Badge from '@/infrastructure/ui/components/atoms/badge'
-import ImageIcon from '@/infrastructure/ui/components/atoms/icons/imagen-icon'
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon'
-import Title from '@/infrastructure/ui/components/atoms/title'
-import ExhibitionsCard from '@/infrastructure/ui/components/molecules/exhibitions-card'
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout'
-import exhibitions from '@/infrastructure/ui/mocks/exhibitions-arte-moderno-y-contemporaneo'
-import React, { useRef } from 'react'
+import Badge from '@/ui/components/atoms/badge';
+import ImageIcon from '@/ui/components/atoms/icons/imagen-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import Title from '@/ui/components/atoms/title';
+import ExhibitionsCard from '@/ui/components/molecules/exhibitions-card';
+import Layout from '@/ui/components/organisms/shared/layout';
+import exhibitions from '@/ui/mocks/exhibitions-arte-moderno-y-contemporaneo';
+import React, { useRef } from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
-import ArrowButton from '@/infrastructure/ui/components/atoms/buttons/arrow-button';
-import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
-import carouselExhibition from '@/infrastructure/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel'
-import Image from 'next/image'
+import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
+import useSplideControls from '@/ui/hooks/useSplideControls';
+import carouselExhibition from '@/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
+import Image from 'next/image';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -37,7 +37,6 @@ const breadcrumbItems = [
 ];
 
 export default function TesorosAqueologicosDeSanMarcos() {
-
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
@@ -50,13 +49,19 @@ export default function TesorosAqueologicosDeSanMarcos() {
 		perMove: 1,
 		breakpoints: {
 			1024: {
-				fixedWidth: "100%",
+				fixedWidth: '100%',
 				perMove: 1,
 			},
 		},
 	};
 
-	const { handlePrev, handleNext, handleMove, isPrevDisabled, isNextDisabled } = useSplideControls(splideRef);
+	const {
+		handlePrev,
+		handleNext,
+		handleMove,
+		isPrevDisabled,
+		isNextDisabled,
+	} = useSplideControls(splideRef);
 
 	return (
 		<Layout
@@ -74,9 +79,48 @@ export default function TesorosAqueologicosDeSanMarcos() {
 							Tesoros Arqueológicos de San Marcos
 						</Title>
 						<div className="space-y-4">
-							<p>El Museo de Arqueología y Antropología de la Universidad Nacional Mayor de San Marcos (MAA), presenta la exposición museográfica: “Tesoros Arqueológicos de San Marcos”, la cual es una selección representativa de nuestras colecciones, las cuales comenzaron a generarse por las constantes expediciones científicas realizadas por Julio C. Tello durante la primera década del siglo XX.</p>
-							<p>Entre 1919 y 1940, las primeras colecciones fueron expuestas en el 2° nivel del Patio de Letras de la Casona de San Marcos. En 1946 las colecciones fueron trasladadas y expuestas en el Museo Nacional de Arqueología, Antropología e Historia del Perú (MNAAHP), conformando una síntesis ilustrativa del desarrollo de las sociedades prehispánicas. Posteriormente, una parte de las colecciones retornó a la UNMSM, permaneciendo aún en el MNAAHP varios objetos. El patrimonio arqueológico de nuestra universidad incluye ejemplares de las distintas sociedades prehispánicas, con una antigüedad de alrededor de 14,000 años hasta el fin del Imperio Inca en el siglo XVI de nuestra era.</p>
-							<p>Además, la sala de &quot;Textiles Prehispánicos&quot;, forma parte de la exposición permanente &quot;Tesoros Arqueológicos de San Marcos&quot;. En esta sala podrás apreciar una importante selección de tejidos de nuestra colección, representativos de las principales sociedades prehispánicas del Perú, como Paracas, Nasca, Wari, Ychsma e Inca. Esta exposición no solo celebra la riqueza cultural del antiguo Perú, sino que también nos compromete a proteger y conservar nuestro patrimonio arqueológico.</p>
+							<p>
+								El Museo de Arqueología y Antropología de la
+								Universidad Nacional Mayor de San Marcos (MAA),
+								presenta la exposición museográfica: “Tesoros
+								Arqueológicos de San Marcos”, la cual es una
+								selección representativa de nuestras
+								colecciones, las cuales comenzaron a generarse
+								por las constantes expediciones científicas
+								realizadas por Julio C. Tello durante la primera
+								década del siglo XX.
+							</p>
+							<p>
+								Entre 1919 y 1940, las primeras colecciones
+								fueron expuestas en el 2° nivel del Patio de
+								Letras de la Casona de San Marcos. En 1946 las
+								colecciones fueron trasladadas y expuestas en el
+								Museo Nacional de Arqueología, Antropología e
+								Historia del Perú (MNAAHP), conformando una
+								síntesis ilustrativa del desarrollo de las
+								sociedades prehispánicas. Posteriormente, una
+								parte de las colecciones retornó a la UNMSM,
+								permaneciendo aún en el MNAAHP varios objetos.
+								El patrimonio arqueológico de nuestra
+								universidad incluye ejemplares de las distintas
+								sociedades prehispánicas, con una antigüedad de
+								alrededor de 14,000 años hasta el fin del
+								Imperio Inca en el siglo XVI de nuestra era.
+							</p>
+							<p>
+								Además, la sala de &quot;Textiles
+								Prehispánicos&quot;, forma parte de la
+								exposición permanente &quot;Tesoros
+								Arqueológicos de San Marcos&quot;. En esta sala
+								podrás apreciar una importante selección de
+								tejidos de nuestra colección, representativos de
+								las principales sociedades prehispánicas del
+								Perú, como Paracas, Nasca, Wari, Ychsma e Inca.
+								Esta exposición no solo celebra la riqueza
+								cultural del antiguo Perú, sino que también nos
+								compromete a proteger y conservar nuestro
+								patrimonio arqueológico.
+							</p>
 						</div>
 						<div className="flex flex-col gap-y-2 mt-6">
 							<div className="flex gap-2 items-start">
@@ -115,7 +159,12 @@ export default function TesorosAqueologicosDeSanMarcos() {
 						<h2 className="font-bold text-xl leading-[30px] mb-2">
 							Algunas piezas de la colección
 						</h2>
-						<p className="mb-10">Descubre una selección de piezas destacadas de la exposición. Además, recuerda que puedes consultar fichas informativas en nuestra espacio dedicado en ISSUU.</p>
+						<p className="mb-10">
+							Descubre una selección de piezas destacadas de la
+							exposición. Además, recuerda que puedes consultar
+							fichas informativas en nuestra espacio dedicado en
+							ISSUU.
+						</p>
 						<div className="grid grid-cols-3 gap-x-[26px] gap-y-[25px]">
 							{exhibitions.map((exhibition, index) => (
 								<ExhibitionsCard key={index} {...exhibition} />
@@ -123,7 +172,9 @@ export default function TesorosAqueologicosDeSanMarcos() {
 						</div>
 					</div>
 					<div className="mt-[81px]">
-						<h2 className="font-bold text-xl leading-[30px] mb-10">Galería</h2>
+						<h2 className="font-bold text-xl leading-[30px] mb-10">
+							Galería
+						</h2>
 						<div className="max-lg:w-full relative">
 							<Splide
 								onMoved={handleMove}
@@ -135,7 +186,12 @@ export default function TesorosAqueologicosDeSanMarcos() {
 									{carouselExhibition.map((img, index) => (
 										<SplideSlide key={index}>
 											<figure className="max-lg:hidden relative w-[310px] h-[232px] flex-shrink-0 rounded-2xl overflow-hidden">
-												<Image src={img.imageUrl} className="object-cover" alt={"Exposición"} layout="fill" />
+												<Image
+													src={img.imageUrl}
+													className="object-cover"
+													alt={'Exposición'}
+													layout="fill"
+												/>
 											</figure>
 										</SplideSlide>
 									))}

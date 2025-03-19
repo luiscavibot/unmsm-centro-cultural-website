@@ -1,13 +1,13 @@
 'use client';
 
-import Badge from '@/infrastructure/ui/components/atoms/badge';
-import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button';
-import CalendarIcon from '@/infrastructure/ui/components/atoms/icons/calendar-icon';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import RecentNewsCard from '@/infrastructure/ui/components/molecules/recent-news-card';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
-import useScrollOnLoad from '@/infrastructure/ui/hooks/use-scroll-on-load';
-import newsDataToHome from '@/infrastructure/ui/mocks/news-data-to-home';
+import Badge from '@/ui/components/atoms/badge';
+import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
+import CalendarIcon from '@/ui/components/atoms/icons/calendar-icon';
+import Title from '@/ui/components/atoms/title';
+import RecentNewsCard from '@/ui/components/molecules/recent-news-card';
+import Layout from '@/ui/components/organisms/shared/layout';
+import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
+import newsDataToHome from '@/ui/mocks/news-data-to-home';
 import React from 'react';
 
 const breadcrumbItems = [
