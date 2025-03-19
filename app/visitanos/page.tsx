@@ -310,8 +310,8 @@ export default function Visitanos() {
 					</div>
 				</div>
 				<div className="px-4 lg:px-[104px] bg-white py-8 lg:pt-[80px] lg:pb-[104px] pb-20">
-					<div className="container grid  grid-cols-2 grid-rows-[repeat(4,220px)] gap-6">
-						<div className="order-1 col-span-1 row-span-2">
+					<div className="container grid  grid-cols-2 grid-rows-[464px_733px_359px_361px_741px_360px_361px_821px] gap-6">
+						<div>
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/65b39233a30eb13b02685da762462df8_d78c20b62f.png"
@@ -322,10 +322,10 @@ export default function Visitanos() {
 								/>
 							</figure>
 						</div>
-						<div className="order-4">
+						<div>
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/3f3a5a46232de8e2ae68651a87df2a78_cdf5be7916.jpeg"
+									src="https://ccsm.unmsm.edu.pe/ccsm/b58e05c9a8b5593ab05e2ab6d532d23a_1f1405235a.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
 									layout="fill"
@@ -333,10 +333,10 @@ export default function Visitanos() {
 								/>
 							</figure>
 						</div>
-						<div className="order-6">
+						<div className="col-span-2">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/5676321afd5727fa969f2f337f7ffd5c_dd288f139a.jpeg"
+									src="https://ccsm.unmsm.edu.pe/ccsm/ba73f6ed670a54b40f935f44bb54ef4f_f6ac73bd85.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
 									layout="fill"
@@ -344,10 +344,10 @@ export default function Visitanos() {
 								/>
 							</figure>
 						</div>
-						<div className="order-2">
+						<div className="row-start-3">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/15d3ed92319b1166c2381102e146f870_6481606b4a.jpeg"
+									src="https://ccsm.unmsm.edu.pe/ccsm/3f5e2e7c4745e6cbdf925ccbd041aa3b_a3cca8c1a1.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
 									layout="fill"
@@ -355,10 +355,10 @@ export default function Visitanos() {
 								/>
 							</figure>
 						</div>
-						<div className="order-3">
+						<div className="col-start-1 row-start-4">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/040e7d812b989c1f60b11859042728a4_72073920ee.png"
+									src="https://ccsm.unmsm.edu.pe/ccsm/affe7601053a3ba1a818f2169aca71bd_62f1d0f444.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
 									layout="fill"
@@ -366,10 +366,76 @@ export default function Visitanos() {
 								/>
 							</figure>
 						</div>
-						<div className="order-5 col-span-1 row-span-2">
+						<div className="row-span-2 col-start-2 row-start-3">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/b5e7949c6cef8f31c1098a99c28aba7c_15b4ef3944.png"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="col-span-2 row-start-5">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/7526dd1a71d616e7c09bf2c7e88b1640_83fc318a4b.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-start-6">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/80d9a9101a544838242d50aded928f7f_acb8164960.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-start-6">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/7c536e6742483fd5317540842e5cb863_ce5d0414d4.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div>
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/268cccdcc837c8a2cbdc7b9d5ed6f722_025fa6d8e0.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-start-7">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/c582b6b6364ad3f2fecaa01503c9f3a7_96dc3e5db3.webp"
+									className="object-cover h-full"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="col-span-2">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/e3f07fb41482aa9706b98edffc80560c_ac8eb59399.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
 									layout="fill"
