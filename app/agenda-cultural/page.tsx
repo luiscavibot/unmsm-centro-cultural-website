@@ -1,17 +1,17 @@
 'use client';
 
-import Tab from '@/infrastructure/ui/components/atoms/tab';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import EventsCard from '@/infrastructure/ui/components/molecules/events-card';
+import Tab from '@/ui/components/atoms/tab';
+import Title from '@/ui/components/atoms/title';
+import EventsCard from '@/ui/components/molecules/events-card';
 import React, { useState } from 'react';
-import eventsDataToHome from '@/infrastructure/ui/mocks/events-data-to-home';
-import ArrowDropdownIcon from '@/infrastructure/ui/components/atoms/icons/arrow-dropdown-icon';
-import PrimaryButton from '@/infrastructure/ui/components/atoms/buttons/primary-button';
-import TertiaryButton from '@/infrastructure/ui/components/atoms/buttons/tertiary-button';
-import Checkbox from '@/infrastructure/ui/components/atoms/inputs/checkbox';
-import Calendar from '@/infrastructure/ui/components/molecules/calendar';
-import Pagination from '@/infrastructure/ui/components/molecules/pagination';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import eventsDataToHome from '@/ui/mocks/events-data-to-home';
+import ArrowDropdownIcon from '@/ui/components/atoms/icons/arrow-dropdown-icon';
+import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
+import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
+import Checkbox from '@/ui/components/atoms/inputs/checkbox';
+import Calendar from '@/ui/components/molecules/calendar';
+import Pagination from '@/ui/components/molecules/pagination';
+import Layout from '@/ui/components/organisms/shared/layout';
 
 type selectedTab = 'todos' | 'esta-semana';
 

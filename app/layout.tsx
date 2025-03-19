@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { El_Messiri, Montserrat } from 'next/font/google';
 import './globals.css';
-import Header from '@/infrastructure/ui/components/organisms/shared/header';
-import Footer from '@/infrastructure/ui/components/organisms/shared/footer';
+import Header from '@/ui/components/organisms/shared/header';
+import Footer from '@/ui/components/organisms/shared/footer';
 
 const elMessiri = El_Messiri({
 	subsets: ['latin'],
@@ -33,7 +33,9 @@ export default function RootLayout({
 			>
 				<div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
 					<Header />
-					<main className="relative lg:-mt-[--header-bottom-height] overflow-hidden">{children}</main>
+					<main className="relative lg:-mt-[--header-bottom-height] overflow-hidden">
+						{children}
+					</main>
 					<Footer />
 				</div>
 			</body>

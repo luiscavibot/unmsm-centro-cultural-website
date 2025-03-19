@@ -1,11 +1,11 @@
 'use client';
 
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import React from 'react';
-import GaleriaDeImagenes from '@/infrastructure/ui/components/organisms/nosotros/historia/galeria-de-imagenes';
-import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
+import GaleriaDeImagenes from '@/ui/components/organisms/nosotros/historia/galeria-de-imagenes';
+import useSplideControls from '@/ui/hooks/useSplideControls';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
@@ -29,9 +29,14 @@ const breadcrumbItems = [
 ];
 
 export default function CasonaDeSanMarcos() {
-
 	const splideRefGaleria = React.createRef<ExtendedSplideType>();
-	const { handlePrev: handlePrevGaleria, handleNext: handleNextGaleria, handleMove: handleMoveGaleria, isPrevDisabled: isPrevDisabledGaleria, isNextDisabled: isNextDisabledGaleria } = useSplideControls(splideRefGaleria);
+	const {
+		handlePrev: handlePrevGaleria,
+		handleNext: handleNextGaleria,
+		handleMove: handleMoveGaleria,
+		isPrevDisabled: isPrevDisabledGaleria,
+		isNextDisabled: isNextDisabledGaleria,
+	} = useSplideControls(splideRefGaleria);
 
 	const splideOptions: ResponsiveOptions = {
 		type: 'slide',
@@ -43,7 +48,7 @@ export default function CasonaDeSanMarcos() {
 		perMove: 1,
 		breakpoints: {
 			1024: {
-				fixedWidth: "100%",
+				fixedWidth: '100%',
 				perMove: 1,
 			},
 		},
@@ -63,7 +68,18 @@ export default function CasonaDeSanMarcos() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
-								Fue creado oficialmente el 29 de noviembre de 1995, constituyéndose en uno de los principales puntos de encuentro de la vida cultural limeña, mediante exposiciones y presentaciones artísticas, producciones literarias y otras expresiones culturales. Desarrolla proyectos culturales con cada de las dependencias que alberga en conexión con las huellas históricas que representa el monumento que habita y resguarda, donde confluyen múltiples experiencias y saberes como parte de un país culturalmente diverso.
+									Fue creado oficialmente el 29 de noviembre
+									de 1995, constituyéndose en uno de los
+									principales puntos de encuentro de la vida
+									cultural limeña, mediante exposiciones y
+									presentaciones artísticas, producciones
+									literarias y otras expresiones culturales.
+									Desarrolla proyectos culturales con cada de
+									las dependencias que alberga en conexión con
+									las huellas históricas que representa el
+									monumento que habita y resguarda, donde
+									confluyen múltiples experiencias y saberes
+									como parte de un país culturalmente diverso.
 								</p>
 							</div>
 						</div>
@@ -80,10 +96,24 @@ export default function CasonaDeSanMarcos() {
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
-											<span className="font-bold">Construcción inicial:</span> La Casona fue construida durante el periodo colonial a mediados del siglo XVI en Lima, siendo utilizada originalmente por la Compañía de Jesús como una residencia y centro de estudios para sus misioneros.
+											<span className="font-bold">
+												Construcción inicial:
+											</span>{' '}
+											La Casona fue construida durante el
+											periodo colonial a mediados del
+											siglo XVI en Lima, siendo utilizada
+											originalmente por la Compañía de
+											Jesús como una residencia y centro
+											de estudios para sus misioneros.
 										</p>
 										<p>
-											<span className="font-bold">Función educativa:</span> Se convirtió en uno de los primeros centros educativos del virreinato, permitiendo la formación religiosa y académica.
+											<span className="font-bold">
+												Función educativa:
+											</span>{' '}
+											Se convirtió en uno de los primeros
+											centros educativos del virreinato,
+											permitiendo la formación religiosa y
+											académica.
 										</p>
 									</div>
 								</div>
@@ -96,10 +126,23 @@ export default function CasonaDeSanMarcos() {
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
-											<span className="font-bold">Expulsión:</span> En 1767, los jesuitas fueron expulsados del Perú por orden del rey Carlos III de España, lo cual dejó el edificio desocupado.
+											<span className="font-bold">
+												Expulsión:
+											</span>{' '}
+											En 1767, los jesuitas fueron
+											expulsados del Perú por orden del
+											rey Carlos III de España, lo cual
+											dejó el edificio desocupado.
 										</p>
 										<p>
-											<span className="font-bold">Nueva función:</span> Tras la expulsión, La Casona fue utilizada para diversos fines administrativos y educativos bajo el control del virreinato y más tarde por la república peruana.
+											<span className="font-bold">
+												Nueva función:
+											</span>{' '}
+											Tras la expulsión, La Casona fue
+											utilizada para diversos fines
+											administrativos y educativos bajo el
+											control del virreinato y más tarde
+											por la república peruana.
 										</p>
 									</div>
 								</div>
@@ -108,14 +151,27 @@ export default function CasonaDeSanMarcos() {
 								</div>
 								<div className="flex flex-col lg:flex-row gap-x-8 gap-y-4">
 									<h3 className="text-2xl font-bold leading-[36px] lg:max-w-[220px] flex-shrink-0">
-										Inicio de su relación con San Marcos (Siglo XIX)
+										Inicio de su relación con San Marcos
+										(Siglo XIX)
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
-											<span className="font-bold">Asociación con la universidad:</span> Durante el siglo XIX, el edificio fue utilizado eventualmente por la Universidad de San Marcos como espacio de enseñanza.
+											<span className="font-bold">
+												Asociación con la universidad:
+											</span>{' '}
+											Durante el siglo XIX, el edificio
+											fue utilizado eventualmente por la
+											Universidad de San Marcos como
+											espacio de enseñanza.
 										</p>
 										<p>
-											<span className="font-bold">Ampliación de su uso académico:</span> Con el tiempo, La Casona fue adoptada de manera oficial como un lugar central de actividades académicas para la universidad.
+											<span className="font-bold">
+												Ampliación de su uso académico:
+											</span>{' '}
+											Con el tiempo, La Casona fue
+											adoptada de manera oficial como un
+											lugar central de actividades
+											académicas para la universidad.
 										</p>
 									</div>
 								</div>
@@ -128,10 +184,23 @@ export default function CasonaDeSanMarcos() {
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
-											<span className="font-bold">Deterioro y restauración:</span> A inicios del siglo XX, el edificio se encontraba en mal estado debido al tiempo y varios cambios en su uso.
+											<span className="font-bold">
+												Deterioro y restauración:
+											</span>{' '}
+											A inicios del siglo XX, el edificio
+											se encontraba en mal estado debido
+											al tiempo y varios cambios en su
+											uso.
 										</p>
 										<p>
-											<span className="font-bold">Restauración:</span> En 1946, fue sometida a una restauración importante, preservando su arquitectura colonial y detalles originales para devolverle su esplendor.
+											<span className="font-bold">
+												Restauración:
+											</span>{' '}
+											En 1946, fue sometida a una
+											restauración importante, preservando
+											su arquitectura colonial y detalles
+											originales para devolverle su
+											esplendor.
 										</p>
 									</div>
 								</div>
@@ -140,14 +209,29 @@ export default function CasonaDeSanMarcos() {
 								</div>
 								<div className="flex flex-col lg:flex-row gap-x-8 gap-y-4">
 									<h3 className="text-2xl font-bold leading-[36px] lg:max-w-[220px] flex-shrink-0">
-										Reconocimiento como Patrimonio Cultural (1989)
+										Reconocimiento como Patrimonio Cultural
+										(1989)
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
-											<span className="font-bold">Reconocimiento de la UNESCO:</span> En 1989, La Casona fue reconocida como parte del Patrimonio Cultural de la Humanidad por la UNESCO, siendo parte del centro histórico de Lima.
+											<span className="font-bold">
+												Reconocimiento de la UNESCO:
+											</span>{' '}
+											En 1989, La Casona fue reconocida
+											como parte del Patrimonio Cultural
+											de la Humanidad por la UNESCO,
+											siendo parte del centro histórico de
+											Lima.
 										</p>
 										<p>
-											<span className="font-bold">Preservación histórica:</span> Este reconocimiento consolidó el estatus de La Casona como un monumento importante a nivel internacional y le aseguró futuras labores de preservación.
+											<span className="font-bold">
+												Preservación histórica:
+											</span>{' '}
+											Este reconocimiento consolidó el
+											estatus de La Casona como un
+											monumento importante a nivel
+											internacional y le aseguró futuras
+											labores de preservación.
 										</p>
 									</div>
 								</div>
@@ -160,10 +244,23 @@ export default function CasonaDeSanMarcos() {
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
-											<span className="font-bold">Centro Cultural de San Marcos:</span> Hoy en día, La Casona alberga el Centro Cultural de la Universidad de San Marcos, donde se realizan actividades culturales, exposiciones, y eventos académicos.
+											<span className="font-bold">
+												Centro Cultural de San Marcos:
+											</span>{' '}
+											Hoy en día, La Casona alberga el
+											Centro Cultural de la Universidad de
+											San Marcos, donde se realizan
+											actividades culturales,
+											exposiciones, y eventos académicos.
 										</p>
 										<p>
-											<span className="font-bold">Atracción turística:</span> La Casona sigue siendo un lugar de atracción para visitantes y un símbolo de la historia académica y cultural de Lima y del Perú.
+											<span className="font-bold">
+												Atracción turística:
+											</span>{' '}
+											La Casona sigue siendo un lugar de
+											atracción para visitantes y un
+											símbolo de la historia académica y
+											cultural de Lima y del Perú.
 										</p>
 									</div>
 								</div>
@@ -184,10 +281,12 @@ export default function CasonaDeSanMarcos() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-							Dependencias administrativas
+								Dependencias administrativas
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
-							Ven y encuentra la inspiración que buscas, en un ambiente que respira historia y expresión cultural.
+								Ven y encuentra la inspiración que buscas, en un
+								ambiente que respira historia y expresión
+								cultural.
 							</p>
 						</div>
 						<div className="flex flex-col gap-y-4">

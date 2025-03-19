@@ -1,32 +1,28 @@
 'use client';
 
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
-import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
-import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
-import Tab from '@/infrastructure/ui/components/atoms/tab';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import OutlineEmailIcon from '@/ui/components/atoms/icons/outline-email-icon';
+import FacebookIcon from '@/ui/components/atoms/icons/social/facebook-icon';
+import InstagramIcon from '@/ui/components/atoms/icons/social/instagram-icon';
+import Tab from '@/ui/components/atoms/tab';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import Link from 'next/link';
 import React, { Suspense, useState } from 'react';
 
 const tabs = {
 	actividades: React.lazy(
-		() =>
-			import('@/infrastructure/ui/components/organisms/cine/actividades')
+		() => import('@/ui/components/organisms/cine/actividades')
 	),
 	'profundidad-de-campo': React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/cine/profundidad-de-campo'
-			)
+		() => import('@/ui/components/organisms/cine/profundidad-de-campo')
 	),
 	'archivo-filmico-y-audiovisual': React.lazy(
 		() =>
 			import(
-				'@/infrastructure/ui/components/organisms/cine/archivo-filmico-y-audiovisual'
+				'@/ui/components/organisms/cine/archivo-filmico-y-audiovisual'
 			)
 	),
 } as const;
@@ -123,9 +119,12 @@ export default function Cine() {
 											color="dark"
 										/>
 										<div>
-											<p className="font-bold">Horario de atención en oficina</p>
+											<p className="font-bold">
+												Horario de atención en oficina
+											</p>
 											<p className="font-medium">
-												Lunes a viernes de 10 a.m. a 1 p.m. y de 2 a 5 p. m.
+												Lunes a viernes de 10 a.m. a 1
+												p.m. y de 2 a 5 p. m.
 											</p>
 										</div>
 									</div>
@@ -231,9 +230,14 @@ export default function Cine() {
 							/>
 							<Tab
 								label="Archivo fílmico y audiovisual"
-								selected={currentTab === 'archivo-filmico-y-audiovisual'}
+								selected={
+									currentTab ===
+									'archivo-filmico-y-audiovisual'
+								}
 								onClick={() => {
-									handleClick('archivo-filmico-y-audiovisual');
+									handleClick(
+										'archivo-filmico-y-audiovisual'
+									);
 								}}
 							/>
 						</div>

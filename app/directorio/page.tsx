@@ -1,5 +1,5 @@
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import React from 'react';
 
 const breadcrumbItems = [
@@ -23,35 +23,27 @@ export default function Directorio() {
 				<div className="px-4 lg:px-[104px] bg-white">
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
-							<Title className="text-center">
-								Directorio
-							</Title>
+							<Title className="text-center">Directorio</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-3">
-									Los anexos telefónicos indicados se encuentran activos. También pueden contactarse vía correo electrónico.
+									Los anexos telefónicos indicados se
+									encuentran activos. También pueden
+									contactarse vía correo electrónico.
 								</p>
-								<p className="font-bold">Central telefónica: 619 7000</p>
+								<p className="font-bold">
+									Central telefónica: 619 7000
+								</p>
 							</div>
 						</div>
 						<div className="relative overflow-x-auto max-w-full pb-[104px]">
 							<table className="max-w-full w-full">
 								<thead>
 									<tr>
-										<th className="text-left">
-											Unidad
-										</th>
-										<th className="text-left">
-											Cargo
-										</th>
-										<th className="text-left">
-											Nombres
-										</th>
-										<th className="text-left">
-											Anexo
-										</th>
-										<th className="text-left">
-											Email
-										</th>
+										<th className="text-left">Unidad</th>
+										<th className="text-left">Cargo</th>
+										<th className="text-left">Nombres</th>
+										<th className="text-left">Anexo</th>
+										<th className="text-left">Email</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -60,7 +52,9 @@ export default function Directorio() {
 										<td>Director</td>
 										<td>César Puerta Villagaray</td>
 										<td>5201</td>
-										<td className="break-words">direccion-g.ccsm@unmsm.edu.pe</td>
+										<td className="break-words">
+											direccion-g.ccsm@unmsm.edu.pe
+										</td>
 									</tr>
 									<tr>
 										<td></td>
@@ -96,7 +90,9 @@ export default function Directorio() {
 									<tr>
 										<td>Dirección Ejecutiva</td>
 										<td>Directora </td>
-										<td>Liliana Christina Villanueva Meyhuay</td>
+										<td>
+											Liliana Christina Villanueva Meyhuay
+										</td>
 										<td>5221</td>
 										<td className="break-words">
 											direccion-e.ccsm@unmsm.edu.pe
@@ -141,7 +137,10 @@ export default function Directorio() {
 										</td>
 									</tr>
 									<tr>
-										<td>Dirección de Cine y Producción Audiovisual</td>
+										<td>
+											Dirección de Cine y Producción
+											Audiovisual
+										</td>
 										<td>Directora</td>
 										<td>Estefanía De Cara</td>
 										<td>5211</td>
@@ -150,7 +149,9 @@ export default function Directorio() {
 										</td>
 									</tr>
 									<tr>
-										<td>Centro Universitario de Folklore</td>
+										<td>
+											Centro Universitario de Folklore
+										</td>
 										<td>Director</td>
 										<td>Eduardo Fiestas Peredo</td>
 										<td></td>
@@ -170,7 +171,9 @@ export default function Directorio() {
 										</td>
 									</tr>
 									<tr>
-										<td>Teatro Universitario de San Marcos</td>
+										<td>
+											Teatro Universitario de San Marcos
+										</td>
 										<td>Coordinadora</td>
 										<td>Cristina Lozano Cuba</td>
 										<td></td>
@@ -192,7 +195,9 @@ export default function Directorio() {
 										</td>
 									</tr>
 									<tr>
-										<td>Museo de Arqueología y Antropología</td>
+										<td>
+											Museo de Arqueología y Antropología
+										</td>
 										<td>Director</td>
 										<td></td>
 										<td>5216</td>

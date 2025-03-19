@@ -1,33 +1,26 @@
 'use client';
 
-import SecondaryButton from '@/infrastructure/ui/components/atoms/buttons/secondary-button';
-import ClockIcon from '@/infrastructure/ui/components/atoms/icons/clock-icon';
-import OutlinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/outilne-place-icon';
-import OutlineEmailIcon from '@/infrastructure/ui/components/atoms/icons/outline-email-icon';
-import FacebookIcon from '@/infrastructure/ui/components/atoms/icons/social/facebook-icon';
-import InstagramIcon from '@/infrastructure/ui/components/atoms/icons/social/instagram-icon';
-import Tab from '@/infrastructure/ui/components/atoms/tab';
-import Title from '@/infrastructure/ui/components/atoms/title';
-import Layout from '@/infrastructure/ui/components/organisms/shared/layout';
+import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import OutlineEmailIcon from '@/ui/components/atoms/icons/outline-email-icon';
+import FacebookIcon from '@/ui/components/atoms/icons/social/facebook-icon';
+import InstagramIcon from '@/ui/components/atoms/icons/social/instagram-icon';
+import Tab from '@/ui/components/atoms/tab';
+import Title from '@/ui/components/atoms/title';
+import Layout from '@/ui/components/organisms/shared/layout';
 import Link from 'next/link';
 import React, { Suspense, useState } from 'react';
 
 const tabs = {
 	compania: React.lazy(
-		() =>
-			import('@/infrastructure/ui/components/organisms/ballet/compania')
+		() => import('@/ui/components/organisms/ballet/compania')
 	),
 	escuela: React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/ballet/escuela'
-			)
+		() => import('@/ui/components/organisms/ballet/escuela')
 	),
 	investigacion: React.lazy(
-		() =>
-			import(
-				'@/infrastructure/ui/components/organisms/ballet/investigacion'
-			)
+		() => import('@/ui/components/organisms/ballet/investigacion')
 	),
 } as const;
 
@@ -50,7 +43,7 @@ const breadcrumbItems = [
 
 export default function Ballet() {
 	const [currentTab, setCurrentTab] = useState<TabKeys>('compania');
-	
+
 	const handleClick = (tab: TabKeys) => {
 		setCurrentTab(tab);
 	};
@@ -69,19 +62,71 @@ export default function Ballet() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Ballet San Marcos es la primera compañía profesional de danza establecida en el Perú y en la Universidad Nacional Mayor de San Marcos. Fundado en 1964 bajo la rectoría del Dr. Luis Alberto Sánchez, su creación se formalizó mediante la Resolución Rectoral 22024, marcando un hito en la historia de la danza en el país.
+									El Ballet San Marcos es la primera compañía
+									profesional de danza establecida en el Perú
+									y en la Universidad Nacional Mayor de San
+									Marcos. Fundado en 1964 bajo la rectoría del
+									Dr. Luis Alberto Sánchez, su creación se
+									formalizó mediante la Resolución Rectoral
+									22024, marcando un hito en la historia de la
+									danza en el país.
 								</p>
 								<p className="mb-5">
-									Desde sus inicios, la compañía ha promovido la excelencia artística con una sólida labor de investigación y renovación del patrimonio dancístico peruano. Inicialmente orientado al ballet clásico bajo la dirección del bailarín francés Roger Fenonjois, estrella de la Ópera de París, en 1972 la dirección pasó a la maestra Vera Stastny, formada en el Royal Ballet de Londres, quien incorporó la danza contemporánea como parte del entrenamiento de la compañía y el currículo de la escuela.
+									Desde sus inicios, la compañía ha promovido
+									la excelencia artística con una sólida labor
+									de investigación y renovación del patrimonio
+									dancístico peruano. Inicialmente orientado
+									al ballet clásico bajo la dirección del
+									bailarín francés Roger Fenonjois, estrella
+									de la Ópera de París, en 1972 la dirección
+									pasó a la maestra Vera Stastny, formada en
+									el Royal Ballet de Londres, quien incorporó
+									la danza contemporánea como parte del
+									entrenamiento de la compañía y el currículo
+									de la escuela.
 								</p>
 								<p className="mb-5">
-									Actualmente, el Ballet San Marcos cuenta con una Coordinación General a cargo de Verónika Rodríguez Trujillo, quien ha impulsado una nueva etapa en la compañía, enfocada en ampliar el desarrollo de la danza contemporánea en el país. Desde esta gestión, se han generado espacios de apertura para más agrupaciones de danza contemporánea, promoviendo el intercambio y la colaboración artística. Asimismo, se ha fortalecido el trabajo en alianzas estratégicas con instituciones dedicadas a la danza contemporánea, consolidando al Ballet San Marcos como un referente en el sector.
+									Actualmente, el Ballet San Marcos cuenta con
+									una Coordinación General a cargo de Verónika
+									Rodríguez Trujillo, quien ha impulsado una
+									nueva etapa en la compañía, enfocada en
+									ampliar el desarrollo de la danza
+									contemporánea en el país. Desde esta
+									gestión, se han generado espacios de
+									apertura para más agrupaciones de danza
+									contemporánea, promoviendo el intercambio y
+									la colaboración artística. Asimismo, se ha
+									fortalecido el trabajo en alianzas
+									estratégicas con instituciones dedicadas a
+									la danza contemporánea, consolidando al
+									Ballet San Marcos como un referente en el
+									sector.
 								</p>
 								<p className="mb-5">
-									El Ballet San Marcos está conformado por una compañía de danza contemporánea, un grupo de investigación y una escuela de danza. En esta etapa, la compañía ha logrado una mayor proyección a nivel nacional e internacional, con presentaciones en diversos escenarios que amplían su alcance y fortalecen su impacto en la escena dancística. Por su parte, la escuela ha consolidado su programa de formación y ha potenciado las oportunidades de sus estudiantes, brindándoles mayor acceso a clases maestras y presentaciones en escenarios, lo que contribuye significativamente a su formación y desarrollo en la danza.
+									El Ballet San Marcos está conformado por una
+									compañía de danza contemporánea, un grupo de
+									investigación y una escuela de danza. En
+									esta etapa, la compañía ha logrado una mayor
+									proyección a nivel nacional e internacional,
+									con presentaciones en diversos escenarios
+									que amplían su alcance y fortalecen su
+									impacto en la escena dancística. Por su
+									parte, la escuela ha consolidado su programa
+									de formación y ha potenciado las
+									oportunidades de sus estudiantes,
+									brindándoles mayor acceso a clases maestras
+									y presentaciones en escenarios, lo que
+									contribuye significativamente a su formación
+									y desarrollo en la danza.
 								</p>
 								<p>
-									Con más de 60 años de trayectoria, el Ballet San Marcos reafirma su compromiso con la innovación, la formación y la difusión de la danza, consolidándose como un espacio clave para el crecimiento de la danza contemporánea en el Perú y en el ámbito internacional.
+									Con más de 60 años de trayectoria, el Ballet
+									San Marcos reafirma su compromiso con la
+									innovación, la formación y la difusión de la
+									danza, consolidándose como un espacio clave
+									para el crecimiento de la danza
+									contemporánea en el Perú y en el ámbito
+									internacional.
 								</p>
 							</div>
 							<Link
@@ -116,9 +161,12 @@ export default function Ballet() {
 											color="dark"
 										/>
 										<div>
-											<p className="font-bold">Horario de atención en oficina</p>
+											<p className="font-bold">
+												Horario de atención en oficina
+											</p>
 											<p className="font-medium">
-												Lunes a viernes de 9 a.m. a 1 p.m. y de 2 a 5 p.m.
+												Lunes a viernes de 9 a.m. a 1
+												p.m. y de 2 a 5 p.m.
 											</p>
 										</div>
 									</div>
@@ -224,9 +272,7 @@ export default function Ballet() {
 							/>
 							<Tab
 								label="Investigación"
-								selected={
-									currentTab === 'investigacion'
-								}
+								selected={currentTab === 'investigacion'}
 								onClick={() => {
 									handleClick('investigacion');
 								}}
