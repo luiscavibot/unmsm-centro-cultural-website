@@ -8,7 +8,7 @@ import TiktokIcon from '@/infrastructure/ui/components/atoms/icons/social/tiktok
 import YoutubeIcon from '@/infrastructure/ui/components/atoms/icons/social/youtube-icon';
 import BaselinePlaceIcon from '@/infrastructure/ui/components/atoms/icons/baseline-place-icon';
 import PhoneIcon from '@/infrastructure/ui/components/atoms/icons/phone-icon';
-import BaselineEmailIcon from '@/infrastructure/ui/components/atoms/icons/baseline-email-icon';
+// import BaselineEmailIcon from '@/infrastructure/ui/components/atoms/icons/baseline-email-icon';
 import { FACEBOOK_URL,INSTAGRAM_URL,TIKTOK_URL,YOUTUBE_URL } from '@/infrastructure/ui/data/redes-sociales';
 
 const Siguenos = () => (
