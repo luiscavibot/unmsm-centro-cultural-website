@@ -39,41 +39,16 @@ export default function Musica() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Coro Universitario (CUSM) fue fundado en
-									noviembre de 1954, a propuesta de la
-									Federación de Estudiantes de San Marcos
-									(FUSM), por la musicóloga, arreglista y
-									compositora Rosa Alarco Larrabure, quien
-									dedicó su vida a la investigación de la
-									música tradicional peruana.
+									El Coro Universitario (CUSM) fue fundado en noviembre de 1954, a propuesta de la Federación de Estudiantes de San Marcos (FUSM), por la musicóloga, arreglista y compositora Rosa Alarco Larrabure, quien dedicó su vida a la investigación de la música tradicional peruana.
 								</p>
 								<p className="mb-5">
-									Durante todos estos años de difusión
-									musical, el Coro Universitario ha ofrecido
-									innumerables presentaciones en diversos
-									lugares de nuestro país, ha sido parte de
-									festivales nacionales e internacionales y
-									participa activamente de las actividades
-									organizadas por la Universidad.
+									Durante todos estos años de difusión musical, el Coro Universitario ha ofrecido innumerables presentaciones en diversos lugares de nuestro país, ha sido parte de festivales nacionales e internacionales y participa activamente de las actividades organizadas por la Universidad.
 								</p>
 								<p className="mb-5">
-									El coro de San Marcos es el coro
-									universitario más antiguo del Perú y su
-									actual elenco prepara, Obras
-									escénico-musicales, de carácter clásico y
-									popular. Está próximo a celebrar 70 años de
-									fundado (Bodas de Titanio) por lo cual están
-									preparando los eventos y actividades en
-									celebración de dicha efeméride.
+									El coro de San Marcos es el coro universitario más antiguo del Perú y su actual elenco prepara, Obras escénico-musicales, de carácter clásico y popular.
 								</p>
 								<p>
-									En la actualidad el Coro Universitario está
-									bajo la dirección de los Maestros José
-									Mendieta Echevarría y Rafael González
-									Carranza, quienes tienen a su cargo los
-									cursos de Técnica vocal y lectura musical de
-									la Dirección de Música del Centro Cultural
-									de San Marcos.
+									En la actualidad el Coro Universitario está bajo la dirección de los Maestros José Mendieta Echevarría y Rafael González Carranza, quienes tienen a su cargo los cursos de Técnica vocal y lectura musical de la Dirección de Música del Centro Cultural de San Marcos.
 								</p>
 							</div>
 							<Link
