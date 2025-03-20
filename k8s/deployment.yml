@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: centro-cultural-website-deployment
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: centro-cultural-website-app
+    template:
+        metadata:
+            labels:
+                app: centro-cultural-website-app
+        spec:
+            containers:
+                - name: centro-cultural-website-container
+                  image: 365227208102.dkr.ecr.us-east-2.amazonaws.com/centro-cultural-website:latest
+                  ports:
+                      - containerPort: 3000
+                  env:
+                      - name: NODE_ENV
+                        value: 'production'
+                  resources:
+                      requests:
+                          memory: '256Mi'
+                          cpu: '100m'
+                      limits:
+                          memory: '512Mi'
+                          cpu: '200m'
