@@ -7,29 +7,30 @@ import useResponsivePercentage from '@/ui/hooks/useResponsivePercentage';
 import DateRangeIcon from '@/ui/components/atoms/icons/date-range-icon';
 import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
 import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import { AngendaCultural } from '@/interfaces/services/agenda-cultural.interface';
 
-interface EventsHomeCardProps {
-	slug: string;
-	imageUrl: string;
-	title: string;
-	summary: string;
-	date: string;
-	dateString: string;
-	time: string;
-	timeString: string;
-	location: string;
-}
+// interface EventsHomeCardProps {
+// 	slug: string;
+// 	imageUrl: string;
+// 	title: string;
+// 	summary: string;
+// 	date: string;
+// 	dateString: string;
+// 	time: string;
+// 	timeString: string;
+// 	location: string;
+// }
 
-const EventsHomeCard: FC<EventsHomeCardProps> = ({
+const EventsHomeCard: FC<AngendaCultural> = ({
 	slug,
-	imageUrl,
+	image,
 	title,
 	summary,
-	date,
-	dateString,
-	time,
-	timeString,
-	location,
+	// date,
+	// dateString,
+	// time,
+	// timeString,
+	place,
 }) => {
 	const { wrapperRef, containerRef, percentage, isLargeScreen } =
 		useResponsivePercentage();
@@ -45,7 +46,7 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 			>
 				<figure>
 					<Image
-						src={imageUrl}
+						src={image.url}
 						className="object-cover max-lg:!h-[320px]"
 						alt="events"
 						fill
@@ -81,9 +82,9 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 									ariaLabel="Fecha"
 									color="dark"
 								/>
-								<time className="block" dateTime={date}>
+								{/* <time className="block" dateTime={date}>
 									{dateString}
-								</time>
+								</time> */}
 							</div>
 							<div className="flex p-1 gap-2 items-center">
 								<ClockIcon
@@ -91,9 +92,9 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 									ariaLabel="Hora"
 									color="dark"
 								/>
-								<time className="block" dateTime={time}>
+								{/* <time className="block" dateTime={time}>
 									{timeString}
-								</time>
+								</time> */}
 							</div>
 							<div className="flex p-1 gap-2 items-center">
 								<OutlinePlaceIcon
@@ -101,7 +102,7 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 									ariaLabel="Lugar"
 									color="dark"
 								/>
-								<p>{location}</p>
+								<p>{place}</p>
 							</div>
 						</div>
 					</Link>
