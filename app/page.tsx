@@ -6,6 +6,7 @@ import Museums from '@/ui/components/organisms/home/museums';
 import Exhibitions from '@/ui/components/organisms/home/exhibitions';
 import Library from '@/ui/components/organisms/home/library';
 import ArtisticDirections from '@/ui/components/organisms/home/artistic-directions';
+import Interviews from '@/ui/components/organisms/home/interviews';
 
 export default async function Home() {
 	return (
@@ -20,6 +21,7 @@ export default async function Home() {
 			<Exhibitions />
 			<Library />
 			<ArtisticDirections />
+			<Interviews />
 		</>
 	);
 }
