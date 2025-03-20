@@ -7,7 +7,7 @@ import ArteModerno from '@/ui/components/organisms/museums/museo-de-arte-de-san-
 import LaUniversidad from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/la-universidad';
 import BuenVivir from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/buen-vivir';
 import TesorosArqueologicosSanMarcos from '@/ui/components/organisms/museums/exposiciones/tesoros-arqueologicos-san-marcos';
-import SalaMarioVargasLlosa from '@/ui/components/organisms/museums/exposiciones/sala-mario-vargas-llosa';
+import ExpoSalaMarioVargasLLosa from '@/ui/components/organisms/museums/exposiciones/sala-mario-vargas-llosa';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -121,7 +121,7 @@ const Exposiciones = () => {
 				handlePrevExpoTesoros={handlePrevExpoTesoros}
 				handleNextExpoTesoros={handleNextExpoTesoros}
 			/>
-			<SalaMarioVargasLlosa
+			<ExpoSalaMarioVargasLLosa
 				handleMoveSalaMarioVargasLlosa={handleMoveSalaMarioVargasLlosa}
 				splideRefSalaMarioVargasLlosa={splideRefSalaMarioVargasLlosa}
 				splideOptions={splideOptions}

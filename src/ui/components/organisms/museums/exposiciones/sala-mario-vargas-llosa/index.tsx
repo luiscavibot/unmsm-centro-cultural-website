@@ -25,7 +25,7 @@ interface Props {
 	handleNextSalaMarioVargasLlosa: () => void;
 }
 
-const ArteModerno: React.FC<Props> = ({
+const ExpoSalaMarioVargasLLosa: React.FC<Props> = ({
 	handleMoveSalaMarioVargasLlosa,
 	splideRefSalaMarioVargasLlosa,
 	splideOptions,
@@ -60,7 +60,7 @@ const ArteModerno: React.FC<Props> = ({
 							</div>
 							<div>
 								<p className="font-normal">
-									Segundo nivel del Patio de Letras
+									Segundo nivel del Patio de Derecho
 								</p>
 							</div>
 						</div>
@@ -131,4 +131,4 @@ const ArteModerno: React.FC<Props> = ({
 	);
 };
 
-export default ArteModerno;
+export default ExpoSalaMarioVargasLLosa;
