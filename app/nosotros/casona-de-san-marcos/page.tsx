@@ -1,17 +1,15 @@
-'use client';
-
 import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
 import Title from '@/ui/components/atoms/title';
 import Layout from '@/ui/components/organisms/shared/layout';
 import React from 'react';
-import GaleriaDeImagenes from '@/ui/components/organisms/nosotros/historia/galeria-de-imagenes';
-import useSplideControls from '@/ui/hooks/useSplideControls';
-import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
-import '@splidejs/splide/dist/css/splide.min.css';
+// import GaleriaDeImagenes from '@/infrastructure/ui/components/organisms/nosotros/historia/galeria-de-imagenes';
+// import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
+// import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
+import Image from 'next/image';
 
-interface ExtendedSplideType extends SplideType {
-	splide: SplideType;
-}
+// interface ExtendedSplideType extends SplideType {
+// 	splide: SplideType;
+// }
 
 const breadcrumbItems = [
 	{
@@ -29,30 +27,25 @@ const breadcrumbItems = [
 ];
 
 export default function CasonaDeSanMarcos() {
-	const splideRefGaleria = React.createRef<ExtendedSplideType>();
-	const {
-		handlePrev: handlePrevGaleria,
-		handleNext: handleNextGaleria,
-		handleMove: handleMoveGaleria,
-		isPrevDisabled: isPrevDisabledGaleria,
-		isNextDisabled: isNextDisabledGaleria,
-	} = useSplideControls(splideRefGaleria);
 
-	const splideOptions: ResponsiveOptions = {
-		type: 'slide',
-		width: '100%',
-		fixedWidth: '390px',
-		arrows: false,
-		pagination: false,
-		gap: '24px',
-		perMove: 1,
-		breakpoints: {
-			1024: {
-				fixedWidth: '100%',
-				perMove: 1,
-			},
-		},
-	};
+	// const splideRefGaleria = React.createRef<ExtendedSplideType>();
+	// const { handlePrev: handlePrevGaleria, handleNext: handleNextGaleria, handleMove: handleMoveGaleria, isPrevDisabled: isPrevDisabledGaleria, isNextDisabled: isNextDisabledGaleria } = useSplideControls(splideRefGaleria);
+
+	// const splideOptions: ResponsiveOptions = {
+	// 	type: 'slide',
+	// 	width: '100%',
+	// 	fixedWidth: '390px',
+	// 	arrows: false,
+	// 	pagination: false,
+	// 	gap: '24px',
+	// 	perMove: 1,
+	// 	breakpoints: {
+	// 		1024: {
+	// 			fixedWidth: "100%",
+	// 			perMove: 1,
+	// 		},
+	// 	},
+	// };
 
 	return (
 		<Layout
@@ -248,8 +241,7 @@ export default function CasonaDeSanMarcos() {
 												Centro Cultural de San Marcos:
 											</span>{' '}
 											Hoy en día, La Casona alberga el
-											Centro Cultural de la Universidad de
-											San Marcos, donde se realizan
+											Centro Cultural de San Marcos, donde se realizan
 											actividades culturales,
 											exposiciones, y eventos académicos.
 										</p>
@@ -268,7 +260,7 @@ export default function CasonaDeSanMarcos() {
 						</div>
 					</div>
 				</div>
-				<GaleriaDeImagenes
+				{/* <GaleriaDeImagenes
 					handleMoveGaleria={handleMoveGaleria}
 					splideRefGaleria={splideRefGaleria}
 					splideOptions={splideOptions}
@@ -276,7 +268,132 @@ export default function CasonaDeSanMarcos() {
 					isNextDisabledGaleria={isNextDisabledGaleria}
 					handlePrevGaleria={handlePrevGaleria}
 					handleNextGaleria={handleNextGaleria}
-				/>
+				/> */}
+				<div className="px-4 lg:px-[104px] bg-white py-8 lg:pt-[80px] lg:pb-[104px] pb-20">
+					<div className="container grid grid-cols-2 grid-rows-[821px_403px_403px_821px_402px_402px_821px_905px] gap-6">
+						<div className="col-span-2">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/c311e26e22666cb8950d2966cb33a65a_4af15c8007.webp"
+									className="object-cover h-full object-bottom"
+									alt="visitanos 1"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-span-2 row-start-2">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/a8237aa13d166d6ccadbfd088f7ab9cf_984df24f70.webp"
+									className="object-cover h-full"
+									alt="visitanos 2"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-start-2">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/9932621fd5ce2b8a3c87254ef38a261c_c7c84533a2.webp"
+									className="object-cover h-full"
+									alt="visitanos 3"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="col-start-2 row-start-3">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/6e96107d943cb492c69da75af3467218_209cb76c9f.webp"
+									className="object-cover h-full"
+									alt="visitanos 4"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="col-span-2 row-start-4">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/bfe63e48db771e3a4afaafdf8e9a95f3_37fdeb297f.webp"
+									className="object-cover h-full"
+									alt="visitanos 5"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-start-5">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/5d138e25516dbfdd81aeb6286dc5e417_f4c9de9305.webp"
+									className="object-cover h-full"
+									alt="visitanos 6"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="col-start-1 row-start-6">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/84eba024515f0a8f050a18521b529b21_432a54d062.webp"
+									className="object-cover h-full"
+									alt="visitanos 7"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-span-2 col-start-2 row-start-5">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/c9eeac414429e1fa9e0d3dd5821145ca_2ace594c5e.webp"
+									className="object-cover h-full"
+									alt="visitanos 8"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="col-span-2 row-start-7">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/2403a539c22736f907a69f0cbe5ec6e1_3afb1460e2.webp"
+									className="object-cover h-full"
+									alt="visitanos 9"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-start-8">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/ee8fa74a14f10cedf2a00ef01e44e89d_5058b317d7.webp"
+									className="object-cover h-full"
+									alt="visitanos 10"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+						<div className="row-start-8">
+							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
+								<Image
+									src="https://ccsm.unmsm.edu.pe/ccsm/d66dec7050c0107411a8c2cbf97f978f_3edb59807e.webp"
+									className="object-cover h-full"
+									alt="visitanos 11"
+									layout="fill"
+									quality={100}
+								/>
+							</figure>
+						</div>
+					</div>
+				</div>
 				<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[45px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-contactanos.svg')] bg-no-repeat bg-[-123px_10px]">
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">

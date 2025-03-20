@@ -30,18 +30,11 @@ export default function DependenciasAdministrativas() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center">
-								Dependencias administrativas
+								Centro Cultural de San Marcos
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Centro Cultural de la Universidad
-									Nacional Mayor de San Marcos (UNMSM) es un
-									punto de encuentro para la difusión del
-									arte, la historia y la cultura. Sus diversas
-									dependencias ofrecen espacios dedicados al
-									desarrollo artístico, académico y
-									comunitario, fomentando el acceso a la
-									cultura y el conocimiento.
+									El Centro Cultural de San Marcos (CCSM) es una entidad de la Universidad Nacional Mayor de San Marcos (UNMSM) dedicada al impulso de la creación artística, así como la preservación, producción, recuperación y difusión de diversas expresiones culturales de la mano con la comunidad sanmarquina y el público en general.
 								</p>
 							</div>
 						</div>

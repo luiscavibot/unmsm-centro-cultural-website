@@ -122,8 +122,7 @@ export default function DireccionDeTurismo() {
 										denominada Oficina de Turismo. Por
 										Resolución Rectoral N° 00639 - CR - 98
 										del 3 de febrero de 1998 como
-										dependencia del Centro Cultural de la
-										Universidad de San Marcos, se le
+										dependencia del Centro Cultural de San Marcos, se le
 										denominó Oficina de Turismo y Relaciones
 										Públicas. En el año 2002 se le cambió a
 										Oficina de Información y Turismo. Desde
@@ -271,8 +270,7 @@ export default function DireccionDeTurismo() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural San
-								Marcos
+								Explora y aprende en el Centro Cultural de San Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y
