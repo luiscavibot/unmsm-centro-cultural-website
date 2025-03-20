@@ -97,7 +97,7 @@ const ArtisticDirections: React.FC = () => {
 					>
 						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/musica_71975d0c1c.png"
+								src="https://ccsm.unmsm.edu.pe/ccsm/direccion_musica_ccsm_portada_2270b39dbd.jpg"
 								className="object-cover"
 								alt="Música"
 								fill
