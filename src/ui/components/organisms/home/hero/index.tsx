@@ -1,12 +1,17 @@
 'use client';
 
-// import Image from 'next/image';
-import { Splide } from '@splidejs/react-splide';
+import { PrincipalCoverImage } from '@/interfaces/services/principal-covers.interface';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
+import Image from 'next/image';
 
 import React from 'react';
 
-const Hero: React.FC<any> = () => {
+interface Props {
+	images: PrincipalCoverImage[];
+}
+
+const Hero: React.FC<Props> = ({ images }) => {
 	return (
 		<>
 			<div className="relative overflow-hidden">
@@ -37,11 +42,11 @@ const Hero: React.FC<any> = () => {
 							},
 						}}
 					>
-						{/* {images.map((imagen, index) => (
+						{images.map((imagen, index) => (
 							<SplideSlide className="!h-full" key={index}>
 								<Image
 									src={imagen.url}
-									alt={imagen.alt}
+									alt={imagen.caption || ''}
 									width={2732}
 									height={1232}
 									quality={100}
@@ -49,7 +54,7 @@ const Hero: React.FC<any> = () => {
 									sizes="100vw"
 								/>
 							</SplideSlide>
-						))} */}
+						))}
 					</Splide>
 				</div>
 				<div className="bg-gradiente-carrusel-portada lg:bg-gradiente-carrusel-portada-lg opacity-40 absolute w-full h-full inset-0"></div>
