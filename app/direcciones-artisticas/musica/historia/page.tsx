@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function MusicaHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/direccion_musica_ccsm_1_195b8ab290.jpeg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/direccion_musica_ccsm_portada_2270b39dbd.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -68,12 +68,12 @@ export default function MusicaHistoria() {
 									<p className="mb-5">
 										Las autoridades universitarias argüían no contar con el presupuesto necesario para formar el coro de la Universidad. Esta circunstancia puso a prueba la voluntad de Rosa Alarco, quien sin amilanarse perseveró en su propósito y se quedó hasta 1958 sin recibir emolumento alguno. La posibilidad de trabajar con un coro mixto a capella y el contagiante entusiasmo de los alumnos.
 									</p>
-									<p className="mb-1">
+									<p className="mb-5">
 										El Coro Universitario de San Marcos CUSM ha tenido entres sus directores:
 										Rosa Alarco Larrabure musicóloga (Perú 1911 -1980) “...Su trabajo siguió siendo ad-honorem hasta que las autoridades de la universidad aprueban, mediante la Resolución 18989 del 30 de setiembre de 1961, su contratación para dirigir el Coro Universitario de San Marcos. * lo cual lo hizo hasta 1976.
 										Forman parte de este contingente de músicos dedicados a la dirección coral, los directores que se sucedieron en el Coro Sanmarquino. Ellos son en orden temporal según su gestión:
 									</p>
-									<ul className="list-none">
+									<ul className="list-none mb-5">
 										<li>Abel Rosas (1975-1979)</li>
 										<li>Nancy Pimentel (1980)</li>
 										<li>Luis Craff (1981-1992)</li>
