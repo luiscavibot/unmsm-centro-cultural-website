@@ -57,15 +57,7 @@ export default function DependenciasAdministrativas() {
 								Banda Universitaria de Música
 							</h2>
 							<p className="text-sm lg:text-base mt-2 leading-[21px] lg:leading-[24px]">
-								Es una unidad artística, cultural, y protocolar,
-								su creación data al año 1996, cuando las
-								autoridades sanmarquinas concibieron la idea de
-								dotar a nuestra alma máter con una banda de
-								música, con la finalidad de que esta agrupe a
-								los alumnos interesados en este rubro y así, el
-								conjunto pueda participar en los actos
-								protocolares e invitaciones oficiales de diversa
-								índole.
+								Es una unidad artística, cultural y protocolar. Su creación data del año 1996, cuando las autoridades sanmarquinas concibieron la idea de dotar a nuestra alma máter con una banda de música, con la finalidad de que esta agrupe a los alumnos interesados en este rubro y así el conjunto pueda participar en los actos protocolares e invitaciones oficiales de diversa índole.
 							</p>
 							<SecondaryButton
 								type="internal-link"
@@ -94,12 +86,7 @@ export default function DependenciasAdministrativas() {
 								Ballet San Marcos
 							</h2>
 							<p className="text-sm lg:text-base mt-2 leading-[21px] lg:leading-[24px]">
-								Es la más antigua compañía profesional de danza
-								en el Perú con 59 años de existencia. A sus
-								inicios en 1964, se dedicó al ballet clásico y
-								posteriormente, ha incorporado la técnica de la
-								danza contemporánea al entrenamiento del elenco
-								y al currículo de su escuela.
+								Es la primera compañía profesional de danza que se establece en el Perú y en la UNMSM en el año de 1964. Desde sus inicios impulsó la excelencia artística con una sólida labor de investigación, rescatando y renovando el patrimonio dancístico peruano.
 							</p>
 							<SecondaryButton
 								type="internal-link"
