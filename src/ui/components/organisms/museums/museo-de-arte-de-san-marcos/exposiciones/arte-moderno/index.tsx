@@ -41,7 +41,7 @@ const ArteModerno: React.FC<Props> = ({
 						Exposición permanente
 					</span>
 					<h3 className="text-[32px] leading-[normal] font-semibold">
-						Arte moderno y contemporáneo
+						Arte Moderno y Contemporáneo
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
 						La exposición dedicada a la colección de arte moderno y

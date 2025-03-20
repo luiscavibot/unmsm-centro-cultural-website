@@ -82,8 +82,7 @@ const LaUniversidad: React.FC<Props> = ({
 						Exposición permanente
 					</span>
 					<h3 className="text-[32px] leading-[normal] font-semibold">
-						La universidad como «casa del saber»: Religiosos y
-						laicos
+						La Universidad como «Casa del Saber»: Religiosos y Laicos
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
 						Esta exposición pone al alcance de los interesados en el

@@ -31,7 +31,7 @@ const breadcrumbItems = [
 		path: '/museo-de-arte-de-san-marcos',
 	},
 	{
-		title: 'Arte moderno y contemporáneo',
+		title: 'Arte Moderno y Contemporáneo',
 		path: '/museo-de-arte-de-san-marcos/arte-moderno-y-contemporaneo',
 	},
 ];
@@ -76,7 +76,7 @@ export default function ArteModernoYContemporaneo() {
 							<Badge label="Exposición permanente" size="small" />
 						</div>
 						<Title theme="dark" className="text-center mb-10">
-							Arte moderno y contemporáneo
+							Arte Moderno y Contemporáneo
 						</Title>
 						<div className="space-y-4">
 							<p>

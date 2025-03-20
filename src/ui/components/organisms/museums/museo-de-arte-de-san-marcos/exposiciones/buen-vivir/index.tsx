@@ -42,8 +42,7 @@ const BuenVivir: React.FC<Props> = ({
 						Exposición permanente
 					</span>
 					<h3 className="text-[32px] leading-[normal] font-semibold">
-						Buen Vivir / Sumaq Kawsay / Suma Qamaña / Jakonax
-						jatikaxbi jati
+						Buen Vivir / Sumaq Kawsay / Suma Qamaña / Jakonax Jatikaxbi Jati
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
 						Una selección de obras de la Colección de Arte Popular y

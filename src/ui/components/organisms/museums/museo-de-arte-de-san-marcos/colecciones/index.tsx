@@ -200,7 +200,7 @@ const Colecciones = () => {
 							Colección
 						</span>
 						<h3 className="text-[32px] leading-[normal] font-semibold">
-							Arte popular
+							Arte Popular
 						</h3>
 						<div className="font-medium leading-[24px] mt-6">
 							<p>
@@ -235,7 +235,7 @@ const Colecciones = () => {
 							Colección
 						</span>
 						<h3 className="text-[32px] leading-[normal] font-semibold">
-							Arte moderno y contemporáneo
+							Arte Moderno y Contemporáneo
 						</h3>
 						<div className="font-medium leading-[24px] mt-6">
 							<p className="mb-6">
@@ -355,7 +355,7 @@ const Colecciones = () => {
 							Colección
 						</span>
 						<h3 className="text-[32px] leading-[normal] font-semibold">
-							Archivo de dibujo y pintura campesina
+							Archivo de Dibujo y Pintura Campesina
 						</h3>
 						<div className="font-medium leading-[24px] mt-6">
 							<p>
