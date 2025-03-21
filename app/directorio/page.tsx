@@ -174,7 +174,7 @@ export default function Directorio() {
 										<td>
 											Teatro Universitario de San Marcos
 										</td>
-										<td>Coordinadora</td>
+										<td>Directora</td>
 										<td>Cristina Lozano Cuba</td>
 										<td></td>
 										<td className="break-words">
@@ -198,8 +198,8 @@ export default function Directorio() {
 										<td>
 											Museo de Arqueología y Antropología
 										</td>
-										<td>Director</td>
-										<td></td>
+										<td>Encargado</td>
+										<td>Roy Lazo Pérez</td>
 										<td>5216</td>
 										<td className="break-words">
 											museoarql.ccsm@unmsm.edu.pe
@@ -225,8 +225,8 @@ export default function Directorio() {
 									</tr>
 									<tr>
 										<td>Unidad de Control de Asistencia</td>
-										<td>Jefe(e)</td>
-										<td>Javier Antonio Rodriguez Bustos</td>
+										<td>Asistente Técnico</td>
+										<td>Javier Antonio Rodríguez Bustos</td>
 										<td>5208</td>
 										<td className="break-words">
 											javier.rodriguez@unmsm.edu.pe
