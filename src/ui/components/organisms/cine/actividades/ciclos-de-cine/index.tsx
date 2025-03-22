@@ -66,12 +66,13 @@ const CiclosDeCine: React.FC<Props> = ({
 						<SplideTrack>
 							{ciclosDeCineData.map((img, index) => (
 								<SplideSlide key={index}>
-									<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+									<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
-											src={img.imageUrl}
-											className="object-cover"
-											alt={'Exposición'}
-											layout="fill"
+											src={img.url}
+											className="max-lg:object-contain w-auto h-full mx-auto"
+											alt={'Ciclos de cine'}
+											width={700}
+											height={700}
 											quality={100}
 										/>
 									</figure>

@@ -54,7 +54,7 @@ const GaleriaDeImagenes: React.FC<Props> = ({
 								<SplideSlide key={index}>
 									<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
-											src={img.imageUrl}
+											src={img.url}
 											className="object-cover"
 											alt={'Galería de imágenes'}
 											layout="fill"

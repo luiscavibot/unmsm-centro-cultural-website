@@ -1,6 +1,6 @@
 interface NewsDataToHome {
 	slug: string;
-	imageUrl: string;
+	url: string;
 	date: string;
 	dateString: string;
 	title: string;
@@ -10,7 +10,7 @@ interface NewsDataToHome {
 const newsDataToHome: NewsDataToHome[] = [
 	{
 		slug: 'noticia',
-		imageUrl:
+		url:
 			'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/noticia.webp',
 		date: '2024-11-16',
 		dateString: 'Viernes, 16 de noviembre',
@@ -20,7 +20,7 @@ const newsDataToHome: NewsDataToHome[] = [
 	},
 	{
 		slug: 'noticia',
-		imageUrl:
+		url:
 			'https://centroculturaldesanmarcos.wordpress.com/wp-content/uploads/2024/06/471323279_1040339011440129_5083329840655095651_n-1663273038-e1735313886440.jpg?w=1568',
 		date: '2024-11-16',
 		dateString: 'Viernes, 16 de noviembre',
@@ -30,7 +30,7 @@ const newsDataToHome: NewsDataToHome[] = [
 	},
 	{
 		slug: 'noticia',
-		imageUrl:
+		url:
 			'https://centroculturaldesanmarcos.wordpress.com/wp-content/uploads/2024/11/fotografias-para-post-de-ig-1790259093-e1732726928237.jpeg',
 		date: '2024-11-15',
 		dateString: 'Jueves, 15 de noviembre',

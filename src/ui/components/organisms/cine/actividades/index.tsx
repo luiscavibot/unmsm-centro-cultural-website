@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 
 import '@splidejs/splide/dist/css/splide.min.css';
-import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
+import type { Splide as SplideType } from '@splidejs/splide';
+import splideOptionsCollections from '@/ui/data/splide-options/splide-options-collections';
 import useSplideControls from '@/ui/hooks/useSplideControls';
 import CiclosDeCine from '@/ui/components/organisms/cine/actividades/ciclos-de-cine';
 import Editatonas from '@/ui/components/organisms/cine/actividades/editatonas';
@@ -15,22 +16,6 @@ const Actividades = () => {
 	const splideRefCiclosDeCine = useRef<ExtendedSplideType>(null);
 	const splideRefEditatonas = useRef<ExtendedSplideType>(null);
 	const splideRefConversatorios = useRef<ExtendedSplideType>(null);
-
-	const splideOptions: ResponsiveOptions = {
-		type: 'slide',
-		width: '100%',
-		fixedWidth: '390px',
-		arrows: false,
-		pagination: false,
-		gap: '24px',
-		perMove: 1,
-		breakpoints: {
-			1024: {
-				fixedWidth: '100%',
-				perMove: 1,
-			},
-		},
-	};
 
 	const {
 		handlePrev: handlePrevCiclosDeCine,
@@ -59,7 +44,7 @@ const Actividades = () => {
 			<CiclosDeCine
 				handleMoveCiclosDeCine={handleMoveCiclosDeCine}
 				splideRefCiclosDeCine={splideRefCiclosDeCine}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledCiclosDeCine={isPrevDisabledCiclosDeCine}
 				isNextDisabledCiclosDeCine={isNextDisabledCiclosDeCine}
 				handlePrevCiclosDeCine={handlePrevCiclosDeCine}
@@ -68,7 +53,7 @@ const Actividades = () => {
 			<Editatonas
 				handleMoveEditatonas={handleMoveEditatonas}
 				splideRefEditatonas={splideRefEditatonas}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledEditatonas={isPrevDisabledEditatonas}
 				isNextDisabledEditatonas={isNextDisabledEditatonas}
 				handlePrevEditatonas={handlePrevEditatonas}
@@ -77,7 +62,7 @@ const Actividades = () => {
 			<Conversatorios
 				handleMoveConversatorios={handleMoveConversatorios}
 				splideRefConversatorios={splideRefConversatorios}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledConversatorios={isPrevDisabledConversatorios}
 				isNextDisabledConversatorios={isNextDisabledConversatorios}
 				handlePrevConversatorios={handlePrevConversatorios}

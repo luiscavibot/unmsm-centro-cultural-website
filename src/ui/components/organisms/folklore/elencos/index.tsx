@@ -1,12 +1,9 @@
 import React, { useRef } from 'react';
 
 import '@splidejs/splide/dist/css/splide.min.css';
-import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
+import type { Splide as SplideType } from '@splidejs/splide';
+import splideOptionsCollections from '@/ui/data/splide-options/splide-options-collections';
 import useSplideControls from '@/ui/hooks/useSplideControls';
-// import ArteModerno from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/arte-moderno';
-// import LaUniversidad from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/la-universidad';
-// import BuenVivir from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/buen-vivir';
-// import ExposicionesTemporales from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/exposiciones-temporales';
 import ElencoMayor from '@/ui/components/organisms/folklore/elencos/elenco-mayor';
 import ElencoTaller from '@/ui/components/organisms/folklore/elencos/elenco-taller';
 import ElencoDeMarinera from '@/ui/components/organisms/folklore/elencos/elenco-de-marinera';
@@ -29,22 +26,6 @@ const Elencos = () => {
 	const splideRefElencoDeMusica = useRef<ExtendedSplideType>(null);
 	const splideRefConjuntoDeZamponas = useRef<ExtendedSplideType>(null);
 	const splideRefElencoJuvenil = useRef<ExtendedSplideType>(null);
-
-	const splideOptions: ResponsiveOptions = {
-		type: 'slide',
-		width: '100%',
-		fixedWidth: '390px',
-		arrows: false,
-		pagination: false,
-		gap: '24px',
-		perMove: 1,
-		breakpoints: {
-			1024: {
-				fixedWidth: '100%',
-				perMove: 1,
-			},
-		},
-	};
 
 	const {
 		handlePrev: handlePrevElencoMayor,
@@ -119,7 +100,7 @@ const Elencos = () => {
 			<ElencoMayor
 				handleMoveElencoMayor={handleMoveElencoMayor}
 				splideRefElencoMayor={splideRefElencoMayor}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledElencoMayor={isPrevDisabledElencoMayor}
 				isNextDisabledElencoMayor={isNextDisabledElencoMayor}
 				handlePrevElencoMayor={handlePrevElencoMayor}
@@ -128,7 +109,7 @@ const Elencos = () => {
 			<ElencoTaller
 				handleMoveElencoTaller={handleMoveElencoTaller}
 				splideRefElencoTaller={splideRefElencoTaller}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledElencoTaller={isPrevDisabledElencoTaller}
 				isNextDisabledElencoTaller={isNextDisabledElencoTaller}
 				handlePrevElencoTaller={handlePrevElencoTaller}
@@ -137,7 +118,7 @@ const Elencos = () => {
 			<ElencoDeMarinera
 				handleMoveElencoDeMarinera={handleMoveElencoDeMarinera}
 				splideRefElencoDeMarinera={splideRefElencoDeMarinera}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledElencoDeMarinera={isPrevDisabledElencoDeMarinera}
 				isNextDisabledElencoDeMarinera={isNextDisabledElencoDeMarinera}
 				handlePrevElencoDeMarinera={handlePrevElencoDeMarinera}
@@ -146,7 +127,7 @@ const Elencos = () => {
 			<ElencoCaporales
 				handleMoveElencoCaporales={handleMoveElencoCaporales}
 				splideRefElencoCaporales={splideRefElencoCaporales}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledElencoCaporales={isPrevDisabledElencoCaporales}
 				isNextDisabledElencoCaporales={isNextDisabledElencoCaporales}
 				handlePrevElencoCaporales={handlePrevElencoCaporales}
@@ -155,7 +136,7 @@ const Elencos = () => {
 			<ElencoJuvenil
 				handleMoveElencoJuvenil={handleMoveElencoJuvenil}
 				splideRefElencoJuvenil={splideRefElencoJuvenil}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledElencoJuvenil={isPrevDisabledElencoJuvenil}
 				isNextDisabledElencoJuvenil={isNextDisabledElencoJuvenil}
 				handlePrevElencoJuvenil={handlePrevElencoJuvenil}
@@ -164,7 +145,7 @@ const Elencos = () => {
 			<ElencoInfantil
 				handleMoveElencoInfantil={handleMoveElencoInfantil}
 				splideRefElencoInfantil={splideRefElencoInfantil}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledElencoInfantil={isPrevDisabledElencoInfantil}
 				isNextDisabledElencoInfantil={isNextDisabledElencoInfantil}
 				handlePrevElencoInfantil={handlePrevElencoInfantil}
@@ -173,7 +154,7 @@ const Elencos = () => {
 			<ElencoDeMusica
 				handleMoveElencoDeMusica={handleMoveElencoDeMusica}
 				splideRefElencoDeMusica={splideRefElencoDeMusica}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledElencoDeMusica={isPrevDisabledElencoDeMusica}
 				isNextDisabledElencoDeMusica={isNextDisabledElencoDeMusica}
 				handlePrevElencoDeMusica={handlePrevElencoDeMusica}
@@ -182,7 +163,7 @@ const Elencos = () => {
 			<ConjuntoDeZamponas
 				handleMoveConjuntoDeZamponas={handleMoveConjuntoDeZamponas}
 				splideRefConjuntoDeZamponas={splideRefConjuntoDeZamponas}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledConjuntoDeZamponas={
 					isPrevDisabledConjuntoDeZamponas
 				}

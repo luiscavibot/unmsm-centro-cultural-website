@@ -3,7 +3,7 @@ import Link from "next/link";
 import CalendarIcon from "../../atoms/icons/calendar-icon";
 
 interface NewsHomeCardProps {
-	imageUrl: string;
+	url: string;
 	date: string;
 	dateString: string;
 	title: string;
@@ -11,11 +11,11 @@ interface NewsHomeCardProps {
 	slug: string;
 }
 
-const NewsHomeCard: React.FC<NewsHomeCardProps> = ({ imageUrl, date, dateString, title, summary, slug }) => (
+const NewsHomeCard: React.FC<NewsHomeCardProps> = ({ url, date, dateString, title, summary, slug }) => (
 	<Link className="group w-full lg:w-[620px] h-[240px]" href={`noticias/${slug}`}>
 		<article className="rounded-2xl overflow-hidden flex flex-row">
 			<figure className="max-lg:hidden relative w-[240px] h-[240px] flex-shrink-0">
-				<Image src={imageUrl} className="object-cover" alt={title} layout="fill" />
+				<Image src={url} className="object-cover" alt={title} layout="fill" />
 			</figure>
 			<div className="bg-white p-6 w-auto lg:w-[380px] lg:flex-shrink-0">
 				<header>

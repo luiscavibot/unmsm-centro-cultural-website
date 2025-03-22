@@ -4,7 +4,7 @@ import CalendarIcon from '../../atoms/icons/calendar-icon';
 
 interface NewsCardProps {
 	slug: string;
-	imageUrl: string;
+	url: string;
 	title: string;
 	summary: string;
 	date: string;
@@ -13,7 +13,7 @@ interface NewsCardProps {
 
 const NewsCard: React.FC<NewsCardProps> = ({
 	slug,
-	imageUrl,
+	url,
 	title,
 	summary,
 	date,
@@ -23,7 +23,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
 		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300">
 			<figure className="relative w-[260px] h-full flex-shrink-0">
 				<Image
-					src={imageUrl}
+					src={url}
 					className="object-cover h-full"
 					alt={title}
 					layout="fill"

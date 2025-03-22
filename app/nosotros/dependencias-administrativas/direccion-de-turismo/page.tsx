@@ -127,7 +127,7 @@ export default function DireccionDeTurismo() {
 														<figure className="relative h-[400px] max-w-full rounded-3xl overflow-hidden mx-auto">
 															<Image
 																src={
-																	ImageData.imageUrl
+																	ImageData.url
 																}
 																className="object-cover h-full"
 																alt={`galeria turismo ${

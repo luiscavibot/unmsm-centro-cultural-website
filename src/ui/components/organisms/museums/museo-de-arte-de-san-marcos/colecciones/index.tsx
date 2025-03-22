@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
+import splideOptionsCollections from '@/ui/data/splide-options/splide-options-collections';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
 import useSplideControls from '@/ui/hooks/useSplideControls';
 // import carouselExhibition from '@/ui/mocks/exhibition-arte-moderno-y-contemporaneo-carousel';
@@ -16,29 +17,12 @@ interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
-// test
 
 const Colecciones = () => {
 	const splideRefColRetratos = useRef<ExtendedSplideType>(null);
 	const splideRefColArtePopular = useRef<ExtendedSplideType>(null);
 	const splideRefColArteModerno = useRef<ExtendedSplideType>(null);
 	const splideRefColArchivo = useRef<ExtendedSplideType>(null);
-
-	const splideOptions = {
-		type: 'slide',
-		width: '100%',
-		fixedWidth: '390px',
-		arrows: false,
-		pagination: false,
-		gap: '24px',
-		perMove: 1,
-		breakpoints: {
-			1024: {
-				fixedWidth: '100%',
-				perMove: 1,
-			},
-		},
-	};
 
 	const {
 		handlePrev: handlePrevColRetratos,
@@ -118,17 +102,19 @@ const Colecciones = () => {
 							onMoved={handleMoveColRetratos}
 							ref={splideRefColRetratos}
 							hasTrack={false}
-							options={splideOptions}
+							options={splideOptionsCollections}
 						>
 							<SplideTrack>
 								{retratosSiglosXviXxi.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
 											<Image
-												src={img.imageUrl}
-												className="object-cover"
-												alt={'Exposición'}
-												layout="fill"
+												src={img.url}
+												className="max-lg:object-contain w-auto h-full mx-auto"
+												alt={'Colección Retratos (siglos XVI-XXI)'}
+												width={700}
+												height={700}
+												quality={100}
 											/>
 										</figure>
 									</SplideSlide>
@@ -161,17 +147,19 @@ const Colecciones = () => {
 							onMoved={handleMoveColArtePopular}
 							ref={splideRefColArtePopular}
 							hasTrack={false}
-							options={splideOptions}
+							options={splideOptionsCollections}
 						>
 							<SplideTrack>
 								{artePopularData.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
 											<Image
-												src={img.imageUrl}
-												className="object-cover"
-												alt={'Exposición'}
-												layout="fill"
+												src={img.url}
+												className="max-lg:object-contain w-auto h-full mx-auto"
+												alt={'Colección Arte Popular'}
+												width={700}
+												height={700}
+												quality={100}
 											/>
 										</figure>
 									</SplideSlide>
@@ -269,18 +257,22 @@ const Colecciones = () => {
 							onMoved={handleMoveColArteModerno}
 							ref={splideRefColArteModerno}
 							hasTrack={false}
-							options={splideOptions}
+							options={splideOptionsCollections}
 						>
 							<SplideTrack>
 								{arteModernoContemporaneoData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
-											<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+											<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
 												<Image
-													src={img.imageUrl}
-													className="object-cover"
-													alt={'Exposición'}
-													layout="fill"
+													src={img.url}
+													className="max-lg:object-contain w-auto h-full mx-auto"
+													alt={'Colección Arte Moderno y Contemporáneo'}
+													width={700}
+													height={700}
+													quality={100}
+													// width={img.width}
+													// height={img.height}
 												/>
 											</figure>
 										</SplideSlide>
@@ -314,18 +306,20 @@ const Colecciones = () => {
 							onMoved={handleMoveColArchivo}
 							ref={splideRefColArchivo}
 							hasTrack={false}
-							options={splideOptions}
+							options={splideOptionsCollections}
 						>
 							<SplideTrack>
 								{archivoDibujoPinturaCampesinaData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
-											<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+											<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
 												<Image
-													src={img.imageUrl}
-													className="object-cover"
-													alt={'Exposición'}
-													layout="fill"
+													src={img.url}
+													className="max-lg:object-contain w-auto h-full mx-auto"
+													alt={'Colección Archivo de Dibujo y Pintura Campesina'}
+													width={700}
+													height={700}
+													quality={100}
 												/>
 											</figure>
 										</SplideSlide>

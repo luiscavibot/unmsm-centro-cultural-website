@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 
 import '@splidejs/splide/dist/css/splide.min.css';
-import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
+import type { Splide as SplideType } from '@splidejs/splide';
+import splideOptionsCollections from '@/ui/data/splide-options/splide-options-collections';
 import useSplideControls from '@/ui/hooks/useSplideControls';
 import ArteModerno from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/arte-moderno';
 import LaUniversidad from '@/ui/components/organisms/museums/museo-de-arte-de-san-marcos/exposiciones/la-universidad';
@@ -19,22 +20,6 @@ const Exposiciones = () => {
 	const splideRefExpoBuenVivir = useRef<ExtendedSplideType>(null);
 	const splideRefExpoTesoros = useRef<ExtendedSplideType>(null);
 	const splideRefSalaMarioVargasLlosa = useRef<ExtendedSplideType>(null);
-
-	const splideOptions: ResponsiveOptions = {
-		type: 'slide',
-		width: '100%',
-		fixedWidth: '390px',
-		arrows: false,
-		pagination: false,
-		gap: '24px',
-		perMove: 1,
-		breakpoints: {
-			1024: {
-				fixedWidth: '100%',
-				perMove: 1,
-			},
-		},
-	};
 
 	const {
 		handlePrev: handlePrevExpoArte,
@@ -88,7 +73,7 @@ const Exposiciones = () => {
 			<ArteModerno
 				handleMoveExpoArte={handleMoveExpoArte}
 				splideRefExpoArte={splideRefExpoArte}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledExpoArte={isPrevDisabledExpoArte}
 				isNextDisabledExpoArte={isNextDisabledExpoArte}
 				handlePrevExpoArte={handlePrevExpoArte}
@@ -97,7 +82,7 @@ const Exposiciones = () => {
 			<LaUniversidad
 				handleMoveExpoUniversidad={handleMoveExpoUniversidad}
 				splideRefExpoUniversidad={splideRefExpoUniversidad}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledExpoUniversidad={isPrevDisabledExpoUniversidad}
 				isNextDisabledExpoUniversidad={isNextDisabledExpoUniversidad}
 				handlePrevExpoUniversidad={handlePrevExpoUniversidad}
@@ -106,7 +91,7 @@ const Exposiciones = () => {
 			<BuenVivir
 				handleMoveExpoBuenVivir={handleMoveExpoBuenVivir}
 				splideRefExpoBuenVivir={splideRefExpoBuenVivir}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledExpoBuenVivir={isPrevDisabledExpoBuenVivir}
 				isNextDisabledExpoBuenVivir={isNextDisabledExpoBuenVivir}
 				handlePrevExpoBuenVivir={handlePrevExpoBuenVivir}
@@ -115,7 +100,7 @@ const Exposiciones = () => {
 			<TesorosArqueologicosSanMarcos
 				handleMoveExpoTesoros={handleMoveExpoTesoros}
 				splideRefExpoTesoros={splideRefExpoTesoros}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledExpoTesoros={isPrevDisabledExpoTesoros}
 				isNextDisabledExpoTesoros={isNextDisabledExpoTesoros}
 				handlePrevExpoTesoros={handlePrevExpoTesoros}
@@ -124,7 +109,7 @@ const Exposiciones = () => {
 			<ExpoSalaMarioVargasLLosa
 				handleMoveSalaMarioVargasLlosa={handleMoveSalaMarioVargasLlosa}
 				splideRefSalaMarioVargasLlosa={splideRefSalaMarioVargasLlosa}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledSalaMarioVargasLlosa={
 					isPrevDisabledSalaMarioVargasLlosa
 				}

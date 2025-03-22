@@ -1,5 +1,7 @@
 export interface Exhibition {
 	title?: string;
-	imageUrl: string;
+	url: string;
 	description?: string;
+	width?: number;
+	height?: number;
 }

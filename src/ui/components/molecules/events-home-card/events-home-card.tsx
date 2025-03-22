@@ -10,7 +10,7 @@ import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
 
 interface EventsHomeCardProps {
 	slug: string;
-	imageUrl: string;
+	url: string;
 	title: string;
 	summary: string;
 	date: string;
@@ -22,7 +22,7 @@ interface EventsHomeCardProps {
 
 const EventsHomeCard: FC<EventsHomeCardProps> = ({
 	slug,
-	imageUrl,
+	url,
 	title,
 	summary,
 	date,
@@ -45,7 +45,7 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 			>
 				<figure>
 					<Image
-						src={imageUrl}
+						src={url}
 						className="object-cover max-lg:!h-[320px]"
 						alt="events"
 						fill

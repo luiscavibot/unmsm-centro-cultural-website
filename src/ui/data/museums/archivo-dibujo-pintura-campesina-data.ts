@@ -2,43 +2,43 @@ import { Exhibition } from '../../interfaces/museums/exhibition.interface';
 
 export const archivoDibujoPinturaCampesinaData: Exhibition[] = [
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Washington_Mamani_Cahuaya_Cazador_recolector_Cusco_1996_Acuarelas_plumon_y_lapicero_sobre_papel_63x50cm_3bc74fb68c.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Venancio_Yance_Machaca_Herranza_en_la_comunidad_campesina_Tomanga_Sarhua_Victor_Fajardo_Ayacucho_1990_Cartulina_pintura_bicolor_hierba_verde_y_amarilla_40x49_5_cm_0f1596b366.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Teofilo_Mamani_Perez_Puno_1992_Nuestra_historia_es_asi_Lapicero_y_temperas_sobre_cartulina_46_x_66_cm_92_046_PUN_A_513396cc7c.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Isidro_Quispe_Mamani_39_Sin_titulo_Comunidad_Lluco_Coata_Puno_1989_Cartulina_lapicero_negro_y_lapices_de_color_32_6_x_50_cm_9334abc119.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Maria_del_Carmen_Collantes_Alvarez_Quema_de_bosques_en_el_Parque_Nacional_del_Manu_sector_Tres_cruces_Cusco_1994_Temperas_y_lapices_de_color_sobre_cartulina_50x63cm_e8213f0c75.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Pablo_Jancco_Conza_Cusco_1994_Amanecer_andino_Tecnica_mixta_sobre_cartulina_58_9_x_50_cm_94_048_CUS_A_d190b8eeec.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Jesus_Huarilloclla_Ayqui_Puno_1989_Alpaca_T_inkay_Plumon_tempera_y_acuarela_sobre_cartulina_50_x_64_7_cm_89_106_PUN_04c56cd644.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Genie_Magin_de_Costa_27_anos_agricultor_La_pucuna_Indiana_Rio_Amazonas_Loreto_1988_Colores_lapiz_y_plumones_sobre_cartulina_50x63_6_cm_48e5a69457.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Marcelino_Calixto_Caballero_20_Aranhuay_wasi_qatay_Junin_1992_Cartulina_crayolas_y_lapiz_24x_31_5_cm_740f08bdf5.jpg',
 	},
 	{
-		imageUrl:
+		url:
 			'https://ccsm.unmsm.edu.pe/ccsm/Edilberto_Soto_de_la_Cruz_El_folclore_en_la_vida_del_campesino_huancavelicano_Huando_Huancavelica_1989_Temperas_sobre_cartulina_45_x_60_cm_db1c8ce1b2.jpeg',
 	},
 ];

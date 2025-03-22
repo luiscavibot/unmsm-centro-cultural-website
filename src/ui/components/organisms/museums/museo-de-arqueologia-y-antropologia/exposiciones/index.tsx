@@ -4,6 +4,7 @@ import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
 import React, { useRef } from 'react';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
+import splideOptionsCollections from '@/ui/data/splide-options/splide-options-collections';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
@@ -23,22 +24,6 @@ const Exposiciones = () => {
 	const splideRefExpoTesoros = useRef<ExtendedSplideType>(null);
 	const splideRefParacasVientosDelSur = useRef<ExtendedSplideType>(null);
 	const splideRefExpoTemporales = useRef<ExtendedSplideType>(null);
-
-	const splideOptions = {
-		type: 'slide',
-		width: '100%',
-		fixedWidth: '390px',
-		arrows: false,
-		pagination: false,
-		gap: '24px',
-		perMove: 1,
-		breakpoints: {
-			1024: {
-				fixedWidth: '100%',
-				perMove: 1,
-			},
-		},
-	};
 
 	const {
 		handlePrev: handlePrevExpoTesoros,
@@ -137,18 +122,20 @@ const Exposiciones = () => {
 							onMoved={handleMoveExpoTesoros}
 							ref={splideRefExpoTesoros}
 							hasTrack={false}
-							options={splideOptions}
+							options={splideOptionsCollections}
 						>
 							<SplideTrack>
 								{tesorosArqueologicosDeSanMarcosData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
-											<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+											<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
 												<Image
-													src={img.imageUrl}
-													className="object-cover"
-													alt={'Exposición'}
-													layout="fill"
+													src={img.url}
+													className="max-lg:object-contain w-auto h-full mx-auto"
+													alt={'Exposición Tesoros Arqueológicos de San Marcos'}
+													width={700}
+													height={700}
+													quality={100}
 												/>
 											</figure>
 										</SplideSlide>
@@ -206,17 +193,19 @@ const Exposiciones = () => {
 							onMoved={handleMoveParacasVientosDelSur}
 							ref={splideRefParacasVientosDelSur}
 							hasTrack={false}
-							options={splideOptions}
+							options={splideOptionsCollections}
 						>
 							<SplideTrack>
 								{paracasVientosDelSurData.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
 											<Image
-												src={img.imageUrl}
-												className="object-cover"
-												alt={'Exposición'}
-												layout="fill"
+												src={img.url}
+												className="max-lg:object-contain w-auto h-full mx-auto"
+												alt={'Exposición Paracas, Vientos del Sur'}
+												width={700}
+												height={700}
+												quality={100}
 											/>
 										</figure>
 									</SplideSlide>
@@ -252,18 +241,20 @@ const Exposiciones = () => {
 							onMoved={handleMoveExpoTemporales}
 							ref={splideRefExpoTemporales}
 							hasTrack={false}
-							options={splideOptions}
+							options={splideOptionsCollections}
 						>
 							<SplideTrack>
 								{exposicionesTemporalesData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
-											<figure className="max-lg:hidden relative w-[390px] h-[512px] flex-shrink-0 rounded-2xl overflow-hidden">
+											<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
 												<Image
-													src={img.imageUrl}
-													className="object-cover"
-													alt={'Exposición'}
-													layout="fill"
+													src={img.url}
+													className="max-lg:object-contain w-auto h-full mx-auto"
+													alt={'Exposiciones temporales'}
+													width={700}
+													height={700}
+													quality={100}
 												/>
 											</figure>
 										</SplideSlide>

@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
+import splideOptionsCollections from '@/ui/data/splide-options/splide-options-collections';
 import useSplideControls from '@/ui/hooks/useSplideControls';
 import ArchivoJulioCTello from '@/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones/archivo-julio-c-tello';
 import TeofiloCastillo from '@/ui/components/organisms/museums/museo-de-arqueologia-y-antropologia/colecciones/teofilo-castillo';
@@ -18,22 +19,6 @@ const Colecciones = () => {
 	const splideRefColJimenezBorja = useRef<ExtendedSplideType>(null);
 	const splideRefColExpedicionSierraCentral =
 		useRef<ExtendedSplideType>(null);
-
-	const splideOptions = {
-		type: 'slide',
-		width: '100%',
-		fixedWidth: '390px',
-		arrows: false,
-		pagination: false,
-		gap: '24px',
-		perMove: 1,
-		breakpoints: {
-			1024: {
-				fixedWidth: '100%',
-				perMove: 1,
-			},
-		},
-	};
 
 	const {
 		handlePrev: handlePrevColArchivoJulio,
@@ -84,7 +69,7 @@ const Colecciones = () => {
 			<ArchivoJulioCTello
 				handleMoveColArchivoJulio={handleMoveColArchivoJulio}
 				splideRefColArchivoJulio={splideRefColArchivoJulio}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledColArchivoJulio={isPrevDisabledColArchivoJulio}
 				isNextDisabledColArchivoJulio={isNextDisabledColArchivoJulio}
 				handlePrevColArchivoJulio={handlePrevColArchivoJulio}
@@ -93,7 +78,7 @@ const Colecciones = () => {
 			<TeofiloCastillo
 				handleMoveColTeofiloCastillo={handleMoveColTeofiloCastillo}
 				splideRefColTeofiloCastillo={splideRefColTeofiloCastillo}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledColTeofiloCastillo={
 					isPrevDisabledColTeofiloCastillo
 				}
@@ -106,7 +91,7 @@ const Colecciones = () => {
 			<JimenezBorja
 				handleMoveColJimenezBorja={handleMoveColJimenezBorja}
 				splideRefColJimenezBorja={splideRefColJimenezBorja}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledColJimenezBorja={isPrevDisabledColJimenezBorja}
 				isNextDisabledColJimenezBorja={isNextDisabledColJimenezBorja}
 				handlePrevColJimenezBorja={handlePrevColJimenezBorja}
@@ -119,7 +104,7 @@ const Colecciones = () => {
 				splideRefColExpedicionSierraCentral={
 					splideRefColExpedicionSierraCentral
 				}
-				splideOptions={splideOptions}
+				splideOptions={splideOptionsCollections}
 				isPrevDisabledColExpedicionSierraCentral={
 					isPrevDisabledColExpedicionSierraCentral
 				}

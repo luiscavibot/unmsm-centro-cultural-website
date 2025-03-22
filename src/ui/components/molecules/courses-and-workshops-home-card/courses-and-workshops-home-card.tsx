@@ -7,7 +7,7 @@ import Badge from '@/ui/components/atoms/badge';
 
 interface CoursesAndWorkshopsHomeCardProps {
 	slug: string;
-	imageUrl: string;
+	url: string;
 	type: 'Curso' | 'Taller';
 	title: string;
 	subtitle: string;
@@ -16,7 +16,7 @@ interface CoursesAndWorkshopsHomeCardProps {
 
 const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 	slug,
-	imageUrl,
+	url,
 	type,
 	title,
 	subtitle,
@@ -40,7 +40,7 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 		<article className="relative px-6 lg:px-[104px] pt-[64px] lg:pt-[96px] pb-[56px] h-[420px] lg:h-[720px]">
 			<figure className="absolute top-0 left-0 w-full h-full -z-10">
 				<Image
-					src={imageUrl}
+					src={url}
 					className="object-cover"
 					alt="events"
 					fill

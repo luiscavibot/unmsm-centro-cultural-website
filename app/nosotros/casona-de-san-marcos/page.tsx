@@ -2,14 +2,7 @@ import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
 import Title from '@/ui/components/atoms/title';
 import Layout from '@/ui/components/organisms/shared/layout';
 import React from 'react';
-// import GaleriaDeImagenes from '@/infrastructure/ui/components/organisms/nosotros/historia/galeria-de-imagenes';
-// import useSplideControls from '@/infrastructure/ui/hooks/useSplideControls';
-// import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import Image from 'next/image';
-
-// interface ExtendedSplideType extends SplideType {
-// 	splide: SplideType;
-// }
 
 const breadcrumbItems = [
 	{
@@ -27,25 +20,6 @@ const breadcrumbItems = [
 ];
 
 export default function CasonaDeSanMarcos() {
-
-	// const splideRefGaleria = React.createRef<ExtendedSplideType>();
-	// const { handlePrev: handlePrevGaleria, handleNext: handleNextGaleria, handleMove: handleMoveGaleria, isPrevDisabled: isPrevDisabledGaleria, isNextDisabled: isNextDisabledGaleria } = useSplideControls(splideRefGaleria);
-
-	// const splideOptions: ResponsiveOptions = {
-	// 	type: 'slide',
-	// 	width: '100%',
-	// 	fixedWidth: '390px',
-	// 	arrows: false,
-	// 	pagination: false,
-	// 	gap: '24px',
-	// 	perMove: 1,
-	// 	breakpoints: {
-	// 		1024: {
-	// 			fixedWidth: "100%",
-	// 			perMove: 1,
-	// 		},
-	// 	},
-	// };
 
 	return (
 		<Layout

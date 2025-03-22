@@ -204,7 +204,7 @@ export default function SalaMarioVargasLlosa() {
 												<SplideSlide key={index}>
 													<figure className="max-lg:hidden relative w-[310px] h-[232px] flex-shrink-0 rounded-2xl overflow-hidden">
 														<Image
-															src={img.imageUrl}
+															src={img.url}
 															className="object-cover"
 															alt={'Exposición'}
 															layout="fill"
