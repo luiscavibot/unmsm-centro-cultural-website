@@ -106,7 +106,7 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, FlyoutContent, setOpe
 				</div>
 			)}
 			<AnimatePresence>
-				{showFlyout && (
+				{showFlyout && FlyoutContent && (
 					<motion.div
 						initial="initial"
 						animate="animate"
