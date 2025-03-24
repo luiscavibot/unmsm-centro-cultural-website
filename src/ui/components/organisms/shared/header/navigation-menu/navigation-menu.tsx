@@ -68,7 +68,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({
 					})}
 				</div>
 				<div className="block lg:hidden mb-[30px]">
-					<ButtonInMenu />
+					<ButtonInMenu setOpenMenu={setOpenMenu} />
 				</div>
 				<div className="block lg:hidden">
 					<SocialMediaMenu />

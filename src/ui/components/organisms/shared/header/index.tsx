@@ -46,7 +46,7 @@ const Header: React.FC = () => {
 						/>
 					</Link>
 					<div className="hidden lg:block">
-						<ButtonInMenu />
+						<ButtonInMenu setOpenMenu={setOpenMenu} />
 					</div>
 				</div>
 			</div>
