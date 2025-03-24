@@ -50,11 +50,13 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({
 							<FlyoutLink
 								href={item.url}
 								key={index}
+								setOpenMenu={setOpenMenu}
 								FlyoutContent={
 									submenu
 										? () => (
 												<FlyoutLinkContent
 													submenu={submenu}
+													setOpenMenu={setOpenMenu}
 												/>
 										  )
 										: undefined

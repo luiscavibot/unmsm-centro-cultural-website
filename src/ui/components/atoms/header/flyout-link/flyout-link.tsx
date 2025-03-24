@@ -7,12 +7,13 @@ interface FlyoutLinkProps {
 	children: ReactNode;
 	href?: string;
 	FlyoutContent?: FC;
+	setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, FlyoutContent }) => {
+const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, FlyoutContent, setOpenMenu }) => {
 	const [openContent, setOpenContent] = useState(false);
 
-	const showFlyout = FlyoutContent && openContent;
+	const showFlyout: boolean = Boolean(FlyoutContent) && openContent;
 
 	const [isLargeScreen, setIsLargeScreen] = useState(false);
 
@@ -65,6 +66,9 @@ const FlyoutLink: FC<FlyoutLinkProps> = ({ children, href, FlyoutContent }) => {
 				<Link
 					href={href}
 					className="text-sm max-lg:w-full font-semibold relative h-[72px] lg:h-[--header-bottom-height] inline-flex items-center max-lg:justify-between leading-[16.8px] max-lg:py-6 lg:p-4 text-white group"
+					onClick={() => {
+						if (!FlyoutContent) setOpenMenu(false);
+					}}
 				>
 					{children}
 					{FlyoutContent && (
