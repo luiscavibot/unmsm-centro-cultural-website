@@ -65,10 +65,8 @@ export default function Cine() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									Vive el séptimo arte y explora el mundo de
-									la dirección audiovisual en la Sección de
-									Cine y Dirección Audiovisual del Centro
-									Cultural de San Marcos. Aquí, el talento y
+									Explora el mundo del séptimo arte a través de la
+									Dirección de Cine y Producción Audiovisual. Aquí, el talento y
 									la creatividad de estudiantes, cineastas y
 									docentes se expresan en proyectos que
 									abordan temas culturales, sociales y
