@@ -14,7 +14,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Música',
+		title: 'Dirección de Música UNMSM',
 		path: '/direcciones-artisticas/musica',
 	},
 	{

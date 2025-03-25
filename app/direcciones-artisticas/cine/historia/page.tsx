@@ -14,7 +14,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Cine y Producción audiovisual',
+		title: 'Dirección de Cine y Producción Audiovisual UNMSM (DCPA)',
 		path: '/direcciones-artisticas/cine',
 	},
 	{

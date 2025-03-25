@@ -19,7 +19,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Música',
+		title: 'Dirección de Música UNMSM',
 		path: '/direcciones-artisticas/musica',
 	},
 ];
@@ -35,7 +35,7 @@ export default function Musica() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center">
-								Dirección de Música
+								Dirección de Música UNMSM
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">

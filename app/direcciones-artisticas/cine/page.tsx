@@ -39,7 +39,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dirección de Cine y Producción Audiovisual',
+		title: 'Dirección de Cine y Producción Audiovisual UNMSM (DCPA)',
 		path: '/direcciones-artisticas/cine',
 	},
 ];
@@ -61,7 +61,7 @@ export default function Cine() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center max-w-[550px] mx-auto">
-								Dirección de Cine y Producción Audiovisual
+								Dirección de Cine y Producción Audiovisual UNMSM (DCPA) 
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">

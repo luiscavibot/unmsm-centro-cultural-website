@@ -19,7 +19,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Banda Universitaria',
+		title: 'Banda Universitaria de Música de San Marcos',
 		path: '/direcciones-artisticas/banda-universitaria',
 	},
 ];
@@ -35,7 +35,7 @@ export default function BandaUniversitaria() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center">
-								Banda Universitaria
+								Banda Universitaria de Música de San Marcos
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">

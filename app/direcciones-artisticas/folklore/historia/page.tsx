@@ -14,7 +14,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Centro Universitario de Folklore',
+		title: 'Centro Universitario de Folklore UNMSM (CUF)',
 		path: '/direcciones-artisticas/folklore',
 	},
 	{

@@ -14,7 +14,7 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Banda Universitaria',
+		title: 'Banda Universitaria de Música de San Marcos',
 		path: '/direcciones-artisticas/banda-universitaria',
 	},
 	{

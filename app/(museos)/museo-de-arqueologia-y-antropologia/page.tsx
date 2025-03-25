@@ -56,7 +56,7 @@ const breadcrumbItems = [
 		path: '/',
 	},
 	{
-		title: 'Museo de Arqueología y Antropología',
+		title: 'Museo de Arqueología y Antropología UNMSM (MAA)',
 		path: '/museo-de-arqueologia-y-antropologia',
 	},
 ];
@@ -78,7 +78,7 @@ export default function MuseoDeArteDeSanMarcos() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto">
 							<Title className="text-center">
-								Museo de Arqueología y Antropología
+								Museo de Arqueología y Antropología UNMSM (MAA)
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
