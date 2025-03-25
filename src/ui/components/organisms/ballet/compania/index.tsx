@@ -8,7 +8,7 @@ const Compania = () => {
 				<div className="container">
 					<div className="max-w-[641px] leading-[24px] text-dark-blue-2">
 						<p>
-							La Compañía de Ballet San Marcos está conformada por bailarines profesionales contratados por la Universidad Nacional Mayor de San Marcos, quienes representan a la institución en escenarios nacionales e internacionales. Es una de las pocas compañías limeñas con un elenco estable de bailarines dedicados exclusivamente a su labor artística.
+							La Compañía de Ballet San Marcos está conformada por bailarines profesionales contratados por la Universidad Nacional Mayor de San Marcos, quienes representan a la institución en escenarios nacionales e internacionales. Es una de las pocas compañías limeñas con un elenco estable de bailarines dedicados exclusivamente a la labor de creación artística.
 						</p>
 					</div>
 				</div>
