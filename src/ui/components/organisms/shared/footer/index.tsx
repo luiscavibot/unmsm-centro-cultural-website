@@ -87,7 +87,9 @@ const Footer: React.FC = () => (
 								color="white"
 							/>
 							<span>
-								Parque Universitario, Av. Nicolás de Piérola 1222, Cercado de Lima 15001
+								Av. Nicolás de Piérola 1222
+								<br />
+								Parque Universitario, Centro Histórico de Lima.
 							</span>
 						</p>
 						<p className="flex items-baseline gap-2">
