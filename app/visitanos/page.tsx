@@ -62,7 +62,7 @@ export default function Visitanos() {
 						<div className="leading-[24px] text-dark-blue-2 flex flex-row gap-x-24">
 							<div className="basis-1/2">
 								<p className="mb-6">
-									El boleto incluye el recorrido del guiado a
+									El boleto incluye el recorrido guiado a
 									los{' '}
 									<span className="font-bold">
 										históricos patios y salones ceremoniales
@@ -73,7 +73,7 @@ export default function Visitanos() {
 										muestras permanentes: Colección de
 										retratos de catedráticos y rectores de
 										la Universidad de San Marcos (siglos
-										XVI-XXI), Vargas Llosa en San Marcos
+										XVI-XIX) y la sala Vargas Llosa en San Marcos
 									</span>
 									.
 								</p>
