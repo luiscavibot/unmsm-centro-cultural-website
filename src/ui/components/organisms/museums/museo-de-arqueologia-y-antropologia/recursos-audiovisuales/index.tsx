@@ -11,7 +11,7 @@ const RecursosAudiovisuales = () => {
 					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
 						¡Descubre el fascinante mundo de la antropología y
 						arqueología peruana de manera interactiva! En esta
-						sección de recursos visuales de la Casona de la UNMSM,
+						sección de recursos visuales MAA-UNMSM,
 						te invitamos a explorar:
 					</p>
 				</div>
@@ -88,8 +88,8 @@ const RecursosAudiovisuales = () => {
 							</h3>
 							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
 								Sobre el proceso de musealización de uno de los
-								objetos emblemáticos del museo. El Manto Blanco
-								de Parcas, desde su recuperación por Julio C.
+								objetos más emblemáticos del museo. El Manto Blanco
+								de Paracas, desde su recuperación por Julio C.
 								Tello hasta su exposición hoy en día.
 							</p>
 						</header>
