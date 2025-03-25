@@ -50,7 +50,7 @@ export default function Visitanos() {
 									¡Ven y disfruta la cultura!
 								</p>
 								<p className="font-medium text-center">
-									De lunes a sábado, de 10:00 a 1:00 p.m. y de
+									De lunes a sábado, de 10:00 a. m. a 1:00 p. m. y de
 									2:00 a 4:00 p. m.
 								</p>
 								<p className="font-medium text-center">
@@ -88,7 +88,7 @@ export default function Visitanos() {
 								<ul className="list-outside list-disc pl-6 space-y-2 mb-6">
 									<li>
 										<b>Exposiciones Museo de Arte :</b> De
-										lunes a viernes, de 10 a.m. a 1 p.m. y
+										lunes a viernes, de 10 a. m. a 1 p. m. y
 										de 2 a 4:00 p. m.
 									</li>
 									<li>
@@ -96,7 +96,7 @@ export default function Visitanos() {
 											Exposiciones Museo Arqueología y
 											Antropología:
 										</b>{' '}
-										De lunes a viernes, de 10 a.m. a 1 p.m.
+										De lunes a viernes, de 10 a. m. a 1 p. m.
 										y de 2 a 3:30 p. m.
 									</li>
 								</ul>
