@@ -64,8 +64,7 @@ const Interviews: React.FC = () => {
 						Entrevistas
 					</h2>
 					<p className="mt-6 leading-6 font-normal">
-						A través de nuestro canal de YouTube, la Casona
-						de San Marcos te invita a descubrir un espacio
+						A través de nuestro canal de YouTube, te invitamos a descubrir un espacio
 						de diálogo y reflexión con protagonistas del
 						arte, la cultura, y el pensamiento.
 					</p>
