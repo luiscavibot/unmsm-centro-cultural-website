@@ -118,6 +118,9 @@ export default function BalletHistoria() {
 								</div>
 								<div>
 									<p className="mb-5">
+										En 1972, Vera Stastny asumió la dirección del Ballet San Marcos, marcando un hito en su historia al introducir la danza contemporánea en la compañía. Bajo su liderazgo, se diversificó el repertorio y se impulsó un enfoque innovador en la formación de los bailarines, alineado con las tendencias internacionales. Su gestión, que concluyó en 2018, consolidó al Ballet San Marcos como un referente en la danza contemporánea en el país, ampliando su impacto artístico y pedagógico.
+									</p>
+									<p className="mb-5">
 										A partir de los años 70, el Ballet San
 										Marcos incorporó la danza contemporánea
 										a su entrenamiento y repertorio,
