@@ -170,11 +170,11 @@ export default function MuseoDeArteDeSanMarcos() {
 											</p>
 											<p className="font-medium">
 												Oficina: Lunes a viernes, de 8
-												a.m. a 1 p.m. y de 2 a 3:45 p.m.
+												a. m. a 1 p. m. y de 2 a 3:45 p. m.
 												<br />
 												Exposiciones: Lunes a viernes,
-												de 10 a.m. a 1 p.m. y de 2 a
-												3:30 p.m.
+												de 10 a. m. a 1 p. m. y de 2 a
+												3:30 p. m.
 											</p>
 										</div>
 									</div>

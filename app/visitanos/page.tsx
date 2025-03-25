@@ -78,18 +78,13 @@ export default function Visitanos() {
 									.
 								</p>
 								<p className="mb-6">
-									Además se recorren las exposiciones
-									presentadas por el Museo de Arte de San
-									Marcos y el Museo de Arqueología y
-									Antropología de San Marcos, siempre y cuando
-									se encuentren dentro de su horario de
-									atención:
+									Además se recorren las exposiciones presentadas por el Museo de Arqueología y Antropología UNMSM (MAA-UNMSM) y del Museo de Arte de San Marcos (MASM) siempre y cuando se encuentren dentro de su horario de atención:
 								</p>
 								<ul className="list-outside list-disc pl-6 space-y-2 mb-6">
 									<li>
 										<b>Exposiciones Museo de Arte :</b> De
 										lunes a viernes, de 10 a. m. a 1 p. m. y
-										de 2 a 4:00 p. m.
+										de 2 a 4 p. m.
 									</li>
 									<li>
 										<b>

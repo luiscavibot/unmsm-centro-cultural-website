@@ -131,10 +131,10 @@ export default function Folklore() {
 												Horario de atención en oficina
 											</p>
 											<p className="font-medium">
-												Lunes a viernes de 8 a.m. a 1
-												p.m. y de 2 a 7 p.m.
+												Lunes a viernes de 8 a. m. a 1
+												p. m. y de 2 a 7 p. m.
 												<br />
-												Sábados de 9:30 a.m. a 1 p.m.
+												Sábados de 9:30 a. m. a 1 p. m.
 											</p>
 										</div>
 									</div>

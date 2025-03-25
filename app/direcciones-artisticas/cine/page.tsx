@@ -123,8 +123,8 @@ export default function Cine() {
 												Horario de atención en oficina
 											</p>
 											<p className="font-medium">
-												Lunes a viernes de 10 a.m. a 1
-												p.m. y de 2 a 5 p. m.
+												Lunes a viernes de 10 a. m. a 1
+												p. m. y de 2 a 5 p. m.
 											</p>
 										</div>
 									</div>

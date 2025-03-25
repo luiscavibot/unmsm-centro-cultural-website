@@ -170,10 +170,10 @@ export default function CineHistoria() {
 										continúa con sus transmisiones de manera
 										ininterrumpida, produciendo diversos
 										contenidos culturales, ampliando la
-										propuesta de sus antecesores, de 11 a.m.
-										a 4 p.m. vía streaming por el Canal Web
-										de Culturas Desde la Casona, y de 4 p.m.
-										a 9 p.m. porel facebook dirección de
+										propuesta de sus antecesores, de 11 a. m.
+										a 4 p. m. vía streaming por el Canal Web
+										de Culturas Desde la Casona, y de 4 p. m.
+										a 9 p. m. porel facebook dirección de
 										cine y producción audiovisual - UNMSM.
 									</p>
 									<p className="mb-5">

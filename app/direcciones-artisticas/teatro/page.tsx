@@ -126,8 +126,8 @@ export default function Teatro() {
 												Horario de atención en oficina
 											</p>
 											<p className="font-medium">
-												Lunes a viernes de 9:30 a.m. a
-												12:30 p.m. y 2:30 a 5 p.m.
+												Lunes a viernes de 9:30 a. m. a
+												12:30 p. m. y 2:30 a 5 p. m.
 											</p>
 										</div>
 									</div>

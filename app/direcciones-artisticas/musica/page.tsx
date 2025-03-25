@@ -87,8 +87,8 @@ export default function Musica() {
 												Horario de atención en oficina
 											</p>
 											<p className="font-medium">
-												Lunes a viernes de 8:30 a.m. a 1
-												p.m. y de 2 p.m. a 4 p.m.
+												Lunes a viernes de 8:30 a. m. a 1
+												p. m. y de 2 p. m. a 4 p. m.
 											</p>
 										</div>
 									</div>
