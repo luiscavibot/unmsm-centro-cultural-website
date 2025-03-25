@@ -98,7 +98,9 @@ const Footer: React.FC = () => (
 								ariaLabel="Teléfono"
 								color="white"
 							/>
-							<span>(01) 6197000</span>
+							<Link className="link" href="/directorio">
+								Directorio
+							</Link>
 						</p>
 						{/* <p className="flex items-baseline gap-2">
 							<BaselineEmailIcon className="shrink-0 relative top-1" ariaLabel="Correo electrónico" color="white" />
