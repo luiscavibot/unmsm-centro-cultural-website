@@ -86,7 +86,7 @@ const ElencoJuvenil: React.FC<Props> = ({
 					<div className="font-medium leading-[24px] mt-6">
 						<p className="mb-5">
 							El Elenco Juvenil, fundado en 1997, está conformado
-							por jóvenes estudiantes y egresados que buscan
+							por jóvenes estudiantes que buscan
 							fortalecer su formación artística a través de la
 							práctica y difusión de las danzas tradicionales del
 							Perú. Mediante ensayos rigurosos y presentaciones en
