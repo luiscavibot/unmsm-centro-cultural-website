@@ -35,7 +35,7 @@ const CiclosDeCine: React.FC<Props> = ({
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
 				<div className="max-w-[394px]">
 					<h3 className="text-[32px] leading-[normal] font-semibold">
-						Ciclos de cines
+						Ciclos de cine
 					</h3>
 					<div className="font-medium leading-[24px] mt-6">
 						<p className="mb-5">
@@ -49,10 +49,7 @@ const CiclosDeCine: React.FC<Props> = ({
 							diversidad del cine local e internacional.
 						</p>
 						<p>
-							Los ciclos incluyen cineforos y discusiones para
-							profundizar en los temas abordados por las
-							películas, fomentando el diálogo entre creadores y
-							público.
+							Los ciclos incluyen cineforos que profundizan en los temas abordados por las películas, fomentando el diálogo entre creadores y público.
 						</p>
 					</div>
 				</div>
