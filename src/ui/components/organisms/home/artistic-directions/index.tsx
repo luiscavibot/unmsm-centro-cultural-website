@@ -74,7 +74,7 @@ const ArtisticDirections: React.FC = () => {
 						</h3>
 					</Link>
 					<Link
-						href="/banda-universitaria"
+						href="/direcciones-artisticas/banda-universitaria"
 						className="relative w-full max-lg:h-[200px] lg:aspect-[394/420] flex items-center justify-center rounded-2xl overflow-hidden group"
 					>
 						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
