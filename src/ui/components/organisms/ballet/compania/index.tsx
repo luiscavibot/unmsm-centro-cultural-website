@@ -62,7 +62,8 @@ const Compania = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
 				<div className="container">
-					<div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[611px_483px_402px_750px_403px_403px]">
+					{/* <div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[611px_483px_402px_750px_403px_403px]"> */}
+					<div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[611px_483px_402px_403px_403px]">
 						<div className="col-span-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
@@ -107,7 +108,7 @@ const Compania = () => {
 								/>
 							</figure>
 						</div>
-						<div className="col-span-2 row-start-4">
+						{/* <div className="col-span-2 row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/9f05287c6f4bdedf06ca6f8d1b062be5_3529756b21.jpg"
@@ -117,8 +118,9 @@ const Compania = () => {
 									quality={100}
 								/>
 							</figure>
-						</div>
-						<div className="row-start-5">
+						</div> */}
+						{/* <div className="row-start-5"> */}
+						<div className="row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_grid_7_e28ec3c9e8.jpg"
@@ -129,7 +131,8 @@ const Compania = () => {
 								/>
 							</figure>
 						</div>
-						<div className="col-start-1 row-start-6">
+						{/* <div className="col-start-1 row-start-6"> */}
+						<div className="col-start-1 row-start-5">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/b9ebe23f2cda5b8f290d5cb17a74de65_423af243bb.jpg"
@@ -140,7 +143,8 @@ const Compania = () => {
 								/>
 							</figure>
 						</div>
-						<div className="row-span-2 col-start-2 row-start-5">
+						{/* <div className="row-span-2 col-start-2 row-start-5"> */}
+						<div className="row-span-2 col-start-2 row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/00e460e8779f18d85b44c80af8a87e3f_f83a3f635c.jpg"
