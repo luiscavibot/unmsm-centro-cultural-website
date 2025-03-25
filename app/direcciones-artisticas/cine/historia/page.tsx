@@ -141,8 +141,7 @@ export default function CineHistoria() {
 									</p>
 									<p className="mb-5">
 										Ya como Dirección de Cine y Producción
-										Audiovisual, se firma el 2009 bajo la
-										dirección de , un convenio de
+										Audiovisual, se firma el 2009, un convenio de
 										cooperación con la corporación española
 										Livemedia, con el proyecto on line:
 										Culturas en Red, creándose el canal de
@@ -164,22 +163,18 @@ export default function CineHistoria() {
 									<p className="mb-5">
 										Desde setiembre del 2017 bajo la
 										dirección de Andrés José García García,
-										el departamento de Cine y Producción
-										Audiovisual de la UNMSM, ubicado en el
-										Centro Cultural de la universidad,
 										continúa con sus transmisiones de manera
 										ininterrumpida, produciendo diversos
 										contenidos culturales, ampliando la
 										propuesta de sus antecesores, de 11 a. m.
 										a 4 p. m. vía streaming por el Canal Web
-										de Culturas Desde la Casona, y de 4 p. m.
-										a 9 p. m. porel facebook dirección de
-										cine y producción audiovisual - UNMSM.
+										de Culturas Desde la Casona, y de 4
+										a 9 p. m. por el facebook de la Dirección.
+										Ampliando la propuesta de sus antecesores.
 									</p>
 									<p className="mb-5">
-										Desde 2023, bajo la dirección de
-										Estefanía De Cara, la Dirección de Cine
-										ha iniciado una etapa clave de
+										Desde 2023, Estefanía De Cara asume la dirección,
+										iniciando una etapa clave de
 										renovación y expansión, con proyectos
 										centrados en la conservación del
 										patrimonio fílmico y la creación de
@@ -188,24 +183,10 @@ export default function CineHistoria() {
 										esta etapa se encuentran:
 									</p>
 									<p className="mb-5 font-bold">
-										Reactivación de la sala de cine y
-										programación semanal:
+										Remodelación de la sala de cine y programación semanal:
 									</p>
 									<p className="mb-5">
-										Uno de los hitos más importantes ha sido
-										la reactivación de la sala de cine
-										dentro del Centro Cultural de San
-										Marcos, que había estado inactiva por
-										varios años. Desde su reapertura, la
-										sala proyecta películas todos los
-										jueves, brindando un espacio regular
-										para la exhibición de cine peruano así
-										como obras internacionales que fomentan
-										el diálogo intercultural. Esta
-										reactivación ha sido fundamental para
-										revitalizar la oferta cinematográfica en
-										el centro cultural y formar nuevos
-										públicos.
+										Superada la pandemia del COVID 19 se retoman las proyecciones de los ciclos de cine dentro del Centro Cultural de San Marcos, para lo cual se remodeló el auditorio en donde se proyectan películas una vez por semana, devolviendo a la comunidad un espacio fundamental para el séptimo arte y brindando un ambiente  para la exhibición del cine peruano, así como obras internacionales que fomentan el diálogo intercultural. Esta reactivación ha sido fundamental para acercar el cine a la comunidad sanmarquina y el público en general.
 									</p>
 									<p className="mb-5 font-bold">
 										Alianza con Wiki Acción Perú para la
