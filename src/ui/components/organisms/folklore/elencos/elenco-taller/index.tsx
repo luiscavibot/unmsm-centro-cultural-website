@@ -83,20 +83,7 @@ const ElencoTaller: React.FC<Props> = ({
 					</h3>
 					<div className="font-medium leading-[24px] mt-6">
 						<p className="mb-5">
-							El Elenco Taller del Centro Universitario de
-							Folklore (CUF) es uno de los principales difusores
-							del folklore peruano de la Universidad Nacional
-							Mayor de San Marcos y tiene como finalidad proyectar
-							mensajes culturales de nuestra riqueza peruana a
-							través de diversas danzas regionales.
-						</p>
-						<p>
-							Se caracteriza por tener como integrantes a
-							estudiantes del CUF de la Decana de América, quienes
-							buscan ser difusores técnicos de la danza
-							tradicional y formadores en diversidad cultural en
-							las diferentes instituciones y realidades educativas
-							del Perú.
+							El Elenco Taller del Centro Universitario de Folklore (CUF) se caracteriza por tener como integrantes a estudiantes del CUF de la Decana de América, quienes buscan ser difusores técnicos de la danza tradicional y formadores en diversidad cultural en las diferentes instituciones y realidades educativas del Perú.
 						</p>
 					</div>
 				</div>
