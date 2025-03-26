@@ -29,7 +29,7 @@ const Layout = ({
 		<section className="relative h-full">
 			<div
 				id="imagen"
-				className="fixed top-[--total-header-height] left-0 w-full h-[544px] -z-50"
+				className="fixed top-[--total-header-height] left-0 w-full h-[--portada-space-height-md] md:h-[--portada-image-height] -z-50"
 			>
 				<Image
 					// src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp"
@@ -40,10 +40,10 @@ const Layout = ({
 					quality={100}
 				/>
 			</div>
-			<div id="contenido" className="pt-[422px]">
+			<div id="contenido" className="pt-[--portada-space-height-md] md:pt-[--padding-top-to-portada-image]">
 				<div
 					className={
-						'px-4 lg:px-[104px] pt-16 rounded-t-[32px] overflow-hidden ' +
+						'px-4 lg:px-[104px] pt-[46px] md:pt-16 md:rounded-t-[--border-top-radius-layout] overflow-hidden ' +
 						colors[theme]
 					}
 				>

@@ -38,7 +38,7 @@ const Header: React.FC = () => {
 					</div>
 					<Link className="px-2" href="/">
 						<Image
-							className="h-[--header-logo-height]"
+							className="w-auto h-[--header-logo-height-md] md:h-[--header-logo-height]"
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/logo-ccsm.svg"
 							alt="logo"
 							width={279}

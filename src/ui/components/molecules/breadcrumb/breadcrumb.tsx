@@ -12,7 +12,7 @@ interface BreadcrumbProps {
 
 const Breadcrumb: FC<BreadcrumbProps> = ({ items, theme = 'light' }) => {
 	return (
-		<nav aria-label="breadcrumb" className="mb-[104px]">
+		<nav aria-label="breadcrumb" className="mb-20 md:mb-[104px]">
 			<ol className="flex items-center gap-2">
 				{items.map((item, index) => {
 					return (

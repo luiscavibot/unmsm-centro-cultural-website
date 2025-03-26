@@ -40,11 +40,21 @@
 	--half-max-w-xl: calc(var(--max-w-xl) / 2);
 
 	--header-logo-height: 80px;
+	--header-logo-height-md: 40px;
 
 	--header-top-height: auto;
 	--header-bottom-height: 49px;
 
 	--total-header-height: calc(var(--header-top-height) + var(--header-bottom-height));
+
+	--portada-space-height: 320px;
+	--portada-space-height-md: 136px;
+
+	--padding-top-to-portada-image: calc(var(--header-bottom-height) + var(--portada-space-height));
+
+	--portada-image-height: calc(var(--header-bottom-height) + var(--portada-space-height) + var(--border-top-radius-layout));
+
+	--border-top-radius-layout: 32px;
 
 	/* Primary Button */
 
