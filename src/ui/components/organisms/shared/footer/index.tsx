@@ -58,7 +58,7 @@ const Siguenos = () => (
 const Footer: React.FC = () => (
 	<footer className="bg-dark-gray text-white">
 		<div className="px-8 lg:px-[104px] container py-12 lg:py-[120px] ">
-			<div className="flex flex-col lg:flex-row justify-between items-start">
+			<div className="flex flex-col lg:flex-row max-lg:gap-y-4 justify-between items-start">
 				<div className="max-lg:mb-10">
 					<Link className="max-w-[377px] flex gap-x-6" href="/">
 						<Image
@@ -78,7 +78,7 @@ const Footer: React.FC = () => (
 						<Siguenos />
 					</div>
 				</div>
-				<div className="max-w-[365px]">
+				<div className="max-w-[365px] max-lg:mb-10">
 					<address className="space-y-4 text-xs lg:text-sm not-italic">
 						<p className="flex items-baseline gap-2">
 							<BaselinePlaceIcon
@@ -108,7 +108,7 @@ const Footer: React.FC = () => (
 						</p> */}
 					</address>
 				</div>
-				<div className="max-w-[386px] leading-[16.8px] flex flex-col gap-y-8">
+				<div className="max-w-[386px] leading-[16.8px] flex flex-col gap-y-4 lg:gap-y-8 max-lg:text-xs">
 					<a
 						className="link"
 						href="https://reclamos.servicios.gob.pe/?institution_id=278"
