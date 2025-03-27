@@ -34,7 +34,7 @@ export default function DependenciasAdministrativas() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Centro Cultural de San Marcos (CCSM) es una entidad de la Universidad Nacional Mayor de San Marcos (UNMSM) dedicada al impulso de la creación artística, así como la preservación, producción, recuperación y difusión de diversas expresiones culturales de la mano con la comunidad sanmarquina y el público en general.
+									El Centro Cultural de San Marcos (CCSM), fundado el 29 de noviembre de 1995, es un espacio clave en la vida cultural limeña, albergando exposiciones, producciones artísticas y literarias. Viene desarrollando proyectos en conexión con la historia sanmarquina, integrando reconocidos elencos como el Coro, Teatro, Folklore, Ballet y la Banda Sinfónica Universitaria de San Marcos. Además, cuenta con la Biblioteca España de las Artes, la Dirección de Cine y Producción Audiovisual, y la Dirección de Turismo, que promueve el patrimonio sanmarquino. Sus dos museos, el de Arqueología y Antropología y el de Arte de San Marcos, resguardan valiosas colecciones. Con una intensa actividad artística que incluye talleres, conciertos y presentaciones escénicas, el CCSM vincula el pasado con el presente cultural y fomenta el turismo, consolidándose como un referente cultural y académico en el país.
 								</p>
 							</div>
 						</div>
