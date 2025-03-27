@@ -32,11 +32,10 @@ const Layout = ({
 				className="fixed top-[--total-header-height] left-0 w-full h-[--portada-space-height-md] md:h-[--portada-image-height] -z-50"
 			>
 				<Image
-					// src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-agenda-cultural.webp"
 					src={portadaImage}
 					alt="background"
 					fill
-					objectFit="cover"
+					className="object-cover"
 					quality={100}
 				/>
 			</div>
