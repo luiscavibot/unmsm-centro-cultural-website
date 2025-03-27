@@ -96,10 +96,10 @@ export default function MuseoDeArteDeSanMarcos() {
 								<p className="mb-3">
 									El MASM alberga importantes ejemplares de
 									arte peruano organizados en cuatro
-									colecciones: la de retratos, la de arte
-									popular, la de arte moderno y contemporáneo;
-									así como el archivo de dibujo y pintura
-									campesina.
+									colecciones: de Retratos, de Arte
+									Popular, de Arte Moderno y Contemporáneo;
+									así como el Archivo de Dibujo y Pintura
+									Campesina.
 								</p>
 								<p>
 									Estos conjuntos de obras, que ilustran la
