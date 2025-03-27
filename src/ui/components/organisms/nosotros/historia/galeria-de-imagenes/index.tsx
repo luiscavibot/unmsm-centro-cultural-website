@@ -57,7 +57,7 @@ const GaleriaDeImagenes: React.FC<Props> = ({
 											src={img.url}
 											className="object-cover"
 											alt={'Galería de imágenes'}
-											layout="fill"
+											fill
 										/>
 									</figure>
 								</SplideSlide>

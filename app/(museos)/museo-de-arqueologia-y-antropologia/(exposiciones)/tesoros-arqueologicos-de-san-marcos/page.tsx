@@ -190,7 +190,7 @@ export default function TesorosAqueologicosDeSanMarcos() {
 													src={img.url}
 													className="object-cover"
 													alt={'Exposición'}
-													layout="fill"
+													fill
 												/>
 											</figure>
 										</SplideSlide>

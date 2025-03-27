@@ -87,7 +87,7 @@ export default function BandaUniversitariaHistoria() {
 											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-banda-universitaria-1.webp"
 											className="object-cover h-full"
 											alt="ballet 1"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -132,7 +132,7 @@ export default function BandaUniversitariaHistoria() {
 											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-banda-universitaria-2.webp"
 											className="object-cover h-full"
 											alt="ballet 2"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>

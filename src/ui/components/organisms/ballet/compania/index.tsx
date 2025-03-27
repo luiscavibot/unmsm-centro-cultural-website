@@ -54,7 +54,7 @@ const Compania = () => {
 							src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_cf5188393b.webp"
 							className="object-cover h-full"
 							alt="Ballet Compañía"
-							layout="fill"
+							fill
 							quality={100}
 						/>
 					</figure>
@@ -70,7 +70,7 @@ const Compania = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/83d56e4cc5db4e12714c1273c4f52780_c15608a77e.jpg"
 									className="object-cover"
 									alt="Compañia de Ballet 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -81,7 +81,7 @@ const Compania = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_grid_2_abacbe5a2d.jpg"
 									className="object-cover"
 									alt="Compañia de Ballet 2"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -92,7 +92,7 @@ const Compania = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/09b97c1c8aadd73af9af364296f895e9_55f9ca11c7.jpg"
 									className="object-cover"
 									alt="Compañia de Ballet 3"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -103,7 +103,7 @@ const Compania = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/a689b693503f0fef317e93d56a7d508d_d791dd4e5c.jpg"
 									className="object-cover"
 									alt="Compañia de Ballet 4"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -114,7 +114,7 @@ const Compania = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/9f05287c6f4bdedf06ca6f8d1b062be5_3529756b21.jpg"
 									className="object-cover"
 									alt="Compañia de Ballet 5"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -126,7 +126,7 @@ const Compania = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_grid_7_e28ec3c9e8.jpg"
 									className="object-cover"
 									alt="Compañia de Ballet 6"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -138,7 +138,7 @@ const Compania = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/b9ebe23f2cda5b8f290d5cb17a74de65_423af243bb.jpg"
 									className="object-cover"
 									alt="Compañia de Ballet 7"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -150,7 +150,7 @@ const Compania = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/00e460e8779f18d85b44c80af8a87e3f_f83a3f635c.jpg"
 									className="object-cover"
 									alt="Compañia de Ballet 8"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>

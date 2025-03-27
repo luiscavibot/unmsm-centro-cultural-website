@@ -13,7 +13,7 @@ const ExhibitionsCard: React.FC<ExhibitionsCardProps> = ({
 }) => (
 	<article className="rounded-3xl overflow-hidden">
 		<figure className="relative w-full h-[348px] flex-shrink-0">
-			<Image src={url} className="object-cover" alt={title} layout="fill" />
+			<Image src={url} className="object-cover" alt={title} fill />
 		</figure>
 		<header className="bg-white p-6">
 			<h3 className="text-xl text-dark-blue font-bold leading-[30px]">{title}</h3>

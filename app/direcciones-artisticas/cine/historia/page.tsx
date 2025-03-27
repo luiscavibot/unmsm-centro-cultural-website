@@ -120,7 +120,7 @@ export default function CineHistoria() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/cine_historia_1_c0f03df03a.jpg"
 											className="object-cover h-full"
 											alt="Historia Cine 1"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -154,7 +154,7 @@ export default function CineHistoria() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/cine_historia_2_f82f79f24b.jpg"
 											className="object-cover h-full"
 											alt="Historia Cine 2"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>

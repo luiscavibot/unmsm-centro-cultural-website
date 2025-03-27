@@ -251,7 +251,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/c311e26e22666cb8950d2966cb33a65a_4af15c8007.webp"
 									className="object-cover h-full object-bottom"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -262,7 +262,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/a8237aa13d166d6ccadbfd088f7ab9cf_984df24f70.webp"
 									className="object-cover h-full"
 									alt="visitanos 2"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -273,7 +273,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/9932621fd5ce2b8a3c87254ef38a261c_c7c84533a2.webp"
 									className="object-cover h-full"
 									alt="visitanos 3"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -284,7 +284,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/6e96107d943cb492c69da75af3467218_209cb76c9f.webp"
 									className="object-cover h-full"
 									alt="visitanos 4"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -295,7 +295,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/bfe63e48db771e3a4afaafdf8e9a95f3_37fdeb297f.webp"
 									className="object-cover h-full"
 									alt="visitanos 5"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -306,7 +306,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/5d138e25516dbfdd81aeb6286dc5e417_f4c9de9305.webp"
 									className="object-cover h-full"
 									alt="visitanos 6"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -317,7 +317,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/84eba024515f0a8f050a18521b529b21_432a54d062.webp"
 									className="object-cover h-full"
 									alt="visitanos 7"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -328,7 +328,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/c9eeac414429e1fa9e0d3dd5821145ca_2ace594c5e.webp"
 									className="object-cover h-full"
 									alt="visitanos 8"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -339,7 +339,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/2403a539c22736f907a69f0cbe5ec6e1_3afb1460e2.webp"
 									className="object-cover h-full"
 									alt="visitanos 9"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -350,7 +350,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ee8fa74a14f10cedf2a00ef01e44e89d_5058b317d7.webp"
 									className="object-cover h-full"
 									alt="visitanos 10"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -361,7 +361,7 @@ export default function CasonaDeSanMarcos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/d66dec7050c0107411a8c2cbf97f978f_3edb59807e.webp"
 									className="object-cover h-full"
 									alt="visitanos 11"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>

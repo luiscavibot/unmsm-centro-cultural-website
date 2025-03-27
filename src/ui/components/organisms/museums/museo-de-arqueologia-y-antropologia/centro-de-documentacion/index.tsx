@@ -52,7 +52,7 @@ const CentroDeDocumentacion = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_1_00a307801c.webp"
 									className="object-cover"
 									alt="Centro de Documentación 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -63,7 +63,7 @@ const CentroDeDocumentacion = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_2_80f772e463.webp"
 									className="object-cover"
 									alt="Centro de Documentación 2"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -74,7 +74,7 @@ const CentroDeDocumentacion = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_3_33f0e9fc7d.webp"
 									className="object-cover"
 									alt="Centro de Documentación 3"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -85,7 +85,7 @@ const CentroDeDocumentacion = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_4_7633d3b406.webp"
 									className="object-cover"
 									alt="Centro de Documentación 4"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -96,7 +96,7 @@ const CentroDeDocumentacion = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_5_d38cfbf065.webp"
 									className="object-cover"
 									alt="Centro de Documentación 5"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>

@@ -85,7 +85,7 @@ export default function FolkloreHistoria() {
 											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-folklore-1.webp"
 											className="object-cover h-full"
 											alt="ballet 1"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -126,7 +126,7 @@ export default function FolkloreHistoria() {
 											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-folklore-2.webp"
 											className="object-cover h-full"
 											alt="ballet 2"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -232,7 +232,7 @@ export default function FolkloreHistoria() {
 											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-folklore-3.webp"
 											className="object-cover h-full"
 											alt="ballet 2"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>

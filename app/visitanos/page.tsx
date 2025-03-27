@@ -340,7 +340,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/65b39233a30eb13b02685da762462df8_d78c20b62f.png"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -351,7 +351,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/b58e05c9a8b5593ab05e2ab6d532d23a_1f1405235a.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -362,7 +362,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ba73f6ed670a54b40f935f44bb54ef4f_f6ac73bd85.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -373,7 +373,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/3f5e2e7c4745e6cbdf925ccbd041aa3b_a3cca8c1a1.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -384,7 +384,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/affe7601053a3ba1a818f2169aca71bd_62f1d0f444.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -395,7 +395,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/b5e7949c6cef8f31c1098a99c28aba7c_15b4ef3944.png"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -406,7 +406,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/7526dd1a71d616e7c09bf2c7e88b1640_83fc318a4b.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -417,7 +417,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/80d9a9101a544838242d50aded928f7f_acb8164960.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -428,7 +428,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/7c536e6742483fd5317540842e5cb863_ce5d0414d4.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -439,7 +439,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/268cccdcc837c8a2cbdc7b9d5ed6f722_025fa6d8e0.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -450,7 +450,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/c582b6b6364ad3f2fecaa01503c9f3a7_96dc3e5db3.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -461,7 +461,7 @@ export default function Visitanos() {
 									src="https://ccsm.unmsm.edu.pe/ccsm/e3f07fb41482aa9706b98edffc80560c_ac8eb59399.webp"
 									className="object-cover h-full"
 									alt="visitanos 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>

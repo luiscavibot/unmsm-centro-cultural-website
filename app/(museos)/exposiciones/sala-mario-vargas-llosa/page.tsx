@@ -207,7 +207,7 @@ export default function SalaMarioVargasLlosa() {
 															src={img.url}
 															className="object-cover"
 															alt={'Exposición'}
-															layout="fill"
+															fill
 														/>
 													</figure>
 												</SplideSlide>

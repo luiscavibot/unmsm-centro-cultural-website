@@ -84,7 +84,7 @@ export default function DireccionDeTurismo() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_1_d7bec10950.webp"
 											className="object-cover h-full"
 											alt="direccion de turismo 1"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -103,7 +103,7 @@ export default function DireccionDeTurismo() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_2_775041a8e7.webp"
 											className="object-cover h-full"
 											alt="direccion de turismo 2"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -133,7 +133,7 @@ export default function DireccionDeTurismo() {
 																alt={`galeria turismo ${
 																	index + 1
 																}`}
-																layout="fill"
+																fill
 																quality={100}
 															/>
 														</figure>

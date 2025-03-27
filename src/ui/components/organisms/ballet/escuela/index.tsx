@@ -78,7 +78,7 @@ const Escuela = () => {
 								src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_b72feba2e0.jpg"
 								className="object-cover h-full"
 								alt="Ballet Escuela"
-								layout="fill"
+								fill
 								quality={100}
 							/>
 						</figure>
@@ -94,7 +94,7 @@ const Escuela = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_1_75ca4094eb.jpg"
 									className="object-cover"
 									alt="Escuela de Ballet 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -105,7 +105,7 @@ const Escuela = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_2_ea766e3e7c.jpeg"
 									className="object-cover"
 									alt="Escuela de Ballet 2"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -116,7 +116,7 @@ const Escuela = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_3_519a645ce4.jpg"
 									className="object-cover"
 									alt="Escuela de Ballet 3"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -127,7 +127,7 @@ const Escuela = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_4_59f28ec23a.jpg"
 									className="object-cover"
 									alt="Escuela de Ballet 4"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -138,7 +138,7 @@ const Escuela = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_5_041e295b52.jpg"
 									className="object-cover"
 									alt="Escuela de Ballet 5"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -149,7 +149,7 @@ const Escuela = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_6_37324ffca8.jpg"
 									className="object-cover"
 									alt="Escuela de Ballet 6"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -160,7 +160,7 @@ const Escuela = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_7_58f2a87c8b.jpg"
 									className="object-cover"
 									alt="Escuela de Ballet 7"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -171,7 +171,7 @@ const Escuela = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_8_19b6743686.jpg"
 									className="object-cover"
 									alt="Escuela de Ballet 8"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>

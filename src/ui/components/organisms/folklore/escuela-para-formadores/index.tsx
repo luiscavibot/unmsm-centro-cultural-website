@@ -54,7 +54,7 @@ const EscuelaParaFormadores = () => {
 							src="https://ccsm.unmsm.edu.pe/ccsm/escuela_para_formadores_d87bdc40bb.webp"
 							className="object-cover h-full"
 							alt="Escuela para formadores"
-							layout="fill"
+							fill
 							quality={100}
 						/>
 					</figure>

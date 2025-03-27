@@ -161,7 +161,7 @@ export default function ArteModernoYContemporaneo() {
 													src={img.url}
 													className="object-cover"
 													alt={'Exposición'}
-													layout="fill"
+													fill
 												/>
 											</figure>
 										</SplideSlide>

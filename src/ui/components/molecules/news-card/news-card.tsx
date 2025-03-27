@@ -26,7 +26,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
 					src={url}
 					className="object-cover h-full"
 					alt={title}
-					layout="fill"
+					fill
 				/>
 			</figure>
 			<div className="bg-white p-6 w-auto">

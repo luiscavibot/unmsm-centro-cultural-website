@@ -26,7 +26,7 @@ const CoursesAndWorkshopsCard: React.FC<CoursesAndWorkshopsCardProps> = ({
 					src={url}
 					className="object-cover h-full"
 					alt={title}
-					layout="fill"
+					fill
 				/>
 			</figure>
 			{/* <div className="bg-white p-6 w-[553px] flex-shrink-0"> */}

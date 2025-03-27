@@ -38,7 +38,7 @@ const ProfundidadDeCampo = () => {
 								src="https://ccsm.unmsm.edu.pe/ccsm/profundidad_de_campo_1d87f72603.jpg"
 								className="object-cover h-full"
 								alt="ballet 2"
-								layout="fill"
+								fill
 								quality={100}
 							/>
 						</figure>

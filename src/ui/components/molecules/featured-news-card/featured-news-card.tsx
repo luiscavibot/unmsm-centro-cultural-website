@@ -15,7 +15,7 @@ const FeaturedNewsCard: React.FC<FeaturedNewsCardProps> = ({ url, date, dateStri
 	<Link className="group" href={`noticias/${slug}`}>
 		<article className="flex flex-col w-full h-[410px]">
 			<figure className="relative w-full h-[240px] rounded-3xl overflow-hidden flex-shrink-0">
-				<Image src={url} className="object-cover" alt={title} layout="fill" />
+				<Image src={url} className="object-cover" alt={title} fill />
 			</figure>
 			<div className="bg-white p-6 w-full flex-shrink-0 text-center">
 				<header>

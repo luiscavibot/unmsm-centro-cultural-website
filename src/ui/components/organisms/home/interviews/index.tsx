@@ -88,7 +88,7 @@ const Interviews: React.FC = () => {
 													alt={`video ${
 														index + 1
 													}`}
-													layout="fill"
+													fill
 													quality={100}
 												/>
 											</div>

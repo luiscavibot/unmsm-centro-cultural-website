@@ -281,7 +281,7 @@ export default function Teatro() {
 										src="https://ccsm.unmsm.edu.pe/ccsm/teatro_unete_18acf6440a.jpg"
 										className="object-cover h-full"
 										alt="Teatro Únete"
-										layout="fill"
+										fill
 										quality={100}
 									/>
 								</figure>
@@ -297,7 +297,7 @@ export default function Teatro() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_1_f94c72923e.jpg"
 											className="object-cover"
 											alt="Teatro 1"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -308,7 +308,7 @@ export default function Teatro() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_2_e5c614977e.jpg"
 											className="object-cover"
 											alt="Teatro 2"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -319,7 +319,7 @@ export default function Teatro() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_3_3214ff5391.jpg"
 											className="object-cover"
 											alt="Teatro 3"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -330,7 +330,7 @@ export default function Teatro() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_4_cb810cbe5e.jpg"
 											className="object-cover"
 											alt="Teatro 4"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -341,7 +341,7 @@ export default function Teatro() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_5_7059af83a1.jpg"
 											className="object-cover"
 											alt="Teatro 5"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>
@@ -352,7 +352,7 @@ export default function Teatro() {
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_6_2d529b7a70.jpg"
 											className="object-cover"
 											alt="Teatro 6"
-											layout="fill"
+											fill
 											quality={100}
 										/>
 									</figure>

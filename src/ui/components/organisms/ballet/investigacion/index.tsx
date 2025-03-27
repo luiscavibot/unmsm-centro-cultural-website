@@ -47,7 +47,7 @@ const Investigacion = () => {
 							src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_grid_7_e28ec3c9e8.jpg"
 							className="object-cover h-full"
 							alt="Ballet Investigación"
-							layout="fill"
+							fill
 							quality={100}
 						/>
 					</figure>

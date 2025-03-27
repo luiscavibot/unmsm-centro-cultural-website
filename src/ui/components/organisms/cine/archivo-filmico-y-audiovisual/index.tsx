@@ -23,7 +23,7 @@ const ArchivoFilmicoYAudiovisual = () => {
 								src="https://ccsm.unmsm.edu.pe/ccsm/archivo_filmico_980cce6378.jpg"
 								className="object-cover h-full"
 								alt="Archivo fílmico y audiovisual"
-								layout="fill"
+								fill
 								quality={100}
 							/>
 						</figure>
@@ -39,7 +39,7 @@ const ArchivoFilmicoYAudiovisual = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/archivo_filmico_grid_1_a60b298387.jpg"
 									className="object-cover"
 									alt="Archivo fílmico y audiovisual 1"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -50,7 +50,7 @@ const ArchivoFilmicoYAudiovisual = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/archivo_filmico_grid_2_bebd562264.jpg"
 									className="object-cover"
 									alt="Archivo fílmico y audiovisual 2"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -61,7 +61,7 @@ const ArchivoFilmicoYAudiovisual = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/archivo_filmico_grid_3_711e8f0799.jpg"
 									className="object-cover"
 									alt="Archivo fílmico y audiovisual 3"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -72,7 +72,7 @@ const ArchivoFilmicoYAudiovisual = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/archivo_filmico_grid_4_7c2815ff61.jpg"
 									className="object-cover"
 									alt="Archivo fílmico y audiovisual 4"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -83,7 +83,7 @@ const ArchivoFilmicoYAudiovisual = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/archivo_filmico_grid_5_7f0283138e.jpg"
 									className="object-cover"
 									alt="CArchivo fílmico y audiovisual 5"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>
@@ -94,7 +94,7 @@ const ArchivoFilmicoYAudiovisual = () => {
 									src="https://ccsm.unmsm.edu.pe/ccsm/archivo_filmico_grid_6_fa2f33be75.jpg"
 									className="object-cover"
 									alt="Archivo fílmico y audiovisual 6"
-									layout="fill"
+									fill
 									quality={100}
 								/>
 							</figure>

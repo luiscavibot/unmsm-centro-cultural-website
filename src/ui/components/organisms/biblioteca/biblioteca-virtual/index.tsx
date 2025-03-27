@@ -115,7 +115,7 @@ const BibliotecaVirtual = () => {
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/biblioteca-virtual.webp"
 							className="object-cover h-full"
 							alt="biblioteca virtual"
-							layout="fill"
+							fill
 							quality={100}
 						/>
 					</figure>
