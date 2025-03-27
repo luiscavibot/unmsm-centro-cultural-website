@@ -18,7 +18,7 @@ const breadcrumbItems = [
 		path: '/direcciones-artisticas/teatro',
 	},
 	{
-		title: 'Historia de la dirección de Teatro universitario',
+		title: 'Historia de la dirección de Teatro Universitario',
 		path: '/direcciones-artisticas/teatro/historia',
 	},
 ];
@@ -35,7 +35,7 @@ export default function TeatroHistoria() {
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center max-w-[482px] mx-auto">
 								Historia de la dirección del Teatro
-								universitario
+								Universitario
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4 space-y-14">
 								<div>

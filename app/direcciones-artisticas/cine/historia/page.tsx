@@ -18,7 +18,7 @@ const breadcrumbItems = [
 		path: '/direcciones-artisticas/cine',
 	},
 	{
-		title: 'Historia de la dirección de Cine y Producción audiovisual',
+		title: 'Historia de la dirección de Cine y Producción Audiovisual',
 		path: '/direcciones-artisticas/cine/historia',
 	},
 ];
@@ -35,7 +35,7 @@ export default function CineHistoria() {
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center max-w-[560px] mx-auto">
 								Historia de la Dirección de Cine y Producción
-								audiovisual
+								Audiovisual
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4 space-y-10">
 								<div>
