@@ -54,10 +54,8 @@ const Exposiciones = () => {
 					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
 						Nuestras exposiciones permanentes y temporales te
 						invitan a recorrer el tiempo y el espacio, descubriendo
-						historias fascinantes que nos conectan con el pasado, el
-						presente y el futuro. Cada sala de nuestro museo guarda
-						tesoros únicos, desde obras maestras de grandes
-						artistas.
+						historias fascinantes que nos conectan con el pasado y el
+						presente.
 					</p>
 				</div>
 			</div>
