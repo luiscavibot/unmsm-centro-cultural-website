@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import Facebook2Icon from '@/ui/components/atoms/icons/social/facebook-2-icon';
-import Instagram2Icon from '@/ui/components/atoms/icons/social/instagram-2-icon';
 import OutlineEmailIcon from '@/ui/components/atoms/icons/outline-email-icon';
 import FacebookIcon from '@/ui/components/atoms/icons/social/facebook-icon';
 import InstagramIcon from '@/ui/components/atoms/icons/social/instagram-icon';
