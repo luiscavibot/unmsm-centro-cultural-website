@@ -88,7 +88,7 @@ const TesorosArqueologicosSanMarcos: React.FC<Props> = ({
 						Tesoros Arqueológicos de San Marcos
 					</h3>
 					<p className="font-medium leading-[24px] mt-6">
-						Adéntrate en la historia milenaria del Perú a través de
+						Explora la historia milenaria del Perú a través de
 						una exposición en la que exploramos el pasado mediante
 						las colecciones: conjunto razonado de objetos vinculados
 						con actividades, tiempo, lugares y personas; además, de

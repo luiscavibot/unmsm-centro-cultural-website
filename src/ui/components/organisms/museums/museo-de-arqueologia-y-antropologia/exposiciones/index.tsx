@@ -69,7 +69,7 @@ const Exposiciones = () => {
 							Tesoros Arqueológicos de San Marcos
 						</h3>
 						<p className="font-medium leading-[24px] mt-6">
-							Adéntrate en la historia milenaria del Perú a través
+							Explora la historia milenaria del Perú a través
 							de una exposición que nos conecta con las antiguas
 							civilizaciones que dieron forma a nuestra identidad
 							cultural. Esta colección única nos revela piezas de
