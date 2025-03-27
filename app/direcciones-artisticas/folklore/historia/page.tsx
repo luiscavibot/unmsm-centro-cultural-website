@@ -274,7 +274,7 @@ export default function FolkloreHistoria() {
 										danzas tradicionales del Perú y su
 										edición digital en DVD así como para las
 										redes. Publicación de la revista (libro)
-										del CUF “Folklore: arte cultura y
+										del CUF “Folklore: arte, cultura y
 										sociedad”, donde se compilan artículos
 										de gran nivel académico.
 									</p>

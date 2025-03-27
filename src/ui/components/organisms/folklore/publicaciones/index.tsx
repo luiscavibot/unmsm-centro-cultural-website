@@ -32,7 +32,7 @@ const Publicaciones = () => {
 								Revista
 							</span>
 							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
-								Folklore: Arte cultura y sociedad
+								Folklore: Arte, cultura y sociedad
 							</h3>
 							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
 								En 2007, el Centro Universitario de Folklore de
