@@ -13,7 +13,7 @@ const EscuelaParaFormadores = () => {
 							<div className="basis-1/2">
 								<p className="font-bold mb-3">¡Sé un profesional en la enseñanza de nuestras danzas!</p>
 								<p className="mb-5">
-									Participa de la Escuela de Capacitación Docente en Folklore por módulos y certifícate como &ldquo;Promotor en danzas Folklóricas&rdquo;.
+									Participa de la Escuela de Capacitación Docente en Folklore por módulos y certifícate como &ldquo;Promotor en Danzas Folklóricas&rdquo;.
 								</p>
 								<p className="font-bold mb-3">Sobre el programa</p>
 								<ul className="list-outside list-disc pl-6 space-y-2">
