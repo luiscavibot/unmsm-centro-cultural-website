@@ -57,28 +57,23 @@ const Siguenos = () => (
 
 const Footer: React.FC = () => (
 	<footer className="bg-dark-gray text-white">
-		<div className="px-8 lg:px-[104px] container py-12 lg:py-[120px] ">
-			<div className="flex flex-col lg:flex-row max-lg:gap-y-4 justify-between items-start">
-				<div className="max-lg:mb-10">
-					<Link className="max-w-[377px] flex gap-x-6" href="/">
+		<div className="px-8 lg:px-[104px] container py-12 xl:py-[120px] ">
+			<div className="flex flex-col xl:flex-row max-xl:gap-y-4 gap-x-4 justify-between items-start">
+				<div className="max-w-[430px] w-full max-xl:mb-10">
+					<Link className="block w-full" href="/">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/logo_unmsm_blanco_9cb954ac16.svg"
+							src="https://ccsm.unmsm.edu.pe/ccsm/logo_unmsm_ccsm_blanco_92c837ec7c.svg"
 							alt="logo"
-							width={54}
-							height={75}
-						/>
-						<Image
-							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/logo-ccsm.svg"
-							alt="logo"
-							width={299}
-							height={75}
+							className="w-full scale-[1.12]"
+							width={617}
+							height={164}
 						/>
 					</Link>
-					<div className="hidden lg:block mt-6">
+					<div className="hidden xl:block mt-6">
 						<Siguenos />
 					</div>
 				</div>
-				<div className="max-w-[365px] max-lg:mb-10">
+				<div className="max-w-[365px] max-xl:mb-10">
 					<address className="space-y-4 text-xs lg:text-sm not-italic">
 						<p className="flex items-baseline gap-2">
 							<BaselinePlaceIcon
@@ -108,7 +103,7 @@ const Footer: React.FC = () => (
 						</p> */}
 					</address>
 				</div>
-				<div className="max-w-[386px] leading-[16.8px] flex flex-col gap-y-4 lg:gap-y-8 max-lg:text-xs">
+				<div className="max-w-[386px] leading-[16.8px] flex flex-col gap-y-4 xl:gap-y-8 max-lg:text-xs">
 					<a
 						className="link"
 						href="https://reclamos.servicios.gob.pe/?institution_id=278"
@@ -126,8 +121,8 @@ const Footer: React.FC = () => (
 						Reglamento de prevención y sanción del hostigamiento sexual de la UNMSM.
 					</a>
 				</div>
-				<div className="my-10 w-[72px] mx-auto bg-light-gray-2 h-[1px] lg:hidden opacity-50"></div>
-				<div className="block lg:hidden max-lg:mx-auto">
+				<div className="my-10 w-[72px] mx-auto bg-light-gray-2 h-[1px] xl:hidden opacity-50"></div>
+				<div className="block xl:hidden max-xl:mx-auto">
 					<Siguenos />
 				</div>
 			</div>
