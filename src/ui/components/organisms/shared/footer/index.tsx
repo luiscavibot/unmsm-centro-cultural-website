@@ -60,11 +60,11 @@ const Footer: React.FC = () => (
 		<div className="px-8 lg:px-[104px] container py-12 xl:py-[120px] ">
 			<div className="flex flex-col xl:flex-row max-xl:gap-y-4 gap-x-4 justify-between items-start">
 				<div className="max-w-[430px] w-full max-xl:mb-10">
-					<Link className="block w-full" href="/">
+					<Link className="block w-full -mb-[44px]" href="/">
 						<Image
 							src="https://ccsm.unmsm.edu.pe/ccsm/logo_unmsm_ccsm_blanco_92c837ec7c.svg"
 							alt="logo"
-							className="w-full scale-[1.12]"
+							className="w-full scale-[1.12] relative bottom-[24px]"
 							width={617}
 							height={164}
 						/>
