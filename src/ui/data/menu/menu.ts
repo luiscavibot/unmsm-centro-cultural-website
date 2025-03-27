@@ -69,8 +69,8 @@ const menu: Menu[] = [
 				url: '/nosotros/casona-de-san-marcos',
 			},
 			{
-				title: 'Dependencias administrativas',
-				url: '/nosotros/dependencias-administrativas',
+				title: 'Centro Cultural de San Marcos',
+				url: '/nosotros/centro-cultural-de-san-marcos',
 			},
 			{
 				title: 'Directorio',

@@ -33,7 +33,7 @@ export default function Visitanos() {
 								<p className="mb-3">
 									La{' '}
 									<Link
-										href="/nosotros/dependencias-administrativas/direccion-de-turismo"
+										href="/nosotros/centro-cultural-de-san-marcos/direccion-de-turismo"
 										className="underline text-dark-red font-medium"
 									>
 										Dirección de Turismo

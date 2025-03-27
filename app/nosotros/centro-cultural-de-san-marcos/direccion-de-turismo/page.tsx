@@ -27,12 +27,12 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dependencias administrativas',
-		path: '/nosotros/dependencias-administrativas',
+		title: 'Centro Cultural de San Marcos',
+		path: '/nosotros/centro-cultural-de-san-marcos',
 	},
 	{
 		title: 'Dirección de Turismo',
-		path: '/nosotros/dependencias-administrativas/direccion-de-turismo',
+		path: '/nosotros/centro-cultural-de-san-marcos/direccion-de-turismo',
 	},
 ];
 

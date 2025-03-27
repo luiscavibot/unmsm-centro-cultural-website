@@ -372,7 +372,7 @@ export default function CasonaDeSanMarcos() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Dependencias administrativas
+								Centro Cultural de San Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Ven y encuentra la inspiración que buscas, en un
@@ -384,7 +384,7 @@ export default function CasonaDeSanMarcos() {
 							<SecondaryButton
 								className="min-w-[167px]"
 								type="internal-link"
-								href="/nosotros/dependencias-administrativas"
+								href="/nosotros/centro-cultural-de-san-marcos"
 								theme="dark"
 								label="Explorar"
 							/>

@@ -14,8 +14,8 @@ const breadcrumbItems = [
 		path: '',
 	},
 	{
-		title: 'Dependencias administrativas',
-		path: '/nosotros/dependencias-administrativas',
+		title: 'Centro Cultural de San Marcos',
+		path: '/nosotros/centro-cultural-de-san-marcos',
 	},
 ];
 
@@ -275,7 +275,7 @@ export default function DependenciasAdministrativas() {
 							</p>
 							<SecondaryButton
 								type="internal-link"
-								href="/nosotros/dependencias-administrativas/direccion-de-turismo"
+								href="/nosotros/centro-cultural-de-san-marcos/direccion-de-turismo"
 								theme="dark"
 								label="Explorar"
 								className="mt-6"
