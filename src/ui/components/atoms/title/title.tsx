@@ -9,7 +9,7 @@ type TitleProps = {
 
 const Title: FC<TitleProps> = ({ tag: Tag = 'h1', children, className, theme = "light", ...props }) => {
 	return (
-		<Tag className={`font-messiri ${theme == "dark" ? "text-white" : "text-dark-blue"} font-bold leading-[48px] text-2xl md:text-[40px] mb-10 ${className}`} {...props}>
+		<Tag className={`font-messiri ${theme == "dark" ? "text-white" : "text-dark-blue"} font-bold leading-[28.8px] md:leading-[48px] text-2xl md:text-[40px] mb-10 ${className}`} {...props}>
 			{children}
 		</Tag>
 	);

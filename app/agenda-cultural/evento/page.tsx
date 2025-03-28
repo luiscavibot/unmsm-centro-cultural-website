@@ -23,7 +23,7 @@ const breadcrumbItems = [
 		path: '/agenda-cultural',
 	},
 	{
-		title: 'Evento',
+		title: 'Letras breves: Canción popular costeña en el norte del Perú',
 		path: '/agenda-cultural/evento',
 	},
 ];
@@ -35,17 +35,17 @@ export default function Evento() {
 			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
-			<div className="px-4 lg:px-[104px] bg-white pb-[104px]">
+			<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
 				<div className="container">
 					<div className="max-w-[814px] mx-auto mb-[80px]">
 						<div className="flex justify-center">
-							<Badge label="Virtual" size="small" />
+							<Badge className="max-md:mb-[18px]" label="Virtual" size="small" />
 						</div>
-						<Title className="text-center mb-16">
+						<Title className="text-center mb-10 md:mb-16">
 							Letras breves: Canción popular costeña en el norte
 							del Perú
 						</Title>
-						<div className="flex gap-x-1 justify-center mb-14">
+						<div className="flex flex-col md:flex-row gap-y-6 gap-x-1 justify-center mb-14">
 							<div className="min-w-[214px]">
 								<div className="flex gap-1 items-center">
 									<DateRangeIcon
@@ -130,8 +130,8 @@ export default function Evento() {
 							className="mt-6"
 						/>
 					</div>
-					<div className="mt-[110px]">
-						<div className="flex justify-between items-center mb-[30px]">
+					<div className="mt-20 md:mt-[110px]">
+						<div className="flex justify-between items-center mb-5 md:mb-[30px]">
 							<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">
 								Eventos próximos
 							</h2>
@@ -142,7 +142,7 @@ export default function Evento() {
 								href="/agenda-cultural"
 							/>
 						</div>
-						<div className="grid grid-cols-3 gap-6">
+						<div className="grid md:grid-cols-3 gap-y-4 gap-x-6">
 							{eventsDataToHome
 								.slice(-3)
 								.map((event: any, index: number) => (
