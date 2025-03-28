@@ -3,7 +3,7 @@ import { FC } from "react"
 
 type SecondaryButtonProps = {
 	theme: 'dark' | 'light',
-	label: string;
+	label?: string;
 	icon?: React.ReactNode;
 	className?: string;
 	disabled?: boolean;
@@ -29,9 +29,10 @@ const SecondaryButton: FC<Button> = (props) => {
 		case 'external-link':
 			return (
 				<a className={`${disabled ? 'pointer-events-none select-none' : ''} ${buttonTheme[theme]} p-4 border-[1px] rounded-lg inline-flex gap-x-2 items-center justify-center transition-colors duration-200 ${className}`} href={props.href} rel="noopener noreferrer" target="_blank">
-					<span className={`leading-[16px] font-semibold inline-block w-full ${icon ? 'text-left' : 'text-center'}`}>
-						{label}
-					</span>
+					{
+						label &&
+						<span className={`leading-[16px] font-semibold inline-block w-full ${icon ? 'text-left' : 'text-center'}`}>{label}</span>
+					}
 					{
 						icon &&
 						<div className="shrink-0">
@@ -43,9 +44,10 @@ const SecondaryButton: FC<Button> = (props) => {
 		case 'internal-link':
 			return (
 				<Link className={`${disabled ? 'pointer-events-none select-none' : ''} ${buttonTheme[theme]} p-4 border-[1px] rounded-lg inline-flex gap-x-2 items-center justify-center transition-colors duration-200 ${className}`} href={props.href}>
-					<span className={`leading-[16px] font-semibold inline-block w-full ${icon ? 'text-left' : 'text-center'}`}>
-						{label}
-					</span>
+					{
+						label &&
+						<span className={`leading-[16px] font-semibold inline-block w-full ${icon ? 'text-left' : 'text-center'}`}>{label}</span>
+					}
 					{
 						icon &&
 						<div className="shrink-0">
@@ -57,9 +59,10 @@ const SecondaryButton: FC<Button> = (props) => {
 		case 'on-click':
 			return (
 				<button onClick={props.onClick} className={`${disabled && 'pointer-events-none select-none'} ${buttonTheme[theme]} p-4 border-[1px] rounded-lg inline-flex gap-x-2 items-center justify-center transition-colors duration-200 ${className}`}>
-					<span className={`leading-[16px] font-semibold inline-block w-full ${icon ? 'text-left' : 'text-center'}`}>
-						{label}
-					</span>
+					{
+						label &&
+						<span className={`leading-[16px] font-semibold inline-block w-full ${icon ? 'text-left' : 'text-center'}`}>{label}</span>
+					}
 					{
 						icon &&
 						<div className="shrink-0">
@@ -71,9 +74,10 @@ const SecondaryButton: FC<Button> = (props) => {
 		default:
 			return (
 				<button className={`${disabled && 'pointer-events-none select-none'} ${buttonTheme[theme]} p-4 border-[1px] rounded-lg inline-flex gap-x-2 items-center justify-center transition-colors duration-200 ${className}`}>
-					<span className={`leading-[16px] font-semibold inline-block w-full ${icon ? 'text-left' : 'text-center'}`}>
-						{label}
-					</span>
+					{
+						label &&
+						<span className={`leading-[16px] font-semibold inline-block w-full ${icon ? 'text-left' : 'text-center'}`}>{label}</span>
+					}
 					{
 						icon &&
 						<div className="shrink-0">

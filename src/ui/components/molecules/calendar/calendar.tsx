@@ -7,8 +7,13 @@ import { es } from 'date-fns/locale';
 import { cn } from '@/ui/helpers/cn';
 import { AnimatePresence, motion } from 'framer-motion';
 import CalendarFilterIcon from '../../atoms/icons/calendar-filter-icon';
+import { FC } from 'react';
 
-const Calendar = () => {
+interface CalendarProps {
+	className?: string;
+}
+
+const Calendar: FC<CalendarProps> = ({ className = "" }) => {
 	const [date, setDate] = useState<DateRange | undefined>();
 	const [isOpen, setIsOpen] = useState(false);
 	const calendarRef = useRef<HTMLDivElement | null>(null);
@@ -41,7 +46,7 @@ const Calendar = () => {
 	}, []);
 
 	return (
-		<div className="relative" ref={calendarRef}>
+		<div className={`relative ${className}`} ref={calendarRef}>
 			<button
 				className={cn(
 					'flex w-full items-center justify-between gap-4 p-4 ring-1 ring-inset ring-light-gray-2 hover:ring-dark-blue-2 focus:ring-2 focus:ring-dark-red focus-visible:ring-2 focus-visible:ring-dark-red focus-visible:outline-none transition-all duration-200 rounded-lg text-left leading-[24px] font-medium text-dark-blue-2 bg-white',

@@ -5,21 +5,16 @@ import Title from '@/ui/components/atoms/title';
 import EventsCard from '@/ui/components/molecules/events-card';
 import React, { useState } from 'react';
 import eventsDataToHome from '@/ui/mocks/events-data-to-home';
-import ArrowDropdownIcon from '@/ui/components/atoms/icons/arrow-dropdown-icon';
-import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
-import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
-import Checkbox from '@/ui/components/atoms/inputs/checkbox';
 import Calendar from '@/ui/components/molecules/calendar';
 import Pagination from '@/ui/components/molecules/pagination';
 import Layout from '@/ui/components/organisms/shared/layout';
+import AgendaFilter from '@/ui/components/organisms/adenda-cultural/agenda-filter';
+import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
+import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
+import { AnimatePresence } from 'motion/react';
+import Modal from '@/ui/components/molecules/modal';
 
 type selectedTab = 'todos' | 'esta-semana';
-
-interface CheckboxItem {
-	id: number;
-	label: string;
-	checked: boolean;
-}
 
 const PageSize = 2;
 
@@ -39,65 +34,13 @@ export default function CulturalAgendaPage() {
 
 	const [currentPage, setCurrentPage] = useState(1);
 
-	const [checkboxesModalidad, setCheckboxesModalidad] = useState<
-		CheckboxItem[]
-	>([
-		{ id: 1, label: 'Todos (120)', checked: false },
-		{ id: 2, label: 'Virtual (84)', checked: false },
-		{ id: 3, label: 'Presencial (36)', checked: false },
-		{ id: 4, label: 'Semipresencial (36)', checked: false },
-	]);
+	const [modalOpen, setModalOpen] = useState(false);
 
-	const [checkboxesOrganizador, setCheckboxesOrganizador] = useState<
-		CheckboxItem[]
-	>([
-		{ id: 1, label: 'Todos (231)', checked: false },
-		{ id: 2, label: 'Banda Universitaria de Música (24)', checked: false },
-		{ id: 3, label: 'Ballet San Marcos (64)', checked: false },
-		{ id: 4, label: 'Biblioteca España de las Artes (12)', checked: false },
-		{
-			id: 5,
-			label: 'Centro Universitario de Folklore (5)',
-			checked: false,
-		},
-		{
-			id: 6,
-			label: 'Dirección de Cine y Producción Audiovisual (16)',
-			checked: false,
-		},
-		{ id: 7, label: 'Dirección de Música (14)', checked: false },
-		{ id: 8, label: 'Dirección de Turismo (8)', checked: false },
-		{
-			id: 9,
-			label: 'Museo de Arqueología y Antropología (13)',
-			checked: false,
-		},
-		{ id: 10, label: 'Museo de Arte de San Marcos (5)', checked: false },
-		{
-			id: 11,
-			label: 'Teatro Universitario de San Marcos (7)',
-			checked: false,
-		},
-	]);
+	const close = () => setModalOpen(false);
+	const open = () => setModalOpen(true);
 
 	const handleClick = (tab: selectedTab) => {
 		setSelectedTab(tab);
-	};
-
-	const handleCheckboxChangeModalidad = (id: number, checked: boolean) => {
-		setCheckboxesModalidad((prevState) =>
-			prevState.map((checkbox) =>
-				checkbox.id === id ? { ...checkbox, checked } : checkbox
-			)
-		);
-	};
-
-	const handleCheckboxChangeOrganizador = (id: number, checked: boolean) => {
-		setCheckboxesOrganizador((prevState) =>
-			prevState.map((checkbox) =>
-				checkbox.id === id ? { ...checkbox, checked } : checkbox
-			)
-		);
 	};
 
 	return (
@@ -145,91 +88,34 @@ export default function CulturalAgendaPage() {
 				</div>
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
 					<div className="container">
-						<div className="flex flex-row justify-between gap-x-[105px]">
+						<div className="flex flex-col md:flex-row justify-between gap-x-[40px] lg:gap-x-[105px]">
 							<div>
-								<div className="mb-8">
-									<Calendar />
-								</div>
-								<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
-									<div>
-										<div className="flex items-center justify-between h-6 mb-2">
-											<span className="font-bold leading-[19.2px]">
-												Modalidad
-											</span>
-											<ArrowDropdownIcon />
-										</div>
-										<div className="flex flex-col gap-y-1">
-											{checkboxesModalidad.map(
-												(checkbox) => (
-													<Checkbox
-														key={checkbox.id}
-														label={checkbox.label}
-														checked={
-															checkbox.checked
-														}
-														onChange={(e) =>
-															handleCheckboxChangeModalidad(
-																checkbox.id,
-																e.target.checked
-															)
-														}
-													/>
-												)
-											)}
-										</div>
-									</div>
-									<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
-									<div>
-										<div className="flex items-center justify-between h-6 mb-2">
-											<span className="font-bold leading-[19.2px]">
-												Organizador
-											</span>
-											<ArrowDropdownIcon />
-										</div>
-										<div>
-											<div className="flex flex-col gap-y-1">
-												{checkboxesOrganizador.map(
-													(checkbox) => (
-														<Checkbox
-															key={checkbox.id}
-															label={
-																checkbox.label
-															}
-															checked={
-																checkbox.checked
-															}
-															onChange={(e) =>
-																handleCheckboxChangeOrganizador(
-																	checkbox.id,
-																	e.target
-																		.checked
-																)
-															}
-														/>
-													)
-												)}
-											</div>
-										</div>
-									</div>
-									<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
-									<div className="flex gap-x-4">
-										<TertiaryButton
-											label="Limpiar filtros"
-											theme="light"
-											type="on-click"
-											onClick={() => {
-												console.log('click');
-											}}
-										/>
+								<div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
+									<Calendar className="grow" />
+									<div className="md:hidden">
 										<PrimaryButton
-											label="Aplicar"
+											className="w-14 h-14"
+											icon={<FilterIcon />}
 											theme="light"
 											type="on-click"
-											onClick={() => {
-												console.log('click');
-											}}
+											onClick={() => (modalOpen ? close() : open())}
 										/>
+										<AnimatePresence
+											initial={false}
+											mode="wait"
+											onExitComplete={() => null}
+										>
+											{
+												modalOpen &&
+												<Modal handleClose={close} >
+													<AgendaFilter handleClose={close} />
+												</Modal>
+											}
+										</AnimatePresence>
 									</div>
+								</div>
+								<div className="max-md:hidden">
+									<AgendaFilter />
 								</div>
 							</div>
 							<div>
