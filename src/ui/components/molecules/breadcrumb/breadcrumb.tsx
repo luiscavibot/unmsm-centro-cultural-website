@@ -13,7 +13,7 @@ interface BreadcrumbProps {
 const Breadcrumb: FC<BreadcrumbProps> = ({ items, theme = 'light' }) => {
 	return (
 		<nav aria-label="breadcrumb" className="mb-20 md:mb-[104px]">
-			<ol className="flex items-center gap-2">
+			<ol className="flex items-baseline flex-wrap gap-x-2 gap-y-1">
 				{items.map((item, index) => {
 					return (
 						<li key={index} className="flex items-center gap-2">
@@ -30,7 +30,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ items, theme = 'light' }) => {
 										>
 											{item.title}
 										</span>
-										<ArrowBreadcrumbIcon color={theme} />
+										<ArrowBreadcrumbIcon className="shrink-0" color={theme} />
 									</>
 								) : (
 									<>
@@ -45,7 +45,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ items, theme = 'light' }) => {
 										>
 											{item.title}
 										</Link>
-										<ArrowBreadcrumbIcon color={theme} />
+										<ArrowBreadcrumbIcon className="shrink-0" color={theme} />
 									</>
 								)
 							) : (
