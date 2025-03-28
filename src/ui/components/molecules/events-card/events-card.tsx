@@ -83,7 +83,7 @@ const EventsCard: React.FC<EventsCardProps> = ({
 						</div>
 					</div>
 				</header>
-				<p className="line-clamp-3 text-dark-blue-2 text-sm leading-[21px] mt-4">
+				<p className="line-clamp-3 text-dark-blue-2 text-sm leading-[21px] mt-4 max-md:hidden">
 					{summary}
 				</p>
 			</div>
