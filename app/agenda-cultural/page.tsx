@@ -86,7 +86,7 @@ export default function CulturalAgendaPage() {
 						</div>
 					</div>
 				</div>
-				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
+				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-20 md:pb-[104px]">
 					<div className="container">
 						<div className="flex flex-col md:flex-row justify-between gap-x-[40px] lg:gap-x-[105px]">
 							<div>
@@ -119,10 +119,10 @@ export default function CulturalAgendaPage() {
 								</div>
 							</div>
 							<div>
-								<span className="font-medium leading-[24px] text-right flex items-end justify-end w-full mb-8 h-[56px]">
+								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
 									57 resultados en total
 								</span>
-								<ul className="flex flex-col space-y-8">
+								<ul className="flex flex-col space-y-4 md:space-y-8">
 									{eventsDataToHome.map((event, index) => (
 										<li className="flex" key={index}>
 											<EventsCard {...event} />
