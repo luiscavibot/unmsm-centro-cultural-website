@@ -35,18 +35,10 @@ export default function CasonaDeSanMarcos() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
-									Fue creado oficialmente el 29 de noviembre
-									de 1995, constituyéndose en uno de los
-									principales puntos de encuentro de la vida
-									cultural limeña, mediante exposiciones y
-									presentaciones artísticas, producciones
-									literarias y otras expresiones culturales.
-									Desarrolla proyectos culturales con cada de
-									las dependencias que alberga en conexión con
-									las huellas históricas que representa el
-									monumento que habita y resguarda, donde
-									confluyen múltiples experiencias y saberes
-									como parte de un país culturalmente diverso.
+									La Casona de San Marcos es uno de los espacios más emblemáticos del Perú, no solo por su valor arquitectónico, sino por ser testigo y protagonista de más de cuatro siglos de historia nacional. Desde su origen como noviciado jesuita en el siglo XVII hasta su actual rol como Centro Cultural, la Casona ha sido escenario de grandes transformaciones sociales, políticas y educativas. Ha albergado a instituciones claves como el Real Convictorio de San Carlos y la Universidad Nacional Mayor de San Marcos, formando generaciones de pensadores, líderes e intelectuales que marcaron el rumbo del país.
+								</p>
+								<p className="mb-3">
+									Esta línea de tiempo resume los hitos más importantes en la vida de la Casona, permitiendo recorrer de forma cronológica su evolución, sus momentos de esplendor, crisis, renovación y su actual misión como centro de difusión cultural para la comunidad sanmarquina y el país.
 								</p>
 							</div>
 						</div>
@@ -58,29 +50,33 @@ export default function CasonaDeSanMarcos() {
 						<div className="max-w-[814px] mx-auto">
 							<div>
 								<div className="flex flex-col lg:flex-row gap-x-8 gap-y-4">
-									<h3 className="text-2xl font-bold leading-[36px] lg:max-w-[220px] flex-shrink-0">
-										Orígenes coloniales (Siglo XVI)
+									<h3 className="text-2xl font-bold leading-[36px] lg:w-[220px] flex-shrink-0">
+										Siglos XVII - XVIII
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
 											<span className="font-bold">
-												Construcción inicial:
+												1605:
 											</span>{' '}
-											La Casona fue construida durante el
-											periodo colonial a mediados del
-											siglo XVI en Lima, siendo utilizada
-											originalmente por la Compañía de
-											Jesús como una residencia y centro
-											de estudios para sus misioneros.
+											Contrato notarial con Antonio Correa Ureña para la construcción del noviciado jesuita San Antonio Abad.
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1610:
+											</span>{' '}
+											Inicia funciones como Casa de Probación y Noviciado San Antonio Abad de la Compañía de Jesús.
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1746:
+											</span>{' '}
+											Terremoto obliga a la reconstrucción y reconfiguración espacial.
 										</p>
 										<p>
 											<span className="font-bold">
-												Función educativa:
+												1767:
 											</span>{' '}
-											Se convirtió en uno de los primeros
-											centros educativos del virreinato,
-											permitiendo la formación religiosa y
-											académica.
+											Expulsión de los jesuitas fue por orden del rey Carlos III y ejecutado aquí por el virrey Amat.
 										</p>
 									</div>
 								</div>
@@ -88,28 +84,27 @@ export default function CasonaDeSanMarcos() {
 									<div className="bg-dark-white-3 w-[1px] h-8"></div>
 								</div>
 								<div className="flex flex-col lg:flex-row gap-x-8 gap-y-4">
-									<h3 className="text-2xl font-bold leading-[36px] lg:max-w-[220px] flex-shrink-0">
-										Expulsión de los jesuitas (1767)
+									<h3 className="text-2xl font-bold leading-[36px] lg:w-[220px] flex-shrink-0">
+										Etapa del Convictorio Carolino
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
 											<span className="font-bold">
-												Expulsión:
+												1770:
 											</span>{' '}
-											En 1767, los jesuitas fueron
-											expulsados del Perú por orden del
-											rey Carlos III de España, lo cual
-											dejó el edificio desocupado.
+											Fundación del Real Convictorio de San Carlos.
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1771:
+											</span>{' '}
+											El convictorio se instala en la actual Casona de San Marcos.
 										</p>
 										<p>
 											<span className="font-bold">
-												Nueva función:
+												Hasta 1866:
 											</span>{' '}
-											Tras la expulsión, La Casona fue
-											utilizada para diversos fines
-											administrativos y educativos bajo el
-											control del virreinato y más tarde
-											por la república peruana.
+											Funciona como institución educativa destacada; se forman figuras clave como José Faustino Sánchez Carrión y Pedro Gálvez.
 										</p>
 									</div>
 								</div>
@@ -117,28 +112,48 @@ export default function CasonaDeSanMarcos() {
 									<div className="bg-dark-white-3 w-[1px] h-8"></div>
 								</div>
 								<div className="flex flex-col lg:flex-row gap-x-8 gap-y-4">
-									<h3 className="text-2xl font-bold leading-[36px] lg:max-w-[220px] flex-shrink-0">
-										Inicio de su relación con San Marcos
-										(Siglo XIX)
+									<h3 className="text-2xl font-bold leading-[36px] lg:w-[220px] flex-shrink-0">
+										Incorporación a San Marcos
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
 											<span className="font-bold">
-												Asociación con la universidad:
+												1866:
 											</span>{' '}
-											Durante el siglo XIX, el edificio
-											fue utilizado eventualmente por la
-											Universidad de San Marcos como
-											espacio de enseñanza.
+											El Colegio San Carlos se incorpora a la Universidad de San Marcos.
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1867:
+											</span>{' '}
+											Se traslada oficialmente la sede universitaria a la Casona.
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1875:
+											</span>{' '}
+											Se crea la Facultad de Ciencias Políticas y Administrativas.
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1866:
+											</span>{' '}
+											Reforma de nombres de facultades (Derecho, Ciencias, Letras).
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1876:
+											</span>{' '}
+											<ul className="list-outside list-disc pl-5">
+												<li>Inauguración de la Escuela Especial de Construcciones Civiles y de Minas.</li>
+												<li>1879-1883: Uso militar durante la Guerra del Pacífico.</li>
+											</ul>
 										</p>
 										<p>
 											<span className="font-bold">
-												Ampliación de su uso académico:
+												1882:
 											</span>{' '}
-											Con el tiempo, La Casona fue
-											adoptada de manera oficial como un
-											lugar central de actividades
-											académicas para la universidad.
+											Matrícula de la primera mujer: Margarita Muñoz Seguín.
 										</p>
 									</div>
 								</div>
@@ -146,28 +161,39 @@ export default function CasonaDeSanMarcos() {
 									<div className="bg-dark-white-3 w-[1px] h-8"></div>
 								</div>
 								<div className="flex flex-col lg:flex-row gap-x-8 gap-y-4">
-									<h3 className="text-2xl font-bold leading-[36px] lg:max-w-[220px] flex-shrink-0">
-										Reformas y restauración (Siglo XX)
+									<h3 className="text-2xl font-bold leading-[36px] lg:w-[220px] flex-shrink-0">
+										Siglo XX
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
 											<span className="font-bold">
-												Deterioro y restauración:
+												1919:
 											</span>{' '}
-											A inicios del siglo XX, el edificio
-											se encontraba en mal estado debido
-											al tiempo y varios cambios en su
-											uso.
+											Reforma Universitaria; auge del binomio universidad-sociedad.
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1932-1936 y 1950s:
+											</span>{' '}
+											Recesos universitarios e intervenciones militares.
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1943-1948:
+											</span>{' '}
+											Masificación universitaria; creación de nuevas facultades (Educación y Química).
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1951:
+											</span>{' '}
+											Se coloca la primera piedra de la Ciudad Universitaria.
 										</p>
 										<p>
 											<span className="font-bold">
-												Restauración:
+												1960s:
 											</span>{' '}
-											En 1946, fue sometida a una
-											restauración importante, preservando
-											su arquitectura colonial y detalles
-											originales para devolverle su
-											esplendor.
+											Traslado progresivo a la Ciudad Universitaria; sismo de 1966 causa daños graves.
 										</p>
 									</div>
 								</div>
@@ -175,38 +201,41 @@ export default function CasonaDeSanMarcos() {
 									<div className="bg-dark-white-3 w-[1px] h-8"></div>
 								</div>
 								<div className="flex flex-col lg:flex-row gap-x-8 gap-y-4">
-									<h3 className="text-2xl font-bold leading-[36px] lg:max-w-[220px] flex-shrink-0">
-										Reconocimiento como Patrimonio Cultural
-										(1989)
+									<h3 className="text-2xl font-bold leading-[36px] lg:w-[220px] flex-shrink-0">
+										Restauración y Centro Cultural
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
 										<p className="mb-4">
 											<span className="font-bold">
-												Reconocimiento de la UNESCO:
+												1967:
 											</span>{' '}
-											En 1989, La Casona fue reconocida
-											como parte del Patrimonio Cultural
-											de la Humanidad por la UNESCO,
-											siendo parte del centro histórico de
-											Lima.
+											Primer proyecto de recuperación por encargo de la UNESCO (sin ejecución).
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1984:
+											</span>{' '}
+											Proyecto de restauración del Salón General (no financiado).
+										</p>
+										<p className="mb-4">
+											<span className="font-bold">
+												1989-2008:
+											</span>{' '}
+											Restauración de la casona con la AECID.
 										</p>
 										<p>
 											<span className="font-bold">
-												Preservación histórica:
+												1995:
 											</span>{' '}
-											Este reconocimiento consolidó el
-											estatus de La Casona como un
-											monumento importante a nivel
-											internacional y le aseguró futuras
-											labores de preservación.
+											Se crea el Centro Cultural de San Marcos.
 										</p>
 									</div>
 								</div>
-								<div className="max-lg:relative max-lg:left-1/2 lg:pl-16 my-6">
+								{/* <div className="max-lg:relative max-lg:left-1/2 lg:pl-16 my-6">
 									<div className="bg-dark-white-3 w-[1px] h-8"></div>
 								</div>
 								<div className="flex flex-col lg:flex-row gap-x-8 gap-y-4">
-									<h3 className="text-2xl font-bold leading-[36px] lg:max-w-[220px] flex-shrink-0">
+									<h3 className="text-2xl font-bold leading-[36px] lg:w-[220px] flex-shrink-0">
 										Actualidad (Siglo XXI)
 									</h3>
 									<div className="flex-grow font-normal leading-[24px]">
@@ -229,7 +258,7 @@ export default function CasonaDeSanMarcos() {
 											cultural de Lima y del Perú.
 										</p>
 									</div>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>
