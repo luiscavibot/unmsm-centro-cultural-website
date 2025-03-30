@@ -52,7 +52,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_portrait_1_92ac023c53.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_portada_46dc835feb.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
