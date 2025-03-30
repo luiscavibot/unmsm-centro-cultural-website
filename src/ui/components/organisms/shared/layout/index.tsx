@@ -35,7 +35,7 @@ const Layout = ({
 					src={portadaImage}
 					alt="background"
 					fill
-					className="object-cover"
+					className="object-cover object-top"
 					quality={100}
 				/>
 			</div>
