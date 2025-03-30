@@ -140,7 +140,7 @@ export default function CasonaDeSanMarcos() {
 											</span>{' '}
 											Reforma de nombres de facultades (Derecho, Ciencias, Letras).
 										</p>
-										<p className="mb-4">
+										<div className="mb-4">
 											<span className="font-bold">
 												1876:
 											</span>{' '}
@@ -148,7 +148,7 @@ export default function CasonaDeSanMarcos() {
 												<li>Inauguración de la Escuela Especial de Construcciones Civiles y de Minas.</li>
 												<li>1879-1883: Uso militar durante la Guerra del Pacífico.</li>
 											</ul>
-										</p>
+										</div>
 										<p>
 											<span className="font-bold">
 												1882:
