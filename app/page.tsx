@@ -15,7 +15,7 @@ export default async function Home() {
 	const principalCoversResp = await PrincipalCoversService.getAll();
 	const principalCovers = principalCoversResp?.images || [];
 	return (
-		<>
+		<div className="lg:-mt-[--header-bottom-height]">
 			<h1 className="hidden sr-only">Centro Cultural de San Marcos</h1>
 			<Hero images={principalCovers} />
 			<Contact />
@@ -27,7 +27,7 @@ export default async function Home() {
 			<Library />
 			<ArtisticDirections />
 			<Interviews />
-		</>
+		</div>
 	);
 }
 

@@ -31,11 +31,12 @@ export default function RootLayout({
 			<body
 				className={`${elMessiri.variable} ${montserrat.variable} antialiased`}
 			>
-				<div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
+				<div className="flex flex-col min-h-screen">
+				{/* <div className=""> */}
 					<Header />
 					{/* TODO: ACTUALIZAR INDEXACIÓN*/}
 					<meta name="robots" content="noindex, nofollow" />
-					<main className="relative lg:-mt-[--header-bottom-height] overflow-hidden">
+					<main className="flex-grow">
 						{children}
 					</main>
 					<Footer />
