@@ -22,7 +22,7 @@ const breadcrumbItems = [
 export default function DependenciasAdministrativas() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/dependencias_administrativas_ccsm_portada_7b369877b0.webp"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ccsm_portada_7eac6e60a4.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
