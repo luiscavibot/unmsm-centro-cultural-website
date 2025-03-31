@@ -20,7 +20,7 @@ const breadcrumbItems = [
 		path: '/noticias',
 	},
 	{
-		title: 'Noticia',
+		title: 'Ballet de San Marcos en gira por los Andes peruanos',
 		path: '/noticias/noticia',
 	},
 ];
@@ -36,7 +36,7 @@ export default function Noticia() {
 				<div className="container">
 					<div className="max-w-[814px] mx-auto mb-[80px]">
 						<div className="flex justify-center">
-							<Badge label="Ballet San Marcos" size="small" />
+							<Badge className="max-md:mb-[18px]" label="Ballet San Marcos" size="small" />
 						</div>
 						<Title className="text-center !mb-1">
 							Ballet de San Marcos en gira por los Andes peruanos
@@ -79,8 +79,8 @@ export default function Noticia() {
 							</p>
 						</div>
 					</div>
-					<div className="mt-[110px]">
-						<div className="flex justify-between items-center mb-[30px]">
+					<div className="mt-20 md:mt-[110px]">
+						<div className="flex justify-between items-center mb-5 md:mb-[30px]">
 							<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">
 								Noticias recientes
 							</h2>
@@ -91,7 +91,7 @@ export default function Noticia() {
 								href="/agenda-cultural"
 							/>
 						</div>
-						<div className="grid grid-cols-3 gap-6">
+						<div className="grid md:grid-cols-3 gap-y-4 gap-x-6">
 							{newsDataToHome
 								.slice(-3)
 								.map((event: any, index: number) => (
