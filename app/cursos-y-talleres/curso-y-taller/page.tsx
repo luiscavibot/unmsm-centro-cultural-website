@@ -30,7 +30,7 @@ export default function CursoYTaller() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cursos_y_talleres_e1f3cffab9.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cursos_y_talleres_portada_4a6e473ea3.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<div className="px-4 lg:px-[104px] bg-white pb-[104px]">
