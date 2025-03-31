@@ -11,7 +11,7 @@ const RecursosAudiovisuales = () => {
 					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
 						¡Descubre el fascinante mundo de la antropología y
 						arqueología peruana de manera interactiva! En esta
-						sección de recursos visuales MAA-UNMSM,
+						sección de recursos visuales del MAA-UNMSM,
 						te invitamos a explorar:
 					</p>
 				</div>

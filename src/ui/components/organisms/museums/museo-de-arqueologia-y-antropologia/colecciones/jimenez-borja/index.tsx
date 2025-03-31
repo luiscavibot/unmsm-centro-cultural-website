@@ -52,8 +52,7 @@ const JimenezBorja: React.FC<Props> = ({
 							representar diversos objetos sonoros. En 1972 donó
 							su colección compuesta por 181 objetos a nuestro
 							museo, conformada por instrumentos prehispánicos y
-							representaciones de músicos como los expuestos en
-							esta vitrina.
+							representaciones de músicos.
 						</p>
 					</div>
 					{/* <p className="mt-6">

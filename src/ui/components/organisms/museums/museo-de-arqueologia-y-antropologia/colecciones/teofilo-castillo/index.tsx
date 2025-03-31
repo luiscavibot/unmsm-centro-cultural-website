@@ -89,8 +89,7 @@ const TeofiloCastillo: React.FC<Props> = ({
 							la arquitectura prehispánica asignándoles un valor
 							artístico. En 1920, organizó una exposición de su
 							colección y, posteriormente, nuestra universidad
-							adquirió su colección de objetos prehispánicos,
-							encontrándose entre ellos esta botella Moche.
+							adquirió su colección de objetos prehispánicos.
 						</p>
 					</div>
 					{/* <p className="mt-6">

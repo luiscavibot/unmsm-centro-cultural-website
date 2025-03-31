@@ -54,7 +54,7 @@ const ArchivoJulioCTello: React.FC<Props> = ({
 							En 1921 nuestra universidad adquirió la colección
 							arqueológica, conformada por 981 objetos y reunida
 							por Julio C. Tello. La colección incluía botellas y
-							cántaros Nasca como los aquí expuestos.
+							cántaros Nasca.
 						</p>
 					</div>
 					{/* <p className="mt-6">

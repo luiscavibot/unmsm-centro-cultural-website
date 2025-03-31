@@ -86,8 +86,8 @@ const ExpedicionSierraCentral: React.FC<Props> = ({
 							la UNMSM, en cooperación con el Dr. Carlos Carrasco
 							Ramírez, organizaron la Expedición a la Sierra
 							Central. Excavaron el sitio arqueológico de
-							Wari-Willka en Junín. Además, se adquirieron las
-							vasijas expuestas, las que fueron encontradas debajo
+							Wari-Willka en Junín. Además, se adquirieron
+							vasijas que fueron encontradas debajo
 							de amontonamientos de piedras a manera de ofrendas.
 						</p>
 					</div>

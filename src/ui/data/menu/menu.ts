@@ -47,7 +47,7 @@ const menu: Menu[] = [
 				url: '/museo-de-arte-de-san-marcos',
 			},
 			{
-				title: 'Museo de Arqueología y Antropología',
+				title: 'Museo de Arqueología y Antropología UNMSM',
 				url: '/museo-de-arqueologia-y-antropologia',
 			},
 			{
