@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function FolkloreHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/folklore_ccsm_portada_8a23d82d7d.webp"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cuf_portada_a1817a5bdd.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

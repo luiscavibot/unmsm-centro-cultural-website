@@ -101,8 +101,8 @@ export default function DependenciasAdministrativas() {
 				<div className="relative px-6 lg:px-[104px] py-[56px] lg:py-[86px] h-[360px] lg:h-[384px] group">
 					<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/folklore_ccsm_portada_8a23d82d7d.webp"
-							className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
+							src="https://ccsm.unmsm.edu.pe/ccsm/cuf_portada_a1817a5bdd.jpg"
+							className="object-cover object-top transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 							alt="events"
 							fill
 							quality={100}
