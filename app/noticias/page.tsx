@@ -18,6 +18,10 @@ import useSplideControls from '@/ui/hooks/useSplideControls';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
 import FeaturedNewsCard from '@/ui/components/molecules/featured-news-card';
 import Layout from '@/ui/components/organisms/shared/layout';
+import NoticiaFilter from '@/ui/components/organisms/noticias/noticias-filter';
+import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
+import { AnimatePresence } from 'motion/react';
+import Modal from '@/ui/components/molecules/modal';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -57,45 +61,10 @@ export default function CulturalAgendaPage() {
 
 	const [currentPage, setCurrentPage] = useState(1);
 
-	const [checkboxesDependencias, setCheckboxesDependencias] = useState<
-		CheckboxItem[]
-	>([
-		{ id: 1, label: 'Todas (231)', checked: false },
-		{ id: 2, label: 'Banda Universitaria de Música (24)', checked: false },
-		{ id: 3, label: 'Ballet San Marcos (64)', checked: false },
-		{ id: 4, label: 'Biblioteca España de las Artes (12)', checked: false },
-		{
-			id: 5,
-			label: 'Centro Universitario de Folklore (5)',
-			checked: false,
-		},
-		{
-			id: 6,
-			label: 'Dirección de Cine y Producción Audiovisual (16)',
-			checked: false,
-		},
-		{ id: 7, label: 'Dirección de Música (14)', checked: false },
-		{ id: 8, label: 'Dirección de Turismo (8)', checked: false },
-		{
-			id: 9,
-			label: 'Museo de Arqueología y Antropología (13)',
-			checked: false,
-		},
-		{ id: 10, label: 'Museo de Arte de San Marcos (5)', checked: false },
-		{
-			id: 11,
-			label: 'Teatro Universitario de San Marcos (7)',
-			checked: false,
-		},
-	]);
-
-	const handleCheckboxChangeDependencias = (id: number, checked: boolean) => {
-		setCheckboxesDependencias((prevState) =>
-			prevState.map((checkbox) =>
-				checkbox.id === id ? { ...checkbox, checked } : checkbox
-			)
-		);
-	};
+	const [modalOpen, setModalOpen] = useState(false);
+	
+	const close = () => setModalOpen(false);
+	const open = () => setModalOpen(true);
 
 	const handleSearch = (query: string) => {
 		console.log(query);
@@ -117,9 +86,14 @@ export default function CulturalAgendaPage() {
 			<>
 				<div className="px-4 lg:px-[104px] bg-white pb-6">
 					<div className="container">
-						<div className="max-w-[814px] mx-auto mb-[80px]">
+						<div className="max-w-[814px] mx-auto mb-5 md:mb-[80px]">
 							<Title className="text-center">Noticias</Title>
-							<div className="relative">
+							<div className="md:hidden">
+								<p>
+									Mantente informado sobre todas las novedades del Centro Cultural San Marcos. En nuestra sección de noticias, compartimos actualizaciones sobre exposiciones, eventos, talleres y logros que reflejan nuestro compromiso con el arte y la cultura. Descubre lo más reciente en actividades y proyectos que conectan a nuestra comunidad y celebran la creatividad y el conocimiento.
+								</p>
+							</div>
+							<div className="max-md:hidden relative">
 								<Splide
 									onMoved={handleMove}
 									ref={splideRef}
@@ -162,68 +136,45 @@ export default function CulturalAgendaPage() {
 				</div>
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
 					<div className="container">
-						<div className="flex flex-row justify-between gap-x-[105px]">
+						<div className="flex flex-col md:flex-row justify-between gap-x-[40px] lg:gap-x-[105px]">
 							<div>
-								<div className="mb-8">
+								<div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
 									<Search
+										className="grow"
 										placeholder="¿Qué estás buscando?"
 										onSearch={handleSearch}
 									/>
-								</div>
-								<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 w-[314px] text-dark-blue-2">
-									<div>
-										<div className="flex items-center justify-between h-6 mb-2">
-											<span className="font-bold leading-[19.2px]">
-												Dependencias
-											</span>
-											<ArrowDropdownIcon />
-										</div>
-										<div className="flex flex-col gap-y-1">
-											{checkboxesDependencias.map(
-												(checkbox) => (
-													<Checkbox
-														key={checkbox.id}
-														label={checkbox.label}
-														checked={
-															checkbox.checked
-														}
-														onChange={(e) =>
-															handleCheckboxChangeDependencias(
-																checkbox.id,
-																e.target.checked
-															)
-														}
-													/>
-												)
-											)}
-										</div>
-									</div>
-									<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 my-6"></div>
-									<div className="flex gap-x-4">
-										<TertiaryButton
-											label="Limpiar filtros"
-											theme="light"
-											type="on-click"
-											onClick={() => {
-												console.log('click');
-											}}
-										/>
+									<div className="md:hidden">
 										<PrimaryButton
-											label="Aplicar"
+											className="w-14 h-14"
+											icon={<FilterIcon />}
 											theme="light"
 											type="on-click"
-											onClick={() => {
-												console.log('click');
-											}}
+											onClick={() => (modalOpen ? close() : open())}
 										/>
+										<AnimatePresence
+											initial={false}
+											mode="wait"
+											onExitComplete={() => null}
+										>
+											{
+												modalOpen &&
+												<Modal handleClose={close} >
+													<NoticiaFilter handleClose={close} />
+												</Modal>
+											}
+										</AnimatePresence>
 									</div>
+								</div>
+								<div className="max-md:hidden">
+									<NoticiaFilter />
 								</div>
 							</div>
 							<div>
-								<span className="font-medium leading-[24px] text-right flex items-end justify-end w-full mb-8 h-[56px]">
+								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
 									57 resultados en total
 								</span>
-								<ul className="flex flex-col space-y-8">
+								<ul className="flex flex-col space-y-4 md:space-y-8">
 									{NewsDataToHome.map((newData, index) => (
 										<li className="flex" key={index}>
 											<NewsCard {...newData} />
