@@ -63,7 +63,7 @@ const BuenVivir: React.FC<Props> = ({
 							<div>
 								<p className="font-normal">
 									Sala de las artes andinas y amazónicas -
-									Segundo nivel del patio de letras
+									Segundo nivel del Patio de letras
 								</p>
 							</div>
 						</div>
