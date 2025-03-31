@@ -45,7 +45,7 @@ export default function CulturalAgendaPage() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_cultural_portada_c193f92394.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
