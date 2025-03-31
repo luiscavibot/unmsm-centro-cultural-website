@@ -136,7 +136,7 @@ export default function CulturalAgendaPage() {
 				</div>
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
 					<div className="container">
-						<div className="flex flex-col md:flex-row justify-between gap-x-[40px] lg:gap-x-[105px]">
+						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
 							<div>
 								<div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
 									<Search
