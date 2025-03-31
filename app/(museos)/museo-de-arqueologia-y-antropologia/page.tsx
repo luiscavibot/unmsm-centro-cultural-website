@@ -61,7 +61,7 @@ const breadcrumbItems = [
 	},
 ];
 
-export default function MuseoDeArteDeSanMarcos() {
+export default function MuseoDeArqueologiaYAntropologia() {
 	const [currentTab, setCurrentTab] = useState<TabKeys>('colecciones');
 
 	const handleClick = (tab: TabKeys) => {
@@ -70,7 +70,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/El_pasado_ilustrado_MASM_CCSM_Giancarlo_Espinoza_7_73f4aa9457.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/MAA_portada_b6b0cd1114.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
