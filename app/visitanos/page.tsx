@@ -19,7 +19,7 @@ const breadcrumbItems = [
 export default function Visitanos() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/8701d7f5dfda2d8e668fff52bfad4a23_1_1_df1a9c5e09.jpeg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/visitanos_portada_d46b403fb5.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
