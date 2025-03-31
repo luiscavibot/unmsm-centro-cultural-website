@@ -23,7 +23,7 @@ export default function CasonaDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/Museos_de_Arte_de_San_Marcos_portrait_a631148308.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/casona_de_san_marcos_portada_be4952f749.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
