@@ -8,7 +8,7 @@ import eventsDataToHome from '@/ui/mocks/events-data-to-home';
 import Calendar from '@/ui/components/molecules/calendar';
 import Pagination from '@/ui/components/molecules/pagination';
 import Layout from '@/ui/components/organisms/shared/layout';
-import AgendaFilter from '@/ui/components/organisms/adenda-cultural/agenda-filter';
+import AgendaFilter from '@/ui/components/organisms/agenda-cultural/agenda-filter';
 import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
 import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
 import { AnimatePresence } from 'motion/react';
