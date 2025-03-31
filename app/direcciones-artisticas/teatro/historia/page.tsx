@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function TeatroHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/teatro_universitario_ccsm_1_83ea3157b5.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/teatro_portada_b542c0da38.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
