@@ -59,7 +59,7 @@ export default function DireccionDeTurismo() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/turismo_ccsm_portada_ede94147b2.webp"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/direccion_de_turismo_portada_7adc3fc576.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
