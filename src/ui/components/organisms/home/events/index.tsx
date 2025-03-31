@@ -6,14 +6,16 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import useSplideControls from '@/ui/hooks/useSplideControls';
 import EventsHomeCard from '@/ui/components/molecules/events-home-card';
-import eventsDataToHome from '@/ui/mocks/events-data-to-home';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
+import { AngendaCultural } from '@/interfaces/services/agenda-cultural.interface';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
-
-const Events: FC = () => {
+interface Props {
+	agendaCultural: AngendaCultural[];
+}
+const Events: FC<Props> = ({ agendaCultural }) => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
@@ -48,7 +50,7 @@ const Events: FC = () => {
 				options={splideOptions}
 			>
 				<SplideTrack>
-					{eventsDataToHome.map((event, index) => (
+					{agendaCultural.map((event, index) => (
 						<SplideSlide key={index}>
 							<EventsHomeCard key={index} {...event} />
 						</SplideSlide>

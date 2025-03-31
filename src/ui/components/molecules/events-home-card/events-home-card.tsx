@@ -7,6 +7,7 @@ import useResponsivePercentage from '@/ui/hooks/useResponsivePercentage';
 import DateRangeIcon from '@/ui/components/atoms/icons/date-range-icon';
 import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
 import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
+import { AngendaCultural } from '@/interfaces/services/agenda-cultural.interface';
 
 interface EventsHomeCardProps {
 	slug: string;
@@ -25,10 +26,10 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 	url,
 	title,
 	summary,
-	date,
-	dateString,
-	time,
-	timeString,
+	// date,
+	// dateString,
+	// time,
+	// timeString,
 	location,
 }) => {
 	const { wrapperRef, containerRef, percentage, isLargeScreen } =
@@ -81,9 +82,9 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 									ariaLabel="Fecha"
 									color="dark"
 								/>
-								<time className="block" dateTime={date}>
+								{/* <time className="block" dateTime={date}>
 									{dateString}
-								</time>
+								</time> */}
 							</div>
 							<div className="flex p-1 gap-2 items-center">
 								<ClockIcon
@@ -91,9 +92,9 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 									ariaLabel="Hora"
 									color="dark"
 								/>
-								<time className="block" dateTime={time}>
+								{/* <time className="block" dateTime={time}>
 									{timeString}
-								</time>
+								</time> */}
 							</div>
 							<div className="flex p-1 gap-2 items-center">
 								<OutlinePlaceIcon
