@@ -67,7 +67,7 @@ export default function CursosYTalleresPage() {
 									América.
 								</p>
 							</div>
-							<div className="mt-20">
+							<div className="mt-20 max-md:hidden">
 								<Search
 									className="max-w-[422px] mx-auto"
 									placeholder="¿Qué te gustaría aprender?"
@@ -83,6 +83,11 @@ export default function CursosYTalleresPage() {
 							<div>
 								<div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
 									{/* <Calendar className="grow" /> */}
+									<Search
+										className="max-w-[422px] mx-auto grow"
+										placeholder="¿Qué te gustaría aprender?"
+										onSearch={handleSearch}
+									/>
 									<div className="md:hidden">
 										<PrimaryButton
 											className="w-14 h-14"
