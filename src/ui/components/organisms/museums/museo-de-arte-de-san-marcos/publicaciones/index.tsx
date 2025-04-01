@@ -30,10 +30,10 @@ const Publicaciones = () => {
 							<span className="block mb-1 font-semibold leading-[24px]">
 								Documentos
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Cuadernillos MASM
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								En sus páginas el lector encontrará textos,
 								fotografías, planos y documentos sobre las
 								propuestas del arte actual difundido en los

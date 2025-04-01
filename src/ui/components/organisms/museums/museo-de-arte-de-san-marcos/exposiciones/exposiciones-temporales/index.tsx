@@ -82,10 +82,10 @@ const ExposicionesTemporales: React.FC<Props> = ({
 					<span className="text-sm font-semibold mb-1 inline-block">
 						Eventos
 					</span>
-					<h3 className="text-[32px] leading-[normal] font-semibold">
+					<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 						Exposiciones temporales
 					</h3>
-					<p className="font-medium leading-[24px] mt-6">
+					<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 						El Centro Cultural de San Marcos organiza exposiciones
 						temporales en las salas de sus museos de Arte y de
 						Antropología y Arqueología. Estas muestras, cuya

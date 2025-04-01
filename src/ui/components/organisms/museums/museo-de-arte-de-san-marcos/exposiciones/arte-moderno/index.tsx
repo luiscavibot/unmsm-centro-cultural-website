@@ -40,16 +40,16 @@ const ArteModerno: React.FC<Props> = ({
 					<span className="text-sm font-semibold mb-1 inline-block">
 						Exposición permanente
 					</span>
-					<h3 className="text-[32px] leading-[normal] font-semibold">
+					<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 						Arte Moderno y Contemporáneo
 					</h3>
-					<p className="font-medium leading-[24px] mt-6">
+					<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 						La exposición dedicada a la colección de arte moderno y
 						contemporáneo fue inaugurada en el año 2010, cuando era
 						director del MASM el poeta y gestor cultural Germán
 						Carnero.
 					</p>
-					<div className="flex flex-col gap-y-2 mt-2">
+					<div className="flex flex-col gap-y-2 mt-2 max-md:text-sm">
 						<div className="flex gap-2 items-start">
 							<div className="flex items-center gap-1 shrink-0">
 								<OutlinePlaceIcon

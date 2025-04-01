@@ -73,10 +73,10 @@ const Colecciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Colección
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Retratos (siglos XVI-XXI)
 						</h3>
-						<div className="font-medium leading-[24px] mt-6">
+						<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 							<p>
 								Es una de las colecciones más importantes de
 								este género artístico en nuestro país; y nos
@@ -187,10 +187,10 @@ const Colecciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Colección
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Arte Popular
 						</h3>
-						<div className="font-medium leading-[24px] mt-6">
+						<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 							<p>
 								Conformada por piezas representativas del arte
 								tradicional, procedentes de las distintas
@@ -222,10 +222,10 @@ const Colecciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Colección
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Arte Moderno y Contemporáneo
 						</h3>
-						<div className="font-medium leading-[24px] mt-6">
+						<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 							<p className="mb-6">
 								Incluye pinturas, esculturas, fotografías,
 								vídeos, instalaciones, entre otras técnicas del
@@ -348,10 +348,10 @@ const Colecciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Colección
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Archivo de Dibujo y Pintura Campesina
 						</h3>
-						<div className="font-medium leading-[24px] mt-6">
+						<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 							<p>
 								En el año 2004, la Asociación de Servicios
 								Educativos Rurales (SER) donó al museo más de

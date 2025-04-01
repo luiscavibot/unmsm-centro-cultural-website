@@ -41,16 +41,16 @@ const BuenVivir: React.FC<Props> = ({
 					<span className="text-sm font-semibold mb-1 inline-block">
 						Exposición permanente
 					</span>
-					<h3 className="text-[32px] leading-[normal] font-semibold">
+					<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 						Buen Vivir / Sumaq Kawsay / Suma Qamaña / Jakonax Jatikaxbi Jati
 					</h3>
-					<p className="font-medium leading-[24px] mt-6">
+					<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 						Una selección de obras de la Colección de Arte Popular y
 						del Archivo de Dibujo y Pintura Campesina que revelan un
 						conjunto de saberes y lógicas de relacionarse con el
 						entorno natural.
 					</p>
-					<div className="flex flex-col gap-y-2 mt-2">
+					<div className="flex flex-col gap-y-2 mt-2 max-md:text-sm">
 						<div className="flex gap-2 items-start">
 							<div className="flex items-center gap-1 shrink-0">
 								<OutlinePlaceIcon

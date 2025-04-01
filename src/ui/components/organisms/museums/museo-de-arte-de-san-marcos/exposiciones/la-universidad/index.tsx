@@ -83,17 +83,17 @@ const LaUniversidad: React.FC<Props> = ({
 					<span className="text-sm font-semibold mb-1 inline-block">
 						Exposición permanente
 					</span>
-					<h3 className="text-[32px] leading-[normal] font-semibold">
+					<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 						La Universidad como «Casa del Saber»: Religiosos y Laicos
 					</h3>
-					<p className="font-medium leading-[24px] mt-6">
+					<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 						Esta exposición pone al alcance de los interesados en el
 						género del retrato una brevísima selección de obras de
 						artistas importantes como Cristóbal de Aguilar
 						(1752-1771), Cota Carvallo (1909-1980), José Sabogal
 						(1888-1956) y Etna Velarde (1943-2014), entre otros.
 					</p>
-					<div className="flex flex-col gap-y-2 mt-2">
+					<div className="flex flex-col gap-y-2 mt-2 max-md:text-sm">
 						<div className="flex gap-2 items-start">
 							<div className="flex items-center gap-1 shrink-0">
 								<OutlinePlaceIcon
