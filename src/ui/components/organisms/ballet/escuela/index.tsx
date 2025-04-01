@@ -18,11 +18,11 @@ const Escuela = () => {
 			</div>
 			<div className="bg-green relative">
 				<div
-					className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative"
+					className="px-6 lg:px-[104px] lg:h-full overflow-hidden relative"
 				>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[760px] mr-auto h-full text-white flex flex-row gap-7 leading-[24px] font-normal">
-							<div className="basis-[47%]">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] md:pb-[96px] lg:pr-16 lg:w-[760px] mr-auto h-full text-white flex flex-col md:flex-row gap-7 leading-[24px] font-normal">
+							<div className="md:basis-[47%]">
 								<p className="mb-2 font-bold">
 									Programas de Formación
 								</p>
@@ -38,7 +38,7 @@ const Escuela = () => {
 									</li>
 								</ol>
 							</div>
-							<div className="basis-[53%]">
+							<div className="md:basis-[53%]">
 								<p className="mb-2 font-bold">
 									Actividades y Presentaciones
 								</p>
@@ -56,7 +56,7 @@ const Escuela = () => {
 
 					</div>
 				</div>
-				<div className="shrink-0 w-[544px] absolute right-0 top-0 h-full">
+				<div className="shrink-0 absolute right-0 top-0 h-full max-lg:hidden w-[180px] xl:w-[300px] min-[1439.9px]:w-[544px]">
 					<figure className="relative w-full h-full mx-auto">
 						<Image
 							src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_06793377eb.jpg"
@@ -69,7 +69,7 @@ const Escuela = () => {
 				</div>
 			</div>
 			<div className="px-4 lg:px-[104px] bg-white pt-[70px] pb-[26px]">
-				<div className="container flex flex-row justify-between gap-x-[68px]">
+				<div className="container flex flex-col lg:flex-row justify-between gap-y-8 gap-x-[68px]">
 					<div className="max-w-[664px] leading-[24px] text-dark-blue-2">
 						<p className="font-bold">
 							Compromiso con la Comunidad
@@ -87,69 +87,71 @@ const Escuela = () => {
 							El Elenco de la Escuela de Ballet San Marcos es una selección de alumnos destacados que representan a la institución en diversas presentaciones y proyectos artísticos. A través de esta agrupación, los estudiantes tienen la oportunidad de perfeccionar su formación escénica y experimentar el trabajo en un entorno similar al de una compañía profesional. Su repertorio incluye obras de ballet clásico y danza contemporánea, y su participación en eventos contribuye a la difusión de la danza y al fortalecimiento del vínculo entre la escuela y la comunidad artística.
 						</p>
 					</div>
-					<div className="bg-green-2 text-white rounded-[20px] px-[56px] py-[70px] max-w-[516px]">
-						<p className="font-bold">Inscripciones y contacto</p>
-						<p className="mb-4">
-							Para más información sobre horarios, requisitos y actividades, escríbenos o visita nuestras redes sociales, donde se publican actualizaciones y novedades:
-						</p>
-						<div className="flex flex-row items-center gap-2 mb-4">
-							<a
-								className="p-1 rounded-[4px] bg-dark-gray-2"
-								href="https://www.facebook.com/ballet.sanmarcos/"
-								rel="noreferrer noopener"
-								target="_blank"
-							>
-								<FacebookIcon />
-							</a>
-							<a
-								className="p-1 rounded-[4px] bg-dark-gray-2"
-								href="https://www.instagram.com/ballet_unmsm/"
-								rel="noreferrer noopener"
-								target="_blank"
-							>
-								<InstagramIcon />
-							</a>
-							{/* <a
-								className="p-1 rounded-[4px] bg-dark-gray-2"
-								href={TIKTOK_URL}
-								rel="noreferrer noopener"
-								target="_blank"
-							>
-								<TiktokIcon />
-							</a>
-							<a
-								className="p-1 rounded-[4px] bg-dark-gray-2"
-								href={YOUTUBE_URL}
-								rel="noreferrer noopener"
-								target="_blank"
-							>
-								<YoutubeIcon />
-							</a> */}
-						</div>
-						<div className="flex p-1 gap-2 items-start mb-4">
-							<OutlineEmailIcon
-								className="shrink-0 mt-[2px]"
-								ariaLabel="Contacto"
-								color="light"
-							/>
-							<div>
-								<p className="font-bold">
-									Contacto
-								</p>
-								<p className="font-medium break-words">
-									ballet.ccsm@unmsm.edu.pe
-								</p>
+					<div>
+						<div className="bg-green-2 text-white rounded-[20px] px-6 py-10 md:px-[56px] md:py-[70px] max-w-[516px]">
+							<p className="font-bold">Inscripciones y contacto</p>
+							<p className="mb-4">
+								Para más información sobre horarios, requisitos y actividades, escríbenos o visita nuestras redes sociales, donde se publican actualizaciones y novedades:
+							</p>
+							<div className="flex flex-row items-center gap-2 mb-4">
+								<a
+									className="p-1 rounded-[4px] bg-dark-gray-2"
+									href="https://www.facebook.com/ballet.sanmarcos/"
+									rel="noreferrer noopener"
+									target="_blank"
+								>
+									<FacebookIcon />
+								</a>
+								<a
+									className="p-1 rounded-[4px] bg-dark-gray-2"
+									href="https://www.instagram.com/ballet_unmsm/"
+									rel="noreferrer noopener"
+									target="_blank"
+								>
+									<InstagramIcon />
+								</a>
+								{/* <a
+									className="p-1 rounded-[4px] bg-dark-gray-2"
+									href={TIKTOK_URL}
+									rel="noreferrer noopener"
+									target="_blank"
+								>
+									<TiktokIcon />
+								</a>
+								<a
+									className="p-1 rounded-[4px] bg-dark-gray-2"
+									href={YOUTUBE_URL}
+									rel="noreferrer noopener"
+									target="_blank"
+								>
+									<YoutubeIcon />
+								</a> */}
 							</div>
+							<div className="flex p-1 gap-2 items-start mb-4">
+								<OutlineEmailIcon
+									className="shrink-0 mt-[2px]"
+									ariaLabel="Contacto"
+									color="light"
+								/>
+								<div>
+									<p className="font-bold">
+										Contacto
+									</p>
+									<p className="font-medium break-words">
+										ballet.ccsm@unmsm.edu.pe
+									</p>
+								</div>
+							</div>
+							<p>
+								Actualmente, la coordinación de la Escuela de Ballet San Marcos está a cargo del docente José Luis Aceijas Silva, quien lidera la formación académica y artística del alumnado.
+							</p>
 						</div>
-						<p>
-							Actualmente, la coordinación de la Escuela de Ballet San Marcos está a cargo del docente José Luis Aceijas Silva, quien lidera la formación académica y artística del alumnado.
-						</p>
 					</div>
 				</div>
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
 				<div className="container">
-					<div className="grid grid-cols-2 gap-6 lg:grid-rows-[561px_403px_379px_821px_446px_431px] xl:grid-rows-[561px_525px_493px_1066px_582px_565px]">
+					<div className="grid grid-cols-2 gap-6 grid-rows-[561px_403px_379px_821px_446px_431px] xl:grid-rows-[561px_525px_493px_1066px_582px_565px]">
 					{/* <div className="grid grid-cols-2 gap-6 lg:grid-rows-[repeat(8,auto)]"> */}
 						<div className="col-span-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
