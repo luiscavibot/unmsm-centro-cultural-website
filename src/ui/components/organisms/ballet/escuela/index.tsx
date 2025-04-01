@@ -18,7 +18,7 @@ const Escuela = () => {
 			</div>
 			<div className="bg-green relative">
 				<div
-					className="px-6 lg:px-[104px] lg:h-full overflow-hidden relative"
+					className="px-6 lg:px-[104px] overflow-hidden relative"
 				>
 					<div className="container">
 						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] md:pb-[96px] lg:pr-16 lg:w-[760px] mr-auto h-full text-white flex flex-col md:flex-row gap-7 leading-[24px] font-normal">
