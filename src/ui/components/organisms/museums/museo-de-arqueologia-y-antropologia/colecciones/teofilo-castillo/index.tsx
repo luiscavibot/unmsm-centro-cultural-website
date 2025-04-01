@@ -77,10 +77,10 @@ const TeofiloCastillo: React.FC<Props> = ({
 					<span className="text-sm font-semibold mb-1 inline-block">
 						Colección
 					</span>
-					<h3 className="text-[32px] leading-[normal] font-semibold">
+					<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 						Teófilo Castillo
 					</h3>
-					<div className="font-medium leading-[24px] mt-6">
+					<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 						<p>
 							El artista peruano Teófilo Castillo fue
 							representante de la comunidad académica de pintores

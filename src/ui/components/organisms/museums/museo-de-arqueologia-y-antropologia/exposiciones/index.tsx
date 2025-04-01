@@ -65,10 +65,10 @@ const Exposiciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Exposición permanente
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Tesoros Arqueológicos de San Marcos
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
+						<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 							Explora la historia milenaria del Perú a través
 							de una exposición que nos conecta con las antiguas
 							civilizaciones que dieron forma a nuestra identidad
@@ -76,7 +76,7 @@ const Exposiciones = () => {
 							cerámica, textiles, esculturas y objetos
 							ceremoniales.
 						</p>
-						<div className="flex flex-col gap-y-2 mt-2">
+						<div className="flex flex-col gap-y-2 mt-2 max-md:text-sm">
 							<div className="flex gap-2 items-start">
 								<div className="flex items-center gap-1 shrink-0">
 									<OutlinePlaceIcon
@@ -169,10 +169,10 @@ const Exposiciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Exposición finalizada
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Paracas, Vientos del Sur
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
+						<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 							Realizada en 2016, esta exposición contó con piezas
 							del catálogo &quot;Colección Paracas Joyas
 							Sanmarquinas&quot;, que puede revisarse en el
@@ -281,10 +281,10 @@ const Exposiciones = () => {
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Eventos
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Exposiciones temporales
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
+						<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 							El Centro Cultural de San Marcos organiza
 							exposiciones temporales en las salas de sus museos
 							de Arte y de Antropología y Arqueología. Estas

@@ -36,10 +36,10 @@ const ArchivoJulioCTello: React.FC<Props> = ({
 					<span className="text-sm font-semibold mb-1 inline-block">
 						Colección
 					</span>
-					<h3 className="text-[32px] leading-[normal] font-semibold">
+					<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 						Julio C. Tello
 					</h3>
-					<div className="font-medium leading-[24px] mt-6">
+					<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 						<p className="mb-6">
 							En 1915, Julio C. Tello organizó una exploración al
 							sur del Perú con el apoyo de a Aguirre Anchorena y

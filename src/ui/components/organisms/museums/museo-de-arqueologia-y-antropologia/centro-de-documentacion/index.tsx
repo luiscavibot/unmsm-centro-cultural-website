@@ -19,7 +19,7 @@ const CentroDeDocumentacion = () => {
 			<div className="px-4 lg:px-[104px] gap-5 bg-dark-red-2 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg')] bg-no-repeat bg-[35%_170%]">
  				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
  					<div className="">
- 						<h3 className="text-[32px] leading-[normal] font-semibold">
+ 						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Archivo Julio C. Tello
  						</h3>
  						<div className="font-medium leading-[24px] mt-6 max-lg:space-y-6 lg:flex flex-row gap-x-6">

@@ -36,13 +36,13 @@ const RecursosAudiovisuales = () => {
 					</figure>
 					<div className="relative pt-[56px] lg:pt-[96px] pb-24 md:pb-[56px] lg:pr-16 lg:semi-container-l h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Rompecabezas
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Juega Comparte Museo
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								A través de la plataforma jigsawplanet, el museo
 								ha implementado un espacio lúdico, publicando
 								112 rompecabezas que puedes armar en el menor
@@ -80,13 +80,13 @@ const RecursosAudiovisuales = () => {
 					</figure>
 					<div className="relative pt-[56px] lg:pt-[96px] pb-24 md:pb-[56px] lg:pl-16 lg:semi-container-r h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Interactivo
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Línea del tiempo
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								Sobre el proceso de musealización de uno de los
 								objetos más emblemáticos del museo. El Manto Blanco
 								de Paracas, desde su recuperación por Julio C.
@@ -124,13 +124,13 @@ const RecursosAudiovisuales = () => {
 					</figure>
 					<div className="relative pt-[56px] lg:pt-[96px] pb-24 md:pb-[56px] lg:pr-16 lg:semi-container-l h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Canal de Youtube
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Museo de Arqueología y Antropología UNMSM
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								Aquí encontrarás contenido exclusivo que conecta
 								el pasado con el presente, fomentando el
 								conocimiento y la valorización de nuestra rica
@@ -168,13 +168,13 @@ const RecursosAudiovisuales = () => {
 					</figure>
 					<div className="relative pt-[56px] lg:pt-[96px] pb-24 md:pb-[56px] lg:pl-16 lg:semi-container-r h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Fichas informativas
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Profundiza en nuestras colecciones
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								Accede a más de 200 fichas descriptivas de los
 								elementos que componen las diversas colecciones
 								del museo.
