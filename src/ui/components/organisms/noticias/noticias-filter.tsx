@@ -92,6 +92,7 @@ const NoticiaFilter: FC<NoticiaFilterProps> = ({ handleClose }) => {
 					theme="light"
 					type="on-click"
 					onClick={() => {
+						handleClose?.();
 						console.log('click');
 					}}
 				/>
@@ -100,6 +101,7 @@ const NoticiaFilter: FC<NoticiaFilterProps> = ({ handleClose }) => {
 					theme="light"
 					type="on-click"
 					onClick={() => {
+						handleClose?.();
 						console.log('click');
 					}}
 				/>

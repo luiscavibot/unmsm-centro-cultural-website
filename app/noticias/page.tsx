@@ -4,10 +4,7 @@ import Title from '@/ui/components/atoms/title';
 import NewsCard from '@/ui/components/molecules/news-card';
 import React, { useRef, useState } from 'react';
 import NewsDataToHome from '@/ui/mocks/news-data-to-home';
-import ArrowDropdownIcon from '@/ui/components/atoms/icons/arrow-dropdown-icon';
 import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
-import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
-import Checkbox from '@/ui/components/atoms/inputs/checkbox';
 import Pagination from '@/ui/components/molecules/pagination';
 import Search from '@/ui/components/atoms/inputs/search';
 
@@ -25,12 +22,6 @@ import Modal from '@/ui/components/molecules/modal';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
-}
-
-interface CheckboxItem {
-	id: number;
-	label: string;
-	checked: boolean;
 }
 
 const PageSize = 2;

@@ -185,6 +185,7 @@ const CursosYTalleresFilter: FC<CursosYTalleresFilterProps> = ({ handleClose }) 
 					theme="light"
 					type="on-click"
 					onClick={() => {
+						handleClose?.();
 						console.log('click');
 					}}
 				/>
@@ -193,6 +194,7 @@ const CursosYTalleresFilter: FC<CursosYTalleresFilterProps> = ({ handleClose }) 
 					theme="light"
 					type="on-click"
 					onClick={() => {
+						handleClose?.();
 						console.log('click');
 					}}
 				/>
