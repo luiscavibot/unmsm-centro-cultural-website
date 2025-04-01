@@ -16,7 +16,7 @@ const Publicaciones = () => {
 				</div>
 			</div>
 			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
-				<article className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden">
+				<article className="px-6 lg:pl-[104px] lg:h-full relative bg-dark-red-2 overflow-hidden">
 					<figure className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
@@ -52,7 +52,7 @@ const Publicaciones = () => {
 						/>
 					</div>
 				</article>
-				<figure className="relative w-full h-full mx-auto">
+				<figure className="relative w-full h-[250px] lg:h-full mx-auto">
 					<Image
 						src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/cuadernilos-masm.webp"
 						className="object-cover h-full"
