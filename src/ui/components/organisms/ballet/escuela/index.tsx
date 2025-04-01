@@ -70,7 +70,7 @@ const Escuela = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] bg-white pt-[70px] pb-[26px]">
 				<div className="container flex flex-col lg:flex-row justify-between gap-y-8 gap-x-[68px]">
-					<div className="max-w-[664px] leading-[24px] text-dark-blue-2">
+					<div className="lg:max-w-[664px] leading-[24px] text-dark-blue-2">
 						<p className="font-bold">
 							Compromiso con la Comunidad
 						</p>
@@ -88,7 +88,7 @@ const Escuela = () => {
 						</p>
 					</div>
 					<div>
-						<div className="bg-green-2 text-white rounded-[20px] px-6 py-10 md:px-[56px] md:py-[70px] max-w-[516px]">
+						<div className="bg-green-2 text-white rounded-[20px] px-6 py-10 md:px-[56px] md:py-[70px] max-w-[516px] max-lg:mx-auto">
 							<p className="font-bold">Inscripciones y contacto</p>
 							<p className="mb-4">
 								Para más información sobre horarios, requisitos y actividades, escríbenos o visita nuestras redes sociales, donde se publican actualizaciones y novedades:
@@ -151,95 +151,100 @@ const Escuela = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
 				<div className="container">
-					<div className="grid grid-cols-2 gap-6 grid-rows-[561px_403px_379px_821px_446px_431px] xl:grid-rows-[561px_525px_493px_1066px_582px_565px]">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 md:grid-rows-[561px_403px_379px_821px_446px_431px] xl:grid-rows-[561px_525px_493px_1066px_582px_565px]">
 					{/* <div className="grid grid-cols-2 gap-6 lg:grid-rows-[repeat(8,auto)]"> */}
-						<div className="col-span-2">
+						<div className="md:col-span-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_1_75ca4094eb.jpg"
-									className="object-cover"
-									// className="w-full"
+									className="md:object-cover w-full md:h-full"
 									alt="Escuela de Ballet 1"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
-									// width="1232"
-									// height="561"
 								/>
 							</figure>
 						</div>
-						<div className="row-span-2 row-start-2">
+						<div className="md:row-span-2 md:row-start-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_2_ea766e3e7c.jpeg"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Escuela de Ballet 2"
-									fill
+									width={470}
+									height={924}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-2">
+						<div className="md:row-start-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_3_519a645ce4.jpg"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Escuela de Ballet 3"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-start-2 row-start-3">
+						<div className="md:col-start-2 row-start-3">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_4_59f28ec23a.jpg"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Escuela de Ballet 4"
-									fill
+									width={1476}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-span-2 row-start-4">
+						<div className="md:col-span-2 md:row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_5_041e295b52.jpg"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Escuela de Ballet 5"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-5">
+						<div className="md:row-start-5">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_6_37324ffca8.jpg"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Escuela de Ballet 6"
-									fill
+									width={1251}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-start-1 row-start-6">
+						<div className="md:col-start-1 md:row-start-6">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_7_58f2a87c8b.jpg"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Escuela de Ballet 7"
-									fill
+									width={1293}
+									height={295}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-span-2 col-start-2 row-start-5">
+						<div className="md:row-span-2 md:col-start-2 md:row-start-5">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_8_19b6743686.jpg"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Escuela de Ballet 8"
-									fill
+									width={616}
+									height={925}
 									quality={100}
 								/>
 							</figure>
