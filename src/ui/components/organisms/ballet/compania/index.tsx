@@ -15,11 +15,11 @@ const Compania = () => {
 			</div>
 			<div className="bg-dark-red-2 relative">
 				<div
-					className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative"
+					className="px-6 lg:px-[104px] lg:h-full overflow-hidden relative"
 				>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[730px] mr-auto h-full text-white flex flex-row gap-9 leading-[24px] font-normal">
-							<div className="basis-1/2">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[730px] mr-auto h-full text-white flex flex-col md:flex-row gap-9 leading-[24px] font-normal">
+							<div className="md:basis-1/2">
 								<p className="mb-5">
 									<b>Los integrantes de la compañía entrenan diariamente en danza contemporánea y ballet</b>, complementando su preparación con la exploración de nuevas técnicas y lenguajes escénicos. 
 								</p>
@@ -30,7 +30,7 @@ const Compania = () => {
 									La labor de la compañía se centra en la difusión de la danza contemporánea como una forma de expresión y comunicación. A través de sus presentaciones, busca generar experiencias sensibles y reflexivas en el público, acercándolo a diversas formas de experimentación escénica.
 								</p>
 							</div>
-							<div className="basis-1/2">
+							<div className="md:basis-1/2">
 								<p className="font-bold mb-5">Principales actividades</p>
 								<ul className="list-outside list-disc pl-6 space-y-5 mb-5">
 									<li><b>Funciones didácticas dirigidas a niños y jóvenes</b>, fomentando la apreciación de la danza a través de la participación activa del público.</li>
@@ -48,7 +48,7 @@ const Compania = () => {
 
 					</div>
 				</div>
-				<div className="shrink-0 w-[544px] absolute right-0 top-0 h-full">
+				<div className="shrink-0 absolute right-0 top-0 h-full max-lg:hidden w-[180px] xl:w-[300px] min-[1439.9px]:w-[544px]">
 					<figure className="relative w-full h-full mx-auto">
 						<Image
 							src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_cf5188393b.webp"
