@@ -18,7 +18,7 @@ const Compania = () => {
 					className="px-6 lg:px-[104px] lg:h-full overflow-hidden relative"
 				>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[730px] mr-auto h-full text-white flex flex-col md:flex-row gap-9 leading-[24px] font-normal">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] md:pb-[96px] lg:pr-16 lg:w-[730px] mr-auto h-full text-white flex flex-col md:flex-row gap-9 leading-[24px] font-normal">
 							<div className="md:basis-1/2">
 								<p className="mb-5">
 									<b>Los integrantes de la compañía entrenan diariamente en danza contemporánea y ballet</b>, complementando su preparación con la exploración de nuevas técnicas y lenguajes escénicos. 
