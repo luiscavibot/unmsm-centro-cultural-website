@@ -45,58 +45,63 @@ const CentroDeDocumentacion = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
  				<div className="container">
-					<div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[repeat(6,402px)]">
-						<div className="col-span-2 row-span-2">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:grid-rows-[repeat(6,402px)]">
+						<div className="md:col-span-2 md:row-span-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_1_00a307801c.webp"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Centro de Documentación 1"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-3">
+						<div className="md:row-start-3">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_2_80f772e463.webp"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Centro de Documentación 2"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-span-2 row-start-3">
+						<div className="md:row-span-2 md:row-start-3">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_3_33f0e9fc7d.webp"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Centro de Documentación 3"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-4">
+						<div className="md:row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_4_7633d3b406.webp"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Centro de Documentación 4"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-span-2 row-span-2 row-start-5">
+						<div className="md:col-span-2 md:row-span-2 md:row-start-5">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_5_d38cfbf065.webp"
-									className="object-cover"
+									className="md:object-cover w-full md:h-full"
 									alt="Centro de Documentación 5"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
