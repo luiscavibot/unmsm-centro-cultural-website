@@ -7,7 +7,7 @@ const BibliotecaVirtual = () => {
 	return (
 		<>
 			<div className="bg-black-custom relative">
-				<div className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative">
+				<div className="px-6 lg:px-[104px] overflow-hidden relative">
 					<figure className="absolute -bottom-[40%] left-[402px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg"
@@ -17,8 +17,8 @@ const BibliotecaVirtual = () => {
 						/>
 					</figure>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[644px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px] font-medium">
-							<div className="max-w-[310px]">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pb-[96px] lg:pr-16 lg:w-[644px] mr-auto h-full text-white flex flex-col md:flex-row gap-6 leading-[24px] font-medium">
+							<div className="md:max-w-[310px]">
 								<p>
 									Explora el vasto legado académico y cultural
 									de la Universidad Nacional Mayor de San
@@ -109,7 +109,7 @@ const BibliotecaVirtual = () => {
 						</div>
 					</div>
 				</div>
-				<div className="shrink-0 w-[523px] absolute right-0 top-0 h-full">
+				<div className="shrink-0 absolute right-0 top-0 h-full max-lg:hidden w-[300px] xl:w-[523px]">
 					<figure className="relative w-full h-full mx-auto">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/biblioteca-virtual.webp"
