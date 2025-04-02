@@ -210,7 +210,7 @@ export default function Cine() {
 				</div>
 				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
 					<div className="container">
-						<div className="flex gap-x-4">
+						<div className="flex gap-x-4 overflow-auto">
 							<Tab
 								label="Actividades"
 								selected={currentTab === 'actividades'}

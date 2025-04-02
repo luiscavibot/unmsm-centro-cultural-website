@@ -36,11 +36,11 @@ const Conversatorios: React.FC<Props> = ({
 	return (
 		<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-4.svg')] bg-no-repeat bg-[-123px_10px]">
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
-				<div className="max-w-[394px]">
-					<h3 className="text-[32px] leading-[normal] font-semibold">
+				<div className="lg:max-w-[394px]">
+					<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 						Conversatorios
 					</h3>
-					<div className="font-medium leading-[24px] mt-6">
+					<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 						<p className="mb-5">
 							Son espacios de reflexión y debate que reúnen a
 							cineastas, críticos, investigadores y público
@@ -68,7 +68,7 @@ const Conversatorios: React.FC<Props> = ({
 						<SplideTrack>
 							{conversatoriosData.map((img, index) => (
 								<SplideSlide key={index}>
-									<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+									<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 										<Image
 											src={img.url}
 											className="max-lg:object-contain w-auto h-full mx-auto"
