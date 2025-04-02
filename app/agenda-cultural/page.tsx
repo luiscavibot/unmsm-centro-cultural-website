@@ -8,7 +8,7 @@ import eventsDataToHome from '@/ui/mocks/events-data-to-home';
 import Calendar from '@/ui/components/molecules/calendar';
 import Pagination from '@/ui/components/molecules/pagination';
 import Layout from '@/ui/components/organisms/shared/layout';
-import AgendaFilter from '@/ui/components/organisms/adenda-cultural/agenda-filter';
+import AgendaFilter from '@/ui/components/organisms/agenda-cultural/agenda-filter';
 import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
 import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
 import { AnimatePresence } from 'motion/react';
@@ -45,7 +45,7 @@ export default function CulturalAgendaPage() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_cultural_portada_c193f92394.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -88,7 +88,7 @@ export default function CulturalAgendaPage() {
 				</div>
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-20 md:pb-[104px]">
 					<div className="container">
-						<div className="flex flex-col md:flex-row justify-between gap-x-[40px] lg:gap-x-[105px]">
+						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
 							<div>
 								<div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
 									<Calendar className="grow" />

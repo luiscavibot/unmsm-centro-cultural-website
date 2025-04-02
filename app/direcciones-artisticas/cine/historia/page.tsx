@@ -115,7 +115,7 @@ export default function CineHistoria() {
 									</p>
 								</div>
 								<div>
-									<figure className="relative h-[400px] w-[644px] rounded-3xl overflow-hidden mx-auto">
+									<figure className="relative h-[400px] max-w-[644px] w-full md:w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/cine_historia_1_c0f03df03a.jpg"
 											className="object-cover h-full"
@@ -149,7 +149,7 @@ export default function CineHistoria() {
 									</p>
 								</div>
 								<div>
-									<figure className="relative h-[400px] w-[644px] rounded-3xl overflow-hidden mx-auto">
+									<figure className="relative h-[400px] max-w-[644px] w-full md:w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/cine_historia_2_f82f79f24b.jpg"
 											className="object-cover h-full"

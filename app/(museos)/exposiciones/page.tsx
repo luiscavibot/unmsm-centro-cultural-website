@@ -24,7 +24,7 @@ const breadcrumbItems = [
 	},
 ];
 
-export default function MuseoDeArteDeSanMarcos() {
+export default function Exposiciones() {
 	const [currentTab, setCurrentTab] = useState<TabKeys>('exposiciones');
 
 	const handleClick = (tab: TabKeys) => {
@@ -33,7 +33,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/exposiciones_portrait_f005e44a90.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/exposiciones_portada_91ad764bf1.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

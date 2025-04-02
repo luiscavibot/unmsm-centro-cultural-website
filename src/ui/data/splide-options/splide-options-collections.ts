@@ -12,6 +12,7 @@ const splideOptionsCollections: ResponsiveOptions = {
 	breakpoints: {
 		1024: {
 			fixedWidth: '100%',
+			fixedHeight: '400px',
 			perMove: 1,
 		},
 	},

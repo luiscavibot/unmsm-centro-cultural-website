@@ -32,7 +32,7 @@ export default function Evento() {
 	useScrollOnLoad();
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_banner_8a74d62f5c.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_cultural_portada_c193f92394.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">

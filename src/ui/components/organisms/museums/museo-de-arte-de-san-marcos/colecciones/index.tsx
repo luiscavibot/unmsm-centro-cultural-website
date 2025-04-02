@@ -69,14 +69,14 @@ const Colecciones = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-black text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg')] bg-no-repeat bg-[-123px_10px]">
 				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
-					<div className="max-w-[394px]">
+					<div className="lg:max-w-[394px]">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Colección
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Retratos (siglos XVI-XXI)
 						</h3>
-						<div className="font-medium leading-[24px] mt-6">
+						<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 							<p>
 								Es una de las colecciones más importantes de
 								este género artístico en nuestro país; y nos
@@ -107,7 +107,7 @@ const Colecciones = () => {
 							<SplideTrack>
 								{retratosSiglosXviXxi.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 											<Image
 												src={img.url}
 												className="max-lg:object-contain w-auto h-full mx-auto"
@@ -141,7 +141,7 @@ const Colecciones = () => {
 				</div>
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-dark-red-3 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-3.svg')] bg-no-repeat bg-[-123px_10px]">
-				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
+				<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 					<div className="max-lg:w-full">
 						<Splide
 							onMoved={handleMoveColArtePopular}
@@ -152,7 +152,7 @@ const Colecciones = () => {
 							<SplideTrack>
 								{artePopularData.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 											<Image
 												src={img.url}
 												className="max-lg:object-contain w-auto h-full mx-auto"
@@ -166,7 +166,7 @@ const Colecciones = () => {
 								))}
 							</SplideTrack>
 						</Splide>
-						<div className="flex justify-start gap-x-2 relative mt-4 pointer-events-none">
+						<div className="flex justify-end lg:justify-start gap-x-2 relative mt-4 pointer-events-none">
 							<ArrowButton
 								className="pointer-events-auto"
 								theme="light"
@@ -183,14 +183,14 @@ const Colecciones = () => {
 							/>
 						</div>
 					</div>
-					<div className="max-w-[394px]">
+					<div className="lg:max-w-[394px]">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Colección
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Arte Popular
 						</h3>
-						<div className="font-medium leading-[24px] mt-6">
+						<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 							<p>
 								Conformada por piezas representativas del arte
 								tradicional, procedentes de las distintas
@@ -218,14 +218,14 @@ const Colecciones = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-green text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-4.svg')] bg-no-repeat bg-[-123px_10px]">
 				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
-					<div className="max-w-[394px]">
+					<div className="lg:max-w-[394px]">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Colección
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Arte Moderno y Contemporáneo
 						</h3>
-						<div className="font-medium leading-[24px] mt-6">
+						<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 							<p className="mb-6">
 								Incluye pinturas, esculturas, fotografías,
 								vídeos, instalaciones, entre otras técnicas del
@@ -263,7 +263,7 @@ const Colecciones = () => {
 								{arteModernoContemporaneoData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
-											<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+											<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 												<Image
 													src={img.url}
 													className="max-lg:object-contain w-auto h-full mx-auto"
@@ -300,7 +300,7 @@ const Colecciones = () => {
 				</div>
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-blue-2 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-blue.svg')] bg-no-repeat bg-[-123px_10px]">
-				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
+				<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 					<div className="max-lg:w-full">
 						<Splide
 							onMoved={handleMoveColArchivo}
@@ -312,7 +312,7 @@ const Colecciones = () => {
 								{archivoDibujoPinturaCampesinaData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
-											<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+											<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 												<Image
 													src={img.url}
 													className="max-lg:object-contain w-auto h-full mx-auto"
@@ -327,7 +327,7 @@ const Colecciones = () => {
 								)}
 							</SplideTrack>
 						</Splide>
-						<div className="flex justify-start gap-x-2 relative mt-4 pointer-events-none">
+						<div className="flex justify-end lg:justify-start gap-x-2 relative mt-4 pointer-events-none">
 							<ArrowButton
 								className="pointer-events-auto"
 								theme="light"
@@ -344,14 +344,14 @@ const Colecciones = () => {
 							/>
 						</div>
 					</div>
-					<div className="max-w-[394px]">
+					<div className="lg:max-w-[394px]">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Colección
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Archivo de Dibujo y Pintura Campesina
 						</h3>
-						<div className="font-medium leading-[24px] mt-6">
+						<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 							<p>
 								En el año 2004, la Asociación de Servicios
 								Educativos Rurales (SER) donó al museo más de

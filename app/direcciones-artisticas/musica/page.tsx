@@ -102,7 +102,7 @@ export default function Musica() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium">
+											<p className="font-medium break-all">
 												direcciondemusica@unmsm.edu.pe
 											</p>
 										</div>

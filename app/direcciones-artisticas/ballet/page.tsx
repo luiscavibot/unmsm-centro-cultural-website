@@ -180,7 +180,7 @@ export default function Ballet() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium">
+											<p className="font-medium break-all">
 												ballet.ccsm@unmsm.edu.pe
 											</p>
 										</div>
@@ -254,7 +254,7 @@ export default function Ballet() {
 				</div>
 				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
 					<div className="container">
-						<div className="flex gap-x-4">
+						<div className="flex gap-x-4 overflow-auto">
 							<Tab
 								label="Compañía"
 								selected={currentTab === 'compania'}

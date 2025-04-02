@@ -59,7 +59,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/Museos_de_Arte_de_San_Marcos_portrait_a631148308.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/Museos_de_Arte_de_San_Marcos_portada_40a0d4ee3c.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -165,7 +165,7 @@ export default function MuseoDeArteDeSanMarcos() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium">
+											<p className="font-medium break-all">
 												museoarte.ccsm@unmsm.edu.pe
 											</p>
 										</div>
@@ -239,7 +239,7 @@ export default function MuseoDeArteDeSanMarcos() {
 				</div>
 				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
 					<div className="container">
-						<div className="flex gap-x-4">
+						<div className="flex gap-x-4 overflow-auto">
 							<Tab
 								label="Colecciones"
 								selected={currentTab === 'colecciones'}

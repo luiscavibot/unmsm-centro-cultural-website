@@ -1,4 +1,6 @@
 import SecondaryButton from '@/ui/components/atoms/buttons/secondary-button';
+import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
+import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
 import Title from '@/ui/components/atoms/title';
 import Layout from '@/ui/components/organisms/shared/layout';
 import Image from 'next/image';
@@ -19,7 +21,7 @@ const breadcrumbItems = [
 export default function Visitanos() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/8701d7f5dfda2d8e668fff52bfad4a23_1_1_df1a9c5e09.jpeg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/visitanos_portada_d46b403fb5.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -45,21 +47,39 @@ export default function Visitanos() {
 							</div>
 						</div>
 						<div className="max-w-[865px] mx-auto mb-14">
-							<div className="bg-green-2 rounded-3xl p-12 text-white text-[20px] leading-[30px] space-y-2">
+							<div className="bg-green-2 rounded-3xl py-8 px-6 md:p-11 text-white md:text-[20px] leading-[30px] space-y-2">
 								<p className="font-bold text-center">
 									¡Ven y disfruta la cultura!
 								</p>
-								<p className="font-medium text-center">
-									De lunes a sábado, de 10:00 a. m. a 1:00 p. m. y de
-									2:00 a 4:00 p. m.
-								</p>
-								<p className="font-medium text-center">
-									Av. Nicolás de Piérola 1222, Parque
-									Universitario, Centro Histórico de Lima.
-								</p>
+								<div className="flex justify-center p-1 gap-2 items-start">
+									<ClockIcon
+										className="shrink-0 mt-[7px]"
+										ariaLabel="Horario"
+										color="light"
+									/>
+									<div>
+										<p className="font-medium">
+											De lunes a sábado, de 10:00 a. m. a 1:00 p. m. y de
+											2:00 a 4:00 p. m.
+										</p>
+									</div>
+								</div>
+								<div className="flex justify-center p-1 gap-2 items-start">
+									<OutlinePlaceIcon
+										className="shrink-0 mt-[7px]"
+										ariaLabel="Lugar"
+										color="light"
+									/>
+									<div>
+										<p className="font-medium">
+											Av. Nicolás de Piérola 1222, Parque
+											Universitario, Centro Histórico de Lima.
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div className="leading-[24px] text-dark-blue-2 flex flex-row gap-x-24">
+						<div className="leading-[24px] text-dark-blue-2 flex flex-col md:flex-row gap-x-12 lg:gap-x-24">
 							<div className="basis-1/2">
 								<p className="mb-6">
 									El boleto incluye el recorrido guiado a
@@ -106,7 +126,9 @@ export default function Visitanos() {
 										Información y reservas:
 									</span>
 									<br />
-									turismo.ccsm@unmsm.edu.pe
+									<span className="break-all">
+										turismo.ccsm@unmsm.edu.pe
+									</span>
 									<br />
 									Cel. +51 947 027 758
 									<br />
@@ -166,10 +188,10 @@ export default function Visitanos() {
 					</div>
 				</div>
 				<div className="px-4 lg:px-[104px] bg-dark-red-2 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg')] bg-no-repeat bg-[161px_-290px]">
-					<div className="container flex flex-row gap-y-8 gap-x-6 leading-[24px]">
-						<div className="basis-1/3 space-y-8">
+					<div className="container flex flex-col md:flex-row gap-y-8 gap-x-6 leading-[24px]">
+						<div className="md:basis-1/3 space-y-8">
 							<div>
-								<h2 className="text-[40px] font-bold leading-[60px] mb-3">
+								<h2 className="text-2xl md:text-[40px] font-bold md:leading-[60px] mb-3">
 									Programas educativos para escolares
 								</h2>
 								<p>
@@ -212,7 +234,7 @@ export default function Visitanos() {
 								</p>
 							</div>
 						</div>
-						<div className="basis-1/3 space-y-8">
+						<div className="md:basis-1/3 space-y-8">
 							<div>
 								<h3 className="mb-2 font-bold">
 									Proceso de la independecia
@@ -258,7 +280,7 @@ export default function Visitanos() {
 								</p>
 							</div>
 						</div>
-						<div className="basis-1/3 space-y-8">
+						<div className="md:basis-1/3 space-y-8">
 							<div>
 								<h3 className="mb-2 font-bold">
 									Guerra del Pacífico
@@ -333,14 +355,15 @@ export default function Visitanos() {
 					</div>
 				</div>
 				<div className="px-4 lg:px-[104px] bg-white py-8 lg:pt-[80px] lg:pb-[104px] pb-20">
-					<div className="container grid  grid-cols-2 grid-rows-[464px_733px_359px_361px_741px_360px_361px_821px] gap-6">
+					<div className="container grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 sm:grid-rows-[464px_733px_359px_361px_741px_360px_361px_821px]">
 						<div>
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/65b39233a30eb13b02685da762462df8_d78c20b62f.png"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1000}
+									height={667}
 									quality={100}
 								/>
 							</figure>
@@ -349,86 +372,94 @@ export default function Visitanos() {
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/b58e05c9a8b5593ab05e2ab6d532d23a_1f1405235a.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-span-2">
+						<div className="sm:col-span-2">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ba73f6ed670a54b40f935f44bb54ef4f_f6ac73bd85.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-3">
+						<div className="sm:row-start-3">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/3f5e2e7c4745e6cbdf925ccbd041aa3b_a3cca8c1a1.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-start-1 row-start-4">
+						<div className="sm:col-start-1 sm:row-start-4">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/affe7601053a3ba1a818f2169aca71bd_62f1d0f444.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-span-2 col-start-2 row-start-3">
+						<div className="sm:row-span-2 sm:col-start-2 sm:row-start-3">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/b5e7949c6cef8f31c1098a99c28aba7c_15b4ef3944.png"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1000}
+									height={667}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-span-2 row-start-5">
+						<div className="sm:col-span-2 sm:row-start-5">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/7526dd1a71d616e7c09bf2c7e88b1640_83fc318a4b.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-6">
+						<div className="sm:row-start-6">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/80d9a9101a544838242d50aded928f7f_acb8164960.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-6">
+						<div className="sm:row-start-6">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/7c536e6742483fd5317540842e5cb863_ce5d0414d4.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
@@ -437,31 +468,34 @@ export default function Visitanos() {
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/268cccdcc837c8a2cbdc7b9d5ed6f722_025fa6d8e0.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-7">
+						<div className="sm:row-start-7">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/c582b6b6364ad3f2fecaa01503c9f3a7_96dc3e5db3.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1200}
+									height={800}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-span-2">
+						<div className="sm:col-span-2">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/e3f07fb41482aa9706b98edffc80560c_ac8eb59399.webp"
-									className="object-cover h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
-									fill
+									width={1388}
+									height={925}
 									quality={100}
 								/>
 							</figure>

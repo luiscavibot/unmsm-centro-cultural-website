@@ -74,7 +74,7 @@ const AgendaFilter: FC<AgendaFilterProps> = ({ handleClose }) => {
 		};
 
 	return (
-	<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 max-md:w-full md:max-w-[314px] text-dark-blue-2">
+	<div className="bg-white rounded-2xl p-6 ring-1 ring-inset ring-dark-white-3 text-dark-blue-2 max-w-[314px] w-full md:w-[270px] xl:w-[314px]">
 		<div>
 			<div className="flex items-center justify-between h-6 mb-2">
 				<span className="font-bold leading-[19.2px]">

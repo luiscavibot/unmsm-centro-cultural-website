@@ -82,7 +82,7 @@ export default function BandaUniversitariaHistoria() {
 									</p>
 								</div>
 								<div>
-									<figure className="relative h-[400px] w-[644px] rounded-3xl overflow-hidden mx-auto">
+									<figure className="relative h-[400px] max-w-[644px] w-full md:w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
 											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-banda-universitaria-1.webp"
 											className="object-cover h-full"
@@ -127,7 +127,7 @@ export default function BandaUniversitariaHistoria() {
 									</p>
 								</div>
 								<div>
-									<figure className="relative h-[400px] w-[644px] rounded-3xl overflow-hidden mx-auto">
+									<figure className="relative h-[400px] max-w-[644px] w-full md:w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
 											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/historia-banda-universitaria-2.webp"
 											className="object-cover h-full"

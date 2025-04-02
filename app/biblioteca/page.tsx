@@ -133,7 +133,7 @@ export default function MuseoDeArteDeSanMarcos() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium">
+											<p className="font-medium break-all">
 												biblioteca.ccsm@unmsm.edu.pe
 											</p>
 										</div>
@@ -207,8 +207,9 @@ export default function MuseoDeArteDeSanMarcos() {
 				</div>
 				<div className="px-4 lg:px-[104px] bg-white pt-[56px] pb-[24px]">
 					<div className="container">
-						<div className="flex gap-x-4">
+						<div className="flex gap-x-4 overflow-auto">
 							<Tab
+								className="max-md:shrink-0"
 								label="Biblioteca virtual"
 								selected={currentTab === 'biblioteca-virtual'}
 								onClick={() => {
@@ -216,6 +217,7 @@ export default function MuseoDeArteDeSanMarcos() {
 								}}
 							/>
 							<Tab
+								className="max-md:shrink-0"
 								label="Servicios"
 								selected={currentTab === 'servicios'}
 								onClick={() => {
@@ -223,6 +225,7 @@ export default function MuseoDeArteDeSanMarcos() {
 								}}
 							/>
 							<Tab
+								className="max-md:shrink-0"
 								label="Colecciones"
 								selected={currentTab === 'colecciones'}
 								onClick={() => {

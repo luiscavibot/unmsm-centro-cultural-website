@@ -19,7 +19,7 @@ const CentroDeDocumentacion = () => {
 			<div className="px-4 lg:px-[104px] gap-5 bg-dark-red-2 text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg')] bg-no-repeat bg-[35%_170%]">
  				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
  					<div className="">
- 						<h3 className="text-[32px] leading-[normal] font-semibold">
+ 						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Archivo Julio C. Tello
  						</h3>
  						<div className="font-medium leading-[24px] mt-6 max-lg:space-y-6 lg:flex flex-row gap-x-6">
@@ -45,58 +45,63 @@ const CentroDeDocumentacion = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
  				<div className="container">
-					<div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[repeat(6,402px)]">
-						<div className="col-span-2 row-span-2">
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:grid-rows-[repeat(6,402px)]">
+						<div className="sm:col-span-2 sm:row-span-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_1_00a307801c.webp"
-									className="object-cover"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Centro de Documentación 1"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-3">
+						<div className="sm:row-start-3">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_2_80f772e463.webp"
-									className="object-cover"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Centro de Documentación 2"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-span-2 row-start-3">
+						<div className="sm:row-span-2 sm:row-start-3">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_3_33f0e9fc7d.webp"
-									className="object-cover"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Centro de Documentación 3"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="row-start-4">
+						<div className="sm:row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_4_7633d3b406.webp"
-									className="object-cover"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Centro de Documentación 4"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>
 						</div>
-						<div className="col-span-2 row-span-2 row-start-5">
+						<div className="sm:col-span-2 sm:row-span-2 sm:row-start-5">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/centro_de_documentacion_5_d38cfbf065.webp"
-									className="object-cover"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Centro de Documentación 5"
-									fill
+									width={1387}
+									height={925}
 									quality={100}
 								/>
 							</figure>

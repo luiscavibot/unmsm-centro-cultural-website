@@ -21,7 +21,7 @@ const CoursesAndWorkshopsCard: React.FC<CoursesAndWorkshopsCardProps> = ({
 }) => (
 	<Link className="inline-flex group" href={`cursos-y-talleres/${slug}`}>
 		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300">
-			<figure className="relative w-[260px] h-full flex-shrink-0">
+			<figure className="relative w-[180px] lg:w-[260px] h-full flex-shrink-0 max-md:hidden">
 				<Image
 					src={url}
 					className="object-cover h-full"
@@ -40,7 +40,7 @@ const CoursesAndWorkshopsCard: React.FC<CoursesAndWorkshopsCardProps> = ({
 				<p className="line-clamp-3 text-dark-blue-2 text-sm leading-[21px] mt-2 mb-2">
 					{description}
 				</p>
-				<span className="absolute bottom-5 text-sm font-semibold leading-[14px]">
+				<span className="absolute bottom-5 text-sm font-semibold leading-[14px] line-clamp-1">
 					{subtitle}
 				</span>
 			</div>

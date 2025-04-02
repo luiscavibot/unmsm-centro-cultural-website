@@ -16,7 +16,7 @@ const Publicaciones = () => {
 				</div>
 			</div>
 			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
-				<article className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden">
+				<article className="px-6 lg:pl-[104px] lg:h-full relative bg-dark-red-2 overflow-hidden">
 					<figure className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
@@ -30,10 +30,10 @@ const Publicaciones = () => {
 							<span className="block mb-1 font-semibold leading-[24px]">
 								Documentos
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Cuadernillos MASM
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								En sus páginas el lector encontrará textos,
 								fotografías, planos y documentos sobre las
 								propuestas del arte actual difundido en los
@@ -52,7 +52,7 @@ const Publicaciones = () => {
 						/>
 					</div>
 				</article>
-				<figure className="relative w-full h-full mx-auto">
+				<figure className="relative w-full h-[250px] lg:h-full mx-auto">
 					<Image
 						src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/cuadernilos-masm.webp"
 						className="object-cover h-full"

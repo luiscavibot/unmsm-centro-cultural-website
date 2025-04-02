@@ -17,7 +17,7 @@ const RecursosAudiovisuales = () => {
 				</div>
 			</div>
 			<div className="lg:grid lg:grid-cols-2 lg:grid-rows-[repeat(auto-fill,_480px)]">
-				<article className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-black-custom overflow-hidden">
+				<article className="px-6 lg:pl-[104px] lg:h-full relative bg-black-custom overflow-hidden">
 					<figure className="absolute -bottom-[92%] -left-[82px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg"
@@ -26,7 +26,7 @@ const RecursosAudiovisuales = () => {
 							height={621}
 						/>
 					</figure>
-					<figure className="absolute -bottom-[10%] -right-[30px] transition-transform duration-[800ms] ease-out">
+					<figure className="absolute -bottom-[100px] lg:-bottom-[10%] -right-[150px] md:-right-[100px] min-[1500px]:-right-[30px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_rompecabezas_8c006e5e99.png"
 							alt="Juega Comparte Museo"
@@ -34,15 +34,15 @@ const RecursosAudiovisuales = () => {
 							height={258}
 						/>
 					</figure>
-					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 semi-container-l h-full">
+					<div className="relative pt-[56px] lg:pt-[96px] pb-24 md:pb-[56px] lg:pr-16 lg:semi-container-l h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Rompecabezas
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Juega Comparte Museo
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								A través de la plataforma jigsawplanet, el museo
 								ha implementado un espacio lúdico, publicando
 								112 rompecabezas que puedes armar en el menor
@@ -61,7 +61,7 @@ const RecursosAudiovisuales = () => {
 						/>
 					</div>
 				</article>
-				<article className="px-6 lg:pr-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden">
+				<article className="px-6 lg:pr-[104px] lg:h-full relative bg-dark-red-2 overflow-hidden">
 					<figure className="absolute -top-[46%] -right-[270px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
@@ -70,7 +70,7 @@ const RecursosAudiovisuales = () => {
 							height={621}
 						/>
 					</figure>
-					<figure className="absolute -bottom-[19%] -right-[50px] transition-transform duration-[800ms] ease-out -rotate-[3.16deg]">
+					<figure className="absolute -bottom-[150px] lg:-bottom-[19%] -right-[300px] md:-right-[250px] lg:-right-[280px] min-[1500px]:-right-[50px] transition-transform duration-[800ms] ease-out -rotate-[3.16deg]">
 						<Image
 							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_linea_del_tiempo_2c40c3dab0.png"
 							alt="Línea del tiempo"
@@ -78,15 +78,15 @@ const RecursosAudiovisuales = () => {
 							height={285}
 						/>
 					</figure>
-					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 semi-container-r h-full">
+					<div className="relative pt-[56px] lg:pt-[96px] pb-24 md:pb-[56px] lg:pl-16 lg:semi-container-r h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Interactivo
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Línea del tiempo
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								Sobre el proceso de musealización de uno de los
 								objetos más emblemáticos del museo. El Manto Blanco
 								de Paracas, desde su recuperación por Julio C.
@@ -105,8 +105,8 @@ const RecursosAudiovisuales = () => {
 						/>
 					</div>
 				</article>
-				<article className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-blue-2 overflow-hidden">
-					<figure className="absolute -bottom-[2%] -right-[0px] transition-transform duration-[800ms] ease-out">
+				<article className="px-6 lg:pl-[104px] lg:h-full relative bg-blue-2 overflow-hidden">
+					<figure className="absolute -bottom-[50px] min-[1500px]:-bottom-[2%] -right-[100px] md:-right-[50px] min-[1500px]:-right-[0px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_canal_youtube_59e0055fcb.png"
 							alt="Youtube Museo de Arqueología y Antropología UNMSM"
@@ -122,15 +122,15 @@ const RecursosAudiovisuales = () => {
 							height={621}
 						/>
 					</figure>
-					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 semi-container-l h-full">
+					<div className="relative pt-[56px] lg:pt-[96px] pb-24 md:pb-[56px] lg:pr-16 lg:semi-container-l h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Canal de Youtube
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Museo de Arqueología y Antropología UNMSM
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								Aquí encontrarás contenido exclusivo que conecta
 								el pasado con el presente, fomentando el
 								conocimiento y la valorización de nuestra rica
@@ -149,7 +149,7 @@ const RecursosAudiovisuales = () => {
 						/>
 					</div>
 				</article>
-				<article className="px-6 lg:pr-[104px] h-[380px] lg:h-full relative bg-green overflow-hidden">
+				<article className="px-6 lg:pr-[104px] lg:h-full relative bg-green overflow-hidden">
 					<figure className="absolute -top-[70%] -right-[270px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-4.svg"
@@ -158,7 +158,7 @@ const RecursosAudiovisuales = () => {
 							height={621}
 						/>
 					</figure>
-					<figure className="absolute -bottom-[15%] -right-[30px] transition-transform duration-[800ms] ease-out">
+					<figure className="absolute -bottom-[90px] min-[1500px]:-bottom-[15%] -right-[90px] md:-right-[50px] lg:-right-[30px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_fichas_informativas_ebeada0e49.png"
 							alt="Fichas informativas"
@@ -166,15 +166,15 @@ const RecursosAudiovisuales = () => {
 							height={207}
 						/>
 					</figure>
-					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 semi-container-r h-full">
+					<div className="relative pt-[56px] lg:pt-[96px] pb-24 md:pb-[56px] lg:pl-16 lg:semi-container-r h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Fichas informativas
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl lg:text-[32px] font-bold leading-[normal]">
 								Profundiza en nuestras colecciones
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								Accede a más de 200 fichas descriptivas de los
 								elementos que componen las diversas colecciones
 								del museo.

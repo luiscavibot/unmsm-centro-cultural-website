@@ -65,8 +65,8 @@ const Colecciones = () => {
 						colecciones de diversas especialidades, entre ellas:
 					</p>
 					<div className="stroke-dark-red fill-dark-red stroke-dark-blue-2 hidden invisible"></div>
-					<div className="grid grid-cols-[290px_auto] gap-6">
-						<div className="flex flex-col gap-4">
+					<div className="grid grid-cols-1 md:grid-cols-[290px_auto] gap-6">
+						<div className="flex flex-row md:flex-col gap-4 max-md:overflow-auto">
 							<VerticalTab
 								label="Libros"
 								selected={currentTab == 'libros'}

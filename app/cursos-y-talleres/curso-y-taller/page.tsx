@@ -30,14 +30,14 @@ export default function CursoYTaller() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cursos_y_talleres_e1f3cffab9.jpg"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cursos_y_talleres_portada_4a6e473ea3.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
-			<div className="px-4 lg:px-[104px] bg-white pb-[104px]">
+			<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
 				<div className="container">
-					<div className="max-w-[814px] mx-auto mb-[80px]">
+					<div className="max-w-[814px] mx-auto">
 						<div className="flex justify-center">
-							<Badge label="Taller" size="small" />
+							<Badge className="max-md:mb-[18px]" label="Taller" size="small" />
 						</div>
 						<Title className="text-center !mb-2">
 							“Protegiendo nuestros textiles milenarios”:
@@ -49,7 +49,7 @@ export default function CursoYTaller() {
 								noviembre de 2024
 							</div>
 						</div>
-						<div className="flex gap-x-1 justify-center mb-14">
+						<div className="flex flex-col md:flex-row gap-y-6 gap-x-1 justify-center mb-14">
 							<div className="min-w-[235px]">
 								<div className="flex gap-1 items-center">
 									<ClassIcon

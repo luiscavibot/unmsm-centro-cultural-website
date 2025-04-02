@@ -6,11 +6,11 @@ const EscuelaParaFormadores = () => {
 		<>
 			<div className="bg-dark-red-2 relative">
 				<div
-					className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative"
+					className="px-6 lg:px-[104px] overflow-hidden relative"
 				>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px] font-medium">
-							<div className="basis-1/2">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-col md:flex-row gap-6 leading-[24px] font-medium">
+							<div className="md:basis-1/2">
 								<p className="font-bold mb-3">¡Sé un profesional en la enseñanza de nuestras danzas!</p>
 								<p className="mb-5">
 									Participa de la Escuela de Capacitación Docente en Folklore por módulos y certifícate como &ldquo;Promotor en Danzas Folklóricas&rdquo;.
@@ -22,7 +22,7 @@ const EscuelaParaFormadores = () => {
 									<li>Cada módulo desarrolla cursos prácticos (talleres) y teóricos de formación específica (didáctica de la danza, investigación), y cursos complementarios que contribuyen a su formación integral que se visualiza en su práctica aplicada.</li>
 								</ul>
 							</div>
-							<div className="basis-1/2">
+							<div className="md:basis-1/2">
 								<p className="font-bold mb-3">Sobre la certificación</p>
 								<ul className="list-outside list-disc pl-6 space-y-2">
 									<li>El programa entrega certificación progresiva por cada uno de los módulos.</li>
@@ -48,7 +48,7 @@ const EscuelaParaFormadores = () => {
 
 					</div>
 				</div>
-				<div className="shrink-0 w-[523px] absolute right-0 top-0 h-full">
+				<div className="shrink-0 absolute right-0 top-0 h-full max-lg:hidden w-[180px] xl:w-[300px] min-[1439.9px]:w-[523px]">
 					<figure className="relative w-full h-full mx-auto">
 						<Image
 							src="https://ccsm.unmsm.edu.pe/ccsm/escuela_para_formadores_d87bdc40bb.webp"

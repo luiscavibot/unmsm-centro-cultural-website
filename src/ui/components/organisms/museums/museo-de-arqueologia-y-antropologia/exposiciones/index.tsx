@@ -61,14 +61,14 @@ const Exposiciones = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-black text-white py-8 lg:py-[96px] bg-[url('https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg')] bg-no-repeat bg-[-123px_10px]">
 				<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
-					<div className="max-w-[394px]">
+					<div className="lg:max-w-[394px]">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Exposición permanente
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Tesoros Arqueológicos de San Marcos
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
+						<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 							Explora la historia milenaria del Perú a través
 							de una exposición que nos conecta con las antiguas
 							civilizaciones que dieron forma a nuestra identidad
@@ -76,7 +76,7 @@ const Exposiciones = () => {
 							cerámica, textiles, esculturas y objetos
 							ceremoniales.
 						</p>
-						<div className="flex flex-col gap-y-2 mt-2">
+						<div className="flex flex-col gap-y-2 mt-2 max-md:text-sm">
 							<div className="flex gap-2 items-start">
 								<div className="flex items-center gap-1 shrink-0">
 									<OutlinePlaceIcon
@@ -126,7 +126,7 @@ const Exposiciones = () => {
 								{tesorosArqueologicosDeSanMarcosData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
-											<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+											<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 												<Image
 													src={img.url}
 													className="max-lg:object-contain w-auto h-full mx-auto"
@@ -165,14 +165,14 @@ const Exposiciones = () => {
 					id="test"
 					className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative"
 				>
-					<div className="max-w-[394px] order-2">
+					<div className="lg:max-w-[394px] lg:order-2">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Exposición finalizada
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Paracas, Vientos del Sur
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
+						<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 							Realizada en 2016, esta exposición contó con piezas
 							del catálogo &quot;Colección Paracas Joyas
 							Sanmarquinas&quot;, que puede revisarse en el
@@ -186,7 +186,7 @@ const Exposiciones = () => {
 							Explorar
 						</Link>
 					</div>
-					<div className="max-lg:w-full order-1">
+					<div className="max-lg:w-full lg:order-1">
 						<Splide
 							onMoved={handleMoveParacasVientosDelSur}
 							ref={splideRefParacasVientosDelSur}
@@ -196,7 +196,7 @@ const Exposiciones = () => {
 							<SplideTrack>
 								{paracasVientosDelSurData.map((img, index) => (
 									<SplideSlide key={index}>
-										<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+										<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 											<Image
 												src={img.url}
 												className="max-lg:object-contain w-auto h-full mx-auto"
@@ -210,7 +210,7 @@ const Exposiciones = () => {
 								))}
 							</SplideTrack>
 						</Splide>
-						<div className="flex justify-start gap-x-2 relative mt-4 pointer-events-none">
+						<div className="flex justify-end lg:justify-start gap-x-2 relative mt-4 pointer-events-none">
 							<ArrowButton
 								className="pointer-events-auto"
 								theme="light"
@@ -234,7 +234,7 @@ const Exposiciones = () => {
 					id="test"
 					className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative"
 				>
-					<div className="max-lg:w-full order-1 lg:order-2">
+					<div className="max-lg:w-full order-2">
 						<Splide
 							onMoved={handleMoveExpoTemporales}
 							ref={splideRefExpoTemporales}
@@ -245,7 +245,7 @@ const Exposiciones = () => {
 								{exposicionesTemporalesData.map(
 									(img, index) => (
 										<SplideSlide key={index}>
-											<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+											<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 												<Image
 													src={img.url}
 													className="max-lg:object-contain w-auto h-full mx-auto"
@@ -277,14 +277,14 @@ const Exposiciones = () => {
 							/>
 						</div>
 					</div>
-					<div className="max-w-[394px] order-2 lg:order-1">
+					<div className="lg:max-w-[394px] order-1">
 						<span className="text-sm font-semibold mb-1 inline-block">
 							Eventos
 						</span>
-						<h3 className="text-[32px] leading-[normal] font-semibold">
+						<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 							Exposiciones temporales
 						</h3>
-						<p className="font-medium leading-[24px] mt-6">
+						<p className="max-md:text-sm font-medium leading-[24px] mt-6">
 							El Centro Cultural de San Marcos organiza
 							exposiciones temporales en las salas de sus museos
 							de Arte y de Antropología y Arqueología. Estas

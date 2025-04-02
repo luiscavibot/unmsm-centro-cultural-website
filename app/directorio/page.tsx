@@ -16,7 +16,7 @@ const breadcrumbItems = [
 export default function Directorio() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/directorio_ccsm_portada_5a837f9a78.webp"
+			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/directorio_portada_efe70e6ad7.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -35,7 +35,7 @@ export default function Directorio() {
 								</p>
 							</div>
 						</div>
-						<div className="relative overflow-x-auto max-w-full pb-[104px]">
+						<div className="relative overflow-x-auto max-w-full mb-[104px]">
 							<table className="max-w-full w-full">
 								<thead>
 									<tr>

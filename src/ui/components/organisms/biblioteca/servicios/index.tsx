@@ -6,11 +6,11 @@ const Servicios = () => {
 		<>
 			<div className="bg-dark-red-2 relative">
 				<div
-					className="px-6 lg:px-[104px] h-[380px] lg:h-full overflow-hidden relative"
+					className="px-6 lg:px-[104px] overflow-hidden relative"
 				>
 					<div className="container">
-						<div className="relative pt-[56px] lg:pt-[96px] pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-row gap-6 leading-[24px] font-medium">
-							<div className="basis-1/2">
+						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pb-[96px] lg:pr-16 lg:w-[705px] mr-auto h-full text-white flex flex-col md:flex-row gap-6 leading-[24px] font-medium">
+							<div className="md:basis-1/2">
 								<ul className="list-outside list-disc pl-6">
 									<li className="font-bold">Lectura y préstamo en sala</li>
 									<p className="mb-4">
@@ -29,7 +29,7 @@ const Servicios = () => {
 									</p>
 								</ul>
 							</div>
-							<div className="basis-1/2">
+							<div className="md:basis-1/2">
 								<ul className="list-outside list-disc pl-6">
 									<li className="font-bold">Actividades y Talleres</li>
 									<p>
@@ -58,11 +58,11 @@ const Servicios = () => {
 
 					</div>
 				</div>
-				<div className="shrink-0 w-[523px] absolute right-0 top-0 h-full">
+				<div className="shrink-0 absolute right-0 top-0 h-full max-lg:hidden w-[180px] xl:w-[300px] min-[1439.9px]:w-[544px]">
 					<figure className="relative w-full h-full mx-auto">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/biblioteca-servicios.webp"
-							className="object-cover h-full"
+							className="object-cover object-[37%_bottom] min-[1439.9px]:object-center h-full"
 							alt="biblioteca servicios"
 							fill
 							quality={100}
