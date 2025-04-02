@@ -43,7 +43,7 @@ const ElencoDeMusica: React.FC<Props> = ({
 						<SplideTrack>
 							{elencoDeMusicaData.map((img, index) => (
 								<SplideSlide key={index}>
-									<figure className="relative w-auto h-full flex-shrink-0 rounded-2xl overflow-hidden">
+									<figure className="relative w-auto h-full flex-shrink-0 lg:rounded-2xl overflow-hidden">
 										<Image
 											src={img.url}
 											className="max-lg:object-contain w-auto h-full mx-auto"
@@ -74,12 +74,12 @@ const ElencoDeMusica: React.FC<Props> = ({
 						/>
 					</div>
 				</div>
-				<div className="max-w-[394px]">
-					<h3 className="text-[32px] leading-[normal] font-semibold">
+				<div className="lg:max-w-[394px]">
+					<h3 className="text-2xl md:text-[32px] leading-[normal] font-semibold">
 						Elenco de Música de la Universidad Nacional Mayor de San
 						Marcos
 					</h3>
-					<div className="font-medium leading-[24px] mt-6">
+					<div className="max-md:text-sm font-medium leading-[24px] mt-6">
 						<p>
 							El Elenco de Música tiene el exclusivo encargo
 							artístico de realizar el acompañamiento de las
