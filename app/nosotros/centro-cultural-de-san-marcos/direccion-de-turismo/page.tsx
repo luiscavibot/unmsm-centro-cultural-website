@@ -86,7 +86,7 @@ export default function DireccionDeTurismo() {
 									</p>
 								</div>
 								<div>
-									<figure className="relative h-[300px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
+									<figure className="relative h-[200px] sm:h-[400px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_1_d7bec10950.webp"
 											className="object-cover h-full"
@@ -105,7 +105,7 @@ export default function DireccionDeTurismo() {
 									</p>
 								</div>
 								<div>
-									<figure className="relative h-[300px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
+									<figure className="relative h-[200px] sm:h-[400px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_2_775041a8e7.webp"
 											className="object-cover h-full"
