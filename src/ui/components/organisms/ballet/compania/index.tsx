@@ -63,12 +63,12 @@ const Compania = () => {
 			<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
 				<div className="container">
 					{/* <div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[611px_483px_402px_750px_403px_403px]"> */}
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 md:grid-rows-[611px_483px_402px_403px_403px]">
-						<div className="md:col-span-2">
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 sm:grid-rows-[611px_483px_402px_403px_403px]">
+						<div className="sm:col-span-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/83d56e4cc5db4e12714c1273c4f52780_c15608a77e.jpg"
-									className="md:object-cover w-full md:h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Compañia de Ballet 1"
 									width={1500}
 									height={743}
@@ -76,11 +76,11 @@ const Compania = () => {
 								/>
 							</figure>
 						</div>
-						<div className="md:row-span-2 md:row-start-2">
+						<div className="sm:row-span-2 sm:row-start-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_grid_2_abacbe5a2d.jpg"
-									className="md:object-cover w-full md:h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Compañia de Ballet 2"
 									width={616}
 									height={925}
@@ -88,11 +88,11 @@ const Compania = () => {
 								/>
 							</figure>
 						</div>
-						<div className="md:row-start-2">
+						<div className="sm:row-start-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/09b97c1c8aadd73af9af364296f895e9_55f9ca11c7.jpg"
-									className="md:object-cover w-full md:h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Compañia de Ballet 3"
 									width={1156}
 									height={925}
@@ -100,11 +100,11 @@ const Compania = () => {
 								/>
 							</figure>
 						</div>
-						<div className="md:col-start-2 md:row-start-3">
+						<div className="sm:col-start-2 sm:row-start-3">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/a689b693503f0fef317e93d56a7d508d_d791dd4e5c.jpg"
-									className="md:object-cover w-full md:h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Compañia de Ballet 4"
 									width={1388}
 									height={925}
@@ -116,7 +116,7 @@ const Compania = () => {
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/9f05287c6f4bdedf06ca6f8d1b062be5_3529756b21.jpg"
-									className="md:object-cover w-full md:h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Compañia de Ballet 5"
 									fill
 									quality={100}
@@ -124,11 +124,11 @@ const Compania = () => {
 							</figure>
 						</div> */}
 						{/* <div className="row-start-5"> */}
-						<div className="md:row-start-4">
+						<div className="sm:row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_compania_grid_7_e28ec3c9e8.jpg"
-									className="md:object-cover w-full md:h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Compañia de Ballet 6"
 									width={616}
 									height={925}
@@ -137,11 +137,11 @@ const Compania = () => {
 							</figure>
 						</div>
 						{/* <div className="col-start-1 row-start-6"> */}
-						<div className="md:col-start-1 md:row-start-5">
+						<div className="sm:col-start-1 sm:row-start-5">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/b9ebe23f2cda5b8f290d5cb17a74de65_423af243bb.jpg"
-									className="md:object-cover w-full md:h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Compañia de Ballet 7"
 									width={1387}
 									height={925}
@@ -150,11 +150,11 @@ const Compania = () => {
 							</figure>
 						</div>
 						{/* <div className="row-span-2 col-start-2 row-start-5"> */}
-						<div className="md:row-span-2 md:col-start-2 md:row-start-4">
+						<div className="sm:row-span-2 sm:col-start-2 sm:row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
 									src="https://ccsm.unmsm.edu.pe/ccsm/00e460e8779f18d85b44c80af8a87e3f_f83a3f635c.jpg"
-									className="md:object-cover w-full md:h-full"
+									className="sm:object-cover w-full sm:h-full"
 									alt="Compañia de Ballet 8"
 									width={1387}
 									height={925}
