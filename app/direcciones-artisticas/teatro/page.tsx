@@ -242,7 +242,7 @@ export default function Teatro() {
 									</b>{' '}
 									¡te esperamos!
 								</p>
-								<ul className="list-none mb-5">
+								<ul className="list-none">
 									<li className="">
 										<a
 											className="flex items-baseline gap-x-2"
@@ -275,8 +275,8 @@ export default function Teatro() {
 									</li>
 								</ul>
 							</div>
-							<div className="shrink-0">
-								<figure className="relative w-[523px] h-[349px] mx-auto">
+							<div className="shrink-0 max-lg:hidden">
+								<figure className="relative w-[450px] xl:w-[523px] h-[300px] xl:h-[349px] mx-auto">
 									<Image
 										src="https://ccsm.unmsm.edu.pe/ccsm/teatro_unete_18acf6440a.jpg"
 										className="object-cover h-full"
@@ -290,69 +290,75 @@ export default function Teatro() {
 					</div>
 					<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
 						<div className="container">
-							<div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[repeat(8,402px)]">
-								<div className="col-span-2 row-span-2">
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 sm:grid-rows-[repeat(8,402px)]">
+								<div className="sm:col-span-2 sm:row-span-2">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_1_f94c72923e.jpg"
-											className="object-cover"
+											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 1"
-											fill
+											width={1387}
+											height={925}
 											quality={100}
 										/>
 									</figure>
 								</div>
-								<div className="row-span-2 row-start-3">
+								<div className="sm:row-span-2 sm:row-start-3">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_2_e5c614977e.jpg"
-											className="object-cover"
+											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 2"
-											fill
+											width={1387}
+											height={925}
 											quality={100}
 										/>
 									</figure>
 								</div>
-								<div className="row-start-3">
+								<div className="sm:row-start-3">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_3_3214ff5391.jpg"
-											className="object-cover"
+											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 3"
-											fill
+											width={1387}
+											height={925}
 											quality={100}
 										/>
 									</figure>
 								</div>
-								<div className="col-start-2 row-start-4">
+								<div className="sm:col-start-2 sm:row-start-4">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_4_cb810cbe5e.jpg"
-											className="object-cover"
+											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 4"
-											fill
+											width={1387}
+											height={925}
 											quality={100}
 										/>
 									</figure>
 								</div>
-								<div className="col-span-2 row-span-2 row-start-5">
+								<div className="sm:col-span-2 sm:row-span-2 sm:row-start-5">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_5_7059af83a1.jpg"
-											className="object-cover"
+											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 5"
-											fill
+											width={1387}
+											height={925}
 											quality={100}
 										/>
 									</figure>
 								</div>
-								<div className="col-span-2 row-span-2 row-start-7">
+								<div className="sm:col-span-2 sm:row-span-2 sm:row-start-7">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_6_2d529b7a70.jpg"
-											className="object-cover"
+											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 6"
-											fill
+											width={1387}
+											height={925}
 											quality={100}
 										/>
 									</figure>

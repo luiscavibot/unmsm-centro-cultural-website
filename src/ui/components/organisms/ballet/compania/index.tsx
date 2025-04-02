@@ -62,7 +62,6 @@ const Compania = () => {
 			</div>
 			<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
 				<div className="container">
-					{/* <div className="grid grid-cols-2 gap-6 auto-rows-[402px] lg:grid-rows-[611px_483px_402px_750px_403px_403px]"> */}
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 sm:grid-rows-[611px_483px_402px_403px_403px]">
 						<div className="sm:col-span-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
