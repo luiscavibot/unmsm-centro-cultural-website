@@ -17,7 +17,7 @@ const Tab: React.FC<TabProps> = ({ label, icon, selected, onClick, link, type, c
 		if (type === 'internal-link') {
 			return (
 				<Link
-					className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-3xl inline-flex items-center justify-center gap-x-2 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-light-text-button-color bg-light-bg-button-color'} ${className}`}
+					className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-3xl inline-flex items-center justify-center gap-x-2 max-md:shrink-0 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-light-text-button-color bg-light-bg-button-color'} ${className}`}
 					href={link}
 				>
 					<span className="w-full text-left">
@@ -34,7 +34,7 @@ const Tab: React.FC<TabProps> = ({ label, icon, selected, onClick, link, type, c
 		} else {
 			return (
 				<a
-					className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-3xl inline-flex items-center justify-center gap-x-2 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-light-text-button-color bg-light-bg-button-color'} ${className}`}
+					className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-3xl inline-flex items-center justify-center gap-x-2 max-md:shrink-0 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-light-text-button-color bg-light-bg-button-color'} ${className}`}
 					href={link}
 					target="_blank"
 					rel="noreferrer noopener"
@@ -54,7 +54,7 @@ const Tab: React.FC<TabProps> = ({ label, icon, selected, onClick, link, type, c
 	} else {
 		return (
 			<button
-				className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-3xl inline-flex items-center justify-center gap-x-2 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-light-text-button-color bg-light-bg-button-color'} ${className}`}
+				className={`font-semibold leading-[16px] p-4 transition-all duration-300 hover:bg-light-bg-button-color-hover h-[48px] rounded-3xl inline-flex items-center justify-center gap-x-2 max-md:shrink-0 ${selected ? 'ring-inset ring-1 ring-dark-red text-dark-red bg-light-bg-button-color-hover' : 'text-light-text-button-color bg-light-bg-button-color'} ${className}`}
 				onClick={onClick}
 			>
 				<span className="w-full text-left">
