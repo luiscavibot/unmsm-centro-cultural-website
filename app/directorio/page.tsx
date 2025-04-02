@@ -35,7 +35,7 @@ export default function Directorio() {
 								</p>
 							</div>
 						</div>
-						<div className="relative overflow-x-auto max-w-full pb-[104px]">
+						<div className="relative overflow-x-auto max-w-full mb-[104px]">
 							<table className="max-w-full w-full">
 								<thead>
 									<tr>
