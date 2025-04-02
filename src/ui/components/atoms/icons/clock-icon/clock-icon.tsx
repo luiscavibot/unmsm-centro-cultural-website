@@ -2,14 +2,15 @@ import React, { FC } from 'react'
 
 interface ClockIconProps {
 	className?: string;
-	color?: 'dark';
+	color?: 'dark' | 'light';
 	ariaLabel?: string;
 }
 
 const ClockIcon: FC<ClockIconProps> = ({ className, color = 'dark', ariaLabel }) => {
 
 	const colors = {
-		dark: 'stroke-dark-blue'
+		dark: 'stroke-dark-blue',
+		light: 'stroke-white'
 	}
 
 	return (
