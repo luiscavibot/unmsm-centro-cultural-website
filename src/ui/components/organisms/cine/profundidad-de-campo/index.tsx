@@ -6,8 +6,8 @@ const ProfundidadDeCampo = () => {
 	return (
 		<>
 			<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[24px] pb-[56px]">
-				<div className="container flex flex-row justify-between gap-x-[68px]">
-					<div className="max-w-[641px] leading-[24px] text-dark-blue-2">
+				<div className="container flex flex-col lg:flex-row justify-between gap-y-8 gap-x-[68px]">
+					<div className="lg:max-w-[641px] leading-[24px] text-dark-blue-2">
 						<p className="mb-2">
 							Este es un programa virtual de entrevistas donde
 							destacados cineastas y profesionales del cine
@@ -33,7 +33,7 @@ const ProfundidadDeCampo = () => {
 						/>
 					</div>
 					<div className="shrink-0">
-						<figure className="relative w-[604px] h-[403px] mx-auto">
+						<figure className="relative w-full max-lg:max-w-[450px] lg:w-[450px] xl:w-[604px] h-[300px] xl:h-[403px] mx-auto">
 							<Image
 								src="https://ccsm.unmsm.edu.pe/ccsm/profundidad_de_campo_1d87f72603.jpg"
 								className="object-cover h-full"
