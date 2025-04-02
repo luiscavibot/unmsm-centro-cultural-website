@@ -16,8 +16,8 @@ const Publicaciones = () => {
 					</p>
 				</div>
 			</div>
-			<div className="lg:grid lg:grid-cols-2 lg:h-[480px]">
-				<article className="px-6 lg:pl-[104px] h-[380px] lg:h-full relative bg-black-custom overflow-hidden">
+			<div className="lg:grid lg:grid-cols-2 xl:h-[480px]">
+				<article className="px-6 lg:pl-[104px] lg:h-full relative bg-black-custom overflow-hidden">
 					<figure className="absolute -bottom-[92%] -left-[162px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-1.svg"
@@ -26,15 +26,15 @@ const Publicaciones = () => {
 							height={621}
 						/>
 					</figure>
-					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 semi-container-l h-full">
+					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 lg:semi-container-l h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Revista
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl md:text-[32px] font-bold leading-[normal]">
 								Folklore: Arte, cultura y sociedad
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								En 2007, el Centro Universitario de Folklore de
 								la UNMSM lanzó la revista FOLKLORE: Arte,
 								cultura y sociedad, con el propósito de llenar
@@ -56,7 +56,7 @@ const Publicaciones = () => {
 						/>
 					</div>
 				</article>
-				<article className="px-6 lg:pr-[104px] h-[380px] lg:h-full relative bg-dark-red-2 overflow-hidden">
+				<article className="px-6 lg:pr-[104px] lg:h-full relative bg-dark-red-2 overflow-hidden">
 					<figure className="absolute -top-[46%] -right-[270px] transition-transform duration-[800ms] ease-out">
 						<Image
 							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/centro-cultural-de-san-marcos/bg-waves-2.svg"
@@ -65,15 +65,15 @@ const Publicaciones = () => {
 							height={621}
 						/>
 					</figure>
-					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 semi-container-r h-full">
+					<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 lg:semi-container-r h-full">
 						<header className="max-w-[459px] text-white">
-							<span className="block mb-1 font-semibold leading-[24px]">
+							<span className="block mb-1 max-md:text-sm font-semibold leading-[24px]">
 								Boletín
 							</span>
-							<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal]">
+							<h3 className="text-2xl md:text-[32px] font-bold leading-[normal]">
 								Haylli
 							</h3>
-							<p className="max-lg:text-sm mt-6 font-medium leading-[24px]">
+							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								Boletín del Centro Universitario de Folklore de
 								la Universidad Nacional Mayor de San Marcos,
 								donde se publican artículos cortos de una o dos
