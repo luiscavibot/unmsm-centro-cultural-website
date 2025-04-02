@@ -141,7 +141,7 @@ export default function Teatro() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium break-words">
+											<p className="font-medium break-all">
 												Correo: teatro.ccsm@unmsm.edu.pe
 												<br />
 												Whatsapp: 944 780 420
