@@ -209,6 +209,7 @@ export default function MuseoDeArteDeSanMarcos() {
 					<div className="container">
 						<div className="flex gap-x-4 overflow-auto">
 							<Tab
+								className="max-md:shrink-0"
 								label="Biblioteca virtual"
 								selected={currentTab === 'biblioteca-virtual'}
 								onClick={() => {
@@ -216,6 +217,7 @@ export default function MuseoDeArteDeSanMarcos() {
 								}}
 							/>
 							<Tab
+								className="max-md:shrink-0"
 								label="Servicios"
 								selected={currentTab === 'servicios'}
 								onClick={() => {
@@ -223,6 +225,7 @@ export default function MuseoDeArteDeSanMarcos() {
 								}}
 							/>
 							<Tab
+								className="max-md:shrink-0"
 								label="Colecciones"
 								selected={currentTab === 'colecciones'}
 								onClick={() => {

@@ -65,9 +65,10 @@ const Colecciones = () => {
 						colecciones de diversas especialidades, entre ellas:
 					</p>
 					<div className="stroke-dark-red fill-dark-red stroke-dark-blue-2 hidden invisible"></div>
-					<div className="grid grid-cols-[290px_auto] gap-6">
-						<div className="flex flex-col gap-4">
+					<div className="grid grid-cols-1 md:grid-cols-[290px_auto] gap-6">
+						<div className="flex flex-row md:flex-col gap-4 max-md:overflow-auto">
 							<VerticalTab
+								className="max-md:shrink-0"
 								label="Libros"
 								selected={currentTab == 'libros'}
 								onClick={() => {
@@ -81,6 +82,7 @@ const Colecciones = () => {
 								}
 							/>
 							<VerticalTab
+								className="max-md:shrink-0"
 								label="Folletos"
 								selected={currentTab == 'folletos'}
 								onClick={() => {
@@ -94,6 +96,7 @@ const Colecciones = () => {
 								}
 							/>
 							<VerticalTab
+								className="max-md:shrink-0"
 								label="Publicaciones periódicas"
 								selected={
 									currentTab == 'publicaciones-periodicas'
@@ -112,6 +115,7 @@ const Colecciones = () => {
 								}
 							/>
 							<VerticalTab
+								className="max-md:shrink-0"
 								label="Material multimedia"
 								selected={currentTab == 'material-multimedia'}
 								onClick={() => {
@@ -127,6 +131,7 @@ const Colecciones = () => {
 								}
 							/>
 							<VerticalTab
+								className="max-md:shrink-0"
 								label="Colecciones especiales"
 								selected={
 									currentTab == 'colecciones-especiales'
@@ -145,6 +150,7 @@ const Colecciones = () => {
 								}
 							/>
 							<VerticalTab
+								className="max-md:shrink-0"
 								label="Colección Ugarte Chamorro"
 								selected={
 									currentTab == 'coleccion-ugarte-chamorro'
