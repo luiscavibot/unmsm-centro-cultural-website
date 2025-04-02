@@ -188,7 +188,7 @@ export default function MuseoDeArqueologiaYAntropologia() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium">
+											<p className="font-medium break-all">
 												museoarql.ccsm@unmsm.edu.pe
 											</p>
 										</div>

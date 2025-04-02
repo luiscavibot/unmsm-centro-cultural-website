@@ -136,7 +136,7 @@ export default function Cine() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium">
+											<p className="font-medium break-all">
 												dcpa.centrocultural@unmsm.edu.pe
 											</p>
 										</div>

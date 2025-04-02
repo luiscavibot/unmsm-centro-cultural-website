@@ -133,7 +133,7 @@ export default function MuseoDeArteDeSanMarcos() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium">
+											<p className="font-medium break-all">
 												biblioteca.ccsm@unmsm.edu.pe
 											</p>
 										</div>

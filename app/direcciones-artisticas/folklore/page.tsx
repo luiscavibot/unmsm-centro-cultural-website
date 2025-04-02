@@ -148,7 +148,7 @@ export default function Folklore() {
 											<p className="font-bold">
 												Contacto
 											</p>
-											<p className="font-medium">
+											<p className="font-medium break-all">
 												folklore.ccsm@unmsm.edu.pe
 											</p>
 										</div>
