@@ -45,8 +45,15 @@ export default function DireccionDeTurismo() {
 		perPage: 1,
 		arrows: false,
 		pagination: false,
-		gap: '0px',
+		gap: '16px',
 		perMove: 1,
+		breakpoints: {
+			767: {
+				fixedWidth: '100%',
+				fixedHeight: '300px',
+				perMove: 1,
+			},
+		},
 	};
 
 	const {
@@ -79,7 +86,7 @@ export default function DireccionDeTurismo() {
 									</p>
 								</div>
 								<div>
-									<figure className="relative h-[400px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
+									<figure className="relative h-[300px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_1_d7bec10950.webp"
 											className="object-cover h-full"
@@ -98,7 +105,7 @@ export default function DireccionDeTurismo() {
 									</p>
 								</div>
 								<div>
-									<figure className="relative h-[400px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
+									<figure className="relative h-[300px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
 											src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_2_775041a8e7.webp"
 											className="object-cover h-full"
@@ -124,12 +131,12 @@ export default function DireccionDeTurismo() {
 											{galeriaTurismoData.map(
 												(ImageData, index) => (
 													<SplideSlide key={index}>
-														<figure className="relative h-[400px] max-w-full rounded-3xl overflow-hidden mx-auto">
+														<figure className="relative h-full md:h-[400px] max-w-full md:rounded-3xl overflow-hidden mx-auto">
 															<Image
 																src={
 																	ImageData.url
 																}
-																className="object-cover h-full"
+																className="object-contain md:object-cover h-full"
 																alt={`galeria turismo ${
 																	index + 1
 																}`}
@@ -142,7 +149,7 @@ export default function DireccionDeTurismo() {
 											)}
 										</SplideTrack>
 									</Splide>
-									<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[20px] pointer-events-none">
+									<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[10px] md:-inset-x-[20px] pointer-events-none">
 										<div className="container flex justify-between gap-x-2 relative">
 											<ArrowButton
 												className="pointer-events-auto"
