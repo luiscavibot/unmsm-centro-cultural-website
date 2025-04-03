@@ -9,11 +9,31 @@ export class AgendaCulturalService {
 			const params = {
 				'populate[0]': 'image',
 				'populate[1]': 'exact_dates',
-				'populate[2]': 'date_ranges',
+				'populate[2]': 'date_ranges.final_date',
+				'populate[3]': 'date_ranges.start_date',
 			};
 
 			const data = await strapiFetch<AngendaCulturalResponse>(
 				RESOURCE_PATH,
+				{ params }
+			);
+			return data.data;
+		} catch (error) {
+			console.error('Error al obtener los datos:', error);
+			throw error;
+		}
+	}
+	static async getEntryBySlug(slug: string) {
+		try {
+			const params = {
+				'populate[0]': 'image',
+				'populate[1]': 'exact_dates',
+				'populate[2]': 'date_ranges.final_date',
+				'populate[3]': 'date_ranges.start_date',
+			};
+
+			const data = await strapiFetch<AngendaCulturalResponse>(
+				`${RESOURCE_PATH}/?filters[slug][$eq]=${slug}`,
 				{ params }
 			);
 			return data.data;

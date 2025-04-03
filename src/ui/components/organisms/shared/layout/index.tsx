@@ -39,7 +39,10 @@ const Layout = ({
 					quality={100}
 				/>
 			</div>
-			<div id="contenido" className="pt-[--portada-space-height-md] md:pt-[--padding-top-to-portada-image]">
+			<div
+				id="contenido"
+				className="pt-[--portada-space-height-md] md:pt-[--padding-top-to-portada-image]"
+			>
 				<div
 					className={
 						'px-4 lg:px-[104px] pt-[46px] md:pt-16 md:rounded-t-[--border-top-radius-layout] overflow-hidden ' +

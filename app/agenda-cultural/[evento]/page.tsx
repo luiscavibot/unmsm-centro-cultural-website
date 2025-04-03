@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Badge from '@/ui/components/atoms/badge';
 import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
 import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
@@ -11,7 +12,9 @@ import UpcomingEventsCard from '@/ui/components/molecules/upcoming-events-card';
 import Layout from '@/ui/components/organisms/shared/layout';
 import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 import eventsDataToHome from '@/ui/mocks/events-data-to-home';
-import React from 'react';
+import { useParams } from 'next/navigation';
+import { useQuery } from '@tanstack/react-query';
+import { AgendaCulturalService } from '@/services/agenda-cultural.service';
 
 const breadcrumbItems = [
 	{
@@ -28,8 +31,11 @@ const breadcrumbItems = [
 	},
 ];
 
-export default function Evento() {
+export default function Page() {
 	useScrollOnLoad();
+	const params = useParams();
+	const { evento } = params;
+
 	return (
 		<Layout
 			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_cultural_portada_c193f92394.jpg"
@@ -39,7 +45,11 @@ export default function Evento() {
 				<div className="container">
 					<div className="max-w-[814px] mx-auto mb-[80px]">
 						<div className="flex justify-center">
-							<Badge className="max-md:mb-[18px]" label="Virtual" size="small" />
+							<Badge
+								className="max-md:mb-[18px]"
+								label="Virtual"
+								size="small"
+							/>
 						</div>
 						<Title className="text-center mb-10 md:mb-16">
 							Letras breves: Canción popular costeña en el norte

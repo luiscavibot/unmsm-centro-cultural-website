@@ -8,33 +8,24 @@ import DateRangeIcon from '@/ui/components/atoms/icons/date-range-icon';
 import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
 import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
 import { AngendaCultural } from '@/interfaces/services/agenda-cultural.interface';
+import { useCustomDates } from '@/ui/hooks/use-custom-date';
 
-interface EventsHomeCardProps {
-	slug: string;
-	url: string;
-	title: string;
-	summary: string;
-	date: string;
-	dateString: string;
-	time: string;
-	timeString: string;
-	location: string;
-}
-
-const EventsHomeCard: FC<EventsHomeCardProps> = ({
+const EventsHomeCard: FC<AngendaCultural> = ({
 	slug,
-	url,
+	image,
 	title,
 	summary,
-	// date,
-	// dateString,
-	// time,
-	// timeString,
-	location,
+	place,
+	exact_dates,
+	date_ranges,
 }) => {
 	const { wrapperRef, containerRef, percentage, isLargeScreen } =
 		useResponsivePercentage();
-
+	const { daysSummary, singleDate, allDatesFormatted } = useCustomDates(
+		exact_dates,
+		date_ranges
+	);
+	console.log('allDatesFormatted-->', allDatesFormatted);
 	return (
 		<article
 			ref={wrapperRef}
@@ -46,7 +37,7 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 			>
 				<figure>
 					<Image
-						src={url}
+						src={image.url}
 						className="object-cover max-lg:!h-[320px]"
 						alt="events"
 						fill
@@ -82,27 +73,32 @@ const EventsHomeCard: FC<EventsHomeCardProps> = ({
 									ariaLabel="Fecha"
 									color="dark"
 								/>
-								{/* <time className="block" dateTime={date}>
-									{dateString}
-								</time> */}
+								<time
+									className="block"
+									dateTime={daysSummary || singleDate?.day}
+								>
+									{daysSummary || singleDate?.day}
+								</time>
 							</div>
-							<div className="flex p-1 gap-2 items-center">
-								<ClockIcon
-									className="shrink-0"
-									ariaLabel="Hora"
-									color="dark"
-								/>
-								{/* <time className="block" dateTime={time}>
-									{timeString}
-								</time> */}
-							</div>
+							{singleDate?.time && (
+								<div className="flex p-1 gap-2 items-center">
+									<ClockIcon
+										className="shrink-0"
+										ariaLabel="Hora"
+										color="dark"
+									/>
+									<time className="block">
+										{singleDate?.time}
+									</time>
+								</div>
+							)}
 							<div className="flex p-1 gap-2 items-center">
 								<OutlinePlaceIcon
 									className="shrink-0"
 									ariaLabel="Lugar"
 									color="dark"
 								/>
-								<p>{location}</p>
+								<p>{place}</p>
 							</div>
 						</div>
 					</Link>
