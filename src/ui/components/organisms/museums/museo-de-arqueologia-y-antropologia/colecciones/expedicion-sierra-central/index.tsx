@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
-// import ExternalLinkIcon from '@/ui/components/atoms/icons/external-link-icon';
+import ExternalLinkIcon from '@/ui/components/atoms/icons/external-link-icon';
 import { expedicionSierraCentralData } from '@/ui/data/museums/expedicion-sierra-central-data';
 
 interface ExtendedSplideType extends SplideType {
@@ -91,16 +91,16 @@ const ExpedicionSierraCentral: React.FC<Props> = ({
 							de amontonamientos de piedras a manera de ofrendas.
 						</p>
 					</div>
-					{/* <p className="mt-6">
+					<p className="mt-6">
 						<a
-							href="https://www.flickr.com/photos/190570086@N08/albums/72157717943965197/"
+							href="https://flic.kr/s/aHsmTLdgDg"
 							className="link inline-flex items-center gap-x-2"
 							target="_blank"
 						>
 							Explorar
 							<ExternalLinkIcon className="h-4 w-4 shrink-0" />
 						</a>
-					</p> */}
+					</p>
 				</div>
 			</div>
 		</div>

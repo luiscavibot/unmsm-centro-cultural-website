@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import type { Splide as SplideType, ResponsiveOptions } from '@splidejs/splide';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
-// import ExternalLinkIcon from '@/ui/components/atoms/icons/external-link-icon';
+import ExternalLinkIcon from '@/ui/components/atoms/icons/external-link-icon';
 import { archivoJulioCTelloData } from '@/ui/data/museums/archivo-julio-c-tello-data';
 
 interface ExtendedSplideType extends SplideType {
@@ -57,16 +57,16 @@ const ArchivoJulioCTello: React.FC<Props> = ({
 							cántaros Nasca.
 						</p>
 					</div>
-					{/* <p className="mt-6">
+					<p className="mt-6">
 						<a
-							href="https://www.flickr.com/photos/190570086@N08/albums/72157719252241104/"
+							href="https://flic.kr/s/aHsmVKPwuq"
 							className="link inline-flex items-center gap-x-2"
 							target="_blank"
 						>
 							Explorar
 							<ExternalLinkIcon className="h-4 w-4 shrink-0" />
 						</a>
-					</p> */}
+					</p>
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
