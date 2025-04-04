@@ -11,7 +11,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveElencoDeMusica: () => void;
+	// handleMoveElencoDeMusica: () => void;
 	splideRefElencoDeMusica: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoDeMusica: boolean;
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const ElencoDeMusica: React.FC<Props> = ({
-	handleMoveElencoDeMusica,
+	// handleMoveElencoDeMusica,
 	splideRefElencoDeMusica,
 	splideOptions,
 	isPrevDisabledElencoDeMusica,
@@ -35,7 +35,7 @@ const ElencoDeMusica: React.FC<Props> = ({
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
 				<div className="max-lg:w-full order-2">
 					<Splide
-						onMoved={handleMoveElencoDeMusica}
+						// onMoved={handleMoveElencoDeMusica}
 						ref={splideRefElencoDeMusica}
 						hasTrack={false}
 						options={splideOptions}

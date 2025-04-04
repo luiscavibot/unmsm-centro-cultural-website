@@ -15,7 +15,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveExpoArte: () => void;
+	// handleMoveExpoArte: () => void;
 	splideRefExpoArte: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledExpoArte: boolean;
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const ArteModerno: React.FC<Props> = ({
-	handleMoveExpoArte,
+	// handleMoveExpoArte,
 	splideRefExpoArte,
 	splideOptions,
 	isPrevDisabledExpoArte,
@@ -90,7 +90,7 @@ const ArteModerno: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveExpoArte}
+						// onMoved={handleMoveExpoArte}
 						ref={splideRefExpoArte}
 						hasTrack={false}
 						options={splideOptions}

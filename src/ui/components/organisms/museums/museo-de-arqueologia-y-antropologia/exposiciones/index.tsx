@@ -28,21 +28,21 @@ const Exposiciones = () => {
 	const {
 		handlePrev: handlePrevExpoTesoros,
 		handleNext: handleNextExpoTesoros,
-		handleMove: handleMoveExpoTesoros,
+		// handleMove: handleMoveExpoTesoros,
 		isPrevDisabled: isPrevDisabledExpoTesoros,
 		isNextDisabled: isNextDisabledExpoTesoros,
 	} = useSplideControls(splideRefExpoTesoros);
 	const {
 		handlePrev: handlePrevParacasVientosDelSur,
 		handleNext: handleNextParacasVientosDelSur,
-		handleMove: handleMoveParacasVientosDelSur,
+		// handleMove: handleMoveParacasVientosDelSur,
 		isPrevDisabled: isPrevDisabledParacasVientosDelSur,
 		isNextDisabled: isNextDisabledParacasVientosDelSur,
 	} = useSplideControls(splideRefParacasVientosDelSur);
 	const {
 		handlePrev: handlePrevExpoTemporales,
 		handleNext: handleNextExpoTemporales,
-		handleMove: handleMoveExpoTemporales,
+		// handleMove: handleMoveExpoTemporales,
 		isPrevDisabled: isPrevDisabledExpoTemporales,
 		isNextDisabled: isNextDisabledExpoTemporales,
 	} = useSplideControls(splideRefExpoTemporales);
@@ -117,7 +117,7 @@ const Exposiciones = () => {
 					</div>
 					<div className="max-lg:w-full">
 						<Splide
-							onMoved={handleMoveExpoTesoros}
+							// onMoved={handleMoveExpoTesoros}
 							ref={splideRefExpoTesoros}
 							hasTrack={false}
 							options={splideOptionsCollections}
@@ -188,7 +188,7 @@ const Exposiciones = () => {
 					</div>
 					<div className="max-lg:w-full lg:order-1">
 						<Splide
-							onMoved={handleMoveParacasVientosDelSur}
+							// onMoved={handleMoveParacasVientosDelSur}
 							ref={splideRefParacasVientosDelSur}
 							hasTrack={false}
 							options={splideOptionsCollections}
@@ -236,7 +236,7 @@ const Exposiciones = () => {
 				>
 					<div className="max-lg:w-full order-2">
 						<Splide
-							onMoved={handleMoveExpoTemporales}
+							// onMoved={handleMoveExpoTemporales}
 							ref={splideRefExpoTemporales}
 							hasTrack={false}
 							options={splideOptionsCollections}

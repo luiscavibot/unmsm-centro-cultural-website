@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveExpoBuenVivir: () => void;
+	// handleMoveExpoBuenVivir: () => void;
 	splideRefExpoBuenVivir: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledExpoBuenVivir: boolean;
@@ -26,7 +26,7 @@ interface Props {
 }
 
 const BuenVivir: React.FC<Props> = ({
-	handleMoveExpoBuenVivir,
+	// handleMoveExpoBuenVivir,
 	splideRefExpoBuenVivir,
 	splideOptions,
 	isPrevDisabledExpoBuenVivir,
@@ -92,7 +92,7 @@ const BuenVivir: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveExpoBuenVivir}
+						// onMoved={handleMoveExpoBuenVivir}
 						ref={splideRefExpoBuenVivir}
 						hasTrack={false}
 						options={splideOptions}

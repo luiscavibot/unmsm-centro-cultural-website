@@ -23,7 +23,7 @@ const Colecciones = () => {
 	const {
 		handlePrev: handlePrevColArchivoJulio,
 		handleNext: handleNextColArchivoJulio,
-		handleMove: handleMoveColArchivoJulio,
+		// handleMove: handleMoveColArchivoJulio,
 		isPrevDisabled: isPrevDisabledColArchivoJulio,
 		isNextDisabled: isNextDisabledColArchivoJulio,
 	} = useSplideControls(splideRefColArchivoJulio);
@@ -31,7 +31,7 @@ const Colecciones = () => {
 	const {
 		handlePrev: handlePrevColTeofiloCastillo,
 		handleNext: handleNextColTeofiloCastillo,
-		handleMove: handleMoveColTeofiloCastillo,
+		// handleMove: handleMoveColTeofiloCastillo,
 		isPrevDisabled: isPrevDisabledColTeofiloCastillo,
 		isNextDisabled: isNextDisabledColTeofiloCastillo,
 	} = useSplideControls(splideRefColTeofiloCastillo);
@@ -39,7 +39,7 @@ const Colecciones = () => {
 	const {
 		handlePrev: handlePrevColJimenezBorja,
 		handleNext: handleNextColJimenezBorja,
-		handleMove: handleMoveColJimenezBorja,
+		// handleMove: handleMoveColJimenezBorja,
 		isPrevDisabled: isPrevDisabledColJimenezBorja,
 		isNextDisabled: isNextDisabledColJimenezBorja,
 	} = useSplideControls(splideRefColJimenezBorja);
@@ -47,7 +47,7 @@ const Colecciones = () => {
 	const {
 		handlePrev: handlePrevColExpedicionSierraCentral,
 		handleNext: handleNextColExpedicionSierraCentral,
-		handleMove: handleMoveColExpedicionSierraCentral,
+		// handleMove: handleMoveColExpedicionSierraCentral,
 		isPrevDisabled: isPrevDisabledColExpedicionSierraCentral,
 		isNextDisabled: isNextDisabledColExpedicionSierraCentral,
 	} = useSplideControls(splideRefColExpedicionSierraCentral);
@@ -67,7 +67,7 @@ const Colecciones = () => {
 				</div>
 			</div>
 			<ArchivoJulioCTello
-				handleMoveColArchivoJulio={handleMoveColArchivoJulio}
+				// handleMoveColArchivoJulio={handleMoveColArchivoJulio}
 				splideRefColArchivoJulio={splideRefColArchivoJulio}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledColArchivoJulio={isPrevDisabledColArchivoJulio}
@@ -76,7 +76,7 @@ const Colecciones = () => {
 				handleNextColArchivoJulio={handleNextColArchivoJulio}
 			/>
 			<TeofiloCastillo
-				handleMoveColTeofiloCastillo={handleMoveColTeofiloCastillo}
+				// handleMoveColTeofiloCastillo={handleMoveColTeofiloCastillo}
 				splideRefColTeofiloCastillo={splideRefColTeofiloCastillo}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledColTeofiloCastillo={
@@ -89,7 +89,7 @@ const Colecciones = () => {
 				handleNextColTeofiloCastillo={handleNextColTeofiloCastillo}
 			/>
 			<JimenezBorja
-				handleMoveColJimenezBorja={handleMoveColJimenezBorja}
+				// handleMoveColJimenezBorja={handleMoveColJimenezBorja}
 				splideRefColJimenezBorja={splideRefColJimenezBorja}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledColJimenezBorja={isPrevDisabledColJimenezBorja}
@@ -98,9 +98,9 @@ const Colecciones = () => {
 				handleNextColJimenezBorja={handleNextColJimenezBorja}
 			/>
 			<ExpedicionSierraCentral
-				handleMoveColExpedicionSierraCentral={
-					handleMoveColExpedicionSierraCentral
-				}
+				// handleMoveColExpedicionSierraCentral={
+				// 	handleMoveColExpedicionSierraCentral
+				// }
 				splideRefColExpedicionSierraCentral={
 					splideRefColExpedicionSierraCentral
 				}

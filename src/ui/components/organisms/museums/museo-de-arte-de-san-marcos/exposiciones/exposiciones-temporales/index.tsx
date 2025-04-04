@@ -14,7 +14,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveExpoTemporales: () => void;
+	// handleMoveExpoTemporales: () => void;
 	splideRefExpoTemporales: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledExpoTemporales: boolean;
@@ -24,7 +24,7 @@ interface Props {
 }
 
 const ExposicionesTemporales: React.FC<Props> = ({
-	handleMoveExpoTemporales,
+	// handleMoveExpoTemporales,
 	splideRefExpoTemporales,
 	splideOptions,
 	isPrevDisabledExpoTemporales,
@@ -37,7 +37,7 @@ const ExposicionesTemporales: React.FC<Props> = ({
 			<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveExpoTemporales}
+						// onMoved={handleMoveExpoTemporales}
 						ref={splideRefExpoTemporales}
 						hasTrack={false}
 						options={splideOptions}

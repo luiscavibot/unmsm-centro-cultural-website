@@ -15,7 +15,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveExpoUniversidad: () => void;
+	// handleMoveExpoUniversidad: () => void;
 	splideRefExpoUniversidad: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledExpoUniversidad: boolean;
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const LaUniversidad: React.FC<Props> = ({
-	handleMoveExpoUniversidad,
+	// handleMoveExpoUniversidad,
 	splideRefExpoUniversidad,
 	splideOptions,
 	isPrevDisabledExpoUniversidad,
@@ -38,7 +38,7 @@ const LaUniversidad: React.FC<Props> = ({
 			<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveExpoUniversidad}
+						// onMoved={handleMoveExpoUniversidad}
 						ref={splideRefExpoUniversidad}
 						hasTrack={false}
 						options={splideOptions}

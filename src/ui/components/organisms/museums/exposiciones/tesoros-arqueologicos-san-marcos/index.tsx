@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveExpoTesoros: () => void;
+	// handleMoveExpoTesoros: () => void;
 	splideRefExpoTesoros: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledExpoTesoros: boolean;
@@ -26,7 +26,7 @@ interface Props {
 }
 
 const TesorosArqueologicosSanMarcos: React.FC<Props> = ({
-	handleMoveExpoTesoros,
+	// handleMoveExpoTesoros,
 	splideRefExpoTesoros,
 	splideOptions,
 	isPrevDisabledExpoTesoros,
@@ -39,7 +39,7 @@ const TesorosArqueologicosSanMarcos: React.FC<Props> = ({
 			<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveExpoTesoros}
+						// onMoved={handleMoveExpoTesoros}
 						ref={splideRefExpoTesoros}
 						hasTrack={false}
 						options={splideOptions}

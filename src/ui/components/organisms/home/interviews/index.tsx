@@ -40,7 +40,7 @@ const Interviews: React.FC = () => {
 
 	const {
 		handleNext: handleNextVideosGalery,
-		handleMove: handleMoveVideosGlaery,
+		// handleMove: handleMoveVideosGlaery,
 		isNextDisabled: isNextDisabledVideosGalery,
 	} = useSplideControls(splideRefVideosGalery);
 
@@ -71,7 +71,7 @@ const Interviews: React.FC = () => {
 				</div>
 				<div className="max-lg:w-full relative" id="slider">
 					<Splide
-						onMoved={handleMoveVideosGlaery}
+						// onMoved={handleMoveVideosGlaery}
 						ref={splideRefVideosGalery}
 						hasTrack={false}
 						options={splideOptionsVideosGalery}

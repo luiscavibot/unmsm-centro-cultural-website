@@ -11,7 +11,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveGaleria: () => void;
+	// handleMoveGaleria: () => void;
 	splideRefGaleria: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledGaleria: boolean;
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const GaleriaDeImagenes: React.FC<Props> = ({
-	handleMoveGaleria,
+	// handleMoveGaleria,
 	splideRefGaleria,
 	splideOptions,
 	isPrevDisabledGaleria,
@@ -44,7 +44,7 @@ const GaleriaDeImagenes: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveGaleria}
+						// onMoved={handleMoveGaleria}
 						ref={splideRefGaleria}
 						hasTrack={false}
 						options={splideOptions}

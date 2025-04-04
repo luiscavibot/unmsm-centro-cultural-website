@@ -20,21 +20,21 @@ const Actividades = () => {
 	const {
 		handlePrev: handlePrevCiclosDeCine,
 		handleNext: handleNextCiclosDeCine,
-		handleMove: handleMoveCiclosDeCine,
+		// handleMove: handleMoveCiclosDeCine,
 		isPrevDisabled: isPrevDisabledCiclosDeCine,
 		isNextDisabled: isNextDisabledCiclosDeCine,
 	} = useSplideControls(splideRefCiclosDeCine);
 	const {
 		handlePrev: handlePrevEditatonas,
 		handleNext: handleNextEditatonas,
-		handleMove: handleMoveEditatonas,
+		// handleMove: handleMoveEditatonas,
 		isPrevDisabled: isPrevDisabledEditatonas,
 		isNextDisabled: isNextDisabledEditatonas,
 	} = useSplideControls(splideRefEditatonas);
 	const {
 		handlePrev: handlePrevConversatorios,
 		handleNext: handleNextConversatorios,
-		handleMove: handleMoveConversatorios,
+		// handleMove: handleMoveConversatorios,
 		isPrevDisabled: isPrevDisabledConversatorios,
 		isNextDisabled: isNextDisabledConversatorios,
 	} = useSplideControls(splideRefConversatorios);
@@ -42,7 +42,7 @@ const Actividades = () => {
 	return (
 		<>
 			<CiclosDeCine
-				handleMoveCiclosDeCine={handleMoveCiclosDeCine}
+				// handleMoveCiclosDeCine={handleMoveCiclosDeCine}
 				splideRefCiclosDeCine={splideRefCiclosDeCine}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledCiclosDeCine={isPrevDisabledCiclosDeCine}
@@ -51,7 +51,7 @@ const Actividades = () => {
 				handleNextCiclosDeCine={handleNextCiclosDeCine}
 			/>
 			<Editatonas
-				handleMoveEditatonas={handleMoveEditatonas}
+				// handleMoveEditatonas={handleMoveEditatonas}
 				splideRefEditatonas={splideRefEditatonas}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledEditatonas={isPrevDisabledEditatonas}
@@ -60,7 +60,7 @@ const Actividades = () => {
 				handleNextEditatonas={handleNextEditatonas}
 			/>
 			<Conversatorios
-				handleMoveConversatorios={handleMoveConversatorios}
+				// handleMoveConversatorios={handleMoveConversatorios}
 				splideRefConversatorios={splideRefConversatorios}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledConversatorios={isPrevDisabledConversatorios}

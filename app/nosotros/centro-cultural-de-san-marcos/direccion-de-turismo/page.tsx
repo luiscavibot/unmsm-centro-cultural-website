@@ -59,7 +59,7 @@ export default function DireccionDeTurismo() {
 	const {
 		handleNext: handleNextImagesGalery,
 		handlePrev: handlePrevImagesGalery,
-		handleMove: handleMoveImagesGalery,
+		// handleMove: handleMoveImagesGalery,
 		isNextDisabled: isNextDisabledImagesGalery,
 		isPrevDisabled: isPrevDisabledImagesGalery,
 	} = useSplideControls(splideRefImagesGalery);
@@ -122,7 +122,7 @@ export default function DireccionDeTurismo() {
 								</div>
 								<div className="relative">
 									<Splide
-										onMoved={handleMoveImagesGalery}
+										// onMoved={handleMoveImagesGalery}
 										ref={splideRefImagesGalery}
 										hasTrack={false}
 										options={splideOptionsImagesGalery}

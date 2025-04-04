@@ -15,7 +15,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveElencoDeMarinera: () => void;
+	// handleMoveElencoDeMarinera: () => void;
 	splideRefElencoDeMarinera: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoDeMarinera: boolean;
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const ElencoDeMarinera: React.FC<Props> = ({
-	handleMoveElencoDeMarinera,
+	// handleMoveElencoDeMarinera,
 	splideRefElencoDeMarinera,
 	splideOptions,
 	isPrevDisabledElencoDeMarinera,
@@ -64,7 +64,7 @@ const ElencoDeMarinera: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveElencoDeMarinera}
+						// onMoved={handleMoveElencoDeMarinera}
 						ref={splideRefElencoDeMarinera}
 						hasTrack={false}
 						options={splideOptions}

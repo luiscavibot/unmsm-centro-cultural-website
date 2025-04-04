@@ -11,7 +11,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveColArchivoJulio: () => void;
+	// handleMoveColArchivoJulio: () => void;
 	splideRefColArchivoJulio: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledColArchivoJulio: boolean;
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const ArchivoJulioCTello: React.FC<Props> = ({
-	handleMoveColArchivoJulio,
+	// handleMoveColArchivoJulio,
 	splideRefColArchivoJulio,
 	splideOptions,
 	isPrevDisabledColArchivoJulio,
@@ -71,7 +71,7 @@ const ArchivoJulioCTello: React.FC<Props> = ({
 				<div className="max-lg:w-full">
 					<Splide
 						className="splide-museo"
-						onMoved={handleMoveColArchivoJulio}
+						// onMoved={handleMoveColArchivoJulio}
 						ref={splideRefColArchivoJulio}
 						hasTrack={false}
 						options={splideOptions}

@@ -15,7 +15,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveElencoTaller: () => void;
+	// handleMoveElencoTaller: () => void;
 	splideRefElencoTaller: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoTaller: boolean;
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const ElencoTaller: React.FC<Props> = ({
-	handleMoveElencoTaller,
+	// handleMoveElencoTaller,
 	splideRefElencoTaller,
 	splideOptions,
 	isPrevDisabledElencoTaller,
@@ -38,7 +38,7 @@ const ElencoTaller: React.FC<Props> = ({
 			<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveElencoTaller}
+						// onMoved={handleMoveElencoTaller}
 						ref={splideRefElencoTaller}
 						hasTrack={false}
 						options={splideOptions}

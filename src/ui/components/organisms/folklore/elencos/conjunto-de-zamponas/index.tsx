@@ -11,7 +11,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveConjuntoDeZamponas: () => void;
+	// handleMoveConjuntoDeZamponas: () => void;
 	splideRefConjuntoDeZamponas: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledConjuntoDeZamponas: boolean;
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const ConjuntoDeZamponas: React.FC<Props> = ({
-	handleMoveConjuntoDeZamponas,
+	// handleMoveConjuntoDeZamponas,
 	splideRefConjuntoDeZamponas,
 	splideOptions,
 	isPrevDisabledConjuntoDeZamponas,
@@ -58,7 +58,7 @@ const ConjuntoDeZamponas: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveConjuntoDeZamponas}
+						// onMoved={handleMoveConjuntoDeZamponas}
 						ref={splideRefConjuntoDeZamponas}
 						hasTrack={false}
 						options={splideOptions}

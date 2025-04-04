@@ -58,7 +58,7 @@ export default function ArteModernoYContemporaneo() {
 	const {
 		handlePrev,
 		handleNext,
-		handleMove,
+		// handleMove,
 		isPrevDisabled,
 		isNextDisabled,
 	} = useSplideControls(splideRef);
@@ -148,7 +148,7 @@ export default function ArteModernoYContemporaneo() {
 						</h2>
 						<div className="max-lg:w-full relative">
 							<Splide
-								onMoved={handleMove}
+								// onMoved={handleMove}
 								ref={splideRef}
 								hasTrack={false}
 								options={splideOptions}

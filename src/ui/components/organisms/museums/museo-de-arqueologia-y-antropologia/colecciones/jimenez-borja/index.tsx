@@ -11,7 +11,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveColJimenezBorja: () => void;
+	// handleMoveColJimenezBorja: () => void;
 	splideRefColJimenezBorja: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledColJimenezBorja: boolean;
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const JimenezBorja: React.FC<Props> = ({
-	handleMoveColJimenezBorja,
+	// handleMoveColJimenezBorja,
 	splideRefColJimenezBorja,
 	splideOptions,
 	isPrevDisabledColJimenezBorja,
@@ -68,7 +68,7 @@ const JimenezBorja: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveColJimenezBorja}
+						// onMoved={handleMoveColJimenezBorja}
 						ref={splideRefColJimenezBorja}
 						hasTrack={false}
 						options={splideOptions}

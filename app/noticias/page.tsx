@@ -64,7 +64,7 @@ export default function CulturalAgendaPage() {
 	const {
 		handlePrev,
 		handleNext,
-		handleMove,
+		// handleMove,
 		isPrevDisabled,
 		isNextDisabled,
 	} = useSplideControls(splideRef);
@@ -86,7 +86,7 @@ export default function CulturalAgendaPage() {
 							</div>
 							<div className="max-md:hidden relative">
 								<Splide
-									onMoved={handleMove}
+									// onMoved={handleMove}
 									ref={splideRef}
 									hasTrack={false}
 									options={splideOptions}

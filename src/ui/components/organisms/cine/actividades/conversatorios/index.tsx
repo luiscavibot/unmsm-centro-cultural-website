@@ -15,7 +15,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveConversatorios: () => void;
+	// handleMoveConversatorios: () => void;
 	splideRefConversatorios: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledConversatorios: boolean;
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const Conversatorios: React.FC<Props> = ({
-	handleMoveConversatorios,
+	// handleMoveConversatorios,
 	splideRefConversatorios,
 	splideOptions,
 	isPrevDisabledConversatorios,
@@ -60,7 +60,7 @@ const Conversatorios: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveConversatorios}
+						// onMoved={handleMoveConversatorios}
 						ref={splideRefConversatorios}
 						hasTrack={false}
 						options={splideOptions}

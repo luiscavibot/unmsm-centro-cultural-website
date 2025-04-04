@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveSalaMarioVargasLlosa: () => void;
+	// handleMoveSalaMarioVargasLlosa: () => void;
 	splideRefSalaMarioVargasLlosa: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledSalaMarioVargasLlosa: boolean;
@@ -26,7 +26,7 @@ interface Props {
 }
 
 const ExpoSalaMarioVargasLLosa: React.FC<Props> = ({
-	handleMoveSalaMarioVargasLlosa,
+	// handleMoveSalaMarioVargasLlosa,
 	splideRefSalaMarioVargasLlosa,
 	splideOptions,
 	isPrevDisabledSalaMarioVargasLlosa,
@@ -89,7 +89,7 @@ const ExpoSalaMarioVargasLLosa: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveSalaMarioVargasLlosa}
+						// onMoved={handleMoveSalaMarioVargasLlosa}
 						ref={splideRefSalaMarioVargasLlosa}
 						hasTrack={false}
 						options={splideOptions}

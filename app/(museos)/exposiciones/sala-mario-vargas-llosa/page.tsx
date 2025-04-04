@@ -67,14 +67,14 @@ export default function SalaMarioVargasLlosa() {
 	const {
 		handlePrev: handlePrevPiezas,
 		handleNext: handleNextPiezas,
-		handleMove: handleMovePiezas,
+		// handleMove: handleMovePiezas,
 		isPrevDisabled: isPrevDisabledPiezas,
 		isNextDisabled: isNextDisabledPiezas,
 	} = useSplideControls(splidePiezasRef);
 	const {
 		handlePrev: handlePrevGaleria,
 		handleNext: handleNextGaleria,
-		handleMove: handleMoveGaleria,
+		// handleMove: handleMoveGaleria,
 		isPrevDisabled: isPrevDisabledGaleria,
 		isNextDisabled: isNextDisabledGaleria,
 	} = useSplideControls(splideGaleriaRef);
@@ -146,7 +146,7 @@ export default function SalaMarioVargasLlosa() {
 							</h2>
 							<div className="relative">
 								<Splide
-									onMoved={handleMovePiezas}
+									// onMoved={handleMovePiezas}
 									ref={splidePiezasRef}
 									hasTrack={false}
 									options={splidePiezasOptions}
@@ -193,7 +193,7 @@ export default function SalaMarioVargasLlosa() {
 							</h2>
 							<div className="max-lg:w-full relative">
 								<Splide
-									onMoved={handleMoveGaleria}
+									// onMoved={handleMoveGaleria}
 									ref={splideGaleriaRef}
 									hasTrack={false}
 									options={splideGaleriaOptions}

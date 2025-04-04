@@ -11,7 +11,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveColExpedicionSierraCentral: () => void;
+	// handleMoveColExpedicionSierraCentral: () => void;
 	splideRefColExpedicionSierraCentral: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledColExpedicionSierraCentral: boolean;
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const ExpedicionSierraCentral: React.FC<Props> = ({
-	handleMoveColExpedicionSierraCentral,
+	// handleMoveColExpedicionSierraCentral,
 	splideRefColExpedicionSierraCentral,
 	splideOptions,
 	isPrevDisabledColExpedicionSierraCentral,
@@ -34,7 +34,7 @@ const ExpedicionSierraCentral: React.FC<Props> = ({
 			<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveColExpedicionSierraCentral}
+						// onMoved={handleMoveColExpedicionSierraCentral}
 						ref={splideRefColExpedicionSierraCentral}
 						hasTrack={false}
 						options={splideOptions}

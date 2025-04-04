@@ -15,7 +15,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveElencoCaporales: () => void;
+	// handleMoveElencoCaporales: () => void;
 	splideRefElencoCaporales: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoCaporales: boolean;
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const ElencoCaporales: React.FC<Props> = ({
-	handleMoveElencoCaporales,
+	// handleMoveElencoCaporales,
 	splideRefElencoCaporales,
 	splideOptions,
 	isPrevDisabledElencoCaporales,
@@ -38,7 +38,7 @@ const ElencoCaporales: React.FC<Props> = ({
 			<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveElencoCaporales}
+						// onMoved={handleMoveElencoCaporales}
 						ref={splideRefElencoCaporales}
 						hasTrack={false}
 						options={splideOptions}

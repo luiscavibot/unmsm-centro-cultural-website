@@ -24,35 +24,35 @@ const Exposiciones = () => {
 	const {
 		handlePrev: handlePrevExpoArte,
 		handleNext: handleNextExpoArte,
-		handleMove: handleMoveExpoArte,
+		// handleMove: handleMoveExpoArte,
 		isPrevDisabled: isPrevDisabledExpoArte,
 		isNextDisabled: isNextDisabledExpoArte,
 	} = useSplideControls(splideRefExpoArte);
 	const {
 		handlePrev: handlePrevExpoUniversidad,
 		handleNext: handleNextExpoUniversidad,
-		handleMove: handleMoveExpoUniversidad,
+		// handleMove: handleMoveExpoUniversidad,
 		isPrevDisabled: isPrevDisabledExpoUniversidad,
 		isNextDisabled: isNextDisabledExpoUniversidad,
 	} = useSplideControls(splideRefExpoUniversidad);
 	const {
 		handlePrev: handlePrevExpoBuenVivir,
 		handleNext: handleNextExpoBuenVivir,
-		handleMove: handleMoveExpoBuenVivir,
+		// handleMove: handleMoveExpoBuenVivir,
 		isPrevDisabled: isPrevDisabledExpoBuenVivir,
 		isNextDisabled: isNextDisabledExpoBuenVivir,
 	} = useSplideControls(splideRefExpoBuenVivir);
 	const {
 		handlePrev: handlePrevExpoTesoros,
 		handleNext: handleNextExpoTesoros,
-		handleMove: handleMoveExpoTesoros,
+		// handleMove: handleMoveExpoTesoros,
 		isPrevDisabled: isPrevDisabledExpoTesoros,
 		isNextDisabled: isNextDisabledExpoTesoros,
 	} = useSplideControls(splideRefExpoTesoros);
 	const {
 		handlePrev: handlePrevSalaMarioVargasLlosa,
 		handleNext: handleNextSalaMarioVargasLlosa,
-		handleMove: handleMoveSalaMarioVargasLlosa,
+		// handleMove: handleMoveSalaMarioVargasLlosa,
 		isPrevDisabled: isPrevDisabledSalaMarioVargasLlosa,
 		isNextDisabled: isNextDisabledSalaMarioVargasLlosa,
 	} = useSplideControls(splideRefSalaMarioVargasLlosa);
@@ -71,7 +71,7 @@ const Exposiciones = () => {
 				</div>
 			</div>
 			<ArteModerno
-				handleMoveExpoArte={handleMoveExpoArte}
+				// handleMoveExpoArte={handleMoveExpoArte}
 				splideRefExpoArte={splideRefExpoArte}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledExpoArte={isPrevDisabledExpoArte}
@@ -80,7 +80,7 @@ const Exposiciones = () => {
 				handleNextExpoArte={handleNextExpoArte}
 			/>
 			<LaUniversidad
-				handleMoveExpoUniversidad={handleMoveExpoUniversidad}
+				// handleMoveExpoUniversidad={handleMoveExpoUniversidad}
 				splideRefExpoUniversidad={splideRefExpoUniversidad}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledExpoUniversidad={isPrevDisabledExpoUniversidad}
@@ -89,7 +89,7 @@ const Exposiciones = () => {
 				handleNextExpoUniversidad={handleNextExpoUniversidad}
 			/>
 			<BuenVivir
-				handleMoveExpoBuenVivir={handleMoveExpoBuenVivir}
+				// handleMoveExpoBuenVivir={handleMoveExpoBuenVivir}
 				splideRefExpoBuenVivir={splideRefExpoBuenVivir}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledExpoBuenVivir={isPrevDisabledExpoBuenVivir}
@@ -98,7 +98,7 @@ const Exposiciones = () => {
 				handleNextExpoBuenVivir={handleNextExpoBuenVivir}
 			/>
 			<TesorosArqueologicosSanMarcos
-				handleMoveExpoTesoros={handleMoveExpoTesoros}
+				// handleMoveExpoTesoros={handleMoveExpoTesoros}
 				splideRefExpoTesoros={splideRefExpoTesoros}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledExpoTesoros={isPrevDisabledExpoTesoros}
@@ -107,7 +107,7 @@ const Exposiciones = () => {
 				handleNextExpoTesoros={handleNextExpoTesoros}
 			/>
 			<ExpoSalaMarioVargasLLosa
-				handleMoveSalaMarioVargasLlosa={handleMoveSalaMarioVargasLlosa}
+				// handleMoveSalaMarioVargasLlosa={handleMoveSalaMarioVargasLlosa}
 				splideRefSalaMarioVargasLlosa={splideRefSalaMarioVargasLlosa}
 				splideOptions={splideOptionsCollections}
 				isPrevDisabledSalaMarioVargasLlosa={

@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveElencoMayor: () => void;
+	// handleMoveElencoMayor: () => void;
 	splideRefElencoMayor: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoMayor: boolean;
@@ -22,7 +22,7 @@ interface Props {
 }
 
 const ElencoMayor: React.FC<Props> = ({
-	handleMoveElencoMayor,
+	// handleMoveElencoMayor,
 	splideRefElencoMayor,
 	splideOptions,
 	isPrevDisabledElencoMayor,
@@ -56,7 +56,7 @@ const ElencoMayor: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveElencoMayor}
+						// onMoved={handleMoveElencoMayor}
 						ref={splideRefElencoMayor}
 						hasTrack={false}
 						options={splideOptions}

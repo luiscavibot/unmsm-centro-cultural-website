@@ -15,7 +15,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveElencoJuvenil: () => void;
+	// handleMoveElencoJuvenil: () => void;
 	splideRefElencoJuvenil: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoJuvenil: boolean;
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const ElencoJuvenil: React.FC<Props> = ({
-	handleMoveElencoJuvenil,
+	// handleMoveElencoJuvenil,
 	splideRefElencoJuvenil,
 	splideOptions,
 	isPrevDisabledElencoJuvenil,
@@ -39,7 +39,7 @@ const ElencoJuvenil: React.FC<Props> = ({
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-start justify-between gap-x-8 relative">
 				<div className="max-lg:w-full order-2">
 					<Splide
-						onMoved={handleMoveElencoJuvenil}
+						// onMoved={handleMoveElencoJuvenil}
 						ref={splideRefElencoJuvenil}
 						hasTrack={false}
 						options={splideOptions}

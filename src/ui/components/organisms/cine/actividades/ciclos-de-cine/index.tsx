@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveCiclosDeCine: () => void;
+	// handleMoveCiclosDeCine: () => void;
 	splideRefCiclosDeCine: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledCiclosDeCine: boolean;
@@ -22,7 +22,7 @@ interface Props {
 }
 
 const CiclosDeCine: React.FC<Props> = ({
-	handleMoveCiclosDeCine,
+	// handleMoveCiclosDeCine,
 	splideRefCiclosDeCine,
 	splideOptions,
 	isPrevDisabledCiclosDeCine,
@@ -55,7 +55,7 @@ const CiclosDeCine: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveCiclosDeCine}
+						// onMoved={handleMoveCiclosDeCine}
 						ref={splideRefCiclosDeCine}
 						hasTrack={false}
 						options={splideOptions}

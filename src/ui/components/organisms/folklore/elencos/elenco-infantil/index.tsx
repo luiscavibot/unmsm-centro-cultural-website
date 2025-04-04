@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 }
 
 interface Props {
-	handleMoveElencoInfantil: () => void;
+	// handleMoveElencoInfantil: () => void;
 	splideRefElencoInfantil: React.RefObject<ExtendedSplideType>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoInfantil: boolean;
@@ -22,7 +22,7 @@ interface Props {
 }
 
 const ElencoInfantil: React.FC<Props> = ({
-	handleMoveElencoInfantil,
+	// handleMoveElencoInfantil,
 	splideRefElencoInfantil,
 	splideOptions,
 	isPrevDisabledElencoInfantil,
@@ -66,7 +66,7 @@ const ElencoInfantil: React.FC<Props> = ({
 				</div>
 				<div className="max-lg:w-full">
 					<Splide
-						onMoved={handleMoveElencoInfantil}
+						// onMoved={handleMoveElencoInfantil}
 						ref={splideRefElencoInfantil}
 						hasTrack={false}
 						options={splideOptions}

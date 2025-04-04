@@ -27,28 +27,28 @@ const Colecciones = () => {
 	const {
 		handlePrev: handlePrevColRetratos,
 		handleNext: handleNextColRetratos,
-		handleMove: handleMoveColRetratos,
+		// handleMove: handleMoveColRetratos,
 		isPrevDisabled: isPrevDisabledColRetratos,
 		isNextDisabled: isNextDisabledColRetratos,
 	} = useSplideControls(splideRefColRetratos);
 	const {
 		handlePrev: handlePrevColArtePopular,
 		handleNext: handleNextColArtePopular,
-		handleMove: handleMoveColArtePopular,
+		// handleMove: handleMoveColArtePopular,
 		isPrevDisabled: isPrevDisabledColArtePopular,
 		isNextDisabled: isNextDisabledColArtePopular,
 	} = useSplideControls(splideRefColArtePopular);
 	const {
 		handlePrev: handlePrevColArteModerno,
 		handleNext: handleNextColArteModerno,
-		handleMove: handleMoveColArteModerno,
+		// handleMove: handleMoveColArteModerno,
 		isPrevDisabled: isPrevDisabledColArteModerno,
 		isNextDisabled: isNextDisabledColArteModerno,
 	} = useSplideControls(splideRefColArteModerno);
 	const {
 		handlePrev: handlePrevColArchivo,
 		handleNext: handleNextColArchivo,
-		handleMove: handleMoveColArchivo,
+		// handleMove: handleMoveColArchivo,
 		isPrevDisabled: isPrevDisabledColArchivo,
 		isNextDisabled: isNextDisabledColArchivo,
 	} = useSplideControls(splideRefColArchivo);
@@ -99,7 +99,7 @@ const Colecciones = () => {
 					<div className="max-lg:w-full">
 						<Splide
 							className="splide-museo"
-							onMoved={handleMoveColRetratos}
+							// onMoved={handleMoveColRetratos}
 							ref={splideRefColRetratos}
 							hasTrack={false}
 							options={splideOptionsCollections}
@@ -144,7 +144,7 @@ const Colecciones = () => {
 				<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 					<div className="max-lg:w-full">
 						<Splide
-							onMoved={handleMoveColArtePopular}
+							// onMoved={handleMoveColArtePopular}
 							ref={splideRefColArtePopular}
 							hasTrack={false}
 							options={splideOptionsCollections}
@@ -254,7 +254,7 @@ const Colecciones = () => {
 					</div>
 					<div className="max-lg:w-full">
 						<Splide
-							onMoved={handleMoveColArteModerno}
+							// onMoved={handleMoveColArteModerno}
 							ref={splideRefColArteModerno}
 							hasTrack={false}
 							options={splideOptionsCollections}
@@ -303,7 +303,7 @@ const Colecciones = () => {
 				<div className="container flex flex-col-reverse lg:flex-col gap-y-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] items-start justify-between gap-x-8 relative">
 					<div className="max-lg:w-full">
 						<Splide
-							onMoved={handleMoveColArchivo}
+							// onMoved={handleMoveColArchivo}
 							ref={splideRefColArchivo}
 							hasTrack={false}
 							options={splideOptionsCollections}
