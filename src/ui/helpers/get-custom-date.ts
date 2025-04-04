@@ -1,10 +1,7 @@
-// TODO: para remover porq ya hay un getCustomDates en helpers que no usa hooks
-
 import {
 	DateRange,
 	ExactDate,
 } from '@/interfaces/services/agenda-cultural.interface';
-import { useMemo } from 'react';
 import { parseISO, format, compareAsc } from 'date-fns';
 import { es } from 'date-fns/locale';
 
@@ -15,11 +12,10 @@ interface SingleDate {
 // interface FormattedDate extends SingleDate {}
 type FormattedDate = SingleDate;
 
-export const useCustomDates = (
+export const getCustomDates = (
 	exact_dates: ExactDate[] | null,
 	date_ranges: DateRange[] | null
 ) => {
-	const { daysSummary, singleDate, allDatesFormatted } = useMemo(() => {
 		const allDates: ExactDate[] = [];
 
 		if (exact_dates) {
@@ -128,9 +124,6 @@ export const useCustomDates = (
 			}
 			return { day: formattedDay, time: timeStr };
 		});
-
-		return { daysSummary, singleDate, allDatesFormatted };
-	}, [exact_dates, date_ranges]);
 
 	return { daysSummary, singleDate, allDatesFormatted };
 };
