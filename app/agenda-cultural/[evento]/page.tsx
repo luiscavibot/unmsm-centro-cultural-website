@@ -93,26 +93,32 @@ export default function Page() {
 									{daysSummary || singleDate?.day}
 								</time>
 							</div>
-							{singleDate?.time && (
-								<div className="min-w-[155px]">
-									<div className="flex gap-1 items-center">
-										<ClockIcon
-											className="shrink-0"
-											ariaLabel="Hora"
-											color="dark"
-										/>
-										<span className="leading-[24px] font-bold">
-											Horario
-										</span>
-									</div>
+							
+							<div className="min-w-[155px]">
+								<div className="flex gap-1 items-center">
+									<ClockIcon
+										className="shrink-0"
+										ariaLabel="Hora"
+										color="dark"
+									/>
+									<span className="leading-[24px] font-bold">
+										Horario
+									</span>
+								</div>
+								{singleDate?.time ? (
 									<time
 										className="block pl-5 font-medium leading-[21px] text-sm"
 										dateTime={singleDate?.time}
 									>
 										{singleDate?.time}
 									</time>
-								</div>
-							)}
+								)
+								:
+								(
+									<div className="ml-5 h-[1px] relative top-2 w-10 border-b-[1px]"></div>
+								)
+							}
+							</div>
 							<div className="min-w-[208px]">
 								<div className="flex gap-1 items-center">
 									<OutlinePlaceIcon
