@@ -10,7 +10,8 @@ interface SingleDate {
 	day: string;
 	time: string;
 }
-interface FormattedDate extends SingleDate {}
+// interface FormattedDate extends SingleDate {}
+type FormattedDate = SingleDate;
 
 export const useCustomDates = (
 	exact_dates: ExactDate[] | null,

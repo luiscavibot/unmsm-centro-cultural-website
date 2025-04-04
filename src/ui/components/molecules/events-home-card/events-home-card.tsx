@@ -2,15 +2,15 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import useResponsivePercentage from '@/ui/hooks/useResponsivePercentage';
 import DateRangeIcon from '@/ui/components/atoms/icons/date-range-icon';
 import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
 import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
-import { AngendaCultural } from '@/interfaces/services/agenda-cultural.interface';
+import { AgendaCultural } from '@/interfaces/services/agenda-cultural.interface';
 import { useCustomDates } from '@/ui/hooks/use-custom-date';
 
-const EventsHomeCard: FC<AngendaCultural> = ({
+const EventsHomeCard: FC<AgendaCultural> = ({
 	slug,
 	image,
 	title,
@@ -21,11 +21,13 @@ const EventsHomeCard: FC<AngendaCultural> = ({
 }) => {
 	const { wrapperRef, containerRef, percentage, isLargeScreen } =
 		useResponsivePercentage();
-	const { daysSummary, singleDate, allDatesFormatted } = useCustomDates(
+	// const { daysSummary, singleDate, allDatesFormatted } = useCustomDates(
+	const { daysSummary, singleDate } = useCustomDates(
 		exact_dates,
 		date_ranges
 	);
-	console.log('allDatesFormatted-->', allDatesFormatted);
+	// console.log('allDatesFormatted-->', allDatesFormatted);
+	
 	return (
 		<article
 			ref={wrapperRef}
@@ -108,4 +110,4 @@ const EventsHomeCard: FC<AngendaCultural> = ({
 	);
 };
 
-export default EventsHomeCard;
+export default memo(EventsHomeCard);

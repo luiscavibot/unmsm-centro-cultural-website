@@ -1,5 +1,5 @@
 import { strapiFetch } from '@/data-source/strapi-back-instance';
-import { AngendaCulturalResponse } from '@/interfaces/services/agenda-cultural.interface';
+import { AgendaCulturalResponse } from '@/interfaces/services/agenda-cultural.interface';
 
 const RESOURCE_PATH = '/agenda-cultural-eventos';
 
@@ -13,7 +13,7 @@ export class AgendaCulturalService {
 				'populate[3]': 'date_ranges.start_date',
 			};
 
-			const data = await strapiFetch<AngendaCulturalResponse>(
+			const data = await strapiFetch<AgendaCulturalResponse>(
 				RESOURCE_PATH,
 				{ params }
 			);
@@ -26,16 +26,19 @@ export class AgendaCulturalService {
 	static async getEntryBySlug(slug: string) {
 		try {
 			const params = {
+				'filters[slug][$eq]': slug,
 				'populate[0]': 'image',
 				'populate[1]': 'exact_dates',
 				'populate[2]': 'date_ranges.final_date',
 				'populate[3]': 'date_ranges.start_date',
 			};
 
-			const data = await strapiFetch<AngendaCulturalResponse>(
-				`${RESOURCE_PATH}/?filters[slug][$eq]=${slug}`,
+			const data = await strapiFetch<AgendaCulturalResponse>(
+				RESOURCE_PATH,
 				{ params }
 			);
+			console.log('slug:', slug);
+			console.log('Datos recibidos:', data.data); // Verifica los datos recibidos
 			return data.data;
 		} catch (error) {
 			console.error('Error al obtener los datos:', error);

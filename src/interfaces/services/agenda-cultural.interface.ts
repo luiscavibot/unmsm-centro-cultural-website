@@ -1,3 +1,7 @@
+import {
+	type BlocksContent,
+} from "@strapi/blocks-react-renderer";
+
 export type DescriptionBlock = ParagraphBlock | HeadingBlock | ImageBlock;
 
 export interface BaseBlock {
@@ -82,7 +86,7 @@ export interface DateRange {
 	final_date: ExactDate | null;
 }
 
-export interface AngendaCultural {
+export interface AgendaCultural {
 	id: number;
 	documentId: string;
 	slug: string;
@@ -95,7 +99,7 @@ export interface AngendaCultural {
 	mode: string;
 	organizer: string;
 	place: string;
-	description: DescriptionBlock[];
+	description: BlocksContent;
 	summary: string;
 	image: Image;
 	exact_dates: ExactDate[] | null;
@@ -113,7 +117,7 @@ interface Meta {
 	pagination: Pagination;
 }
 
-export interface AngendaCulturalResponse {
-	data: AngendaCultural[];
+export interface AgendaCulturalResponse {
+	data: AgendaCultural[];
 	meta: Meta;
 }

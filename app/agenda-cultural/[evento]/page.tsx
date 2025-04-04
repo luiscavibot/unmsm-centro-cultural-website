@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Badge from '@/ui/components/atoms/badge';
-import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
+// import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
 import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
 import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
 import DateRangeIcon from '@/ui/components/atoms/icons/date-range-icon';
@@ -12,34 +12,54 @@ import UpcomingEventsCard from '@/ui/components/molecules/upcoming-events-card';
 import Layout from '@/ui/components/organisms/shared/layout';
 import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 import eventsDataToHome from '@/ui/mocks/events-data-to-home';
-import { useParams } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
-
-const breadcrumbItems = [
-	{
-		title: 'Inicio',
-		path: '/',
-	},
-	{
-		title: 'Agenda cultural',
-		path: '/agenda-cultural',
-	},
-	{
-		title: 'Letras breves: Canción popular costeña en el norte del Perú',
-		path: '/agenda-cultural/evento',
-	},
-];
+import { useParams } from 'next/navigation';
+import { useCustomDates } from '@/ui/hooks/use-custom-date';
+import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
 
 export default function Page() {
 	useScrollOnLoad();
-	const params = useParams();
-	const { evento } = params;
+
+	const { evento } = useParams();
+	const eventSlug = Array.isArray(evento) ? evento[0] : evento;
+
+	// Llamar a useQuery siempre, pero controlar su ejecución con `enabled`
+	const { data: eventData, isLoading, error } = useQuery({
+		queryKey: ['event', eventSlug],
+		queryFn: () => (eventSlug ? AgendaCulturalService.getEntryBySlug(eventSlug) : Promise.resolve(null)),
+		enabled: !!eventSlug, // Solo ejecuta la consulta si `eventSlug` es válido
+	});
+
+	// Llamar a useCustomDates de forma incondicional
+	const { daysSummary, singleDate } = useCustomDates(
+		eventData?.[0]?.exact_dates || [],
+		eventData?.[0]?.date_ranges || []
+	);
+
+	// Manejar los estados de carga y error después de los hooks
+	if (!evento) {
+		return <p>Error: Slug no encontrado.</p>;
+	}
+
+	if (isLoading) {
+		return <p>Loading...</p>;
+	}
+
+	if (error || !eventData || eventData.length === 0) {
+		return <p>Error loading event data or event not found.</p>;
+	}
+
+	const event = eventData[0];
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/agenda_cultural_portada_c193f92394.jpg"
-			breadcrumbItems={breadcrumbItems}
+			portadaImage={event.image.url}
+			breadcrumbItems={[
+				{ title: 'Inicio', path: '/' },
+				{ title: 'Agenda cultural', path: '/agenda-cultural' },
+				{ title: event.title, path: `/agenda-cultural/${evento}` },
+			]}
 		>
 			<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
 				<div className="container">
@@ -47,13 +67,12 @@ export default function Page() {
 						<div className="flex justify-center">
 							<Badge
 								className="max-md:mb-[18px]"
-								label="Virtual"
+								label={event.mode}
 								size="small"
 							/>
 						</div>
 						<Title className="text-center mb-10 md:mb-16">
-							Letras breves: Canción popular costeña en el norte
-							del Perú
+							{event.title}
 						</Title>
 						<div className="flex flex-col md:flex-row gap-y-6 gap-x-1 justify-center mb-14">
 							<div className="min-w-[214px]">
@@ -69,29 +88,31 @@ export default function Page() {
 								</div>
 								<time
 									className="block pl-5 font-medium leading-[21px] text-sm"
-									dateTime="2024-10-30"
+									dateTime={daysSummary || singleDate?.day}
 								>
-									30 de octubre de 2024
+									{daysSummary || singleDate?.day}
 								</time>
 							</div>
-							<div className="min-w-[155px]">
-								<div className="flex gap-1 items-center">
-									<ClockIcon
-										className="shrink-0"
-										ariaLabel="Hora"
-										color="dark"
-									/>
-									<span className="leading-[24px] font-bold">
-										Horario
-									</span>
+							{singleDate?.time && (
+								<div className="min-w-[155px]">
+									<div className="flex gap-1 items-center">
+										<ClockIcon
+											className="shrink-0"
+											ariaLabel="Hora"
+											color="dark"
+										/>
+										<span className="leading-[24px] font-bold">
+											Horario
+										</span>
+									</div>
+									<time
+										className="block pl-5 font-medium leading-[21px] text-sm"
+										dateTime={singleDate?.time}
+									>
+										{singleDate?.time}
+									</time>
 								</div>
-								<time
-									className="block pl-5 font-medium leading-[21px] text-sm"
-									dateTime="10:00:00"
-								>
-									10 a. m.
-								</time>
-							</div>
+							)}
 							<div className="min-w-[208px]">
 								<div className="flex gap-1 items-center">
 									<OutlinePlaceIcon
@@ -104,41 +125,19 @@ export default function Page() {
 									</span>
 								</div>
 								<p className="pl-5 font-medium leading-[21px] text-sm">
-									Centro Cultural de San Marcos
+									{event.place}
 								</p>
 							</div>
 						</div>
 						<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 mb-14"></div>
-						<div className="space-y-4">
-							<p>
-								La Fundación de San Marcos (FSM) en colaboración
-								del Centro Cultural de San Marcos (CCSM) y el
-								Museo de Arte de San Marcos (MASM) te invitan al
-								taller virtual «Museografía participativa:
-								Diseño desde la comunidad para la comunidad»,
-							</p>
-							<p>
-								Aprende cómo diseñar exposiciones con enfoque
-								comunitario en tres fases: conceptos claves,
-								herramientas metodológicas y aplicación
-								práctica. Todo en un espacio de aprendizaje
-								interactivo, con la participación de un
-								especialista con amplia experiencia en el
-								trabajo participativo en museos ¡No importa
-								dónde estés, la virtualidad te conecta con esta
-								experiencia única!
-							</p>
-							<p>
-								¡Inscríbete y transforma tu visión museográfica!
-							</p>
-						</div>
-						<PrimaryButton
+						<BlockRendererClient content={event.description} />
+						{/* <PrimaryButton
 							label="Registrarme"
 							theme="light"
 							type="external-link"
 							href="#"
 							className="mt-6"
-						/>
+						/> */}
 					</div>
 					<div className="mt-20 md:mt-[110px]">
 						<div className="flex justify-between items-center mb-5 md:mb-[30px]">

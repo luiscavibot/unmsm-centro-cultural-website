@@ -7,19 +7,19 @@ import type { Splide as SplideType } from '@splidejs/splide';
 import useSplideControls from '@/ui/hooks/useSplideControls';
 import EventsHomeCard from '@/ui/components/molecules/events-home-card';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
-import { AngendaCultural } from '@/interfaces/services/agenda-cultural.interface';
+import { AgendaCultural } from '@/interfaces/services/agenda-cultural.interface';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 interface Props {
-	agendaCultural: AngendaCultural[];
+	agendaCultural: AgendaCultural[];
 }
 const Events: FC<Props> = ({ agendaCultural }) => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
-		type: 'loop',
+		// type: 'loop',
 		width: '100%',
 		perPage: 1,
 		arrows: false,
@@ -27,15 +27,15 @@ const Events: FC<Props> = ({ agendaCultural }) => {
 		gap: '0px',
 		perMove: 1,
 		interval: 3000,
-		autoplay: true,
+		// autoplay: true,
 		pauseOnHover: true,
-		loop: true,
+		// loop: true,
 	};
 
 	const {
 		handlePrev,
 		handleNext,
-		handleMove,
+		// handleMove,
 		isPrevDisabled,
 		isNextDisabled,
 	} = useSplideControls(splideRef);
@@ -44,7 +44,7 @@ const Events: FC<Props> = ({ agendaCultural }) => {
 		<section id="eventos" className="scroll-mt-28 relative">
 			<h2 className="hidden sr-only">Eventos</h2>
 			<Splide
-				onMoved={handleMove}
+				// onMoved={handleMove}
 				ref={splideRef}
 				hasTrack={false}
 				options={splideOptions}

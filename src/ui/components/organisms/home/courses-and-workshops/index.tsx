@@ -17,7 +17,7 @@ const CoursesAndWorkshops = () => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
-		type: 'loop',
+		// type: 'loop',
 		width: '100%',
 		perPage: 1,
 		arrows: false,
@@ -25,15 +25,15 @@ const CoursesAndWorkshops = () => {
 		gap: '0px',
 		perMove: 1,
 		interval: 3000,
-		autoplay: true,
+		// autoplay: true,
 		pauseOnHover: true,
-		loop: true,
+		// loop: true,
 	};
 
 	const {
 		handlePrev,
 		handleNext,
-		handleMove,
+		// handleMove,
 		isPrevDisabled,
 		isNextDisabled,
 	} = useSplideControls(splideRef);
@@ -42,7 +42,7 @@ const CoursesAndWorkshops = () => {
 		<section id="cursos-y-talleres" className="scroll-mt-28 relative">
 			<h2 className="hidden sr-only">Cursos y Talleres</h2>
 			<Splide
-				onMoved={handleMove}
+				// onMoved={handleMove}
 				ref={splideRef}
 				hasTrack={false}
 				options={splideOptions}

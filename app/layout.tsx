@@ -3,6 +3,7 @@ import { El_Messiri, Montserrat } from 'next/font/google';
 import './globals.css';
 import Header from '@/ui/components/organisms/shared/header';
 import Footer from '@/ui/components/organisms/shared/footer';
+import QueryProvider from './QueryProvider';
 
 const elMessiri = El_Messiri({
 	subsets: ['latin'],
@@ -31,16 +32,15 @@ export default function RootLayout({
 			<body
 				className={`${elMessiri.variable} ${montserrat.variable} antialiased`}
 			>
-				<div className="flex flex-col min-h-screen">
-				{/* <div className=""> */}
-					<Header />
-					{/* TODO: ACTUALIZAR INDEXACIÓN*/}
-					<meta name="robots" content="noindex, nofollow" />
-					<main className="flex-grow">
-						{children}
-					</main>
-					<Footer />
-				</div>
+				<QueryProvider>
+					<div className="flex flex-col min-h-screen">
+						<Header />
+						{/* TODO: ACTUALIZAR INDEXACIÓN */}
+						<meta name="robots" content="noindex, nofollow" />
+						<main className="flex-grow">{children}</main>
+						<Footer />
+					</div>
+				</QueryProvider>
 			</body>
 		</html>
 	);

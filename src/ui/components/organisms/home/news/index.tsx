@@ -20,7 +20,7 @@ const News = () => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
-		type: 'loop',
+		// type: 'loop',
 		width: '100%',
 		fixedWidth: '620px',
 		arrows: false,
@@ -34,15 +34,15 @@ const News = () => {
 			},
 		},
 		interval: 3000,
-		autoplay: true,
+		// autoplay: true,
 		pauseOnHover: true,
-		loop: true,
+		// loop: true,
 	};
 
 	const {
 		handlePrev,
 		handleNext,
-		handleMove,
+		// handleMove,
 		isPrevDisabled,
 		isNextDisabled,
 	} = useSplideControls(splideRef);
@@ -71,7 +71,7 @@ const News = () => {
 				</div>
 				<div className="max-lg:w-full" id="slider">
 					<Splide
-						onMoved={handleMove}
+						// onMoved={handleMove}
 						ref={splideRef}
 						hasTrack={false}
 						options={splideOptions}
