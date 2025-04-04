@@ -54,7 +54,7 @@ export default function Page() {
 
 	return (
 		<Layout
-			portadaImage={event.image.url}
+			// portadaImage={event.image.url}
 			breadcrumbItems={[
 				{ title: 'Inicio', path: '/' },
 				{ title: 'Agenda cultural', path: '/agenda-cultural' },

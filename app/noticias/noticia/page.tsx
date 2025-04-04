@@ -29,7 +29,7 @@ export default function Noticia() {
 	useScrollOnLoad();
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/noticias_banner_91753aa53c.jpg"
+			// portadaImage="https://ccsm.unmsm.edu.pe/ccsm/noticias_banner_91753aa53c.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<div className="px-4 lg:px-[104px] bg-white pb-[104px]">

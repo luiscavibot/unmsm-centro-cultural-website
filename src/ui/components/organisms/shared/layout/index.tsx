@@ -10,7 +10,7 @@ interface BreadcrumbItem {
 interface LayoutProps {
 	children: React.ReactNode;
 	breadcrumbItems: BreadcrumbItem[];
-	portadaImage: string;
+	portadaImage?: string;
 	theme?: 'dark' | 'light';
 }
 
@@ -31,17 +31,20 @@ const Layout = ({
 				id="imagen"
 				className="fixed top-[--total-header-height] left-0 w-full h-[--portada-space-height-md] md:h-[--portada-image-height] -z-50"
 			>
-				<Image
-					src={portadaImage}
-					alt="background"
-					fill
-					className="object-cover object-top"
-					quality={100}
-				/>
+				{
+					portadaImage &&
+					<Image
+						src={portadaImage}
+						alt="background"
+						fill
+						className="object-cover object-top"
+						quality={100}
+					/>
+				}
 			</div>
 			<div
 				id="contenido"
-				className="pt-[--portada-space-height-md] md:pt-[--padding-top-to-portada-image]"
+				className={`${portadaImage && 'pt-[--portada-space-height-md] md:pt-[--padding-top-to-portada-image]'}`}
 			>
 				<div
 					className={
