@@ -20,7 +20,7 @@ export default function BlockRendererClient({
 				console.log(image);
 				return (
 					<Image
-						className="mb-6 w-full max-w-full"
+						className="mt-10 mb-10 w-full max-w-full"
 						src={image.url}
 						width={image.width}
 						height={image.height}
