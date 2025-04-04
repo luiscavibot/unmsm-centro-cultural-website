@@ -3,7 +3,7 @@ import { El_Messiri, Montserrat } from 'next/font/google';
 import './globals.css';
 import Header from '@/ui/components/organisms/shared/header';
 import Footer from '@/ui/components/organisms/shared/footer';
-import QueryProvider from './QueryProvider';
+import QueryProvider from './query-provider';
 
 const elMessiri = El_Messiri({
 	subsets: ['latin'],

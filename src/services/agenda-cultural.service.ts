@@ -37,8 +37,6 @@ export class AgendaCulturalService {
 				RESOURCE_PATH,
 				{ params }
 			);
-			console.log('slug:', slug);
-			console.log('Datos recibidos:', data.data); // Verifica los datos recibidos
 			return data.data;
 		} catch (error) {
 			console.error('Error al obtener los datos:', error);

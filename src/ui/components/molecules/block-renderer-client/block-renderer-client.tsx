@@ -17,7 +17,7 @@ export default function BlockRendererClient({
 			content={content}
 			blocks={{
 				image: ({ image }) => {
-				console.log(image);
+				// console.log(image);
 				return (
 					<Image
 						className="mt-10 mb-10 w-full max-w-full"

@@ -8,7 +8,8 @@ import DateRangeIcon from '@/ui/components/atoms/icons/date-range-icon';
 import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
 import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
 import { AgendaCultural } from '@/interfaces/services/agenda-cultural.interface';
-import { useCustomDates } from '@/ui/hooks/use-custom-date';
+// import { useCustomDates } from '@/ui/hooks/use-custom-date';
+import { getCustomDates } from '@/ui/helpers/get-custom-date';
 
 const EventsHomeCard: FC<AgendaCultural> = ({
 	slug,
@@ -21,8 +22,8 @@ const EventsHomeCard: FC<AgendaCultural> = ({
 }) => {
 	const { wrapperRef, containerRef, percentage, isLargeScreen } =
 		useResponsivePercentage();
-	// const { daysSummary, singleDate, allDatesFormatted } = useCustomDates(
-	const { daysSummary, singleDate } = useCustomDates(
+	// const { daysSummary, singleDate, allDatesFormatted } = getCustomDates(
+	const { daysSummary, singleDate } = getCustomDates(
 		exact_dates,
 		date_ranges
 	);

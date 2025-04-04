@@ -364,10 +364,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/query-devtools/-/query-devtools-5.71.5.tgz#65ba36c1589a88707a4985b8b0e7742171ba72e3"
   integrity sha512-Fq1JeAp+I52Md/KnyeFxzG7G0RpdHgeOfDNhSPkZQs/JqqXuAfpUf+wFHDz+vP0GZbSnla2JmcLSQebOkIb1yA==
 
-"@tanstack/react-query-devtools@^5.71.5":
-  version "5.71.5"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.71.5.tgz#9d34b9e7e5622bc5b0aafbe9149031ef87d7977f"
-  integrity sha512-VErQ29hgwmLrZjMmHp83iv+UdeCbqAyj/JR1mZjDbf+ghyJT+Hmh8jfbh6WYzKh8Fnej7uwl3nHbCsqd3VjoWw==
+"@tanstack/react-query-devtools@^5.71.10":
+  version "5.71.10"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.71.10.tgz#517bcc88992c9f1a0c0b01621b019c7642296166"
+  integrity sha512-n0xsIzwNvkIoZCmfHww28jFmnVTVzOt5dHj/py3LNFMJHGnJq9o9ttQESzVt2Hr7as00Aqf8ElVwH6na1o6dnw==
   dependencies:
     "@tanstack/query-devtools" "5.71.5"
 
@@ -2710,6 +2710,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
