@@ -77,7 +77,7 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 										color="dark"
 									/>
 									<span className="leading-[24px] font-bold">
-										Clases
+										Duración
 									</span>
 								</div>
 								<p className="pl-5 font-medium leading-[21px] text-sm">
