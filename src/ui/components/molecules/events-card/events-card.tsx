@@ -44,7 +44,7 @@ const EventsCard: React.FC<AgendaCultural> = ({
 
 	<Link className="inline-flex group w-full" href={`agenda-cultural/${slug}`}>
 		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300 grow md:min-h-[346px]">
-			<figure className="relative w-[500px] h-full flex-shrink-0 max-md:hidden">
+			<figure className="relative w-[500px] h-full flex-shrink-0 max-xl:hidden">
 				<Image
 					src={image.url}
 					className="object-cover h-full"
