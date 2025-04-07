@@ -11,7 +11,7 @@ import React from 'react';
 import Layout from '@/ui/components/organisms/shared/layout';
 import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
 import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
-import { formatFullDate } from '@/ui/helpers/format-full-date';
+// import { formatFullDate } from '@/ui/helpers/format-full-date';
 // import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 
 export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
