@@ -14,7 +14,7 @@ interface NewsCardProps {
 
 const NewsCard: React.FC<NewsCardProps> = ({ url, fechaPublicacion, titulo, resumen, slug }) => (
 	<Link className="inline-flex group grow" href={`noticias/${slug}`}>
-		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300 grow min-h-[230px]">
+		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300 grow md:min-h-[230px]">
 			<figure className="relative w-[180px] lg:w-[260px] h-full flex-shrink-0 max-md:hidden">
 				<Image
 					src={url}
