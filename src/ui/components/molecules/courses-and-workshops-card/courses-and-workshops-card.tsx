@@ -21,7 +21,7 @@ const CoursesAndWorkshopsCard: React.FC<CoursesAndWorkshopsCardProps> = ({
 }) => (
 	<Link className="inline-flex group w-full" href={`cursos-y-talleres/${slug}`}>
 		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300 grow md:min-h-[224px]">
-			<figure className="relative w-[180px] lg:w-[260px] h-full flex-shrink-0 max-md:hidden">
+			<figure className="relative w-[180px] lg:w-[450px] h-full flex-shrink-0 max-md:hidden">
 				<Image
 					src={url}
 					className="object-cover h-full"
