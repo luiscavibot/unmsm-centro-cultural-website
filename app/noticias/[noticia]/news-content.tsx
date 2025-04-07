@@ -1,32 +1,49 @@
 'use client';
 
+import { NoticiasService } from '@/services/noticias.service';
+import { useQuery } from '@tanstack/react-query';
 import Badge from '@/ui/components/atoms/badge';
 import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
 import CalendarIcon from '@/ui/components/atoms/icons/calendar-icon';
 import Title from '@/ui/components/atoms/title';
 import RecentNewsCard from '@/ui/components/molecules/recent-news-card';
 import Layout from '@/ui/components/organisms/shared/layout';
-import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
+// import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 import newsDataToHome from '@/ui/mocks/news-data-to-home';
 import React from 'react';
+import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
+import { formatFullDate } from '@/ui/helpers/format-full-date';
 
-const breadcrumbItems = [
-	{
-		title: 'Inicio',
-		path: '/',
-	},
-	{
-		title: 'Noticias',
-		path: '/noticias',
-	},
-	{
-		title: 'Ballet de San Marcos en gira por los Andes peruanos',
-		path: '/noticias/noticia',
-	},
-];
+export default function NewsContent({ noticia }: { noticia: string }) {
+	// useScrollOnLoad();
 
-export default function Noticia() {
-	useScrollOnLoad();
+	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
+	const { data: newsData, isLoading, error } = useQuery({
+	queryKey: ['news', noticia],
+	queryFn: () => NoticiasService.getEntryBySlug(noticia),
+	});
+  
+	if (!noticia) return <p>Error: Slug no encontrado.</p>;
+	if (isLoading) return <p>Loading...</p>;
+	if (error || !newsData || newsData.length === 0) return <p>Error loading event data or event not found.</p>;
+  
+	const newsItem = newsData[0];
+
+	const breadcrumbItems = [
+		{
+			title: 'Inicio',
+			path: '/',
+		},
+		{
+			title: 'Noticias',
+			path: '/noticias',
+		},
+		{
+			title: newsItem.titulo,
+			path: `/noticias/${newsItem.slug}`,
+		},
+	];
+
 	return (
 		<Layout
 			// portadaImage="https://ccsm.unmsm.edu.pe/ccsm/noticias_banner_91753aa53c.jpg"
@@ -39,7 +56,7 @@ export default function Noticia() {
 							<Badge className="max-md:mb-[18px]" label="Ballet San Marcos" size="small" />
 						</div>
 						<Title className="text-center !mb-1">
-							Ballet de San Marcos en gira por los Andes peruanos
+							{newsItem.titulo}
 						</Title>
 						<div className="flex flex-row items-center justify-center gap-2 mb-14">
 							<CalendarIcon
@@ -48,36 +65,14 @@ export default function Noticia() {
 								color="dark"
 							/>
 							<time
-								dateTime="2024-10-30"
+								dateTime={newsItem.fechaPublicacion}
 								className="text-dark-blue-2 font-medium text-sm leading-[21px]"
 							>
-								30 de octubre de 2024
+								{formatFullDate(newsItem.fechaPublicacion)}
 							</time>
 						</div>
 						<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 mb-14"></div>
-						<div className="space-y-4">
-							<p>
-								El{' '}
-								<b className="font-bold">Ballet San Marcos</b>{' '}
-								llevará a cabo una gira en la provincia de
-								Ancash, con presentaciones en las ciudades de{' '}
-								<b className="font-bold">
-									Caraz, Yungay y Huaylas
-								</b>
-								. En esta gira, un grupo de bailarines
-								profesionales de la{' '}
-								<b className="font-bold">
-									Compañía y alumnos del Elenco de la Escuela
-								</b>{' '}
-								ofrecerá un conjunto de coreografías que
-								integran danza clásica y contemporánea. Las
-								funciones estarán dirigidas tanto a estudiantes
-								de instituciones educativas estatales de la zona
-								como al público en general, resaltando el
-								talento artístico de sus integrantes y la
-								creatividad de sus coreógrafos.
-							</p>
-						</div>
+						<BlockRendererClient content={newsItem.descripcion} />
 					</div>
 					<div className="mt-20 md:mt-[110px]">
 						<div className="flex justify-between items-center mb-5 md:mb-[30px]">
