@@ -63,12 +63,15 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 						<Title className="text-center !mb-2">
 							{courseAndWorkshop.titulo}
 						</Title>
-						<div className="flex flex-row items-center justify-center gap-2 mb-14">
-							<div className="p-4 text-green bg-light-green rounded-lg">
-								<span className="font-bold">Inicio:</span> {formatFullDate(courseAndWorkshop.fechaInicio)}
+						{
+							courseAndWorkshop.fechaInicio &&
+							<div className="flex flex-row items-center justify-center gap-2 mb-14">
+								<div className="p-4 text-green bg-light-green rounded-lg">
+									<span className="font-bold">Inicio:</span> {formatFullDate(courseAndWorkshop.fechaInicio)}
+								</div>
 							</div>
-						</div>
-						<div className="flex flex-col md:flex-row gap-y-6 gap-x-1 justify-center mb-14">
+						}
+						<div className="flex flex-col md:flex-row gap-y-6 gap-x-1 justify-center my-14">
 							<div className="min-w-[235px]">
 								<div className="flex gap-1 items-center">
 									<ClassIcon
@@ -80,9 +83,14 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 										Duración
 									</span>
 								</div>
-								<p className="pl-5 font-medium leading-[21px] text-sm">
-									{courseAndWorkshop.fechaClases}
-								</p>
+								{
+									courseAndWorkshop.fechaClases ?
+									<p className="pl-5 font-medium leading-[21px] text-sm">
+										{courseAndWorkshop.fechaClases}
+									</p>
+									:
+									<div className="ml-5 h-[1px] relative top-2 w-10 border-b-[1px]"></div>
+								}
 							</div>
 							<div className="min-w-[228px]">
 								<div className="flex gap-1 items-center">
@@ -95,9 +103,14 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 										Lugar
 									</span>
 								</div>
-								<p className="pl-5 font-medium leading-[21px] text-sm">
-									{courseAndWorkshop.lugar}
-								</p>
+								{
+									courseAndWorkshop.lugar ?
+									<p className="pl-5 font-medium leading-[21px] text-sm">
+										{courseAndWorkshop.lugar}
+									</p>
+									:
+									<div className="ml-5 h-[1px] relative top-2 w-10 border-b-[1px]"></div>
+								}
 							</div>
 							<div className="min-w-[170px]">
 								<div className="flex gap-1 items-center">
@@ -110,12 +123,17 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 										Horario
 									</span>
 								</div>
-								<time
-									className="block pl-5 font-medium leading-[21px] text-sm"
-									dateTime="10:00:00"
-								>
-									{courseAndWorkshop.horarioClases}
-								</time>
+								{
+									courseAndWorkshop.horarioClases ?
+									<div
+										className="block pl-5 font-medium leading-[21px] text-sm"
+										// dateTime="10:00:00"
+									>
+										{courseAndWorkshop.horarioClases}
+									</div>
+									:
+									<div className="ml-5 h-[1px] relative top-2 w-10 border-b-[1px]"></div>
+								}
 							</div>
 							<div className="min-w-[215px]">
 								<div className="flex gap-1 items-center">
@@ -128,12 +146,17 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 										Cierre de inscripciones
 									</span>
 								</div>
-								<time
-									className="block pl-5 font-medium leading-[21px] text-sm"
-									dateTime={courseAndWorkshop.fechaCierreInscripciones}
-								>
-									{formatFullDate(courseAndWorkshop.fechaCierreInscripciones)}
-								</time>
+								{
+									courseAndWorkshop.fechaCierreInscripciones ?
+									<time
+										className="block pl-5 font-medium leading-[21px] text-sm"
+										dateTime={courseAndWorkshop.fechaCierreInscripciones}
+									>
+										{formatFullDate(courseAndWorkshop.fechaCierreInscripciones)}
+									</time>
+									:
+									<div className="ml-5 h-[1px] relative top-2 w-10 border-b-[1px]"></div>
+								}
 							</div>
 						</div>
 						<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 mb-14"></div>

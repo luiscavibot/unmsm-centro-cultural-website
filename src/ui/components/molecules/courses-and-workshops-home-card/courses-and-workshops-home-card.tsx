@@ -11,7 +11,7 @@ interface CoursesAndWorkshopsHomeCardProps {
 	tipo: string;
 	titulo: string;
 	resumen: string | null;
-	dependencia: string;
+	dependencia: string | null;
 }
 
 const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
@@ -60,13 +60,19 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 				>
 					<div className="max-w-[459px]">
 						<header>
-							<Badge label={tipo} size="large" />
+							{
+								tipo &&
+								<Badge label={tipo} size="large" />
+							}
 							<h3 className="text-[24px] lg:text-[40px] font-bold leading-[normal] text-white">
 								{titulo}
 							</h3>
-							<p className="mt-2 text-xl font-semibold leading-[20px] text-white">
-								{dependencia}
-							</p>
+							{
+								dependencia &&
+								<p className="mt-2 text-xl font-semibold leading-[20px] text-white">
+									{dependencia}
+								</p>
+							}
 						</header>
 						{
 							resumen &&
