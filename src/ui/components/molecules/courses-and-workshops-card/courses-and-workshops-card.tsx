@@ -5,44 +5,50 @@ import Badge from '../../atoms/badge';
 interface CoursesAndWorkshopsCardProps {
 	slug: string;
 	url: string;
-	type: 'Curso' | 'Taller';
-	title: string;
-	subtitle: string;
-	description: string;
+	tipo: string;
+	titulo: string;
+	dependencia: string | null;
+	resumen: string | null;
 }
 
 const CoursesAndWorkshopsCard: React.FC<CoursesAndWorkshopsCardProps> = ({
 	slug,
 	url,
-	title,
-	type,
-	subtitle,
-	description,
+	titulo,
+	tipo,
+	dependencia,
+	resumen,
 }) => (
 	<Link className="inline-flex group" href={`cursos-y-talleres/${slug}`}>
-		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300">
+		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300 grow min-h-[224px]">
 			<figure className="relative w-[180px] lg:w-[260px] h-full flex-shrink-0 max-md:hidden">
 				<Image
 					src={url}
 					className="object-cover h-full"
-					alt={title}
+					alt={titulo}
 					fill
 				/>
 			</figure>
 			{/* <div className="bg-white p-6 w-[553px] flex-shrink-0"> */}
-			<div className="bg-white p-6 pb-10 w-auto relative">
+			<div className="bg-white p-6 pb-10 w-auto relative grow">
 				<header>
-					<Badge label={type} size="small" />
-					<h3 className="line-clamp-3 text-xl text-dark-blue font-bold leading-[24px] group-hover:text-dark-red transition-colors duration-200">
-						{title}
+					<Badge label={tipo} size="small" />
+					<h3 className="line-clamp-2 text-xl text-dark-blue font-bold leading-[24px] group-hover:text-dark-red transition-colors duration-200">
+						{titulo}
 					</h3>
 				</header>
-				<p className="line-clamp-3 text-dark-blue-2 text-sm leading-[21px] mt-2 mb-2">
-					{description}
-				</p>
-				<span className="absolute bottom-5 text-sm font-semibold leading-[14px] line-clamp-1">
-					{subtitle}
-				</span>
+				{
+					resumen &&
+					<p className="line-clamp-3 text-dark-blue-2 text-sm leading-[21px] mt-2 mb-2">
+						{resumen}
+					</p>
+				}
+				{
+					dependencia &&
+					<span className="absolute bottom-5 text-sm font-semibold leading-[14px] line-clamp-1">
+						{dependencia}
+					</span>
+				}
 			</div>
 		</article>
 	</Link>
