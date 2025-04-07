@@ -1,6 +1,7 @@
 'use client';
 
 import Badge from '@/ui/components/atoms/badge';
+import { useQuery } from '@tanstack/react-query';
 import ClassIcon from '@/ui/components/atoms/icons/class-icon';
 import CalendarIcon from '@/ui/components/atoms/icons/calendar-icon';
 import ClockIcon from '@/ui/components/atoms/icons/clock-icon';
@@ -8,25 +9,45 @@ import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
 import Title from '@/ui/components/atoms/title';
 import React from 'react';
 import Layout from '@/ui/components/organisms/shared/layout';
-import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
+import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
+import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
+import { formatFullDate } from '@/ui/helpers/format-full-date';
+// import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 
-const breadcrumbItems = [
-	{
-		title: 'Inicio',
-		path: '/',
-	},
-	{
-		title: 'Cursos y talleres',
-		path: '/cursos-y-talleres',
-	},
-	{
-		title: 'Curso',
-		path: '/cursos-y-talleres/curso-y-taller',
-	},
-];
+export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
+	// useScrollOnLoad();
 
-export default function CursoYTaller() {
-	useScrollOnLoad();
+	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
+	const { data: coursesAndWorkshopsData, isLoading, error } = useQuery({
+		queryKey: ['courseAndWorkshop', curso],
+		queryFn: () => CursosYTalleresService.getEntryBySlug(curso),
+	});
+	  
+	// const { daysSummary, singleDate } = getCustomDates(
+	// 	courseAndWorkshopData?.[0]?.exact_dates || [],
+	// 	courseAndWorkshopData?.[0]?.date_ranges || []
+	// );
+	
+	if (!curso) return <p>Error: Slug no encontrado.</p>;
+	if (isLoading) return <p>Loading...</p>;
+	if (error || !coursesAndWorkshopsData || coursesAndWorkshopsData.length === 0) return <p>Error loading courseAndWorkshop data or courseAndWorkshop not found.</p>;
+	
+	const courseAndWorkshop = coursesAndWorkshopsData[0];
+
+	const breadcrumbItems = [
+		{
+			title: 'Inicio',
+			path: '/',
+		},
+		{
+			title: 'Cursos y talleres',
+			path: '/cursos-y-talleres',
+		},
+		{
+			title: courseAndWorkshop.titulo,
+			path: `/cursos-y-talleres/${courseAndWorkshop.slug}`,
+		},
+	];
 
 	return (
 		<Layout
@@ -40,15 +61,13 @@ export default function CursoYTaller() {
 							<Badge className="max-md:mb-[18px]" label="Taller" size="small" />
 						</div>
 						<Title className="text-center !mb-2">
-							“Protegiendo nuestros textiles milenarios”:
-							Conservación preventiva para textiles arqueológicos
+							{courseAndWorkshop.titulo}
 						</Title>
-						<div className="flex flex-row items-center justify-center gap-2 mb-14">
+						{/* <div className="flex flex-row items-center justify-center gap-2 mb-14">
 							<div className="p-4 text-green bg-light-green rounded-lg">
-								<span className="font-bold">Inicio:</span> 5 de
-								noviembre de 2024
+								<span className="font-bold">Inicio:</span> {formatFullDate(new Date(courseAndWorkshop.fechaInicio).toISOString())}
 							</div>
-						</div>
+						</div> */}
 						<div className="flex flex-col md:flex-row gap-y-6 gap-x-1 justify-center mb-14">
 							<div className="min-w-[235px]">
 								<div className="flex gap-1 items-center">
@@ -62,8 +81,7 @@ export default function CursoYTaller() {
 									</span>
 								</div>
 								<p className="pl-5 font-medium leading-[21px] text-sm">
-									Martes y jueves (5, 7, 12 de noviembre de
-									2024)
+									{courseAndWorkshop.fechaClases}
 								</p>
 							</div>
 							<div className="min-w-[228px]">
@@ -78,7 +96,7 @@ export default function CursoYTaller() {
 									</span>
 								</div>
 								<p className="pl-5 font-medium leading-[21px] text-sm">
-									Centro Cultural de San Marcos
+									{courseAndWorkshop.lugar}
 								</p>
 							</div>
 							<div className="min-w-[170px]">
@@ -96,7 +114,7 @@ export default function CursoYTaller() {
 									className="block pl-5 font-medium leading-[21px] text-sm"
 									dateTime="10:00:00"
 								>
-									10 a. m. a 1 p. m.
+									{courseAndWorkshop.horarioClases}
 								</time>
 							</div>
 							<div className="min-w-[215px]">
@@ -110,40 +128,16 @@ export default function CursoYTaller() {
 										Cierre de inscripciones
 									</span>
 								</div>
-								<time
+								{/* <time
 									className="block pl-5 font-medium leading-[21px] text-sm"
-									dateTime="2024-10-30"
+									dateTime={courseAndWorkshop.fechaCierreInscripciones}
 								>
-									30 de octubre de 2024
-								</time>
+									{formatFullDate(courseAndWorkshop.fechaCierreInscripciones)}
+								</time> */}
 							</div>
 						</div>
 						<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 mb-14"></div>
-						<div className="space-y-4">
-							<p>
-								El Museo de Arqueología y Antropología de la
-								UNMSM presenta el taller especializado
-								«Protegiendo Nuestros Textiles Milenarios», una
-								iniciativa destinada a la{' '}
-								<b>
-									conservación preventiva de textiles
-									arqueológicos
-								</b>
-								. Este taller brindará a los participantes
-								herramientas y conocimientos para la{' '}
-								<b>realización de un registro adecuado</b>, la
-								creación de <b>cajas contenedoras</b> y el
-								diseño de <b>soportes protectores</b> para
-								preservar estos valiosos bienes culturales.
-							</p>
-							<p>
-								Los participantes aprenderán a manejar técnicas
-								esenciales para garantizar la protección y
-								conservación de textiles arqueológicos,
-								salvaguardando así piezas de incalculable valor
-								histórico y cultural.
-							</p>
-						</div>
+						<BlockRendererClient content={courseAndWorkshop.descripcion} />
 					</div>
 				</div>
 			</div>
