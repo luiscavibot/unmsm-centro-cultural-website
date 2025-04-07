@@ -15,8 +15,10 @@ export interface CursosYTalleres {
     tipo:                     string;
     dependencia:              string;
     modalidad:                string;
-    fechaInicio:              Date;
-    fechaCierreInscripciones: Date;
+    // fechaInicio:              Date;
+    // fechaCierreInscripciones: Date;
+    fechaInicio:              string;
+    fechaCierreInscripciones: string;
     fechaClases:              string;
     horarioClases:            string;
     lugar:                    string;

@@ -11,7 +11,7 @@ import React from 'react';
 import Layout from '@/ui/components/organisms/shared/layout';
 import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
 import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
-// import { formatFullDate } from '@/ui/helpers/format-full-date';
+import { formatFullDate } from '@/ui/helpers/format-full-date';
 // import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 
 export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
@@ -63,11 +63,11 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 						<Title className="text-center !mb-2">
 							{courseAndWorkshop.titulo}
 						</Title>
-						{/* <div className="flex flex-row items-center justify-center gap-2 mb-14">
+						<div className="flex flex-row items-center justify-center gap-2 mb-14">
 							<div className="p-4 text-green bg-light-green rounded-lg">
-								<span className="font-bold">Inicio:</span> {formatFullDate(new Date(courseAndWorkshop.fechaInicio).toISOString())}
+								<span className="font-bold">Inicio:</span> {formatFullDate(courseAndWorkshop.fechaInicio)}
 							</div>
-						</div> */}
+						</div>
 						<div className="flex flex-col md:flex-row gap-y-6 gap-x-1 justify-center mb-14">
 							<div className="min-w-[235px]">
 								<div className="flex gap-1 items-center">
@@ -128,12 +128,12 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 										Cierre de inscripciones
 									</span>
 								</div>
-								{/* <time
+								<time
 									className="block pl-5 font-medium leading-[21px] text-sm"
 									dateTime={courseAndWorkshop.fechaCierreInscripciones}
 								>
 									{formatFullDate(courseAndWorkshop.fechaCierreInscripciones)}
-								</time> */}
+								</time>
 							</div>
 						</div>
 						<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 mb-14"></div>
