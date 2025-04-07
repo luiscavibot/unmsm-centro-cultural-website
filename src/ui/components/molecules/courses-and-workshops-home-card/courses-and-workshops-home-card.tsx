@@ -6,21 +6,21 @@ import React, { FC, useRef } from 'react';
 import Badge from '@/ui/components/atoms/badge';
 
 interface CoursesAndWorkshopsHomeCardProps {
-	slug: string;
 	url: string;
-	type: 'Curso' | 'Taller';
-	title: string;
-	subtitle: string;
-	description: string;
+	slug: string;
+	tipo: string;
+	titulo: string;
+	resumen: string | null;
+	dependencia: string;
 }
 
 const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
-	slug,
 	url,
-	type,
-	title,
-	subtitle,
-	description,
+	slug,
+	tipo,
+	titulo,
+	resumen,
+	dependencia,
 }) => {
 	const coverRef = useRef<HTMLDivElement>(null);
 
@@ -60,17 +60,20 @@ const CoursesAndWorkshopsHomeCard: FC<CoursesAndWorkshopsHomeCardProps> = ({
 				>
 					<div className="max-w-[459px]">
 						<header>
-							<Badge label={type} size="large" />
+							<Badge label={tipo} size="large" />
 							<h3 className="text-[24px] lg:text-[40px] font-bold leading-[normal] text-white">
-								{title}
+								{titulo}
 							</h3>
 							<p className="mt-2 text-xl font-semibold leading-[20px] text-white">
-								{subtitle}
+								{dependencia}
 							</p>
 						</header>
-						<p className="max-lg:hidden mt-6 font-medium leading-[24px] text-white line-clamp-[10]">
-							{description}
-						</p>
+						{
+							resumen &&
+							<p className="max-lg:hidden mt-6 font-medium leading-[24px] text-white line-clamp-[10]">
+								{resumen}
+							</p>
+						}
 					</div>
 				</Link>
 			</div>

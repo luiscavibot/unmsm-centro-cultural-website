@@ -1,22 +1,27 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { FC, useRef } from 'react';
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import Link from 'next/link';
 import Image from 'next/image';
 import useSplideControls from '@/ui/hooks/useSplideControls';
-import newsDataToHome from '@/ui/mocks/news-data-to-home';
+// import newsDataToHome from '@/ui/mocks/news-data-to-home';
 import ExternalLinkIcon from '@/ui/components/atoms/icons/external-link-icon';
 import NewsHomeCard from '@/ui/components/molecules/news-home-card';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
+import { Noticias } from '@/interfaces/services/noticias.interface';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
-const News = () => {
+interface Props {
+	noticias: Noticias[];
+}
+
+const News: FC<Props> = ({ noticias }) => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
@@ -77,9 +82,15 @@ const News = () => {
 						options={splideOptions}
 					>
 						<SplideTrack>
-							{newsDataToHome.map((news, index) => (
+							{noticias.map((noticia, index) => (
 								<SplideSlide key={index}>
-									<NewsHomeCard {...news} />
+									<NewsHomeCard
+										url={noticia.imagen.formats.small.url}
+										fechaPublicacion={noticia.fechaPublicacion}
+										titulo={noticia.titulo}
+										resumen={noticia.resumen}
+										slug={noticia.slug}
+									/>
 								</SplideSlide>
 							))}
 						</SplideTrack>

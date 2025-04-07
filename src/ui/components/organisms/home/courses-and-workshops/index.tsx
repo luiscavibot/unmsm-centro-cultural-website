@@ -1,19 +1,24 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { FC, useRef } from 'react';
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import useSplideControls from '@/ui/hooks/useSplideControls';
-import coursesAndWorkshopsDataToHome from '@/ui/mocks/courses-and-workshops-data-to-home';
+// import coursesAndWorkshopsDataToHome from '@/ui/mocks/courses-and-workshops-data-to-home';
 import CoursesAndWorkshopsHomeCard from '@/ui/components/molecules/courses-and-workshops-home-card';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
+import { CursosYTalleres } from '@/interfaces/services/cursos-y-talleres.interface';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
-const CoursesAndWorkshops = () => {
+interface Props {
+	cursosYTalleres: CursosYTalleres[];
+}
+
+const CoursesAndWorkshops: FC<Props> = ({ cursosYTalleres }) => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
@@ -48,11 +53,15 @@ const CoursesAndWorkshops = () => {
 				options={splideOptions}
 			>
 				<SplideTrack>
-					{coursesAndWorkshopsDataToHome.map((course, index) => (
+					{cursosYTalleres.map((course, index) => (
 						<SplideSlide key={index}>
 							<CoursesAndWorkshopsHomeCard
-								key={index}
-								{...course}
+								url={course.imagen.url}
+								titulo={course.titulo}
+								slug={course.slug}
+								resumen={course.resumen}
+								tipo={course.tipo}
+								dependencia={course.dependencia}
 							/>
 						</SplideSlide>
 					))}
