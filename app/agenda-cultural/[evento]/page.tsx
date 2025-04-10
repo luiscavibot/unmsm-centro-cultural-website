@@ -30,8 +30,8 @@ try {
 }
 
 return (
-	// <HydrationBoundary state={dehydrate(queryClient)}>
+	<HydrationBoundary state={dehydrate(queryClient)}>
 		<EventContent evento={evento} />
-	// </HydrationBoundary>
+	</HydrationBoundary>
 );
 }
