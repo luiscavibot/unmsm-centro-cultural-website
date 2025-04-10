@@ -10,31 +10,76 @@ import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
 import Title from '@/ui/components/atoms/title';
 import UpcomingEventsCard from '@/ui/components/molecules/upcoming-events-card';
 import Layout from '@/ui/components/organisms/shared/layout';
-import eventsDataToHome from '@/ui/mocks/events-data-to-home';
+// import eventsDataToHome from '@/ui/mocks/events-data-to-home';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
 // import { useCustomDates } from '@/ui/hooks/use-custom-date';
 import { getCustomDates } from '@/ui/helpers/get-custom-date';
 import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
+import { AgendaCultural } from '@/interfaces/services/agenda-cultural.interface';
+import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
 
 export default function EventContent({ evento }: { evento: string }) {
 	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
-	const { data: eventData, isLoading, error } = useQuery({
+	const { data: eventData, isLoading: isEventLoading, error: eventError } = useQuery({
 	  queryKey: ['event', evento],
 	  queryFn: () => AgendaCulturalService.getEntryBySlug(evento),
 	});
 
-  const { daysSummary, singleDate } = getCustomDates(
-    eventData?.[0]?.exact_dates || [],
-    eventData?.[0]?.date_ranges || []
-  );
+	const { data: upcomingEvents = [], isLoading: isUpcomingLoading, error: upcomingError } = useQuery({
+		queryKey: ['upcoming-events'],
+		queryFn: () => AgendaCulturalService.getUpcomingEvents(evento),
+	  });
 
-  if (!evento) return <p>Error: Slug no encontrado.</p>;
-  if (isLoading) return <p>Loading...</p>;
-  if (error || !eventData || eventData.length === 0) return <p>Error loading event data or event not found.</p>;
+	const { daysSummary, singleDate } = getCustomDates(
+		eventData?.[0]?.exact_dates || [],
+		eventData?.[0]?.date_ranges || []
+	);
 
-  const event = eventData[0];
-  
-  return (
+	if (!evento) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Oops! No se encontró el evento solicitado.</p>
+				</div>
+			</Layout>
+		);
+	}
+	if (isEventLoading || isUpcomingLoading) {
+		return (
+			<SkeletonBlog />
+		);
+	}
+	if (eventError) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Error cargando los datos del evento.</p>
+				</div>
+			</Layout>
+		);
+	}
+	if (upcomingError) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Error cargando los eventos próximos.</p>
+				</div>
+			</Layout>
+		);
+	}
+	if (!eventData || eventData.length === 0) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Evento no encontrado.</p>
+				</div>
+			</Layout>
+		);
+	}
+
+	const event = eventData[0];
+	
+return (
     <Layout
 			// portadaImage={event.image.url}
 			breadcrumbItems={[
@@ -127,39 +172,40 @@ export default function EventContent({ evento }: { evento: string }) {
 							className="mt-6"
 						/> */}
 					</div>
-					<div className="mt-20 md:mt-[110px]">
-						<div className="flex justify-between items-center mb-5 md:mb-[30px]">
-							<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">
-								Eventos próximos
-							</h2>
-							<TertiaryButton
-								label="Ver todos"
-								theme="light"
-								type="internal-link"
-								href="/agenda-cultural"
-							/>
+					{
+						(upcomingEvents?.length > 0 || upcomingEvents) &&
+						<div className="mt-20 md:mt-[110px]">
+							<div className="flex justify-between items-center mb-5 md:mb-[30px]">
+								<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">
+									Eventos próximos
+								</h2>
+								<TertiaryButton
+									label="Ver todos"
+									theme="light"
+									type="internal-link"
+									href="/agenda-cultural"
+								/>
+							</div>
+							<div className="grid md:grid-cols-3 gap-y-4 gap-x-6">
+								{upcomingEvents
+									.slice(-3)
+									.map((event: AgendaCultural, index: number) => (
+										<UpcomingEventsCard
+											key={index}
+											slug={event.slug}
+											title={event.title}
+											exact_dates={event.exact_dates}
+											date_ranges={event.date_ranges}
+											mode={event.mode}
+											place={event.place}
+											organizer={event.organizer}
+										/>
+									))}
+							</div>
 						</div>
-						<div className="grid md:grid-cols-3 gap-y-4 gap-x-6">
-							{eventsDataToHome
-								.slice(-3)
-								.map((event: any, index: number) => (
-									<UpcomingEventsCard
-										key={index}
-										slug={event.slug}
-										title={event.title}
-										date={event.date}
-										dateString={event.dateString}
-										time={event.time}
-										timeString={event.timeString}
-										location={event.location}
-										type={event.type}
-										dependency={event.dependency}
-									/>
-								))}
-						</div>
-					</div>
+					}
 				</div>
 			</div>
 		</Layout>
-  );
+	);
 }

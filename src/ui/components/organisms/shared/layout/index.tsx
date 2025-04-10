@@ -9,7 +9,7 @@ interface BreadcrumbItem {
 
 interface LayoutProps {
 	children: React.ReactNode;
-	breadcrumbItems: BreadcrumbItem[];
+	breadcrumbItems?: BreadcrumbItem[];
 	portadaImage?: string;
 	theme?: 'dark' | 'light';
 }
@@ -52,9 +52,12 @@ const Layout = ({
 						colors[theme]
 					}
 				>
-					<div className="container">
-						<Breadcrumb theme={theme} items={breadcrumbItems} />
-					</div>
+					{
+						breadcrumbItems &&
+						<div className="container">
+							<Breadcrumb theme={theme} items={breadcrumbItems} />
+						</div>
+					}
 				</div>
 				{children}
 			</div>

@@ -20,14 +20,18 @@ try {
 		queryKey: ['event', evento],
 		queryFn: () => AgendaCulturalService.getEntryBySlug(evento),
 	});
+	await queryClient.prefetchQuery({
+		queryKey: ['upcoming-events'],
+		queryFn: () => AgendaCulturalService.getUpcomingEvents(evento),
+	});
 } catch (error) {
 	console.error("Error en prefetch:", error);
 	return <div>Error al cargar los datos del evento</div>;
 }
 
 return (
-	<HydrationBoundary state={dehydrate(queryClient)}>
+	// <HydrationBoundary state={dehydrate(queryClient)}>
 		<EventContent evento={evento} />
-	</HydrationBoundary>
+	// </HydrationBoundary>
 );
 }
