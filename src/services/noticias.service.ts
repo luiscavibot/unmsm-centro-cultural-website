@@ -38,4 +38,23 @@ export class NoticiasService {
 			throw error;
 		}
 	}
+	static async getRecentEntries(excludedSlug: string) {
+		try {
+			const params = {
+				'filters[slug][$ne]': excludedSlug,
+				'sort': 'fechaPublicacion:desc',
+				'pagination[pageSize]': 3,
+				'fields': 'titulo,slug,fechaPublicacion',
+			};
+
+			const data = await strapiFetch<NoticiasResponse>(
+				RESOURCE_PATH,
+				{ params }
+			);
+			return data.data;
+		} catch (error) {
+			console.error('Error al obtener las noticias recientes:', error);
+			throw error;
+		}
+	}
 }
