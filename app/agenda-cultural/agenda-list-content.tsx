@@ -4,7 +4,6 @@ import Tab from '@/ui/components/atoms/tab';
 import Title from '@/ui/components/atoms/title';
 import EventsCard from '@/ui/components/molecules/events-card';
 import React, { useState } from 'react';
-import eventsDataToHome from '@/ui/mocks/events-data-to-home';
 import Calendar from '@/ui/components/molecules/calendar';
 import Pagination from '@/ui/components/molecules/pagination';
 import Layout from '@/ui/components/organisms/shared/layout';
@@ -13,12 +12,14 @@ import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
 import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
 import { AnimatePresence } from 'motion/react';
 import Modal from '@/ui/components/molecules/modal';
-import { useQuery } from '@tanstack/react-query';
+import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
+import Skeleton from '@/ui/components/atoms/skeleton';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 type selectedTab = 'todos' | 'esta-semana';
 
-const PageSize = 6;
+const pageSize = 5;
 
 const breadcrumbItems = [
 	{
@@ -32,30 +33,47 @@ const breadcrumbItems = [
 ];
 
 export default function CulturalAgendaPage() {
-	const [selectedTab, setSelectedTab] = useState<selectedTab>('todos');
-
-	const [currentPage, setCurrentPage] = useState(1);
-
+	console.log('render CulturalAgendaPage');
 	const [modalOpen, setModalOpen] = useState(false);
-
 	const close = () => setModalOpen(false);
 	const open = () => setModalOpen(true);
 
+	const router = useRouter();
+	const searchParams = useSearchParams();
+	const pageFromQuery = Number(searchParams.get('page')) || 1;
+	const [currentPage, setCurrentPage] = useState(pageFromQuery);
+
+	const [selectedTab, setSelectedTab] = useState<selectedTab>('todos');
 	const handleClick = (tab: selectedTab) => {
 		setSelectedTab(tab);
 	};
 
-	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
-	const { data: agendaData, isLoading, error } = useQuery({
-		queryKey: ['list-agenda'],
-		queryFn: () => AgendaCulturalService.getEntriesToHome(),
+	const { data, error, isFetching, isLoading } = useQuery({
+		queryKey: ['list-agenda', currentPage],
+		queryFn: () =>
+			AgendaCulturalService.getListEntries(currentPage, pageSize),
+		placeholderData: keepPreviousData,
+		refetchOnWindowFocus: false,
 	});
-	
-	// if (!noticia) return <p>Error: Slug no encontrado.</p>;
-	if (isLoading) return <p>Loading...</p>;
-	if (error || !agendaData || agendaData.length === 0) return <p>Error loading event data or event not found.</p>;
-	
-	// const newsItem = agendaData[0];
+	const agendaData = data?.data || [];
+	const agendaDataQty = data?.meta?.pagination?.total || 0;
+
+	const skeletonArray: string[] = new Array(pageSize).fill('');
+
+	const resultados = () => {
+		if (error) return '';
+		if (isLoading) return 'Calculando...';
+		if (agendaDataQty === 0 && !isFetching) return 'No hay resultados';
+		if (agendaDataQty === 1) return '1 resultado';
+		if (agendaDataQty > 1) return `${agendaDataQty} resultados`;
+	};
+
+	const handlePageChange = (page: number) => {
+		setCurrentPage(page);
+		const params = new URLSearchParams(searchParams.toString());
+		params.set('page', String(page));
+		router.push(`?${params.toString()}`, { scroll: false });
+	};
 
 	return (
 		<Layout
@@ -112,19 +130,22 @@ export default function CulturalAgendaPage() {
 											icon={<FilterIcon />}
 											theme="light"
 											type="on-click"
-											onClick={() => (modalOpen ? close() : open())}
+											onClick={() =>
+												modalOpen ? close() : open()
+											}
 										/>
 										<AnimatePresence
 											initial={false}
 											mode="wait"
 											onExitComplete={() => null}
 										>
-											{
-												modalOpen &&
-												<Modal handleClose={close} >
-													<AgendaFilter handleClose={close} />
+											{modalOpen && (
+												<Modal handleClose={close}>
+													<AgendaFilter
+														handleClose={close}
+													/>
 												</Modal>
-											}
+											)}
 										</AnimatePresence>
 									</div>
 								</div>
@@ -132,25 +153,41 @@ export default function CulturalAgendaPage() {
 									<AgendaFilter />
 								</div>
 							</div>
-							<div>
+							<div className="w-full">
 								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
-									57 resultados en total
+									{resultados()}
 								</span>
+								{error && (
+									<p className="text-center">
+										Error al cargar los datos de la agenda o
+										evento no encontrado.
+									</p>
+								)}
 								<ul className="flex flex-col space-y-4 md:space-y-8">
-									{agendaData.map((event, index) => (
-										<li className="flex" key={index}>
-											<EventsCard {...event} />
-										</li>
-									))}
+									{isFetching
+										? skeletonArray.map((_, index) => (
+												<div
+													key={index}
+													className="h-[19.3125rem] md:h-[21.625rem] rounded-2xl overflow-hidden"
+												>
+													<Skeleton />
+												</div>
+										  ))
+										: agendaData.map((event) => (
+												<li
+													className="flex"
+													key={event.id}
+												>
+													<EventsCard {...event} />
+												</li>
+										  ))}
 								</ul>
 								<Pagination
 									className="pagination-bar"
 									currentPage={currentPage}
-									totalCount={eventsDataToHome.length}
-									pageSize={PageSize}
-									onPageChange={(page) =>
-										setCurrentPage(page)
-									}
+									totalCount={agendaDataQty}
+									pageSize={pageSize}
+									onPageChange={handlePageChange}
 								/>
 							</div>
 						</div>
