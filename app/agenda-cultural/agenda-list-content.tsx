@@ -33,7 +33,6 @@ const breadcrumbItems = [
 ];
 
 export default function CulturalAgendaPage() {
-	console.log('render CulturalAgendaPage');
 	const [modalOpen, setModalOpen] = useState(false);
 	const close = () => setModalOpen(false);
 	const open = () => setModalOpen(true);
