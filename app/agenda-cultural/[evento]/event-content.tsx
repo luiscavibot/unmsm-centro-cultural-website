@@ -173,7 +173,7 @@ return (
 						/> */}
 					</div>
 					{
-						(upcomingEvents?.length > 0 || upcomingEvents) &&
+						(upcomingEvents?.length > 0 && upcomingEvents) &&
 						<div className="mt-20 md:mt-[110px]">
 							<div className="flex justify-between items-center mb-5 md:mb-[30px]">
 								<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">

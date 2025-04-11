@@ -8,25 +8,68 @@ import CalendarIcon from '@/ui/components/atoms/icons/calendar-icon';
 import Title from '@/ui/components/atoms/title';
 import RecentNewsCard from '@/ui/components/molecules/recent-news-card';
 import Layout from '@/ui/components/organisms/shared/layout';
-// import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
-import newsDataToHome from '@/ui/mocks/news-data-to-home';
+// import newsDataToHome from '@/ui/mocks/news-data-to-home';
 import React from 'react';
 import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
 import { formatFullDate } from '@/ui/helpers/format-full-date';
+import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
+import { Noticias } from '@/interfaces/services/noticias.interface';
 
 export default function NewsContent({ noticia }: { noticia: string }) {
-	// useScrollOnLoad();
 
 	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
-	const { data: newsData, isLoading, error } = useQuery({
+	const { data: newsData, isLoading: isNewsLoading, error: newsError } = useQuery({
 	queryKey: ['news', noticia],
 	queryFn: () => NoticiasService.getEntryBySlug(noticia),
 	});
-  
-	if (!noticia) return <p>Error: Slug no encontrado.</p>;
-	if (isLoading) return <p>Loading...</p>;
-	if (error || !newsData || newsData.length === 0) return <p>Error loading event data or event not found.</p>;
-  
+
+	const { data: recentNews = [], isLoading: isRecentNewsLoading, error: recentNewsError } = useQuery({
+		queryKey: ['recent-news'],
+		queryFn: () => NoticiasService.getRecentEntries(noticia),
+	});
+
+	if (!noticia) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Oops! No se encontró la noticia solicitado.</p>
+				</div>
+			</Layout>
+		);
+	}
+	if (isNewsLoading || isRecentNewsLoading) {
+		return (
+			<SkeletonBlog />
+		);
+	}
+	if (newsError) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Error cargando los datos de la noticia.</p>
+				</div>
+			</Layout>
+		);
+	}
+	if (recentNewsError) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Error cargando las noticias recientes.</p>
+				</div>
+			</Layout>
+		);
+	}
+	if (!newsData || newsData.length === 0) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Noticia no encontrada.</p>
+				</div>
+			</Layout>
+		);
+	}
+
 	const newsItem = newsData[0];
 
 	const breadcrumbItems = [
@@ -40,7 +83,7 @@ export default function NewsContent({ noticia }: { noticia: string }) {
 		},
 		{
 			title: newsItem.titulo,
-			path: `/noticias/${newsItem.slug}`,
+			path: `/noticias/${noticia}`,
 		},
 	];
 
@@ -74,32 +117,34 @@ export default function NewsContent({ noticia }: { noticia: string }) {
 						<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 mb-14"></div>
 						<BlockRendererClient content={newsItem.descripcion} />
 					</div>
-					<div className="mt-20 md:mt-[110px]">
-						<div className="flex justify-between items-center mb-5 md:mb-[30px]">
-							<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">
-								Noticias recientes
-							</h2>
-							<TertiaryButton
-								label="Ver todos"
-								theme="light"
-								type="internal-link"
-								href="/agenda-cultural"
-							/>
+					{
+						(recentNews?.length > 0 && recentNews) &&
+						<div className="mt-20 md:mt-[110px]">
+							<div className="flex justify-between items-center mb-5 md:mb-[30px]">
+								<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">
+									Noticias recientes
+								</h2>
+								<TertiaryButton
+									label="Ver todos"
+									theme="light"
+									type="internal-link"
+									href="/agenda-cultural"
+								/>
+							</div>
+							<div className="grid md:grid-cols-3 gap-y-4 gap-x-6">
+								{recentNews
+									.slice(-3)
+									.map((event: Noticias, index: number) => (
+										<RecentNewsCard
+											key={index}
+											slug={event.slug}
+											titulo={event.titulo}
+											fechaPublicacion={event.fechaPublicacion}
+										/>
+									))}
+							</div>
 						</div>
-						<div className="grid md:grid-cols-3 gap-y-4 gap-x-6">
-							{newsDataToHome
-								.slice(-3)
-								.map((event: any, index: number) => (
-									<RecentNewsCard
-										key={index}
-										slug={event.slug}
-										title={event.title}
-										date={event.date}
-										dateString={event.dateString}
-									/>
-								))}
-						</div>
-					</div>
+					}
 				</div>
 			</div>
 		</Layout>

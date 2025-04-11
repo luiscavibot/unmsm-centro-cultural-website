@@ -20,6 +20,10 @@ try {
 		queryKey: ['news', noticia],
 		queryFn: () => NoticiasService.getEntryBySlug(noticia),
 	});
+	await queryClient.prefetchQuery({
+		queryKey: ['recent-news'],
+		queryFn: () => NoticiasService.getRecentEntries(noticia),
+	});
 } catch (error) {
 	console.error("Error en prefetch:", error);
 	return <div>Error al cargar los datos de la noticia</div>;
