@@ -11,7 +11,7 @@ metadata:
         alb.ingress.kubernetes.io/group.name: unmsm-alb-ingress
 spec:
     rules:
-        - host: centroculturaladmin.unmsm.edu.pe
+        - host: centrocultural.unmsm.edu.pe
           http:
               paths:
                   - path: /
