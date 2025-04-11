@@ -19,7 +19,7 @@ const Events: FC<Props> = ({ agendaCultural }) => {
 	const splideRef = useRef<ExtendedSplideType>(null);
 
 	const splideOptions = {
-		// type: 'loop',
+		type: 'loop',
 		width: '100%',
 		perPage: 1,
 		arrows: false,
@@ -27,9 +27,9 @@ const Events: FC<Props> = ({ agendaCultural }) => {
 		gap: '0px',
 		perMove: 1,
 		interval: 3000,
-		// autoplay: true,
-		pauseOnHover: true,
-		// loop: true,
+		autoplay: true,
+		pauseOnHover: false,
+		loop: true,
 	};
 
 	const {
