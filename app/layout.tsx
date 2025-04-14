@@ -35,8 +35,7 @@ export default function RootLayout({
 				<QueryProvider>
 					<div className="flex flex-col min-h-screen">
 						<Header />
-						{/* TODO: ACTUALIZAR INDEXACIÓN */}
-						<meta name="robots" content="noindex, nofollow" />
+						<meta name="robots" content="index, follow" />
 						<main className="flex-grow">{children}</main>
 						<Footer />
 					</div>
