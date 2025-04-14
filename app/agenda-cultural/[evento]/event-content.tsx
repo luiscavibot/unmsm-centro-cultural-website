@@ -20,15 +20,23 @@ import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
 
 export default function EventContent({ evento }: { evento: string }) {
 	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
-	const { data: eventData, isLoading: isEventLoading, error: eventError } = useQuery({
-	  queryKey: ['event', evento],
-	  queryFn: () => AgendaCulturalService.getEntryBySlug(evento),
+	const {
+		data: eventData,
+		isLoading: isEventLoading,
+		error: eventError,
+	} = useQuery({
+		queryKey: ['event', evento],
+		queryFn: () => AgendaCulturalService.getEntryBySlug(evento),
 	});
 
-	const { data: upcomingEvents = [], isLoading: isUpcomingLoading, error: upcomingError } = useQuery({
+	const {
+		data: upcomingEvents = [],
+		isLoading: isUpcomingLoading,
+		error: upcomingError,
+	} = useQuery({
 		queryKey: ['upcoming-events'],
 		queryFn: () => AgendaCulturalService.getUpcomingEvents(evento),
-	  });
+	});
 
 	const { daysSummary, singleDate } = getCustomDates(
 		eventData?.[0]?.exact_dates || [],
@@ -45,9 +53,7 @@ export default function EventContent({ evento }: { evento: string }) {
 		);
 	}
 	if (isEventLoading || isUpcomingLoading) {
-		return (
-			<SkeletonBlog />
-		);
+		return <SkeletonBlog />;
 	}
 	if (eventError) {
 		return (
@@ -78,10 +84,9 @@ export default function EventContent({ evento }: { evento: string }) {
 	}
 
 	const event = eventData[0];
-	
-return (
-    <Layout
-			// portadaImage={event.image.url}
+
+	return (
+		<Layout
 			breadcrumbItems={[
 				{ title: 'Inicio', path: '/' },
 				{ title: 'Agenda cultural', path: '/agenda-cultural' },
@@ -120,7 +125,7 @@ return (
 									{daysSummary || singleDate?.day}
 								</time>
 							</div>
-							
+
 							<div className="min-w-[155px]">
 								<div className="flex gap-1 items-center">
 									<ClockIcon
@@ -139,12 +144,9 @@ return (
 									>
 										{singleDate?.time}
 									</time>
-								)
-								:
-								(
+								) : (
 									<div className="ml-5 h-[1px] relative top-2 w-10 border-b-[1px]"></div>
-								)
-							}
+								)}
 							</div>
 							<div className="min-w-[208px]">
 								<div className="flex gap-1 items-center">
@@ -172,8 +174,7 @@ return (
 							className="mt-6"
 						/> */}
 					</div>
-					{
-						(upcomingEvents?.length > 0 && upcomingEvents) &&
+					{upcomingEvents?.length > 0 && upcomingEvents && (
 						<div className="mt-20 md:mt-[110px]">
 							<div className="flex justify-between items-center mb-5 md:mb-[30px]">
 								<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">
@@ -189,21 +190,26 @@ return (
 							<div className="grid md:grid-cols-3 gap-y-4 gap-x-6">
 								{upcomingEvents
 									.slice(-3)
-									.map((event: AgendaCultural, index: number) => (
-										<UpcomingEventsCard
-											key={index}
-											slug={event.slug}
-											title={event.title}
-											exact_dates={event.exact_dates}
-											date_ranges={event.date_ranges}
-											mode={event.mode}
-											place={event.place}
-											organizer={event.organizer}
-										/>
-									))}
+									.map(
+										(
+											event: AgendaCultural,
+											index: number
+										) => (
+											<UpcomingEventsCard
+												key={index}
+												slug={event.slug}
+												title={event.title}
+												exact_dates={event.exact_dates}
+												date_ranges={event.date_ranges}
+												mode={event.mode}
+												place={event.place}
+												organizer={event.organizer}
+											/>
+										)
+									)}
 							</div>
 						</div>
-					}
+					)}
 				</div>
 			</div>
 		</Layout>

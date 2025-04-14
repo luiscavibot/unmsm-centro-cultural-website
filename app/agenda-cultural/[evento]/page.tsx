@@ -29,9 +29,7 @@ export default async function Page({
 		return <div>Error al cargar los datos del evento</div>;
 	}
 
-	return (
-		<HydrationBoundary state={dehydrate(queryClient)}>
-			<EventContent evento={evento} />
-		</HydrationBoundary>
-	);
+	// return <EventoLoading />;
+
+	return <EventContent evento={evento} />;
 }
