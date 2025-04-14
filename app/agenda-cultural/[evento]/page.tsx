@@ -1,4 +1,4 @@
-import { HydrationBoundary, dehydrate } from '@tanstack/react-query';
+// import { HydrationBoundary, dehydrate } from '@tanstack/react-query';
 import { QueryClient } from '@tanstack/react-query';
 import EventContent from './event-content';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
