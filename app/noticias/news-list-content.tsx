@@ -3,8 +3,6 @@
 import Title from '@/ui/components/atoms/title';
 import NewsCard from '@/ui/components/molecules/news-card';
 import React, { useRef, useState } from 'react';
-// import NewsDataToHome from '@/ui/mocks/news-data-to-home';
-import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
 import Pagination from '@/ui/components/molecules/pagination';
 import Search from '@/ui/components/atoms/inputs/search';
 
@@ -16,17 +14,20 @@ import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
 import FeaturedNewsCard from '@/ui/components/molecules/featured-news-card';
 import Layout from '@/ui/components/organisms/shared/layout';
 import NoticiaFilter from '@/ui/components/organisms/noticias/noticias-filter';
+import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
 import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
 import { AnimatePresence } from 'motion/react';
 import Modal from '@/ui/components/molecules/modal';
+import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { NoticiasService } from '@/services/noticias.service';
-import { useQuery } from '@tanstack/react-query';
+import Skeleton from '@/ui/components/atoms/skeleton';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
-const PageSize = 6;
+const pageSize = 5;
 
 const breadcrumbItems = [
 	{
@@ -53,10 +54,7 @@ export default function NoticiasPage() {
 		perMove: 1,
 	};
 
-	const [currentPage, setCurrentPage] = useState(1);
-
 	const [modalOpen, setModalOpen] = useState(false);
-	
 	const close = () => setModalOpen(false);
 	const open = () => setModalOpen(true);
 
@@ -72,17 +70,36 @@ export default function NoticiasPage() {
 		isNextDisabled,
 	} = useSplideControls(splideRef);
 
-	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
-	const { data: newsData, isLoading, error } = useQuery({
-		queryKey: ['list-news'],
-		queryFn: () => NoticiasService.getEntriesToHome(),
+	const router = useRouter();
+	const searchParams = useSearchParams();
+	const pageFromQuery = Number(searchParams.get('page')) || 1;
+	const [currentPage, setCurrentPage] = useState(pageFromQuery);
+
+	const { data, error, isFetching, isLoading } = useQuery({
+		queryKey: ['list-news', currentPage],
+		queryFn: () => NoticiasService.getListEntries(currentPage, pageSize),
+		placeholderData: keepPreviousData,
+		refetchOnWindowFocus: false,
 	});
-	
-	// if (!noticia) return <p>Error: Slug no encontrado.</p>;
-	if (isLoading) return <p>Loading...</p>;
-	if (error || !newsData || newsData.length === 0) return <p>Error loading event data or event not found.</p>;
-	
-	// const newsItem = newsData[0];
+	const newsData = data?.data || [];
+	const newsDataQty = data?.meta?.pagination?.total || 0;
+
+	const skeletonArray: string[] = new Array(pageSize).fill('');
+
+	const resultados = () => {
+		if (error) return '';
+		if (isLoading) return 'Calculando...';
+		if (newsDataQty === 0 && !isFetching) return 'No hay resultados';
+		if (newsDataQty === 1) return '1 resultado';
+		if (newsDataQty > 1) return `${newsDataQty} resultados`;
+	};
+
+	const handlePageChange = (page: number) => {
+		setCurrentPage(page);
+		const params = new URLSearchParams(searchParams.toString());
+		params.set('page', String(page));
+		router.push(`?${params.toString()}`, { scroll: false });
+	};
 
 	return (
 		<Layout
@@ -100,46 +117,57 @@ export default function NoticiasPage() {
 								</p>
 							</div>
 							<div className="max-md:hidden relative">
-								<Splide
-									// onMoved={handleMove}
-									ref={splideRef}
-									hasTrack={false}
-									options={splideOptions}
-								>
-									<SplideTrack>
-										{newsData.map(
-											(newsItem, index) => (
-												<SplideSlide key={index}>
-													<FeaturedNewsCard
-														url={newsItem.imagen.url}
-														fechaPublicacion={newsItem.fechaPublicacion}
-														titulo={newsItem.titulo}
-														resumen={newsItem.resumen}
-														slug={newsItem.slug}
-													/>
-												</SplideSlide>
-											)
-										)}
-									</SplideTrack>
-								</Splide>
-								<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[20px] pointer-events-none">
-									<div className="container flex justify-between gap-x-2 relative">
-										<ArrowButton
-											className="pointer-events-auto"
-											theme="dark"
-											onClick={handlePrev}
-											direction="left"
-											disabled={isPrevDisabled}
-										/>
-										<ArrowButton
-											className="pointer-events-auto"
-											theme="dark"
-											onClick={handleNext}
-											direction="right"
-											disabled={isNextDisabled}
-										/>
-									</div>
-								</div>
+								{isFetching
+									? 
+										<div
+											className="h-[26.188rem] rounded-2xl overflow-hidden"
+										>
+											<Skeleton />
+										</div>
+									:
+									<>
+										<Splide
+											// onMoved={handleMove}
+											ref={splideRef}
+											hasTrack={false}
+											options={splideOptions}
+										>
+											<SplideTrack>
+												{newsData.map(
+													(newsItem, index) => (
+														<SplideSlide key={index}>
+															<FeaturedNewsCard
+																url={newsItem.imagen.url}
+																fechaPublicacion={newsItem.fechaPublicacion}
+																titulo={newsItem.titulo}
+																resumen={newsItem.resumen}
+																slug={newsItem.slug}
+															/>
+														</SplideSlide>
+													)
+												)}
+											</SplideTrack>
+										</Splide>
+										<div className="absolute top-1/2 -translate-y-1/2 -inset-x-[20px] pointer-events-none">
+											<div className="container flex justify-between gap-x-2 relative">
+												<ArrowButton
+													className="pointer-events-auto"
+													theme="dark"
+													onClick={handlePrev}
+													direction="left"
+													disabled={isPrevDisabled}
+												/>
+												<ArrowButton
+													className="pointer-events-auto"
+													theme="dark"
+													onClick={handleNext}
+													direction="right"
+													disabled={isNextDisabled}
+												/>
+											</div>
+										</div>
+									</>
+								}
 							</div>
 						</div>
 					</div>
@@ -167,8 +195,7 @@ export default function NoticiasPage() {
 											mode="wait"
 											onExitComplete={() => null}
 										>
-											{
-												modalOpen &&
+											{modalOpen &&
 												<Modal handleClose={close} >
 													<NoticiaFilter handleClose={close} />
 												</Modal>
@@ -180,31 +207,44 @@ export default function NoticiasPage() {
 									<NoticiaFilter />
 								</div>
 							</div>
-							<div>
+							<div className="w-full">
 								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
-									57 resultados en total
+									{resultados()}
 								</span>
+								{error && (
+									<p className="text-center">
+										Error al cargar los datos de la agenda o
+										evento no encontrado.
+									</p>
+								)}
 								<ul className="flex flex-col space-y-4 md:space-y-8">
-									{newsData.map((newsItem, index) => (
-										<li className="flex" key={index}>
-											<NewsCard
-												url={newsItem.imagen.formats.small.url}
-												fechaPublicacion={newsItem.fechaPublicacion}
-												titulo={newsItem.titulo}
-												resumen={newsItem.resumen}
-												slug={newsItem.slug}
-											/>
-										</li>
+									{isFetching
+										? skeletonArray.map((_, index) => (
+												<div
+													key={index}
+													className="h-[14rem] rounded-2xl overflow-hidden"
+												>
+													<Skeleton />
+												</div>
+										  ))
+										: newsData.map((newsItem, index) => (
+											<li className="flex" key={index}>
+												<NewsCard
+													url={newsItem.imagen.formats.small.url}
+													fechaPublicacion={newsItem.fechaPublicacion}
+													titulo={newsItem.titulo}
+													resumen={newsItem.resumen}
+													slug={newsItem.slug}
+												/>
+											</li>
 									))}
 								</ul>
 								<Pagination
 									className="pagination-bar"
 									currentPage={currentPage}
-									totalCount={newsData.length}
-									pageSize={PageSize}
-									onPageChange={(page) =>
-										setCurrentPage(page)
-									}
+									totalCount={newsDataQty}
+									pageSize={pageSize}
+									onPageChange={handlePageChange}
 								/>
 							</div>
 						</div>

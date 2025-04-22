@@ -57,4 +57,24 @@ export class NoticiasService {
 			throw error;
 		}
 	}
+	static async getListEntries(page = 1, pageSize = 5) {
+			try {
+				const params = {
+					'fields': 'titulo,slug,resumen,fechaPublicacion',
+					'populate': 'imagen',
+					'pagination[page]': page,
+					'pagination[pageSize]': pageSize,
+					'pagination[withCount]': true,
+				};
+	
+				const data = await strapiFetch<NoticiasResponse>(
+					RESOURCE_PATH,
+					{ params }
+				);
+				return data;
+			} catch (error) {
+				console.error('Error al obtener los datos:', error);
+				throw error;
+			}
+		}
 }
