@@ -24,7 +24,7 @@ export default function NewsContent({ noticia }: { noticia: string }) {
 	});
 
 	const { data: recentNews = [], isLoading: isRecentNewsLoading, error: recentNewsError } = useQuery({
-		queryKey: ['recent-news'],
+		queryKey: ['recent-news', noticia],
 		queryFn: () => NoticiasService.getRecentEntries(noticia),
 	});
 

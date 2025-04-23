@@ -12,6 +12,7 @@ import Layout from '@/ui/components/organisms/shared/layout';
 import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
 import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
 import { formatFullDate } from '@/ui/helpers/format-full-date';
+import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
 // import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 
 export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
@@ -23,14 +24,36 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 		queryFn: () => CursosYTalleresService.getEntryBySlug(curso),
 	});
 	  
-	// const { daysSummary, singleDate } = getCustomDates(
-	// 	courseAndWorkshopData?.[0]?.exact_dates || [],
-	// 	courseAndWorkshopData?.[0]?.date_ranges || []
-	// );
-	
-	if (!curso) return <p>Error: Slug no encontrado.</p>;
-	if (isLoading) return <p>Loading...</p>;
-	if (error || !coursesAndWorkshopsData || coursesAndWorkshopsData.length === 0) return <p>Error loading courseAndWorkshop data or courseAndWorkshop not found.</p>;
+	if (!curso) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Oops! No se encontró el curso o taller solicitado.</p>
+				</div>
+			</Layout>
+		);
+	}
+	if (isLoading) {
+		return <SkeletonBlog />;
+	}
+	if (error) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Error cargando los datos.</p>
+				</div>
+			</Layout>
+		);
+	}
+	if (!coursesAndWorkshopsData || coursesAndWorkshopsData.length === 0) {
+		return (
+			<Layout>
+				<div className="px-4 lg:px-[104px] bg-white pb-[80px] md:pb-[104px]">
+					<p>Curso o taller no encontrado.</p>
+				</div>
+			</Layout>
+		);
+	}
 	
 	const courseAndWorkshop = coursesAndWorkshopsData[0];
 
