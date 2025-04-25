@@ -96,7 +96,7 @@ export default function NewsContent({ noticia }: { noticia: string }) {
 				<div className="container">
 					<div className="max-w-[814px] mx-auto mb-[80px]">
 						<div className="flex justify-center">
-							<Badge className="max-md:mb-[18px]" label="Ballet San Marcos" size="small" />
+							<Badge className="max-md:mb-[18px]" label={newsItem.dependencia} size="small" />
 						</div>
 						<Title className="text-center !mb-1">
 							{newsItem.titulo}

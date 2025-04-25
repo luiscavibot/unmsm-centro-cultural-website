@@ -81,7 +81,7 @@ export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
 				<div className="container">
 					<div className="max-w-[814px] mx-auto">
 						<div className="flex justify-center">
-							<Badge className="max-md:mb-[18px]" label="Taller" size="small" />
+							<Badge className="max-md:mb-[18px]" label={courseAndWorkshop.tipo} size="small" />
 						</div>
 						<Title className="text-center !mb-2">
 							{courseAndWorkshop.titulo}
