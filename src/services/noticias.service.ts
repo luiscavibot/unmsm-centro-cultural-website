@@ -9,6 +9,7 @@ export class NoticiasService {
 			const params = {
 				'fields': 'titulo,slug,resumen,fechaPublicacion',
 				'populate': 'imagen',
+				'sort': 'fechaPublicacion:desc',
 			};
 
 			const data = await strapiFetch<NoticiasResponse>(
@@ -62,6 +63,7 @@ export class NoticiasService {
 				const params = {
 					'fields': 'titulo,slug,resumen,fechaPublicacion',
 					'populate': 'imagen',
+					'sort': 'fechaPublicacion:desc',
 					'pagination[page]': page,
 					'pagination[pageSize]': pageSize,
 					'pagination[withCount]': true,
