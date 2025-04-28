@@ -7,10 +7,12 @@ export class AgendaCulturalService {
 	static async getEntriesToHome() {
 		try {
 			const params = {
+				'fields': 'title,slug,summary,place',
 				'populate[0]': 'image',
 				'populate[1]': 'exact_dates',
 				'populate[2]': 'date_ranges.final_date',
 				'populate[3]': 'date_ranges.start_date',
+				'filters[isInDesktop][$eq]': 'true',
 			};
 
 			const data = await strapiFetch<AgendaCulturalResponse>(
