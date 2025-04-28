@@ -205,15 +205,15 @@ export default function Directorio() {
 											museoarql.ccsm@unmsm.edu.pe
 										</td>
 									</tr>
-									{/* <tr>
+									<tr>
 										<td>Museo de Arte</td>
-										<td>Directora</td>
-										<td>Patricia Mondoñedo Murillo</td>
+										<td></td>
+										<td></td>
 										<td>5214</td>
 										<td className="break-words">
 											museoarte.ccsm@unmsm.edu.pe
 										</td>
-									</tr> */}
+									</tr>
 									<tr>
 										<td>Dirección de Comunicaciones</td>
 										<td>Director</td>
