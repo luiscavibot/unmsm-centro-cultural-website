@@ -129,8 +129,8 @@ export default function Directorio() {
 									</tr>
 									<tr>
 										<td>Biblioteca España de las Artes</td>
-										<td>Encargado</td>
-										<td>Elio Obregón</td>
+										<td>Directora</td>
+										<td>Glenda Isaura Negrete Aliaga</td>
 										<td>5213</td>
 										<td className="break-words">
 											biblioteca.ccsm@unmsm.edu.pe
