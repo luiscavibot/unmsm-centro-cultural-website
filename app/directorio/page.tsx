@@ -35,7 +35,7 @@ export default function Directorio() {
 								</p>
 							</div>
 						</div>
-						<div className="relative overflow-x-auto max-w-full mb-[104px]">
+						<div className="relative overflow-x-auto max-w-full pb-[104px]">
 							<table className="max-w-full w-full">
 								<thead>
 									<tr>
@@ -205,7 +205,7 @@ export default function Directorio() {
 											museoarql.ccsm@unmsm.edu.pe
 										</td>
 									</tr>
-									<tr>
+									{/* <tr>
 										<td>Museo de Arte</td>
 										<td>Directora</td>
 										<td>Patricia Mondoñedo Murillo</td>
@@ -213,7 +213,7 @@ export default function Directorio() {
 										<td className="break-words">
 											museoarte.ccsm@unmsm.edu.pe
 										</td>
-									</tr>
+									</tr> */}
 									<tr>
 										<td>Dirección de Comunicaciones</td>
 										<td>Director</td>
