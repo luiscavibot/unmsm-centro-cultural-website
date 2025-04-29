@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: { params: Promise<{ noticia: 
 	const [noticiaData] = await getNoticia(noticia)
   
 	return {
-		title: noticiaData?.titulo ? `${noticiaData.titulo} | CCSM` : 'Noticia no encontrada',
+		title: noticiaData?.titulo ? `${noticiaData.titulo} | Noticias | CCSM` : 'Noticia no encontrada',
 		description: noticiaData?.resumen?.slice(0, 160) ?? 'Contenido no disponible',
 		openGraph: {
-			title: noticiaData?.titulo ? `${noticiaData.titulo} | CCSM` : 'Noticia no encontrada',
+			title: noticiaData?.titulo ? `${noticiaData.titulo} | Noticias | CCSM` : 'Noticia no encontrada',
 			description: noticiaData?.resumen?.slice(0, 160) ?? 'Contenido no disponible',
 			type: 'article',
 			images: [

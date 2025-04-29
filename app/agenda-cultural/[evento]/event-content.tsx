@@ -18,15 +18,16 @@ import BlockRendererClient from '@/ui/components/molecules/block-renderer-client
 import { AgendaCultural } from '@/interfaces/services/agenda-cultural.interface';
 import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
 
-export default function EventContent({ evento }: { evento: string }) {
+export default function EventContent({ evento, serverData }: { evento: string, serverData: AgendaCultural[] }) {
 	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
 	const {
-		data: eventData,
+		data: eventData = [],
 		isLoading: isEventLoading,
 		error: eventError,
-	} = useQuery({
+	} = useQuery<AgendaCultural[]>({
 		queryKey: ['event', evento],
 		queryFn: () => AgendaCulturalService.getEntryBySlug(evento),
+		initialData: serverData,
 	});
 
 	const {
