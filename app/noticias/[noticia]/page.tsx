@@ -1,13 +1,5 @@
-import NewsContent from './news-content';
-import { Noticias } from '@/interfaces/services/noticias.interface';
-
-import { cache } from 'react'
-import { NoticiasService } from '@/services/noticias.service'
-
-const getNoticia = cache(async (slug: string): Promise<Noticias[]> => {
-	const noticia = await NoticiasService.getEntryBySlug(slug);
-	return noticia;
-});
+import NewsContent from './news-content'
+import { getNoticia } from '@/ui/lib/get-noticias'
 
 export async function generateMetadata({ params }: { params: Promise<{ noticia: string }> }) {
 	const { noticia } = await params;
@@ -22,9 +14,9 @@ export async function generateMetadata({ params }: { params: Promise<{ noticia: 
 			type: 'article',
 			images: [
 				{
-					url: noticiaData?.imagen?.url,
-					width: noticiaData?.imagen?.width,
-					height: noticiaData?.imagen?.height,
+					url: `noticias/${noticia}/opengraph-image`,
+					width: 800,
+					height: 420,
 				}
 			]
 		},

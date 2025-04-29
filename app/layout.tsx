@@ -18,8 +18,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL(
+		process.env.NODE_ENV === 'development'
+		  ? 'http://localhost:3000'
+		  : 'https://centrocultural.unmsm.edu.pe'
+	),
 	title: 'Centro Cultural de San Marcos',
-	description: 'Página de inicio del Centro Cultural de San Marcos',
+	description: 'Página del Centro Cultural de San Marcos',
 };
 
 export default function RootLayout({
