@@ -12,16 +12,18 @@ import Layout from '@/ui/components/organisms/shared/layout';
 import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
 import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
 import { formatFullDate } from '@/ui/helpers/format-full-date';
+import { CursosYTalleres } from '@/interfaces/services/cursos-y-talleres.interface';
 import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
 // import useScrollOnLoad from '@/ui/hooks/use-scroll-on-load';
 
-export default function CourseAndWorkshopContent({ curso }: { curso: string }) {
+export default function CourseAndWorkshopContent({ curso, serverData }: { curso: string, serverData: CursosYTalleres[] }) {
 	// useScrollOnLoad();
 
 	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
-	const { data: coursesAndWorkshopsData, isLoading, error } = useQuery({
+	const { data: coursesAndWorkshopsData = [], isLoading, error } = useQuery({
 		queryKey: ['courseAndWorkshop', curso],
 		queryFn: () => CursosYTalleresService.getEntryBySlug(curso),
+		initialData: serverData,
 	});
 	  
 	if (!curso) {

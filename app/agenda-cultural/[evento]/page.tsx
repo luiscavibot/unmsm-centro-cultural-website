@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ evento: s
 		title: eventoData?.title ? `${eventoData.title} | Agenda Cultural | CCSM` : 'Evento no encontrado',
 		description: eventoData?.summary?.slice(0, 160) ?? 'Contenido no disponible',
 		openGraph: {
-			title: eventoData?.title ? `${eventoData.title}| Agenda Cultural | CCSM` : 'Evento no encontrado',
+			title: eventoData?.title ? `${eventoData.title} | Agenda Cultural | CCSM` : 'Evento no encontrado',
 			description: eventoData?.summary?.slice(0, 160) ?? 'Contenido no disponible',
 			type: 'article',
 			images: [
