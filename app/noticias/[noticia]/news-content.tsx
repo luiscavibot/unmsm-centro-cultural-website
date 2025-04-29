@@ -15,15 +15,16 @@ import { formatFullDate } from '@/ui/helpers/format-full-date';
 import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
 import { Noticias } from '@/interfaces/services/noticias.interface';
 
-export default function NewsContent({ noticia }: { noticia: string }) {
+export default function NewsContent({ noticia, serverData }: { noticia: string, serverData: Noticias[] }) {
 
 	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
-	const { data: newsData, isLoading: isNewsLoading, error: newsError } = useQuery({
-	queryKey: ['news', noticia],
-	queryFn: () => NoticiasService.getEntryBySlug(noticia),
+	const { data: newsData = [], isLoading: isNewsLoading, error: newsError } = useQuery<Noticias[]>({
+		queryKey: ['news', noticia],
+		queryFn: () => NoticiasService.getEntryBySlug(noticia),
+		initialData: serverData,
 	});
 
-	const { data: recentNews = [], isLoading: isRecentNewsLoading, error: recentNewsError } = useQuery({
+	const { data: recentNews = [], isLoading: isRecentNewsLoading, error: recentNewsError } = useQuery<Noticias[]>({
 		queryKey: ['recent-news', noticia],
 		queryFn: () => NoticiasService.getRecentEntries(noticia),
 	});
