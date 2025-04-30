@@ -1,16 +1,17 @@
 import NewsContent from './news-content'
 import { getNoticia } from '@/ui/lib/get-noticias'
+import type { Metadata } from 'next'
 
-export async function generateMetadata({ params }: { params: Promise<{ noticia: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ noticia: string }> }): Promise<Metadata> {
 	const { noticia } = await params;
 	const [noticiaData] = await getNoticia(noticia)
   
 	return {
 		title: noticiaData?.titulo ? `${noticiaData.titulo} | Noticias | CCSM` : 'Noticia no encontrada',
-		description: noticiaData?.resumen?.slice(0, 160) ?? 'Contenido no disponible',
+		description: noticiaData?.resumen?.slice(0, 80) ?? 'Contenido no disponible',
 		openGraph: {
 			title: noticiaData?.titulo ? `${noticiaData.titulo} | Noticias | CCSM` : 'Noticia no encontrada',
-			description: noticiaData?.resumen?.slice(0, 160) ?? 'Contenido no disponible',
+			description: noticiaData?.resumen?.slice(0, 80) ?? 'Contenido no disponible',
 			type: 'article',
 			images: [
 				{
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ noticia: 
 					width: 800,
 					height: 420,
 				}
-			]
+			],
 		},
 	}
 }
