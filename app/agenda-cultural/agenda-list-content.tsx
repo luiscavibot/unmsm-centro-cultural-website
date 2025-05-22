@@ -3,7 +3,7 @@
 import Tab from '@/ui/components/atoms/tab';
 import Title from '@/ui/components/atoms/title';
 import EventsCard from '@/ui/components/molecules/events-card';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Calendar from '@/ui/components/molecules/calendar';
 import Pagination from '@/ui/components/molecules/pagination';
 import Layout from '@/ui/components/organisms/shared/layout';
@@ -16,6 +16,11 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
 import Skeleton from '@/ui/components/atoms/skeleton';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useAppForm } from '@/lib/form/form';
+import { z } from 'zod';
+import { agendaCulturalSchema } from '@/ui/components/organisms/agenda-cultural/form/schema';
+import { agendaCulturalOpts } from '@/ui/components/organisms/agenda-cultural/form/default-values';
+import { useStore } from '@tanstack/react-form';
 
 type selectedTab = 'todos' | 'esta-semana';
 
@@ -33,6 +38,14 @@ const breadcrumbItems = [
 ];
 
 export default function CulturalAgendaPage() {
+	const form = useAppForm({
+		...agendaCulturalOpts,
+		onSubmit: async () => {},
+	});
+
+	const val = useStore(form.store, (state) => state.values);
+	console.log({ val });
+
 	const [modalOpen, setModalOpen] = useState(false);
 	const close = () => setModalOpen(false);
 	const open = () => setModalOpen(true);
@@ -142,6 +155,7 @@ export default function CulturalAgendaPage() {
 												<Modal handleClose={close}>
 													<AgendaFilter
 														handleClose={close}
+														form={form}
 													/>
 												</Modal>
 											)}
@@ -149,7 +163,7 @@ export default function CulturalAgendaPage() {
 									</div>
 								</div>
 								<div className="max-md:hidden">
-									<AgendaFilter />
+									<AgendaFilter form={form} />
 								</div>
 							</div>
 							<div className="w-full">
