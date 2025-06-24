@@ -8,14 +8,20 @@ import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import type { Splide as SplideType } from '@splidejs/splide';
 import useSplideControls from '@/ui/hooks/useSplideControls';
-import videosDireccionDeTurismo from '@/ui/mocks/videos-direccion-de-turismo';
+// import videosDireccionDeTurismo from '@/ui/mocks/videos-direccion-de-turismo';
 import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
+import { generateYouTubeThumbnail } from '@/ui/lib/generate-youtube-thumbnail';
+import { Entrevistas } from '@/interfaces/services/entrevistas.interface';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
 }
 
-const Interviews: React.FC = () => {
+interface Props {
+	entrevistas: Entrevistas[];
+}
+
+const Interviews: React.FC<Props> = ({ entrevistas }) => {
 
 	const splideRefVideosGalery = useRef<ExtendedSplideType>(null);
 
@@ -77,13 +83,13 @@ const Interviews: React.FC = () => {
 						options={splideOptionsVideosGalery}
 					>
 						<SplideTrack>
-							{videosDireccionDeTurismo.map(
+							{entrevistas.map(
 								(video, index) => (
 									<SplideSlide key={index}>
-										<Link href={video.link}>
+										<Link href={video.link_video}>
 											<div className="relative h-[221x] aspect-video rounded-2xl overflow-hidden mx-auto">
 												<Image
-													src={video.image}
+													src={ video.thumbnail_video?.url || generateYouTubeThumbnail(video.link_video) }
 													className="object-cover h-full"
 													alt={`video ${
 														index + 1
