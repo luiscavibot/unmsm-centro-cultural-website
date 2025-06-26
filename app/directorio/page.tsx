@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Title from '@/ui/components/atoms/title';
 import Layout from '@/ui/components/organisms/shared/layout';
@@ -18,7 +18,6 @@ const breadcrumbItems = [
 ];
 
 export default function Directorio() {
-
 	const { data, error, isFetching, isLoading } = useQuery({
 		queryKey: ['directorio'],
 		queryFn: () => DirectorioService.getEntries(),
@@ -62,8 +61,13 @@ export default function Directorio() {
 								<tbody>
 									{directorioData.length === 0 && (
 										<tr>
-											<td colSpan={5} className="text-center py-4">
-												{isLoading || isFetching ? 'Cargando...' : 'No hay datos disponibles.'}
+											<td
+												colSpan={5}
+												className="text-center py-4"
+											>
+												{isLoading || isFetching
+													? 'Cargando...'
+													: 'No hay datos disponibles.'}
 											</td>
 										</tr>
 									)}
@@ -75,14 +79,27 @@ export default function Directorio() {
 											<td>{item.nombre || ''}</td>
 											<td>{item.anexo || ''}</td>
 											<td className="break-words">
-												{item.correos.length > 0
-													? item.correos.map((correo, i) => (
-															<React.Fragment key={correo.id}>
-																{correo.correo}
-																{i < item.correos.length - 1 && <br />}
-															</React.Fragment>
-													))
-													: ''}
+												{item.contacto &&
+													item.contacto
+														.split(';')
+														.map((parte) =>
+															parte.trim()
+														)
+														.filter(
+															(parte) => parte
+														)
+														.map(
+															(parte, i, arr) => (
+																<span key={i}>
+																	{parte}
+																	{i <
+																		arr.length -
+																			1 && (
+																		<br />
+																	)}
+																</span>
+															)
+														)}
 											</td>
 										</tr>
 									))}
@@ -91,7 +108,9 @@ export default function Directorio() {
 						</div>
 
 						{error && (
-							<p className="text-red-600 text-center">Error al cargar el directorio.</p>
+							<p className="text-red-600 text-center">
+								Error al cargar el directorio.
+							</p>
 						)}
 					</div>
 				</div>

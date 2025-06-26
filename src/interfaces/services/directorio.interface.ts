@@ -13,15 +13,10 @@ export interface Directorio {
 }
 
 export interface ElementosDirectorio {
-    id:      number;
-    unidad:  null | string;
-    cargo:   null | string;
-    nombre:  null | string;
-    anexo:   null | string;
-    correos: Correo[];
-}
-
-export interface Correo {
-    id:     number;
-    correo: string;
+    id:         number;
+    unidad:     null | string;
+    cargo:      null | string;
+    nombre:     null | string;
+    anexo:      null | string;
+    contacto:   null | string;
 }

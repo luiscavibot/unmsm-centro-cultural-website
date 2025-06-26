@@ -8,7 +8,6 @@ export class DirectorioService {
 		try {
 			const params = {
 				'populate[0]': 'elementos_directorio',
-				'populate[1]': 'elementos_directorio.correos',
 			};
 
 			const data = await strapiFetch<DirectorioResponse>(
