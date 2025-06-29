@@ -1,6 +1,10 @@
+'use client';
+
 import Title from '@/ui/components/atoms/title';
 import Layout from '@/ui/components/organisms/shared/layout';
 import React from 'react';
+import { DirectorioService } from '@/services/directorio.service';
+import { keepPreviousData, useQuery } from '@tanstack/react-query';
 
 const breadcrumbItems = [
 	{
@@ -14,6 +18,14 @@ const breadcrumbItems = [
 ];
 
 export default function Directorio() {
+	const { data, error, isFetching, isLoading } = useQuery({
+		queryKey: ['directorio'],
+		queryFn: () => DirectorioService.getEntries(),
+		placeholderData: keepPreviousData,
+		refetchOnWindowFocus: false,
+	});
+	const directorioData = data?.elementos_directorio || [];
+
 	return (
 		<Layout
 			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/directorio_portada_efe70e6ad7.jpg"
@@ -47,203 +59,59 @@ export default function Directorio() {
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td>Dirección General</td>
-										<td>Director</td>
-										<td>César Puerta Villagaray</td>
-										<td>5201</td>
-										<td className="break-words">
-											direccion-g.ccsm@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Secretaria</td>
-										<td>Victoria Bertha Hidones Rosales</td>
-										<td>5202</td>
-										<td className="break-words">
-											direccion-g.ccsm@unmsm.edu.pe
-											<br />
-											vhidonesr_ac@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Mesa de Partes Virtual</td>
-										<td>Lludy Labajos Mesia</td>
-										<td></td>
-										<td className="break-words">
-											mesadepartesvirtual.centrocultural@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Coordinador</td>
-										<td>Miguel Flores Gonzáles</td>
-										<td>5209</td>
-										<td className="break-words">
-											direccion-g.ccsm@unmsm.edu.pe
-											<br />
-											mfloresg_ac@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>Dirección Ejecutiva</td>
-										<td>Directora </td>
-										<td>
-											Liliana Christina Villanueva Meyhuay
-										</td>
-										<td>5221</td>
-										<td className="break-words">
-											direccion-e.ccsm@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Asistente Administrativo</td>
-										<td>Alicia Matos Casildo</td>
-										<td>5203</td>
-										<td className="break-words">
-											direccion-e.ccsm@unmsm.edu.pe
-											<br />
-											amattosc_ac@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>Ballet de San Marcos</td>
-										<td>Coordinadora</td>
-										<td>Verónika Rodriguez</td>
-										<td></td>
-										<td className="break-words">
-											ballet.ccsm@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>Banda Universitaria de Música</td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td className="break-words">
-											bandauniversitaria.ccsm@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>Biblioteca España de las Artes</td>
-										<td>Directora</td>
-										<td>Glenda Isaura Negrete Aliaga</td>
-										<td>5213</td>
-										<td className="break-words">
-											biblioteca.ccsm@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Dirección de Cine y Producción
-											Audiovisual
-										</td>
-										<td>Directora</td>
-										<td>Estefanía De Cara</td>
-										<td>5211</td>
-										<td className="break-words">
-											dcpa.centrocultural@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Centro Universitario de Folklore
-										</td>
-										<td>Director</td>
-										<td>Eduardo Fiestas Peredo</td>
-										<td></td>
-										<td className="break-words">
-											folklore.ccsm@unmsm.edu.pe
-											<br />
-											WhatsApp: 951 138 146
-										</td>
-									</tr>
-									<tr>
-										<td>Dirección de Música</td>
-										<td>Encargado</td>
-										<td>José Mendieta Echevarria</td>
-										<td></td>
-										<td className="break-words">
-											direcciondemusica@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Teatro Universitario de San Marcos
-										</td>
-										<td>Directora</td>
-										<td>Cristina Lozano Cuba</td>
-										<td></td>
-										<td className="break-words">
-											teatro.ccsm@unmsm.edu.pe
-											<br />
-											WhatsApp: 944 780 420
-										</td>
-									</tr>
-									<tr>
-										<td>Dirección de Turismo</td>
-										<td>Coordinador</td>
-										<td>Marco Ernesto Rosales León</td>
-										<td></td>
-										<td className="break-words">
-											turismo.ccsm@unmsm.edu.pe
-											<br />
-											mrosalesl_ac@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Museo de Arqueología y Antropología
-										</td>
-										<td>Encargado</td>
-										<td>Roy Lazo Pérez</td>
-										<td>5216</td>
-										<td className="break-words">
-											museoarql.ccsm@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>Museo de Arte</td>
-										<td></td>
-										<td></td>
-										<td>5214</td>
-										<td className="break-words">
-											museoarte.ccsm@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>Dirección de Comunicaciones</td>
-										<td>Director</td>
-										<td>Luís Guerra Núñez</td>
-										<td></td>
-										<td className="break-words">
-											prensa.ccsm@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>Unidad de Control de Asistencia</td>
-										<td>Asistente Técnico</td>
-										<td>Javier Antonio Rodríguez Bustos</td>
-										<td>5208</td>
-										<td className="break-words">
-											javier.rodriguez@unmsm.edu.pe
-										</td>
-									</tr>
-									<tr>
-										<td>Unidad de Servicios Generales</td>
-										<td>Encargado</td>
-										<td>Juan Arias Blanco</td>
-										<td></td>
-										<td className="break-words">
-											jariasb_ac@unmsm.edu.pe
-										</td>
-									</tr>
+									{directorioData.length === 0 && (
+										<tr>
+											<td
+												colSpan={5}
+												className="text-center py-4"
+											>
+												{isLoading || isFetching
+													? 'Cargando...'
+													: 'No hay datos disponibles.'}
+											</td>
+										</tr>
+									)}
+
+									{directorioData.map((item) => (
+										<tr key={item.id}>
+											<td>{item.unidad || ''}</td>
+											<td>{item.cargo || ''}</td>
+											<td>{item.nombre || ''}</td>
+											<td>{item.anexo || ''}</td>
+											<td className="break-words">
+												{item.contacto &&
+													item.contacto
+														.split(';')
+														.map((parte) =>
+															parte.trim()
+														)
+														.filter(
+															(parte) => parte
+														)
+														.map(
+															(parte, i, arr) => (
+																<span key={i}>
+																	{parte}
+																	{i <
+																		arr.length -
+																			1 && (
+																		<br />
+																	)}
+																</span>
+															)
+														)}
+											</td>
+										</tr>
+									))}
 								</tbody>
 							</table>
 						</div>
+
+						{error && (
+							<p className="text-red-600 text-center">
+								Error al cargar el directorio.
+							</p>
+						)}
 					</div>
 				</div>
 			</>

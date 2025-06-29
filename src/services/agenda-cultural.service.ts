@@ -13,6 +13,7 @@ export class AgendaCulturalService {
 				'populate[2]': 'date_ranges.final_date',
 				'populate[3]': 'date_ranges.start_date',
 				'filters[isInDesktop][$eq]': 'true',
+				sort: 'createdAt:desc',
 			};
 
 			const data = await strapiFetch<AgendaCulturalResponse>(
@@ -33,6 +34,7 @@ export class AgendaCulturalService {
 				'populate[1]': 'exact_dates',
 				'populate[2]': 'date_ranges.final_date',
 				'populate[3]': 'date_ranges.start_date',
+				sort: 'createdAt:desc',
 			};
 
 			const data = await strapiFetch<AgendaCulturalResponse>(
@@ -54,6 +56,7 @@ export class AgendaCulturalService {
 				'populate[2]': 'date_ranges.final_date',
 				'populate[3]': 'date_ranges.start_date',
 				'pagination[limit]': 10,
+				sort: 'createdAt:desc',
 			};
 
 			const data = await strapiFetch<AgendaCulturalResponse>(
@@ -88,7 +91,7 @@ export class AgendaCulturalService {
 				'pagination[page]': page,
 				'pagination[pageSize]': pageSize,
 				'pagination[withCount]': true,
-				sort: 'createdAt:asc',
+				sort: 'createdAt:desc',
 			};
 
 			const data = await strapiFetch<AgendaCulturalResponse>(

@@ -13,6 +13,7 @@ import { PrincipalCoversService } from '@/services/principal-covers.service';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
 import { NoticiasService } from '@/services/noticias.service';
 import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
+import { EntrevistasService } from '@/services/entrevistas.service';
 
 export default async function Home() {
 	const principalCoversResp = await PrincipalCoversService.getAll();
@@ -27,6 +28,9 @@ export default async function Home() {
 	const noticiasResp = await NoticiasService.getEntriesToHome();
 	const noticias = noticiasResp || [];
 
+	const entrevistasResp = await EntrevistasService.getEntriesToHome();
+	const entrevistas = entrevistasResp || [];
+
 	return (
 		<div className="lg:-mt-[--header-bottom-height]">
 			<h1 className="hidden sr-only">Centro Cultural de San Marcos</h1>
@@ -39,7 +43,7 @@ export default async function Home() {
 			<Exhibitions />
 			<Library />
 			<ArtisticDirections />
-			<Interviews />
+			<Interviews entrevistas={entrevistas} />
 		</div>
 	);
 }
