@@ -1,15 +1,12 @@
+import qs from 'qs';
+
 const BASE_URL = process.env.NEXT_PUBLIC_STRAPI_BACK_URL;
 
 function buildQueryParams(params: Record<string, any>): string {
-	const query = new URLSearchParams();
-
-	Object.entries(params).forEach(([key, value]) => {
-		if (value !== undefined && value !== null) {
-			query.append(key, value);
-		}
+	return qs.stringify(params, {
+		addQueryPrefix: true,
+		encode: false,
 	});
-
-	return query.toString() ? `?${query.toString()}` : '';
 }
 
 export async function strapiFetch<T>(
@@ -25,24 +22,13 @@ export async function strapiFetch<T>(
 	const queryString = params ? buildQueryParams(params) : '';
 	const url = `${BASE_URL}${endpoint}${queryString}`;
 
-	const defaultHeaders = {
-		'Content-Type': 'application/json',
-	};
-
-	const config: RequestInit = {
+	const response = await fetch(url, {
 		method,
-		headers: {
-			...defaultHeaders,
-			...headers,
-		},
+		headers: { 'Content-Type': 'application/json', ...headers },
 		body: body ? JSON.stringify(body) : undefined,
-	};
-
-	const response = await fetch(url, config);
-
+	});
 	if (!response.ok) {
 		throw new Error(`Error en la solicitud: ${response.statusText}`);
 	}
-
 	return response.json() as Promise<T>;
 }

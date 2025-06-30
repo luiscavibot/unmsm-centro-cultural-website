@@ -3,22 +3,15 @@
 import Tab from '@/ui/components/atoms/tab';
 import Title from '@/ui/components/atoms/title';
 import EventsCard from '@/ui/components/molecules/events-card';
-import React, { useEffect, useState } from 'react';
-import Calendar from '@/ui/components/molecules/calendar';
+import React, { useState } from 'react';
 import Pagination from '@/ui/components/molecules/pagination';
 import Layout from '@/ui/components/organisms/shared/layout';
-import AgendaFilter from '@/ui/components/organisms/agenda-cultural/agenda-filter';
-import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
-import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
-import { AnimatePresence } from 'motion/react';
-import Modal from '@/ui/components/molecules/modal';
+import AgendaFilters from '@/ui/components/organisms/agenda-cultural/agenda-filters';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
 import Skeleton from '@/ui/components/atoms/skeleton';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useAppForm } from '@/lib/form/form';
-import { z } from 'zod';
-import { agendaCulturalSchema } from '@/ui/components/organisms/agenda-cultural/form/schema';
 import { agendaCulturalOpts } from '@/ui/components/organisms/agenda-cultural/form/default-values';
 import { useStore } from '@tanstack/react-form';
 
@@ -43,12 +36,13 @@ export default function CulturalAgendaPage() {
 		onSubmit: async () => {},
 	});
 
-	const val = useStore(form.store, (state) => state.values);
-	console.log({ val });
+	const dateRange = useStore(form.store, (state) => state.values.dateRange);
+	const organizer = useStore(form.store, (state) => state.values.organizador);
+	const mode = useStore(form.store, (state) => state.values.modalidad);
 
-	const [modalOpen, setModalOpen] = useState(false);
-	const close = () => setModalOpen(false);
-	const open = () => setModalOpen(true);
+	// const [modalOpen, setModalOpen] = useState(false);
+	// const close = () => setModalOpen(false);
+	// const open = () => setModalOpen(true);
 
 	const router = useRouter();
 	const searchParams = useSearchParams();
@@ -61,9 +55,15 @@ export default function CulturalAgendaPage() {
 	};
 
 	const { data, error, isFetching, isLoading } = useQuery({
-		queryKey: ['list-agenda', currentPage],
+		queryKey: ['list-agenda', currentPage, organizer, mode],
 		queryFn: () =>
-			AgendaCulturalService.getListEntries(currentPage, pageSize),
+			AgendaCulturalService.getListEntries({
+				page: currentPage,
+				pageSize,
+				organizer,
+				mode,
+				dateRange,
+			}),
 		placeholderData: keepPreviousData,
 		refetchOnWindowFocus: false,
 	});
@@ -133,7 +133,7 @@ export default function CulturalAgendaPage() {
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-20 md:pb-[104px]">
 					<div className="container">
 						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
-							<div>
+							{/* <div>
 								<div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
 									<Calendar className="grow" />
 									<div className="md:hidden">
@@ -153,7 +153,7 @@ export default function CulturalAgendaPage() {
 										>
 											{modalOpen && (
 												<Modal handleClose={close}>
-													<AgendaFilter
+													<AgendaFilters
 														handleClose={close}
 														form={form}
 													/>
@@ -162,10 +162,8 @@ export default function CulturalAgendaPage() {
 										</AnimatePresence>
 									</div>
 								</div>
-								<div className="max-md:hidden">
-									<AgendaFilter form={form} />
-								</div>
-							</div>
+							</div> */}
+							<AgendaFilters form={form} />
 							<div className="w-full">
 								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
 									{resultados()}

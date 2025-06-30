@@ -1,33 +1,18 @@
-// const agendaCulturalDefaultValues = {
-// 	date: { from: null, to: null },
-// 	modalidad: {
-// 		todos: false,
-// 		virtual: false,
-// 		presencial: false,
-// 		semipresencial: false,
-// 	},
-// 	organizador: {
-// 		todos: false,
-// 		bandaUniversitaria: false,
-// 		balletSanMarcos: false,
-// 		biblioteca: false,
-// 		centroUniversitario: false,
-// 		cine: false,
-// 		direccionMusica: false,
-// 		direccionTurismo: false,
-// 		museoArqueologia: false,
-// 		museoArte: false,
-// 		teatroUniversitario: false,
-// 	},
-// };
-
 import { formOptions } from '@tanstack/react-form';
 
-// export default agendaCulturalDefaultValues;
+interface DefaultValues {
+	dateRange: [string, string];
+	modalidad: string[];
+	organizador: string[];
+}
 
-export const agendaCulturalOpts = formOptions({
+interface FormOptions {
+	defaultValues: DefaultValues;
+}
+
+export const agendaCulturalOpts = formOptions<FormOptions>({
 	defaultValues: {
-		date: { from: null, to: null },
+		dateRange: ['', ''],
 		modalidad: [] as string[],
 		organizador: [] as string[],
 	},
