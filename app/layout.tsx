@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/ui/components/organisms/shared/header';
 import Footer from '@/ui/components/organisms/shared/footer';
 import QueryProvider from './query-provider';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const elMessiri = El_Messiri({
 	subsets: ['latin'],
@@ -46,6 +47,7 @@ export default function RootLayout({
 					</div>
 				</QueryProvider>
 			</body>
+			<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
 		</html>
 	);
 }
