@@ -15,6 +15,9 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
 import Skeleton from '@/ui/components/atoms/skeleton';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useAppForm } from '@/lib/form/form';
+import { useStore } from '@tanstack/react-form';
+import { cursosYtalleresFormOpts } from '@/ui/components/organisms/cursos-y-talleres/form/form-opts';
 
 const pageSize = 5;
 
@@ -30,9 +33,22 @@ const breadcrumbItems = [
 ];
 
 export default function CursosYTalleresPage() {
-	const [modalOpen, setModalOpen] = useState(false);
-	const close = () => setModalOpen(false);
-	const open = () => setModalOpen(true);
+	const form = useAppForm({
+		...cursosYtalleresFormOpts,
+		onSubmit: async () => {},
+	});
+
+	const dependencia = useStore(
+		form.store,
+		(state) => state.values.dependencia
+	);
+	const modalidad = useStore(form.store, (state) => state.values.modalidad);
+	const tipo = useStore(form.store, (state) => state.values.tipo);
+	const search = useStore(form.store, (state) => state.values.search);
+
+	// const [modalOpen, setModalOpen] = useState(false);
+	// const close = () => setModalOpen(false);
+	// const open = () => setModalOpen(true);
 
 	const handleSearch = (query: string) => {
 		console.log(query);
@@ -44,11 +60,27 @@ export default function CursosYTalleresPage() {
 	const [currentPage, setCurrentPage] = useState(pageFromQuery);
 
 	const { data, error, isFetching, isLoading } = useQuery({
-		queryKey: ['list-courses-and-workshops', currentPage],
-		queryFn: () => CursosYTalleresService.getListEntries(currentPage, pageSize),
+		queryKey: [
+			'list-courses-and-workshops',
+			currentPage,
+			dependencia,
+			modalidad,
+			tipo,
+			search,
+		],
+		queryFn: () =>
+			CursosYTalleresService.getListEntries({
+				page: currentPage,
+				pageSize,
+				tipo,
+				dependencia,
+				modalidad,
+				search,
+			}),
 		placeholderData: keepPreviousData,
 		refetchOnWindowFocus: false,
 	});
+
 	const coursesData = data?.data || [];
 	const coursesDataQty = data?.meta?.pagination?.total || 0;
 
@@ -95,13 +127,13 @@ export default function CursosYTalleresPage() {
 									América.
 								</p>
 							</div>
-							<div className="mt-20 max-md:hidden">
+							{/* <div className="mt-20 max-md:hidden">
 								<Search
 									className="max-w-[422px] mx-auto"
 									placeholder="¿Qué te gustaría aprender?"
 									onSearch={handleSearch}
 								/>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
@@ -109,8 +141,8 @@ export default function CursosYTalleresPage() {
 					<div className="container">
 						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
 							<div>
-								<div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
-									{/* <Calendar className="grow" /> */}
+								{/* <div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
+							
 									<Search
 										className="max-w-[422px] mx-auto grow"
 										placeholder="¿Qué te gustaría aprender?"
@@ -122,24 +154,28 @@ export default function CursosYTalleresPage() {
 											icon={<FilterIcon />}
 											theme="light"
 											type="on-click"
-											onClick={() => (modalOpen ? close() : open())}
+											onClick={() =>
+												modalOpen ? close() : open()
+											}
 										/>
 										<AnimatePresence
 											initial={false}
 											mode="wait"
 											onExitComplete={() => null}
 										>
-											{modalOpen &&
-												<Modal handleClose={close} >
-													<CursosYTalleresFilter handleClose={close} />
+											{modalOpen && (
+												<Modal handleClose={close}>
+													<CursosYTalleresFilter
+														handleClose={close}
+													/>
 												</Modal>
-											}
+											)}
 										</AnimatePresence>
 									</div>
-								</div>
-								<div className="max-md:hidden">
-									<CursosYTalleresFilter />
-								</div>
+								</div> */}
+								<CursosYTalleresFilter form={form} />
+								{/* <div className="max-md:hidden">
+								</div> */}
 							</div>
 							<div className="w-full">
 								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
@@ -161,19 +197,27 @@ export default function CursosYTalleresPage() {
 													<Skeleton />
 												</div>
 										  ))
-										: coursesData.map(
-											(course, index) => (
-												<li className="flex" key={index}>
+										: coursesData.map((course, index) => (
+												<li
+													className="flex"
+													key={index}
+												>
 													<CoursesAndWorkshopsCard
 														slug={course.slug}
 														tipo={course.tipo}
 														titulo={course.titulo}
 														resumen={course.resumen}
-														dependencia={course.dependencia}
-														url={course.imagen.formats.small.url}
+														dependencia={
+															course.dependencia
+														}
+														url={
+															course.imagen
+																.formats.small
+																.url
+														}
 													/>
 												</li>
-									))}
+										  ))}
 								</ul>
 								<Pagination
 									className="pagination-bar"

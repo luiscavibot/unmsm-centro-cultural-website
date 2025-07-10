@@ -12,8 +12,8 @@ import { AgendaCulturalService } from '@/services/agenda-cultural.service';
 import Skeleton from '@/ui/components/atoms/skeleton';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useAppForm } from '@/lib/form/form';
-import { agendaCulturalOpts } from '@/ui/components/organisms/agenda-cultural/form/default-values';
 import { useStore } from '@tanstack/react-form';
+import { agendaCulturalFormOpts } from '@/ui/components/organisms/agenda-cultural/form/form-opts';
 
 type selectedTab = 'todos' | 'esta-semana';
 
@@ -32,11 +32,11 @@ const breadcrumbItems = [
 
 export default function CulturalAgendaPage() {
 	const form = useAppForm({
-		...agendaCulturalOpts,
+		...agendaCulturalFormOpts,
 		onSubmit: async () => {},
 	});
 
-	const dateRange = useStore(form.store, (state) => state.values.dateRange);
+	// const dateRange = useStore(form.store, (state) => state.values.dateRange);
 	const organizer = useStore(form.store, (state) => state.values.organizador);
 	const mode = useStore(form.store, (state) => state.values.modalidad);
 
@@ -62,7 +62,7 @@ export default function CulturalAgendaPage() {
 				pageSize,
 				organizer,
 				mode,
-				dateRange,
+				// dateRange,
 			}),
 		placeholderData: keepPreviousData,
 		refetchOnWindowFocus: false,

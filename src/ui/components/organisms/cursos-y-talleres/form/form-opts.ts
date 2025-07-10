@@ -1,19 +1,21 @@
 import { formOptions } from '@tanstack/react-form';
 
 interface DefaultValues {
-	dateRange: [string, string];
+	dependencia: string[];
 	modalidad: string[];
-	organizador: string[];
+	tipo: string[];
+	search?: string;
 }
 
 interface FormOptions {
 	defaultValues: DefaultValues;
 }
 
-export const agendaCulturalOpts = formOptions<FormOptions>({
+export const cursosYtalleresFormOpts = formOptions<FormOptions>({
 	defaultValues: {
-		dateRange: ['', ''],
+		dependencia: [] as string[],
 		modalidad: [] as string[],
-		organizador: [] as string[],
+		tipo: [] as string[],
+		search: '',
 	},
 });

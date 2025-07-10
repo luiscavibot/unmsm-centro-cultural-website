@@ -1,7 +1,7 @@
 import ArrowDropdownIcon from '@/ui/components/atoms/icons/arrow-dropdown-icon';
-import { agendaCulturalOpts } from './form/default-values';
+import { agendaCulturalFormOpts } from './form/form-opts';
 
-import { modalidadOpts, organizadorOpts } from './form/input-opts';
+import { modalidadOpts, organizadorOpts } from './form/input-values';
 import { withForm } from '@/lib/form/form';
 
 type AgendaFiltersProps = {
@@ -9,7 +9,7 @@ type AgendaFiltersProps = {
 };
 
 const AgendaFilters = withForm({
-	...agendaCulturalOpts,
+	...agendaCulturalFormOpts,
 	props: {} as AgendaFiltersProps,
 	render: function Render({ form }) {
 		return (

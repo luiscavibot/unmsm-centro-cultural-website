@@ -96,7 +96,7 @@ export class AgendaCulturalService {
 		pageSize = 5,
 		organizer = [] as string[],
 		mode = [] as string[],
-		dateRange = ['', ''] as [string, string],
+		// dateRange = ['', ''] as [string, string],
 	}) {
 		try {
 			const organizerFilters = organizer.map((org) => ({
