@@ -12,6 +12,7 @@ import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import { useAppForm } from '@/lib/form/form';
 import { useStore } from '@tanstack/react-form';
 import { cursosYtalleresFormOpts } from '@/ui/components/organisms/cursos-y-talleres/form/form-opts';
+import Title from '@/ui/components/atoms/title';
 
 const pageSize = 5;
 const breadcrumbItems = [
@@ -122,6 +123,29 @@ export default function CursosYTalleresPage() {
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
+				<div className="px-4 lg:px-[104px] bg-white pb-14">
+					<div className="container">
+						<div className="max-w-[814px] mx-auto">
+							<Title className="text-center">
+								Cursos y talleres
+							</Title>
+							<div className="leading-[24px] text-dark-blue-2">
+								<p>
+									En el Centro Cultural de San Marcos te
+									ofrecemos cursos y talleres para niños,
+									jóvenes y adultos. Tienes a tu disposición
+									una variada lista de opciones: talleres
+									musicales, de danza, artes plásticas, cursos
+									especializados y mucho más. Te invitamos a
+									revisar a continuación las opciones de cada
+									una de las diez direcciones que conforman el
+									Centro Cultural de la Universidad Decana de
+									América.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-20 md:pb-[104px]">
 					<div className="container">
 						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
