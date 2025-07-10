@@ -1,62 +1,54 @@
 'use client';
 
-import Title from '@/ui/components/atoms/title';
 import CoursesAndWorkshopsCard from '@/ui/components/molecules/courses-and-workshops-card';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Pagination from '@/ui/components/molecules/pagination';
-import Search from '@/ui/components/atoms/inputs/search';
 import Layout from '@/ui/components/organisms/shared/layout';
 import CursosYTalleresFilter from '@/ui/components/organisms/cursos-y-talleres/cursos-y-talleres-filter';
-import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
-import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
-import { AnimatePresence } from 'motion/react';
-import Modal from '@/ui/components/molecules/modal';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
 import Skeleton from '@/ui/components/atoms/skeleton';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import { useAppForm } from '@/lib/form/form';
 import { useStore } from '@tanstack/react-form';
 import { cursosYtalleresFormOpts } from '@/ui/components/organisms/cursos-y-talleres/form/form-opts';
 
 const pageSize = 5;
-
 const breadcrumbItems = [
-	{
-		title: 'Inicio',
-		path: '/',
-	},
-	{
-		title: 'Cursos y talleres',
-		path: '/cursos-y-talleres',
-	},
+	{ title: 'Inicio', path: '/' },
+	{ title: 'Cursos y talleres', path: '/cursos-y-talleres' },
 ];
 
 export default function CursosYTalleresPage() {
+	const isFirstRender = useRef(true);
+	const router = useRouter();
+	const pathname = usePathname();
+	const searchParams = useSearchParams();
+
+	const initialSearch = searchParams.get('search') ?? '';
+	const initialTipo = searchParams.get('tipo')?.split(',') ?? [];
+	const initialDependencia =
+		searchParams.get('dependencia')?.split(',') ?? [];
+	const initialModalidad = searchParams.get('modalidad')?.split(',') ?? [];
+	const pageFromQuery = Number(searchParams.get('page')) || 1;
+
 	const form = useAppForm({
 		...cursosYtalleresFormOpts,
+		defaultValues: {
+			...cursosYtalleresFormOpts.defaultValues,
+			search: initialSearch,
+			tipo: initialTipo,
+			dependencia: initialDependencia,
+			modalidad: initialModalidad,
+		},
 		onSubmit: async () => {},
 	});
 
-	const dependencia = useStore(
-		form.store,
-		(state) => state.values.dependencia
-	);
-	const modalidad = useStore(form.store, (state) => state.values.modalidad);
-	const tipo = useStore(form.store, (state) => state.values.tipo);
-	const search = useStore(form.store, (state) => state.values.search);
+	const dependencia = useStore(form.store, (s) => s.values.dependencia);
+	const modalidad = useStore(form.store, (s) => s.values.modalidad);
+	const tipo = useStore(form.store, (s) => s.values.tipo);
+	const search = useStore(form.store, (s) => s.values.search);
 
-	// const [modalOpen, setModalOpen] = useState(false);
-	// const close = () => setModalOpen(false);
-	// const open = () => setModalOpen(true);
-
-	const handleSearch = (query: string) => {
-		console.log(query);
-	};
-
-	const router = useRouter();
-	const searchParams = useSearchParams();
-	const pageFromQuery = Number(searchParams.get('page')) || 1;
 	const [currentPage, setCurrentPage] = useState(pageFromQuery);
 
 	const { data, error, isFetching, isLoading } = useQuery({
@@ -83,7 +75,6 @@ export default function CursosYTalleresPage() {
 
 	const coursesData = data?.data || [];
 	const coursesDataQty = data?.meta?.pagination?.total || 0;
-
 	const skeletonArray: string[] = new Array(pageSize).fill('');
 
 	const resultados = () => {
@@ -94,11 +85,35 @@ export default function CursosYTalleresPage() {
 		if (coursesDataQty > 1) return `${coursesDataQty} resultados`;
 	};
 
+	useEffect(() => {
+		if (isFirstRender.current) {
+			isFirstRender.current = false;
+			return;
+		}
+		setCurrentPage(1);
+		const params = new URLSearchParams();
+		if (search) params.set('search', search);
+		if (tipo.length) params.set('tipo', tipo.join(','));
+		if (dependencia.length)
+			params.set('dependencia', dependencia.join(','));
+		if (modalidad.length) params.set('modalidad', modalidad.join(','));
+		params.set('page', '1');
+
+		router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+	}, [search, tipo, dependencia, modalidad, pathname, router]);
+
 	const handlePageChange = (page: number) => {
 		setCurrentPage(page);
-		const params = new URLSearchParams(searchParams.toString());
+
+		const params = new URLSearchParams();
+		if (search) params.set('search', search);
+		if (tipo.length) params.set('tipo', tipo.join(','));
+		if (dependencia.length)
+			params.set('dependencia', dependencia.join(','));
+		if (modalidad.length) params.set('modalidad', modalidad.join(','));
 		params.set('page', String(page));
-		router.push(`?${params.toString()}`, { scroll: false });
+
+		router.push(`${pathname}?${params.toString()}`, { scroll: false });
 	};
 
 	return (
@@ -107,76 +122,13 @@ export default function CursosYTalleresPage() {
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
-				<div className="px-4 lg:px-[104px] bg-white pb-14">
-					<div className="container">
-						<div className="max-w-[814px] mx-auto">
-							<Title className="text-center">
-								Cursos y talleres
-							</Title>
-							<div className="leading-[24px] text-dark-blue-2">
-								<p>
-									En el Centro Cultural de San Marcos te
-									ofrecemos cursos y talleres para niños,
-									jóvenes y adultos. Tienes a tu disposición
-									una variada lista de opciones: talleres
-									musicales, de danza, artes plásticas, cursos
-									especializados y mucho más. Te invitamos a
-									revisar a continuación las opciones de cada
-									una de las diez direcciones que conforman el
-									Centro Cultural de la Universidad Decana de
-									América.
-								</p>
-							</div>
-							{/* <div className="mt-20 max-md:hidden">
-								<Search
-									className="max-w-[422px] mx-auto"
-									placeholder="¿Qué te gustaría aprender?"
-									onSearch={handleSearch}
-								/>
-							</div> */}
-						</div>
-					</div>
-				</div>
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-20 md:pb-[104px]">
 					<div className="container">
 						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
 							<div>
-								{/* <div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
-							
-									<Search
-										className="max-w-[422px] mx-auto grow"
-										placeholder="¿Qué te gustaría aprender?"
-										onSearch={handleSearch}
-									/>
-									<div className="md:hidden">
-										<PrimaryButton
-											className="w-14 h-14"
-											icon={<FilterIcon />}
-											theme="light"
-											type="on-click"
-											onClick={() =>
-												modalOpen ? close() : open()
-											}
-										/>
-										<AnimatePresence
-											initial={false}
-											mode="wait"
-											onExitComplete={() => null}
-										>
-											{modalOpen && (
-												<Modal handleClose={close}>
-													<CursosYTalleresFilter
-														handleClose={close}
-													/>
-												</Modal>
-											)}
-										</AnimatePresence>
-									</div>
-								</div> */}
 								<CursosYTalleresFilter form={form} />
-								{/* <div className="max-md:hidden">
-								</div> */}
 							</div>
+
 							<div className="w-full">
 								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
 									{resultados()}
@@ -189,19 +141,16 @@ export default function CursosYTalleresPage() {
 								)}
 								<ul className="flex flex-col space-y-4 md:space-y-8">
 									{isFetching
-										? skeletonArray.map((_, index) => (
+										? skeletonArray.map((_, idx) => (
 												<div
-													key={index}
+													key={idx}
 													className="h-[14rem] rounded-2xl overflow-hidden"
 												>
 													<Skeleton />
 												</div>
 										  ))
-										: coursesData.map((course, index) => (
-												<li
-													className="flex"
-													key={index}
-												>
+										: coursesData.map((course, idx) => (
+												<li className="flex" key={idx}>
 													<CoursesAndWorkshopsCard
 														slug={course.slug}
 														tipo={course.tipo}

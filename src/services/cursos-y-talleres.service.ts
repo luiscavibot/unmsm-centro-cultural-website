@@ -38,26 +38,6 @@ export class CursosYTalleresService {
 			throw error;
 		}
 	}
-	// static async getListEntries(page = 1, pageSize = 5) {
-	// 	try {
-	// 		const params = {
-	// 			'fields': 'titulo,slug,resumen,dependencia,tipo',
-	// 			'populate': 'imagen',
-	// 			'pagination[page]': page,
-	// 			'pagination[pageSize]': pageSize,
-	// 			'pagination[withCount]': true,
-	// 		};
-
-	// 		const data = await strapiFetch<CursosYTalleresResponse>(
-	// 			RESOURCE_PATH,
-	// 			{ params }
-	// 		);
-	// 		return data;
-	// 	} catch (error) {
-	// 		console.error('Error al obtener los datos:', error);
-	// 		throw error;
-	// 	}
-	// }
 	static async getListEntries({
 		page = 1,
 		pageSize = 5,
@@ -99,7 +79,7 @@ export class CursosYTalleresService {
 				fields: 'titulo,slug,resumen,dependencia,tipo',
 				populate: ['imagen'],
 				pagination: { page, pageSize, withCount: true },
-				sort: 'createdAt:desc',
+				sort: 'fechaInicio:desc',
 				...(andFilters.length > 0 && { filters: { $and: andFilters } }),
 			};
 

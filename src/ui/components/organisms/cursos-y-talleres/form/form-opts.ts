@@ -4,7 +4,7 @@ interface DefaultValues {
 	dependencia: string[];
 	modalidad: string[];
 	tipo: string[];
-	search?: string;
+	search: string;
 }
 
 interface FormOptions {

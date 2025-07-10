@@ -11,6 +11,7 @@ export const dependenciaOpts = [
 	'Museo de Arqueología y Antropología',
 	'Museo de Arte de San Marcos',
 	'Teatro Universitario de San Marcos',
+	'CCSM',
 ];
 
 export const modalidadOpts = [
