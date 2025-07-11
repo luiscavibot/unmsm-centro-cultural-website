@@ -1,8 +1,4 @@
-import { useState, FC } from 'react';
 import ArrowDropdownIcon from '@/ui/components/atoms/icons/arrow-dropdown-icon';
-import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
-import TertiaryButton from '@/ui/components/atoms/buttons/tertiary-button';
-import Checkbox from '@/ui/components/atoms/inputs/checkbox';
 import { noticiasFormOpts } from './form/form-opts';
 import { withForm } from '@/lib/form/form';
 import { dependenciaOpts } from './form/input-values';
