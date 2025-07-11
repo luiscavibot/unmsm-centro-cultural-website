@@ -2,9 +2,8 @@
 
 import Title from '@/ui/components/atoms/title';
 import NewsCard from '@/ui/components/molecules/news-card';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Pagination from '@/ui/components/molecules/pagination';
-import Search from '@/ui/components/atoms/inputs/search';
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
@@ -14,14 +13,13 @@ import ArrowButton from '@/ui/components/atoms/buttons/arrow-button';
 import FeaturedNewsCard from '@/ui/components/molecules/featured-news-card';
 import Layout from '@/ui/components/organisms/shared/layout';
 import NoticiaFilter from '@/ui/components/organisms/noticias/noticias-filter';
-import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
-import FilterIcon from '@/ui/components/atoms/icons/filter-icon';
-import { AnimatePresence } from 'motion/react';
-import Modal from '@/ui/components/molecules/modal';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { NoticiasService } from '@/services/noticias.service';
 import Skeleton from '@/ui/components/atoms/skeleton';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useAppForm } from '@/lib/form/form';
+import { noticiasFormOpts } from '@/ui/components/organisms/noticias/form/form-opts';
+import { useStore } from '@tanstack/react-form';
 
 interface ExtendedSplideType extends SplideType {
 	splide: SplideType;
@@ -41,49 +39,46 @@ const breadcrumbItems = [
 ];
 
 export default function NoticiasPage() {
-
-	const splideRef = useRef<ExtendedSplideType>(null);
-
-	const splideOptions = {
-		type: 'slide',
-		width: '100%',
-		perPage: 1,
-		arrows: false,
-		pagination: false,
-		gap: '0px',
-		perMove: 1,
-	};
-
-	const [modalOpen, setModalOpen] = useState(false);
-	const close = () => setModalOpen(false);
-	const open = () => setModalOpen(true);
-
-	const handleSearch = (query: string) => {
-		console.log(query);
-	};
-
-	const {
-		handlePrev,
-		handleNext,
-		// handleMove,
-		isPrevDisabled,
-		isNextDisabled,
-	} = useSplideControls(splideRef);
-
+	const isFirstRender = useRef(true);
 	const router = useRouter();
+	const pathname = usePathname();
 	const searchParams = useSearchParams();
+
+	const initialSearch = searchParams.get('search') ?? '';
+	const initialDependencia =
+		searchParams.get('dependencia')?.split(',') ?? [];
 	const pageFromQuery = Number(searchParams.get('page')) || 1;
+
+	const form = useAppForm({
+		...noticiasFormOpts,
+		defaultValues: {
+			...noticiasFormOpts.defaultValues,
+			search: initialSearch,
+			dependencia: initialDependencia,
+		},
+		onSubmit: async () => {},
+	});
+
+	const dependencia = useStore(form.store, (s) => s.values.dependencia);
+	const search = useStore(form.store, (s) => s.values.search);
+
 	const [currentPage, setCurrentPage] = useState(pageFromQuery);
 
 	const { data, error, isFetching, isLoading } = useQuery({
-		queryKey: ['list-news', currentPage],
-		queryFn: () => NoticiasService.getListEntries(currentPage, pageSize),
+		queryKey: ['list-news', currentPage, dependencia, search],
+		queryFn: () =>
+			NoticiasService.getListEntries({
+				page: currentPage,
+				pageSize,
+				dependencia,
+				search,
+			}),
 		placeholderData: keepPreviousData,
 		refetchOnWindowFocus: false,
 	});
+
 	const newsData = data?.data || [];
 	const newsDataQty = data?.meta?.pagination?.total || 0;
-
 	const skeletonArray: string[] = new Array(pageSize).fill('');
 
 	const resultados = () => {
@@ -94,11 +89,53 @@ export default function NoticiasPage() {
 		if (newsDataQty > 1) return `${newsDataQty} resultados`;
 	};
 
+	useEffect(() => {
+		if (isFirstRender.current) {
+			isFirstRender.current = false;
+			return;
+		}
+		setCurrentPage(1);
+		const params = new URLSearchParams();
+		if (search) params.set('search', search);
+		if (dependencia.length)
+			params.set('dependencia', dependencia.join(','));
+		params.set('page', '1');
+
+		router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+	}, [search, dependencia, pathname, router]);
+
+	const splideRef = useRef<ExtendedSplideType>(null);
+	const splideOptions = {
+		type: 'slide',
+		width: '100%',
+		perPage: 1,
+		arrows: false,
+		pagination: false,
+		gap: '0px',
+		perMove: 1,
+	};
+	const {
+		handlePrev,
+		handleNext,
+		// handleMove,
+		isPrevDisabled,
+		isNextDisabled,
+	} = useSplideControls(splideRef);
+
+	// const [modalOpen, setModalOpen] = useState(false);
+	// const close = () => setModalOpen(false);
+	// const open = () => setModalOpen(true);
+
 	const handlePageChange = (page: number) => {
 		setCurrentPage(page);
-		const params = new URLSearchParams(searchParams.toString());
+
+		const params = new URLSearchParams();
+		if (search) params.set('search', search);
+		if (dependencia.length)
+			params.set('dependencia', dependencia.join(','));
 		params.set('page', String(page));
-		router.push(`?${params.toString()}`, { scroll: false });
+
+		router.push(`${pathname}?${params.toString()}`, { scroll: false });
 	};
 
 	return (
@@ -113,18 +150,23 @@ export default function NoticiasPage() {
 							<Title className="text-center">Noticias</Title>
 							<div className="md:hidden">
 								<p>
-									Mantente informado sobre todas las novedades del Centro Cultural San Marcos. En nuestra sección de noticias, compartimos actualizaciones sobre exposiciones, eventos, talleres y logros que reflejan nuestro compromiso con el arte y la cultura. Descubre lo más reciente en actividades y proyectos que conectan a nuestra comunidad y celebran la creatividad y el conocimiento.
+									Mantente informado sobre todas las novedades
+									del Centro Cultural San Marcos. En nuestra
+									sección de noticias, compartimos
+									actualizaciones sobre exposiciones, eventos,
+									talleres y logros que reflejan nuestro
+									compromiso con el arte y la cultura.
+									Descubre lo más reciente en actividades y
+									proyectos que conectan a nuestra comunidad y
+									celebran la creatividad y el conocimiento.
 								</p>
 							</div>
 							<div className="max-md:hidden relative">
-								{isFetching
-									? 
-										<div
-											className="h-[26.188rem] rounded-2xl overflow-hidden"
-										>
-											<Skeleton />
-										</div>
-									:
+								{isFetching ? (
+									<div className="h-[26.188rem] rounded-2xl overflow-hidden">
+										<Skeleton />
+									</div>
+								) : (
 									<>
 										<Splide
 											// onMoved={handleMove}
@@ -135,13 +177,27 @@ export default function NoticiasPage() {
 											<SplideTrack>
 												{newsData.map(
 													(newsItem, index) => (
-														<SplideSlide key={index}>
+														<SplideSlide
+															key={index}
+														>
 															<FeaturedNewsCard
-																url={newsItem.imagen.url}
-																fechaPublicacion={newsItem.fechaPublicacion}
-																titulo={newsItem.titulo}
-																resumen={newsItem.resumen}
-																slug={newsItem.slug}
+																url={
+																	newsItem
+																		.imagen
+																		.url
+																}
+																fechaPublicacion={
+																	newsItem.fechaPublicacion
+																}
+																titulo={
+																	newsItem.titulo
+																}
+																resumen={
+																	newsItem.resumen
+																}
+																slug={
+																	newsItem.slug
+																}
 															/>
 														</SplideSlide>
 													)
@@ -167,7 +223,7 @@ export default function NoticiasPage() {
 											</div>
 										</div>
 									</>
-								}
+								)}
 							</div>
 						</div>
 					</div>
@@ -176,7 +232,7 @@ export default function NoticiasPage() {
 					<div className="container">
 						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
 							<div>
-								<div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
+								{/* <div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
 									<Search
 										className="grow"
 										placeholder="¿Qué estás buscando?"
@@ -188,24 +244,29 @@ export default function NoticiasPage() {
 											icon={<FilterIcon />}
 											theme="light"
 											type="on-click"
-											onClick={() => (modalOpen ? close() : open())}
+											onClick={() =>
+												modalOpen ? close() : open()
+											}
 										/>
 										<AnimatePresence
 											initial={false}
 											mode="wait"
 											onExitComplete={() => null}
 										>
-											{modalOpen &&
-												<Modal handleClose={close} >
-													<NoticiaFilter handleClose={close} />
+											{modalOpen && (
+												<Modal handleClose={close}>
+													<NoticiaFilter
+														handleClose={close}
+													/>
 												</Modal>
-											}
+											)}
 										</AnimatePresence>
 									</div>
 								</div>
 								<div className="max-md:hidden">
 									<NoticiaFilter />
-								</div>
+								</div> */}
+								<NoticiaFilter form={form} />
 							</div>
 							<div className="w-full">
 								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
@@ -228,16 +289,27 @@ export default function NoticiasPage() {
 												</div>
 										  ))
 										: newsData.map((newsItem, index) => (
-											<li className="flex" key={index}>
-												<NewsCard
-													url={newsItem.imagen.formats.small.url}
-													fechaPublicacion={newsItem.fechaPublicacion}
-													titulo={newsItem.titulo}
-													resumen={newsItem.resumen}
-													slug={newsItem.slug}
-												/>
-											</li>
-									))}
+												<li
+													className="flex"
+													key={index}
+												>
+													<NewsCard
+														url={
+															newsItem.imagen
+																.formats.small
+																.url
+														}
+														fechaPublicacion={
+															newsItem.fechaPublicacion
+														}
+														titulo={newsItem.titulo}
+														resumen={
+															newsItem.resumen
+														}
+														slug={newsItem.slug}
+													/>
+												</li>
+										  ))}
 								</ul>
 								<Pagination
 									className="pagination-bar"

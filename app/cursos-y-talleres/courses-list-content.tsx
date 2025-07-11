@@ -1,17 +1,21 @@
 'use client';
 
-import CoursesAndWorkshopsCard from '@/ui/components/molecules/courses-and-workshops-card';
 import React, { useState, useEffect, useRef } from 'react';
-import Pagination from '@/ui/components/molecules/pagination';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
+import { keepPreviousData, useQuery } from '@tanstack/react-query';
+import { useStore } from '@tanstack/react-form';
+
+import { useAppForm } from '@/lib/form/form';
+import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
+import { cursosYtalleresFormOpts } from '@/ui/components/organisms/cursos-y-talleres/form/form-opts';
+
 import Layout from '@/ui/components/organisms/shared/layout';
 import CursosYTalleresFilter from '@/ui/components/organisms/cursos-y-talleres/cursos-y-talleres-filter';
-import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import { CursosYTalleresService } from '@/services/cursos-y-talleres.service';
+
+import CoursesAndWorkshopsCard from '@/ui/components/molecules/courses-and-workshops-card';
+import Pagination from '@/ui/components/molecules/pagination';
+
 import Skeleton from '@/ui/components/atoms/skeleton';
-import { useRouter, useSearchParams, usePathname } from 'next/navigation';
-import { useAppForm } from '@/lib/form/form';
-import { useStore } from '@tanstack/react-form';
-import { cursosYtalleresFormOpts } from '@/ui/components/organisms/cursos-y-talleres/form/form-opts';
 import Title from '@/ui/components/atoms/title';
 
 const pageSize = 5;
@@ -152,7 +156,6 @@ export default function CursosYTalleresPage() {
 							<div>
 								<CursosYTalleresFilter form={form} />
 							</div>
-
 							<div className="w-full">
 								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
 									{resultados()}

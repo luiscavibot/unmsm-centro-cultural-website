@@ -7,12 +7,6 @@ import { withForm } from '@/lib/form/form';
 import { dependenciaOpts, modalidadOpts, tipoOpts } from './form/input-values';
 import { cursosYtalleresFormOpts } from './form/form-opts';
 
-// interface CheckboxItem {
-// 	id: number;
-// 	label: string;
-// 	checked: boolean;
-// }
-
 type CursosYTalleresFilterProps = {
 	handleClose?: () => void;
 };
