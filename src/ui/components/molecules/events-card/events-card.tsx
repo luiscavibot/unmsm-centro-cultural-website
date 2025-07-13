@@ -5,22 +5,6 @@ import DateRangeIcon from '../../atoms/icons/date-range-icon';
 import ClockIcon from '../../atoms/icons/clock-icon';
 import OutlinePlaceIcon from '../../atoms/icons/outilne-place-icon';
 import { AgendaCultural } from '@/interfaces/services/agenda-cultural.interface';
-import { getCustomDates } from '@/ui/helpers/get-custom-date';
-
-// interface EventsCardProps {
-// 	slug: string;
-// 	url: string;
-// 	title: string;
-// 	summary: string;
-// 	date: string;
-// 	dateString: string;
-// 	time: string;
-// 	timeString: string;
-// 	place: string;
-// 	type: string;
-// 	dependency: string;
-// 	image: string;
-// }
 
 const EventsCard: React.FC<AgendaCultural> = ({
 	slug,
@@ -28,16 +12,11 @@ const EventsCard: React.FC<AgendaCultural> = ({
 	title,
 	summary,
 	place,
-	exact_dates,
-	date_ranges,
 	mode,
 	organizer,
+	dateString,
+	hourString,
 }) => {
-	const { daysSummary, singleDate } = getCustomDates(
-		exact_dates,
-		date_ranges
-	);
-
 	return (
 		<Link
 			className="inline-flex group w-full"
@@ -63,29 +42,29 @@ const EventsCard: React.FC<AgendaCultural> = ({
 							Dependencia: {organizer}
 						</span>
 						<div className="leading-[normal] text-sm font-semibold mt-4 space-y-1">
-							<div className="flex p-1 gap-2 items-center">
-								<DateRangeIcon
-									className="shrink-0"
-									ariaLabel="Fecha"
-									color="dark"
-								/>
-								<time
-									className="block"
-									dateTime={daysSummary || singleDate?.day}
-								>
-									{daysSummary || singleDate?.day}
-								</time>
-							</div>
-							{singleDate?.time && (
+							{dateString && (
+								<div className="flex p-1 gap-2 items-center">
+									<DateRangeIcon
+										className="shrink-0"
+										ariaLabel="Fecha"
+										color="dark"
+									/>
+									<time
+										className="block"
+										dateTime={dateString}
+									>
+										{dateString}
+									</time>
+								</div>
+							)}
+							{hourString && (
 								<div className="flex p-1 gap-2 items-center">
 									<ClockIcon
 										className="shrink-0"
 										ariaLabel="Hora"
 										color="dark"
 									/>
-									<time className="block">
-										{singleDate?.time}
-									</time>
+									<time className="block">{hourString}</time>
 								</div>
 							)}
 							<div className="flex p-1 gap-2 items-center">

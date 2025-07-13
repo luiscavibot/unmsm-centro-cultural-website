@@ -29,9 +29,9 @@ const CoursesAndWorkshops: FC<Props> = ({ cursosYTalleres }) => {
 		pagination: false,
 		gap: '0px',
 		perMove: 1,
-		interval: 3000,
+		interval: 1500,
 		autoplay: true,
-		pauseOnHover: false,
+		pauseOnHover: true,
 		loop: true,
 	};
 

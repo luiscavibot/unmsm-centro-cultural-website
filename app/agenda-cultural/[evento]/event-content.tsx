@@ -10,16 +10,19 @@ import OutlinePlaceIcon from '@/ui/components/atoms/icons/outilne-place-icon';
 import Title from '@/ui/components/atoms/title';
 import UpcomingEventsCard from '@/ui/components/molecules/upcoming-events-card';
 import Layout from '@/ui/components/organisms/shared/layout';
-// import eventsDataToHome from '@/ui/mocks/events-data-to-home';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
-// import { useCustomDates } from '@/ui/hooks/use-custom-date';
-import { getCustomDates } from '@/ui/helpers/get-custom-date';
 import BlockRendererClient from '@/ui/components/molecules/block-renderer-client';
-import { AgendaCultural } from '@/interfaces/services/agenda-cultural.interface';
 import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
+import { AgendaCultural } from '@/interfaces/services/agenda-cultural.interface';
+// import PrimaryButton from '@/ui/components/atoms/buttons/primary-button';
 
-export default function EventContent({ evento, serverData }: { evento: string, serverData: AgendaCultural[] }) {
-	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
+export default function EventContent({
+	evento,
+	serverData,
+}: {
+	evento: string;
+	serverData: AgendaCultural[];
+}) {
 	const {
 		data: eventData = [],
 		isLoading: isEventLoading,
@@ -38,11 +41,6 @@ export default function EventContent({ evento, serverData }: { evento: string, s
 		queryKey: ['upcoming-events'],
 		queryFn: () => AgendaCulturalService.getUpcomingEvents(evento),
 	});
-
-	const { daysSummary, singleDate } = getCustomDates(
-		eventData?.[0]?.exact_dates || [],
-		eventData?.[0]?.date_ranges || []
-	);
 
 	if (!evento) {
 		return (
@@ -119,12 +117,16 @@ export default function EventContent({ evento, serverData }: { evento: string, s
 										Fecha
 									</span>
 								</div>
-								<time
-									className="block pl-5 font-medium leading-[21px] text-sm"
-									dateTime={daysSummary || singleDate?.day}
-								>
-									{daysSummary || singleDate?.day}
-								</time>
+								{event.dateString ? (
+									<time
+										className="block pl-5 font-medium leading-[21px] text-sm"
+										dateTime={event.dateString || ''}
+									>
+										{event.dateString}
+									</time>
+								) : (
+									<div className="ml-5 h-[1px] relative top-2 w-10 border-b-[1px]"></div>
+								)}
 							</div>
 
 							<div className="min-w-[155px]">
@@ -138,12 +140,12 @@ export default function EventContent({ evento, serverData }: { evento: string, s
 										Horario
 									</span>
 								</div>
-								{singleDate?.time ? (
+								{event.hourString ? (
 									<time
 										className="block pl-5 font-medium leading-[21px] text-sm"
-										dateTime={singleDate?.time}
+										dateTime={event.hourString}
 									>
-										{singleDate?.time}
+										{event.hourString}
 									</time>
 								) : (
 									<div className="ml-5 h-[1px] relative top-2 w-10 border-b-[1px]"></div>
@@ -200,11 +202,11 @@ export default function EventContent({ evento, serverData }: { evento: string, s
 												key={index}
 												slug={event.slug}
 												title={event.title}
-												exact_dates={event.exact_dates}
-												date_ranges={event.date_ranges}
 												mode={event.mode}
 												place={event.place}
 												organizer={event.organizer}
+												dateString={event.dateString}
+												hourString={event.hourString}
 											/>
 										)
 									)}

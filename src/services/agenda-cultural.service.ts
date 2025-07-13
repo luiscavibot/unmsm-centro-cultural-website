@@ -1,6 +1,5 @@
 import { strapiFetch } from '@/data-source/strapi-back-instance';
 import { AgendaCulturalResponse } from '@/interfaces/services/agenda-cultural.interface';
-import { determineEventDate } from '@/ui/helpers/determine-event-date';
 
 const RESOURCE_PATH = '/agenda-cultural-eventos';
 
@@ -8,15 +7,17 @@ export class AgendaCulturalService {
 	static async getEntriesToHome() {
 		try {
 			const params = {
-				fields: ['title', 'slug', 'summary', 'place'],
-				populate: [
-					'image',
-					'exact_dates',
-					'date_ranges.final_date',
-					'date_ranges.start_date',
+				fields: [
+					'title',
+					'slug',
+					'summary',
+					'place',
+					'dateString',
+					'hourString',
 				],
+				populate: ['image'],
 				filters: { isInDesktop: { $eq: true } },
-				sort: 'createdAt:desc',
+				sort: 'validityPeriodStart:desc',
 			};
 
 			const response = await strapiFetch<AgendaCulturalResponse>(
@@ -34,12 +35,7 @@ export class AgendaCulturalService {
 		try {
 			const params = {
 				filters: { slug: { $eq: slug } },
-				populate: [
-					'image',
-					'exact_dates',
-					'date_ranges.final_date',
-					'date_ranges.start_date',
-				],
+				populate: ['image'],
 				sort: 'createdAt:desc',
 			};
 
@@ -56,15 +52,25 @@ export class AgendaCulturalService {
 
 	static async getUpcomingEvents(currentSlug: string) {
 		try {
+			const andFilters: Record<string, any>[] = [];
+
+			if (currentSlug) {
+				andFilters.push({ slug: { $ne: currentSlug } });
+			}
+
 			const params = {
-				filters: { slug: { $ne: currentSlug } },
-				populate: [
-					'image',
-					'exact_dates',
-					'date_ranges.final_date',
-					'date_ranges.start_date',
-				],
-				pagination: { limit: 10 },
+				filters: {
+					$and: [
+						{
+							validityPeriodStart: {
+								$gte: new Date().toISOString(),
+							},
+						},
+						...andFilters,
+					],
+				},
+				populate: ['image'],
+				pagination: { limit: 3 },
 				sort: 'createdAt:desc',
 			};
 
@@ -73,18 +79,7 @@ export class AgendaCulturalService {
 				{ params }
 			);
 
-			const now = new Date();
-			const upcoming = response.data.filter((event) => {
-				const date = determineEventDate(event);
-				return date >= now;
-			});
-
-			const sorted = upcoming.sort(
-				(a, b) =>
-					determineEventDate(a).getTime() -
-					determineEventDate(b).getTime()
-			);
-			return sorted.slice(0, 3);
+			return response.data;
 		} catch (error) {
 			console.error('Error al obtener eventos próximos:', error);
 			throw error;
@@ -96,7 +91,7 @@ export class AgendaCulturalService {
 		pageSize = 5,
 		organizer = [] as string[],
 		mode = [] as string[],
-		// dateRange = ['', ''] as [string, string],
+		dateRange = ['', ''] as [string, string],
 	}) {
 		try {
 			const organizerFilters = organizer.map((org) => ({
@@ -111,16 +106,19 @@ export class AgendaCulturalService {
 			if (modeFilters.length) {
 				andFilters.push({ $or: modeFilters });
 			}
+			if (dateRange[0] && dateRange[1]) {
+				andFilters.push({
+					$and: [
+						{ validityPeriodStart: { $gte: dateRange[0] } },
+						{ validityPeriodEnd: { $lte: dateRange[1] } },
+					],
+				});
+			}
 
 			const params: Record<string, any> = {
-				populate: [
-					'image',
-					'exact_dates',
-					'date_ranges.final_date',
-					'date_ranges.start_date',
-				],
+				populate: ['image'],
 				pagination: { page, pageSize, withCount: true },
-				sort: 'createdAt:desc',
+				sort: 'validityPeriodStart:desc',
 				...(andFilters.length > 0 && { filters: { $and: andFilters } }),
 			};
 

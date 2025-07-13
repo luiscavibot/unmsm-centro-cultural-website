@@ -36,7 +36,14 @@ export default function CulturalAgendaPage() {
 		onSubmit: async () => {},
 	});
 
-	// const dateRange = useStore(form.store, (state) => state.values.dateRange);
+	// const [validityPeriodStart, validityPeriodEnd] = useStore(
+	// 	form.store,
+	// 	(state) => state.values.dateRange
+	// );
+	// console.log('validityPeriodStart', validityPeriodStart);
+	// console.log('validityPeriodEnd', validityPeriodEnd);
+	const dateRange = useStore(form.store, (state) => state.values.dateRange);
+
 	const organizer = useStore(form.store, (state) => state.values.organizador);
 	const mode = useStore(form.store, (state) => state.values.modalidad);
 
@@ -55,14 +62,14 @@ export default function CulturalAgendaPage() {
 	};
 
 	const { data, error, isFetching, isLoading } = useQuery({
-		queryKey: ['list-agenda', currentPage, organizer, mode],
+		queryKey: ['list-agenda', currentPage, organizer, mode, dateRange],
 		queryFn: () =>
 			AgendaCulturalService.getListEntries({
 				page: currentPage,
 				pageSize,
 				organizer,
 				mode,
-				// dateRange,
+				dateRange,
 			}),
 		placeholderData: keepPreviousData,
 		refetchOnWindowFocus: false,

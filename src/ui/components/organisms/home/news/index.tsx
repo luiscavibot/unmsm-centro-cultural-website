@@ -86,7 +86,9 @@ const News: FC<Props> = ({ noticias }) => {
 								<SplideSlide key={index}>
 									<NewsHomeCard
 										url={noticia.imagen.formats.small.url}
-										fechaPublicacion={noticia.fechaPublicacion}
+										fechaPublicacion={
+											noticia.fechaPublicacion
+										}
 										titulo={noticia.titulo}
 										resumen={noticia.resumen}
 										slug={noticia.slug}

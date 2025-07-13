@@ -19,16 +19,16 @@ const EventsHomeCard: FC<AgendaCultural> = ({
 	place,
 	exact_dates,
 	date_ranges,
+	hourString,
+	dateString,
 }) => {
 	const { wrapperRef, containerRef, percentage, isLargeScreen } =
 		useResponsivePercentage();
-	// const { daysSummary, singleDate, allDatesFormatted } = getCustomDates(
 	const { daysSummary, singleDate } = getCustomDates(
 		exact_dates,
 		date_ranges
 	);
-	// console.log('allDatesFormatted-->', allDatesFormatted);
-	
+
 	return (
 		<article
 			ref={wrapperRef}
@@ -80,21 +80,23 @@ const EventsHomeCard: FC<AgendaCultural> = ({
 									className="block"
 									dateTime={daysSummary || singleDate?.day}
 								>
-									{daysSummary || singleDate?.day}
+									{/* {daysSuhourStringmmary || singleDate?.day} */}
+									{dateString || '_'}
 								</time>
 							</div>
-							{singleDate?.time && (
-								<div className="flex p-1 gap-2 items-center">
-									<ClockIcon
-										className="shrink-0"
-										ariaLabel="Hora"
-										color="dark"
-									/>
-									<time className="block">
-										{singleDate?.time}
-									</time>
-								</div>
-							)}
+							<div className="flex p-1 gap-2 items-center">
+								<ClockIcon
+									className="shrink-0"
+									ariaLabel="Hora"
+									color="dark"
+								/>
+								<time className="block">
+									{/* {singleDate?.time} */}
+									{hourString || '_'}
+								</time>
+							</div>
+							{/* {singleDate?.time && (
+							)} */}
 							<div className="flex p-1 gap-2 items-center">
 								<OutlinePlaceIcon
 									className="shrink-0"

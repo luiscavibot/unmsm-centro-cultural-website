@@ -1,6 +1,4 @@
-import {
-	type BlocksContent,
-} from "@strapi/blocks-react-renderer";
+import { type BlocksContent } from '@strapi/blocks-react-renderer';
 
 export type DescriptionBlock = ParagraphBlock | HeadingBlock | ImageBlock;
 
@@ -102,6 +100,8 @@ export interface AgendaCultural {
 	description: BlocksContent;
 	summary: string;
 	image: Image;
+	hourString: string | null;
+	dateString: string | null;
 	exact_dates: ExactDate[] | null;
 	date_ranges: DateRange[] | null;
 }

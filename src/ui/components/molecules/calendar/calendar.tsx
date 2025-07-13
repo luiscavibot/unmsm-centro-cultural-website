@@ -55,7 +55,7 @@ const Calendar: React.FC<CalendarProps> = ({
 		<div className={cn('relative', className)} ref={ref}>
 			<button
 				className={cn(
-					'flex w-full items-center justify-between gap-2 px-4 py-3 text-left rounded-lg bg-white ring-1 ring-inset ring-gray-200 hover:ring-blue-300 transition',
+					'flex w-full items-center justify-between gap-2 px-4 py-3 text-left rounded-lg bg-white ring-1 ring-dark-white-3 ring-inset hover:ring-blue-300 transition',
 					!range && 'text-gray-400'
 				)}
 				onClick={(e) => {
