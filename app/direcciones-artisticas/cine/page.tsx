@@ -61,13 +61,15 @@ export default function Cine() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto pb-14">
 							<Title className="text-center max-w-[550px] mx-auto">
-								Dirección de Cine y Producción Audiovisual UNMSM (DCPA) 
+								Dirección de Cine y Producción Audiovisual UNMSM
+								(DCPA)
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									Explora el mundo del séptimo arte a través de la
-									Dirección de Cine y Producción Audiovisual. Aquí, el talento y
-									la creatividad de estudiantes, cineastas y
+									Explora el mundo del séptimo arte a través
+									de la Dirección de Cine y Producción
+									Audiovisual. Aquí, el talento y la
+									creatividad de estudiantes, cineastas y
 									docentes se expresan en proyectos que
 									abordan temas culturales, sociales y
 									artísticos, reflejando la identidad y
@@ -184,7 +186,8 @@ export default function Cine() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y
@@ -195,13 +198,13 @@ export default function Cine() {
 						<div className="flex flex-col gap-y-4">
 							<SecondaryButton
 								type="internal-link"
-								href="/cursos-y-talleres"
+								href="/cursos-y-talleres?dependencia=Direcci%C3%B3n+de+Cine+y+Producci%C3%B3n+Audiovisual&page=1"
 								theme="dark"
 								label="Cursos y talleres"
 							/>
 							<SecondaryButton
 								type="internal-link"
-								href="/agenda-cultural"
+								href="/agenda-cultural?organizer=Dirección+de+Cine+y+Producción+Audiovisual&page=1"
 								theme="dark"
 								label="Eventos"
 							/>

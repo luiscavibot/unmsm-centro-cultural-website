@@ -228,7 +228,8 @@ export default function Ballet() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y
@@ -239,13 +240,13 @@ export default function Ballet() {
 						<div className="flex flex-col gap-y-4">
 							<SecondaryButton
 								type="internal-link"
-								href="/cursos-y-talleres"
+								href="/cursos-y-talleres?dependencia=Ballet+San+Marcos&page=1"
 								theme="dark"
 								label="Cursos y talleres"
 							/>
 							<SecondaryButton
 								type="internal-link"
-								href="/agenda-cultural"
+								href="/agenda-cultural?organizer=Ballet+San+Marcos&page=1"
 								theme="dark"
 								label="Eventos"
 							/>

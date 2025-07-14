@@ -39,16 +39,38 @@ export default function Musica() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2 mb-4">
 								<p className="mb-5">
-									El Coro Universitario (CUSM) fue fundado en noviembre de 1954, a propuesta de la Federación de Estudiantes de San Marcos (FUSM), por la musicóloga, arreglista y compositora Rosa Alarco Larrabure, quien dedicó su vida a la investigación de la música tradicional peruana.
+									El Coro Universitario (CUSM) fue fundado en
+									noviembre de 1954, a propuesta de la
+									Federación de Estudiantes de San Marcos
+									(FUSM), por la musicóloga, arreglista y
+									compositora Rosa Alarco Larrabure, quien
+									dedicó su vida a la investigación de la
+									música tradicional peruana.
 								</p>
 								<p className="mb-5">
-									Durante todos estos años de difusión musical, el Coro Universitario ha ofrecido innumerables presentaciones en diversos lugares de nuestro país, ha sido parte de festivales nacionales e internacionales y participa activamente de las actividades organizadas por la Universidad.
+									Durante todos estos años de difusión
+									musical, el Coro Universitario ha ofrecido
+									innumerables presentaciones en diversos
+									lugares de nuestro país, ha sido parte de
+									festivales nacionales e internacionales y
+									participa activamente de las actividades
+									organizadas por la Universidad.
 								</p>
 								<p className="mb-5">
-									El coro de San Marcos es el coro universitario más antiguo del Perú y su actual elenco prepara, Obras escénico-musicales, de carácter clásico y popular.
+									El coro de San Marcos es el coro
+									universitario más antiguo del Perú y su
+									actual elenco prepara, Obras
+									escénico-musicales, de carácter clásico y
+									popular.
 								</p>
 								<p>
-									En la actualidad el Coro Universitario está bajo la dirección de los Maestros José Mendieta Echevarría y Rafael González Carranza, quienes tienen a su cargo los cursos de Técnica vocal y lectura musical de la Dirección de Música del Centro Cultural de San Marcos.
+									En la actualidad el Coro Universitario está
+									bajo la dirección de los Maestros José
+									Mendieta Echevarría y Rafael González
+									Carranza, quienes tienen a su cargo los
+									cursos de Técnica vocal y lectura musical de
+									la Dirección de Música del Centro Cultural
+									de San Marcos.
 								</p>
 							</div>
 							<Link
@@ -87,8 +109,8 @@ export default function Musica() {
 												Horario de atención en oficina
 											</p>
 											<p className="font-medium">
-												Lunes a viernes de 8:30 a. m. a 1
-												p. m. y de 2 p. m. a 4 p. m.
+												Lunes a viernes de 8:30 a. m. a
+												1 p. m. y de 2 p. m. a 4 p. m.
 											</p>
 										</div>
 									</div>
@@ -150,7 +172,8 @@ export default function Musica() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y
@@ -161,13 +184,13 @@ export default function Musica() {
 						<div className="flex flex-col gap-y-4">
 							<SecondaryButton
 								type="internal-link"
-								href="/cursos-y-talleres"
+								href="/cursos-y-talleres?dependencia=Dirección+de+Música&page=1"
 								theme="dark"
 								label="Cursos y talleres"
 							/>
 							<SecondaryButton
 								type="internal-link"
-								href="/agenda-cultural"
+								href="/agenda-cultural?organizer=Dirección+de+Música&page=1"
 								theme="dark"
 								label="Eventos"
 							/>

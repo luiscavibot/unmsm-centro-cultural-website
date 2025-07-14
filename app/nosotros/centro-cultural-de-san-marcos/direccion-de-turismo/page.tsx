@@ -79,10 +79,35 @@ export default function DireccionDeTurismo() {
 							<div className="leading-[24px] text-dark-blue-2 mb-4 space-y-10">
 								<div>
 									<p className="mb-5">
-										En junio de 1996 a través de una iniciativa del Centro Cultural de San Marcos, dirigida por la Srta. Judith Ramírez Castro, se convoca a estudiantes de las Escuelas de Historia y Arqueología de la Facultad de Ciencias Sociales de nuestra casa de estudios quienes desarrollaban investigaciones en el Archivo Histórico Domingo Angulo y el Museo de Arqueología y Antropología UNMSM para conformar lo que sería en el tiempo el primer grupo de guías turísticos que inicia sus labores en junio de 1996 para atender las visita programada de colegios.
+										En junio de 1996 a través de una
+										iniciativa del Centro Cultural de San
+										Marcos, dirigida por la Srta. Judith
+										Ramírez Castro, se convoca a estudiantes
+										de las Escuelas de Historia y
+										Arqueología de la Facultad de Ciencias
+										Sociales de nuestra casa de estudios
+										quienes desarrollaban investigaciones en
+										el Archivo Histórico Domingo Angulo y el
+										Museo de Arqueología y Antropología
+										UNMSM para conformar lo que sería en el
+										tiempo el primer grupo de guías
+										turísticos que inicia sus labores en
+										junio de 1996 para atender las visita
+										programada de colegios.
 									</p>
 									<p className="mb-5">
-										Nuestra dependencia inicialmente fue denominada Oficina de Turismo. Por Resolución Rectoral N° 00639 - CR - 98 del 3 de febrero de 1998 como dependencia (dirección) del Centro Cultural de la Universidad de San Marcos, se le denominó Oficina de Turismo y Relaciones Públicas. En el año 2002 se le cambió a Oficina de Información y Turismo. Desde el año 2007 se le confirió la denominación que hoy lleva: Dirección de Turismo.
+										Nuestra dependencia inicialmente fue
+										denominada Oficina de Turismo. Por
+										Resolución Rectoral N° 00639 - CR - 98
+										del 3 de febrero de 1998 como
+										dependencia (dirección) del Centro
+										Cultural de la Universidad de San
+										Marcos, se le denominó Oficina de
+										Turismo y Relaciones Públicas. En el año
+										2002 se le cambió a Oficina de
+										Información y Turismo. Desde el año 2007
+										se le confirió la denominación que hoy
+										lleva: Dirección de Turismo.
 									</p>
 								</div>
 								<div>
@@ -98,10 +123,38 @@ export default function DireccionDeTurismo() {
 								</div>
 								<div>
 									<p className="mb-5">
-										La primera jefatura fue asumida por la especialista en turismo Ludovina Cachuán Estrada en el período 1998-2003. Durante su gestión, se sentaron las bases para las futuras labores del área. Se conformó un equipo de guías turísticos con un profundo conocimiento de la historia de la Universidad Nacional Mayor de San Marcos y la Casona sanmarquina. Además, se organizaron conferencias y cursos relacionados con el sector turismo y el patrimonio de la ciudad de Lima.
+										La primera jefatura fue asumida por la
+										especialista en turismo Ludovina Cachuán
+										Estrada en el período 1998-2003. Durante
+										su gestión, se sentaron las bases para
+										las futuras labores del área. Se
+										conformó un equipo de guías turísticos
+										con un profundo conocimiento de la
+										historia de la Universidad Nacional
+										Mayor de San Marcos y la Casona
+										sanmarquina. Además, se organizaron
+										conferencias y cursos relacionados con
+										el sector turismo y el patrimonio de la
+										ciudad de Lima.
 									</p>
 									<p className="mb-5">
-										Juan Peralta Berrios, Historiador del Arte, asumió la conducción de la dependencia en el período 2004 - 2010 con el objetivo de convertirla en un eje de desarrollo que integre las actividades culturales de la institución con una solidad proyección hacia la comunidad. Organizó internamente las funciones en Administración, Investigación y Relaciones Públicas en una conexión dinámica con la jefatura. Al equipo compuesto de historiadores y profesionales de turismo se le sumó periódicamente un conjunto de voluntarios para atender las variadas labores principiando por atender la promoción del patrimonio sanmarquino.
+										Juan Peralta Berrios, Historiador del
+										Arte, asumió la conducción de la
+										dependencia en el período 2004 - 2010
+										con el objetivo de convertirla en un eje
+										de desarrollo que integre las
+										actividades culturales de la institución
+										con una solidad proyección hacia la
+										comunidad. Organizó internamente las
+										funciones en Administración,
+										Investigación y Relaciones Públicas en
+										una conexión dinámica con la jefatura.
+										Al equipo compuesto de historiadores y
+										profesionales de turismo se le sumó
+										periódicamente un conjunto de
+										voluntarios para atender las variadas
+										labores principiando por atender la
+										promoción del patrimonio sanmarquino.
 									</p>
 								</div>
 								<div>
@@ -117,7 +170,25 @@ export default function DireccionDeTurismo() {
 								</div>
 								<div>
 									<p className="mb-5">
-										Desde el año 2011 hasta la actualidad, el historiador Marco Rosales León dirige la conducción y liderazgo de la dependencia. El eje de trabajo se centra en promover una política cultural desde la tradición institucional que se refleja en la investigación, reflexión y crítica. Aportando al sector turismo desde la organización de conferencias y cursos que señalen su problemática, planteamiento de soluciones y responsabilidad de su ejercicio. Nuestra labor informativa de historia y patrimonio y el desarrollo de nuestros servicios de visitas guiadas se centran en la posibilidad de conocer la Historia del Perú a partir de la Historia de la Universidad de Nacional Mayor de San Marcos, Decana de América.
+										Desde el año 2011 hasta la actualidad,
+										el historiador Marco Rosales León dirige
+										la conducción y liderazgo de la
+										dependencia. El eje de trabajo se centra
+										en promover una política cultural desde
+										la tradición institucional que se
+										refleja en la investigación, reflexión y
+										crítica. Aportando al sector turismo
+										desde la organización de conferencias y
+										cursos que señalen su problemática,
+										planteamiento de soluciones y
+										responsabilidad de su ejercicio. Nuestra
+										labor informativa de historia y
+										patrimonio y el desarrollo de nuestros
+										servicios de visitas guiadas se centran
+										en la posibilidad de conocer la Historia
+										del Perú a partir de la Historia de la
+										Universidad de Nacional Mayor de San
+										Marcos, Decana de América.
 									</p>
 								</div>
 								<div className="relative">
@@ -180,7 +251,8 @@ export default function DireccionDeTurismo() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y
@@ -191,13 +263,13 @@ export default function DireccionDeTurismo() {
 						<div className="flex flex-col gap-y-4">
 							<SecondaryButton
 								type="internal-link"
-								href="/cursos-y-talleres"
+								href="/cursos-y-talleres?dependencia=Dirección+de+Turismo&page=1"
 								theme="dark"
 								label="Cursos y talleres"
 							/>
 							<SecondaryButton
 								type="internal-link"
-								href="/agenda-cultural"
+								href="/agenda-cultural?organizer=Dirección+de+Turismo&page=1"
 								theme="dark"
 								label="Eventos"
 							/>
