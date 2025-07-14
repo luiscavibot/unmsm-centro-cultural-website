@@ -3,19 +3,24 @@
 import Tab from '@/ui/components/atoms/tab';
 import Title from '@/ui/components/atoms/title';
 import EventsCard from '@/ui/components/molecules/events-card';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Pagination from '@/ui/components/molecules/pagination';
 import Layout from '@/ui/components/organisms/shared/layout';
 import AgendaFilters from '@/ui/components/organisms/agenda-cultural/agenda-filters';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { AgendaCulturalService } from '@/services/agenda-cultural.service';
 import Skeleton from '@/ui/components/atoms/skeleton';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useAppForm } from '@/lib/form/form';
 import { useStore } from '@tanstack/react-form';
 import { agendaCulturalFormOpts } from '@/ui/components/organisms/agenda-cultural/form/form-opts';
+import dayjs from 'dayjs';
+import isoWeek from 'dayjs/plugin/isoWeek';
+dayjs.extend(isoWeek);
 
-type selectedTab = 'todos' | 'esta-semana';
+const iso8601Format = 'YYYY-MM-DD';
+
+type selectedTab = 'all' | 'this-week';
 
 const pageSize = 5;
 
@@ -30,20 +35,35 @@ const breadcrumbItems = [
 	},
 ];
 
+const emptyDateRange: [string, string] = ['', ''];
+
 export default function CulturalAgendaPage() {
+	const isFirstRender = useRef(true);
+	const router = useRouter();
+	const pathname = usePathname();
+	const searchParams = useSearchParams();
+
+	const initialDateRange = searchParams.get('dateRange')
+		? (searchParams.get('dateRange')?.split(',') as [string, string]) ||
+		  emptyDateRange
+		: emptyDateRange;
+
+	const initialModalidad = searchParams.get('modalidad')?.split(',') ?? [];
+	const initialOrganizer = searchParams.get('organizer')?.split(',') ?? [];
+	const pageFromQuery = Number(searchParams.get('page')) || 1;
+
 	const form = useAppForm({
 		...agendaCulturalFormOpts,
+		defaultValues: {
+			...agendaCulturalFormOpts.defaultValues,
+			dateRange: initialDateRange,
+			modalidad: initialModalidad,
+			organizador: initialOrganizer,
+		},
 		onSubmit: async () => {},
 	});
 
-	// const [validityPeriodStart, validityPeriodEnd] = useStore(
-	// 	form.store,
-	// 	(state) => state.values.dateRange
-	// );
-	// console.log('validityPeriodStart', validityPeriodStart);
-	// console.log('validityPeriodEnd', validityPeriodEnd);
 	const dateRange = useStore(form.store, (state) => state.values.dateRange);
-
 	const organizer = useStore(form.store, (state) => state.values.organizador);
 	const mode = useStore(form.store, (state) => state.values.modalidad);
 
@@ -51,14 +71,20 @@ export default function CulturalAgendaPage() {
 	// const close = () => setModalOpen(false);
 	// const open = () => setModalOpen(true);
 
-	const router = useRouter();
-	const searchParams = useSearchParams();
-	const pageFromQuery = Number(searchParams.get('page')) || 1;
 	const [currentPage, setCurrentPage] = useState(pageFromQuery);
 
-	const [selectedTab, setSelectedTab] = useState<selectedTab>('todos');
-	const handleClick = (tab: selectedTab) => {
+	const [selectedTab, setSelectedTab] = useState<selectedTab>('all');
+	const handleWeekClick = (tab: selectedTab) => {
 		setSelectedTab(tab);
+		if (tab === 'this-week') {
+			const startOfWeek = dayjs()
+				.startOf('isoWeek')
+				.format(iso8601Format);
+			const endOfWeek = dayjs().endOf('isoWeek').format(iso8601Format);
+			form.setFieldValue('dateRange', [startOfWeek, endOfWeek]);
+		} else {
+			form.setFieldValue('dateRange', emptyDateRange);
+		}
 	};
 
 	const { data, error, isFetching, isLoading } = useQuery({
@@ -74,9 +100,9 @@ export default function CulturalAgendaPage() {
 		placeholderData: keepPreviousData,
 		refetchOnWindowFocus: false,
 	});
+
 	const agendaData = data?.data || [];
 	const agendaDataQty = data?.meta?.pagination?.total || 0;
-
 	const skeletonArray: string[] = new Array(pageSize).fill('');
 
 	const resultados = () => {
@@ -87,11 +113,36 @@ export default function CulturalAgendaPage() {
 		if (agendaDataQty > 1) return `${agendaDataQty} resultados`;
 	};
 
+	useEffect(() => {
+		if (isFirstRender.current) {
+			isFirstRender.current = false;
+			return;
+		}
+		setCurrentPage(1);
+		const params = new URLSearchParams();
+		if (dateRange[0] && dateRange[1]) {
+			params.set('dateRange', dateRange.join(','));
+		} else {
+			params.delete('dateRange');
+		}
+		if (organizer.length) params.set('organizer', organizer.join(','));
+		if (mode.length) params.set('modalidad', mode.join(','));
+		params.set('page', '1');
+		router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+	}, [dateRange, organizer, mode, pathname, router]);
+
 	const handlePageChange = (page: number) => {
 		setCurrentPage(page);
 		const params = new URLSearchParams(searchParams.toString());
-		params.set('page', String(page));
-		router.push(`?${params.toString()}`, { scroll: false });
+		if (dateRange[0] && dateRange[1]) {
+			params.set('dateRange', dateRange.join(','));
+		} else {
+			params.delete('dateRange');
+		}
+		if (organizer.length) params.set('organizer', organizer.join(','));
+		if (mode.length) params.set('modalidad', mode.join(','));
+		params.set('page', page.toString());
+		router.replace(`${pathname}?${params.toString()}`, { scroll: false });
 	};
 
 	return (
@@ -122,16 +173,16 @@ export default function CulturalAgendaPage() {
 						<div className="flex gap-x-4">
 							<Tab
 								label="Todos"
-								selected={selectedTab === 'todos'}
+								selected={selectedTab === 'all'}
 								onClick={() => {
-									handleClick('todos');
+									handleWeekClick('all');
 								}}
 							/>
 							<Tab
 								label="Esta semana"
-								selected={selectedTab === 'esta-semana'}
+								selected={selectedTab === 'this-week'}
 								onClick={() => {
-									handleClick('esta-semana');
+									handleWeekClick('this-week');
 								}}
 							/>
 						</div>
@@ -170,7 +221,10 @@ export default function CulturalAgendaPage() {
 									</div>
 								</div>
 							</div> */}
-							<AgendaFilters form={form} />
+							<AgendaFilters
+								form={form}
+								isDateRangeDisabled={selectedTab !== 'all'}
+							/>
 							<div className="w-full">
 								<span className="font-medium leading-[24px] text-left md:text-right flex items-end justify-start md:justify-end w-full mb-6 md:mb-8 md:h-[56px]">
 									{resultados()}

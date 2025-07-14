@@ -29,6 +29,7 @@ const EventsCard: React.FC<AgendaCultural> = ({
 						className="object-cover h-full"
 						alt={title}
 						fill
+						sizes="(max-width: 768px) 100vw, 500px"
 					/>
 				</figure>
 				{/* <div className="bg-white p-6 w-[553px] flex-shrink-0"> */}

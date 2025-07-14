@@ -13,12 +13,14 @@ export interface CalendarProps {
 	className?: string;
 	selected?: DateRange;
 	onSelect?: (range: DateRange | undefined) => void;
+	disabled?: boolean;
 }
 
 const Calendar: React.FC<CalendarProps> = ({
 	className = '',
 	selected,
 	onSelect,
+	disabled,
 }) => {
 	const [internal, setInternal] = useState<DateRange | undefined>();
 	const range = selected ?? internal;
@@ -56,10 +58,12 @@ const Calendar: React.FC<CalendarProps> = ({
 			<button
 				className={cn(
 					'flex w-full items-center justify-between gap-2 px-4 py-3 text-left rounded-lg bg-white ring-1 ring-dark-white-3 ring-inset hover:ring-blue-300 transition',
-					!range && 'text-gray-400'
+					!range && 'text-gray-400',
+					disabled && 'bg-gray-400 cursor-not-allowed'
 				)}
 				onClick={(e) => {
 					e.preventDefault();
+					if (disabled) return;
 					setIsOpen((v) => !v);
 				}}
 			>
@@ -81,6 +85,7 @@ const Calendar: React.FC<CalendarProps> = ({
 							onSelect={setRange}
 							numberOfMonths={1}
 							locale={es}
+							disabled={disabled}
 						/>
 					</motion.div>
 				)}

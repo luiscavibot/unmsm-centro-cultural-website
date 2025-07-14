@@ -2,7 +2,16 @@ import { useFieldContext } from '@/lib/form/form-context';
 import Calendar from '@/ui/components/molecules/calendar';
 import dayjs from 'dayjs';
 
-export function CalendarField(props: { className?: string }) {
+interface CalendarFieldProps {
+	className?: string;
+	disabled?: boolean;
+}
+
+export function CalendarField(
+	props: CalendarFieldProps = {
+		disabled: false,
+	}
+) {
 	const field = useFieldContext<[string, string]>();
 	const [fromStr, toStr] = field.state.value;
 	const from = fromStr ? dayjs(fromStr).toDate() : undefined;

@@ -6,17 +6,23 @@ import { withForm } from '@/lib/form/form';
 
 type AgendaFiltersProps = {
 	handleClose?: () => void;
+	isDateRangeDisabled?: boolean;
 };
 
 const AgendaFilters = withForm({
 	...agendaCulturalFormOpts,
-	props: {} as AgendaFiltersProps,
-	render: function Render({ form }) {
+	props: { isDateRangeDisabled: false } as AgendaFiltersProps,
+	render: function Render({ form, isDateRangeDisabled }) {
 		return (
 			<div>
 				<div className="max-md:hidden mb-8 max-md:flex-row max-md:gap-x-4">
 					<form.AppField name="dateRange" mode="array">
-						{(field) => <field.CalendarField className="grow" />}
+						{(field) => (
+							<field.CalendarField
+								className="grow"
+								disabled={isDateRangeDisabled}
+							/>
+						)}
 					</form.AppField>
 				</div>
 
