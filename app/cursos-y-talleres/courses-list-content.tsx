@@ -171,7 +171,7 @@ export default function CursosYTalleresPage() {
 										? skeletonArray.map((_, idx) => (
 												<div
 													key={idx}
-													className="h-[14rem] rounded-2xl overflow-hidden"
+													className="h-[19.3125rem] md:h-[21.625rem] rounded-2xl overflow-hidden"
 												>
 													<Skeleton />
 												</div>
