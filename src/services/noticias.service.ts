@@ -10,6 +10,8 @@ export class NoticiasService {
 				fields: 'titulo,slug,resumen,fechaPublicacion',
 				populate: 'imagen',
 				sort: 'fechaPublicacion:desc',
+				'pagination[page]': 1,
+				'pagination[pageSize]': 10,
 			};
 
 			const data = await strapiFetch<NoticiasResponse>(RESOURCE_PATH, {
