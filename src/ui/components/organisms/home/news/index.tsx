@@ -67,11 +67,11 @@ const News: FC<Props> = ({ noticias }) => {
 			</div>
 			<div className="container flex flex-col gap-y-8 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] items-center justify-between gap-x-14 relative">
 				<div className="flex flex-row items-center justify-center p-2 gap-2 text-white">
-					<h2 className="font-messiri text-[24px] lg:text-[40px]">
-						Noticias
-					</h2>
-					<Link href="/noticias">
-						<ExternalLinkIcon />
+					<Link className="contents" href="/noticias">
+						<h2 className="font-messiri text-[24px] lg:text-[40px]">
+							Noticias
+						</h2>
+						<ExternalLinkIcon className="max-lg:w-5" />
 					</Link>
 				</div>
 				<div className="max-lg:w-full" id="slider">
@@ -85,7 +85,15 @@ const News: FC<Props> = ({ noticias }) => {
 							{noticias.map((noticia, index) => (
 								<SplideSlide key={index}>
 									<NewsHomeCard
-										url={noticia.imagen.formats.small.url}
+										url={
+											noticia.imagen?.formats?.small
+												?.url ||
+											noticia.imagen?.formats?.medium
+												?.url ||
+											noticia.imagen?.formats?.large
+												?.url ||
+											noticia.imagen?.url
+										}
 										fechaPublicacion={
 											noticia.fechaPublicacion
 										}
