@@ -184,7 +184,22 @@ export default function NoticiasPage() {
 																url={
 																	newsItem
 																		.imagen
-																		.url
+																		?.formats
+																		?.small
+																		?.url ||
+																	newsItem
+																		.imagen
+																		?.formats
+																		?.medium
+																		?.url ||
+																	newsItem
+																		.imagen
+																		?.formats
+																		?.large
+																		?.url ||
+																	newsItem
+																		.imagen
+																		?.url
 																}
 																fechaPublicacion={
 																	newsItem.fechaPublicacion
@@ -296,8 +311,15 @@ export default function NoticiasPage() {
 													<NewsCard
 														url={
 															newsItem.imagen
-																.formats.small
-																.url
+																?.formats?.small
+																?.url ||
+															newsItem.imagen
+																?.formats
+																?.medium?.url ||
+															newsItem.imagen
+																?.formats?.large
+																?.url ||
+															newsItem.imagen?.url
 														}
 														fechaPublicacion={
 															newsItem.fechaPublicacion
