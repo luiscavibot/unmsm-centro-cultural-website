@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function CineHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/direccion_de_cine_y_produccion_audiovisual_portada_59dabd60c3.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/direccion_de_cine_y_produccion_audiovisual_portada_59dabd60c3.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -117,7 +117,7 @@ export default function CineHistoria() {
 								<div>
 									<figure className="relative h-[400px] max-w-[644px] w-full md:w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/cine_historia_1_c0f03df03a.jpg"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/cine_historia_1_c0f03df03a.jpg"
 											className="object-cover h-full"
 											alt="Historia Cine 1"
 											fill
@@ -141,17 +141,18 @@ export default function CineHistoria() {
 									</p>
 									<p className="mb-5">
 										Ya como Dirección de Cine y Producción
-										Audiovisual, se firma el 2009, un convenio de
-										cooperación con la corporación española
-										Livemedia, con el proyecto on line:
-										Culturas en Red, creándose el canal de
-										culturas web: Desde la Casona.
+										Audiovisual, se firma el 2009, un
+										convenio de cooperación con la
+										corporación española Livemedia, con el
+										proyecto on line: Culturas en Red,
+										creándose el canal de culturas web:
+										Desde la Casona.
 									</p>
 								</div>
 								<div>
 									<figure className="relative h-[400px] max-w-[644px] w-full md:w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/cine_historia_2_f82f79f24b.jpg"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/cine_historia_2_f82f79f24b.jpg"
 											className="object-cover h-full"
 											alt="Historia Cine 2"
 											fill
@@ -166,15 +167,16 @@ export default function CineHistoria() {
 										continúa con sus transmisiones de manera
 										ininterrumpida, produciendo diversos
 										contenidos culturales, ampliando la
-										propuesta de sus antecesores, de 11 a. m.
-										a 4 p. m. vía streaming por el Canal Web
-										de Culturas Desde la Casona, y de 4
-										a 9 p. m. por el facebook de la Dirección.
-										Ampliando la propuesta de sus antecesores.
+										propuesta de sus antecesores, de 11 a.
+										m. a 4 p. m. vía streaming por el Canal
+										Web de Culturas Desde la Casona, y de 4
+										a 9 p. m. por el facebook de la
+										Dirección. Ampliando la propuesta de sus
+										antecesores.
 									</p>
 									<p className="mb-5">
-										Desde 2023, Estefanía De Cara asume la dirección,
-										iniciando una etapa clave de
+										Desde 2023, Estefanía De Cara asume la
+										dirección, iniciando una etapa clave de
 										renovación y expansión, con proyectos
 										centrados en la conservación del
 										patrimonio fílmico y la creación de
@@ -183,10 +185,25 @@ export default function CineHistoria() {
 										esta etapa se encuentran:
 									</p>
 									<p className="mb-5 font-bold">
-										Remodelación de la sala de cine y programación semanal:
+										Remodelación de la sala de cine y
+										programación semanal:
 									</p>
 									<p className="mb-5">
-										Superada la pandemia del COVID 19 se retoman las proyecciones de los ciclos de cine dentro del Centro Cultural de San Marcos, para lo cual se remodeló el auditorio en donde se proyectan películas una vez por semana, devolviendo a la comunidad un espacio fundamental para el séptimo arte y brindando un ambiente  para la exhibición del cine peruano, así como obras internacionales que fomentan el diálogo intercultural. Esta reactivación ha sido fundamental para acercar el cine a la comunidad sanmarquina y el público en general.
+										Superada la pandemia del COVID 19 se
+										retoman las proyecciones de los ciclos
+										de cine dentro del Centro Cultural de
+										San Marcos, para lo cual se remodeló el
+										auditorio en donde se proyectan
+										películas una vez por semana,
+										devolviendo a la comunidad un espacio
+										fundamental para el séptimo arte y
+										brindando un ambiente para la exhibición
+										del cine peruano, así como obras
+										internacionales que fomentan el diálogo
+										intercultural. Esta reactivación ha sido
+										fundamental para acercar el cine a la
+										comunidad sanmarquina y el público en
+										general.
 									</p>
 									<p className="mb-5 font-bold">
 										Alianza con Wiki Acción Perú para la
@@ -234,7 +251,8 @@ export default function CineHistoria() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y

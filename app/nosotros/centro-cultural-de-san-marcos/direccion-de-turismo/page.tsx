@@ -66,7 +66,7 @@ export default function DireccionDeTurismo() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/direccion_de_turismo_portada_7adc3fc576.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/direccion_de_turismo_portada_7adc3fc576.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -113,7 +113,7 @@ export default function DireccionDeTurismo() {
 								<div>
 									<figure className="relative h-[200px] sm:h-[400px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_1_d7bec10950.webp"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/tursimo_ccsm_historia_1_d7bec10950.webp"
 											className="object-cover h-full"
 											alt="direccion de turismo 1"
 											fill
@@ -160,7 +160,7 @@ export default function DireccionDeTurismo() {
 								<div>
 									<figure className="relative h-[200px] sm:h-[400px] max-w-[644px] rounded-3xl overflow-hidden mx-auto">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/tursimo_ccsm_historia_2_775041a8e7.webp"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/tursimo_ccsm_historia_2_775041a8e7.webp"
 											className="object-cover h-full"
 											alt="direccion de turismo 2"
 											fill

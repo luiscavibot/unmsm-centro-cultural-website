@@ -28,7 +28,7 @@ export default function Directorio() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/directorio_portada_efe70e6ad7.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/directorio_portada_efe70e6ad7.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

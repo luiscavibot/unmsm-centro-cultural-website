@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function FolkloreHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cuf_portada_a1817a5bdd.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/cuf_portada_a1817a5bdd.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -287,7 +287,8 @@ export default function FolkloreHistoria() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y

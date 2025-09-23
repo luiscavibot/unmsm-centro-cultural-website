@@ -21,7 +21,7 @@ const breadcrumbItems = [
 export default function Visitanos() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/visitanos_portada_d46b403fb5.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/visitanos_portada_d46b403fb5.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -59,8 +59,8 @@ export default function Visitanos() {
 									/>
 									<div>
 										<p className="font-medium">
-											De lunes a sábado, de 10:00 a. m. a 1:00 p. m. y de
-											2:00 a 4:00 p. m.
+											De lunes a sábado, de 10:00 a. m. a
+											1:00 p. m. y de 2:00 a 4:00 p. m.
 										</p>
 									</div>
 								</div>
@@ -73,7 +73,8 @@ export default function Visitanos() {
 									<div>
 										<p className="font-medium">
 											Av. Nicolás de Piérola 1222, Parque
-											Universitario, Centro Histórico de Lima.
+											Universitario, Centro Histórico de
+											Lima.
 										</p>
 									</div>
 								</div>
@@ -82,8 +83,7 @@ export default function Visitanos() {
 						<div className="leading-[24px] text-dark-blue-2 flex flex-col md:flex-row gap-x-12 lg:gap-x-24">
 							<div className="basis-1/2">
 								<p className="mb-6">
-									El boleto incluye el recorrido guiado a
-									los{' '}
+									El boleto incluye el recorrido guiado a los{' '}
 									<span className="font-bold">
 										históricos patios y salones ceremoniales
 									</span>{' '}
@@ -93,12 +93,18 @@ export default function Visitanos() {
 										muestras permanentes: Colección de
 										retratos de catedráticos y rectores de
 										la Universidad de San Marcos (siglos
-										XVI-XIX) y la sala Vargas Llosa en San Marcos
+										XVI-XIX) y la sala Vargas Llosa en San
+										Marcos
 									</span>
 									.
 								</p>
 								<p className="mb-6">
-									Además se recorren las exposiciones presentadas por el Museo de Arqueología y Antropología UNMSM (MAA-UNMSM) y del Museo de Arte de San Marcos (MASM) siempre y cuando se encuentren dentro de su horario de atención:
+									Además se recorren las exposiciones
+									presentadas por el Museo de Arqueología y
+									Antropología UNMSM (MAA-UNMSM) y del Museo
+									de Arte de San Marcos (MASM) siempre y
+									cuando se encuentren dentro de su horario de
+									atención:
 								</p>
 								<ul className="list-outside list-disc pl-6 space-y-2 mb-6">
 									<li>
@@ -111,8 +117,8 @@ export default function Visitanos() {
 											Exposiciones Museo Arqueología y
 											Antropología:
 										</b>{' '}
-										De lunes a viernes, de 10 a. m. a 1 p. m.
-										y de 2 a 3:30 p. m.
+										De lunes a viernes, de 10 a. m. a 1 p.
+										m. y de 2 a 3:30 p. m.
 									</li>
 								</ul>
 								<p className="mb-6">
@@ -359,7 +365,7 @@ export default function Visitanos() {
 						<div>
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/65b39233a30eb13b02685da762462df8_d78c20b62f.png"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/65b39233a30eb13b02685da762462df8_d78c20b62f.png"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1000}
@@ -371,7 +377,7 @@ export default function Visitanos() {
 						<div>
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/b58e05c9a8b5593ab05e2ab6d532d23a_1f1405235a.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/b58e05c9a8b5593ab05e2ab6d532d23a_1f1405235a.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -383,7 +389,7 @@ export default function Visitanos() {
 						<div className="sm:col-span-2">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ba73f6ed670a54b40f935f44bb54ef4f_f6ac73bd85.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ba73f6ed670a54b40f935f44bb54ef4f_f6ac73bd85.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -395,7 +401,7 @@ export default function Visitanos() {
 						<div className="sm:row-start-3">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/3f5e2e7c4745e6cbdf925ccbd041aa3b_a3cca8c1a1.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/3f5e2e7c4745e6cbdf925ccbd041aa3b_a3cca8c1a1.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -407,7 +413,7 @@ export default function Visitanos() {
 						<div className="sm:col-start-1 sm:row-start-4">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/affe7601053a3ba1a818f2169aca71bd_62f1d0f444.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/affe7601053a3ba1a818f2169aca71bd_62f1d0f444.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -419,7 +425,7 @@ export default function Visitanos() {
 						<div className="sm:row-span-2 sm:col-start-2 sm:row-start-3">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/b5e7949c6cef8f31c1098a99c28aba7c_15b4ef3944.png"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/b5e7949c6cef8f31c1098a99c28aba7c_15b4ef3944.png"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1000}
@@ -431,7 +437,7 @@ export default function Visitanos() {
 						<div className="sm:col-span-2 sm:row-start-5">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/7526dd1a71d616e7c09bf2c7e88b1640_83fc318a4b.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/7526dd1a71d616e7c09bf2c7e88b1640_83fc318a4b.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -443,7 +449,7 @@ export default function Visitanos() {
 						<div className="sm:row-start-6">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/80d9a9101a544838242d50aded928f7f_acb8164960.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/80d9a9101a544838242d50aded928f7f_acb8164960.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -455,7 +461,7 @@ export default function Visitanos() {
 						<div className="sm:row-start-6">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/7c536e6742483fd5317540842e5cb863_ce5d0414d4.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/7c536e6742483fd5317540842e5cb863_ce5d0414d4.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -467,7 +473,7 @@ export default function Visitanos() {
 						<div>
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/268cccdcc837c8a2cbdc7b9d5ed6f722_025fa6d8e0.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/268cccdcc837c8a2cbdc7b9d5ed6f722_025fa6d8e0.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -479,7 +485,7 @@ export default function Visitanos() {
 						<div className="sm:row-start-7">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/c582b6b6364ad3f2fecaa01503c9f3a7_96dc3e5db3.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/c582b6b6364ad3f2fecaa01503c9f3a7_96dc3e5db3.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1200}
@@ -491,7 +497,7 @@ export default function Visitanos() {
 						<div className="sm:col-span-2">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/e3f07fb41482aa9706b98edffc80560c_ac8eb59399.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/e3f07fb41482aa9706b98edffc80560c_ac8eb59399.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 1"
 									width={1388}

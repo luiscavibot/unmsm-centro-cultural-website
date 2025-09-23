@@ -52,7 +52,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_portada_46dc835feb.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/biblioteca_portada_46dc835feb.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -118,8 +118,8 @@ export default function MuseoDeArteDeSanMarcos() {
 											<p className="font-bold">Horario</p>
 											<p className="font-medium">
 												Lunes a viernes, 8:00 a. m. a
-												1:00 p. m. y de 2:00 p. m. a 3:45
-												p. m.
+												1:00 p. m. y de 2:00 p. m. a
+												3:45 p. m.
 											</p>
 										</div>
 									</div>
@@ -181,7 +181,8 @@ export default function MuseoDeArteDeSanMarcos() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y

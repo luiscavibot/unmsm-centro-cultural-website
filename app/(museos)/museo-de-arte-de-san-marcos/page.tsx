@@ -59,7 +59,7 @@ export default function MuseoDeArteDeSanMarcos() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/Museos_de_Arte_de_San_Marcos_portada_40a0d4ee3c.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Museos_de_Arte_de_San_Marcos_portada_40a0d4ee3c.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -96,10 +96,9 @@ export default function MuseoDeArteDeSanMarcos() {
 								<p className="mb-3">
 									El MASM alberga importantes ejemplares de
 									arte peruano organizados en cuatro
-									colecciones: de Retratos, de Arte
-									Popular, de Arte Moderno y Contemporáneo;
-									así como el Archivo de Dibujo y Pintura
-									Campesina.
+									colecciones: de Retratos, de Arte Popular,
+									de Arte Moderno y Contemporáneo; así como el
+									Archivo de Dibujo y Pintura Campesina.
 								</p>
 								<p>
 									Estos conjuntos de obras, que ilustran la
@@ -213,7 +212,8 @@ export default function MuseoDeArteDeSanMarcos() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y

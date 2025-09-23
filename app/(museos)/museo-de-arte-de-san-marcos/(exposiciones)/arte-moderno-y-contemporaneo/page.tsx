@@ -65,7 +65,7 @@ export default function ArteModernoYContemporaneo() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/COLECC_1_1acec4e15d.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/COLECC_1_1acec4e15d.jpg"
 			breadcrumbItems={breadcrumbItems}
 			theme="dark"
 		>

@@ -140,7 +140,7 @@ export default function NoticiasPage() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/noticias_banner_91753aa53c.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/noticias_banner_91753aa53c.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

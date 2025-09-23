@@ -11,15 +11,17 @@ const Escuela = () => {
 				<div className="container">
 					<div className="max-w-[641px] leading-[24px] text-dark-blue-2">
 						<p>
-							Es un espacio dedicado a la formación en danza clásica y contemporánea para diversas edades, desde niños hasta adultos. Ubicada en el Centro Histórico de Lima, combina rigor técnico con una visión artística integral.
+							Es un espacio dedicado a la formación en danza
+							clásica y contemporánea para diversas edades, desde
+							niños hasta adultos. Ubicada en el Centro Histórico
+							de Lima, combina rigor técnico con una visión
+							artística integral.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div className="bg-green relative">
-				<div
-					className="px-6 lg:px-[104px] overflow-hidden relative"
-				>
+				<div className="px-6 lg:px-[104px] overflow-hidden relative">
 					<div className="container">
 						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] md:pb-[96px] lg:pr-16 lg:w-[760px] mr-auto h-full text-white flex flex-col md:flex-row gap-7 leading-[24px] font-normal">
 							<div className="md:basis-[47%]">
@@ -27,14 +29,30 @@ const Escuela = () => {
 									Programas de Formación
 								</p>
 								<p className="mb-2">
-									La escuela ofrece dos modalidades de estudio:
+									La escuela ofrece dos modalidades de
+									estudio:
 								</p>
 								<ol className="list-outside list-decimal pl-5 space-y-2">
 									<li>
-										<strong>Programa de Formación en Danza:</strong> Un plan de estudios de cinco años con un enfoque intensivo en danza clásica y contemporánea. Este programa brinda una preparación estructurada, permitiendo a los estudiantes desarrollar habilidades técnicas y artísticas de manera sólida.
+										<strong>
+											Programa de Formación en Danza:
+										</strong>{' '}
+										Un plan de estudios de cinco años con un
+										enfoque intensivo en danza clásica y
+										contemporánea. Este programa brinda una
+										preparación estructurada, permitiendo a
+										los estudiantes desarrollar habilidades
+										técnicas y artísticas de manera sólida.
 									</li>
 									<li>
-										<strong>Talleres Libres:</strong> Espacios de aprendizaje dirigidos a niños, jóvenes y adultos que desean acercarse a la danza sin necesidad de seguir un programa de formación profesional. Estos talleres incluyen ballet, danza contemporánea y otras disciplinas complementarias.
+										<strong>Talleres Libres:</strong>{' '}
+										Espacios de aprendizaje dirigidos a
+										niños, jóvenes y adultos que desean
+										acercarse a la danza sin necesidad de
+										seguir un programa de formación
+										profesional. Estos talleres incluyen
+										ballet, danza contemporánea y otras
+										disciplinas complementarias.
 									</li>
 								</ol>
 							</div>
@@ -43,23 +61,33 @@ const Escuela = () => {
 									Actividades y Presentaciones
 								</p>
 								<p className="mb-5">
-									Los estudiantes del programa de formación tienen la oportunidad de participar en presentaciones y proyectos especiales, tanto dentro del Centro Cultural de San Marcos como en escenarios externos. Estas actividades permiten una experiencia escénica valiosa y contribuyen a la difusión del arte dancístico.
+									Los estudiantes del programa de formación
+									tienen la oportunidad de participar en
+									presentaciones y proyectos especiales, tanto
+									dentro del Centro Cultural de San Marcos
+									como en escenarios externos. Estas
+									actividades permiten una experiencia
+									escénica valiosa y contribuyen a la difusión
+									del arte dancístico.
 								</p>
-								<p className="mb-2 font-bold">
-									Equipo Docente
-								</p>
+								<p className="mb-2 font-bold">Equipo Docente</p>
 								<p className="mb-2">
-									El equipo de la escuela está conformado por docentes altamente calificados, con amplia trayectoria en la enseñanza y la práctica profesional de la danza. Su labor se enfoca en ofrecer una formación integral que abarque tanto la técnica como la interpretación artística.
+									El equipo de la escuela está conformado por
+									docentes altamente calificados, con amplia
+									trayectoria en la enseñanza y la práctica
+									profesional de la danza. Su labor se enfoca
+									en ofrecer una formación integral que
+									abarque tanto la técnica como la
+									interpretación artística.
 								</p>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<div className="shrink-0 absolute right-0 top-0 h-full max-lg:hidden w-[180px] xl:w-[300px] min-[1439.9px]:w-[544px]">
 					<figure className="relative w-full h-full mx-auto">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_06793377eb.jpg"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_06793377eb.jpg"
 							className="object-cover h-full"
 							alt="Ballet Investigación"
 							fill
@@ -71,27 +99,54 @@ const Escuela = () => {
 			<div className="px-4 lg:px-[104px] bg-white pt-[70px] pb-[26px]">
 				<div className="container flex flex-col lg:flex-row justify-between gap-y-8 gap-x-[68px]">
 					<div className="lg:max-w-[664px] leading-[24px] text-dark-blue-2">
-						<p className="font-bold">
-							Compromiso con la Comunidad
-						</p>
+						<p className="font-bold">Compromiso con la Comunidad</p>
 						<p>
-							La Escuela de Ballet San Marcos reafirma su compromiso con la difusión de la danza a través de programas accesibles, promoviendo el desarrollo artístico y la formación de nuevas generaciones de bailarines en el Perú.
+							La Escuela de Ballet San Marcos reafirma su
+							compromiso con la difusión de la danza a través de
+							programas accesibles, promoviendo el desarrollo
+							artístico y la formación de nuevas generaciones de
+							bailarines en el Perú.
 						</p>
 						<p className="mb-5">
-							De manera periódica, la escuela establece contacto con instituciones interesadas en incorporar la danza como una herramienta de expresión, inclusión y bienestar en la comunidad. Como parte de este compromiso, desarrolla presentaciones y muestras en hospitales, centros de asistencia para adultos mayores y otras instituciones, con el objetivo de acercar el arte a diferentes sectores de la sociedad y generar un impacto positivo a través del movimiento y la creatividad.
+							De manera periódica, la escuela establece contacto
+							con instituciones interesadas en incorporar la danza
+							como una herramienta de expresión, inclusión y
+							bienestar en la comunidad. Como parte de este
+							compromiso, desarrolla presentaciones y muestras en
+							hospitales, centros de asistencia para adultos
+							mayores y otras instituciones, con el objetivo de
+							acercar el arte a diferentes sectores de la sociedad
+							y generar un impacto positivo a través del
+							movimiento y la creatividad.
 						</p>
 						<p className="font-bold">
 							Elenco de la Escuela de Ballet San Marcos
 						</p>
 						<p>
-							El Elenco de la Escuela de Ballet San Marcos es una selección de alumnos destacados que representan a la institución en diversas presentaciones y proyectos artísticos. A través de esta agrupación, los estudiantes tienen la oportunidad de perfeccionar su formación escénica y experimentar el trabajo en un entorno similar al de una compañía profesional. Su repertorio incluye obras de ballet clásico y danza contemporánea, y su participación en eventos contribuye a la difusión de la danza y al fortalecimiento del vínculo entre la escuela y la comunidad artística.
+							El Elenco de la Escuela de Ballet San Marcos es una
+							selección de alumnos destacados que representan a la
+							institución en diversas presentaciones y proyectos
+							artísticos. A través de esta agrupación, los
+							estudiantes tienen la oportunidad de perfeccionar su
+							formación escénica y experimentar el trabajo en un
+							entorno similar al de una compañía profesional. Su
+							repertorio incluye obras de ballet clásico y danza
+							contemporánea, y su participación en eventos
+							contribuye a la difusión de la danza y al
+							fortalecimiento del vínculo entre la escuela y la
+							comunidad artística.
 						</p>
 					</div>
 					<div>
 						<div className="bg-green-2 text-white rounded-[20px] px-6 py-10 md:px-[56px] md:py-[70px] max-w-[516px] max-lg:mx-auto">
-							<p className="font-bold">Inscripciones y contacto</p>
+							<p className="font-bold">
+								Inscripciones y contacto
+							</p>
 							<p className="mb-4">
-								Para más información sobre horarios, requisitos y actividades, escríbenos o visita nuestras redes sociales, donde se publican actualizaciones y novedades:
+								Para más información sobre horarios, requisitos
+								y actividades, escríbenos o visita nuestras
+								redes sociales, donde se publican
+								actualizaciones y novedades:
 							</p>
 							<div className="flex flex-row items-center gap-2 mb-4">
 								<a
@@ -134,16 +189,17 @@ const Escuela = () => {
 									color="light"
 								/>
 								<div>
-									<p className="font-bold">
-										Contacto
-									</p>
+									<p className="font-bold">Contacto</p>
 									<p className="font-medium break-words">
 										ballet.ccsm@unmsm.edu.pe
 									</p>
 								</div>
 							</div>
 							<p>
-								Actualmente, la coordinación de la Escuela de Ballet San Marcos está a cargo del docente José Luis Aceijas Silva, quien lidera la formación académica y artística del alumnado.
+								Actualmente, la coordinación de la Escuela de
+								Ballet San Marcos está a cargo del docente José
+								Luis Aceijas Silva, quien lidera la formación
+								académica y artística del alumnado.
 							</p>
 						</div>
 					</div>
@@ -152,11 +208,11 @@ const Escuela = () => {
 			<div className="px-4 lg:px-[104px] gap-5 bg-white py-8 lg:py-[96px] ">
 				<div className="container">
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 sm:grid-rows-[561px_403px_379px_821px_446px_431px] xl:grid-rows-[561px_525px_493px_1066px_582px_565px]">
-					{/* <div className="grid grid-cols-2 gap-6 lg:grid-rows-[repeat(8,auto)]"> */}
+						{/* <div className="grid grid-cols-2 gap-6 lg:grid-rows-[repeat(8,auto)]"> */}
 						<div className="sm:col-span-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_1_75ca4094eb.jpg"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_grid_1_75ca4094eb.jpg"
 									className="sm:object-cover w-full sm:h-full"
 									alt="Escuela de Ballet 1"
 									width={1387}
@@ -168,7 +224,7 @@ const Escuela = () => {
 						<div className="sm:row-span-2 sm:row-start-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_2_ea766e3e7c.jpeg"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_grid_2_ea766e3e7c.jpeg"
 									className="sm:object-cover w-full sm:h-full"
 									alt="Escuela de Ballet 2"
 									width={470}
@@ -180,7 +236,7 @@ const Escuela = () => {
 						<div className="sm:row-start-2">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_3_519a645ce4.jpg"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_grid_3_519a645ce4.jpg"
 									className="sm:object-cover w-full sm:h-full"
 									alt="Escuela de Ballet 3"
 									width={1387}
@@ -192,7 +248,7 @@ const Escuela = () => {
 						<div className="sm:col-start-2 row-start-3">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_4_59f28ec23a.jpg"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_grid_4_59f28ec23a.jpg"
 									className="sm:object-cover w-full sm:h-full"
 									alt="Escuela de Ballet 4"
 									width={1476}
@@ -204,7 +260,7 @@ const Escuela = () => {
 						<div className="sm:col-span-2 sm:row-start-4">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_5_041e295b52.jpg"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_grid_5_041e295b52.jpg"
 									className="sm:object-cover w-full sm:h-full"
 									alt="Escuela de Ballet 5"
 									width={1387}
@@ -216,7 +272,7 @@ const Escuela = () => {
 						<div className="sm:row-start-5">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_6_37324ffca8.jpg"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_grid_6_37324ffca8.jpg"
 									className="sm:object-cover w-full sm:h-full"
 									alt="Escuela de Ballet 6"
 									width={1251}
@@ -228,7 +284,7 @@ const Escuela = () => {
 						<div className="sm:col-start-1 sm:row-start-6">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_7_58f2a87c8b.jpg"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_grid_7_58f2a87c8b.jpg"
 									className="sm:object-cover w-full sm:h-full"
 									alt="Escuela de Ballet 7"
 									width={1293}
@@ -240,7 +296,7 @@ const Escuela = () => {
 						<div className="sm:row-span-2 sm:col-start-2 sm:row-start-5">
 							<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ballet_escuela_grid_8_19b6743686.jpg"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_escuela_grid_8_19b6743686.jpg"
 									className="sm:object-cover w-full sm:h-full"
 									alt="Escuela de Ballet 8"
 									width={616}

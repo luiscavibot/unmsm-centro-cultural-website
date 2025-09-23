@@ -16,7 +16,7 @@ const ArtisticDirections: React.FC = () => {
 					>
 						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/ballet_af1aa51a37.png"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_af1aa51a37.png"
 								className="object-cover"
 								alt="Ballet"
 								fill
@@ -32,7 +32,7 @@ const ArtisticDirections: React.FC = () => {
 					>
 						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/folfklore_9bc15b5189.png"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/folfklore_9bc15b5189.png"
 								className="object-cover"
 								alt="Folklore"
 								fill
@@ -63,7 +63,7 @@ const ArtisticDirections: React.FC = () => {
 					>
 						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/cine_4386cce50d.png"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/cine_4386cce50d.png"
 								className="object-cover"
 								alt="Cine y Dirección audiovisual"
 								fill
@@ -79,7 +79,7 @@ const ArtisticDirections: React.FC = () => {
 					>
 						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/banda_2350d3997d.png"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/banda_2350d3997d.png"
 								className="object-cover"
 								alt="Banda Universitaria"
 								fill
@@ -97,7 +97,7 @@ const ArtisticDirections: React.FC = () => {
 					>
 						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/musica_portada_87e634d1ee.jpg"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/musica_portada_87e634d1ee.jpg"
 								className="object-cover"
 								alt="Música"
 								fill
@@ -113,7 +113,7 @@ const ArtisticDirections: React.FC = () => {
 					>
 						<div className="absolute top-0 left-0 w-full h-full transition duration-300 ease-in-out group-hover:brightness-50">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/teatro_2a62a910e8.png"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_2a62a910e8.png"
 								className="object-cover"
 								alt="Teatro"
 								fill

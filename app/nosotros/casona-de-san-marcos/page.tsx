@@ -20,10 +20,9 @@ const breadcrumbItems = [
 ];
 
 export default function CasonaDeSanMarcos() {
-
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/casona_de_san_marcos_portada_be4952f749.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/casona_de_san_marcos_portada_be4952f749.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -35,10 +34,30 @@ export default function CasonaDeSanMarcos() {
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
-									La Casona de San Marcos es uno de los espacios más emblemáticos del Perú, no solo por su valor arquitectónico, sino por ser testigo y protagonista de más de cuatro siglos de historia nacional. Desde su origen como noviciado jesuita en el siglo XVII hasta su actual rol como Centro Cultural, la Casona ha sido escenario de grandes transformaciones sociales, políticas y educativas. Ha albergado a instituciones claves como el Real Convictorio de San Carlos y la Universidad Nacional Mayor de San Marcos, formando generaciones de pensadores, líderes e intelectuales que marcaron el rumbo del país.
+									La Casona de San Marcos es uno de los
+									espacios más emblemáticos del Perú, no solo
+									por su valor arquitectónico, sino por ser
+									testigo y protagonista de más de cuatro
+									siglos de historia nacional. Desde su origen
+									como noviciado jesuita en el siglo XVII
+									hasta su actual rol como Centro Cultural, la
+									Casona ha sido escenario de grandes
+									transformaciones sociales, políticas y
+									educativas. Ha albergado a instituciones
+									claves como el Real Convictorio de San
+									Carlos y la Universidad Nacional Mayor de
+									San Marcos, formando generaciones de
+									pensadores, líderes e intelectuales que
+									marcaron el rumbo del país.
 								</p>
 								<p className="mb-3">
-									Esta línea de tiempo resume los hitos más importantes en la vida de la Casona, permitiendo recorrer de forma cronológica su evolución, sus momentos de esplendor, crisis, renovación y su actual misión como centro de difusión cultural para la comunidad sanmarquina y el país.
+									Esta línea de tiempo resume los hitos más
+									importantes en la vida de la Casona,
+									permitiendo recorrer de forma cronológica su
+									evolución, sus momentos de esplendor,
+									crisis, renovación y su actual misión como
+									centro de difusión cultural para la
+									comunidad sanmarquina y el país.
 								</p>
 							</div>
 						</div>
@@ -58,25 +77,32 @@ export default function CasonaDeSanMarcos() {
 											<span className="font-bold">
 												1605:
 											</span>{' '}
-											Contrato notarial con Antonio Correa Ureña para la construcción del noviciado jesuita San Antonio Abad.
+											Contrato notarial con Antonio Correa
+											Ureña para la construcción del
+											noviciado jesuita San Antonio Abad.
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1610:
 											</span>{' '}
-											Inicia funciones como Casa de Probación y Noviciado San Antonio Abad de la Compañía de Jesús.
+											Inicia funciones como Casa de
+											Probación y Noviciado San Antonio
+											Abad de la Compañía de Jesús.
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1746:
 											</span>{' '}
-											Terremoto obliga a la reconstrucción y reconfiguración espacial.
+											Terremoto obliga a la reconstrucción
+											y reconfiguración espacial.
 										</p>
 										<p>
 											<span className="font-bold">
 												1767:
 											</span>{' '}
-											Expulsión de los jesuitas fue por orden del rey Carlos III y ejecutado aquí por el virrey Amat.
+											Expulsión de los jesuitas fue por
+											orden del rey Carlos III y ejecutado
+											aquí por el virrey Amat.
 										</p>
 									</div>
 								</div>
@@ -92,19 +118,24 @@ export default function CasonaDeSanMarcos() {
 											<span className="font-bold">
 												1770:
 											</span>{' '}
-											Fundación del Real Convictorio de San Carlos.
+											Fundación del Real Convictorio de
+											San Carlos.
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1771:
 											</span>{' '}
-											El convictorio se instala en la actual Casona de San Marcos.
+											El convictorio se instala en la
+											actual Casona de San Marcos.
 										</p>
 										<p>
 											<span className="font-bold">
 												Hasta 1866:
 											</span>{' '}
-											Funciona como institución educativa destacada; se forman figuras clave como José Faustino Sánchez Carrión y Pedro Gálvez.
+											Funciona como institución educativa
+											destacada; se forman figuras clave
+											como José Faustino Sánchez Carrión y
+											Pedro Gálvez.
 										</p>
 									</div>
 								</div>
@@ -120,40 +151,53 @@ export default function CasonaDeSanMarcos() {
 											<span className="font-bold">
 												1866:
 											</span>{' '}
-											El Colegio San Carlos se incorpora a la Universidad de San Marcos.
+											El Colegio San Carlos se incorpora a
+											la Universidad de San Marcos.
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1867:
 											</span>{' '}
-											Se traslada oficialmente la sede universitaria a la Casona.
+											Se traslada oficialmente la sede
+											universitaria a la Casona.
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1875:
 											</span>{' '}
-											Se crea la Facultad de Ciencias Políticas y Administrativas.
+											Se crea la Facultad de Ciencias
+											Políticas y Administrativas.
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1866:
 											</span>{' '}
-											Reforma de nombres de facultades (Derecho, Ciencias, Letras).
+											Reforma de nombres de facultades
+											(Derecho, Ciencias, Letras).
 										</p>
 										<div className="mb-4">
 											<span className="font-bold">
 												1876:
 											</span>{' '}
 											<ul className="list-outside list-disc pl-5">
-												<li>Inauguración de la Escuela Especial de Construcciones Civiles y de Minas.</li>
-												<li>1879-1883: Uso militar durante la Guerra del Pacífico.</li>
+												<li>
+													Inauguración de la Escuela
+													Especial de Construcciones
+													Civiles y de Minas.
+												</li>
+												<li>
+													1879-1883: Uso militar
+													durante la Guerra del
+													Pacífico.
+												</li>
 											</ul>
 										</div>
 										<p>
 											<span className="font-bold">
 												1882:
 											</span>{' '}
-											Matrícula de la primera mujer: Margarita Muñoz Seguín.
+											Matrícula de la primera mujer:
+											Margarita Muñoz Seguín.
 										</p>
 									</div>
 								</div>
@@ -169,31 +213,38 @@ export default function CasonaDeSanMarcos() {
 											<span className="font-bold">
 												1919:
 											</span>{' '}
-											Reforma Universitaria; auge del binomio universidad-sociedad.
+											Reforma Universitaria; auge del
+											binomio universidad-sociedad.
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1932-1936 y 1950s:
 											</span>{' '}
-											Recesos universitarios e intervenciones militares.
+											Recesos universitarios e
+											intervenciones militares.
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1943-1948:
 											</span>{' '}
-											Masificación universitaria; creación de nuevas facultades (Educación y Química).
+											Masificación universitaria; creación
+											de nuevas facultades (Educación y
+											Química).
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1951:
 											</span>{' '}
-											Se coloca la primera piedra de la Ciudad Universitaria.
+											Se coloca la primera piedra de la
+											Ciudad Universitaria.
 										</p>
 										<p>
 											<span className="font-bold">
 												1960s:
 											</span>{' '}
-											Traslado progresivo a la Ciudad Universitaria; sismo de 1966 causa daños graves.
+											Traslado progresivo a la Ciudad
+											Universitaria; sismo de 1966 causa
+											daños graves.
 										</p>
 									</div>
 								</div>
@@ -209,25 +260,30 @@ export default function CasonaDeSanMarcos() {
 											<span className="font-bold">
 												1967:
 											</span>{' '}
-											Primer proyecto de recuperación por encargo de la UNESCO (sin ejecución).
+											Primer proyecto de recuperación por
+											encargo de la UNESCO (sin
+											ejecución).
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1984:
 											</span>{' '}
-											Proyecto de restauración del Salón General (no financiado).
+											Proyecto de restauración del Salón
+											General (no financiado).
 										</p>
 										<p className="mb-4">
 											<span className="font-bold">
 												1989-2008:
 											</span>{' '}
-											Restauración de la casona con la AECID.
+											Restauración de la casona con la
+											AECID.
 										</p>
 										<p>
 											<span className="font-bold">
 												1995:
 											</span>{' '}
-											Se crea el Centro Cultural de San Marcos.
+											Se crea el Centro Cultural de San
+											Marcos.
 										</p>
 									</div>
 								</div>
@@ -277,7 +333,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:col-span-2">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/c311e26e22666cb8950d2966cb33a65a_4af15c8007.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/c311e26e22666cb8950d2966cb33a65a_4af15c8007.webp"
 									className="sm:object-cover sm:object-bottom w-full sm:h-full"
 									alt="visitanos 1"
 									width={1387}
@@ -289,7 +345,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:row-span-2 sm:row-start-2">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/a8237aa13d166d6ccadbfd088f7ab9cf_984df24f70.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/a8237aa13d166d6ccadbfd088f7ab9cf_984df24f70.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 2"
 									width={616}
@@ -301,7 +357,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:row-start-2">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/9932621fd5ce2b8a3c87254ef38a261c_c7c84533a2.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/9932621fd5ce2b8a3c87254ef38a261c_c7c84533a2.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 3"
 									width={1387}
@@ -313,7 +369,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:col-start-2 sm:row-start-3">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/6e96107d943cb492c69da75af3467218_209cb76c9f.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/6e96107d943cb492c69da75af3467218_209cb76c9f.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 4"
 									width={1387}
@@ -325,7 +381,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:col-span-2 sm:row-start-4">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/bfe63e48db771e3a4afaafdf8e9a95f3_37fdeb297f.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/bfe63e48db771e3a4afaafdf8e9a95f3_37fdeb297f.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 5"
 									width={1387}
@@ -337,7 +393,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:row-start-5">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/5d138e25516dbfdd81aeb6286dc5e417_f4c9de9305.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/5d138e25516dbfdd81aeb6286dc5e417_f4c9de9305.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 6"
 									width={1387}
@@ -349,7 +405,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:col-start-1 sm:row-start-6">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/84eba024515f0a8f050a18521b529b21_432a54d062.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/84eba024515f0a8f050a18521b529b21_432a54d062.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 7"
 									width={1387}
@@ -361,7 +417,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:row-span-2 sm:col-start-2 sm:row-start-5">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/c9eeac414429e1fa9e0d3dd5821145ca_2ace594c5e.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/c9eeac414429e1fa9e0d3dd5821145ca_2ace594c5e.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 8"
 									width={616}
@@ -373,7 +429,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:col-span-2 sm:row-start-7">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/2403a539c22736f907a69f0cbe5ec6e1_3afb1460e2.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/2403a539c22736f907a69f0cbe5ec6e1_3afb1460e2.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 9"
 									width={1387}
@@ -385,7 +441,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:row-start-8">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/ee8fa74a14f10cedf2a00ef01e44e89d_5058b317d7.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ee8fa74a14f10cedf2a00ef01e44e89d_5058b317d7.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 10"
 									width={616}
@@ -397,7 +453,7 @@ export default function CasonaDeSanMarcos() {
 						<div className="sm:row-start-8">
 							<figure className="relative h-full w-full rounded-3xl overflow-hidden mx-auto">
 								<Image
-									src="https://ccsm.unmsm.edu.pe/ccsm/d66dec7050c0107411a8c2cbf97f978f_3edb59807e.webp"
+									src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/d66dec7050c0107411a8c2cbf97f978f_3edb59807e.webp"
 									className="sm:object-cover w-full sm:h-full"
 									alt="visitanos 11"
 									width={616}

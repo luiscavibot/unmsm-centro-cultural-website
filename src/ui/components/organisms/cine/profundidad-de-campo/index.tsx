@@ -35,7 +35,7 @@ const ProfundidadDeCampo = () => {
 					<div className="shrink-0">
 						<figure className="relative w-full max-lg:max-w-[450px] lg:w-[450px] xl:w-[604px] h-[300px] xl:h-[403px] mx-auto">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/profundidad_de_campo_1d87f72603.jpg"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/profundidad_de_campo_1d87f72603.jpg"
 								className="object-cover h-full"
 								alt="ballet 2"
 								fill

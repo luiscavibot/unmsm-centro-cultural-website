@@ -51,7 +51,7 @@ export default function Folklore() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cuf_portada_a1817a5bdd.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/cuf_portada_a1817a5bdd.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

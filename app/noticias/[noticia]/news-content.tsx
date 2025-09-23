@@ -15,16 +15,29 @@ import { formatFullDate } from '@/ui/helpers/format-full-date';
 import SkeletonBlog from '@/ui/components/atoms/skeleton/blog';
 import { Noticias } from '@/interfaces/services/noticias.interface';
 
-export default function NewsContent({ noticia, serverData }: { noticia: string, serverData: Noticias[] }) {
-
+export default function NewsContent({
+	noticia,
+	serverData,
+}: {
+	noticia: string;
+	serverData: Noticias[];
+}) {
 	// como lleva la misma queryKey en el prefetch, no se vuelve a hacer fetch
-	const { data: newsData = [], isLoading: isNewsLoading, error: newsError } = useQuery<Noticias[]>({
+	const {
+		data: newsData = [],
+		isLoading: isNewsLoading,
+		error: newsError,
+	} = useQuery<Noticias[]>({
 		queryKey: ['news', noticia],
 		queryFn: () => NoticiasService.getEntryBySlug(noticia),
 		initialData: serverData,
 	});
 
-	const { data: recentNews = [], isLoading: isRecentNewsLoading, error: recentNewsError } = useQuery<Noticias[]>({
+	const {
+		data: recentNews = [],
+		isLoading: isRecentNewsLoading,
+		error: recentNewsError,
+	} = useQuery<Noticias[]>({
 		queryKey: ['recent-news', noticia],
 		queryFn: () => NoticiasService.getRecentEntries(noticia),
 	});
@@ -39,9 +52,7 @@ export default function NewsContent({ noticia, serverData }: { noticia: string, 
 		);
 	}
 	if (isNewsLoading || isRecentNewsLoading) {
-		return (
-			<SkeletonBlog />
-		);
+		return <SkeletonBlog />;
 	}
 	if (newsError) {
 		return (
@@ -90,14 +101,18 @@ export default function NewsContent({ noticia, serverData }: { noticia: string, 
 
 	return (
 		<Layout
-			// portadaImage="https://ccsm.unmsm.edu.pe/ccsm/noticias_banner_91753aa53c.jpg"
+			// portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/noticias_banner_91753aa53c.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<div className="px-4 lg:px-[104px] bg-white pb-[104px]">
 				<div className="container">
 					<div className="max-w-[814px] mx-auto mb-[80px]">
 						<div className="flex justify-center">
-							<Badge className="max-md:mb-[18px]" label={newsItem.dependencia} size="small" />
+							<Badge
+								className="max-md:mb-[18px]"
+								label={newsItem.dependencia}
+								size="small"
+							/>
 						</div>
 						<Title className="text-center !mb-1">
 							{newsItem.titulo}
@@ -118,8 +133,7 @@ export default function NewsContent({ noticia, serverData }: { noticia: string, 
 						<div className="h-px max-w-[203px] mx-auto bg-dark-white-3 mb-14"></div>
 						<BlockRendererClient content={newsItem.descripcion} />
 					</div>
-					{
-						(recentNews?.length > 0 && recentNews) &&
+					{recentNews?.length > 0 && recentNews && (
 						<div className="mt-20 md:mt-[110px]">
 							<div className="flex justify-between items-center mb-5 md:mb-[30px]">
 								<h2 className="text-2xl font-bold leading-[36px] text-dark-blue-2">
@@ -140,12 +154,14 @@ export default function NewsContent({ noticia, serverData }: { noticia: string, 
 											key={index}
 											slug={event.slug}
 											titulo={event.titulo}
-											fechaPublicacion={event.fechaPublicacion}
+											fechaPublicacion={
+												event.fechaPublicacion
+											}
 										/>
 									))}
 							</div>
 						</div>
-					}
+					)}
 				</div>
 			</div>
 		</Layout>

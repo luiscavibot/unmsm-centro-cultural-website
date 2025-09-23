@@ -9,7 +9,7 @@ const Library = () => {
 			<div className="relative px-6 lg:px-[104px] pt-[56px] lg:pt-[96px] pb-[56px] h-[360px] lg:h-[720px] group">
 				<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 					<Image
-						src="https://ccsm.unmsm.edu.pe/ccsm/biblioteca_ccsm_1_a502c76148.png"
+						src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/biblioteca_ccsm_1_a502c76148.png"
 						className="object-cover transform group-hover:scale-[1.086] transition-transform duration-[800ms] ease-out"
 						alt="events"
 						fill

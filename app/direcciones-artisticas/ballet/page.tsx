@@ -50,7 +50,7 @@ export default function Ballet() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_portada_fcf0b2ff53.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_portada_fcf0b2ff53.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

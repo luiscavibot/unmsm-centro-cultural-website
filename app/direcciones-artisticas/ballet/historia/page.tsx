@@ -26,7 +26,7 @@ const breadcrumbItems = [
 export default function BalletHistoria() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/ballet_portada_fcf0b2ff53.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/ballet_portada_fcf0b2ff53.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -118,7 +118,20 @@ export default function BalletHistoria() {
 								</div>
 								<div>
 									<p className="mb-5">
-										En 1972, Vera Stastny asumió la dirección del Ballet San Marcos, marcando un hito en su historia al introducir la danza contemporánea en la compañía. Bajo su liderazgo, se diversificó el repertorio y se impulsó un enfoque innovador en la formación de los bailarines, alineado con las tendencias internacionales. Su gestión, que concluyó en 2018, consolidó al Ballet San Marcos como un referente en la danza contemporánea en el país, ampliando su impacto artístico y pedagógico.
+										En 1972, Vera Stastny asumió la
+										dirección del Ballet San Marcos,
+										marcando un hito en su historia al
+										introducir la danza contemporánea en la
+										compañía. Bajo su liderazgo, se
+										diversificó el repertorio y se impulsó
+										un enfoque innovador en la formación de
+										los bailarines, alineado con las
+										tendencias internacionales. Su gestión,
+										que concluyó en 2018, consolidó al
+										Ballet San Marcos como un referente en
+										la danza contemporánea en el país,
+										ampliando su impacto artístico y
+										pedagógico.
 									</p>
 									<p className="mb-5">
 										A partir de los años 70, el Ballet San
@@ -231,7 +244,8 @@ export default function BalletHistoria() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y

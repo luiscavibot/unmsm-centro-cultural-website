@@ -11,8 +11,8 @@ const RecursosAudiovisuales = () => {
 					<p className="max-w-[641px] leading-[24px] text-dark-blue-2">
 						¡Descubre el fascinante mundo de la antropología y
 						arqueología peruana de manera interactiva! En esta
-						sección de recursos visuales del MAA-UNMSM,
-						te invitamos a explorar:
+						sección de recursos visuales del MAA-UNMSM, te invitamos
+						a explorar:
 					</p>
 				</div>
 			</div>
@@ -28,7 +28,7 @@ const RecursosAudiovisuales = () => {
 					</figure>
 					<figure className="absolute -bottom-[100px] lg:-bottom-[10%] -right-[150px] md:-right-[100px] min-[1500px]:-right-[30px] transition-transform duration-[800ms] ease-out">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_rompecabezas_8c006e5e99.png"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Recursos_visuales_rompecabezas_8c006e5e99.png"
 							alt="Juega Comparte Museo"
 							width={415}
 							height={258}
@@ -72,7 +72,7 @@ const RecursosAudiovisuales = () => {
 					</figure>
 					<figure className="absolute -bottom-[150px] lg:-bottom-[19%] -right-[300px] md:-right-[250px] lg:-right-[280px] min-[1500px]:-right-[50px] transition-transform duration-[800ms] ease-out -rotate-[3.16deg]">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_linea_del_tiempo_2c40c3dab0.png"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Recursos_visuales_linea_del_tiempo_2c40c3dab0.png"
 							alt="Línea del tiempo"
 							width={544}
 							height={285}
@@ -88,9 +88,9 @@ const RecursosAudiovisuales = () => {
 							</h3>
 							<p className="max-md:text-sm mt-6 font-medium leading-[24px]">
 								Sobre el proceso de musealización de uno de los
-								objetos más emblemáticos del museo. El Manto Blanco
-								de Paracas, desde su recuperación por Julio C.
-								Tello hasta su exposición hoy en día.
+								objetos más emblemáticos del museo. El Manto
+								Blanco de Paracas, desde su recuperación por
+								Julio C. Tello hasta su exposición hoy en día.
 							</p>
 						</header>
 						<SecondaryButton
@@ -108,7 +108,7 @@ const RecursosAudiovisuales = () => {
 				<article className="px-6 lg:pl-[104px] lg:h-full relative bg-blue-2 overflow-hidden">
 					<figure className="absolute -bottom-[50px] min-[1500px]:-bottom-[2%] -right-[100px] md:-right-[50px] min-[1500px]:-right-[0px] transition-transform duration-[800ms] ease-out">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_canal_youtube_59e0055fcb.png"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Recursos_visuales_canal_youtube_59e0055fcb.png"
 							alt="Youtube Museo de Arqueología y Antropología UNMSM"
 							width={326}
 							height={207}
@@ -160,7 +160,7 @@ const RecursosAudiovisuales = () => {
 					</figure>
 					<figure className="absolute -bottom-[90px] min-[1500px]:-bottom-[15%] -right-[90px] md:-right-[50px] lg:-right-[30px] transition-transform duration-[800ms] ease-out">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/Recursos_visuales_fichas_informativas_ebeada0e49.png"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Recursos_visuales_fichas_informativas_ebeada0e49.png"
 							alt="Fichas informativas"
 							width={326}
 							height={207}

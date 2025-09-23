@@ -14,7 +14,7 @@ const Exhibitions = () => {
 					<article className="relative h-full px-6 lg:pl-[104px] group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/tesoros_a5843db8a3.jpg"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/tesoros_a5843db8a3.jpg"
 								className="object-cover transform origin-[left_center] group-hover:scale-[1.204] transition-transform duration-[800ms] ease-out"
 								alt="Tesoros Arqueológicos de San Marcos"
 								fill
@@ -39,7 +39,7 @@ const Exhibitions = () => {
 					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/la_universidad_ca330c65a0.jpg"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/la_universidad_ca330c65a0.jpg"
 								className="object-cover transform origin-[right_top] group-hover:scale-[1.194] transition-transform duration-[800ms] ease-out"
 								alt="La Universidad como «Casa del Saber»: Religiosos y Laicos"
 								fill
@@ -48,7 +48,8 @@ const Exhibitions = () => {
 						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pl-16 lg:semi-container-r h-full flex items-end">
 							<header className="max-w-[512px] text-white">
 								<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal] lg:leading-[39px]">
-									La Universidad como «Casa del Saber»: Religiosos y Laicos
+									La Universidad como «Casa del Saber»:
+									Religiosos y Laicos
 								</h3>
 								<p className="mt-2 font-medium leading-[24px]">
 									Exposición permanente
@@ -64,7 +65,7 @@ const Exhibitions = () => {
 					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/arte_moderno_86b0ecdc26.jpg"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/arte_moderno_86b0ecdc26.jpg"
 								className="object-cover transform origin-[right_center] group-hover:scale-[1.194] transition-transform duration-[800ms] ease-out"
 								alt="Arte Moderno y Contemporáneo"
 								fill
@@ -89,7 +90,7 @@ const Exhibitions = () => {
 					<article className="px-6 lg:pl-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/buen_vivir_9c2a59f9d2.jpg"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/buen_vivir_9c2a59f9d2.jpg"
 								className="object-cover transform origin-[left_bottom] group-hover:scale-[1.194] transition-transform duration-[800ms] ease-out"
 								alt="Buen Vivir / Sumaq Kawsay / Suma Qamaña / Jakonax Jatikaxbi Jati"
 								fill
@@ -98,7 +99,8 @@ const Exhibitions = () => {
 						<div className="relative pt-[56px] lg:pt-[96px] pb-[56px] lg:pr-16 lg:semi-container-l h-full flex items-end">
 							<header className="max-w-[512px] text-white">
 								<h3 className="text-[24px] lg:text-[32px] font-bold leading-[normal] lg:leading-[39px]">
-									Buen Vivir / Sumaq Kawsay / Suma Qamaña / Jakonax Jatikaxbi Jati
+									Buen Vivir / Sumaq Kawsay / Suma Qamaña /
+									Jakonax Jatikaxbi Jati
 								</h3>
 								<p className="mt-2 font-medium leading-[24px]">
 									Exposición permanente
@@ -114,7 +116,7 @@ const Exhibitions = () => {
 					<article className="px-6 lg:pr-[104px] h-full relative group-hover:bg-black/50 transition-colors duration-300">
 						<figure className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
 							<Image
-								src="https://ccsm.unmsm.edu.pe/ccsm/vargas_llosa_5ba2050a06.jpg"
+								src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/vargas_llosa_5ba2050a06.jpg"
 								className="object-cover transform origin-[right_bottom] group-hover:scale-[1.194] transition-transform duration-[800ms] ease-out"
 								alt="Mario Vargas Llosa"
 								fill

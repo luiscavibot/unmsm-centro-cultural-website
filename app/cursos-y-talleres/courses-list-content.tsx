@@ -123,7 +123,7 @@ export default function CursosYTalleresPage() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/cursos_y_talleres_portada_4a6e473ea3.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/cursos_y_talleres_portada_4a6e473ea3.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

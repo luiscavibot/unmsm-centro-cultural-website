@@ -64,7 +64,7 @@ const Museums = () => {
 						className="absolute -bottom-[25%] -right-[20px] origin-bottom-left transition-transform duration-[800ms] ease-out grayscale opacity-20 md:opacity-50"
 					>
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/masm_home_356d15dbe1.png"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/masm_home_356d15dbe1.png"
 							alt="Museo de Arte de San Marcos"
 							width={350}
 							height={504}
@@ -117,7 +117,7 @@ const Museums = () => {
 						className="absolute -bottom-[7%] -right-[164px] origin-bottom-left transition-transform duration-[800ms] ease-out grayscale opacity-20 md:opacity-50"
 					>
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/maa_home_d26cd88048.png"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/maa_home_d26cd88048.png"
 							alt="Museo de Arqueología y Antropología"
 							width={432}
 							height={464}

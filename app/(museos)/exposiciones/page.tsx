@@ -33,7 +33,7 @@ export default function Exposiciones() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/exposiciones_portada_91ad764bf1.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/exposiciones_portada_91ad764bf1.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

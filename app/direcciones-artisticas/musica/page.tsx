@@ -27,7 +27,7 @@ const breadcrumbItems = [
 export default function Musica() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/musica_portada_87e634d1ee.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/musica_portada_87e634d1ee.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>

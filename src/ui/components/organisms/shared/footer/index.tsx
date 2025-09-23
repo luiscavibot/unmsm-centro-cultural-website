@@ -62,7 +62,7 @@ const Footer: React.FC = () => (
 				<div className="max-w-[430px] w-full max-xl:mb-10">
 					<Link className="block w-full -mb-[44px]" href="/">
 						<Image
-							src="https://ccsm.unmsm.edu.pe/ccsm/logo_unmsm_ccsm_blanco_92c837ec7c.svg"
+							src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/logo_unmsm_ccsm_blanco_92c837ec7c.svg"
 							alt="logo"
 							className="w-full scale-[1.12] relative bottom-[24px]"
 							width={617}
@@ -118,7 +118,8 @@ const Footer: React.FC = () => (
 						target="_blank"
 						rel="noreferrer noopener"
 					>
-						Reglamento de prevención y sanción del hostigamiento sexual de la UNMSM.
+						Reglamento de prevención y sanción del hostigamiento
+						sexual de la UNMSM.
 					</a>
 				</div>
 				<div className="my-10 w-[72px] mx-auto bg-light-gray-2 h-[1px] xl:hidden opacity-50"></div>

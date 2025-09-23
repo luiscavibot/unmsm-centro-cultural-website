@@ -30,7 +30,7 @@ const breadcrumbItems = [
 export default function Teatro() {
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/teatro_portada_b542c0da38.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_portada_b542c0da38.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -279,7 +279,7 @@ export default function Teatro() {
 							<div className="shrink-0 max-lg:hidden">
 								<figure className="relative w-[450px] xl:w-[523px] h-[300px] xl:h-[349px] mx-auto">
 									<Image
-										src="https://ccsm.unmsm.edu.pe/ccsm/teatro_unete_18acf6440a.jpg"
+										src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_unete_18acf6440a.jpg"
 										className="object-cover h-full"
 										alt="Teatro Únete"
 										fill
@@ -295,7 +295,7 @@ export default function Teatro() {
 								<div className="sm:col-span-2 sm:row-span-2">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_1_f94c72923e.jpg"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_grid_1_f94c72923e.jpg"
 											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 1"
 											width={1387}
@@ -307,7 +307,7 @@ export default function Teatro() {
 								<div className="sm:row-span-2 sm:row-start-3">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_2_e5c614977e.jpg"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_grid_2_e5c614977e.jpg"
 											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 2"
 											width={1387}
@@ -319,7 +319,7 @@ export default function Teatro() {
 								<div className="sm:row-start-3">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_3_3214ff5391.jpg"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_grid_3_3214ff5391.jpg"
 											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 3"
 											width={1387}
@@ -331,7 +331,7 @@ export default function Teatro() {
 								<div className="sm:col-start-2 sm:row-start-4">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_4_cb810cbe5e.jpg"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_grid_4_cb810cbe5e.jpg"
 											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 4"
 											width={1387}
@@ -343,7 +343,7 @@ export default function Teatro() {
 								<div className="sm:col-span-2 sm:row-span-2 sm:row-start-5">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_5_7059af83a1.jpg"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_grid_5_7059af83a1.jpg"
 											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 5"
 											width={1387}
@@ -355,7 +355,7 @@ export default function Teatro() {
 								<div className="sm:col-span-2 sm:row-span-2 sm:row-start-7">
 									<figure className="relative w-full h-full flex-shrink-0 rounded-2xl overflow-hidden">
 										<Image
-											src="https://ccsm.unmsm.edu.pe/ccsm/teatro_grid_6_2d529b7a70.jpg"
+											src="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/teatro_grid_6_2d529b7a70.jpg"
 											className="sm:object-cover w-full sm:h-full"
 											alt="Teatro 6"
 											width={1387}

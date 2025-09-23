@@ -70,7 +70,7 @@ export default function MuseoDeArqueologiaYAntropologia() {
 
 	return (
 		<Layout
-			portadaImage="https://ccsm.unmsm.edu.pe/ccsm/MAA_portada_b6b0cd1114.jpg"
+			portadaImage="https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/MAA_portada_b6b0cd1114.jpg"
 			breadcrumbItems={breadcrumbItems}
 		>
 			<>
@@ -78,7 +78,8 @@ export default function MuseoDeArqueologiaYAntropologia() {
 					<div className="container">
 						<div className="max-w-[814px] mx-auto">
 							<Title className="text-center">
-								Museo de Arqueología y Antropología UNMSM (MAA-UNMSM)
+								Museo de Arqueología y Antropología UNMSM
+								(MAA-UNMSM)
 							</Title>
 							<div className="leading-[24px] text-dark-blue-2">
 								<p className="mb-3">
@@ -170,7 +171,8 @@ export default function MuseoDeArqueologiaYAntropologia() {
 											</p>
 											<p className="font-medium">
 												Oficina: Lunes a viernes, de 8
-												a. m. a 1 p. m. y de 2 a 3:45 p. m.
+												a. m. a 1 p. m. y de 2 a 3:45 p.
+												m.
 												<br />
 												Exposiciones: Lunes a viernes,
 												de 10 a. m. a 1 p. m. y de 2 a
@@ -236,7 +238,8 @@ export default function MuseoDeArqueologiaYAntropologia() {
 					<div className="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 						<div className="flex flex-col lg:flex-row lg:items-center justify-center gap-2 lg:gap-8">
 							<h2 className="text-[24px] lg:text-[32px] font-semibold leading-[normal] lg:max-w-[416px]">
-								Explora y aprende en el Centro Cultural de San Marcos
+								Explora y aprende en el Centro Cultural de San
+								Marcos
 							</h2>
 							<p className="max-lg:text-sm font-normal leading-[24px] lg:max-w-[464px]">
 								Descubre un mundo de conocimiento, arte y

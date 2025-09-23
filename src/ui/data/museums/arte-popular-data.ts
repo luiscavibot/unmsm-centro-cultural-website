@@ -2,55 +2,42 @@ import { Exhibition } from '../../interfaces/museums/exhibition.interface';
 
 export const artePopularData: Exhibition[] = [
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Conopa_toro_Cusco_Siglo_XX_Ceramica_modelada_y_vidriada_18x10x25_cm_0b8af4aeba.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Conopa_toro_Cusco_Siglo_XX_Ceramica_modelada_y_vidriada_18x10x25_cm_0b8af4aeba.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Iglesia_sobre_teja_Ayacucho_Siglo_XX_Ceramica_y_teja_30x29_x18_cm_32785b4485.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Iglesia_sobre_teja_Ayacucho_Siglo_XX_Ceramica_y_teja_30x29_x18_cm_32785b4485.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Toro_de_Pucara_Santiago_de_Pupuja_Puno_Ceramica_modelada_pointada_y_vidriada_298x14x36_cm_d28cdfeade.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Toro_de_Pucara_Santiago_de_Pupuja_Puno_Ceramica_modelada_pointada_y_vidriada_298x14x36_cm_d28cdfeade.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Puno_Siglo_XX_Cocha_Madera_tallada_7_3x15_8_cm_588b688262.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Puno_Siglo_XX_Cocha_Madera_tallada_7_3x15_8_cm_588b688262.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Puno_Siglo_XX_Cocha_Madera_tallada_6_3x26_3_cm_2f895c2d21.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Puno_Siglo_XX_Cocha_Madera_tallada_6_3x26_3_cm_2f895c2d21.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Puno_Siglo_XX_Illa_mesa_Piedra_berenguela_1_6x4_1x3_3_cm_3132e16ef3.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Puno_Siglo_XX_Illa_mesa_Piedra_berenguela_1_6x4_1x3_3_cm_3132e16ef3.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Amazonia_Etnia_Shipibo_conibo_Siglo_XX_Cantaro_antropomorfo_femenino_Ceramica_barnizada_37_8x23_7x19_4_cm_0fb1a357bb.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Amazonia_Etnia_Shipibo_conibo_Siglo_XX_Cantaro_antropomorfo_femenino_Ceramica_barnizada_37_8x23_7x19_4_cm_0fb1a357bb.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Puno_1940_Illa_chacra_Piedra_berenguela_tallada_3_5x21_5x20_5_cm_8e168d1b95.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Puno_1940_Illa_chacra_Piedra_berenguela_tallada_3_5x21_5x20_5_cm_8e168d1b95.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Puno_Siglo_XX_Illa_yunta_Piedra_berenguela_4_2x2_9x8_6_cm_15663998f5.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Puno_Siglo_XX_Illa_yunta_Piedra_berenguela_4_2x2_9x8_6_cm_15663998f5.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Evaristo_Medina_Cochas_Junin_Siglo_XX_Plato_con_escena_de_Tumbamonte_Mate_burilado_y_pirograbado_9x32_cm_diam_4496bcf515.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Evaristo_Medina_Cochas_Junin_Siglo_XX_Plato_con_escena_de_Tumbamonte_Mate_burilado_y_pirograbado_9x32_cm_diam_4496bcf515.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Anonimo_Poro_Cochas_Junin_Siglo_XX_Mate_burilado_pirograbado_60cbc67f39.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Anonimo_Poro_Cochas_Junin_Siglo_XX_Mate_burilado_pirograbado_60cbc67f39.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Joaquin_Lopez_Antay_Ayacucho_1940_Cruz_de_calvario_M_Adera_pasta_y_vidrio_policromado_85x39x19_cm_17a9f75bba.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Joaquin_Lopez_Antay_Ayacucho_1940_Cruz_de_calvario_M_Adera_pasta_y_vidrio_policromado_85x39x19_cm_17a9f75bba.jpg',
 	},
 	{
-		url:
-			'https://ccsm.unmsm.edu.pe/ccsm/Joaquin_Lopez_Antay_Ayacucho_Primera_mitad_del_siglo_XX_Retablo_con_campesino_sacandose_espina_Madera_y_pasta_policromada_31_2x24x9_5_cm_5b7e22f7a3.jpg',
+		url: 'https://unmsm-static-files-v2.s3.us-east-2.amazonaws.com/ccsm/Joaquin_Lopez_Antay_Ayacucho_Primera_mitad_del_siglo_XX_Retablo_con_campesino_sacandose_espina_Madera_y_pasta_policromada_31_2x24x9_5_cm_5b7e22f7a3.jpg',
 	},
 ];
