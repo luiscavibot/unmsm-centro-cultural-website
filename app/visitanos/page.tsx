@@ -118,7 +118,8 @@ export default function Visitanos() {
 											Antropología:
 										</b>{' '}
 										De lunes a viernes, de 10 a. m. a 1 p.
-										m. y de 2 a 3:30 p. m.
+										m. y de 2 a 3:30 p. m.; y los sábados,
+										de 10 a. m. a 1 p. m. y de 2 a 5 p. m.
 									</li>
 								</ul>
 								<p className="mb-6">

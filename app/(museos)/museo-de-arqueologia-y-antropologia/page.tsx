@@ -176,7 +176,8 @@ export default function MuseoDeArqueologiaYAntropologia() {
 												<br />
 												Exposiciones: Lunes a viernes,
 												de 10 a. m. a 1 p. m. y de 2 a
-												3:30 p. m.
+												3:30 p. m.; sábados, de 10 a. m.
+												a 1 p. m. y de 2 a 5 p. m.
 											</p>
 										</div>
 									</div>
