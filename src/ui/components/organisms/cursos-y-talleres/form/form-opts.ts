@@ -7,15 +7,13 @@ interface DefaultValues {
 	search: string;
 }
 
-interface FormOptions {
-	defaultValues: DefaultValues;
-}
+const defaultValues: DefaultValues = {
+	dependencia: [],
+	modalidad: [],
+	tipo: [],
+	search: '',
+};
 
-export const cursosYtalleresFormOpts = formOptions<FormOptions>({
-	defaultValues: {
-		dependencia: [] as string[],
-		modalidad: [] as string[],
-		tipo: [] as string[],
-		search: '',
-	},
+export const cursosYtalleresFormOpts = formOptions({
+	defaultValues,
 });

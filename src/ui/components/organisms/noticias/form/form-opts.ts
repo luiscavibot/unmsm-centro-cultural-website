@@ -5,13 +5,11 @@ interface DefaultValues {
 	search: string;
 }
 
-interface FormOptions {
-	defaultValues: DefaultValues;
-}
+const defaultValues: DefaultValues = {
+	dependencia: [],
+	search: '',
+};
 
-export const noticiasFormOpts = formOptions<FormOptions>({
-	defaultValues: {
-		dependencia: [] as string[],
-		search: '',
-	},
+export const noticiasFormOpts = formOptions({
+	defaultValues,
 });

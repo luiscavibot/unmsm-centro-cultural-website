@@ -6,14 +6,12 @@ interface DefaultValues {
 	organizador: string[];
 }
 
-interface FormOptions {
-	defaultValues: DefaultValues;
-}
+const defaultValues: DefaultValues = {
+	dateRange: ['', ''],
+	modalidad: [],
+	organizador: [],
+};
 
-export const agendaCulturalFormOpts = formOptions<FormOptions>({
-	defaultValues: {
-		dateRange: ['', ''],
-		modalidad: [] as string[],
-		organizador: [] as string[],
-	},
+export const agendaCulturalFormOpts = formOptions({
+	defaultValues,
 });
