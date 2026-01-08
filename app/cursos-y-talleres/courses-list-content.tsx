@@ -153,7 +153,7 @@ export default function CursosYTalleresPage() {
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-20 md:pb-[104px]">
 					<div className="container">
 						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
-							<div>
+							<div className="max-md:mb-6">
 								<CursosYTalleresFilter form={form} />
 							</div>
 							<div className="w-full">
@@ -187,9 +187,9 @@ export default function CursosYTalleresPage() {
 															course.dependencia
 														}
 														url={
-															course.imagen
-																.formats.small
-																.url
+															course.imagen?.formats?.large?.url ||
+															course.imagen?.url ||
+															''
 														}
 													/>
 												</li>

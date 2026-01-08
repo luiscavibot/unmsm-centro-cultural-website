@@ -92,7 +92,8 @@ const News: FC<Props> = ({ noticias }) => {
 												?.url ||
 											noticia.imagen?.formats?.large
 												?.url ||
-											noticia.imagen?.url
+											noticia.imagen?.url ||
+											''
 										}
 										fechaPublicacion={
 											noticia.fechaPublicacion

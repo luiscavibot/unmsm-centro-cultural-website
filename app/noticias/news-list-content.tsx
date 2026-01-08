@@ -185,21 +185,12 @@ export default function NoticiasPage() {
 																	newsItem
 																		.imagen
 																		?.formats
-																		?.small
-																		?.url ||
-																	newsItem
-																		.imagen
-																		?.formats
-																		?.medium
-																		?.url ||
-																	newsItem
-																		.imagen
-																		?.formats
 																		?.large
 																		?.url ||
 																	newsItem
 																		.imagen
-																		?.url
+																		?.url ||
+                                  ''
 																}
 																fechaPublicacion={
 																	newsItem.fechaPublicacion
@@ -246,7 +237,7 @@ export default function NoticiasPage() {
 				<div className="px-4 lg:px-[104px] bg-dark-white-2 pt-[56px] pb-[104px]">
 					<div className="container">
 						<div className="flex flex-col md:flex-row justify-between gap-x-8 xl:gap-x-[105px]">
-							<div>
+							<div className="max-md:mb-6">
 								{/* <div className="mb-8 max-md:flex max-md:flex-row max-md:gap-x-4">
 									<Search
 										className="grow"
@@ -310,16 +301,11 @@ export default function NoticiasPage() {
 												>
 													<NewsCard
 														url={
-															newsItem.imagen
-																?.formats?.small
-																?.url ||
-															newsItem.imagen
-																?.formats
-																?.medium?.url ||
-															newsItem.imagen
+															  newsItem.imagen
 																?.formats?.large
 																?.url ||
-															newsItem.imagen?.url
+															  newsItem.imagen?.url ||
+															  ''
 														}
 														fechaPublicacion={
 															newsItem.fechaPublicacion

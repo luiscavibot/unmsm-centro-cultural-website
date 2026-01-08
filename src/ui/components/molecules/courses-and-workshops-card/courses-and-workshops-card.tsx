@@ -24,16 +24,18 @@ const CoursesAndWorkshopsCard: React.FC<CoursesAndWorkshopsCardProps> = ({
 		href={`cursos-y-talleres/${slug}`}
 	>
 		<article className="rounded-2xl overflow-hidden flex flex-row w-auto group-focus:ring-2 group-active:ring-2 group-hover:ring-1 ring-dark-red transition-all duration-300 grow h-[19.3125rem] md:h-[21.625rem]">
-			<figure className="relative w-[180px] lg:w-[450px] h-full flex-shrink-0 max-xl:hidden">
-				<Image
-					src={url}
-					className="object-cover h-full"
-					alt={titulo}
-					fill
-					sizes="(max-width: 768px) 100vw, 500px"
-					quality={100}
-				/>
-			</figure>
+			{url ? (
+        <figure className="relative w-[180px] lg:w-[450px] h-full flex-shrink-0 max-xl:hidden">
+            <Image
+              src={url}
+              className="object-cover h-full"
+              alt={titulo}
+              fill
+              sizes="(max-width: 768px) 100vw, 900px"
+              quality={80}
+            />
+        </figure>
+			) : null}
 			{/* <div className="bg-white p-6 w-[553px] flex-shrink-0"> */}
 			<div className="bg-white p-6 pb-10 w-auto relative grow">
 				<header>

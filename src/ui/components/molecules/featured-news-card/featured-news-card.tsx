@@ -14,10 +14,19 @@ interface FeaturedNewsCardProps {
 
 const FeaturedNewsCard: React.FC<FeaturedNewsCardProps> = ({ url, fechaPublicacion, titulo, resumen, slug }) => (
 	<Link className="group" href={`noticias/${slug}`}>
-		<article className="flex flex-col w-full h-[419px]">
+		<article className="flex flex-col w-full h-[419px] justify-center">
+      {url ? (
 			<figure className="relative w-full h-[240px] rounded-3xl overflow-hidden flex-shrink-0">
-				<Image src={url} className="object-cover" alt={titulo} fill />
+				<Image
+					src={url}
+					className="object-cover h-full"
+					alt={titulo}
+					fill
+					sizes="(max-width: 768px) 100vw, 900px"
+					quality={80}
+				/>
 			</figure>
+      ) : null}
 			<div className="bg-white p-6 w-full flex-shrink-0 text-center">
 				<header>
 					<div className="flex flex-row items-center justify-center gap-2 mb-1">

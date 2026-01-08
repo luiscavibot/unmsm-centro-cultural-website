@@ -21,6 +21,8 @@ const NewsCard: React.FC<NewsCardProps> = ({ url, fechaPublicacion, titulo, resu
 					className="object-cover h-full"
 					alt={titulo}
 					fill
+          sizes="(max-width: 768px) 100vw, 900px"
+					quality={80}
 				/>
 			</figure>
 			<div className="bg-white p-6 w-auto grow">

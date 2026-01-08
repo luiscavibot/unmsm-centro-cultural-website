@@ -13,12 +13,21 @@ interface NewsHomeCardProps {
 }
 
 const NewsHomeCard: FC<NewsHomeCardProps> = ({ url, fechaPublicacion, titulo, resumen, slug }) => (
-	<Link className="group w-full lg:w-[620px] h-[240px]" href={`noticias/${slug}`}>
-		<article className="rounded-2xl overflow-hidden flex flex-row">
-			<figure className="max-lg:hidden relative w-[240px] h-[240px] flex-shrink-0">
-				<Image src={url} className="object-cover" alt={titulo} fill />
-			</figure>
-			<div className="bg-white p-6 w-auto lg:w-[380px] lg:flex-shrink-0">
+	<Link className="block group w-full lg:w-[620px] h-[240px]" href={`noticias/${slug}`}>
+		<article className="rounded-2xl overflow-hidden flex flex-row h-full">
+      {url ? (
+        <figure className="max-lg:hidden relative w-[240px] h-[240px] flex-shrink-0">
+          <Image
+            src={url}
+            className="object-cover"
+            alt={titulo}
+            fill
+            sizes="(max-width: 768px) 100vw, 500px"
+            quality={80}
+          />
+        </figure>
+      ) : null}
+			<div className={`bg-white p-6 w-auto ${url ? 'lg:w-[380px]' : 'lg:w-[620px]'} lg:flex-shrink-0`}>
 				<header>
 					<div className="flex flex-row items-center justify-start gap-2 mb-1">
 						<CalendarIcon className="shrink-0" ariaLabel="Fecha" color="dark" />
