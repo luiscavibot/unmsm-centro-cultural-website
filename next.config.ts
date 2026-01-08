@@ -19,6 +19,10 @@ const nextConfig: NextConfig = {
 				protocol: 'https',
 				hostname: 'i3.ytimg.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'd20cra10nhu74a.cloudfront.net',
+			},
 		],
 	},
 	output: 'standalone',
