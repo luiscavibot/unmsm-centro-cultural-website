@@ -13,7 +13,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveElencoInfantil: () => void;
-	splideRefElencoInfantil: React.RefObject<ExtendedSplideType>;
+	splideRefElencoInfantil: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoInfantil: boolean;
 	isNextDisabledElencoInfantil: boolean;

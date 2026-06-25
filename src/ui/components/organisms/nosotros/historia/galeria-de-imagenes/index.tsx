@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveGaleria: () => void;
-	splideRefGaleria: React.RefObject<ExtendedSplideType>;
+	splideRefGaleria: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledGaleria: boolean;
 	isNextDisabledGaleria: boolean;

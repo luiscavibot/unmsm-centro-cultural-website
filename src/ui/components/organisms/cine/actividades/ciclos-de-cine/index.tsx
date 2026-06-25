@@ -13,7 +13,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveCiclosDeCine: () => void;
-	splideRefCiclosDeCine: React.RefObject<ExtendedSplideType>;
+	splideRefCiclosDeCine: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledCiclosDeCine: boolean;
 	isNextDisabledCiclosDeCine: boolean;

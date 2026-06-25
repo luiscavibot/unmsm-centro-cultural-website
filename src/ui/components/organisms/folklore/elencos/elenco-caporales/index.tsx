@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveElencoCaporales: () => void;
-	splideRefElencoCaporales: React.RefObject<ExtendedSplideType>;
+	splideRefElencoCaporales: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoCaporales: boolean;
 	isNextDisabledElencoCaporales: boolean;

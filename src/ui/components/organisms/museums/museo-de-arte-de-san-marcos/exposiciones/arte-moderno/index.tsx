@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveExpoArte: () => void;
-	splideRefExpoArte: React.RefObject<ExtendedSplideType>;
+	splideRefExpoArte: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledExpoArte: boolean;
 	isNextDisabledExpoArte: boolean;

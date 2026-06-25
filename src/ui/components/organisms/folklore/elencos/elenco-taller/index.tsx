@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveElencoTaller: () => void;
-	splideRefElencoTaller: React.RefObject<ExtendedSplideType>;
+	splideRefElencoTaller: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoTaller: boolean;
 	isNextDisabledElencoTaller: boolean;

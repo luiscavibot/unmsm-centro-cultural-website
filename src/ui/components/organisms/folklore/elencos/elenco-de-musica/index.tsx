@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveElencoDeMusica: () => void;
-	splideRefElencoDeMusica: React.RefObject<ExtendedSplideType>;
+	splideRefElencoDeMusica: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoDeMusica: boolean;
 	isNextDisabledElencoDeMusica: boolean;

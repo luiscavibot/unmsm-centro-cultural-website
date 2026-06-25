@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveElencoDeMarinera: () => void;
-	splideRefElencoDeMarinera: React.RefObject<ExtendedSplideType>;
+	splideRefElencoDeMarinera: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoDeMarinera: boolean;
 	isNextDisabledElencoDeMarinera: boolean;

@@ -15,7 +15,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveExpoTemporales: () => void;
-	splideRefExpoTemporales: React.RefObject<ExtendedSplideType>;
+	splideRefExpoTemporales: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledExpoTemporales: boolean;
 	isNextDisabledExpoTemporales: boolean;

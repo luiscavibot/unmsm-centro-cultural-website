@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveEditatonas: () => void;
-	splideRefEditatonas: React.RefObject<ExtendedSplideType>;
+	splideRefEditatonas: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledEditatonas: boolean;
 	isNextDisabledEditatonas: boolean;

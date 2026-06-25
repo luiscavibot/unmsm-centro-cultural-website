@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveColJimenezBorja: () => void;
-	splideRefColJimenezBorja: React.RefObject<ExtendedSplideType>;
+	splideRefColJimenezBorja: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledColJimenezBorja: boolean;
 	isNextDisabledColJimenezBorja: boolean;

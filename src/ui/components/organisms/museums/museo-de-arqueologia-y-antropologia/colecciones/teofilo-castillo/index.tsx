@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveColTeofiloCastillo: () => void;
-	splideRefColTeofiloCastillo: React.RefObject<ExtendedSplideType>;
+	splideRefColTeofiloCastillo: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledColTeofiloCastillo: boolean;
 	isNextDisabledColTeofiloCastillo: boolean;

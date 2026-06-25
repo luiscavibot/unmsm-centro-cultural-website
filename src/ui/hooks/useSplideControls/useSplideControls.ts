@@ -5,7 +5,7 @@ interface ExtendedSplideType extends SplideType {
   splide: SplideType;
 }
 
-const useSplideControls = (splideRef: RefObject<ExtendedSplideType>) => {
+const useSplideControls = (splideRef: RefObject<ExtendedSplideType | null>) => {
   const [isPrevDisabled, setIsPrevDisabled] = useState(true);
   const [isNextDisabled, setIsNextDisabled] = useState(false);
 

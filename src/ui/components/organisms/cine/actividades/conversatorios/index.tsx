@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveConversatorios: () => void;
-	splideRefConversatorios: React.RefObject<ExtendedSplideType>;
+	splideRefConversatorios: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledConversatorios: boolean;
 	isNextDisabledConversatorios: boolean;

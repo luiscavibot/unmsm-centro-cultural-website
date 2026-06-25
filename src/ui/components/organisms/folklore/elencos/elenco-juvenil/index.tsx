@@ -16,7 +16,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveElencoJuvenil: () => void;
-	splideRefElencoJuvenil: React.RefObject<ExtendedSplideType>;
+	splideRefElencoJuvenil: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledElencoJuvenil: boolean;
 	isNextDisabledElencoJuvenil: boolean;

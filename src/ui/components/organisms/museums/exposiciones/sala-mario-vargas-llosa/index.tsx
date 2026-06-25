@@ -17,7 +17,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveSalaMarioVargasLlosa: () => void;
-	splideRefSalaMarioVargasLlosa: React.RefObject<ExtendedSplideType>;
+	splideRefSalaMarioVargasLlosa: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledSalaMarioVargasLlosa: boolean;
 	isNextDisabledSalaMarioVargasLlosa: boolean;

@@ -17,7 +17,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveExpoBuenVivir: () => void;
-	splideRefExpoBuenVivir: React.RefObject<ExtendedSplideType>;
+	splideRefExpoBuenVivir: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledExpoBuenVivir: boolean;
 	isNextDisabledExpoBuenVivir: boolean;

@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveColExpedicionSierraCentral: () => void;
-	splideRefColExpedicionSierraCentral: React.RefObject<ExtendedSplideType>;
+	splideRefColExpedicionSierraCentral: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledColExpedicionSierraCentral: boolean;
 	isNextDisabledColExpedicionSierraCentral: boolean;

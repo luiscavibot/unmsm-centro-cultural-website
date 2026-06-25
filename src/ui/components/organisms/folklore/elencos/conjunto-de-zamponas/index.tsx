@@ -12,7 +12,7 @@ interface ExtendedSplideType extends SplideType {
 
 interface Props {
 	// handleMoveConjuntoDeZamponas: () => void;
-	splideRefConjuntoDeZamponas: React.RefObject<ExtendedSplideType>;
+	splideRefConjuntoDeZamponas: React.RefObject<ExtendedSplideType | null>;
 	splideOptions: ResponsiveOptions;
 	isPrevDisabledConjuntoDeZamponas: boolean;
 	isNextDisabledConjuntoDeZamponas: boolean;
